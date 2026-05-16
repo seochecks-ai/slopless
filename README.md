@@ -39,11 +39,46 @@ Slopless requires a file path, glob, or stdin input. A bare `npx slopless` exits
 - Requires Node.js 20 or newer.
 - Requires no `.textlintrc.json`.
 - Requires no separate `textlint` install.
+- Supports inline `textlint-disable` comments for rule ignores.
 - Emits textlint JSON only.
 - Rejects `--format` and `-f`.
 - Exits `0` for no findings, `1` for prose findings, and `2` for command failure.
 
 Each JSON message includes the rule ID, line, column, message, and range data when textlint provides it. Rule IDs use `slopless/<rule-name>` in wrapped textlint output, such as `slopless/semantic-thinness`.
+
+## Ignore Rules
+
+Ignore one rule for a block:
+
+```markdown
+<!-- textlint-disable slopless/semantic-thinness -->
+
+Something shifted in the room.
+
+<!-- textlint-enable slopless/semantic-thinness -->
+```
+
+Ignore several rules:
+
+```markdown
+<!-- textlint-disable slopless/semantic-thinness, slopless/llm-openers -->
+
+The important thing is that something shifted in the room.
+
+<!-- textlint-enable slopless/semantic-thinness, slopless/llm-openers -->
+```
+
+Ignore all Slopless findings in a block:
+
+```markdown
+<!-- textlint-disable -->
+
+Something shifted in the room.
+
+<!-- textlint-enable -->
+```
+
+Markdown comments must sit on their own lines, with blank lines around the ignored text.
 
 ## Rules
 
@@ -114,6 +149,9 @@ The package also exports a textlint preset:
 
 ```json
 {
+  "filters": {
+    "comments": true
+  },
   "rules": {
     "preset-slopless": true
   }

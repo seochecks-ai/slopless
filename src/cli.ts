@@ -8,6 +8,7 @@ const FORMAT_FLAGS = new Set(["--format", "-f"]);
 const HELP_FLAGS = new Set(["--help", "-h"]);
 const STDIN_FLAGS = new Set(["--stdin"]);
 const VERSION_FLAGS = new Set(["--version", "-v"]);
+const CONFIG_FLAGS = new Set(["--config", "-c"]);
 const VALUE_OPTIONS = new Set([
   "--cache-location",
   "--config",
@@ -22,7 +23,7 @@ const VALUE_OPTIONS = new Set([
   "-c",
   "-o"
 ]);
-const VERSION = "0.2.4";
+const VERSION = "0.2.5";
 const HELP_TEXT = `Slopless checks Markdown prose for deterministic AI and human slop signals.
 
 It reports concrete patterns that make writing padded, vague, generic,
@@ -66,6 +67,13 @@ Useful forms:
   npx slopless --stdin --stdin-filename draft.md
   npx slopless "docs/**/*.md" > slopless.json
   npx slopless "docs/**/*.md" --quiet
+
+Ignore one rule:
+  <!-- textlint-disable slopless/semantic-thinness -->
+
+  Something shifted in the room.
+
+  <!-- textlint-enable slopless/semantic-thinness -->
 
 Unsupported:
   --format and -f are rejected. JSON is the only output format.
@@ -111,10 +119,12 @@ function hasFileTarget(args: readonly string[]): boolean {
   return false;
 }
 
-function packageNodeModules(): string {
-  const packageRoot = dirname(dirname(fileURLToPath(import.meta.url)));
+function packageRoot(): string {
+  return dirname(dirname(fileURLToPath(import.meta.url)));
+}
 
-  return resolve(packageRoot, "..");
+function packageNodeModules(): string {
+  return resolve(packageRoot(), "..");
 }
 
 async function readStdin(): Promise<string> {
@@ -158,6 +168,9 @@ async function main(): Promise<number> {
   const args = [
     "node",
     "slopless",
+    ...(hasFlag(userArgs, CONFIG_FLAGS)
+      ? []
+      : ["--config", resolve(packageRoot(), "slopless.textlintrc.json")]),
     "--preset",
     "slopless",
     "--rules-base-directory",
