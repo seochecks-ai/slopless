@@ -89,3 +89,9 @@ That is where the repayment job must run before the invoice export.
 The room felt still.
 
 The moment passed.
+
+Fear had no place in her schedule.
+
+The south pier was a graveyard of shadows and salt spray.
+
+The courtyard smelled of disturbed dust and old ash instead of hot metal.

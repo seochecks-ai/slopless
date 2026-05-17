@@ -57,3 +57,7 @@ She realized the truth when the invoice matched the ledger.
 They stood by the north exit at thirteen minutes after eight.
 
 The lesson was simple: rotate the signing key every 30 days.
+
+Fear had no place in the posted evacuation plan because the exits were marked and staffed.
+
+The courtyard smelled of ash because the kiln had cracked during firing.

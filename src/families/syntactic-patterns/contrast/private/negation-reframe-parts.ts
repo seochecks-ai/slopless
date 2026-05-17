@@ -59,6 +59,7 @@ export const PASSIVE_DEFINITION_VERBS = new Set([
   "marked",
   "produced"
 ]);
+const IRREGULAR_PAST_TENSE = new Map<string, string>([["go", "went"]]);
 
 export type CopularNegation = {
   readonly affirmativeAux: string;
@@ -95,6 +96,45 @@ export function startsWithWords(
   }
 
   return true;
+}
+
+function regularPastTense(verb: string): string {
+  return verb.endsWith("e") ? `${verb}d` : `${verb}ed`;
+}
+
+function affirmativeVerbForms(verb: string): readonly string[] {
+  return [verb, IRREGULAR_PAST_TENSE.get(verb) ?? regularPastTense(verb)];
+}
+
+export function stripLeadingPairPivot(
+  tokens: readonly Token[]
+): readonly Token[] {
+  return tokens[0]?.normalized === "instead" ? tokens.slice(1) : tokens;
+}
+
+export function startsWithSubjectOrPronoun(
+  tokens: readonly Token[],
+  subject: readonly string[]
+): boolean {
+  if (startsWithWords(tokens, subject)) {
+    return true;
+  }
+
+  if (subject.length === 1) {
+    return false;
+  }
+
+  return startsWithWords(tokens, ["they"]) || startsWithWords(tokens, ["it"]);
+}
+
+export function startsWithSubjectVerb(
+  tokens: readonly Token[],
+  subject: readonly string[],
+  verb: string
+): boolean {
+  return affirmativeVerbForms(verb).some((candidate) =>
+    startsWithWords(tokens, [...subject, candidate])
+  );
 }
 
 export function words(tokens: readonly Token[]): readonly string[] {
@@ -185,4 +225,38 @@ export function findCopularNegation(
 
 export function validSubject(subject: readonly string[]): boolean {
   return subject.length > 0 && subject.length <= 8;
+}
+
+export function contrastPivotSubject(
+  tokens: readonly Token[]
+): readonly string[] | undefined {
+  const tokenWords = words(tokens);
+
+  for (let index = 0; index < tokenWords.length; index += 1) {
+    const current = tokenWords[index];
+
+    if (current === undefined || COPULAR_FORMS.get(current) === undefined) {
+      continue;
+    }
+
+    const subject = tokenWords.slice(0, index);
+
+    if (!validSubject(subject)) {
+      continue;
+    }
+
+    if (tokenWords[index + 1] === "not" && tokenWords[index + 2] === "just") {
+      return subject;
+    }
+
+    if (
+      tokenWords[index + 1] === "no" &&
+      tokenWords[index + 2] === "longer" &&
+      tokenWords[index + 3] === "just"
+    ) {
+      return subject;
+    }
+  }
+
+  return undefined;
 }

@@ -239,3 +239,33 @@ Her voice was barely a whisper because the microphone gain was set too low.
 The air was thick with tension because the cable had been tightened past its rating.
 
 The sun dipped below the horizon because the sensor was mounted on a moving rig.
+
+## Sunstone source patterns
+
+Fear had no place in her schedule.
+
+The south pier was a graveyard of shadows and salt spray.
+
+The courtyard smelled of disturbed dust and old ash instead of hot metal.
+
+The little snow leopard girl sat on the wide sill. She stared out at the dark roofline. She did not look down at the older kids. Her fluffy tail hung still over the edge of the wood.
+
+Cassia stepped out of the shadows. She picked up the practice sword. The wood was cold in her paw.
+
+Cassia watched him leave. Her father had told her to observe and listen. She looked at Arden. The caracal boy was already looking back at her.
+
+She stared out at the dark roofline. She did not look down at the older kids. Her fluffy tail hung still over the edge of the wood.
+
+Arden climbed the crates next to her. He pulled himself up to the roof edge. Arden walked along the parapet that separated the workshop roof from the neighbor's building. He crouched low and ran his fingers over the stone.
+
+Cassia's ears twitched. Her tail angled low. Her paws shifted on the roof tile.
+
+Fear had no place in the posted evacuation plan because the exits were marked and staffed.
+
+The courtyard smelled of ash because the kiln had cracked during firing.
+
+Young readers need short lines, so the draft keeps the scene clear with plain words.
+
+Cassia looked for the torn stitch under the table and found it beside the left leg.
+
+Arden climbed the crates to reach the broken pulley, then wedged the rope under the iron hook.

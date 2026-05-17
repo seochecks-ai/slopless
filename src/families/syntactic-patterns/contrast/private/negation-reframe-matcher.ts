@@ -4,13 +4,17 @@ import {
   NEGATION_WORDS,
   PASSIVE_DEFINITION_VERBS,
   PRONOUN_REFRAME_STARTS,
+  contrastPivotSubject,
   findCopularNegation,
   findNegationIndex,
   hasCommaBeforeNegation,
   isCompleteSentence,
   skipOptionalAdverbs,
   startsWithAny,
+  startsWithSubjectOrPronoun,
+  startsWithSubjectVerb,
   startsWithWords,
+  stripLeadingPairPivot,
   validSubject,
   words
 } from "./negation-reframe-parts.js";
@@ -235,6 +239,7 @@ function actionVerbMirror(
   bTokens: readonly Token[]
 ): boolean {
   const tokenWords = words(aTokens);
+  const bContentTokens = stripLeadingPairPivot(bTokens);
 
   for (let index = 0; index < tokenWords.length; index += 1) {
     const current = tokenWords[index];
@@ -249,7 +254,10 @@ function actionVerbMirror(
       const verbIndex = skipOptionalAdverbs(tokenWords, index + 1);
       const verb = tokenWords[verbIndex];
 
-      if (verb !== undefined && startsWithWords(bTokens, [...subject, verb])) {
+      if (
+        verb !== undefined &&
+        startsWithSubjectVerb(bContentTokens, subject, verb)
+      ) {
         return true;
       }
     }
@@ -258,13 +266,36 @@ function actionVerbMirror(
       const verbIndex = skipOptionalAdverbs(tokenWords, index + 2);
       const verb = tokenWords[verbIndex];
 
-      if (verb !== undefined && startsWithWords(bTokens, [...subject, verb])) {
+      if (
+        verb !== undefined &&
+        startsWithSubjectVerb(bContentTokens, subject, verb)
+      ) {
         return true;
       }
     }
   }
 
   return false;
+}
+
+function explicitContrastPivotReframe(
+  aTokens: readonly Token[],
+  bTokens: readonly Token[]
+): boolean {
+  const subject = contrastPivotSubject(aTokens);
+
+  return (
+    subject !== undefined &&
+    !startsWithNegatedPronounCopula(bTokens) &&
+    startsWithSubjectOrPronoun(bTokens, subject)
+  );
+}
+
+function hasPairNegationSignal(tokens: readonly Token[]): boolean {
+  return (
+    findNegationIndex(tokens) !== undefined ||
+    contrastPivotSubject(tokens) !== undefined
+  );
 }
 
 function looksLikePassiveDefinition(
@@ -301,7 +332,7 @@ function sentencePairReframe(
   if (
     !isCompleteSentence(a) ||
     !isCompleteSentence(b) ||
-    findNegationIndex(aTokens) === undefined
+    !hasPairNegationSignal(aTokens)
   ) {
     return undefined;
   }
@@ -312,7 +343,8 @@ function sentencePairReframe(
     progressiveVerbMirror(aTokens, bTokens) ||
     meaningReframe(aTokens, bTokens) ||
     needReframe(aTokens, bTokens) ||
-    actionVerbMirror(aTokens, bTokens)
+    actionVerbMirror(aTokens, bTokens) ||
+    explicitContrastPivotReframe(aTokens, bTokens)
   ) {
     return {
       end: b.end,

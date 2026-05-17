@@ -1,0 +1,23 @@
+{
+  "id": "abstract-personification-line",
+  "class": "abstract-personification",
+  "purpose": "Catch abstract nouns treated as social actors in short payoff lines without concrete action or cause.",
+  "templates": ["{abstractSubject} had no place in {thinContainer}."],
+  "slots": {
+    "abstractSubject": ["fear"],
+    "thinContainer": ["her schedule", "his schedule", "their schedule"]
+  },
+  "rejectIf": [
+    "sentence includes a concrete policy, safety, legal, or logistical reason",
+    "sentence includes a cause clause",
+    "sentence refers to a literal place allocation"
+  ],
+  "positiveExamples": ["Fear had no place in her schedule."],
+  "negativeExamples": [
+    "Fear had no place in the posted evacuation plan because the exits were marked and staffed."
+  ],
+  "notes": [
+    "This starts with the Sunstone source frame only.",
+    "The common matcher rejects full-mode cause clauses such as because."
+  ]
+}

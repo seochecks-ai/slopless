@@ -1,0 +1,32 @@
+{
+  "id": "fixed-metaphor-frame",
+  "class": "fixed-metaphor",
+  "purpose": "Catch fixed scene metaphors that present a place as a stock metaphor of stacked image nouns.",
+  "templates": [
+    "{placeSubject} was a {metaphorNoun} of {imageNoun} and {imageNoun}."
+  ],
+  "slots": {
+    "placeSubject": [
+      "the south pier",
+      "the pier",
+      "the catwalk",
+      "the courtyard"
+    ],
+    "metaphorNoun": ["graveyard", "tightrope", "maze"],
+    "imageNoun": ["shadows", "salt spray", "dust", "ash", "vipers", "smoke"]
+  },
+  "rejectIf": [
+    "sentence uses the noun literally",
+    "sentence includes concrete damage, history, measurement, or source detail",
+    "sentence includes a cause clause"
+  ],
+  "positiveExamples": [
+    "The south pier was a graveyard of shadows and salt spray."
+  ],
+  "negativeExamples": [
+    "The south pier was a graveyard after the storm destroyed twelve boats."
+  ],
+  "notes": [
+    "The frame is intentionally narrow: place plus was a metaphor noun of two image nouns."
+  ]
+}

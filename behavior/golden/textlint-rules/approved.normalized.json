@@ -12130,7 +12130,7 @@
       },
       {
         "column": 1,
-        "index": 21581,
+        "index": 21577,
         "line": 557,
         "loc": {
           "end": {
@@ -12142,401 +12142,10 @@
             "line": 557
           }
         },
-        "message": "Response wrapper found: chat-scaffold (let's delve into). Remove assistant response scaffolding.",
+        "message": "Negation reframe found: \"She did not go to Arden. She went to the rug merchant alley.\". Rewrite without the not-X-then-Y construction.",
         "range": [
-          21581,
-          21641
-        ],
-        "ruleId": "response-wrapper",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 7,
-        "index": 21587,
-        "line": 557,
-        "loc": {
-          "end": {
-            "column": 12,
-            "line": 557
-          },
-          "start": {
-            "column": 7,
-            "line": 557
-          }
-        },
-        "message": "LLM vocabulary found: \"delve\". Replace the stock diction with a concrete word.",
-        "range": [
-          21587,
-          21592
-        ],
-        "ruleId": "llm-vocabulary",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 7,
-        "index": 21587,
-        "line": 557,
-        "loc": {
-          "end": {
-            "column": 12,
-            "line": 557
-          },
-          "start": {
-            "column": 7,
-            "line": 557
-          }
-        },
-        "message": "Prohibited word found: \"delve\". Rewrite without this term.",
-        "range": [
-          21587,
-          21592
-        ],
-        "ruleId": "prohibited-words",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 1,
-        "index": 21643,
-        "line": 559,
-        "loc": {
-          "end": {
-            "column": 38,
-            "line": 559
-          },
-          "start": {
-            "column": 1,
-            "line": 559
-          }
-        },
-        "message": "Response wrapper found: chat-scaffold (okay, let's delve). Remove assistant response scaffolding.",
-        "range": [
-          21643,
-          21680
-        ],
-        "ruleId": "response-wrapper",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 13,
-        "index": 21655,
-        "line": 559,
-        "loc": {
-          "end": {
-            "column": 18,
-            "line": 559
-          },
-          "start": {
-            "column": 13,
-            "line": 559
-          }
-        },
-        "message": "LLM vocabulary found: \"delve\". Replace the stock diction with a concrete word.",
-        "range": [
-          21655,
-          21660
-        ],
-        "ruleId": "llm-vocabulary",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 13,
-        "index": 21655,
-        "line": 559,
-        "loc": {
-          "end": {
-            "column": 18,
-            "line": 559
-          },
-          "start": {
-            "column": 13,
-            "line": 559
-          }
-        },
-        "message": "Prohibited word found: \"delve\". Rewrite without this term.",
-        "range": [
-          21655,
-          21660
-        ],
-        "ruleId": "prohibited-words",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 1,
-        "index": 21682,
-        "line": 561,
-        "loc": {
-          "end": {
-            "column": 47,
-            "line": 561
-          },
-          "start": {
-            "column": 1,
-            "line": 561
-          }
-        },
-        "message": "Response wrapper found: chat-scaffold (break this down step by step). Remove assistant response scaffolding.",
-        "range": [
-          21682,
-          21728
-        ],
-        "ruleId": "response-wrapper",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 1,
-        "index": 21730,
-        "line": 563,
-        "loc": {
-          "end": {
-            "column": 44,
-            "line": 563
-          },
-          "start": {
-            "column": 1,
-            "line": 563
-          }
-        },
-        "message": "Response wrapper found: chat-scaffold (feel free to ask). Remove assistant response scaffolding.",
-        "range": [
-          21730,
-          21773
-        ],
-        "ruleId": "response-wrapper",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 1,
-        "index": 21775,
-        "line": 565,
-        "loc": {
-          "end": {
-            "column": 54,
-            "line": 565
-          },
-          "start": {
-            "column": 1,
-            "line": 565
-          }
-        },
-        "message": "Response wrapper found: chat-scaffold (please let me know). Remove assistant response scaffolding.",
-        "range": [
-          21775,
-          21828
-        ],
-        "ruleId": "response-wrapper",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 1,
-        "index": 21830,
-        "line": 567,
-        "loc": {
-          "end": {
-            "column": 45,
-            "line": 567
-          },
-          "start": {
-            "column": 1,
-            "line": 567
-          }
-        },
-        "message": "Response wrapper found: chat-scaffold (let me know if you'd like). Remove assistant response scaffolding.",
-        "range": [
-          21830,
-          21874
-        ],
-        "ruleId": "response-wrapper",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 1,
-        "index": 21876,
-        "line": 569,
-        "loc": {
-          "end": {
-            "column": 61,
-            "line": 569
-          },
-          "start": {
-            "column": 1,
-            "line": 569
-          }
-        },
-        "message": "Response wrapper found: chat-scaffold (hope this message finds you well). Remove assistant response scaffolding.",
-        "range": [
-          21876,
-          21936
-        ],
-        "ruleId": "response-wrapper",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 1,
-        "index": 21938,
-        "line": 571,
-        "loc": {
-          "end": {
-            "column": 32,
-            "line": 571
-          },
-          "start": {
-            "column": 1,
-            "line": 571
-          }
-        },
-        "message": "Demonstrative emphasis found: \"This is not an exhaustive list.\". Reduce repeated short emphasis lines.",
-        "range": [
-          21938,
-          21969
-        ],
-        "ruleId": "demonstrative-emphasis",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 1,
-        "index": 21938,
-        "line": 571,
-        "loc": {
-          "end": {
-            "column": 32,
-            "line": 571
-          },
-          "start": {
-            "column": 1,
-            "line": 571
-          }
-        },
-        "message": "Response wrapper found: chat-scaffold (this is not an exhaustive list). Remove assistant response scaffolding.",
-        "range": [
-          21938,
-          21969
-        ],
-        "ruleId": "response-wrapper",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 1,
-        "index": 21971,
-        "line": 573,
-        "loc": {
-          "end": {
-            "column": 63,
-            "line": 573
-          },
-          "start": {
-            "column": 1,
-            "line": 573
-          }
-        },
-        "message": "Response wrapper found: chat-followup (want me to delve deeper). Remove assistant response scaffolding.",
-        "range": [
-          21971,
-          22033
-        ],
-        "ruleId": "response-wrapper",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 27,
-        "index": 21997,
-        "line": 573,
-        "loc": {
-          "end": {
-            "column": 32,
-            "line": 573
-          },
-          "start": {
-            "column": 27,
-            "line": 573
-          }
-        },
-        "message": "LLM vocabulary found: \"delve\". Replace the stock diction with a concrete word.",
-        "range": [
-          21997,
-          22002
-        ],
-        "ruleId": "llm-vocabulary",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 27,
-        "index": 21997,
-        "line": 573,
-        "loc": {
-          "end": {
-            "column": 32,
-            "line": 573
-          },
-          "start": {
-            "column": 27,
-            "line": 573
-          }
-        },
-        "message": "Prohibited word found: \"delve\". Rewrite without this term.",
-        "range": [
-          21997,
-          22002
-        ],
-        "ruleId": "prohibited-words",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 1,
-        "index": 22035,
-        "line": 575,
-        "loc": {
-          "end": {
-            "column": 83,
-            "line": 575
-          },
-          "start": {
-            "column": 1,
-            "line": 575
-          }
-        },
-        "message": "Response wrapper found: chat-scaffold (it is worth noting). Remove assistant response scaffolding.",
-        "range": [
-          22035,
-          22117
-        ],
-        "ruleId": "response-wrapper",
-        "severity": 2,
-        "type": "lint"
-      },
-      {
-        "column": 1,
-        "index": 23832,
-        "line": 639,
-        "loc": {
-          "end": {
-            "column": 58,
-            "line": 639
-          },
-          "start": {
-            "column": 1,
-            "line": 639
-          }
-        },
-        "message": "Negation reframe found: \"The bug is not in the parser. It is in the offset mapper.\". Rewrite without the not-X-then-Y construction.",
-        "range": [
-          23832,
-          23889
+          21577,
+          21637
         ],
         "ruleId": "negation-reframe",
         "severity": 2,
@@ -12544,68 +12153,367 @@
       },
       {
         "column": 1,
-        "index": 24070,
-        "line": 647,
+        "index": 21639,
+        "line": 559,
+        "loc": {
+          "end": {
+            "column": 84,
+            "line": 559
+          },
+          "start": {
+            "column": 1,
+            "line": 559
+          }
+        },
+        "message": "Negation reframe found: \"He didn't look at the music box. Instead, he looked at their dusty, oil-matted fur.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          21639,
+          21722
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 11,
+        "index": 21649,
+        "line": 559,
+        "loc": {
+          "end": {
+            "column": 52,
+            "line": 559
+          },
+          "start": {
+            "column": 11,
+            "line": 559
+          }
+        },
+        "message": "Perception verb density: 2 perception verbs in a short span (look, looked).",
+        "range": [
+          21649,
+          21690
+        ],
+        "ruleId": "perception-verb-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 21724,
+        "line": 561,
+        "loc": {
+          "end": {
+            "column": 78,
+            "line": 561
+          },
+          "start": {
+            "column": 1,
+            "line": 561
+          }
+        },
+        "message": "Negation reframe found: \"The Red Claw gang was not just stealing silk anymore. They had stolen a life.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          21724,
+          21801
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 21803,
+        "line": 563,
+        "loc": {
+          "end": {
+            "column": 94,
+            "line": 563
+          },
+          "start": {
+            "column": 1,
+            "line": 563
+          }
+        },
+        "message": "Negation reframe found: \"The Red Claw gang was no longer just looking for a target. They were hunting the entire pack.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          21803,
+          21896
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 22063,
+        "line": 571,
+        "loc": {
+          "end": {
+            "column": 61,
+            "line": 571
+          },
+          "start": {
+            "column": 1,
+            "line": 571
+          }
+        },
+        "message": "Response wrapper found: chat-scaffold (let's delve into). Remove assistant response scaffolding.",
+        "range": [
+          22063,
+          22123
+        ],
+        "ruleId": "response-wrapper",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 7,
+        "index": 22069,
+        "line": 571,
+        "loc": {
+          "end": {
+            "column": 12,
+            "line": 571
+          },
+          "start": {
+            "column": 7,
+            "line": 571
+          }
+        },
+        "message": "LLM vocabulary found: \"delve\". Replace the stock diction with a concrete word.",
+        "range": [
+          22069,
+          22074
+        ],
+        "ruleId": "llm-vocabulary",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 7,
+        "index": 22069,
+        "line": 571,
+        "loc": {
+          "end": {
+            "column": 12,
+            "line": 571
+          },
+          "start": {
+            "column": 7,
+            "line": 571
+          }
+        },
+        "message": "Prohibited word found: \"delve\". Rewrite without this term.",
+        "range": [
+          22069,
+          22074
+        ],
+        "ruleId": "prohibited-words",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 22125,
+        "line": 573,
+        "loc": {
+          "end": {
+            "column": 38,
+            "line": 573
+          },
+          "start": {
+            "column": 1,
+            "line": 573
+          }
+        },
+        "message": "Response wrapper found: chat-scaffold (okay, let's delve). Remove assistant response scaffolding.",
+        "range": [
+          22125,
+          22162
+        ],
+        "ruleId": "response-wrapper",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 13,
+        "index": 22137,
+        "line": 573,
+        "loc": {
+          "end": {
+            "column": 18,
+            "line": 573
+          },
+          "start": {
+            "column": 13,
+            "line": 573
+          }
+        },
+        "message": "LLM vocabulary found: \"delve\". Replace the stock diction with a concrete word.",
+        "range": [
+          22137,
+          22142
+        ],
+        "ruleId": "llm-vocabulary",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 13,
+        "index": 22137,
+        "line": 573,
+        "loc": {
+          "end": {
+            "column": 18,
+            "line": 573
+          },
+          "start": {
+            "column": 13,
+            "line": 573
+          }
+        },
+        "message": "Prohibited word found: \"delve\". Rewrite without this term.",
+        "range": [
+          22137,
+          22142
+        ],
+        "ruleId": "prohibited-words",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 22164,
+        "line": 575,
+        "loc": {
+          "end": {
+            "column": 47,
+            "line": 575
+          },
+          "start": {
+            "column": 1,
+            "line": 575
+          }
+        },
+        "message": "Response wrapper found: chat-scaffold (break this down step by step). Remove assistant response scaffolding.",
+        "range": [
+          22164,
+          22210
+        ],
+        "ruleId": "response-wrapper",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 22212,
+        "line": 577,
+        "loc": {
+          "end": {
+            "column": 44,
+            "line": 577
+          },
+          "start": {
+            "column": 1,
+            "line": 577
+          }
+        },
+        "message": "Response wrapper found: chat-scaffold (feel free to ask). Remove assistant response scaffolding.",
+        "range": [
+          22212,
+          22255
+        ],
+        "ruleId": "response-wrapper",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 22257,
+        "line": 579,
         "loc": {
           "end": {
             "column": 54,
-            "line": 647
+            "line": 579
           },
           "start": {
             "column": 1,
-            "line": 647
+            "line": 579
           }
         },
-        "message": "Generic signposting found: the-goal-is-to. Replace the frame with the concrete claim.",
+        "message": "Response wrapper found: chat-scaffold (please let me know). Remove assistant response scaffolding.",
         "range": [
-          24070,
-          24123
+          22257,
+          22310
         ],
-        "ruleId": "generic-signposting",
+        "ruleId": "response-wrapper",
         "severity": 2,
         "type": "lint"
       },
       {
         "column": 1,
-        "index": 24253,
-        "line": 655,
+        "index": 22312,
+        "line": 581,
         "loc": {
           "end": {
-            "column": 58,
-            "line": 655
+            "column": 45,
+            "line": 581
           },
           "start": {
             "column": 1,
-            "line": 655
+            "line": 581
           }
         },
-        "message": "Boilerplate conclusion found: the core fact. Replace the closer with a specific ending.",
+        "message": "Response wrapper found: chat-scaffold (let me know if you'd like). Remove assistant response scaffolding.",
         "range": [
-          24253,
-          24310
+          22312,
+          22356
         ],
-        "ruleId": "boilerplate-conclusion",
+        "ruleId": "response-wrapper",
         "severity": 2,
         "type": "lint"
       },
       {
         "column": 1,
-        "index": 24253,
-        "line": 655,
+        "index": 22358,
+        "line": 583,
         "loc": {
           "end": {
-            "column": 58,
-            "line": 655
+            "column": 61,
+            "line": 583
           },
           "start": {
             "column": 1,
-            "line": 655
+            "line": 583
           }
         },
-        "message": "Demonstrative emphasis found: \"The core fact is that nothing here needed a grand finale.\". Reduce repeated short emphasis lines.",
+        "message": "Response wrapper found: chat-scaffold (hope this message finds you well). Remove assistant response scaffolding.",
         "range": [
-          24253,
-          24310
+          22358,
+          22418
+        ],
+        "ruleId": "response-wrapper",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 22420,
+        "line": 585,
+        "loc": {
+          "end": {
+            "column": 32,
+            "line": 585
+          },
+          "start": {
+            "column": 1,
+            "line": 585
+          }
+        },
+        "message": "Demonstrative emphasis found: \"This is not an exhaustive list.\". Reduce repeated short emphasis lines.",
+        "range": [
+          22420,
+          22451
         ],
         "ruleId": "demonstrative-emphasis",
         "severity": 2,
@@ -12613,22 +12521,229 @@
       },
       {
         "column": 1,
-        "index": 24253,
-        "line": 655,
+        "index": 22420,
+        "line": 585,
         "loc": {
           "end": {
-            "column": 58,
-            "line": 655
+            "column": 32,
+            "line": 585
           },
           "start": {
             "column": 1,
-            "line": 655
+            "line": 585
+          }
+        },
+        "message": "Response wrapper found: chat-scaffold (this is not an exhaustive list). Remove assistant response scaffolding.",
+        "range": [
+          22420,
+          22451
+        ],
+        "ruleId": "response-wrapper",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 22453,
+        "line": 587,
+        "loc": {
+          "end": {
+            "column": 63,
+            "line": 587
+          },
+          "start": {
+            "column": 1,
+            "line": 587
+          }
+        },
+        "message": "Response wrapper found: chat-followup (want me to delve deeper). Remove assistant response scaffolding.",
+        "range": [
+          22453,
+          22515
+        ],
+        "ruleId": "response-wrapper",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 27,
+        "index": 22479,
+        "line": 587,
+        "loc": {
+          "end": {
+            "column": 32,
+            "line": 587
+          },
+          "start": {
+            "column": 27,
+            "line": 587
+          }
+        },
+        "message": "LLM vocabulary found: \"delve\". Replace the stock diction with a concrete word.",
+        "range": [
+          22479,
+          22484
+        ],
+        "ruleId": "llm-vocabulary",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 27,
+        "index": 22479,
+        "line": 587,
+        "loc": {
+          "end": {
+            "column": 32,
+            "line": 587
+          },
+          "start": {
+            "column": 27,
+            "line": 587
+          }
+        },
+        "message": "Prohibited word found: \"delve\". Rewrite without this term.",
+        "range": [
+          22479,
+          22484
+        ],
+        "ruleId": "prohibited-words",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 22517,
+        "line": 589,
+        "loc": {
+          "end": {
+            "column": 83,
+            "line": 589
+          },
+          "start": {
+            "column": 1,
+            "line": 589
+          }
+        },
+        "message": "Response wrapper found: chat-scaffold (it is worth noting). Remove assistant response scaffolding.",
+        "range": [
+          22517,
+          22599
+        ],
+        "ruleId": "response-wrapper",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 24314,
+        "line": 653,
+        "loc": {
+          "end": {
+            "column": 58,
+            "line": 653
+          },
+          "start": {
+            "column": 1,
+            "line": 653
+          }
+        },
+        "message": "Negation reframe found: \"The bug is not in the parser. It is in the offset mapper.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          24314,
+          24371
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 24552,
+        "line": 661,
+        "loc": {
+          "end": {
+            "column": 54,
+            "line": 661
+          },
+          "start": {
+            "column": 1,
+            "line": 661
+          }
+        },
+        "message": "Generic signposting found: the-goal-is-to. Replace the frame with the concrete claim.",
+        "range": [
+          24552,
+          24605
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 24735,
+        "line": 669,
+        "loc": {
+          "end": {
+            "column": 58,
+            "line": 669
+          },
+          "start": {
+            "column": 1,
+            "line": 669
+          }
+        },
+        "message": "Boilerplate conclusion found: the core fact. Replace the closer with a specific ending.",
+        "range": [
+          24735,
+          24792
+        ],
+        "ruleId": "boilerplate-conclusion",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 24735,
+        "line": 669,
+        "loc": {
+          "end": {
+            "column": 58,
+            "line": 669
+          },
+          "start": {
+            "column": 1,
+            "line": 669
+          }
+        },
+        "message": "Demonstrative emphasis found: \"The core fact is that nothing here needed a grand finale.\". Reduce repeated short emphasis lines.",
+        "range": [
+          24735,
+          24792
+        ],
+        "ruleId": "demonstrative-emphasis",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 24735,
+        "line": 669,
+        "loc": {
+          "end": {
+            "column": 58,
+            "line": 669
+          },
+          "start": {
+            "column": 1,
+            "line": 669
           }
         },
         "message": "Generic signposting found: the-core-fact-is. Replace the frame with the concrete claim.",
         "range": [
-          24253,
-          24310
+          24735,
+          24792
         ],
         "ruleId": "generic-signposting",
         "severity": 2,
@@ -12636,22 +12751,22 @@
       },
       {
         "column": 1,
-        "index": 24312,
-        "line": 657,
+        "index": 24794,
+        "line": 671,
         "loc": {
           "end": {
             "column": 74,
-            "line": 657
+            "line": 671
           },
           "start": {
             "column": 1,
-            "line": 657
+            "line": 671
           }
         },
         "message": "Generic signposting found: the-job-is-to. Replace the frame with the concrete claim.",
         "range": [
-          24312,
-          24385
+          24794,
+          24867
         ],
         "ruleId": "generic-signposting",
         "severity": 2,
@@ -12659,22 +12774,22 @@
       },
       {
         "column": 1,
-        "index": 24623,
-        "line": 669,
+        "index": 25105,
+        "line": 683,
         "loc": {
           "end": {
             "column": 56,
-            "line": 669
+            "line": 683
           },
           "start": {
             "column": 1,
-            "line": 669
+            "line": 683
           }
         },
         "message": "False question found: \"isn't that the goal\". Make the claim directly.",
         "range": [
-          24623,
-          24678
+          25105,
+          25160
         ],
         "ruleId": "false-question",
         "severity": 2,
@@ -12682,22 +12797,22 @@
       },
       {
         "column": 1,
-        "index": 24707,
-        "line": 673,
+        "index": 25189,
+        "line": 687,
         "loc": {
           "end": {
             "column": 60,
-            "line": 673
+            "line": 687
           },
           "start": {
             "column": 1,
-            "line": 673
+            "line": 687
           }
         },
         "message": "False question found: \"isn't that what matters\". Make the claim directly.",
         "range": [
-          24707,
-          24766
+          25189,
+          25248
         ],
         "ruleId": "false-question",
         "severity": 2,
@@ -12705,22 +12820,22 @@
       },
       {
         "column": 1,
-        "index": 24793,
-        "line": 677,
+        "index": 25275,
+        "line": 691,
         "loc": {
           "end": {
             "column": 45,
-            "line": 677
+            "line": 691
           },
           "start": {
             "column": 1,
-            "line": 677
+            "line": 691
           }
         },
         "message": "False question found: \"isn't that the point\". Make the claim directly.",
         "range": [
-          24793,
-          24837
+          25275,
+          25319
         ],
         "ruleId": "false-question",
         "severity": 2,
@@ -12728,22 +12843,22 @@
       },
       {
         "column": 1,
-        "index": 24793,
-        "line": 677,
+        "index": 25275,
+        "line": 691,
         "loc": {
           "end": {
             "column": 45,
-            "line": 677
+            "line": 691
           },
           "start": {
             "column": 1,
-            "line": 677
+            "line": 691
           }
         },
         "message": "Summative closer found: \"that's why it matters\". End with the concrete point instead.",
         "range": [
-          24793,
-          24837
+          25275,
+          25319
         ],
         "ruleId": "summative-closer",
         "severity": 2,
@@ -12751,22 +12866,22 @@
       },
       {
         "column": 1,
-        "index": 24863,
-        "line": 681,
+        "index": 25345,
+        "line": 695,
         "loc": {
           "end": {
             "column": 33,
-            "line": 681
+            "line": 695
           },
           "start": {
             "column": 1,
-            "line": 681
+            "line": 695
           }
         },
         "message": "False question found: \"isn't that what we all\". Make the claim directly.",
         "range": [
-          24863,
-          24895
+          25345,
+          25377
         ],
         "ruleId": "false-question",
         "severity": 2,
@@ -18426,6 +18541,236 @@
         "ruleId": "narrative-cliches",
         "severity": 2,
         "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 401,
+        "line": 19,
+        "loc": {
+          "end": {
+            "column": 183,
+            "line": 19
+          },
+          "start": {
+            "column": 1,
+            "line": 19
+          }
+        },
+        "message": "Flat action cadence: 4 adjacent short simple sentences use subject-action beats (sat, stared, look, hung). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          401,
+          583
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 56,
+        "index": 456,
+        "line": 19,
+        "loc": {
+          "end": {
+            "column": 105,
+            "line": 19
+          },
+          "start": {
+            "column": 56,
+            "line": 19
+          }
+        },
+        "message": "Perception verb density: 2 perception verbs in a short span (stared, look).",
+        "range": [
+          456,
+          505
+        ],
+        "ruleId": "perception-verb-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 585,
+        "line": 21,
+        "loc": {
+          "end": {
+            "column": 99,
+            "line": 21
+          },
+          "start": {
+            "column": 1,
+            "line": 21
+          }
+        },
+        "message": "Flat action cadence: 3 adjacent short simple sentences use subject-action beats (stepped, picked, was). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          585,
+          683
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 8,
+        "index": 692,
+        "line": 23,
+        "loc": {
+          "end": {
+            "column": 130,
+            "line": 23
+          },
+          "start": {
+            "column": 8,
+            "line": 23
+          }
+        },
+        "message": "Perception verb density: 4 perception verbs in a short span (watched, observe, looked, looking).",
+        "range": [
+          692,
+          814
+        ],
+        "ruleId": "perception-verb-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 829,
+        "line": 25,
+        "loc": {
+          "end": {
+            "column": 132,
+            "line": 25
+          },
+          "start": {
+            "column": 1,
+            "line": 25
+          }
+        },
+        "message": "Flat action cadence: 3 adjacent short simple sentences use subject-action beats (stared, look, hung). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          829,
+          960
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 5,
+        "index": 833,
+        "line": 25,
+        "loc": {
+          "end": {
+            "column": 54,
+            "line": 25
+          },
+          "start": {
+            "column": 5,
+            "line": 25
+          }
+        },
+        "message": "Perception verb density: 2 perception verbs in a short span (stared, look).",
+        "range": [
+          833,
+          882
+        ],
+        "ruleId": "perception-verb-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 962,
+        "line": 27,
+        "loc": {
+          "end": {
+            "column": 223,
+            "line": 27
+          },
+          "start": {
+            "column": 1,
+            "line": 27
+          }
+        },
+        "message": "Flat action cadence: 4 adjacent short simple sentences use subject-action beats (climbed, pulled, walked, crouched). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          962,
+          1184
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 7,
+        "index": 968,
+        "line": 27,
+        "loc": {
+          "end": {
+            "column": 183,
+            "line": 27
+          },
+          "start": {
+            "column": 7,
+            "line": 27
+          }
+        },
+        "message": "Body-action density: 4 movement cues in a short span (climbed, pulled, walked, crouched).",
+        "range": [
+          968,
+          1144
+        ],
+        "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1186,
+        "line": 29,
+        "loc": {
+          "end": {
+            "column": 80,
+            "line": 29
+          },
+          "start": {
+            "column": 1,
+            "line": 29
+          }
+        },
+        "message": "Flat action cadence: 3 adjacent short simple sentences use subject-action beats (twitched, angled, shifted). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          1186,
+          1265
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 10,
+        "index": 1195,
+        "line": 29,
+        "loc": {
+          "end": {
+            "column": 54,
+            "line": 29
+          },
+          "start": {
+            "column": 10,
+            "line": 29
+          }
+        },
+        "message": "Body-action density: 3 body cues in a short span (ears, tail, paws).",
+        "range": [
+          1195,
+          1239
+        ],
+        "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
       }
     ]
   },
@@ -23198,6 +23543,75 @@
         "range": [
           1519,
           1537
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1539,
+        "line": 93,
+        "loc": {
+          "end": {
+            "column": 35,
+            "line": 93
+          },
+          "start": {
+            "column": 1,
+            "line": 93
+          }
+        },
+        "message": "Semantic thinness (abstract-personification-line): Catch abstract nouns treated as social actors in short payoff lines without concrete action or cause. Matched template: {abstractSubject} had no place in {thinContainer}.",
+        "range": [
+          1539,
+          1573
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1575,
+        "line": 95,
+        "loc": {
+          "end": {
+            "column": 58,
+            "line": 95
+          },
+          "start": {
+            "column": 1,
+            "line": 95
+          }
+        },
+        "message": "Semantic thinness (fixed-metaphor-frame): Catch fixed scene metaphors that present a place as a stock metaphor of stacked image nouns. Matched template: {placeSubject} was a {metaphorNoun} of {imageNoun} and {imageNoun}.",
+        "range": [
+          1575,
+          1632
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1634,
+        "line": 97,
+        "loc": {
+          "end": {
+            "column": 74,
+            "line": 97
+          },
+          "start": {
+            "column": 1,
+            "line": 97
+          }
+        },
+        "message": "Semantic thinness (sensory-instead-of-frame): Catch sensory atmosphere substitution frames that replace concrete scene information with stacked scent nouns. Matched template: {placeSubject} smelled of {sensoryNoun} and {sensoryNoun} instead of {expectedScent}.",
+        "range": [
+          1634,
+          1707
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,
@@ -36823,6 +37237,121 @@
         "ruleId": "response-wrapper",
         "severity": 2,
         "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 45853,
+        "line": 953,
+        "loc": {
+          "end": {
+            "column": 61,
+            "line": 953
+          },
+          "start": {
+            "column": 1,
+            "line": 953
+          }
+        },
+        "message": "Negation reframe found: \"She did not go to Arden. She went to the rug merchant alley.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          45853,
+          45913
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 45915,
+        "line": 955,
+        "loc": {
+          "end": {
+            "column": 84,
+            "line": 955
+          },
+          "start": {
+            "column": 1,
+            "line": 955
+          }
+        },
+        "message": "Negation reframe found: \"He didn't look at the music box. Instead, he looked at their dusty, oil-matted fur.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          45915,
+          45998
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 11,
+        "index": 45925,
+        "line": 955,
+        "loc": {
+          "end": {
+            "column": 52,
+            "line": 955
+          },
+          "start": {
+            "column": 11,
+            "line": 955
+          }
+        },
+        "message": "Perception verb density: 2 perception verbs in a short span (look, looked).",
+        "range": [
+          45925,
+          45966
+        ],
+        "ruleId": "perception-verb-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 46000,
+        "line": 957,
+        "loc": {
+          "end": {
+            "column": 78,
+            "line": 957
+          },
+          "start": {
+            "column": 1,
+            "line": 957
+          }
+        },
+        "message": "Negation reframe found: \"The Red Claw gang was not just stealing silk anymore. They had stolen a life.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          46000,
+          46077
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 46079,
+        "line": 959,
+        "loc": {
+          "end": {
+            "column": 94,
+            "line": 959
+          },
+          "start": {
+            "column": 1,
+            "line": 959
+          }
+        },
+        "message": "Negation reframe found: \"The Red Claw gang was no longer just looking for a target. They were hunting the entire pack.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          46079,
+          46172
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
       }
     ]
   },
@@ -40268,6 +40797,305 @@
           6265
         ],
         "ruleId": "narrative-cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 7243,
+        "line": 245,
+        "loc": {
+          "end": {
+            "column": 35,
+            "line": 245
+          },
+          "start": {
+            "column": 1,
+            "line": 245
+          }
+        },
+        "message": "Semantic thinness (abstract-personification-line): Catch abstract nouns treated as social actors in short payoff lines without concrete action or cause. Matched template: {abstractSubject} had no place in {thinContainer}.",
+        "range": [
+          7243,
+          7277
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 7279,
+        "line": 247,
+        "loc": {
+          "end": {
+            "column": 58,
+            "line": 247
+          },
+          "start": {
+            "column": 1,
+            "line": 247
+          }
+        },
+        "message": "Semantic thinness (fixed-metaphor-frame): Catch fixed scene metaphors that present a place as a stock metaphor of stacked image nouns. Matched template: {placeSubject} was a {metaphorNoun} of {imageNoun} and {imageNoun}.",
+        "range": [
+          7279,
+          7336
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 7338,
+        "line": 249,
+        "loc": {
+          "end": {
+            "column": 74,
+            "line": 249
+          },
+          "start": {
+            "column": 1,
+            "line": 249
+          }
+        },
+        "message": "Semantic thinness (sensory-instead-of-frame): Catch sensory atmosphere substitution frames that replace concrete scene information with stacked scent nouns. Matched template: {placeSubject} smelled of {sensoryNoun} and {sensoryNoun} instead of {expectedScent}.",
+        "range": [
+          7338,
+          7411
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 7413,
+        "line": 251,
+        "loc": {
+          "end": {
+            "column": 183,
+            "line": 251
+          },
+          "start": {
+            "column": 1,
+            "line": 251
+          }
+        },
+        "message": "Flat action cadence: 4 adjacent short simple sentences use subject-action beats (sat, stared, look, hung). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          7413,
+          7595
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 56,
+        "index": 7468,
+        "line": 251,
+        "loc": {
+          "end": {
+            "column": 105,
+            "line": 251
+          },
+          "start": {
+            "column": 56,
+            "line": 251
+          }
+        },
+        "message": "Perception verb density: 2 perception verbs in a short span (stared, look).",
+        "range": [
+          7468,
+          7517
+        ],
+        "ruleId": "perception-verb-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 7597,
+        "line": 253,
+        "loc": {
+          "end": {
+            "column": 99,
+            "line": 253
+          },
+          "start": {
+            "column": 1,
+            "line": 253
+          }
+        },
+        "message": "Flat action cadence: 3 adjacent short simple sentences use subject-action beats (stepped, picked, was). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          7597,
+          7695
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 8,
+        "index": 7704,
+        "line": 255,
+        "loc": {
+          "end": {
+            "column": 130,
+            "line": 255
+          },
+          "start": {
+            "column": 8,
+            "line": 255
+          }
+        },
+        "message": "Perception verb density: 4 perception verbs in a short span (watched, observe, looked, looking).",
+        "range": [
+          7704,
+          7826
+        ],
+        "ruleId": "perception-verb-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 7841,
+        "line": 257,
+        "loc": {
+          "end": {
+            "column": 132,
+            "line": 257
+          },
+          "start": {
+            "column": 1,
+            "line": 257
+          }
+        },
+        "message": "Flat action cadence: 3 adjacent short simple sentences use subject-action beats (stared, look, hung). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          7841,
+          7972
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 5,
+        "index": 7845,
+        "line": 257,
+        "loc": {
+          "end": {
+            "column": 54,
+            "line": 257
+          },
+          "start": {
+            "column": 5,
+            "line": 257
+          }
+        },
+        "message": "Perception verb density: 2 perception verbs in a short span (stared, look).",
+        "range": [
+          7845,
+          7894
+        ],
+        "ruleId": "perception-verb-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 7974,
+        "line": 259,
+        "loc": {
+          "end": {
+            "column": 223,
+            "line": 259
+          },
+          "start": {
+            "column": 1,
+            "line": 259
+          }
+        },
+        "message": "Flat action cadence: 4 adjacent short simple sentences use subject-action beats (climbed, pulled, walked, crouched). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          7974,
+          8196
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 7,
+        "index": 7980,
+        "line": 259,
+        "loc": {
+          "end": {
+            "column": 183,
+            "line": 259
+          },
+          "start": {
+            "column": 7,
+            "line": 259
+          }
+        },
+        "message": "Body-action density: 4 movement cues in a short span (climbed, pulled, walked, crouched).",
+        "range": [
+          7980,
+          8156
+        ],
+        "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 8198,
+        "line": 261,
+        "loc": {
+          "end": {
+            "column": 80,
+            "line": 261
+          },
+          "start": {
+            "column": 1,
+            "line": 261
+          }
+        },
+        "message": "Flat action cadence: 3 adjacent short simple sentences use subject-action beats (twitched, angled, shifted). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          8198,
+          8277
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 10,
+        "index": 8207,
+        "line": 261,
+        "loc": {
+          "end": {
+            "column": 54,
+            "line": 261
+          },
+          "start": {
+            "column": 10,
+            "line": 261
+          }
+        },
+        "message": "Body-action density: 3 body cues in a short span (ears, tail, paws).",
+        "range": [
+          8207,
+          8251
+        ],
+        "ruleId": "body-action-density",
         "severity": 2,
         "type": "lint"
       }

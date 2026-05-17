@@ -1,11 +1,11 @@
 {
   "suite": "textlint-rules",
   "kind": "approved",
-  "run_id": "2026-05-17T15-35-23.310757Z-f3c41e06",
-  "run_commit": "daad2cf",
+  "run_id": "2026-05-17T16-37-41.284769Z-f3c41e06",
+  "run_commit": "3c1c105",
   "working_tree": "dirty",
-  "recorded_at": "2026-05-17T15:35:23.310757Z",
-  "fixture_hash": "sha256:8ac169e8c91db5d45c7ac4fec6e9064af7bf2547f07a8384b6d5d0c821f8c126",
+  "recorded_at": "2026-05-17T16:37:41.284769Z",
+  "fixture_hash": "sha256:5fcf1b9a1cb9afe06941885bcdcab8bfd44aaa2c43f8a65fe47d2f5d7f45cd0d",
   "manifest_hash": "sha256:f3c41e06f4c33e3b21fa87bec32cd48f42af6c1064c3e6ae7d226d744fdbe350",
   "tool_version": "0.1.8",
   "output_schema_version": "1",
@@ -32,11 +32,11 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/narrative-slop/hits.md",
-      "sha256": "sha256:ba48e332d4119f165dcc657ddaaa1903238b8a8e616dc6b90a6e0ae59ea901de"
+      "sha256": "sha256:f849b339302d06bd63f4ddfb8c27dd54d2274c30fb55e0e157bba838e4825b25"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/narrative-slop/no-hits.md",
-      "sha256": "sha256:c54a80275ff592d18df36f68c1d15116094b6d27c248df30645517dc096d01d3"
+      "sha256": "sha256:eab83f55e6d88ad596d00db4c6d7730b123433d3731a2131fbe4b56c69b9b40c"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/no-signal/no-hits.md",
@@ -60,19 +60,19 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md",
-      "sha256": "sha256:ee69bd5b711004df37c26726d810ab0c8cda36cec3a9fba99a5e4858a2cafc6d"
+      "sha256": "sha256:cfeb11e56f2a9b7bec08f526d7ef897adb8e41241e9ab20978b3fbfcd758ca33"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md",
-      "sha256": "sha256:d5389eead0b247de8c4e33fe54aa95f04632b218cd44a601359218451ad5933b"
+      "sha256": "sha256:c64205d3d3a098f40b457c99f5e887ae0caa2c6c975357cc820cc4d121cdb3c4"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md",
-      "sha256": "sha256:2d77e828e8a9554dc7e1d5da7215425fdce7d9885114ec56e2a492d69acf7abf"
+      "sha256": "sha256:da28ca6ffdaa14c83031eaf63a5fbdd867a929904e753defb48eaac361d6f1df"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md",
-      "sha256": "sha256:907d55810b81dae30f927fd621e3113f17b624a175b2260bf0720295fd5627a4"
+      "sha256": "sha256:471b8a5748969797752af949fc5a8863a5da60d515e532d59e350ab70871f2ad"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/term-policy/hits.md",
@@ -96,7 +96,7 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/engineering-review.md",
-      "sha256": "sha256:9d42226773e14b0ee5aa8fe1292c3a6eeb85108792d45cc783380e53ef9355c9"
+      "sha256": "sha256:396de2b2dcfaf6cfe444126e7357322ad495b7e60136fa0d392581e257d6c32d"
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/health-and-parenting.md",
@@ -108,12 +108,12 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md",
-      "sha256": "sha256:19aa8cd0506ec78bf0622c34cede75af08b152e2f6c514e7b1b7db4b5c440f05"
+      "sha256": "sha256:739647fff68902a79c03971216d3c07f8d104cfddaf6a04f7eb2798fea38069f"
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/technical-terminology.md",
       "sha256": "sha256:bf69c066e8560de8c1dc151e5ee486fa1c47e2b6fbe178f07eba5ce96193a9e6"
     }
   ],
-  "comment": "Narrow source pattern implementation"
+  "comment": "Sunstone slop rule expansion"
 }

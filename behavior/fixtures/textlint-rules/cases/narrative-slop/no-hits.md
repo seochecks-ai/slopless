@@ -25,3 +25,9 @@ Her voice was barely a whisper because the microphone gain was set too low.
 The air was thick with tension because the cable had been tightened past its rating.
 
 The sun dipped below the horizon because the sensor was mounted on a moving rig.
+
+Young readers need short lines, so the draft keeps the scene clear with plain words.
+
+Cassia looked for the torn stitch under the table and found it beside the left leg.
+
+Arden climbed the crates to reach the broken pulley, then wedged the rope under the iron hook.

@@ -552,6 +552,20 @@ And that's what makes this approach so powerful.
 
 And isn't that what we all want?
 
+## negation source patterns
+
+She did not go to Arden. She went to the rug merchant alley.
+
+He didn't look at the music box. Instead, he looked at their dusty, oil-matted fur.
+
+The Red Claw gang was not just stealing silk anymore. They had stolen a life.
+
+The Red Claw gang was no longer just looking for a target. They were hunting the entire pack.
+
+She did not go to Arden because Arden had already left for the pier.
+
+He didn't look at the music box until Cassia opened the lid.
+
 ## source llm artifact wrappers
 
 Let's delve into the deployment plan before naming the risk.

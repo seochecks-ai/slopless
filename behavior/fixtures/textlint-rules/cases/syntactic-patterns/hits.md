@@ -949,3 +949,11 @@ This is not an exhaustive list.
 Tell me if you want me to delve deeper into a specific aspect.
 
 It is worth noting that this paragraph starts with a wrapper instead of the point.
+
+She did not go to Arden. She went to the rug merchant alley.
+
+He didn't look at the music box. Instead, he looked at their dusty, oil-matted fur.
+
+The Red Claw gang was not just stealing silk anymore. They had stolen a life.
+
+The Red Claw gang was no longer just looking for a target. They were hunting the entire pack.

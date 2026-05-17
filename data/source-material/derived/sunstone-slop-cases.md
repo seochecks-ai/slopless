@@ -6,6 +6,8 @@ Source: user-supplied Sunstone prose cases on 2026-05-17.
 
 Purpose: classify every supplied case into generalized rule-design groups so later rule work can add cases, no-hit controls, corpus prose, and implementation.
 
+Implemented examples were moved to `data/source-material/incorporation-record.md`.
+
 ## Negation Reframe And Contrast Pivot
 
 Likely family: `syntactic-patterns/contrast`.
@@ -20,19 +22,14 @@ Generalized catch:
 
 Examples:
 
-- `She did not go to Arden. She went to the rug merchant alley.`
-- `The Red Claw gang was not just stealing silk anymore. They had stolen a life.`
 - `It was no longer a target. It was noise.`
-- `The Red Claw gang was no longer just looking for a target. They were hunting the entire pack.`
 - `The Captain didn't shout. He remained seated at his desk.`
 - `This isn't an accident. This is a deliberate attempt to break our map.`
 - `"They didn't give up, Arden," [Cassia said. She looked toward the docks.] "They've changed the game."`
 - `He didn't look at the gates.`
 - `Imani didn't waste a second.`
-- `He didn't look at the music box. Instead, he looked at their dusty, oil-matted fur.`
 - `The correct next step is not more guessing. It is to rerun reduction on those three.`
 - `She did not wait for anyone to ask her a question. She pointed a small paw toward the ceiling`
-- `She stared out at the dark roofline. She did not look down at the older kids. Her fluffy tail hung still over the edge of the wood.`
 
 Notes:
 
@@ -113,9 +110,7 @@ Examples:
 - `The group watched her eyes move.`
 - `Mya Nanda looked at Marius.`
 - `Marius looked at Cassia and Arden. He didn't look at the other cubs.`
-- `Cassia watched him leave. Her father had told her to observe and listen. She looked at Arden. The caracal boy was already looking back at her.`
 - `Cassia stepped up to the window. She rested her paws on the wooden sill. She looked at the slope of the roof and the dark tiles.`
-- `She stared out at the dark roofline. She did not look down at the older kids. Her fluffy tail hung still over the edge of the wood.`
 
 Notes:
 
@@ -137,7 +132,6 @@ Examples:
 
 - `Remal stood in the doorway beside Cassia. He crossed his thick arms over his chest. He looked at the empty room and nodded slowly.`
 - `Cassia stepped up to the window. She rested her paws on the wooden sill. She looked at the slope of the roof and the dark tiles.`
-- `Arden climbed the crates next to her. He pulled himself up to the roof edge. Arden walked along the parapet that separated the workshop roof from the neighbor's building. He crouched low and ran his fingers over the stone`
 - `They came in over the roof. They left through the back door. Then they rolled the cart away`
 
 Notes:
@@ -159,10 +153,8 @@ Generalized catch:
 
 Examples:
 
-- `The south pier was a graveyard of shadows and salt spray.`
 - `The catwalk felt like a tightrope over a pit of vipers.`
 - `The morning yard smelled of dry tea and old hemp.`
-- `The courtyard smelled of disturbed dust and old ash instead of hot metal.`
 - `The X [...] hit her like a physical weight.`
 - `Cassia froze. The chalk in her pocket felt like a burning coal.`
 
@@ -184,10 +176,8 @@ Generalized catch:
 
 Examples:
 
-- `The Red Claw gang was not just stealing silk anymore. They had stolen a life.`
 - `She looked at her work. The signal was gone. The mark on her own gate was now just one of many.`
 - `It was no longer a target. It was noise.`
-- `The Red Claw gang was no longer just looking for a target. They were hunting the entire pack.`
 - `"They didn't give up, Arden," [Cassia said. She looked toward the docks.] "They've changed the game."`
 
 Notes:
@@ -208,7 +198,6 @@ Generalized catch:
 Examples:
 
 - `a solid front of competence and shared experience.`
-- `Fear had no place in her schedule.`
 - `The target is not any abstract noun phrase. The target is an empty evaluative group summary or abstract-personification line replacing concrete behavior.`
 
 Notes:
@@ -229,11 +218,9 @@ Generalized catch:
 
 Examples:
 
-- `The little snow leopard girl sat on the wide sill. She stared out at the dark roofline. She did not look down at the older kids. Her fluffy tail hung still over the edge of the wood.`
 - `Liska turned her head. Her brown eyes looked tired. She crossed her arms over her chest and waited.`
 - `Liska blinked. She sat up straighter on the sill. The anger finally melted out of her posture. She looked past Cassia toward the group of guards in the yard.`
 - `Remal walked over to the window. The heavy African golden cat stopped next to Cassia. He looked up at the small girl on the sill.`
-- `Cassia stepped out of the shadows. She picked up the practice sword. The wood was cold in her paw.`
 - `The rest of the drill was a blur. Cassia tied her hitches with trembling paws. She didn't hear Marius's instructions.`
 
 Notes:

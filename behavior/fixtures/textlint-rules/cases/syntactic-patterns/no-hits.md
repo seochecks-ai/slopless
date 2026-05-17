@@ -103,3 +103,7 @@ The technical note says the firmware version matters before flashing.
 The report says it's worth noting that the sample size doubled.
 
 The article quotes "it is important to note" as boilerplate.
+
+She did not go to Arden because Arden had already left for the pier.
+
+He didn't look at the music box until Cassia opened the lid.

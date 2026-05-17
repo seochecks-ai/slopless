@@ -1,0 +1,40 @@
+{
+  "id": "sensory-instead-of-frame",
+  "class": "sensory-substitution",
+  "purpose": "Catch sensory atmosphere substitution frames that replace concrete scene information with stacked scent nouns.",
+  "maxTokens": 16,
+  "templates": [
+    "{placeSubject} smelled of {sensoryNoun} and {sensoryNoun} instead of {expectedScent}."
+  ],
+  "slots": {
+    "placeSubject": [
+      "the courtyard",
+      "the yard",
+      "the morning yard",
+      "the market"
+    ],
+    "sensoryNoun": [
+      "disturbed dust",
+      "old ash",
+      "dry tea",
+      "old hemp",
+      "smoke",
+      "salt"
+    ],
+    "expectedScent": ["hot metal", "oil", "fresh bread", "wet stone"]
+  },
+  "rejectIf": [
+    "sentence includes a concrete source for the smell",
+    "sentence includes a cause clause",
+    "sentence identifies the object producing the odor"
+  ],
+  "positiveExamples": [
+    "The courtyard smelled of disturbed dust and old ash instead of hot metal."
+  ],
+  "negativeExamples": [
+    "The courtyard smelled of ash because the kiln had cracked during firing."
+  ],
+  "notes": [
+    "This targets the explicit instead-of scent substitution frame, not ordinary concrete smell description."
+  ]
+}

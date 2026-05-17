@@ -243,6 +243,33 @@ Research material that is not implemented stays in `data/source-material/derived
   - academic checks use exact known tortured phrases
   - narrative checks use narrow reviewed frames and skip concrete-cause sentences
 
+### Sunstone Slop Case Classification
+
+- Source:
+  - user-supplied Sunstone prose cases recorded in `data/source-material/derived/sunstone-slop-cases.md`
+- Rules:
+  - `src/families/semantic-thinness/semantic-thinness.ts`
+  - `src/families/syntactic-patterns/contrast/negation-reframe.ts`
+  - `src/families/narrative-slop/perception-verb-density.ts`
+  - `src/families/narrative-slop/body-action-density.ts`
+  - `src/families/narrative-slop/flat-action-cadence.ts`
+- Implemented as:
+  - semantic template expansions
+  - contrast-pivot sentence-pair matching
+  - paragraph/window density checks for perception verbs
+  - paragraph/window density checks for body-action event classes
+  - flat short-action cadence detection
+- Local transformations:
+  - grouped different verbs into event classes instead of exact word repetition
+  - kept contrast-pivot logic inside `negation-reframe`
+  - kept density and cadence logic inside `narrative-slop`
+- False-positive controls:
+  - semantic templates reject cause clauses through the existing semantic-thinness matcher
+  - negation no-hit controls cover cause and temporal clauses
+  - perception density skips concrete `look for`, `look up`, `look under`, and `look into` searches
+  - body-action controls require repeated event-class density rather than one action
+  - flat cadence requires adjacent short simple sentence runs, not sentence length alone
+
 ## Matching Architecture We Built Ourselves
 
 Slopless does not run upstream prose-linter plugins directly.

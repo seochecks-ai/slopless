@@ -1,0 +1,107 @@
+[meta]
+plan = ".plans/2026-05-17-172332-sunstone-slop-rule-expansion.md"
+source_note = "data/source-material/derived/sunstone-slop-cases.md"
+golden_acceptance = "blocked_until_false_positive_review"
+
+[[expanded_rule]]
+id = "semantic-thinness"
+family = "semantic-thinness"
+path = "src/families/semantic-thinness/semantic-thinness.ts"
+cases_hits = "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md"
+cases_no_hits = "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
+required_pattern_ids = [
+  "abstract-personification-line",
+  "fixed-metaphor-frame",
+  "sensory-instead-of-frame"
+]
+required_hit_text = [
+  "Fear had no place in her schedule.",
+  "The south pier was a graveyard of shadows and salt spray.",
+  "The courtyard smelled of disturbed dust and old ash instead of hot metal."
+]
+required_no_hit_text = [
+  "Fear had no place in the posted evacuation plan because the exits were marked and staffed.",
+  "The courtyard smelled of ash because the kiln had cracked during firing."
+]
+
+[[expanded_rule]]
+id = "negation-reframe"
+family = "syntactic-patterns"
+path = "src/families/syntactic-patterns/contrast/negation-reframe.ts"
+cases_hits = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md"
+cases_no_hits = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+required_hit_text = [
+  "She did not go to Arden. She went to the rug merchant alley.",
+  "He didn't look at the music box. Instead, he looked at their dusty, oil-matted fur.",
+  "The Red Claw gang was not just stealing silk anymore. They had stolen a life.",
+  "The Red Claw gang was no longer just looking for a target. They were hunting the entire pack."
+]
+required_no_hit_text = [
+  "She did not go to Arden because Arden had already left for the pier.",
+  "He didn't look at the music box until Cassia opened the lid."
+]
+
+[[new_rule]]
+id = "perception-verb-density"
+family = "narrative-slop"
+path = "src/families/narrative-slop/perception-verb-density.ts"
+registry = "src/registries/narrative-slop.ts"
+export = "./families/narrative-slop/perception-verb-density"
+preset = true
+cases_hits = "behavior/fixtures/textlint-rules/cases/narrative-slop/hits.md"
+cases_no_hits = "behavior/fixtures/textlint-rules/cases/narrative-slop/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
+required_hit_text = [
+  "Cassia watched him leave. Her father had told her to observe and listen. She looked at Arden. The caracal boy was already looking back at her.",
+  "She stared out at the dark roofline. She did not look down at the older kids. Her fluffy tail hung still over the edge of the wood."
+]
+required_no_hit_text = [
+  "Cassia looked for the torn stitch under the table and found it beside the left leg."
+]
+
+[[new_rule]]
+id = "body-action-density"
+family = "narrative-slop"
+path = "src/families/narrative-slop/body-action-density.ts"
+registry = "src/registries/narrative-slop.ts"
+export = "./families/narrative-slop/body-action-density"
+preset = true
+cases_hits = "behavior/fixtures/textlint-rules/cases/narrative-slop/hits.md"
+cases_no_hits = "behavior/fixtures/textlint-rules/cases/narrative-slop/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
+required_hit_text = [
+  "Arden climbed the crates next to her. He pulled himself up to the roof edge. Arden walked along the parapet that separated the workshop roof from the neighbor's building. He crouched low and ran his fingers over the stone.",
+  "Cassia's ears twitched. Her tail angled low. Her paws shifted on the roof tile."
+]
+required_no_hit_text = [
+  "Arden climbed the crates to reach the broken pulley, then wedged the rope under the iron hook."
+]
+
+[[new_rule]]
+id = "flat-action-cadence"
+family = "narrative-slop"
+path = "src/families/narrative-slop/flat-action-cadence.ts"
+registry = "src/registries/narrative-slop.ts"
+export = "./families/narrative-slop/flat-action-cadence"
+preset = true
+cases_hits = "behavior/fixtures/textlint-rules/cases/narrative-slop/hits.md"
+cases_no_hits = "behavior/fixtures/textlint-rules/cases/narrative-slop/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
+required_hit_text = [
+  "The little snow leopard girl sat on the wide sill. She stared out at the dark roofline. She did not look down at the older kids. Her fluffy tail hung still over the edge of the wood.",
+  "Cassia stepped out of the shadows. She picked up the practice sword. The wood was cold in her paw."
+]
+required_no_hit_text = [
+  "Young readers need short lines, so the draft keeps the scene clear with plain words."
+]
+
+[[source_record]]
+path = "data/source-material/incorporation-record.md"
+required_text = [
+  "Sunstone Slop Case Classification",
+  "perception-verb-density",
+  "body-action-density",
+  "flat-action-cadence"
+]

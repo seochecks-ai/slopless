@@ -813,6 +813,104 @@
       "bucket": "no-hits",
       "source": "cases/narrative-slop/no-hits.md",
       "line": 0
+    },
+    {
+      "text": "Fear had no place in her schedule.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 0
+    },
+    {
+      "text": "The south pier was a graveyard of shadows and salt spray.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 0
+    },
+    {
+      "text": "The courtyard smelled of disturbed dust and old ash instead of hot metal.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 0
+    },
+    {
+      "text": "The little snow leopard girl sat on the wide sill. She stared out at the dark roofline. She did not look down at the older kids. Her fluffy tail hung still over the edge of the wood.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 0
+    },
+    {
+      "text": "Cassia stepped out of the shadows. She picked up the practice sword. The wood was cold in her paw.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 0
+    },
+    {
+      "text": "Cassia watched him leave. Her father had told her to observe and listen. She looked at Arden. The caracal boy was already looking back at her.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 0
+    },
+    {
+      "text": "She stared out at the dark roofline. She did not look down at the older kids. Her fluffy tail hung still over the edge of the wood.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 0
+    },
+    {
+      "text": "Arden climbed the crates next to her. He pulled himself up to the roof edge. Arden walked along the parapet that separated the workshop roof from the neighbor's building. He crouched low and ran his fingers over the stone.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 0
+    },
+    {
+      "text": "Cassia's ears twitched. Her tail angled low. Her paws shifted on the roof tile.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 0
+    },
+    {
+      "text": "Fear had no place in the posted evacuation plan because the exits were marked and staffed.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 0
+    },
+    {
+      "text": "The courtyard smelled of ash because the kiln had cracked during firing.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 0
+    },
+    {
+      "text": "Young readers need short lines, so the draft keeps the scene clear with plain words.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 0
+    },
+    {
+      "text": "Cassia looked for the torn stitch under the table and found it beside the left leg.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 0
+    },
+    {
+      "text": "Arden climbed the crates to reach the broken pulley, then wedged the rope under the iron hook.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 0
     }
   ]
 }

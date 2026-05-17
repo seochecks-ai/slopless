@@ -2290,6 +2290,48 @@
       "bucket": "no-hits",
       "source": "cases/syntactic-patterns/no-hits.md",
       "line": 105
+    },
+    {
+      "text": "She did not go to Arden. She went to the rug merchant alley.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 0
+    },
+    {
+      "text": "He didn't look at the music box. Instead, he looked at their dusty, oil-matted fur.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 0
+    },
+    {
+      "text": "The Red Claw gang was not just stealing silk anymore. They had stolen a life.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 0
+    },
+    {
+      "text": "The Red Claw gang was no longer just looking for a target. They were hunting the entire pack.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 0
+    },
+    {
+      "text": "She did not go to Arden because Arden had already left for the pier.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 0
+    },
+    {
+      "text": "He didn't look at the music box until Cassia opened the lid.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 0
     }
   ]
 }
