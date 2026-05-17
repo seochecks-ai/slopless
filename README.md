@@ -1,6 +1,12 @@
 # slopless
 
-Slopless is a deterministic Markdown checker for AI and human slop in writing.
+[![npm](https://img.shields.io/npm/v/slopless?label=npm)](https://www.npmjs.com/package/slopless)
+[![downloads](https://img.shields.io/npm/dm/slopless)](https://www.npmjs.com/package/slopless)
+[![license](https://img.shields.io/github/license/agent-quality-controls/slopless)](LICENSE)
+[![node](https://img.shields.io/node/v/slopless)](package.json)
+
+
+Catch AI and human slop in Markdown without calling an LLM. Slopless ships 50+ deterministic textlint rules and a CLI that emits structured JSON findings.
 
 It reports patterns that make prose padded, vague, generic, formulaic, or mechanically careless. It does not call an LLM. Output is always textlint JSON.
 
