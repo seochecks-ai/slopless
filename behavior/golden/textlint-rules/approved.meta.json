@@ -1,15 +1,23 @@
 {
   "suite": "textlint-rules",
   "kind": "approved",
-  "run_id": "2026-05-17T11-31-56.911037Z-f3c41e06",
-  "run_commit": "58d4125",
+  "run_id": "2026-05-17T14-51-23.899275Z-f3c41e06",
+  "run_commit": "ad7c90d",
   "working_tree": "dirty",
-  "recorded_at": "2026-05-17T11:31:56.911037Z",
-  "fixture_hash": "sha256:ec51fc201b5f40543d3b909d9c1f0a55b388d04a2f561e1661ca6180f4c4b88a",
+  "recorded_at": "2026-05-17T14:51:23.899275Z",
+  "fixture_hash": "sha256:dc86917bf8698969ee99e5320840d2c9972cb19d42467f7cec69549b4f3f266e",
   "manifest_hash": "sha256:f3c41e06f4c33e3b21fa87bec32cd48f42af6c1064c3e6ae7d226d744fdbe350",
   "tool_version": "0.1.7",
   "output_schema_version": "1",
   "fixtures": [
+    {
+      "path": "behavior/fixtures/textlint-rules/cases/academic-slop/hits.md",
+      "sha256": "sha256:cfa7dc74d5b4913609ec24f52b5fc53806dc1733ffcd187e9c22d1478fdb3858"
+    },
+    {
+      "path": "behavior/fixtures/textlint-rules/cases/academic-slop/no-hits.md",
+      "sha256": "sha256:04d4063baa328ef47a657b70ca2ce822bda358d8a0fe3c66ef2c68916f1d1f6d"
+    },
     {
       "path": "behavior/fixtures/textlint-rules/cases/markdown-layout/no-hits.md",
       "sha256": "sha256:a3f818da9186cbe07507d20b1f43941c41dc0130c07fc4d7e1871c4ff764c512"
@@ -20,7 +28,15 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/metrics/no-hits.md",
-      "sha256": "sha256:316930c381cd238a00dc797885212381a09d9946a6a96f35c7e8b3827361770e"
+      "sha256": "sha256:c2e3268c9f0495aabe5e8441c76c58240dd762f5147cd46f4bff51c53730d3dc"
+    },
+    {
+      "path": "behavior/fixtures/textlint-rules/cases/narrative-slop/hits.md",
+      "sha256": "sha256:ba48e332d4119f165dcc657ddaaa1903238b8a8e616dc6b90a6e0ae59ea901de"
+    },
+    {
+      "path": "behavior/fixtures/textlint-rules/cases/narrative-slop/no-hits.md",
+      "sha256": "sha256:c54a80275ff592d18df36f68c1d15116094b6d27c248df30645517dc096d01d3"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/no-signal/no-hits.md",
@@ -36,27 +52,27 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/phrases/hits.md",
-      "sha256": "sha256:c2d0c9a133e9a4c682608cd6d40c2fa9e62b7a7017dbdb6d3514e60b5bd1a61d"
+      "sha256": "sha256:13527fa5dbe70dcae945b44553aae94166ea7089bc7f2a30b8f2e21bf934b0ed"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/phrases/no-hits.md",
-      "sha256": "sha256:092976c3791c69c0167058a4114ea3d31b2a5143a9b580a102d758fff83d6173"
+      "sha256": "sha256:2dd859948403c5ab1199d69d809afc2b75c95fe9953cf3b3dbb9c02aa21ec2f8"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md",
-      "sha256": "sha256:58681aee2504341adb2b2ea86bc80b8fdf2cb0c0363a27f90a6993e7bfe38f59"
+      "sha256": "sha256:ee69bd5b711004df37c26726d810ab0c8cda36cec3a9fba99a5e4858a2cafc6d"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md",
-      "sha256": "sha256:c42e45f4bf129b92c8e2ae83e35ce07f7a79df88a1f01b85c54570ee4ff4cc87"
+      "sha256": "sha256:d5389eead0b247de8c4e33fe54aa95f04632b218cd44a601359218451ad5933b"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md",
-      "sha256": "sha256:d0ffe3f056d7f006eaf74efb131fe22cf57beac93bceeab4cdf5f1c1bfe96995"
+      "sha256": "sha256:88dbfe7221eca5498b5cdcaf747f716176ca4997f1d0832f3b7c9f84e2fdbb98"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md",
-      "sha256": "sha256:3aacd0a4ce2b7af955ca6f304df6017329daf31b457a95a215518c87626eed68"
+      "sha256": "sha256:20e530f0d75e085009088a3a5aa5742b8f8530fa80e2f6933cfca397439b6712"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/term-policy/hits.md",
@@ -64,7 +80,7 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/term-policy/no-hits.md",
-      "sha256": "sha256:9d017ce0d4daec5708025ec06ada6217368bf6c9d4a87d3b1c718af89622b750"
+      "sha256": "sha256:60dd222f78dc7e2b5d535e8e435b964e7c2ebda0468d9196ce8881e90095fe01"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/words/hits.md",
@@ -76,28 +92,28 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/editorial-style.md",
-      "sha256": "sha256:ef1e07bc262ac66effb151edd712cda7a31af7785969ba3c3ebb6b5313a4beac"
+      "sha256": "sha256:bb7aa9391e04e4905a8d609c7708c4db3130fdabbad7b03e9139e9b25295164b"
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/engineering-review.md",
-      "sha256": "sha256:12f992c090bd25fdfe61c900300842a2444521c78ee4e13bc54a8d4b41a4592e"
+      "sha256": "sha256:cc64d02fb5afb17341b77e0f66e707cc1ebf87df738dd74c3fac3d6d423f4f0c"
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/health-and-parenting.md",
-      "sha256": "sha256:9100303444b98db72f9e387c195c3f5dd4727dadc995e24076cdb6f29ec1b4b7"
+      "sha256": "sha256:2c7a5e44e29ac595977144fa256bc730a9b7320b692c9161014c676b28fff719"
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/metrics-and-markdown.md",
-      "sha256": "sha256:0a995c2163058c6c2863eced44159ce0b7eac77248d59304b5071ab1a98db0dd"
+      "sha256": "sha256:01bcf786259a46f9c3a96a484ea6299a2f0ee580c09d1017db8d21f1b31cb7f1"
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md",
-      "sha256": "sha256:58dc45e7f5be52a04f2cd1083168c63990f7fe024221b241c28cd65bc3fa86ee"
+      "sha256": "sha256:19aa8cd0506ec78bf0622c34cede75af08b152e2f6c514e7b1b7db4b5c440f05"
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/technical-terminology.md",
-      "sha256": "sha256:4b1656a649b7cb391fa25e35728489e2e7686996754d49ba167eb6e0f6298e82"
+      "sha256": "sha256:52d598e8542724c9e7c108b61d8552ced120f8c67b204d66d81fc50a04bcd226"
     }
   ],
-  "comment": "Expand cliche lexicon from Vale proselint"
+  "comment": "Fixture truth cleanup"
 }
