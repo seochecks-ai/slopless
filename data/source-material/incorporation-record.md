@@ -317,7 +317,7 @@ It is separate from `data/source-material/README.md`, which records source mater
 
 ### Academic tortured phrases
 
-- Status: `archived`
+- Status: `partially active`
 - Sources:
   - Cabanac 2021
   - Problematic Paper Screener
@@ -325,9 +325,54 @@ It is separate from `data/source-material/README.md`, which records source mater
 - Intended use:
   - academic-specific phrase-pair detector
   - paraphrase-template mining
-- Not active because:
-  - domain-specific
-  - should not run in default prose rules without an explicit academic family
+- Active rule:
+  - `src/families/academic-slop/tortured-phrases.ts`
+- Active data:
+  - `src/families/academic-slop/data/tortured-phrases.json`
+- Incorporated now:
+  - exact phrase matches only
+  - first active set: `bosom peril`, `counterfeit consciousness`, `sign to clamor`
+- Caveat:
+  - broader Zenodo-derived phrase rows remain source candidates until fixture review
+
+### Source-derived wordiness, redundancy, cliche, corporate, LLM, and narrative pattern notes
+
+- Status: `active candidate notes`
+- Sources:
+  - `data/source-material/derived/wordiness-pattern-candidates.md`
+  - `data/source-material/derived/redundancy-pattern-candidates.md`
+  - `data/source-material/derived/cliche-template-candidates.md`
+  - `data/source-material/derived/corporate-abstraction-candidates.md`
+  - `data/source-material/derived/llm-artifact-candidates.md`
+  - `data/source-material/derived/narrative-slop-candidates.md`
+  - `data/source-material/derived/academic-slop-candidates.md`
+- Active rules:
+  - `src/families/phrases/wordiness.ts`
+  - `src/families/phrases/redundancy.ts`
+  - `src/families/phrases/cliches.ts`
+  - `src/families/phrases/corporate-speak.ts`
+  - `src/families/phrases/llm-disclaimer.ts`
+  - `src/families/narrative-slop/narrative-cliches.ts`
+  - `src/families/academic-slop/tortured-phrases.ts`
+- Active data:
+  - `src/families/phrases/data/wordiness-patterns.json`
+  - `src/families/phrases/data/redundancy-patterns.json`
+  - `src/families/phrases/data/cliche-templates.json`
+  - `src/families/phrases/data/corporate-abstraction-patterns.json`
+  - `src/families/phrases/data/llm-disclaimer-expansions.json`
+  - `src/families/narrative-slop/data/narrative-cliches.json`
+  - `src/families/academic-slop/data/tortured-phrases.json`
+- Incorporation type:
+  - literal phrase lists for wordiness, redundancy, LLM leakage, and tortured phrases
+  - token templates with reviewed slots for cliches, corporate abstraction, and narrative cliches
+- Local transformations:
+  - broad source regex groups were converted only when they mapped to closed slots
+  - empirical LLM ngrams were reduced to reviewed frames instead of imported wholesale
+  - assistant artifact candidates were added to `llm-disclaimer`, not a duplicate rule
+- False-positive controls:
+  - quoted phrase examples are skipped by phrase matchers
+  - academic checks use exact known tortured phrases
+  - narrative checks use narrow reviewed frames and keep their own family
 
 ## Matching Architecture We Built Ourselves
 

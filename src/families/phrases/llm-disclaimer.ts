@@ -6,6 +6,7 @@ import {
   textStartsWithPattern
 } from "../../shared/matchers/prose-patterns.js";
 import { allParagraphSentences } from "../../shared/text/sections.js";
+import llmDisclaimerExpansions from "./data/llm-disclaimer-expansions.json" with { type: "json" };
 
 const START_PATTERNS = [
   "as a language model",
@@ -37,13 +38,23 @@ const CONTAINS_PATTERNS = [
 
 const PREFIXES = ["however, ", "but "];
 
+const EXPANDED_START_PATTERNS = [
+  ...START_PATTERNS,
+  ...llmDisclaimerExpansions.startsWith
+];
+
+const EXPANDED_CONTAINS_PATTERNS = [
+  ...CONTAINS_PATTERNS,
+  ...llmDisclaimerExpansions.contains
+];
+
 function matchDisclaimer(sentence: string): string | undefined {
   const stripped = cleanSentence(sentence, PREFIXES);
 
   return (
-    START_PATTERNS.find((pattern) =>
+    EXPANDED_START_PATTERNS.find((pattern) =>
       textStartsWithPattern(stripped, pattern)
-    ) ?? containsAny(stripped, CONTAINS_PATTERNS)
+    ) ?? containsAny(stripped, EXPANDED_CONTAINS_PATTERNS)
   );
 }
 

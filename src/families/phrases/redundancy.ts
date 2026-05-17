@@ -1,11 +1,7 @@
 import type { TextlintRuleModule } from "@textlint/types";
 import { RuleHelper } from "textlint-rule-helper";
-import corporateAbstractionPatterns from "./data/corporate-abstraction-patterns.json" with { type: "json" };
-import corporateSpeak from "./data/corporate-speak.json" with { type: "json" };
-import {
-  findUnquotedPhraseMatches,
-  findUnquotedTokenTemplateMatches
-} from "../../shared/matchers/phrases.js";
+import redundancyPatterns from "./data/redundancy-patterns.json" with { type: "json" };
+import { findUnquotedPhraseMatches } from "../../shared/matchers/phrases.js";
 
 const rule: TextlintRuleModule = (context) => {
   const { Syntax, RuleError, getSource, locator, report } = context;
@@ -20,16 +16,11 @@ const rule: TextlintRuleModule = (context) => {
 
       const text = getSource(node);
 
-      const matches = [
-        ...findUnquotedPhraseMatches(text, corporateSpeak),
-        ...findUnquotedTokenTemplateMatches(text, corporateAbstractionPatterns)
-      ];
-
-      for (const match of matches) {
+      for (const match of findUnquotedPhraseMatches(text, redundancyPatterns)) {
         report(
           node,
           new RuleError(
-            `Corporate-speak phrase found: "${match.text}". Replace it with specific wording.`,
+            `Redundant phrase found: "${match.text}". Remove the repeated meaning.`,
             {
               padding: locator.range([match.start, match.end])
             }

@@ -102,17 +102,27 @@ Orthography:
 Phrases and words:
 
 - `cliches`: stock phrases, such as `at the end of the day`.
-- `corporate-speak`: business filler, such as `move the needle`.
+- `corporate-speak`: business filler and empty abstraction, such as `move the needle` or `plays a crucial role`.
 - `hedge-stacking`: stacked hedges, such as `might perhaps`.
 - `humble-bragger`: credential lead-ins, such as `in my experience`.
 - `jargon-faker`: borrowed tech metaphors, such as `debug your morning`.
-- `llm-disclaimer`: assistant disclaimers, such as `as an AI language model`.
+- `llm-disclaimer`: assistant leakage, such as `as an AI language model` or `please let me know`.
 - `llm-vocabulary`: common AI diction, such as `delve`.
 - `prohibited-phrases` and `prohibited-words`: package-owned banned lists.
+- `redundancy`: repeated-meaning phrases, such as `repeat again`.
 - `recommended-terms` and `required-terms`: configured missing terms.
 - `simplicity`: complex words with simple replacements, such as `utilize`.
 - `skunked-terms`: contested broad-use terms.
 - `uncomparables`: impossible modifiers, such as `very unique`.
+- `wordiness`: padded phrases, such as `due to the fact that`.
+
+Academic slop:
+
+- `tortured-phrases`: known machine-paraphrased academic phrases, such as `counterfeit consciousness`.
+
+Narrative slop:
+
+- `narrative-cliches`: stock generated-fiction gestures, such as `heart pounded in her chest`.
 
 Semantic thinness:
 

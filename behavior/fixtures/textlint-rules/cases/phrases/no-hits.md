@@ -39,3 +39,15 @@ The clean control sentence describes a normal editorial decision.
 The engineer can debug your build script after lunch.
 
 The team is optimizing for latency in the parser.
+
+The editor quoted "due to the fact that" as an example of wordy prose.
+
+The engineer came back after lunch with a smaller patch.
+
+The report says the actors played a crucial role in the second act.
+
+The article discusses "please let me know" as a common assistant artifact.
+
+The docs link to [on the same page](https://example.com) as a glossary anchor.
+
+The editor copied an unfinished quote: "at the end of the day

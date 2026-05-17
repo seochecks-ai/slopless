@@ -15,6 +15,55 @@
       "bucket": "hits",
       "source": "cases/term-policy/hits.md",
       "line": 3
+    },
+    {
+      "text": "The abstract uses counterfeit consciousness where artificial intelligence is intended.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 1
+    },
+    {
+      "text": "The cancer paper calls the condition bosom peril in the title.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 3
+    },
+    {
+      "text": "The conclusion says sign to clamor instead of signal to noise.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 5
+    },
+    {
+      "text": "They wrote \"bosom peril\".",
+      "family": "academic-slop",
+      "bucket": "no-hits",
+      "source": "cases/academic-slop/no-hits.md",
+      "line": 1
+    },
+    {
+      "text": "The paper discusses artificial intelligence methods in cancer diagnosis.",
+      "family": "academic-slop",
+      "bucket": "no-hits",
+      "source": "cases/academic-slop/no-hits.md",
+      "line": 3
+    },
+    {
+      "text": "The receiver measured the signal to noise ratio before calibration.",
+      "family": "academic-slop",
+      "bucket": "no-hits",
+      "source": "cases/academic-slop/no-hits.md",
+      "line": 5
+    },
+    {
+      "text": "The lab recorded public clamor after the clinical trial was suspended.",
+      "family": "academic-slop",
+      "bucket": "no-hits",
+      "source": "cases/academic-slop/no-hits.md",
+      "line": 7
     }
   ]
 }
