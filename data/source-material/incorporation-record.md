@@ -352,6 +352,7 @@ It is separate from `data/source-material/README.md`, which records source mater
   - `src/families/phrases/cliches.ts`
   - `src/families/phrases/corporate-speak.ts`
   - `src/families/phrases/llm-disclaimer.ts`
+  - `src/families/syntactic-patterns/llm-artifacts/response-wrapper.ts`
   - `src/families/narrative-slop/narrative-cliches.ts`
   - `src/families/academic-slop/tortured-phrases.ts`
 - Active data:
@@ -360,6 +361,7 @@ It is separate from `data/source-material/README.md`, which records source mater
   - `src/families/phrases/data/cliche-templates.json`
   - `src/families/phrases/data/corporate-abstraction-patterns.json`
   - `src/families/phrases/data/llm-disclaimer-expansions.json`
+  - `src/families/syntactic-patterns/llm-artifacts/data/response-wrapper-patterns.json`
   - `src/families/narrative-slop/data/narrative-cliches.json`
   - `src/families/academic-slop/data/tortured-phrases.json`
 - Incorporation type:
@@ -368,7 +370,8 @@ It is separate from `data/source-material/README.md`, which records source mater
 - Local transformations:
   - broad source regex groups were converted only when they mapped to closed slots
   - empirical LLM ngrams were reduced to reviewed frames instead of imported wholesale
-  - assistant artifact candidates were added to `llm-disclaimer`, not a duplicate rule
+  - assistant identity and knowledge-limit candidates were added to `llm-disclaimer`
+  - chat scaffold candidates were added to existing `response-wrapper`, not a duplicate rule
 - False-positive controls:
   - quoted phrase examples are skipped by phrase matchers
   - academic checks use exact known tortured phrases

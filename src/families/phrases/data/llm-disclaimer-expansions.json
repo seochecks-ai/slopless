@@ -1,19 +1,4 @@
 {
-  "startsWith": [
-    "let's delve into",
-    "okay let's delve",
-    "feel free to ask",
-    "please let me know",
-    "hope this message finds you well",
-    "break this down step by step"
-  ],
-  "contains": [
-    "want me to delve deeper",
-    "delve deeper into a specific aspect",
-    "let me know if you have any questions",
-    "let me know if you have any further questions",
-    "anything else i can help",
-    "last knowledge update",
-    "knowledge cutoff date"
-  ]
+  "startsWith": ["my last knowledge update was", "my knowledge cutoff is"],
+  "contains": []
 }

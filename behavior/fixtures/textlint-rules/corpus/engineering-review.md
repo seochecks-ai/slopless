@@ -552,6 +552,36 @@ And that's what makes this approach so powerful.
 
 And isn't that what we all want?
 
+## source llm artifact wrappers
+
+Let's delve into the deployment plan before naming the risk.
+
+Okay, let's delve into the tradeoffs.
+
+Break this down step by step before answering.
+
+Feel free to ask if you need more examples.
+
+Please let me know if you have any further questions.
+
+Let me know if you'd like a deeper analysis.
+
+Hope this message finds you well before the release summary.
+
+This is not an exhaustive list.
+
+Tell me if you want me to delve deeper into a specific aspect.
+
+The report goes deeper into a specific outage window.
+
+The analyst broke the failure down step by step in the incident report.
+
+Support agents should ask customers whether they have any further questions.
+
+The article discusses "please let me know" as a common assistant artifact.
+
+The changelog records the last knowledge update for the index file.
+
 The March retention study found a six point drop after onboarding changed.
 
 That is the database migration plan for the billing schema.

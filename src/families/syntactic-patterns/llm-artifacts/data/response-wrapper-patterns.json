@@ -1,0 +1,27 @@
+{
+  "startsWith": [
+    "let's delve into",
+    "okay, let's delve",
+    "okay let's delve",
+    "let's break this down",
+    "break this down step by step",
+    "break it down step by step",
+    "feel free to ask",
+    "please feel free to ask",
+    "please let me know",
+    "let me know if you'd like",
+    "hope this message finds you well",
+    "this is not an exhaustive list"
+  ],
+  "contains": [
+    "want me to delve deeper",
+    "would you like me to delve",
+    "like me to delve deeper",
+    "delve deeper into a specific",
+    "delve deeper into any specific",
+    "let me know if you have any questions",
+    "let me know if you have any further questions",
+    "let me know if you have any other questions",
+    "anything else i can help"
+  ]
+}

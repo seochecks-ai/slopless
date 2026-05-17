@@ -106,7 +106,7 @@ Phrases and words:
 - `hedge-stacking`: stacked hedges, such as `might perhaps`.
 - `humble-bragger`: credential lead-ins, such as `in my experience`.
 - `jargon-faker`: borrowed tech metaphors, such as `debug your morning`.
-- `llm-disclaimer`: assistant leakage, such as `as an AI language model` or `please let me know`.
+- `llm-disclaimer`: assistant leakage, such as `as an AI language model` or `my knowledge cutoff`.
 - `llm-vocabulary`: common AI diction, such as `delve`.
 - `prohibited-phrases` and `prohibited-words`: package-owned banned lists.
 - `redundancy`: repeated-meaning phrases, such as `repeat again`.
@@ -145,7 +145,7 @@ Syntactic patterns:
 - `llm-openers`: generic openers, such as `the important thing is`.
 - `negation-reframe`: `not X. It is Y.` constructions.
 - `observer-guidance`: reader-instruction frames, such as `notice how`.
-- `response-wrapper`: chat wrappers, such as `here is a revised version`.
+- `response-wrapper`: chat wrappers, such as `let's delve into` or `please let me know`.
 - `softening-language`: vague softeners, such as `in many ways`.
 - `summative-closer`: summary payoff lines, such as `that is what makes it work`.
 - `triple-repeat`: repeated sentence openers, such as `It is X. It is Y. It is Z.`

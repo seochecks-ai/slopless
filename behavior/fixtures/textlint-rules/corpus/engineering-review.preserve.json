@@ -2129,6 +2129,104 @@
       "bucket": "no-hits",
       "source": "cases/syntactic-patterns/no-hits.md",
       "line": 89
+    },
+    {
+      "text": "Let's delve into the deployment plan before naming the risk.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 0
+    },
+    {
+      "text": "Okay, let's delve into the tradeoffs.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 0
+    },
+    {
+      "text": "Break this down step by step before answering.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 0
+    },
+    {
+      "text": "Feel free to ask if you need more examples.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 0
+    },
+    {
+      "text": "Please let me know if you have any further questions.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 0
+    },
+    {
+      "text": "Let me know if you'd like a deeper analysis.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 0
+    },
+    {
+      "text": "Hope this message finds you well before the release summary.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 0
+    },
+    {
+      "text": "This is not an exhaustive list.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 0
+    },
+    {
+      "text": "Tell me if you want me to delve deeper into a specific aspect.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 0
+    },
+    {
+      "text": "The report goes deeper into a specific outage window.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 0
+    },
+    {
+      "text": "The analyst broke the failure down step by step in the incident report.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 0
+    },
+    {
+      "text": "Support agents should ask customers whether they have any further questions.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 0
+    },
+    {
+      "text": "The article discusses \"please let me know\" as a common assistant artifact.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 0
+    },
+    {
+      "text": "The changelog records the last knowledge update for the index file.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 0
     }
   ]
 }

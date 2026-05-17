@@ -921,3 +921,21 @@ That is the point.
 And that's what makes this approach so powerful.
 
 That's why it matters, isn't that the point?
+
+Let's delve into the deployment plan before naming the risk.
+
+Okay, let's delve into the tradeoffs.
+
+Break this down step by step before answering.
+
+Feel free to ask if you need more examples.
+
+Please let me know if you have any further questions.
+
+Let me know if you'd like a deeper analysis.
+
+Hope this message finds you well before the release summary.
+
+This is not an exhaustive list.
+
+Tell me if you want me to delve deeper into a specific aspect.

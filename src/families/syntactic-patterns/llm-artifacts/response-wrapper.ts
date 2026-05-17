@@ -2,9 +2,11 @@ import type { TxtDocumentNode } from "@textlint/ast-node-types";
 import type { TextlintRuleModule } from "@textlint/types";
 import {
   cleanSentence,
+  containsAny,
   type SentenceMatch
 } from "../../../shared/matchers/prose-patterns.js";
 import { allParagraphSentences } from "../../../shared/text/sections.js";
+import responseWrapperPatterns from "./data/response-wrapper-patterns.json" with { type: "json" };
 
 const PREFIXES = ["however, ", "but ", "that being said, ", "as such, "];
 const SUBJECTS = ["i"];
@@ -44,6 +46,26 @@ const DIAGNOSIS_LIMITATION_OBJECTS = [
   "diagnose",
   "treatment plan"
 ];
+
+function startsWithSourcePattern(text: string): string | undefined {
+  return responseWrapperPatterns.startsWith.find((pattern) => {
+    if (!text.startsWith(pattern)) {
+      return false;
+    }
+
+    const next = text.at(pattern.length);
+    return (
+      next === undefined ||
+      next === " " ||
+      next === "," ||
+      next === "." ||
+      next === ":" ||
+      next === ";" ||
+      next === "!" ||
+      next === "?"
+    );
+  });
+}
 
 function matchesSubjectAuxActionObjects(
   text: string,
@@ -104,6 +126,18 @@ function matchesSubjectPrefixActionObjects(
 
 function matchResponseWrapper(sentence: string): SentenceMatch | undefined {
   const stripped = cleanSentence(sentence, PREFIXES);
+  const startPattern = startsWithSourcePattern(stripped);
+  if (startPattern !== undefined) {
+    return { kind: "chat-scaffold", signal: startPattern };
+  }
+
+  const containedPattern = containsAny(
+    stripped,
+    responseWrapperPatterns.contains
+  );
+  if (containedPattern !== undefined) {
+    return { kind: "chat-followup", signal: containedPattern };
+  }
 
   if (
     matchesSubjectAuxActionObjects(
@@ -198,7 +232,7 @@ const rule: TextlintRuleModule = (context) => {
         report(
           item.paragraph,
           new RuleError(
-            `Response wrapper found: ${matched.kind}. Remove assistant capability framing.`,
+            `Response wrapper found: ${matched.kind} (${matched.signal}). Remove assistant response scaffolding.`,
             {
               padding: locator.range([
                 item.source.originalStartFor(item.sentence.start),

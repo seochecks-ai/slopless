@@ -87,3 +87,13 @@ So who's going to build the alternative?
 That's the neighborhood school we use every day.
 
 The core fact is that nothing here needed a grand finale.
+
+The report goes deeper into a specific outage window.
+
+The analyst broke the failure down step by step in the incident report.
+
+Support agents should ask customers whether they have any further questions.
+
+The article discusses "please let me know" as a common assistant artifact.
+
+The changelog records the last knowledge update for the index file.
