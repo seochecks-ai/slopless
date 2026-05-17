@@ -1,0 +1,28 @@
+extends: existence
+message: "Don't use language (such as '%s') that defines people by their disability."
+link: https://www.elastic.co/docs/contribute-docs/style-guide/accessibility#avoid-violent-offensive-ableist-terminology
+level: warning
+ignorecase: true
+tokens:
+  - a victim of
+  - able-bodied
+  - an epileptic
+  - birth defect
+  - crippled
+  - differently abled
+  - dumb
+  - handicapped
+  - handicaps
+  - healthy person
+  - hearing-impaired
+  - lame
+  - maimed
+  - mentally handicapped
+  - missing a limb
+  - non-verbal
+  - normal person
+  - sight-impaired
+  - slow learner
+  - stricken with
+  - suffers from
+  - vision-impaired

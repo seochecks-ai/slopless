@@ -1,0 +1,9 @@
+extends: substitution
+message: "Use meaningful link text. Use '%s' instead of '%s'."
+link: https://www.elastic.co/docs/contribute-docs/style-guide/accessibility#accessibility-guidelines
+level: warning
+ignorecase: true
+action:
+  name: replace
+swap:
+  'click here': visit, go to, refer to

@@ -1,0 +1,8 @@
+extends: existence
+level: suggestion
+message: "Use the Oxford comma in '%s'."
+link: https://www.elastic.co/docs/contribute-docs/style-guide/grammar-spelling#commas
+scope: sentence
+nonword: true
+tokens:
+  - '(?:[^\s,]+,){1,} \w+ (?:and|or|nor|then) \w+[.?!]'

@@ -1,0 +1,37 @@
+extends: substitution
+message: "Consider using '%s' instead of '%s', unless the term is in the UI."
+link: https://www.elastic.co/docs/contribute-docs/style-guide/word-choice
+ignorecase: true
+level: suggestion
+action:
+  name: replace
+swap:
+  abnormal: "atypical, not typical"
+  abort: "stop, cancel, end"
+  abuse: "misuse"
+  blacklist: "blocklist"
+  boot: "start, run"
+  disable: "deactivate, deselect, hide, turn off"
+  disabled: "deactivated, deselected, hidden, turned off, unavailable"
+  disables: "deactivates, deselects, hides, turns off, makes unavailable"
+  dummy data: "placeholder data"
+  easy: "efficient"
+  easily: "efficiently"
+  execute: "run, start"
+  first-class: "top-level"
+  flesh-colored: "dark brown, cream, beige"
+  hack: "tip, workaround, configure, modify"
+  hit: "select, press, visits"
+  illegal characters: "invalid characters"
+  kill: "cancel, stop"
+  launch: "open"
+  mankind: "all, everyone, humanity, humankind"
+  may: "can, might"
+  mute: "turn off, silence"
+  sanity check: "review"
+  simple: "efficient, basic"
+  simply: "efficiently"
+  skin-toned: "dark brown, cream, beige"
+  terminate: "stop, exit"
+  unable: "cannot"
+  whitelist: "allowlist"

@@ -1,0 +1,901 @@
+,"word","type","part_of_speech","comment"
+0,"abcd","content","noun","multiple different abbreviations"
+1,"accentuates","style","verb",
+2,"aceis","content","noun","angiotensin-converting enzyme inhibitors"
+3,"achieving","style","verb",
+4,"acknowledges","style","verb",
+5,"acknowledging","style","verb",
+6,"across","style","preposition",
+7,"acute","content","adjective","""acute pneumonia"""
+8,"additionally","style","adverb",
+9,"address","style","verb",
+10,"addresses","style","verb",
+11,"addressing","style","verb",
+12,"adept","style","adjective",
+13,"adhered","style","verb",
+14,"adhering","style","verb",
+15,"adipate","content","noun","adipic acid"
+16,"admet","content","noun","absorption, distribution, metabolism, excretion and toxicity"
+17,"adrd","content","noun","Alzheimer's disease and related dementias"
+18,"advancement","style","noun",
+19,"advancements","style","noun",
+20,"advancing","style","verb",
+21,"adversarial","content","adjective","generative adversarial networks, adversarial examples"
+22,"advocates","style","verb",
+23,"advocating","style","verb",
+24,"aerosolization","content","noun",
+25,"affirming","style","verb",
+26,"afflicted","style","verb",
+27,"agnostic","content","adjective","tumour-agnostic"
+28,"aiding","style","verb",
+29,"aims","style","verb",
+30,"akin","style","adjective",
+31,"align","style","verb",
+32,"aligning","style","verb",
+33,"aligns","style","verb",
+34,"alongside","style","preposition",
+35,"alphafold","content","noun",
+36,"amid","style","preposition",
+37,"amidst","style","preposition",
+38,"amos","content","noun","multiple different abbreviations"
+39,"analysis","style","noun",
+40,"angiotensin","content","noun",
+41,"announced","style","verb",
+42,"anosmia","content","noun",
+43,"antiseizure","content","noun",
+44,"antiviral","content","adjective",
+45,"aotearoa","content","noun","Māori-language name for New Zealand"
+46,"apixaban","content","noun","anticoagulant medication used to treat and prevent blood clots"
+47,"apologizes","style","verb",
+48,"approach","style","noun",
+49,"april","content","noun","Covid pandemic spread"
+50,"arbovirus","content","noun",
+51,"arbs","content","noun","abbreviations including: ARBs, angiotensin receptor antagonists, used to treat high blood pressure and heart failure"
+52,"ards","content","noun","abbreviations, ARDS, Acute respiratory distress syndrome"
+53,"armonk","other","noun","related to SPSS citations (which is by IBM, whose headquarters are in Armonk)"
+54,"aspx","other",,"appears in links, but this is partially artefact of data availability and trial registration statements not being filtered out"
+55,"assess","style","verb",
+56,"assessed","style","verb",
+57,"assessing","style","verb",
+58,"assessments","style","noun",
+59,"astrazeneca","content","noun",
+60,"attains","style","verb",
+61,"attr","content","noun","abbreviation for a type of amyloidosis disease"
+62,"attributed","style","verb",
+63,"augmenting","style","verb",
+64,"authorization","content","noun","FDA drug authorization"
+65,"authorized","content","verb",
+66,"autoencoder","content","noun",
+67,"avenue","style","noun",
+68,"avenues","style","noun",
+69,"background","content/style","noun","can be both"
+70,"bacteroidota","content","noun",
+71,"based","style","verb",
+72,"betacoronavirus","content","noun",
+73,"between","style","preposition",
+74,"bibliometrix","content","noun","R package"
+75,"bioeconomy","content","noun",
+76,"bioinspired","content","verb",
+77,"biontech","content","noun",
+78,"bioorthogonal","content","adjective",
+79,"bivariable","content","adjective",
+80,"blactx","content","noun",
+81,"bolster","style","verb",
+82,"bolstered","style","verb",
+83,"bolstering","style","verb",
+84,"booster","content","noun",
+85,"boredom","content","noun",
+86,"both","style","pronoun/adverb",
+87,"brier","content","noun","some score (MSE for predicted probabilites)"
+88,"broader","style","adjective",
+89,"browning","content","verb",
+90,"burgeoning","style","verb",
+91,"businesses","content","noun",
+92,"capabilities","style","noun",
+93,"capitalizing","style","verb",
+94,"carapace","content","noun",
+95,"carbapenemase","content","noun",
+96,"categorized","style","verb",
+97,"categorizes","style","verb",
+98,"categorizing","style","verb",
+99,"cbioportal","content","noun",
+100,"ccle","content","noun","abbreviations, one for a type of lupus and Cancer Cell Line Encyclopedia (CCLE)"
+101,"cerna","content","noun","""competing endogenous RNA"""
+102,"cfdna","content","noun","cell-free DNA"
+103,"cfps","content","noun","various abbreviations"
+104,"cgga","content","noun","Chinese Glioma Genome Atlas (CGGA)"
+105,"challenge","style","verb",
+106,"challenges","style","noun",
+107,"chat","content","noun",
+108,"chatbot","content","noun",
+109,"chatbots","content","noun",
+110,"chatgpt","content","noun",
+111,"chloroquine","content","noun",
+112,"cibersort","content","noun",
+113,"circrna","content","noun",
+114,"circrnas","content","noun",
+115,"cisgender","content","noun",
+116,"citespace","content","noun",
+117,"clinical","content","adjective",
+118,"clostridioides","content","noun","part of species name"
+119,"closures","content/style","noun","used in many contexts, like businesses"
+120,"cmax","content","noun",
+121,"cnns","content","noun",
+122,"codebook","content","noun",
+123,"coii","content","noun",
+124,"combating","style","verb",
+125,"combustible","content","adjective","e-cigarette related"
+126,"commendable","style","adjective",
+127,"compelling","style","adjective",
+128,"complex","style","noun",
+129,"complexities","content/style","noun","complexity can be a term as in computational complexity, or a general term"
+130,"complicates","style","verb",
+131,"complicating","style","verb",
+132,"comprehend","style","verb",
+133,"comprehending","style","verb",
+134,"comprehension","content","noun","diagnostic term as in reading comprehension"
+135,"comprehensive","style","adjective",
+136,"comprising","style","verb",
+137,"concurrently","content/style","adverb","in principle style, but often used in a specific context (concurrency of disease symptoms or medications)"
+138,"concussions","content","noun",
+139,"conditions","style","noun",
+140,"conducted","style","verb",
+141,"conferencing","content","verb",
+142,"connor","content","noun","name"
+143,"consequently","style","verb",
+144,"consolidates","style","verb",
+145,"consolidations","content","noun","radiology term"
+146,"contagion","content","noun",
+147,"contagious","content","adjective",
+148,"containment","content","noun",
+149,"contracting","content","verb",
+150,"contrastive","content","adjective",
+151,"contributing","style","verb","contributing factors "
+152,"convalescence","content","noun",
+153,"convalescent","content","adjective","covid related"
+154,"conversely","style","adverb",
+155,"converting","content","verb","often part of enzyme-names"
+156,"convolution","content","noun",
+157,"convolutional","content","adjective",
+158,"coreq","content","noun","abbreviatoin, Consolidated Criteria for Reporting Qualitative Studies (COREQ)"
+159,"corona","content","noun",
+160,"coronaviridae","content","noun","familiy of viruses"
+161,"coronavirus","content","noun",
+162,"coronaviruses","content","noun",
+163,"corp","other","noun","often part of citation that refer to a corporation like Microsoft corp."
+164,"correlating","style","verb",
+165,"cough","content","noun",
+166,"covid","content","noun",
+167,"covs","content","noun","abbreviation for coronaviruses"
+168,"crafted","style","verb",
+169,"crafting","style","verb",
+170,"crises","content","noun",
+171,"crisis","content","noun",
+172,"crispr","content","noun",
+173,"crucial","style","adjective",
+174,"ctri","content","noun","Clinical Trial Registry India"
+175,"culminating","style","verb",
+176,"cuproptosis","content","noun",
+177,"customizing","style","verb",
+178,"daratumumab","content","noun",
+179,"dass","content","noun","Depression Anxiety Stress Scale (DASS)"
+180,"decarbonization","content","noun",
+181,"declare","style","verb",
+182,"declared","style","verb",
+183,"decoder","content","noun",
+184,"deductively","style","adverb",
+185,"deeper","content/style","adjective","can potentially refer to deep learning / deep networks"
+186,"degs","content","noun","DEGs"
+187,"delineates","style","verb",
+188,"delong","content","noun","DeLong’s test to compare AUCs"
+189,"delta","content","noun",
+190,"delve","style","verb",
+191,"delved","style","verb",
+192,"delves","style","verb",
+193,"delving","style","verb",
+194,"demonstrated","style","verb",
+195,"demonstrates","style","verb",
+196,"demonstrating","style","verb",
+197,"dependability","style","noun",
+198,"dependable","style","adjective",
+199,"deps","content","noun","differentially expressed proteins (DEPs)"
+200,"despite","style","preposition",
+201,"detailing","style","verb",
+202,"detrimentally","style","adverb",
+203,"dichalcogenides","content","noun",
+204,"diminishes","style","verb",
+205,"diminishing","style","verb",
+206,"discern","style","verb",
+207,"discerned","style","verb",
+208,"discernible","style","adjective",
+209,"discerning","style","verb",
+210,"disease","content","verb",
+211,"displaying","style","verb",
+212,"disrupts","style","verb",
+213,"distancing","content","verb","social distancing"
+214,"distinct","style","adjective",
+215,"distinctions","style","noun",
+216,"distinctive","style","adjective",
+217,"diverse","style","adjective",
+218,"doacs","content","noun","Direct oral anticoagulants (DOACs)"
+219,"domestically","content","adverb",
+220,"druggable","content","adjective",
+221,"during","style","preposition",
+222,"dysgeusia","content","noun",
+223,"easing","style","verb",
+224,"ebola","content","noun",
+225,"ebsco","content","noun","host of some literature databases"
+226,"ebscohost","content","noun","host of some literature databases"
+227,"economies","content","noun",
+228,"economy","content","noun",
+229,"effectively","style","adverb",
+230,"efficacy","style/count","noun","can refer to vaccine efficacy"
+231,"efsa","content","noun","European Food Safety Authority (EFSA), but also an artefact in few cases"
+232,"egger","content","noun","method name"
+233,"elecsys","content","noun","assay name"
+234,"electrolyzer","content","noun",
+235,"elevate","style","verb",
+236,"elevated","style","verb",
+237,"elevates","style","verb",
+238,"elevating","style","verb",
+239,"elucidate","style","verb",
+240,"elucidates","style","verb",
+241,"elucidating","style","verb",
+242,"emax","content","noun","parameter name"
+243,"embracing","style","verb",
+244,"emerged","style","verb",
+245,"emergencies","content","noun",
+246,"emerges","style","verb",
+247,"empagliflozin","content","noun","drug"
+248,"emphasises","style","verb",
+249,"emphasising","style","verb",
+250,"emphasize","style","verb",
+251,"emphasizes","style","verb",
+252,"emphasizing","style","verb",
+253,"employed","style","verb",
+254,"employing","style","verb",
+255,"employs","style","verb",
+256,"empowers","style","verb",
+257,"emulating","style","verb",
+258,"emulation","style","noun",
+259,"enabling","style","verb",
+260,"encapsulates","style","verb",
+261,"encoder","content","noun",
+262,"encompass","style","verb",
+263,"encompassed","style","verb",
+264,"encompasses","style","verb",
+265,"encompassing","style","verb",
+266,"encyclopedia","content","noun",
+267,"endangering","style","verb",
+268,"endeavors","style","noun","""research endeavors"""
+269,"endeavours","style","noun","BE version"
+270,"endogeneity","content","noun",
+271,"enduring","style","verb",
+272,"enhance","style","verb",
+273,"enhanced","style","verb",
+274,"enhancements","style","nount",
+275,"enhances","style","verb",
+276,"enhancing","style","verb",
+277,"ensuring","style","verb",
+278,"enterprises","content","noun",
+279,"enzalutamide","content","noun","drug"
+280,"epicenter","content","noun",
+281,"epidata","content","noun","analysis software"
+282,"epidemic","content","noun",
+283,"equipment","content","noun",
+284,"equipping","style","verb",
+285,"escalating","style","verb",
+286,"essentials","style","noun",
+287,"evaluates","style","verb",
+288,"evapotranspiration","content","noun",
+289,"evolving","style","verb",
+290,"exacerbating","style","verb",
+291,"examines","style","verb",
+292,"exceeding","style","verb",
+293,"excels","style","verb",
+294,"exceptional","style","adjective",
+295,"exceptionally","style","adverb",
+296,"exerting","style","verb",
+297,"exhibit","style","verb",
+298,"exhibited","style","verb",
+299,"exhibiting","style","verb",
+300,"exhibits","style","verb",
+301,"expedite","style","verb",
+302,"expediting","style","verb",
+303,"explainable","content","adverb","explainable AI"
+304,"exploration","style","noun",
+305,"explores","style","verb",
+306,"faces","content/style","noun/verb","can be content noun (face) or style verb (to face)"
+307,"facilitated","style","verb",
+308,"facilitates","style","verb",
+309,"facilitating","style","verb",
+310,"faers","content","noun","FDA Adverse Event Reporting System"
+311,"fatality","content","noun",
+312,"favipiravir","content","noun","ebola drug repurposed for covid"
+313,"featuring","style","verb",
+314,"feiii","content","noun","Fe(III), Iron cation"
+315,"ferroptosis","content","noun","type of cell death"
+316,"fight","style","noun/verb",
+317,"findings","style","noun",
+318,"finngen","content","noun","database like UK Biobank"
+319,"flatten","content","verb","""flatten the curve"""
+320,"flavivirus","content","noun",
+321,"flesch","content","noun","score name"
+322,"focusing","style","verb",
+323,"formidable","style","adjective",
+324,"fostering","style","verb",
+325,"fosters","style","verb",
+326,"foundational","style","adjective",
+327,"frontline","content","noun","frontline staff (COVID!), or Frontline therapy refers to a patient's first CLL treatment"
+328,"furin","content","noun","type of protease, 'furin cleavage site' is COVID related"
+329,"furnish","style","verb",
+330,"gabaa","content","noun",
+331,"gabab","content","noun",
+332,"garnered","style","verb",
+333,"garnering","style","verb",
+334,"gauged","style","verb",
+335,"gbsa","content","noun","abbreviation"
+336,"gepia","content","noun","software, Gene Expression Profiling Interactive Analysis (GEPIA)"
+337,"github","content","noun",
+338,"globe","content","noun",
+339,"governing","content","noun",
+340,"governments","content","noun",
+341,"grappling","style","verb",
+342,"groundbreaking","style","adjective",
+343,"groundwork","style","noun",
+344,"gsea","content","noun","Gene set enrichment analysis"
+345,"guillain","content","noun","Guillain-Barré syndrome"
+346,"gwas","content","noun","Genome-wide association study"
+347,"handwashing","content","noun","Covid mitigation"
+348,"hardest","style","noun",
+349,"hardships","content","noun",
+350,"harness","style","verb",
+351,"harnesses","style","verb",
+352,"harnessing","style","verb",
+353,"havoc","content","noun","HAVoC is a pipeline utilizing several bioinformatic tools to perform multiple necessary analyses for investigating genetic variance among SARS-CoV-2 samples."
+354,"hcov","content","noun","Human coronavirus (HCoV)"
+355,"hcws","content","noun","healthcare workers"
+356,"heighten","style","verb",
+357,"heightened","style","adjective",
+358,"henan","content","noun","province in China"
+359,"hesitancy","content","noun","vaccine hesitancy"
+360,"hesitant","content","adjective","vaccine hesitancy"
+361,"heterogenous","content/style","adjective","can have technical meanings but can also be used in other contexts"
+362,"heterostructure","content","noun",
+363,"hfref","content","noun","heart failure with reduced ejection fraction (HFrEF)"
+364,"highlight","style","verb",
+365,"highlighting","style","verb",
+366,"highlights","style","verb",
+367,"hiit","content","noun","high-intensity interval training (HIIT)"
+368,"hinder","style","verb",
+369,"hinges","style","verb",
+370,"hinting","style","verb",
+371,"hipsc","content","noun","hESCs and hiPSCs are both human pluripotent stem cells (hPSCs)"
+372,"hold","style","verb",
+373,"holds","style","verb",
+374,"hospitalized","content","verb",
+375,"hotel","content","noun","related to Covid spread"
+376,"however","style","adverb",
+377,"https","other",,"appears in links"
+378,"hubei","content","noun","province in China"
+379,"humanity","content","noun",
+380,"hydroxychloroquine","content","noun",
+381,"hydroxymethylcytosine","content","noun",
+382,"hypercoagulability","content","noun",
+383,"hyperinflammation","content","noun",
+384,"hyperinflammatory","content","adjective",
+385,"icgc","content","noun","International Cancer Genome Consortium (ICGC)"
+386,"icis","content","noun","Immune checkpoint inhibitors (ICIs)"
+387,"identified","style","verb",
+388,"ideological","content","adjective","relating to some ideology"
+389,"ieee","content","noun","Mostly refers to IEEE Xplore"
+390,"illuminates","style","verb",
+391,"illuminating","style","adjective",
+392,"imbalances","style","verb",
+393,"impact","style","noun",
+394,"impactful","style","adjective",
+395,"impacting","style","verb",
+396,"impede","style","verb",
+397,"impeding","style","adjective",
+398,"imperative","style","adjective",
+399,"impressive","style","adjective",
+400,"inaccuracies","content","noun","refers to problems with data"
+401,"inadequately","style","adverb",
+402,"inaugural","content/style","adjective","unsure"
+403,"including","style","preposition",
+404,"incorporates","style","verb",
+405,"incorporating","style","verb",
+406,"indicating","style","verb",
+407,"individuals","style","noun",
+408,"inequitable","content","adjective","unfair; unjust"
+409,"infection","content","noun",
+410,"infectiousness","content","noun",
+411,"influencing","style","verb",
+412,"inherent","style","adjective",
+413,"initially","style","adverb",
+414,"innovative","style","adjective",
+415,"inquiries","style","noun",
+416,"insights","style","noun",
+417,"integrates","style","verb",
+418,"integrating","style","verb",
+419,"integration","style","noun",
+420,"interconnectedness","style","noun",
+421,"interplay","style","noun",
+422,"intersected","content","verb","one set of genes was ""intersected"" with another set of genes"
+423,"intersectionality","content","noun","Intersectionality (or intersectional theory) is a term first coined in 1989 by American civil rights advocate and leading scholar of critical race theory, Kimberlé Williams Crenshaw"
+424,"interspaced","content","verb","clustered regularly interspaced short palindromic repeat (CRISPR)"
+425,"into","style","preposition",
+426,"intricacies","style","noun",
+427,"intricate","style","adjective",
+428,"intricately","style","adverb",
+429,"introduces","style","adjective",
+430,"invaluable","style","adjective",
+431,"investigates","style","verb",
+432,"investigation","content/style","noun","“investigation” can be a synonym of “study” or “experiment” which is style"
+433,"investors","content","noun","economics term"
+434,"involves","style","verb",
+435,"involving","style","verb",
+436,"isrctn","content","noun","The ISRCTN registry is a primary clinical trial registry"
+437,"janssen","content","noun","Covid vaccine"
+438,"juxtaposed","style","adjective",
+439,"katp","content","noun","ATP-sensitive potassium (KATP) channels"
+440,"kcat","content","noun","kcat is the catalytic constant"
+441,"koch","content","noun","Robert Koch"
+442,"lachnospiraceae","content","noun",
+443,"lacticaseibacillus","content","noun",
+444,"lactiplantibacillus","content","noun",
+445,"landscape","content/style","noun","can have technical meaning but also used as a style word"
+446,"lasso","content","noun","regularization"
+447,"latinx","content","noun",
+448,"leading","style","verb",
+449,"leone","content","noun","Sierra Leone - Ebola outbreak"
+450,"levels","content","noun",
+451,"leverages","style","verb",
+452,"leveraging","style","verb",
+453,"liberia","content","noun",
+454,"lies","content/style","noun/verb","can be noun (plural from lie) or a verb (3rd person singular)"
+455,"like","style","particle",
+456,"limitations","style","noun",
+457,"linked","style","verb",
+458,"lipidomic","content","adjective",
+459,"livelihoods","content","noun",
+460,"llms","content","noun","large language model"
+461,"lncrna","content","noun","Long noncoding RNAs"
+462,"lncrnas","content","noun","Long noncoding RNAs"
+463,"lockdown","content","noun",
+464,"lockdowns","content","noun",
+465,"lombardy","content","noun","Covid outbreak in Italy"
+466,"loneliness","content","noun",
+467,"lopinavir","content","noun",
+468,"lowly","content","adjective","lowly expressed genes"
+469,"lstm","content","noun","long short-term memory"
+470,"luad","content","noun","Lung adenocarcinoma"
+471,"lymphocytopenia","content","noun",
+472,"lymphopenia","content","noun",
+473,"machining","content","adjective","machining process"
+474,"mafld","content","noun","“Metabolic dysfunction-associated fatty liver disease (MAFLD)” is the term suggested in 2020 to refer to fatty liver disease"
+475,"maintaining","style","verb",
+476,"management","content","noun",
+477,"managing","content","verb",
+478,"march","content","noun","Covid outbreak"
+479,"marking","content","noun","Can refer to tumor marking, see ""tumor marker"""
+480,"mash","content","noun","Metabolic dysfunction-associated steatohepatitis (MASH) is the replacement term for what used to be called nonalcoholic steatohepatitis"
+481,"mask","content","noun","Covid prevention"
+482,"masks","content","noun","Covid prevention"
+483,"masld","content","noun","Metabolic dysfunction-associated steatotic liver disease (MASLD) is the latest term for steatotic liver disease"
+484,"mechanisms","content","noun","general term used in biology"
+485,"medrxiv","content","noun","medRxiv was launched in 2019"
+486,"mendelian","content","adjective",
+487,"merges","style","verb",
+488,"mers","content","noun","Middle East respiratory syndrome"
+489,"metacognition","content","noun",
+490,"methodologies","style","noun",
+491,"methylammonium","content","noun",
+492,"meticulous","style","adjective",
+493,"meticulously","style","adverb",
+494,"microcephaly","content","noun",
+495,"midst","style","preposition",
+496,"minimizing","content/style","verb","can have technical and non-technical meanings"
+497,"minoritized","content","adjective","minoritized groups of people"
+498,"mirroring","content/style","verb","can have technical and non-technical meanings"
+499,"miseq","content","noun","Illumina MiSeq"
+500,"misinformation","content","noun",
+501,"mitigate","content","verb",
+502,"mitigated","content","verb",
+503,"mitigates","content","verb",
+504,"mitigating","content","verb",
+505,"mitogenome","content","noun",
+506,"model","content","noun","statistical model, model organism, etc."
+507,"moderating","content","adjective","moderating factors/effects"
+508,"moderna","content","noun","Covid vaccine"
+509,"modulating","content/style","verb","can have technical and non-technical meanings"
+510,"molnupiravir","content","noun",
+511,"monkeypox","content","noun",
+512,"mpox","content","noun","Mpox (formerly known as monkeypox)"
+513,"mpro","content","noun","SARS-CoV-2 main protease"
+514,"mpxv","content","noun","MPXV is an enveloped double-stranded DNA (dsDNA) virus"
+515,"mucormycosis","content","noun",
+516,"multifaceted","style","adjective",
+517,"multiracial","content","adjective",
+518,"mxene","content","noun","In materials science, MXenes are a class of two-dimensional inorganic compounds along with MBenes"
+519,"myalgia","content","noun",
+520,"nanosheet","content","noun",
+521,"nasopharyngeal","content","adjectove",
+522,"ncov","content","noun","2019-nCoV"
+523,"necessitate","style","verb",
+524,"necessitates","style","verb",
+525,"necessitating","style","verb",
+526,"necessity","style","noun",
+527,"need","style","verb",
+528,"neurofeedback","content","noun",
+529,"neuromorphic","content","adjective",
+530,"neutrality","content","noun","carbon neutrality"
+531,"news","content","noun",
+532,"nhanes","content","noun","National Health and Nutrition Examination Survey"
+533,"nirmatrelvir","content","noun",
+534,"nivolumab","content","noun",
+535,"nmosd","content","noun","Neuromyelitis Optica Spectrum Disorder (NMOSD)"
+536,"nomogram","content","noun","a diagram representing the relations between three or more variable quantities"
+537,"normalcy","content","noun","often as “return to normalcy” after covid pandemic"
+538,"notable","style","adjective",
+539,"notably","style","advebr",
+540,"noteworthy","style","adjective",
+541,"nsqip","content","noun","ACS National Surgical Quality Improvement Program"
+542,"nuanced","style","adjective",
+543,"nuances","style","noun",
+544,"nucleocapsid","content","noun",
+545,"observed","style","verb",
+546,"offer","style","verb",
+547,"offering","style","verb",
+548,"offers","style","verb",
+549,"omicron","content","noun",
+550,"omnibus","content","adjective","omnibus statistical test"
+551,"online","content","adjective",
+552,"opacities","content","noun",
+553,"openai","content","noun",
+554,"optimizing","style","verb",
+555,"optoelectronics","content","noun",
+556,"orchestrating","style","verb",
+557,"organoid","content","noun",
+558,"originality","content/style","noun",
+559,"outbreak","content","noun","not only about covid"
+560,"outcomes","style","noun",
+561,"outlines","style","verb",
+562,"outperforming","content","verb","one method outperforming another"
+563,"overlook","style","verb",
+564,"overlooking","style","verb",
+565,"overpotential","content","noun","electrochemistry term"
+566,"overwhelmed","style","verb",
+567,"pandemic","content","noun",
+568,"pandemics","content","noun",
+569,"paracancerous","content","adjective",
+570,"particularly","style","adverb",
+571,"patient","content","noun",
+572,"patients","content","noun",
+573,"paving","style","verb",
+574,"pcgs","content","noun","various abbreviations"
+575,"pembrolizumab","content","noun","drug"
+576,"perovskite","content","noun","mineral"
+577,"perovskites","content","noun",
+578,"persist","style","verb",
+579,"personalized","content","adjective","personalized medicine"
+580,"pfas","content","noun","Per- and polyfluoroalkyl substances are a group of synthetic organofluorine chemical compounds"
+581,"pfizer","content","noun",
+582,"photobiomodulation","content","noun",
+583,"phytochemistry","content","noun",
+584,"phytoconstituents","content","noun",
+585,"pinpoint","style","verb",
+586,"pinpointed","style","verb",
+587,"pinpointing","style","verb",
+588,"pioneering","style","verb",
+589,"pioneers","style","noun",
+590,"pivotal","style","adjective",
+591,"plastome","content","noun",
+592,"pleiotropy","content","noun",
+593,"pneumonia","content","noun",
+594,"poised","style","verb",
+595,"policymaking","content","noun",
+596,"polydopamine","content","noun",
+597,"polyfluoroalkyl","content","noun",
+598,"pose","style","verb",
+599,"posed","style","verb",
+600,"poses","style","verb",
+601,"posing","style","verb",
+602,"postponed","style","verb",
+603,"potential","style","adjective",
+604,"potentially","style","adverb",
+605,"precautionary","content","adjective","""precautionary measures"""
+606,"precautions","content","noun",
+607,"precise","style","adjective",
+608,"predominantly","style","adverb",
+609,"prepandemic","content","noun",
+610,"preregistered","content","verb",
+611,"presents","style","verb",
+612,"preserving","style","verb",
+613,"pressing","style","adjective",
+614,"presso","content","noun","MR-PRESSO: Mendelian Randomization Pleiotropy RESidual Sum and Outlier"
+615,"pretrained","content","verb",
+616,"prevalent","style","adjective",
+617,"primarily","style","adverb",
+618,"primary","style","adjective",
+619,"printer","content","noun","3d printers"
+620,"printing","content","verb",
+621,"prioritize","content/style","verb","edge case -- ""vaccine prioritizations"""
+622,"prioritizes","content/style","verb",
+623,"prioritizing","content/style","verb",
+624,"procalcitonin","content","noun",
+625,"prominence","content/style","noun","""linguistic prominence"" and some other terms"
+626,"promise","style","verb",
+627,"promising","style","verb",
+628,"prompting","content/style","verb","can be about LLM prompts"
+629,"prompts","content","nouns","LLM prompts"
+630,"proms","content","noun","Patient-reported outcome measures"
+631,"pronounced","style","adjective",
+632,"propelling","style","verb",
+633,"prospero","content","noun","International Prospective Register of Systematic Reviews"
+634,"providing","style","verb",
+635,"pseudomolecules","content","noun",
+636,"pseudotyped","content","vreb",
+637,"psma","content","noun","Prostate-specific membrane antigen"
+638,"ptrend","content","other","p-value for trend"
+639,"pwms","content","noun","People with MS"
+640,"quarantine","content","noun",
+641,"quarantined","content","verb",
+642,"racialized","content","verb",
+643,"racism","content","noun",
+644,"radiographical","content","adjective",
+645,"radiomics","content","noun",
+646,"radium","content","noun",
+647,"randomization","content","noun",
+648,"rates","content","noun",
+649,"rdrp","content","noun","RNA-dependent RNA polymerase"
+650,"reactogenicity","content","noun","reactogenicity is the capacity of a vaccine to produce common, ""expected"" adverse reactions"
+651,"realizes","style","verb",
+652,"realm","style","noun",
+653,"realms","style","noun",
+654,"recognizing","style","verb",
+655,"redescribed","content","verb","redescribed species"
+656,"refine","style","verb",
+657,"refines","style","verb",
+658,"refining","style","verb",
+659,"reframing","style","verb",
+660,"reinfection","content","noun",
+661,"reinfections","content","noun",
+662,"reliance","content/style","noun","can have technical and non-technical meanings"
+663,"remains","style","verb",
+664,"remarkable","style","adjective",
+665,"remdesivir","content","noun",
+666,"remotely","content/style","adjective",
+667,"renowned","style","adjective",
+668,"reopening","content","noun","covid-related"
+669,"repurposed","content","adjective","repurposed medications"
+670,"research","style","noun",
+671,"resnet","content","noun",
+672,"respirator","content","noun",
+673,"respirators","content","noun",
+674,"respiratory","content","adjective",
+675,"restrictions","content","noun",
+676,"resulting","style","verb",
+677,"resuming","content/style","verb","can relate to covid pandemic"
+678,"rethink","style","verb",
+679,"retrosigmoid","content","adjective","retrosigmoid approach - neurosurgery term"
+680,"revealed","style","verb",
+681,"revealing","style","verb",
+682,"reveals","style","verb",
+683,"review","content","noun",
+684,"revolutionize","style","verb",
+685,"revolutionizing","style","verb",
+686,"revolves","style","verb",
+687,"rhino","content","other","part of different words written with a hyphen"
+688,"ribonucleic","content","adjective",
+689,"robins","content","noun","The ROBINS-I tool (“Risk Of Bias In Non-randomised Studies - of Interventions”) is concerned with evaluating risk of bias"
+690,"role","style","noun",
+691,"rollout","content","noun",
+692,"rosenberg","content","name","Rosenberg self-esteem scale"
+693,"rrnas","content","noun","ribosomal RNA"
+694,"rstudio","content","noun","refers to R language"
+695,"safeguard","content","verb",
+696,"safeguarding","content","verb",
+697,"sars","content","noun",
+698,"scaffolded","content","verb",
+699,"scfas","content","noun","short-chain fatty acid"
+700,"scielo","content","noun","bibliographic database"
+701,"scoping","content","noun","""scoping review"" - a type of review"
+702,"scrna","content","noun","small conditional RNA"
+703,"scrutinize","style","verb",
+704,"scrutinized","style","verb",
+705,"scrutinizing","style","verb",
+706,"seahorse","content","noun","Seahorse Bioscience is a private company that develops and manufactures cellular bioenergetics analytical instruments"
+707,"seamless","style","adjective",
+708,"seamlessly","style","adverb",
+709,"seeks","style","verb",
+710,"seir","content","noun","susceptible-exposed-infected-recovered - infection model"
+711,"sentiment","content","noun","sentiment analysis"
+712,"serves","style","verb",
+713,"serving","style","verb",
+714,"severe","content","adjective","severe disease"
+715,"shandong","content","noun","province in China"
+716,"shap","content","noun","SHapley Additive exPlanations"
+717,"shaping","style","verb",
+718,"shapley","content","noun","SHapley Additive exPlanations"
+719,"shedding","style","verb",
+720,"shenzhen","content","noun","city in China"
+721,"shortages","content","noun",
+722,"shortness","content","noun","""shortness of breath"""
+723,"showcased","style","verb",
+724,"showcases","style","verb",
+725,"showcasing","style","verb",
+726,"shutdown","content","noun","Covid pandemic related"
+727,"sierra","content","noun","Sierra Leone - ebola outbreak"
+728,"significant","content/style","adjective","can mean ""statistically significant"" but not necessarily"
+729,"signifying","style","verb",
+730,"smallpox","content","noun",
+731,"smell","content","noun","Covid leads to smell loss"
+732,"sneezing","content","noun",
+733,"sofosbuvir","content","noun",
+734,"solidarity","content","noun",
+735,"solidify","style","verb",
+736,"sore","content","adjective",
+737,"sourced","content","verb",
+738,"spanned","style","verb",
+739,"spanning","style","verb",
+740,"specific","content","adjective","used in hyphenated words like ""something-specific"""
+741,"specifically","style","adverb",
+742,"spike","content","noun","spike protein"
+743,"sponging","content","verb","Covid context"
+744,"spread","content","verb",
+745,"spurred","style","verb",
+746,"srmr","content","noun","standardized root mean squared residual"
+747,"ssgsea","content","noun","single-sample gene set enrichment analysis"
+748,"standardizing","style/content","verb","can have technical and non-technical meanings"
+749,"stands","style","verb",
+750,"stata","content","noun","statistical software"
+751,"statement","style","noun",
+752,"steatotic","content","adjective","steatosis = accumulation of fat in tissues"
+753,"stemming","style","verb",
+754,"storm","content","noun","cytokine storm"
+755,"strategically","style","adjective",
+756,"strategies","style","noun",
+757,"streamline","style","verb",
+758,"streamlined","style","verb",
+759,"streamlines","style","verb",
+760,"streamlining","style","verb",
+761,"stretchable","content","adjective","stretchable devices, electronics, etc"
+762,"stringency","content","noun","Covid measures stringency"
+763,"strobe","content","noun","Strengthening the Reporting of Observational Studies in Epidemiology"
+764,"struggle","style","verb",
+765,"study","content","noun",
+766,"sublineages","content","noun",
+767,"subsequently","style","adverb",
+768,"substantial","style","adjective",
+769,"substantiated","style","verb",
+770,"substantiates","style","verb",
+771,"supplementary","content","adjective","Supplementary Materials, medications, motor areas, etc."
+772,"surge","content","noun","Covid context"
+773,"surged","style","verb",
+774,"surmount","style","verb",
+775,"surpass","style","verb",
+776,"surpassed","style","verb",
+777,"surpasses","style","verb",
+778,"surpassing","style","verb",
+779,"suvmax","content","noun","Maximum Standard Unit Value (SUVmax) is an indicator for overall survival in lung cancer"
+780,"swab","content","noun",
+781,"swift","style","adjective",
+782,"swiftly","style","adverb",
+783,"syndrome","content","noun",
+784,"synonym","content","noun","species taxonomy"
+785,"synonyms","content","noun","species taxonomy"
+786,"synonymy","content","noun","species taxonomy"
+787,"synthesizes","style/content","verb","can have technical and non-technical meanings"
+788,"tailored","content","adjective","medical approaches tailored to the patient"
+789,"talens","content","noun","transcription activator-like effector nucleases"
+790,"talent","content","noun",
+791,"tcga","content","noun","the cancer genome atlas"
+792,"tcmsp","content","noun","Traditional Chinese Medicine Systems Pharmacology"
+793,"techniques","style","noun",
+794,"telehealth","content","noun",
+795,"telemedicine","content","noun",
+796,"telerehabilitation","content","noun",
+797,"their","style","pronoun",
+798,"therapeutic","content","adjective",
+799,"therapeutical","content","adjective",
+800,"thereby","style","adverb",
+801,"these","style","pronoun",
+802,"this","style","pronoun",
+803,"thorough","style","adjective",
+804,"through","style","preposition",
+805,"timepoint","content","noun",
+806,"timer","content","noun","Tumor IMmune Estimation Resource"
+807,"tirzepatide","content","noun",
+808,"tmax","content","noun","time to maximum concentration"
+809,"tmds","content","noun","temporomandibular disorders"
+810,"tocilizumab","content","noun",
+811,"tofacitinib","content","noun",
+812,"trainings","content","noun",
+813,"transformative","style","adjective",
+814,"transformer","content","noun",
+815,"transformers","content","noun",
+816,"transgender","content","adjective",
+817,"transitioning","content","verb","different uses"
+818,"transmissibility","content","noun",
+819,"transwell","content","noun","wetlab device"
+820,"treatment","content","noun",
+821,"triaging","content","noun",
+822,"trinetx","content","noun","TriNetX is a self-service web-based data exploration tool"
+823,"trna","content","noun","transport RNA"
+824,"trustworthy","content","adjective","trustworthy AI"
+825,"tweets","content","noun",
+826,"twitter","content","noun",
+827,"typically","style","adverb",
+828,"ukrainian","content","adjective",
+829,"ultimately","style","adverb",
+830,"uncharted","style","adjective",
+831,"uncovering","style","verb",
+832,"underexplored","style","verb",
+833,"underscore","style","verb",
+834,"underscored","style","verb",
+835,"underscores","style","verb",
+836,"underscoring","style","verb",
+837,"understanding","style","verb",
+838,"unexplored","style","adjective",
+839,"unlocking","style","verb",
+840,"unparalleled","style","adjective",
+841,"unraveling","style","verb",
+842,"unvaccinated","content","verb",
+843,"unveil","style","verb",
+844,"unveiled","style","verb",
+845,"unveiling","style","verb",
+846,"unveils","style","verb",
+847,"upadacitinib","content","noun",
+848,"uphold","style","verb",
+849,"upholding","style","verb",
+850,"urging","style","verb",
+851,"using","style","verb",
+852,"utilized","style","verb",
+853,"utilizes","style","verb",
+854,"utilizing","style","verb",
+855,"vaccinate","content","verb",
+856,"vaccinated","content","verb",
+857,"vaccination","content","noun",
+858,"vaccinations","content","noun",
+859,"vaccine","content","noun",
+860,"vaccinees","content","noun",
+861,"vaccines","content","noun",
+862,"valuable","style","adjective",
+863,"vaping","content","noun",
+864,"variations","content","noun","can be used in various contexts, but usually has technical meaning"
+865,"various","style","adjective",
+866,"varying","style","verb",
+867,"vemurafenib","content","noun",
+868,"ventilation","content","noun",
+869,"ventilators","content","noun",
+870,"verifies","style","verb",
+871,"versatility","style","noun",
+872,"videoconferencing","content","noun",
+873,"vigilant","content","adjective","doctors being vigilant about some condition"
+874,"viral","content","adjective",
+875,"vmax","content","noun","maximum velocity"
+876,"vosviewer","content","noun","VOSViewer is a software tool which can be used to conduct bibliometric analyses and create visualizations from selected database"
+877,"wandering","style","verb",
+878,"wanfang","content","noun","Wanfang Data has been a leading information content and service provider in China"
+879,"waning","content","adjective","waning immunity"
+880,"warranting","style","verb",
+881,"wearable","content","adjective",
+882,"welded","content","adjective","welded joints"
+883,"were","style","verb",
+884,"wgcna","content","noun","Weighted correlation network analysis, also known as weighted gene co-expression network analysis"
+885,"whatsapp","content","noun",
+886,"while","style","preposition",
+887,"whiteness","content","noun","about race"
+888,"within","style","adverb",
+889,"workers","content","noun","relates to covid"
+890,"worried","content","verb","relates to covid (anxiety)"
+891,"worries","content","verb","related to covid"
+892,"wuhan","content","noun","covid related"
+893,"xgboost","content","noun","ML model"
+894,"yielding","style","verb",
+895,"yolo","content","noun","""you only look once"", ML algorithm for object detection"
+896,"youtube","content","noun","studies talking about youtube"
+897,"zika","content","noun","virus"
+898,"zikv","content","noun","virus"
+899,"zoom","content","noun","related to covid, zoom the videocalling platform"

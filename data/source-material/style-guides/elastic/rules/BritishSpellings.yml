@@ -1,0 +1,51 @@
+extends: substitution
+message: "Use American English spelling '%s' instead of British English '%s'."
+link: https://www.elastic.co/docs/contribute-docs/style-guide/grammar-spelling#american-english
+level: warning
+ignorecase: true
+action:
+  name: replace
+swap:
+  # -ise → -ize
+  '\b(?:analyse)\b': analyze
+  '\b(?:authorise)\b': authorize
+  '\b(?:customise)\b': customize
+  '\b(?:emphasise)\b': emphasize
+  '\b(?:finalise)\b': finalize
+  '\b(?:initialise)\b': initialize
+  '\b(?:optimise)\b': optimize
+  '\b(?:organise)\b': organize
+  '\b(?:prioritise)\b': prioritize
+  '\b(?:realise)\b': realize
+  '\b(?:recognise)\b': recognize
+  '\b(?:specialise)\b': specialize
+  '\b(?:standardise)\b': standardize
+  '\b(?:utilise)\b': utilize 
+  '\b(?:visualise)\b': visualize
+  # -isation → -ization
+  '\b(?:customisation)\b': customization
+  '\b(?:initialisation)\b': initialization
+  '\b(?:optimisation)\b': optimization
+  '\b(?:organisation)\b': organization
+  '\b(?:standardisation)\b': standardization
+  '\b(?:visualisation)\b': visualization
+  # -our → -or
+  '\b(?:behaviour)\b': behavior
+  '\b(?:colour)\b': color
+  '\b(?:flavour)\b': flavor
+  # -ce → -se
+  '\b(?:defence)\b': defense
+  '\b(?:licence)\b': license
+  '\b(?:pretence)\b': pretense
+  # -ogue → og
+  '\b(?:catalogue)\b': catalog
+  '\b(?:dialogue)\b': dialog
+  '\b(?:epilogue)\b': epilog
+  # -st → /
+  '\b(?:amongst)\b': among
+  '\b(?:whilst)\b': while
+  # misc
+  '\b(?:grey)\b': gray
+  '\b(?:programme)\b': program
+  '\b(?:towards)\b': toward
+  '\b(?:acknowledgement)\b': acknowledgment

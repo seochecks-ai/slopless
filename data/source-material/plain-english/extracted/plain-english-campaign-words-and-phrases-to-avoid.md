@@ -1,0 +1,43 @@
+# Plain English Campaign - Words And Phrases To Avoid
+
+Source: https://mstrust.org.uk/sites/default/files/plain_english_campaign_alternative_words.pdf
+
+- a total of
+- absolutely
+- abundantly
+- actually
+- all things being equal
+- as a matter of fact
+- as far as I am concerned
+- at the end of the day
+- at this moment in time
+- basically
+- current
+- currently
+- during the period from
+- each and every one
+- existing
+- extremely
+- I am of the opinion that
+- I would like to say
+- I would like to take this opportunity to
+- in due course
+- in the end
+- in the final analysis
+- in this connection
+- in total
+- in view of the fact that
+- it should be understood
+- last but not least
+- obviously
+- of course
+- other things being equal
+- quite
+- really
+- really quite
+- regarding the (noun), it was
+- the fact of the matter is
+- the month(s) of
+- to all intents and purposes
+- to one’s own mind
+- very

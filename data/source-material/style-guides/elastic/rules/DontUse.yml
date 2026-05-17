@@ -1,0 +1,20 @@
+extends: existence
+message: "Don't use '%s'."
+link: https://www.elastic.co/docs/contribute-docs/style-guide/word-choice
+ignorecase: true
+level: warning
+tokens:
+  - a\.k\.a\.
+  - aka
+  - and/or
+  - at this point
+  - just
+  - please
+  - premium app
+  - premium apps
+  - premium solution
+  - premium solutions
+  - quite
+  - realtime
+  - thus
+  - \.\.\.

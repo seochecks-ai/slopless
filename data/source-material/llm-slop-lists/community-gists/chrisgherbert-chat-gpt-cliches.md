@@ -1,0 +1,96 @@
+# Chat GPT Cliches
+
+Chat GPT has certain words and phrases that it uses *way too much*. Here's a rolling list of them. You can ask Chat GPT to avoid them by including custom instructions in the "Customize ChatGPT" menu. 
+
+- A testament to
+- Additionally
+- Akin
+- Arguably
+- At the end of the day
+- Beacon
+- Bolster
+- Bustling
+- Camaraderie
+- Certainly
+- Championing
+- Commendable
+- Compelling
+- Crucible
+- Cutting-edge
+- Daunting
+- Deep dive
+- Delve
+- Distress signal
+- Dive into
+- Diverse
+- Drill down
+- Effortlessly
+- Embark
+- Enigma
+- Enlightening
+- Essential
+- Exemplified
+- Fear not
+- Firstly
+- Foster
+- Furthermore
+- Game changer
+- Gossamer
+- Highlights
+- However
+- Hustle and bustle
+- Important to note
+- Important to understand
+- In conclusion
+- In summary
+- Indeed
+- Indelible
+- Insightful
+- Interplay
+- Intricacies
+- Intricate
+- It’s worth noting that
+- Journey
+- Key insights
+- Labyrinth
+- Landscape
+- Leveraging
+- Little did
+- Meticulous
+- Meticulously
+- Metropolis
+- Moreover
+- Multifaceted
+- Navigating
+- Nonetheless
+- Notably
+- Noteworthy
+- Nuanced
+- Pivot
+- Profound
+- Quest
+- Realm
+- Remember that
+- Resonates
+- Reverberate
+- Shed light
+- Spearheaded
+- Subsequently
+- Symphony
+- Tapestry
+- That being said
+- Therefore
+- Transcended
+- Transformative
+- Treasure trove
+- Ultimately
+- Underscore
+- Uncover
+- Unique blend
+- Unlock
+- Unveil
+- Unwavering
+- Vibrant
+- Virtuoso
+- Vital
+- Whimsical

@@ -1,0 +1,8 @@
+extends: existence
+message: "Avoid using dimensions in the format 'M X N'. Use 'MxN' instead."
+link: https://www.elastic.co/docs/contribute-docs/style-guide/formatting#dimensions
+level: suggestion
+nonword: true
+scope: text
+tokens: 
+  - '\b\d+\s+[xX]\s+\d+\b'

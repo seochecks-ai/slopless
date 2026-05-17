@@ -1,0 +1,24 @@
+extends: substitution
+message: "Use '%s' instead of '%s' when referring to versions."
+ignorecase: true
+level: suggestion
+action:
+  name: replace
+swap:
+  and higher: "and later"
+  and lower: "and earlier"
+  and newer: "and later"
+  and older: "and earlier"
+  or higher: "or later"
+  or lower: "or earlier"
+  or newer: "or later"
+  or older: "or earlier"
+  higher version: "later version"
+  lower version: "earlier version"
+  newer version: "later version"
+  older version: "earlier version"
+  higher versions: "later versions"
+  lower versions: "earlier versions"
+  newer versions: "later versions"
+  older versions: "earlier versions"
+

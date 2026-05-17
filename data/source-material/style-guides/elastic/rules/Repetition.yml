@@ -1,0 +1,9 @@
+extends: repetition
+message: '"%s" is repeated.'
+link: https://www.elastic.co/docs/contribute-docs/style-guide/voice-tone#write-like-a-minimalist
+level: suggestion
+ignorecase: false
+alpha: true
+tokens:
+  - '[^\s\.]+'
+  - '[^\s]+'

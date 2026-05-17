@@ -1,0 +1,10 @@
+extends: existence
+message: "Use `%s` only when referring to cloning a GitHub repository or creating a copy that is linked to the original. Often confused with 'copy' and 'duplicate'."
+link: https://www.elastic.co/docs/contribute-docs/style-guide/word-choice
+ignorecase: true
+level: suggestion
+tokens:
+  - clone
+  - clones
+  - cloned
+  - cloning

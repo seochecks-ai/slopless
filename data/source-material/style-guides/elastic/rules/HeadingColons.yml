@@ -1,0 +1,8 @@
+extends: existence
+message: "Capitalize '%s'."
+link: https://www.elastic.co/docs/contribute-docs/style-guide/grammar-spelling#colons
+nonword: true
+level: suggestion
+scope: heading
+tokens:
+  - ':\s[a-z]'

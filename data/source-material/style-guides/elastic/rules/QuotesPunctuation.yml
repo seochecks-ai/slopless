@@ -1,0 +1,7 @@
+extends: existence
+message: 'Place punctuation inside closing quotation marks.'
+link: https://www.elastic.co/docs/contribute-docs/style-guide/grammar-spelling#punctuation-with-quotation-marks
+level: warning
+nonword: true
+tokens:
+  - '[""][^"""]+[""][.,]'

@@ -1,0 +1,33 @@
+extends: substitution
+message: "Use '%s' instead of '%s'. The article depends on pronunciation, not spelling."
+link: https://www.elastic.co/docs/contribute-docs/style-guide/grammar-spelling#using-the-right-article
+level: warning
+ignorecase: true
+action:
+  name: replace
+swap:
+  'a FAQ': an FAQ
+  'a HTML': an HTML
+  'a HTTP': an HTTP
+  'a HTTPS': an HTTPS
+  'a SQL': an SQL
+  'a SSH': an SSH
+  'a SSL': an SSL
+  'a SDK': an SDK
+  'a XML': an XML
+  'a API': an API
+  'a IDE': an IDE
+  'a RSS': an RSS
+  'a SSD': an SSD
+  'a SVG': an SVG
+  'a XSS': an XSS
+  'an GUI': a GUI
+  'an PDF': a PDF
+  'an USB': a USB
+  'an URL': a URL
+  'an URI': a URI
+  'an CPU': a CPU
+  'an GPU': a GPU
+  'an RAM': a RAM
+  'an CSV': a CSV
+  'an JSON': a JSON

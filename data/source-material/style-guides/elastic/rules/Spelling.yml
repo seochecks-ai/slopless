@@ -1,0 +1,30 @@
+extends: spelling
+message: "'%s' is a possible misspelling."
+level: warning
+# Vocabulary words (ElasticTerms, ThirdPartyProducts) are automatically
+# accepted via Vale's Vocab system and don't need to be repeated here.
+# append: true keeps the default American English dictionary active.
+append: true
+filters:
+  # Ignore uppercase acronyms (e.g. YAML, HTTP, REST)
+  - '[A-Z]{2,}'
+  # Ignore camelCase and PascalCase identifiers
+  - '[a-z]+[A-Z][a-zA-Z]+'
+  # Ignore tokens containing digits (e.g. log4j, sha256, IPv4)
+  - '[a-zA-Z]*[0-9]+[a-zA-Z0-9]*'
+  # Ignore hyphenated compounds that look like CLI flags or slugs
+  - '--?[a-zA-Z][a-zA-Z0-9-]+'
+  # Ignore file extensions and dot-separated identifiers
+  - '\.[a-zA-Z]{1,6}\b'
+  # Ignore words with underscores (e.g. config_key, my_var, _source, _bulk)
+  - '_?[a-zA-Z]+_[a-zA-Z0-9_]+'
+  # Ignore underscore-prefixed API fields and Elasticsearch paths (e.g. _id, _doc)
+  - '_[a-zA-Z][a-zA-Z0-9_]*'
+  # Ignore email-like and URL-like tokens
+  - '[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+'
+  # Ignore date/time format patterns (e.g. yyyy, HHmm)
+  - '[yYmMdDhHsS]{2,}'
+  # Ignore tokens ending with underscore (e.g. arg_)
+  - '[a-zA-Z0-9]+_\b'
+  # Ignore template/macro artifacts (e.g. bracketsone, bracketstwo)
+  - 'brackets\w+'

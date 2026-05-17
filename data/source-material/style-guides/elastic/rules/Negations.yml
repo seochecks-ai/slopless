@@ -1,0 +1,16 @@
+extends: existence
+message: "Consider rephrasing to avoid negative constructions like '%s'. Try stating what something IS rather than what it is NOT."
+link: https://www.elastic.co/docs/contribute-docs/style-guide/accessibility#write-for-an-international-audience
+level: suggestion
+ignorecase: true
+tokens:
+  - "cannot .{1,50} without"
+  - "can't .{1,50} without"
+  - "will not .{1,50} unless"
+  - "won't .{1,50} unless"
+  - "do not .{1,50} without"
+  - "don't .{1,50} without"
+  - "unable to .{1,50} without"
+  - "not possible .{1,50} without"
+  - "not available .{1,50} unless"
+  - "not accessible .{1,50} without"

@@ -4,7 +4,10 @@
   "words": [
     "actuallyactual",
     "autoplay",
+    "berenslab",
     "benzodiazepines",
+    "bigrams",
+    "cabanac",
     "cmark",
     "ation",
     "dysregulation",
@@ -30,16 +33,19 @@
     "textlint",
     "textlintrc",
     "tion",
+    "supplmat",
     "typecov",
     "uncomparable",
     "uncomparables",
     "websmasher",
-    "worklogs"
+    "worklogs",
+    "zenodo"
   ],
   "ignorePaths": [
     ".plans",
     ".worklogs",
     "behavior/golden",
+    "data/source-material",
     "dist",
     "node_modules",
     "package-lock.json",

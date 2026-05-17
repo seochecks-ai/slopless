@@ -1,0 +1,10 @@
+extends: existence
+message: "Use caution when using first-person pronouns such as '%s.'"
+link: https://www.elastic.co/docs/contribute-docs/style-guide/grammar-spelling#use-singular-first-person-pronouns-sparingly-i-me-my-mine
+ignorecase: true
+level: suggestion
+nonword: true
+tokens:
+  - \bme\b
+  - \bmy\b
+  - \bmine\b

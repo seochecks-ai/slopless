@@ -1,0 +1,12 @@
+extends: existence
+message: "Use exclamation points sparingly. Consider removing the exclamation point."
+link: https://www.elastic.co/docs/contribute-docs/style-guide/voice-tone#tone
+nonword: true
+level: suggestion
+action:
+  name: edit
+  params:
+    - trim_right
+    - "!"
+tokens:
+  - '\w+!(?:\s|$)'

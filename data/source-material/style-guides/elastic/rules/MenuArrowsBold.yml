@@ -1,0 +1,15 @@
+extends: existence
+message: "Use '→' to separate menu items, not '>' or '=>'. Example: Select Manage index → Add lifecycle policy."
+link: "https://www.elastic.co/docs/contribute-docs/style-guide/ui-writing"
+nonword: true
+level: warning
+scope: raw
+action:
+  name: edit
+  params:
+    - regex
+    - '\s*(?:=>|>)\s*'
+    - ' → '
+tokens:
+  - '^[ \t]{0,3}[^ \t`\n][^`\n]*\*\*[^*`\n]{2,}\s(?:>|=>)\s[^*`\n]{2,}\*\*[^`\n]*$'
+  - '^[ \t]{0,3}[^ \t`\n][^`\n]*\*\*[A-Za-z]{2,}(?:\s[A-Za-z]{2,})*\*\*\s(?:>|=>)\s\*\*[A-Za-z]{2,}(?:\s[A-Za-z]{2,})*\*\*[^`\n]*$'

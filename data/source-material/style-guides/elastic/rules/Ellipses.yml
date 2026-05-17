@@ -1,0 +1,9 @@
+extends: existence
+message: "In general, don't use an ellipsis."
+link: https://www.elastic.co/docs/contribute-docs/style-guide/voice-tone#write-like-a-minimalist
+nonword: true
+level: suggestion
+action:
+  name: remove
+tokens:
+  - '\.\.\.'

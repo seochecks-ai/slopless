@@ -1,0 +1,10 @@
+extends: existence
+message: "Don't end headings with punctuation."
+link: https://www.elastic.co/docs/contribute-docs/style-guide/grammar-spelling#capitalization
+level: warning
+nonword: true
+scope: heading
+action:
+  name: remove
+tokens:
+  - '[.!]$'

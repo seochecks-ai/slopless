@@ -1,0 +1,63 @@
+extends: substitution
+message: "Don't use directional language. Use '%s' instead of '%s'."
+link: https://www.elastic.co/docs/contribute-docs/style-guide/accessibility
+ignorecase: true
+level: warning
+action:
+  name: replace
+swap:
+  # "below" — document forward references (verb + below)
+  '(?:as )?shown below':       'in the following example'
+  'outlined below':            'in the following section'
+  'listed below':              'in the following section'
+  'described below':           'in the following section'
+  '(?:as )?defined below':     'in the following section'
+  '(?:as )?configured below':  'in the following section'
+  '(?:as )?detailed below':    'in the following section'
+  '(?:as )?specified below':   'in the following section'
+  '(?:as )?provided below':    'in the following section'
+  '(?:as )?discussed below':   'in the following section'
+  '(?:as )?explained below':   'in the following section'
+
+  # "below" — document forward references (the below + noun)
+  'the below example':    'the following example'
+  'in the below example': 'in the following example'
+  'the below steps':      'the following steps'
+  'the below options':    'the following options'
+  'the below (?:table|section|figure|diagram|image|screenshot|chart|list|code|configuration|query|command)s?': 'the following [element]'
+
+  # "below" — document forward references (noun + below)
+  '(?:the |this )?(?:table|section|figure|diagram|example|screenshot|chart|steps?|commands?|code) below': 'the following [element]'
+  'in (?:the |this )?(?:table|section|figure|diagram|example|screenshot|chart) below':                    'in the following [element]'
+
+  # "above" — document back-references (verb + above)
+  '(?:as )?shown above':       'in the preceding example'
+  'outlined above':            'in the preceding section'
+  'listed above':              'in the preceding section'
+  'described above':           'earlier on this page'
+  'mentioned above':           'earlier on this page'
+  'as mentioned above':        'as described earlier'
+  'noted above':               'earlier on this page'
+  '(?:as )?defined above':     'earlier on this page'
+  '(?:as )?configured above':  'earlier on this page'
+  '(?:as )?detailed above':    'earlier on this page'
+  '(?:as )?specified above':   'earlier on this page'
+  '(?:as )?provided above':    'earlier on this page'
+  '(?:as )?discussed above':   'earlier on this page'
+  '(?:as )?explained above':   'earlier on this page'
+
+  # "above" — document back-references (the above + noun)
+  'the above (?:table|section|figure|diagram|image|screenshot|chart|list|code|configuration|query|command)s?': 'the preceding [element]'
+
+  # "above" — document back-references (noun + above)
+  '(?:the |this )?(?:table|section|figure|diagram|example|screenshot|chart|steps?|commands?|code) above': 'the preceding [element]'
+  'in (?:the |this )?(?:table|section|figure|diagram|example|screenshot|chart) above':                    'in the preceding [element]'
+
+  # UI position — left/right
+  'to the (?:left|right) of':        'the label of the element'
+  'on the (?:left|right)(?: side)?': 'the label of the element'
+  'in the (?:left|right)(?: side)?': 'the label of the element'
+  '(?:left|right) side of the page': 'the label of the element'
+  'left-hand side':                  'the label of the element'
+  'right-hand side':                 'the label of the element'
+  'scroll (?:left|right)':           'the label of the element or action'
