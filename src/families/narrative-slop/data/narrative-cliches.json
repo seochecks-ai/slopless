@@ -1,0 +1,134 @@
+[
+  {
+    "category": "body sensation",
+    "id": "heart-chest",
+    "purpose": "Reports stock heartbeat-as-emotion body shorthand from Slop Forensics narrative ngrams.",
+    "slots": {
+      "motion": ["pounded", "pounding", "hammered", "raced", "racing"],
+      "possessive": ["her", "his", "my", "their"]
+    },
+    "templates": [
+      "heart {motion} in {possessive} chest",
+      "heart {motion} against {possessive} ribs"
+    ]
+  },
+  {
+    "category": "body sensation",
+    "id": "spine-shiver",
+    "purpose": "Reports stock shiver or chill spine reaction from Slop Forensics narrative ngrams.",
+    "slots": {
+      "reaction": ["chill", "shiver", "shivers"],
+      "verb": ["ran", "run", "sent"]
+    },
+    "templates": [
+      "{reaction} {verb} down her spine",
+      "{reaction} {verb} down his spine",
+      "{reaction} {verb} down my spine",
+      "{reaction} {verb} down their spine",
+      "{verb} {reaction} down her spine",
+      "{verb} {reaction} down his spine",
+      "{verb} {reaction} down my spine",
+      "{verb} {reaction} down their spine"
+    ]
+  },
+  {
+    "category": "body sensation",
+    "id": "breath-throat",
+    "purpose": "Reports stock breath-catching reaction from Slop Forensics narrative ngrams.",
+    "slots": {
+      "possessive": ["her", "his", "my", "their"]
+    },
+    "templates": ["breath caught in {possessive} throat"]
+  },
+  {
+    "category": "voice beat",
+    "id": "speech-voice-quality",
+    "purpose": "Reports dialogue tags padded with stock voice-quality beats from Slop Forensics narrative ngrams.",
+    "slots": {
+      "quality": [
+        "barely audible",
+        "barely a whisper",
+        "firm",
+        "low",
+        "soft",
+        "steady",
+        "trembling"
+      ],
+      "speechVerb": ["asked", "replied", "said", "whispered"]
+    },
+    "templates": [
+      "{speechVerb} voice {quality}",
+      "{speechVerb} in a voice {quality}",
+      "{speechVerb} her voice {quality}",
+      "{speechVerb} his voice {quality}",
+      "{speechVerb} their voice {quality}"
+    ]
+  },
+  {
+    "category": "voice beat",
+    "id": "voice-laced",
+    "purpose": "Reports stock emotion-as-voice-material phrasing from Slop Forensics narrative ngrams.",
+    "slots": {
+      "emotion": ["fear", "pain", "regret", "sadness", "wonder"],
+      "speechVerb": ["asked", "replied", "said", "whispered"]
+    },
+    "templates": [
+      "{speechVerb} voice laced with {emotion}",
+      "{speechVerb} her voice laced with {emotion}",
+      "{speechVerb} his voice laced with {emotion}",
+      "{speechVerb} their voice laced with {emotion}"
+    ]
+  },
+  {
+    "category": "atmosphere",
+    "id": "air-thick",
+    "purpose": "Reports stock atmosphere-as-thick-air phrasing from Slop Forensics narrative ngrams.",
+    "slots": {
+      "quality": ["scent", "tension", "unease"]
+    },
+    "templates": [
+      "air hung thick",
+      "air was thick with {quality}",
+      "air thick with {quality}"
+    ]
+  },
+  {
+    "category": "atmosphere",
+    "id": "hung-in-air",
+    "purpose": "Reports stock words or silence hanging in the air from Slop Forensics narrative ngrams.",
+    "slots": {
+      "subject": ["silence", "words"]
+    },
+    "templates": [
+      "{subject} hung in the air",
+      "{subject} hung heavy in the air"
+    ]
+  },
+  {
+    "category": "atmosphere",
+    "id": "long-shadows",
+    "purpose": "Reports stock light-and-shadow atmosphere phrasing from Slop Forensics narrative ngrams.",
+    "slots": {
+      "surface": ["floor", "ground", "room", "wall", "walls"]
+    },
+    "templates": ["casting long shadows", "long shadows across the {surface}"]
+  },
+  {
+    "category": "time passage",
+    "id": "days-turned-weeks",
+    "purpose": "Reports stock compressed time-passage phrasing from Slop Forensics narrative ngrams.",
+    "slots": {},
+    "templates": ["days turned into weeks", "days turned to weeks"]
+  },
+  {
+    "category": "time passage",
+    "id": "sun-horizon",
+    "purpose": "Reports stock sunset transition phrasing from Slop Forensics narrative ngrams.",
+    "slots": {},
+    "templates": [
+      "sun began to set",
+      "sun dipped below the horizon",
+      "sun dipped beneath the horizon"
+    ]
+  }
+]

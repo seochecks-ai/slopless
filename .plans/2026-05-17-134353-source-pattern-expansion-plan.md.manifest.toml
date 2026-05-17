@@ -1,0 +1,194 @@
+[meta]
+plan = ".plans/2026-05-17-134353-source-pattern-expansion-plan.md"
+golden_acceptance = "blocked_until_full_review"
+
+[[family]]
+id = "phrases"
+registry = "src/registries/phrases.ts"
+rulesdir = "dist/families/phrases"
+cases_hits = "behavior/fixtures/textlint-rules/cases/phrases/hits.md"
+cases_no_hits = "behavior/fixtures/textlint-rules/cases/phrases/no-hits.md"
+
+[[family]]
+id = "syntactic-patterns"
+registry = "src/registries/syntactic-patterns.ts"
+rulesdirs = [
+  "dist/families/syntactic-patterns/authority",
+  "dist/families/syntactic-patterns/closers",
+  "dist/families/syntactic-patterns/contrast",
+  "dist/families/syntactic-patterns/generalization",
+  "dist/families/syntactic-patterns/lead-ins",
+  "dist/families/syntactic-patterns/llm-artifacts",
+  "dist/families/syntactic-patterns/repetition"
+]
+cases_hits = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md"
+cases_no_hits = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md"
+
+[[family]]
+id = "semantic-thinness"
+registry = "src/registries/semantic-thinness.ts"
+rulesdir = "dist/families/semantic-thinness"
+cases_hits = "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md"
+cases_no_hits = "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md"
+
+[[family]]
+id = "words"
+registry = "src/registries/words.ts"
+rulesdir = "dist/families/words"
+cases_hits = "behavior/fixtures/textlint-rules/cases/words/hits.md"
+cases_no_hits = "behavior/fixtures/textlint-rules/cases/words/no-hits.md"
+
+[[family]]
+id = "narrative-slop"
+registry = "src/registries/narrative-slop.ts"
+index_export = "narrativeSlopRules"
+rulesdir = "dist/families/narrative-slop"
+cases_hits = "behavior/fixtures/textlint-rules/cases/narrative-slop/hits.md"
+cases_no_hits = "behavior/fixtures/textlint-rules/cases/narrative-slop/no-hits.md"
+
+[[family]]
+id = "academic-slop"
+registry = "src/registries/academic-slop.ts"
+index_export = "academicSlopRules"
+rulesdir = "dist/families/academic-slop"
+cases_hits = "behavior/fixtures/textlint-rules/cases/academic-slop/hits.md"
+cases_no_hits = "behavior/fixtures/textlint-rules/cases/academic-slop/no-hits.md"
+
+[[rule]]
+id = "wordiness"
+family = "phrases"
+path = "src/families/phrases/wordiness.ts"
+export = "./families/phrases/wordiness"
+preset = true
+kind = "new"
+
+[[rule]]
+id = "redundancy"
+family = "phrases"
+path = "src/families/phrases/redundancy.ts"
+export = "./families/phrases/redundancy"
+preset = true
+kind = "new"
+
+[[rule]]
+id = "cliches"
+family = "phrases"
+path = "src/families/phrases/cliches.ts"
+export = "./families/phrases/cliches"
+preset = true
+kind = "expanded"
+
+[[rule]]
+id = "corporate-speak"
+family = "phrases"
+path = "src/families/phrases/corporate-speak.ts"
+export = "./families/phrases/corporate-speak"
+preset = true
+kind = "expanded"
+
+[[rule]]
+id = "llm-disclaimer"
+family = "phrases"
+path = "src/families/phrases/llm-disclaimer.ts"
+export = "./families/phrases/llm-disclaimer"
+preset = true
+kind = "expanded"
+
+[[rule]]
+id = "response-wrapper"
+family = "syntactic-patterns"
+path = "src/families/syntactic-patterns/llm-artifacts/response-wrapper.ts"
+registry = "src/registries/syntactic-patterns/llm-artifacts.ts"
+export = "./families/syntactic-patterns/llm-artifacts/response-wrapper"
+preset = true
+kind = "expanded"
+
+[[rule]]
+id = "semantic-thinness"
+family = "semantic-thinness"
+path = "src/families/semantic-thinness/semantic-thinness.ts"
+export = "./families/semantic-thinness/semantic-thinness"
+preset = true
+kind = "expanded"
+
+[[rule]]
+id = "llm-vocabulary"
+family = "words"
+path = "src/families/words/llm-vocabulary.ts"
+export = "./families/words/llm-vocabulary"
+preset = true
+kind = "expanded"
+
+[[rule]]
+id = "narrative-cliches"
+family = "narrative-slop"
+path = "src/families/narrative-slop/narrative-cliches.ts"
+export = "./families/narrative-slop/narrative-cliches"
+preset = true
+kind = "new"
+
+[[rule]]
+id = "tortured-phrases"
+family = "academic-slop"
+path = "src/families/academic-slop/tortured-phrases.ts"
+export = "./families/academic-slop/tortured-phrases"
+preset = true
+kind = "new"
+
+[[pattern_data]]
+id = "wordiness-patterns"
+path = "src/families/phrases/data/wordiness-patterns.json"
+source_note = "data/source-material/derived/wordiness-pattern-candidates.md"
+used_by = ["src/families/phrases/wordiness.ts"]
+
+[[pattern_data]]
+id = "redundancy-patterns"
+path = "src/families/phrases/data/redundancy-patterns.json"
+source_note = "data/source-material/derived/redundancy-pattern-candidates.md"
+used_by = ["src/families/phrases/redundancy.ts"]
+
+[[pattern_data]]
+id = "cliche-templates"
+path = "src/families/phrases/data/cliche-templates.json"
+source_note = "data/source-material/derived/cliche-template-candidates.md"
+used_by = ["src/families/phrases/cliches.ts"]
+
+[[pattern_data]]
+id = "corporate-abstraction-patterns"
+path = "src/families/phrases/data/corporate-abstraction-patterns.json"
+source_note = "data/source-material/derived/corporate-abstraction-candidates.md"
+used_by = ["src/families/phrases/corporate-speak.ts"]
+
+[[pattern_data]]
+id = "narrative-cliche-patterns"
+path = "src/families/narrative-slop/data/narrative-cliches.json"
+source_note = "data/source-material/derived/narrative-slop-candidates.md"
+used_by = ["src/families/narrative-slop/narrative-cliches.ts"]
+
+[[pattern_data]]
+id = "tortured-phrases"
+path = "src/families/academic-slop/data/tortured-phrases.json"
+source_note = "data/source-material/derived/academic-slop-candidates.md"
+used_by = ["src/families/academic-slop/tortured-phrases.ts"]
+
+[[pattern_data]]
+id = "llm-pattern-expansion"
+path = "src/families/phrases/data/llm-disclaimer-expansions.json"
+source_note = "data/source-material/derived/llm-artifact-candidates.md"
+used_by = ["src/families/phrases/llm-disclaimer.ts"]
+
+[[fixture_corpus]]
+path = "behavior/fixtures/textlint-rules/corpus/editorial-style.md"
+purpose = "wordiness, redundancy, cliche, corporate-speak, and LLM artifact examples"
+
+[[fixture_corpus]]
+path = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
+purpose = "narrative cliche examples"
+
+[[fixture_corpus]]
+path = "behavior/fixtures/textlint-rules/corpus/technical-terminology.md"
+purpose = "academic tortured-phrase examples"
+
+[[forbidden_rule]]
+id = "assistant-artifacts"
+reason = "covered by llm-disclaimer and response-wrapper"

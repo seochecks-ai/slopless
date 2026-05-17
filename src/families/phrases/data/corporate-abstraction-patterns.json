@@ -1,0 +1,72 @@
+[
+  {
+    "id": "importance-role",
+    "slots": {
+      "importanceAdjective": [
+        "crucial",
+        "pivotal",
+        "vital",
+        "critical",
+        "significant",
+        "key"
+      ]
+    },
+    "templates": [
+      "plays a {importanceAdjective} role",
+      "play a {importanceAdjective} role"
+    ]
+  },
+  {
+    "id": "valuable-insights",
+    "slots": {
+      "valueAdjective": ["valuable", "actionable", "meaningful", "important"]
+    },
+    "templates": [
+      "provides {valueAdjective} insights",
+      "provide {valueAdjective} insights",
+      "offers {valueAdjective} insights",
+      "offer {valueAdjective} insights"
+    ]
+  },
+  {
+    "id": "complexity-approach",
+    "slots": {
+      "complexityAdjective": [
+        "multifaceted",
+        "comprehensive",
+        "holistic",
+        "nuanced"
+      ]
+    },
+    "templates": [
+      "requires a {complexityAdjective} approach",
+      "require a {complexityAdjective} approach"
+    ]
+  },
+  {
+    "id": "culture-of-abstraction",
+    "slots": {
+      "positiveAbstractNoun": [
+        "continuous improvement",
+        "continuous learning",
+        "innovation",
+        "collaboration"
+      ]
+    },
+    "templates": [
+      "fosters a culture of {positiveAbstractNoun}",
+      "foster a culture of {positiveAbstractNoun}",
+      "fostering a culture of {positiveAbstractNoun}"
+    ]
+  },
+  {
+    "id": "importance-reminder",
+    "slots": {
+      "reminderAdjective": ["powerful", "important", "timely", "stark"]
+    },
+    "templates": [
+      "serves as a {reminderAdjective} reminder of the importance of",
+      "serve as a {reminderAdjective} reminder of the importance of"
+    ]
+  }
+]

@@ -29,11 +29,13 @@ export const everything = {
     "llm-openers": true,
     "llm-vocabulary": true,
     "negation-reframe": true,
+    "narrative-cliches": true,
     "observer-guidance": true,
     "paragraph-length": true,
     "prohibited-phrases": true,
     "prohibited-words": true,
     "recommended-terms": true,
+    redundancy: true,
     "response-wrapper": true,
     "required-terms": true,
     "sentence-case": true,
@@ -44,8 +46,10 @@ export const everything = {
     "smart-quotes": true,
     "summative-closer": true,
     "triple-repeat": true,
+    "tortured-phrases": true,
     uncomparables: true,
     "universalizing-claims": true,
-    "word-repetition": true
+    "word-repetition": true,
+    wordiness: true
   }
 };

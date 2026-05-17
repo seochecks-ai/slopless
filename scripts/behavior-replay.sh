@@ -17,7 +17,9 @@ fi
 
 CONFIG_ARGS=(--no-textlintrc)
 RULE_ARGS=(
+  --rulesdir "$ROOT/dist/families/academic-slop"
   --rulesdir "$ROOT/dist/families/metrics"
+  --rulesdir "$ROOT/dist/families/narrative-slop"
   --rulesdir "$ROOT/dist/families/orthography"
   --rulesdir "$ROOT/dist/families/words"
   --rulesdir "$ROOT/dist/families/phrases"

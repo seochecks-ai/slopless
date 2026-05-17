@@ -1,0 +1,20 @@
+[
+  {
+    "id": "possessive-cliches",
+    "slots": {
+      "possessive": ["my", "your", "his", "her", "their", "our"]
+    },
+    "templates": [
+      "air {possessive} dirty laundry",
+      "all {possessive} eggs in one basket",
+      "banging {possessive} head against a brick wall",
+      "blow {possessive} own horn",
+      "burn {possessive} bridges",
+      "burst {possessive} bubble",
+      "cat got {possessive} tongue",
+      "count {possessive} chickens before they hatch",
+      "hold {possessive} tongue",
+      "watch {possessive} tongue"
+    ]
+  }
+]

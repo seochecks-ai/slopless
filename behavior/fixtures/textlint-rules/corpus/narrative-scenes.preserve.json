@@ -652,6 +652,167 @@
       "bucket": "no-hits",
       "source": "cases/syntactic-patterns/no-hits.md",
       "line": 73
+    },
+    {
+      "text": "Her heart pounded in her chest as the door opened.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 1
+    },
+    {
+      "text": "A shiver ran down her spine when the lights failed.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 3
+    },
+    {
+      "text": "\"Wait,\" she said, her voice barely a whisper.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 5
+    },
+    {
+      "text": "He replied, his voice laced with regret.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 7
+    },
+    {
+      "text": "The air was thick with tension.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 9
+    },
+    {
+      "text": "The words hung heavy in the air.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 11
+    },
+    {
+      "text": "The torch was casting long shadows across the wall.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 13
+    },
+    {
+      "text": "Days turned into weeks before the letters arrived.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 15
+    },
+    {
+      "text": "The sun dipped below the horizon.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 17
+    },
+    {
+      "text": "The cardiologist recorded her heart rate in her chart.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 1
+    },
+    {
+      "text": "The shiver response changed after the medication dose was lowered.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 3
+    },
+    {
+      "text": "The dispatcher said the voice channel was barely audible.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 5
+    },
+    {
+      "text": "The mixer kept his voice steady because the microphone was open.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 7
+    },
+    {
+      "text": "The air was thick with smoke because the vent fan failed.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 9
+    },
+    {
+      "text": "The words hung above the stage on a paper banner.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 11
+    },
+    {
+      "text": "The curtain cast long shadows because the floodlight was misaligned.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 13
+    },
+    {
+      "text": "The billing period changed from days to weeks after the policy update.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 15
+    },
+    {
+      "text": "The sun sensor dipped below the target voltage.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 17
+    },
+    {
+      "text": "Her heart pounded in her chest because the treadmill test reached its final minute.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 0
+    },
+    {
+      "text": "His breath caught in his throat because the peanut lodged there.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 0
+    },
+    {
+      "text": "Her voice was barely a whisper because the microphone gain was set too low.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 0
+    },
+    {
+      "text": "The air was thick with tension because the cable had been tightened past its rating.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 0
+    },
+    {
+      "text": "The sun dipped below the horizon because the sensor was mounted on a moving rig.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 0
     }
   ]
 }

@@ -191,3 +191,51 @@ Many adults usually delay the obvious repair.
 Sixty seconds. That's the whole repair.
 
 The job is to reduce the fuel, hold the limit, and teach the next repair.
+
+## narrative source patterns
+
+Her heart pounded in her chest as the door opened.
+
+A shiver ran down her spine when the lights failed.
+
+"Wait," she said, her voice barely a whisper.
+
+He replied, his voice laced with regret.
+
+The air was thick with tension.
+
+The words hung heavy in the air.
+
+The torch was casting long shadows across the wall.
+
+Days turned into weeks before the letters arrived.
+
+The sun dipped below the horizon.
+
+The cardiologist recorded her heart rate in her chart.
+
+The shiver response changed after the medication dose was lowered.
+
+The dispatcher said the voice channel was barely audible.
+
+The mixer kept his voice steady because the microphone was open.
+
+The air was thick with smoke because the vent fan failed.
+
+The words hung above the stage on a paper banner.
+
+The curtain cast long shadows because the floodlight was misaligned.
+
+The billing period changed from days to weeks after the policy update.
+
+The sun sensor dipped below the target voltage.
+
+Her heart pounded in her chest because the treadmill test reached its final minute.
+
+His breath caught in his throat because the peanut lodged there.
+
+Her voice was barely a whisper because the microphone gain was set too low.
+
+The air was thick with tension because the cable had been tightened past its rating.
+
+The sun dipped below the horizon because the sensor was mounted on a moving rig.
