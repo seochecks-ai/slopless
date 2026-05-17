@@ -572,6 +572,8 @@ This is not an exhaustive list.
 
 Tell me if you want me to delve deeper into a specific aspect.
 
+It is worth noting that this paragraph starts with a wrapper instead of the point.
+
 The report goes deeper into a specific outage window.
 
 The analyst broke the failure down step by step in the incident report.
@@ -581,6 +583,12 @@ Support agents should ask customers whether they have any further questions.
 The article discusses "please let me know" as a common assistant artifact.
 
 The changelog records the last knowledge update for the index file.
+
+The technical note says the firmware version matters before flashing.
+
+The report says it's worth noting that the sample size doubled.
+
+The article quotes "it is important to note" as boilerplate.
 
 The March retention study found a six point drop after onboarding changed.
 

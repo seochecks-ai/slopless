@@ -15,7 +15,6 @@
 - `complete stranger`
 - `emergency situation`
 - `software program`
-- `visible to the eye`
 - `consolidate together`
 - `consolidates together`
 - `consolidated together`
@@ -31,11 +30,6 @@
 - `pool together`
 - `pools together`
 - `pooled together`
-- `continue on`
-- `continues on`
-- `continued on`
-- `while at the same time`
-- `interact with each other`
 
 ## Why Not Implemented
 

@@ -13,6 +13,12 @@
     "hope this message finds you well",
     "this is not an exhaustive list"
   ],
+  "paragraphStartsWith": [
+    "it is important to note",
+    "it's important to note",
+    "it is worth noting",
+    "it's worth noting"
+  ],
   "contains": [
     "want me to delve deeper",
     "would you like me to delve",

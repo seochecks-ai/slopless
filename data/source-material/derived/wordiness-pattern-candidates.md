@@ -11,7 +11,6 @@
 
 ## Not Implemented
 
-- `in view of the fact that`
 - `for the duration of`
 - `has the capacity to`
 - `have the capacity to`
@@ -23,8 +22,6 @@
 - `perform a review of`
 - `carry out a review of`
 - `taken into account`
-- `until such time as`
-- `the question as to whether`
 - `with the exception of`
 
 ## Why Not Implemented

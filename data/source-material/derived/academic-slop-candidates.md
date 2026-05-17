@@ -11,7 +11,6 @@
 
 ## Not Implemented
 
-- `man-made reasoning`
 - `casting a ballot`
 - `casting a ballot system`
 - `casting a ballot framework`
@@ -26,10 +25,8 @@
 - `lawful mind`
 - `bound together domain`
 - `data innovation`
-- `data and interchanges innovation`
 - `innovative work`
 - `human immunodeficiency infection`
-- `shut circuit tv`
 
 ## Why Not Implemented
 

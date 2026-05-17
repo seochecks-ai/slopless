@@ -207,27 +207,32 @@ Research material that is not implemented stays in `data/source-material/derived
 - Wordiness:
   - `src/families/phrases/wordiness.ts`
   - `src/families/phrases/data/wordiness-patterns.json`
+  - newly implemented exact phrases: `in view of the fact that`, `the question as to whether`, `until such time as`
 - Redundancy:
   - `src/families/phrases/redundancy.ts`
   - `src/families/phrases/data/redundancy-patterns.json`
+  - newly implemented exact phrases: `interact with each other`, `visible to the eye`, `while at the same time`
 - Cliche templates:
   - `src/families/phrases/cliches.ts`
   - `src/families/phrases/data/cliche-templates.json`
 - Corporate abstraction:
   - `src/families/phrases/corporate-speak.ts`
   - `src/families/phrases/data/corporate-abstraction-patterns.json`
+  - newly implemented template: `serves as a testament to the power of`
 - LLM disclaimers:
   - `src/families/phrases/llm-disclaimer.ts`
   - `src/families/phrases/data/llm-disclaimer-expansions.json`
 - Response wrappers:
   - `src/families/syntactic-patterns/llm-artifacts/response-wrapper.ts`
   - `src/families/syntactic-patterns/llm-artifacts/data/response-wrapper-patterns.json`
+  - newly implemented paragraph-start wrappers: `it is important to note`, `it's important to note`, `it is worth noting`, `it's worth noting`
 - Narrative cliches:
   - `src/families/narrative-slop/narrative-cliches.ts`
   - `src/families/narrative-slop/data/narrative-cliches.json`
 - Academic tortured phrases:
   - `src/families/academic-slop/tortured-phrases.ts`
   - `src/families/academic-slop/data/tortured-phrases.json`
+  - newly implemented exact phrases: `data and interchanges innovation`, `man-made reasoning`, `shut circuit tv`
 - Local transformations:
   - broad source regex groups were converted only when they mapped to closed slots
   - empirical LLM ngrams were reduced to reviewed frames instead of imported wholesale
