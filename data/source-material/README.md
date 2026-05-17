@@ -4,6 +4,8 @@ Raw source archive for future Slopless lexicons, patterns, and templates.
 
 This directory is not active rule data. Active shipped rule data still lives under `src/families/*/data`.
 
+For the record of what has already moved into active rules, see `incorporation-record.md`.
+
 ## Inventory
 
 - `llm-excess-vocab/berenslab`
