@@ -64,6 +64,69 @@
       "bucket": "no-hits",
       "source": "cases/academic-slop/no-hits.md",
       "line": 7
+    },
+    {
+      "text": "The abstract calls the method man-made reasoning instead of artificial intelligence.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 7
+    },
+    {
+      "text": "The policy survey uses data and interchanges innovation instead of information and communications technology.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 9
+    },
+    {
+      "text": "The camera table calls the monitor shut circuit tv instead of closed-circuit television.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 11
+    },
+    {
+      "text": "The abstract calls the method artificial intelligence.",
+      "family": "academic-slop",
+      "bucket": "no-hits",
+      "source": "cases/academic-slop/no-hits.md",
+      "line": 9
+    },
+    {
+      "text": "The policy survey discusses information and communications technology.",
+      "family": "academic-slop",
+      "bucket": "no-hits",
+      "source": "cases/academic-slop/no-hits.md",
+      "line": 11
+    },
+    {
+      "text": "The camera table calls the monitor closed-circuit television.",
+      "family": "academic-slop",
+      "bucket": "no-hits",
+      "source": "cases/academic-slop/no-hits.md",
+      "line": 13
+    },
+    {
+      "text": "The review quotes \"man-made reasoning\" as a known tortured phrase.",
+      "family": "academic-slop",
+      "bucket": "no-hits",
+      "source": "cases/academic-slop/no-hits.md",
+      "line": 15
+    },
+    {
+      "text": "The lab note is short. The test is clean. Staff can read it fast.",
+      "family": "academic-slop",
+      "bucket": "no-hits",
+      "source": "cases/academic-slop/no-hits.md",
+      "line": 17
+    },
+    {
+      "text": "A lab note is short. Staff can read it. We can test it. The file is plain. People can check it today.",
+      "family": "academic-slop",
+      "bucket": "no-hits",
+      "source": "cases/academic-slop/no-hits.md",
+      "line": 19
     }
   ]
 }

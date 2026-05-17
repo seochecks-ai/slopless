@@ -68,5 +68,13 @@
       "serves as a {reminderAdjective} reminder of the importance of",
       "serve as a {reminderAdjective} reminder of the importance of"
     ]
+  },
+  {
+    "id": "testament-power",
+    "slots": {},
+    "templates": [
+      "serves as a testament to the power of",
+      "serve as a testament to the power of"
+    ]
   }
 ]

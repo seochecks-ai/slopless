@@ -47,8 +47,11 @@ const DIAGNOSIS_LIMITATION_OBJECTS = [
   "treatment plan"
 ];
 
-function startsWithSourcePattern(text: string): string | undefined {
-  return responseWrapperPatterns.startsWith.find((pattern) => {
+function startsWithSourcePattern(
+  text: string,
+  patterns: readonly string[]
+): string | undefined {
+  return patterns.find((pattern) => {
     if (!text.startsWith(pattern)) {
       return false;
     }
@@ -124,11 +127,26 @@ function matchesSubjectPrefixActionObjects(
   );
 }
 
-function matchResponseWrapper(sentence: string): SentenceMatch | undefined {
-  const stripped = cleanSentence(sentence, PREFIXES);
-  const startPattern = startsWithSourcePattern(stripped);
+function matchConfiguredSourcePattern(
+  stripped: string,
+  includeParagraphStartPatterns: boolean
+): SentenceMatch | undefined {
+  const startPattern = startsWithSourcePattern(
+    stripped,
+    responseWrapperPatterns.startsWith
+  );
   if (startPattern !== undefined) {
     return { kind: "chat-scaffold", signal: startPattern };
+  }
+
+  if (includeParagraphStartPatterns) {
+    const paragraphStartPattern = startsWithSourcePattern(
+      stripped,
+      responseWrapperPatterns.paragraphStartsWith
+    );
+    if (paragraphStartPattern !== undefined) {
+      return { kind: "chat-scaffold", signal: paragraphStartPattern };
+    }
   }
 
   const containedPattern = containsAny(
@@ -137,6 +155,22 @@ function matchResponseWrapper(sentence: string): SentenceMatch | undefined {
   );
   if (containedPattern !== undefined) {
     return { kind: "chat-followup", signal: containedPattern };
+  }
+
+  return undefined;
+}
+
+function matchResponseWrapper(
+  sentence: string,
+  includeParagraphStartPatterns: boolean
+): SentenceMatch | undefined {
+  const stripped = cleanSentence(sentence, PREFIXES);
+  const configuredPattern = matchConfiguredSourcePattern(
+    stripped,
+    includeParagraphStartPatterns
+  );
+  if (configuredPattern !== undefined) {
+    return configuredPattern;
   }
 
   if (
@@ -223,8 +257,16 @@ const rule: TextlintRuleModule = (context) => {
 
   return {
     [Syntax.Document](node: TxtDocumentNode): void {
+      const seenParagraphs = new WeakSet<object>();
+
       for (const item of allParagraphSentences(node)) {
-        const matched = matchResponseWrapper(item.sentence.text);
+        const isFirstSentenceInParagraph = !seenParagraphs.has(item.paragraph);
+        seenParagraphs.add(item.paragraph);
+
+        const matched = matchResponseWrapper(
+          item.sentence.text,
+          isFirstSentenceInParagraph
+        );
         if (matched === undefined) {
           continue;
         }

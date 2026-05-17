@@ -4003,6 +4003,167 @@
         "ruleId": "redundancy",
         "severity": 2,
         "type": "lint"
+      },
+      {
+        "column": 29,
+        "index": 11976,
+        "line": 439,
+        "loc": {
+          "end": {
+            "column": 53,
+            "line": 439
+          },
+          "start": {
+            "column": 29,
+            "line": 439
+          }
+        },
+        "message": "Wordy phrase found: \"in view of the fact that\". Replace it with direct wording.",
+        "range": [
+          11976,
+          12000
+        ],
+        "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 27,
+        "index": 12053,
+        "line": 441,
+        "loc": {
+          "end": {
+            "column": 45,
+            "line": 441
+          },
+          "start": {
+            "column": 27,
+            "line": 441
+          }
+        },
+        "message": "Wordy phrase found: \"until such time as\". Replace it with direct wording.",
+        "range": [
+          12053,
+          12071
+        ],
+        "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 17,
+        "index": 12112,
+        "line": 443,
+        "loc": {
+          "end": {
+            "column": 43,
+            "line": 443
+          },
+          "start": {
+            "column": 17,
+            "line": 443
+          }
+        },
+        "message": "Wordy phrase found: \"the question as to whether\". Replace it with direct wording.",
+        "range": [
+          12112,
+          12138
+        ],
+        "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 23,
+        "index": 12191,
+        "line": 445,
+        "loc": {
+          "end": {
+            "column": 41,
+            "line": 445
+          },
+          "start": {
+            "column": 23,
+            "line": 445
+          }
+        },
+        "message": "Redundant phrase found: \"visible to the eye\". Remove the repeated meaning.",
+        "range": [
+          12191,
+          12209
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 15,
+        "index": 12245,
+        "line": 447,
+        "loc": {
+          "end": {
+            "column": 39,
+            "line": 447
+          },
+          "start": {
+            "column": 15,
+            "line": 447
+          }
+        },
+        "message": "Redundant phrase found: \"interact with each other\". Remove the repeated meaning.",
+        "range": [
+          12245,
+          12269
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 34,
+        "index": 12320,
+        "line": 449,
+        "loc": {
+          "end": {
+            "column": 56,
+            "line": 449
+          },
+          "start": {
+            "column": 34,
+            "line": 449
+          }
+        },
+        "message": "Redundant phrase found: \"while at the same time\". Remove the repeated meaning.",
+        "range": [
+          12320,
+          12342
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 15,
+        "index": 12379,
+        "line": 451,
+        "loc": {
+          "end": {
+            "column": 52,
+            "line": 451
+          },
+          "start": {
+            "column": 15,
+            "line": 451
+          }
+        },
+        "message": "Corporate-speak phrase found: \"serves as a testament to the power of\". Replace it with specific wording.",
+        "range": [
+          12379,
+          12416
+        ],
+        "ruleId": "corporate-speak",
+        "severity": 2,
+        "type": "lint"
       }
     ]
   },
@@ -11440,6 +11601,29 @@
       },
       {
         "column": 1,
+        "index": 20729,
+        "line": 523,
+        "loc": {
+          "end": {
+            "column": 62,
+            "line": 523
+          },
+          "start": {
+            "column": 1,
+            "line": 523
+          }
+        },
+        "message": "Response wrapper found: chat-scaffold (it's important to note). Remove assistant response scaffolding.",
+        "range": [
+          20729,
+          20790
+        ],
+        "ruleId": "response-wrapper",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
         "index": 20792,
         "line": 525,
         "loc": {
@@ -12314,22 +12498,45 @@
       },
       {
         "column": 1,
-        "index": 23550,
-        "line": 631,
+        "index": 22035,
+        "line": 575,
         "loc": {
           "end": {
-            "column": 58,
-            "line": 631
+            "column": 83,
+            "line": 575
           },
           "start": {
             "column": 1,
-            "line": 631
+            "line": 575
+          }
+        },
+        "message": "Response wrapper found: chat-scaffold (it is worth noting). Remove assistant response scaffolding.",
+        "range": [
+          22035,
+          22117
+        ],
+        "ruleId": "response-wrapper",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 23832,
+        "line": 639,
+        "loc": {
+          "end": {
+            "column": 58,
+            "line": 639
+          },
+          "start": {
+            "column": 1,
+            "line": 639
           }
         },
         "message": "Negation reframe found: \"The bug is not in the parser. It is in the offset mapper.\". Rewrite without the not-X-then-Y construction.",
         "range": [
-          23550,
-          23607
+          23832,
+          23889
         ],
         "ruleId": "negation-reframe",
         "severity": 2,
@@ -12337,22 +12544,22 @@
       },
       {
         "column": 1,
-        "index": 23788,
-        "line": 639,
+        "index": 24070,
+        "line": 647,
         "loc": {
           "end": {
             "column": 54,
-            "line": 639
+            "line": 647
           },
           "start": {
             "column": 1,
-            "line": 639
+            "line": 647
           }
         },
         "message": "Generic signposting found: the-goal-is-to. Replace the frame with the concrete claim.",
         "range": [
-          23788,
-          23841
+          24070,
+          24123
         ],
         "ruleId": "generic-signposting",
         "severity": 2,
@@ -12360,22 +12567,22 @@
       },
       {
         "column": 1,
-        "index": 23971,
-        "line": 647,
+        "index": 24253,
+        "line": 655,
         "loc": {
           "end": {
             "column": 58,
-            "line": 647
+            "line": 655
           },
           "start": {
             "column": 1,
-            "line": 647
+            "line": 655
           }
         },
         "message": "Boilerplate conclusion found: the core fact. Replace the closer with a specific ending.",
         "range": [
-          23971,
-          24028
+          24253,
+          24310
         ],
         "ruleId": "boilerplate-conclusion",
         "severity": 2,
@@ -12383,22 +12590,22 @@
       },
       {
         "column": 1,
-        "index": 23971,
-        "line": 647,
+        "index": 24253,
+        "line": 655,
         "loc": {
           "end": {
             "column": 58,
-            "line": 647
+            "line": 655
           },
           "start": {
             "column": 1,
-            "line": 647
+            "line": 655
           }
         },
         "message": "Demonstrative emphasis found: \"The core fact is that nothing here needed a grand finale.\". Reduce repeated short emphasis lines.",
         "range": [
-          23971,
-          24028
+          24253,
+          24310
         ],
         "ruleId": "demonstrative-emphasis",
         "severity": 2,
@@ -12406,22 +12613,22 @@
       },
       {
         "column": 1,
-        "index": 23971,
-        "line": 647,
+        "index": 24253,
+        "line": 655,
         "loc": {
           "end": {
             "column": 58,
-            "line": 647
+            "line": 655
           },
           "start": {
             "column": 1,
-            "line": 647
+            "line": 655
           }
         },
         "message": "Generic signposting found: the-core-fact-is. Replace the frame with the concrete claim.",
         "range": [
-          23971,
-          24028
+          24253,
+          24310
         ],
         "ruleId": "generic-signposting",
         "severity": 2,
@@ -12429,22 +12636,22 @@
       },
       {
         "column": 1,
-        "index": 24030,
-        "line": 649,
+        "index": 24312,
+        "line": 657,
         "loc": {
           "end": {
             "column": 74,
-            "line": 649
+            "line": 657
           },
           "start": {
             "column": 1,
-            "line": 649
+            "line": 657
           }
         },
         "message": "Generic signposting found: the-job-is-to. Replace the frame with the concrete claim.",
         "range": [
-          24030,
-          24103
+          24312,
+          24385
         ],
         "ruleId": "generic-signposting",
         "severity": 2,
@@ -12452,22 +12659,22 @@
       },
       {
         "column": 1,
-        "index": 24341,
-        "line": 661,
+        "index": 24623,
+        "line": 669,
         "loc": {
           "end": {
             "column": 56,
-            "line": 661
+            "line": 669
           },
           "start": {
             "column": 1,
-            "line": 661
+            "line": 669
           }
         },
         "message": "False question found: \"isn't that the goal\". Make the claim directly.",
         "range": [
-          24341,
-          24396
+          24623,
+          24678
         ],
         "ruleId": "false-question",
         "severity": 2,
@@ -12475,22 +12682,22 @@
       },
       {
         "column": 1,
-        "index": 24425,
-        "line": 665,
+        "index": 24707,
+        "line": 673,
         "loc": {
           "end": {
             "column": 60,
-            "line": 665
+            "line": 673
           },
           "start": {
             "column": 1,
-            "line": 665
+            "line": 673
           }
         },
         "message": "False question found: \"isn't that what matters\". Make the claim directly.",
         "range": [
-          24425,
-          24484
+          24707,
+          24766
         ],
         "ruleId": "false-question",
         "severity": 2,
@@ -12498,22 +12705,22 @@
       },
       {
         "column": 1,
-        "index": 24511,
-        "line": 669,
+        "index": 24793,
+        "line": 677,
         "loc": {
           "end": {
             "column": 45,
-            "line": 669
+            "line": 677
           },
           "start": {
             "column": 1,
-            "line": 669
+            "line": 677
           }
         },
         "message": "False question found: \"isn't that the point\". Make the claim directly.",
         "range": [
-          24511,
-          24555
+          24793,
+          24837
         ],
         "ruleId": "false-question",
         "severity": 2,
@@ -12521,22 +12728,22 @@
       },
       {
         "column": 1,
-        "index": 24511,
-        "line": 669,
+        "index": 24793,
+        "line": 677,
         "loc": {
           "end": {
             "column": 45,
-            "line": 669
+            "line": 677
           },
           "start": {
             "column": 1,
-            "line": 669
+            "line": 677
           }
         },
         "message": "Summative closer found: \"that's why it matters\". End with the concrete point instead.",
         "range": [
-          24511,
-          24555
+          24793,
+          24837
         ],
         "ruleId": "summative-closer",
         "severity": 2,
@@ -12544,22 +12751,22 @@
       },
       {
         "column": 1,
-        "index": 24581,
-        "line": 673,
+        "index": 24863,
+        "line": 681,
         "loc": {
           "end": {
             "column": 33,
-            "line": 673
+            "line": 681
           },
           "start": {
             "column": 1,
-            "line": 673
+            "line": 681
           }
         },
         "message": "False question found: \"isn't that what we all\". Make the claim directly.",
         "range": [
-          24581,
-          24613
+          24863,
+          24895
         ],
         "ruleId": "false-question",
         "severity": 2,
@@ -17189,7 +17396,7 @@
             "line": 1
           }
         },
-        "message": "Coleman-Liau is 13.69. Keep it at 12 or lower.",
+        "message": "Coleman-Liau is 16.38. Keep it at 12 or lower.",
         "range": [
           0,
           1
@@ -17212,7 +17419,7 @@
             "line": 1
           }
         },
-        "message": "Flesch Reading Ease is 42.67. Keep it at 61 or higher.",
+        "message": "Flesch Reading Ease is 22.17. Keep it at 61 or higher.",
         "range": [
           0,
           1
@@ -17235,7 +17442,7 @@
             "line": 1
           }
         },
-        "message": "Gunning Fog is 13.02. Keep it at 12 or lower.",
+        "message": "Gunning Fog is 16.1. Keep it at 12 or lower.",
         "range": [
           0,
           1
@@ -17308,6 +17515,75 @@
         "range": [
           172,
           186
+        ],
+        "ruleId": "tortured-phrases",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 31,
+        "index": 246,
+        "line": 7,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 7
+          },
+          "start": {
+            "column": 31,
+            "line": 7
+          }
+        },
+        "message": "Tortured phrase found: \"man-made reasoning\". Replace it with the standard scientific term.",
+        "range": [
+          246,
+          264
+        ],
+        "ruleId": "tortured-phrases",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 24,
+        "index": 325,
+        "line": 9,
+        "loc": {
+          "end": {
+            "column": 56,
+            "line": 9
+          },
+          "start": {
+            "column": 24,
+            "line": 9
+          }
+        },
+        "message": "Tortured phrase found: \"data and interchanges innovation\". Replace it with the standard scientific term.",
+        "range": [
+          325,
+          357
+        ],
+        "ruleId": "tortured-phrases",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 36,
+        "index": 448,
+        "line": 11,
+        "loc": {
+          "end": {
+            "column": 51,
+            "line": 11
+          },
+          "start": {
+            "column": 36,
+            "line": 11
+          }
+        },
+        "message": "Tortured phrase found: \"shut circuit tv\". Replace it with the standard scientific term.",
+        "range": [
+          448,
+          463
         ],
         "ruleId": "tortured-phrases",
         "severity": 2,
@@ -21516,6 +21792,167 @@
           6917
         ],
         "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 29,
+        "index": 6956,
+        "line": 249,
+        "loc": {
+          "end": {
+            "column": 53,
+            "line": 249
+          },
+          "start": {
+            "column": 29,
+            "line": 249
+          }
+        },
+        "message": "Wordy phrase found: \"in view of the fact that\". Replace it with direct wording.",
+        "range": [
+          6956,
+          6980
+        ],
+        "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 27,
+        "index": 7033,
+        "line": 251,
+        "loc": {
+          "end": {
+            "column": 45,
+            "line": 251
+          },
+          "start": {
+            "column": 27,
+            "line": 251
+          }
+        },
+        "message": "Wordy phrase found: \"until such time as\". Replace it with direct wording.",
+        "range": [
+          7033,
+          7051
+        ],
+        "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 17,
+        "index": 7092,
+        "line": 253,
+        "loc": {
+          "end": {
+            "column": 43,
+            "line": 253
+          },
+          "start": {
+            "column": 17,
+            "line": 253
+          }
+        },
+        "message": "Wordy phrase found: \"the question as to whether\". Replace it with direct wording.",
+        "range": [
+          7092,
+          7118
+        ],
+        "ruleId": "wordiness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 23,
+        "index": 7171,
+        "line": 255,
+        "loc": {
+          "end": {
+            "column": 41,
+            "line": 255
+          },
+          "start": {
+            "column": 23,
+            "line": 255
+          }
+        },
+        "message": "Redundant phrase found: \"visible to the eye\". Remove the repeated meaning.",
+        "range": [
+          7171,
+          7189
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 15,
+        "index": 7225,
+        "line": 257,
+        "loc": {
+          "end": {
+            "column": 39,
+            "line": 257
+          },
+          "start": {
+            "column": 15,
+            "line": 257
+          }
+        },
+        "message": "Redundant phrase found: \"interact with each other\". Remove the repeated meaning.",
+        "range": [
+          7225,
+          7249
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 34,
+        "index": 7300,
+        "line": 259,
+        "loc": {
+          "end": {
+            "column": 56,
+            "line": 259
+          },
+          "start": {
+            "column": 34,
+            "line": 259
+          }
+        },
+        "message": "Redundant phrase found: \"while at the same time\". Remove the repeated meaning.",
+        "range": [
+          7300,
+          7322
+        ],
+        "ruleId": "redundancy",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 15,
+        "index": 7359,
+        "line": 261,
+        "loc": {
+          "end": {
+            "column": 52,
+            "line": 261
+          },
+          "start": {
+            "column": 15,
+            "line": 261
+          }
+        },
+        "message": "Corporate-speak phrase found: \"serves as a testament to the power of\". Replace it with specific wording.",
+        "range": [
+          7359,
+          7396
+        ],
+        "ruleId": "corporate-speak",
         "severity": 2,
         "type": "lint"
       }
@@ -35170,6 +35607,29 @@
       },
       {
         "column": 1,
+        "index": 43892,
+        "line": 879,
+        "loc": {
+          "end": {
+            "column": 62,
+            "line": 879
+          },
+          "start": {
+            "column": 1,
+            "line": 879
+          }
+        },
+        "message": "Response wrapper found: chat-scaffold (it's important to note). Remove assistant response scaffolding.",
+        "range": [
+          43892,
+          43953
+        ],
+        "ruleId": "response-wrapper",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
         "index": 43955,
         "line": 881,
         "loc": {
@@ -36338,6 +36798,29 @@
           45736
         ],
         "ruleId": "prohibited-words",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 45769,
+        "line": 951,
+        "loc": {
+          "end": {
+            "column": 83,
+            "line": 951
+          },
+          "start": {
+            "column": 1,
+            "line": 951
+          }
+        },
+        "message": "Response wrapper found: chat-scaffold (it is worth noting). Remove assistant response scaffolding.",
+        "range": [
+          45769,
+          45851
+        ],
+        "ruleId": "response-wrapper",
         "severity": 2,
         "type": "lint"
       }
@@ -39947,6 +40430,75 @@
         "range": [
           574,
           588
+        ],
+        "ruleId": "tortured-phrases",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 31,
+        "index": 1038,
+        "line": 25,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 25
+          },
+          "start": {
+            "column": 31,
+            "line": 25
+          }
+        },
+        "message": "Tortured phrase found: \"man-made reasoning\". Replace it with the standard scientific term.",
+        "range": [
+          1038,
+          1056
+        ],
+        "ruleId": "tortured-phrases",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 24,
+        "index": 1117,
+        "line": 27,
+        "loc": {
+          "end": {
+            "column": 56,
+            "line": 27
+          },
+          "start": {
+            "column": 24,
+            "line": 27
+          }
+        },
+        "message": "Tortured phrase found: \"data and interchanges innovation\". Replace it with the standard scientific term.",
+        "range": [
+          1117,
+          1149
+        ],
+        "ruleId": "tortured-phrases",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 36,
+        "index": 1240,
+        "line": 29,
+        "loc": {
+          "end": {
+            "column": 51,
+            "line": 29
+          },
+          "start": {
+            "column": 36,
+            "line": 29
+          }
+        },
+        "message": "Tortured phrase found: \"shut circuit tv\". Replace it with the standard scientific term.",
+        "range": [
+          1240,
+          1255
         ],
         "ruleId": "tortured-phrases",
         "severity": 2,

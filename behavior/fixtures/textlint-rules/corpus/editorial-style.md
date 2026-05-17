@@ -436,6 +436,36 @@ The search ran throughout the entire workspace.
 
 The memo describes the whole entire rollout.
 
+The memo delays the release in view of the fact that the board has not voted.
+
+The policy stays in force until such time as the board replaces it.
+
+The review asks the question as to whether the vendor met the contract.
+
+The interface remains visible to the eye during calibration.
+
+The two teams interact with each other before handoff.
+
+The editor revised the paragraph while at the same time preserving the data.
+
+The milestone serves as a testament to the power of collaboration.
+
 The docs link to [on the same page](https://example.com) as a glossary anchor.
 
 The editor copied an unfinished quote: "at the end of the day
+
+The legal memo quotes "until such time as" as an example of wordy wording.
+
+The board will replace the policy when the review ends.
+
+The review asks whether the vendor met the contract.
+
+The interface remains visible during calibration.
+
+The two teams exchange notes before handoff.
+
+The editor preserved the data while revising the paragraph.
+
+The article quotes "serves as a testament to the power of" as promotional prose.
+
+The witness serves as a testament in the hearing about power rates.

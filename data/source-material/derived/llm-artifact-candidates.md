@@ -11,19 +11,13 @@
 ## Not Implemented
 
 - `deeper into a specific aspect`
-- `it's important to note`
-- `it is important to note`
-- `it's worth noting that`
-- `it is worth noting`
 
 ## Why Not Implemented
 
-- The implemented response-wrapper rule already covers narrow assistant scaffolding and follow-up frames.
-- These remaining phrases are common in normal essays, documentation, and lectures.
-- They need stricter sentence-position or assistant-response context before they are safe.
+- The implemented response-wrapper rule already covers narrow assistant scaffolding, follow-up frames, and paragraph-start note wrappers.
+- The remaining phrase is too incomplete to report by itself.
 
 ## Required Fixture Work Before Implementation
 
-- Add no-hits where these phrases introduce a real technical caveat.
-- Add hits only where the phrase is assistant-style scaffolding without content.
-- Consider matching only paragraph openers, not arbitrary sentence spans.
+- Add no-hits where the phrase is part of literal discussion or specific exploration.
+- Add hits only if surrounding assistant-scaffold context makes the phrase reportable.

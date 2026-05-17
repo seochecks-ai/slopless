@@ -97,3 +97,9 @@ Support agents should ask customers whether they have any further questions.
 The article discusses "please let me know" as a common assistant artifact.
 
 The changelog records the last knowledge update for the index file.
+
+The technical note says the firmware version matters before flashing.
+
+The report says it's worth noting that the sample size doubled.
+
+The article quotes "it is important to note" as boilerplate.

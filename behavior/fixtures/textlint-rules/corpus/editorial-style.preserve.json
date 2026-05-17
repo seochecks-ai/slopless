@@ -1499,6 +1499,111 @@
       "bucket": "no-hits",
       "source": "cases/phrases/no-hits.md",
       "line": 0
+    },
+    {
+      "text": "The memo delays the release in view of the fact that the board has not voted.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 249
+    },
+    {
+      "text": "The policy stays in force until such time as the board replaces it.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 251
+    },
+    {
+      "text": "The review asks the question as to whether the vendor met the contract.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 253
+    },
+    {
+      "text": "The interface remains visible to the eye during calibration.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 255
+    },
+    {
+      "text": "The two teams interact with each other before handoff.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 257
+    },
+    {
+      "text": "The editor revised the paragraph while at the same time preserving the data.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 259
+    },
+    {
+      "text": "The milestone serves as a testament to the power of collaboration.",
+      "family": "phrases",
+      "bucket": "hits",
+      "source": "cases/phrases/hits.md",
+      "line": 261
+    },
+    {
+      "text": "The legal memo quotes \"until such time as\" as an example of wordy wording.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 55
+    },
+    {
+      "text": "The board will replace the policy when the review ends.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 57
+    },
+    {
+      "text": "The review asks whether the vendor met the contract.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 59
+    },
+    {
+      "text": "The interface remains visible during calibration.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 61
+    },
+    {
+      "text": "The two teams exchange notes before handoff.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 63
+    },
+    {
+      "text": "The editor preserved the data while revising the paragraph.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 65
+    },
+    {
+      "text": "The article quotes \"serves as a testament to the power of\" as promotional prose.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 67
+    },
+    {
+      "text": "The witness serves as a testament in the hearing about power rates.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 69
     }
   ]
 }

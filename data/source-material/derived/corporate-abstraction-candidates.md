@@ -10,7 +10,6 @@
 
 ## Not Implemented
 
-- `{roleSubject} serves as a testament to the power of`
 - `{actor} drives {abstractChange}`
 - `{actor} leverages {abstractPlural}`
 
@@ -23,10 +22,10 @@
 
 - The implemented corporate abstraction rule only uses closed frames that are specific enough to report directly.
 - `drives` and `leverages` are too broad without stronger surrounding constraints.
-- `serves as a testament to the power of` is likely safe, but it still needs hit and no-hit fixture coverage before activation.
+- The remaining frames are too broad without stronger surrounding constraints.
 
 ## Required Fixture Work Before Implementation
 
-- Add no-hits for literal driving, database drivers, legal testimony, and concrete leverage.
+- Add no-hits for literal driving, database drivers, and concrete leverage.
 - Add hits only when the frame is abstract and promotional.
 - Verify the rule does not report normal technical prose.

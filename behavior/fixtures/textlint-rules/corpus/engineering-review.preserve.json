@@ -2262,6 +2262,34 @@
       "bucket": "no-hits",
       "source": "cases/syntactic-patterns/no-hits.md",
       "line": 0
+    },
+    {
+      "text": "It is worth noting that this paragraph starts with a wrapper instead of the point.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 951
+    },
+    {
+      "text": "The technical note says the firmware version matters before flashing.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 101
+    },
+    {
+      "text": "The report says it's worth noting that the sample size doubled.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 103
+    },
+    {
+      "text": "The article quotes \"it is important to note\" as boilerplate.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 105
     }
   ]
 }

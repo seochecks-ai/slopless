@@ -947,3 +947,5 @@ Hope this message finds you well before the release summary.
 This is not an exhaustive list.
 
 Tell me if you want me to delve deeper into a specific aspect.
+
+It is worth noting that this paragraph starts with a wrapper instead of the point.
