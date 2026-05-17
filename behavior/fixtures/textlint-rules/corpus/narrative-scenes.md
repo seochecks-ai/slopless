@@ -339,3 +339,15 @@ The dispatcher said the voice was low because the radio battery was failing.
 The actor practiced a smile played on his lips until the director stopped him.
 
 Liska took a deep breath, counted the rope knots, and tied the loose end to the post.
+
+## negative contrast frames
+
+Cassia looked at the chalk mark on the gate. It was no longer a target. It was noise.
+
+The pause was not a delay. It was a warning.
+
+She did not wait for anyone to ask her a question. She pointed a small paw toward the ceiling.
+
+He didn't argue with the guard. Instead, he opened the ledger.
+
+The clerk checked the deployment notice. The beta endpoint is no longer available. It was removed after the migration. She did not wait because the clinic was closing. The status is not final because the review is still open.

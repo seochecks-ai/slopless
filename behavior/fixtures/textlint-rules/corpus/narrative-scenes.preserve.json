@@ -1149,6 +1149,55 @@
       "bucket": "no-hits",
       "source": "cases/narrative-slop/no-hits.md",
       "line": 53
+    },
+    {
+      "text": "It was no longer a target. It was noise.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 963
+    },
+    {
+      "text": "She did not wait for anyone to ask her a question. She pointed a small paw toward the ceiling.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 967
+    },
+    {
+      "text": "The pause was not a delay. It was a warning.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 965
+    },
+    {
+      "text": "He didn't argue with the guard. Instead, he opened the ledger.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 969
+    },
+    {
+      "text": "The beta endpoint is no longer available. It was removed after the migration.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 113
+    },
+    {
+      "text": "She did not wait because the clinic was closing.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 115
+    },
+    {
+      "text": "The status is not final because the review is still open.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 117
     }
   ]
 }

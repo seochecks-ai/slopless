@@ -1,11 +1,11 @@
 {
   "suite": "textlint-rules",
   "kind": "approved",
-  "run_id": "2026-05-17T19-00-42.011407Z-f3c41e06",
-  "run_commit": "a01dfa8",
+  "run_id": "2026-05-17T21-03-03.258584Z-f3c41e06",
+  "run_commit": "eb6636f",
   "working_tree": "dirty",
-  "recorded_at": "2026-05-17T19:00:42.011407Z",
-  "fixture_hash": "sha256:088a7df25395855a8e20b2b90458b9b107e6a4a8a9bf6f891678b929e3881eef",
+  "recorded_at": "2026-05-17T21:03:03.258584Z",
+  "fixture_hash": "sha256:68bb3ec96e9ad53211c87eef2fead989ecdffc509b167c023026bbc7a69431d7",
   "manifest_hash": "sha256:f3c41e06f4c33e3b21fa87bec32cd48f42af6c1064c3e6ae7d226d744fdbe350",
   "tool_version": "0.1.8",
   "output_schema_version": "1",
@@ -68,11 +68,11 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md",
-      "sha256": "sha256:da28ca6ffdaa14c83031eaf63a5fbdd867a929904e753defb48eaac361d6f1df"
+      "sha256": "sha256:e6ddb71a00a068d9205adad2d447b8cee1019d9b6e17a77daf18e8743acf184d"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md",
-      "sha256": "sha256:471b8a5748969797752af949fc5a8863a5da60d515e532d59e350ab70871f2ad"
+      "sha256": "sha256:edfb34e54888d5c1d189819864d7ac98472c3abe333734052cffe913299288de"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/term-policy/hits.md",
@@ -108,12 +108,12 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md",
-      "sha256": "sha256:54451dce857c6e2edd886c366fc9e19dfdaa2672cc13d77cc03df744468f005c"
+      "sha256": "sha256:d3eeb49d1c346b1eb071f89b6194395f1f70df3c001ac3b0940a2314747e07ee"
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/technical-terminology.md",
       "sha256": "sha256:bf69c066e8560de8c1dc151e5ee486fa1c47e2b6fbe178f07eba5ce96193a9e6"
     }
   ],
-  "comment": "Add corpus coverage for remaining source candidates"
+  "comment": "Mirror negative slop cases in corpus"
 }

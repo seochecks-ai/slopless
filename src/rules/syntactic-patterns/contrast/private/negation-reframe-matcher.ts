@@ -19,6 +19,10 @@ import {
   words
 } from "./negation-reframe-parts.js";
 import {
+  hasNegativeSlopPairSignal,
+  negativeSlopReframe
+} from "./negative-slop-frames.js";
+import {
   splitSentences,
   type SplitSentence
 } from "../../../../shared/text/sentences.js";
@@ -36,7 +40,6 @@ const INLINE_NON_CONTRAST_NEGATION_FOLLOWERS = new Set([
   "every",
   "too"
 ]);
-
 function inlineNegationContrast(
   sentence: SplitSentence
 ): NegationReframeMatch | undefined {
@@ -294,7 +297,8 @@ function explicitContrastPivotReframe(
 function hasPairNegationSignal(tokens: readonly Token[]): boolean {
   return (
     findNegationIndex(tokens) !== undefined ||
-    contrastPivotSubject(tokens) !== undefined
+    contrastPivotSubject(tokens) !== undefined ||
+    hasNegativeSlopPairSignal(tokens)
   );
 }
 
@@ -344,6 +348,7 @@ function sentencePairReframe(
     meaningReframe(aTokens, bTokens) ||
     needReframe(aTokens, bTokens) ||
     actionVerbMirror(aTokens, bTokens) ||
+    negativeSlopReframe(aTokens, bTokens) ||
     explicitContrastPivotReframe(aTokens, bTokens)
   ) {
     return {

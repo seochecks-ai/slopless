@@ -39606,6 +39606,98 @@
         "ruleId": "negation-reframe",
         "severity": 2,
         "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 46174,
+        "line": 961,
+        "loc": {
+          "end": {
+            "column": 41,
+            "line": 961
+          },
+          "start": {
+            "column": 1,
+            "line": 961
+          }
+        },
+        "message": "Negation reframe found: \"It was no longer a target. It was noise.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          46174,
+          46214
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 46216,
+        "line": 963,
+        "loc": {
+          "end": {
+            "column": 45,
+            "line": 963
+          },
+          "start": {
+            "column": 1,
+            "line": 963
+          }
+        },
+        "message": "Negation reframe found: \"The pause was not a delay. It was a warning.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          46216,
+          46260
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 46262,
+        "line": 965,
+        "loc": {
+          "end": {
+            "column": 95,
+            "line": 965
+          },
+          "start": {
+            "column": 1,
+            "line": 965
+          }
+        },
+        "message": "Negation reframe found: \"She did not wait for anyone to ask her a question. She pointed a small paw toward the ceiling.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          46262,
+          46356
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 46358,
+        "line": 967,
+        "loc": {
+          "end": {
+            "column": 63,
+            "line": 967
+          },
+          "start": {
+            "column": 1,
+            "line": 967
+          }
+        },
+        "message": "Negation reframe found: \"He didn't argue with the guard. Instead, he opened the ledger.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          46358,
+          46420
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
       }
     ]
   },
@@ -43787,6 +43879,98 @@
           9749
         ],
         "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 46,
+        "index": 11164,
+        "line": 345,
+        "loc": {
+          "end": {
+            "column": 86,
+            "line": 345
+          },
+          "start": {
+            "column": 46,
+            "line": 345
+          }
+        },
+        "message": "Negation reframe found: \"It was no longer a target. It was noise.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          11164,
+          11204
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 11206,
+        "line": 347,
+        "loc": {
+          "end": {
+            "column": 45,
+            "line": 347
+          },
+          "start": {
+            "column": 1,
+            "line": 347
+          }
+        },
+        "message": "Negation reframe found: \"The pause was not a delay. It was a warning.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          11206,
+          11250
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 11252,
+        "line": 349,
+        "loc": {
+          "end": {
+            "column": 95,
+            "line": 349
+          },
+          "start": {
+            "column": 1,
+            "line": 349
+          }
+        },
+        "message": "Negation reframe found: \"She did not wait for anyone to ask her a question. She pointed a small paw toward the ceiling.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          11252,
+          11346
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 11348,
+        "line": 351,
+        "loc": {
+          "end": {
+            "column": 63,
+            "line": 351
+          },
+          "start": {
+            "column": 1,
+            "line": 351
+          }
+        },
+        "message": "Negation reframe found: \"He didn't argue with the guard. Instead, he opened the ledger.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          11348,
+          11410
+        ],
+        "ruleId": "negation-reframe",
         "severity": 2,
         "type": "lint"
       }

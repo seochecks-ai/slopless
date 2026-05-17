@@ -107,3 +107,9 @@ The article quotes "it is important to note" as boilerplate.
 She did not go to Arden because Arden had already left for the pier.
 
 He didn't look at the music box until Cassia opened the lid.
+
+The beta endpoint is no longer available. It was removed after the migration.
+
+She did not wait because the clinic was closing.
+
+The status is not final because the review is still open.
