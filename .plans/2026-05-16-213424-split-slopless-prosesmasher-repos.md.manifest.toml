@@ -48,7 +48,6 @@ path = "packages"
 
 [package_json]
 name = "slopless"
-version = "0.2.5"
 repository_url = "git+https://github.com/agent-quality-controls/slopless.git"
 homepage = "https://github.com/agent-quality-controls/slopless#readme"
 bugs_url = "https://github.com/agent-quality-controls/slopless/issues"

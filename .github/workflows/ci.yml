@@ -14,9 +14,14 @@ jobs:
         node: ["20", "22"]
     steps:
       - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+        with:
+          key: g3ts
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node }}
           cache: npm
+      - run: cargo install --git https://github.com/agent-quality-controls/guardrail3 g3ts --locked
       - run: npm ci
       - run: npm run validate
