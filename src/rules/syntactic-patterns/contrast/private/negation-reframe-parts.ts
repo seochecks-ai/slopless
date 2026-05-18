@@ -39,6 +39,14 @@ export const OPTIONAL_ADVERBS = new Set([
   "really",
   "usually"
 ]);
+export const FACTUAL_NEGATION_CONNECTORS = new Set([
+  "because",
+  "if",
+  "since",
+  "until",
+  "when",
+  "while"
+]);
 export const PRONOUN_REFRAME_STARTS = [
   ["it", "is"],
   ["it", "was"],
@@ -139,6 +147,13 @@ export function startsWithSubjectVerb(
 
 export function words(tokens: readonly Token[]): readonly string[] {
   return tokens.map((token) => token.normalized);
+}
+
+export function hasAnyWord(
+  tokens: readonly string[],
+  candidates: ReadonlySet<string>
+): boolean {
+  return tokens.some((token) => candidates.has(token));
 }
 
 export function skipOptionalAdverbs(

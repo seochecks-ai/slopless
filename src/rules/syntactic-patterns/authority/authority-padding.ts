@@ -5,6 +5,7 @@ import {
   type SentenceMatch
 } from "../../../shared/matchers/prose-patterns.js";
 import { allParagraphSentences } from "../../../shared/text/sections.js";
+import { emitTextlintFinding } from "../../../adapters/textlint/report.js";
 
 const PREFIXES = ["however, ", "but ", "and ", "so "];
 const EVIDENCE_SUBJECTS = [
@@ -109,7 +110,7 @@ function matchAuthorityPadding(sentence: string): SentenceMatch | undefined {
 }
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
 
   return {
     [Syntax.Document](node: TxtDocumentNode): void {
@@ -119,18 +120,15 @@ const rule: TextlintRuleModule = (context) => {
           continue;
         }
 
-        report(
-          item.paragraph,
-          new RuleError(
-            `Authority padding found: ${matched.signal}. Cite the actual evidence or remove the frame.`,
-            {
-              padding: locator.range([
-                item.source.originalStartFor(item.sentence.start),
-                item.source.originalEndFor(item.sentence.end)
-              ])
-            }
-          )
-        );
+        emitTextlintFinding(context, {
+          node: item.paragraph,
+          ruleId: "syntactic-patterns:authority-padding",
+          message: `Authority padding found: ${matched.signal}. Cite the actual evidence or remove the frame.`,
+          range: {
+            start: item.source.originalStartFor(item.sentence.start),
+            end: item.source.originalEndFor(item.sentence.end)
+          }
+        });
       }
     }
   };

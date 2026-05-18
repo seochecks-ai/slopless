@@ -2,11 +2,12 @@ import type { TxtDocumentNode } from "@textlint/ast-node-types";
 import type { TextlintRuleModule } from "@textlint/types";
 import { allParagraphs } from "../../shared/text/sections.js";
 import { splitSentences } from "../../shared/text/sentences.js";
+import { emitTextlintFinding } from "../../adapters/textlint/report.js";
 
 const MAX_SENTENCES = 6;
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
 
   return {
     [Syntax.Document](node: TxtDocumentNode): void {
@@ -17,15 +18,12 @@ const rule: TextlintRuleModule = (context) => {
           continue;
         }
 
-        report(
-          item.paragraph,
-          new RuleError(
-            `Paragraph has ${sentenceCount} sentences. Keep paragraphs to ${MAX_SENTENCES} sentences or fewer.`,
-            {
-              padding: locator.range([0, item.source.text.length])
-            }
-          )
-        );
+        emitTextlintFinding(context, {
+          node: item.paragraph,
+          ruleId: "metrics:paragraph-length",
+          message: `Paragraph has ${sentenceCount} sentences. Keep paragraphs to ${MAX_SENTENCES} sentences or fewer.`,
+          range: { start: 0, end: item.source.text.length }
+        });
       }
     }
   };

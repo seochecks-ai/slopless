@@ -2,6 +2,7 @@ import type { TxtDocumentNode } from "@textlint/ast-node-types";
 import type { TextlintRuleModule } from "@textlint/types";
 import { allParagraphSentences } from "../../shared/text/sections.js";
 import { semanticThinnessPatterns } from "./private/pattern-data.js";
+import { emitTextlintFinding } from "../../adapters/textlint/report.js";
 import {
   compileSemanticThinnessPatterns,
   findSemanticThinnessMatch
@@ -12,7 +13,7 @@ const COMPILED_PATTERNS = compileSemanticThinnessPatterns(
 );
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
 
   return {
     [Syntax.Document](node: TxtDocumentNode): void {
@@ -25,18 +26,15 @@ const rule: TextlintRuleModule = (context) => {
           continue;
         }
 
-        report(
-          item.paragraph,
-          new RuleError(
-            `Semantic thinness (${match.patternId}): ${match.purpose} Matched template: ${match.signal}`,
-            {
-              padding: locator.range([
-                item.source.originalStartFor(item.sentence.start),
-                item.source.originalEndFor(item.sentence.end)
-              ])
-            }
-          )
-        );
+        emitTextlintFinding(context, {
+          node: item.paragraph,
+          ruleId: "semantic-thinness:semantic-thinness",
+          message: `Semantic thinness (${match.patternId}): ${match.purpose} Matched template: ${match.signal}`,
+          range: {
+            start: item.source.originalStartFor(item.sentence.start),
+            end: item.source.originalEndFor(item.sentence.end)
+          }
+        });
       }
     }
   };

@@ -392,448 +392,140 @@
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 29
+      "line": 31
     },
     {
       "text": "Hopefully the release note explains the customer impact.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 31
+      "line": 33
     },
     {
       "text": "The customer received FULSOME praise in the case study.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 33
+      "line": 35
     },
     {
       "text": "The outage decimated the queue before the worker pool recovered.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 35
+      "line": 37
     },
     {
       "text": "The draft calls the migration very unique without evidence.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 37
+      "line": 39
     },
     {
       "text": "The dashboard claims this is the Most Complete export.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 39
+      "line": 41
     },
     {
       "text": "At the end of the day, the appendix still avoids the decision.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 41
+      "line": 43
     },
     {
       "text": "The failed rollout sent the team back to the drawing board.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 43
+      "line": 45
     },
     {
       "text": "In my experience, leaders keep optimizing for delight instead of clarity.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 45
+      "line": 47
     },
     {
       "text": "As a language model, in conclusion, I cannot verify the rollout date.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 47
+      "line": 49
     },
     {
       "text": "In today's fast-paced world, teams often say let's dive in before they have a point.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 49
+      "line": 51
     },
     {
       "text": "In my experience, the advice gets worse when the author keeps auditioning for authority.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 51
+      "line": 53
     },
     {
       "text": "As someone who has edited enough bland posts, I would cut the credential before the claim.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 53
+      "line": 55
     },
     {
       "text": "The draft keeps optimizing for emotional resonance instead of saying what changed.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 55
+      "line": 57
     },
     {
       "text": "Please debug your morning routine before you call it a strategy.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 57
+      "line": 59
     },
     {
       "text": "The team went back to square one after the launch review.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 59
+      "line": 61
     },
     {
       "text": "The roadmap keeps chasing low-hanging fruit instead of naming the tradeoff.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 61
+      "line": 63
     },
     {
       "text": "Hopefully the final draft does not lean on disputed usage.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 63
+      "line": 65
     },
     {
       "text": "The campaign calls the offer very unique without explaining what changed.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 65
+      "line": 67
     },
     {
       "text": "As a language model, I do not have access to real-time information.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 67
-    },
-    {
-      "text": "The key takeaways changed after the data review.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 1
-    },
-    {
-      "text": "The test fixture contains \"as a language model\" as quoted sample text.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 3
-    },
-    {
-      "text": "The experience report lists each failed assumption.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 5
-    },
-    {
-      "text": "Use the trace output to debug your build before merging.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 7
-    },
-    {
-      "text": "The service team is optimizing for latency on the upload path.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 9
-    },
-    {
-      "text": "The glossary uses \"back to square one\" as an example of vague wording.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 11
-    },
-    {
-      "text": "The acid testers labeled each vial before the audit.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 13
-    },
-    {
-      "text": "The patient reported pain in the neck after the crash.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 15
-    },
-    {
-      "text": "The transcript quotes \"let's touch base\" as a phrase to remove.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 15
-    },
-    {
-      "text": "The paper measured synergistic effects between the two drugs.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 17
-    },
-    {
-      "text": "The editor marked \"hopefully\" as disputed usage in the style guide.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 19
-    },
-    {
-      "text": "The preamble refers to a more perfect union.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 21
-    },
-    {
-      "text": "The retry loop runs at most three times.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 23
-    },
-    {
-      "text": "The review flags \"very unique\" as a usage example.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 25
-    },
-    {
-      "text": "The cat slept near the door after lunch. A small dog ran across the yard. Birds moved through the trees before rain. People made tea and talked softly. The room stayed warm until evening.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 27
-    },
-    {
-      "text": "The editor marked \"back to square one\" in the margin as example text.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 29
-    },
-    {
-      "text": "At most, complete the first section before lunch.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 31
-    },
-    {
-      "text": "The editor marked \"very unique\" in the margin as example text.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 33
-    },
-    {
-      "text": "The clean control sentence describes a normal editorial decision.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 35
-    },
-    {
-      "text": "The engineer can debug your build script after lunch.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 37
-    },
-    {
-      "text": "The team is optimizing for latency in the parser.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 39
-    },
-    {
-      "text": "The migration might perhaps finish after the config review.",
-      "family": "words",
-      "bucket": "hits",
-      "source": "cases/words/hits.md",
-      "line": 1
-    },
-    {
-      "text": "Maybe the release Probably needs another review.",
-      "family": "words",
-      "bucket": "hits",
-      "source": "cases/words/hits.md",
-      "line": 3
-    },
-    {
-      "text": "The budget could maybe change after the audit.",
-      "family": "words",
-      "bucket": "hits",
-      "source": "cases/words/hits.md",
-      "line": 5
-    },
-    {
-      "text": "This section calls the migration a pivotal release risk.",
-      "family": "words",
-      "bucket": "hits",
-      "source": "cases/words/hits.md",
-      "line": 7
-    },
-    {
-      "text": "The editor circled \"vibrant\" in the draft margin.",
-      "family": "words",
-      "bucket": "hits",
-      "source": "cases/words/hits.md",
-      "line": 9
-    },
-    {
-      "text": "The draft keeps delving into process history.",
-      "family": "words",
-      "bucket": "hits",
-      "source": "cases/words/hits.md",
-      "line": 11
-    },
-    {
-      "text": "The launch plan will leverage the audit notes.",
-      "family": "words",
-      "bucket": "hits",
-      "source": "cases/words/hits.md",
-      "line": 13
-    },
-    {
-      "text": "The vendor called the export ROBUST in the release note.",
-      "family": "words",
-      "bucket": "hits",
-      "source": "cases/words/hits.md",
-      "line": 15
-    },
-    {
-      "text": "The guide tells teams to utilize the backup path.",
-      "family": "words",
-      "bucket": "hits",
-      "source": "cases/words/hits.md",
-      "line": 17
-    },
-    {
-      "text": "The coordinator will FACILITATE the handoff.",
-      "family": "words",
-      "bucket": "hits",
-      "source": "cases/words/hits.md",
-      "line": 19
-    },
-    {
-      "text": "The team utilized the backup path during the outage.",
-      "family": "words",
-      "bucket": "hits",
-      "source": "cases/words/hits.md",
-      "line": 21
-    },
-    {
-      "text": "The paragraph calls support tickets a realm of hidden work.",
-      "family": "words",
-      "bucket": "hits",
-      "source": "cases/words/hits.md",
-      "line": 23
-    },
-    {
-      "text": "The draft says teams should utilize a robust tapestry of checks.",
-      "family": "words",
-      "bucket": "hits",
-      "source": "cases/words/hits.md",
-      "line": 25
-    },
-    {
-      "text": "This article tries to leverage a robust and seamless process.",
-      "family": "words",
-      "bucket": "hits",
-      "source": "cases/words/hits.md",
-      "line": 27
-    },
-    {
-      "text": "We might perhaps utilize numerous tools to facilitate the launch.",
-      "family": "words",
-      "bucket": "hits",
-      "source": "cases/words/hits.md",
-      "line": 29
-    },
-    {
-      "text": "This vibrant landscape asks the reader to delve into an intricate tapestry.",
-      "family": "words",
-      "bucket": "hits",
-      "source": "cases/words/hits.md",
-      "line": 31
-    },
-    {
-      "text": "The migration might finish after the config review.",
-      "family": "words",
-      "bucket": "no-hits",
-      "source": "cases/words/no-hits.md",
-      "line": 1
-    },
-    {
-      "text": "The landscaper repaired the stone path before noon.",
-      "family": "words",
-      "bucket": "no-hits",
-      "source": "cases/words/no-hits.md",
-      "line": 3
-    },
-    {
-      "text": "The code sample names the field actuallyactual for legacy parity.",
-      "family": "words",
-      "bucket": "no-hits",
-      "source": "cases/words/no-hits.md",
-      "line": 5
-    },
-    {
-      "text": "The implementation passed the parser checks.",
-      "family": "words",
-      "bucket": "no-hits",
-      "source": "cases/words/no-hits.md",
-      "line": 7
-    },
-    {
-      "text": "The plan might work. Perhaps the plain version starts later.",
-      "family": "words",
-      "bucket": "no-hits",
-      "source": "cases/words/no-hits.md",
-      "line": 9
-    },
-    {
-      "text": "We use many tools to help the launch.",
-      "family": "words",
-      "bucket": "no-hits",
-      "source": "cases/words/no-hits.md",
-      "line": 11
-    },
-    {
-      "text": "The clean control sentence uses ordinary language and should not trigger the prohibited word rule.",
-      "family": "words",
-      "bucket": "no-hits",
-      "source": "cases/words/no-hits.md",
-      "line": 13
+      "line": 69
     },
     {
       "text": "The draft delays the finding due to the fact that the owner is unnamed.",
@@ -871,634 +563,592 @@
       "line": 79
     },
     {
-      "text": "The editor quoted \"due to the fact that\" as an example of wordy prose.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 43
-    },
-    {
-      "text": "The engineer came back after lunch with a smaller patch.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 45
-    },
-    {
-      "text": "The report says the actors played a crucial role in the second act.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 47
-    },
-    {
-      "text": "The article discusses \"please let me know\" as a common assistant artifact.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 49
-    },
-    {
       "text": "The draft says because of the fact that the owner is absent.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 81
     },
     {
       "text": "The note says owing to the fact that the queue is blocked.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 83
     },
     {
       "text": "The memo says in light of the fact that the rollout failed.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 85
     },
     {
       "text": "The report says by virtue of the fact that the lease expired.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 87
     },
     {
       "text": "The plan changed based on the fact that the test failed.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 89
     },
     {
       "text": "The team paused despite the fact that the patch was ready.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 91
     },
     {
       "text": "The team waited in spite of the fact that the fix was merged.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 93
     },
     {
       "text": "The decision is vague at this point in time.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 95
     },
     {
       "text": "The policy is active at the present time.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 97
     },
     {
       "text": "The note is accurate at this moment in time.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 99
     },
     {
       "text": "The review changed during the course of the audit.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 101
     },
     {
       "text": "The fee applied during the period of review.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 103
     },
     {
       "text": "The workaround stayed active during the duration of the outage.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 105
     },
     {
       "text": "The team met in order to review the incident.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 107
     },
     {
       "text": "The team met in an effort to reduce churn.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 109
     },
     {
       "text": "The checklist exists for the purpose of review.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 111
     },
     {
       "text": "The memo frames the audit as a means of control.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 113
     },
     {
       "text": "The service has the ability to retry the upload.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 115
     },
     {
       "text": "The workers have the ability to stop the line.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 117
     },
     {
       "text": "The old tool had the ability to export logs.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 119
     },
     {
       "text": "The team will conduct an assessment of the queue.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 121
     },
     {
       "text": "The team will conduct an evaluation of the vendor.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 123
     },
     {
       "text": "The team will conduct an investigation of the outage.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 125
     },
     {
       "text": "The team will perform an assessment of the queue.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 127
     },
     {
       "text": "The team will perform an evaluation of the vendor.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 129
     },
     {
       "text": "The team will perform an investigation of the outage.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 131
     },
     {
       "text": "The team will carry out an assessment of the queue.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 133
     },
     {
       "text": "The team will carry out an evaluation of the vendor.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 135
     },
     {
       "text": "The team will carry out an investigation of the outage.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 137
     },
     {
       "text": "The memo will make reference to the retired endpoint.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 139
     },
     {
       "text": "The memo makes reference to the retired endpoint.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 141
     },
     {
       "text": "The memo made reference to the retired endpoint.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 143
     },
     {
       "text": "The team will take into account the outage report.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 145
     },
     {
       "text": "The team takes into account the outage report.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 147
     },
     {
       "text": "The team took into account the outage report.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 149
     },
     {
       "text": "The introduction repeats the basic fundamentals before the example.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 151
     },
     {
       "text": "The memo calls the delay an actual fact.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 153
     },
     {
       "text": "The report lists true facts without sources.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 155
     },
     {
       "text": "The roadmap promises future plans for billing.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 157
     },
     {
       "text": "The campaign offers a free gift after signup.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 159
     },
     {
       "text": "The note calls the outage a serious crisis.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 161
     },
     {
       "text": "The map shows the office in close proximity to the lab.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 163
     },
     {
       "text": "The launch post promises a new innovation.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 165
     },
     {
       "text": "The draft says the teams blend together after the merger.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 167
     },
     {
       "text": "The draft says the teams blends together after the merger.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 169
     },
     {
       "text": "The draft says the teams blended together after the merger.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 171
     },
     {
       "text": "The memo says the groups collaborate together on refunds.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 173
     },
     {
       "text": "The memo says the groups collaborates together on refunds.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 175
     },
     {
       "text": "The memo says the groups collaborated together on refunds.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 177
     },
     {
       "text": "The release notes combine together two unrelated fixes.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 179
     },
     {
       "text": "The release notes combines together two unrelated fixes.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 181
     },
     {
       "text": "The release notes combined together two unrelated fixes.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 183
     },
     {
       "text": "The checklist says the systems connect together at noon.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 185
     },
     {
       "text": "The checklist says the systems connects together at noon.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 187
     },
     {
       "text": "The checklist says the systems connected together at noon.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 189
     },
     {
       "text": "The plan says the services merge together next week.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 191
     },
     {
       "text": "The plan says the services merges together next week.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 193
     },
     {
       "text": "The plan says the services merged together last week.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 195
     },
     {
       "text": "The guide says mix together the two logs.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 197
     },
     {
       "text": "The guide says mixes together the two logs.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 199
     },
     {
       "text": "The guide says mixed together the two logs.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 201
     },
     {
       "text": "The coordinator will gather together the owners.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 203
     },
     {
       "text": "The coordinator gathers together the owners.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 205
     },
     {
       "text": "The coordinator gathered together the owners.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 207
     },
     {
       "text": "The checklist says repeat again the rollback step.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 209
     },
     {
       "text": "The checklist repeats again the rollback step.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 211
     },
     {
       "text": "The editor will restate again the premise.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 213
     },
     {
       "text": "The editor restates again the premise.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 215
     },
     {
       "text": "The editor restated again the premise.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 217
     },
     {
       "text": "The lead will reiterate again the warning.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 219
     },
     {
       "text": "The lead reiterates again the warning.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 221
     },
     {
       "text": "The lead reiterated again the warning.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 223
     },
     {
       "text": "The process will return back to the queue.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 225
     },
     {
       "text": "The process returns back to the queue.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 227
     },
     {
       "text": "The process returned back to the queue.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 229
     },
     {
       "text": "The note will refer back to the kickoff.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 231
     },
     {
       "text": "The note refers back to the kickoff.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 233
     },
     {
       "text": "The note referred back to the kickoff.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 235
     },
     {
       "text": "The setting will revert back after deploy.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 237
     },
     {
       "text": "The setting reverts back after deploy.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 239
     },
     {
       "text": "The setting reverted back after deploy.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 241
     },
     {
       "text": "The file is surrounded on all sides by generated data.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 243
     },
     {
       "text": "The search ran throughout the entire workspace.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
+      "line": 245
     },
     {
       "text": "The memo describes the whole entire rollout.",
       "family": "phrases",
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
-      "line": 0
-    },
-    {
-      "text": "The docs link to [on the same page](https://example.com) as a glossary anchor.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 0
-    },
-    {
-      "text": "The editor copied an unfinished quote: \"at the end of the day",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 0
+      "line": 247
     },
     {
       "text": "The memo delays the release in view of the fact that the board has not voted.",
@@ -1548,97 +1198,6 @@
       "bucket": "hits",
       "source": "cases/phrases/hits.md",
       "line": 261
-    },
-    {
-      "text": "The legal memo quotes \"until such time as\" as an example of wordy wording.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 55
-    },
-    {
-      "text": "The board will replace the policy when the review ends.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 57
-    },
-    {
-      "text": "The review asks whether the vendor met the contract.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 59
-    },
-    {
-      "text": "The interface remains visible during calibration.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 61
-    },
-    {
-      "text": "The two teams exchange notes before handoff.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 63
-    },
-    {
-      "text": "The editor preserved the data while revising the paragraph.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 65
-    },
-    {
-      "text": "The article quotes \"serves as a testament to the power of\" as promotional prose.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 67
-    },
-    {
-      "text": "The witness serves as a testament in the hearing about power rates.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 69
-    },
-    {
-      "text": "The emergency team opened a situation room after the alarm.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 71
-    },
-    {
-      "text": "The teacher installed software for the classroom program.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 73
-    },
-    {
-      "text": "The technician coupled the hose to the pump before testing pressure.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 79
-    },
-    {
-      "text": "The crews pooled water behind the temporary dam.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 81
-    },
-    {
-      "text": "The board scheduled a formal review for May.",
-      "family": "phrases",
-      "bucket": "no-hits",
-      "source": "cases/phrases/no-hits.md",
-      "line": 85
     },
     {
       "text": "The migration note calls the cleanup an absolute necessity.",
@@ -1858,6 +1417,265 @@
       "line": 323
     },
     {
+      "text": "The key takeaways changed after the data review.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 1
+    },
+    {
+      "text": "The test fixture contains \"as a language model\" as quoted sample text.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 3
+    },
+    {
+      "text": "The experience report lists each failed assumption.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 5
+    },
+    {
+      "text": "Use the trace output to debug your build before merging.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 7
+    },
+    {
+      "text": "The service team is optimizing for latency on the upload path.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 9
+    },
+    {
+      "text": "The glossary uses \"back to square one\" as an example of vague wording.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 11
+    },
+    {
+      "text": "The acid testers labeled each vial before the audit.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 13
+    },
+    {
+      "text": "The patient reported pain in the neck after the crash.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 15
+    },
+    {
+      "text": "The transcript quotes \"let's touch base\" as a phrase to remove.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 17
+    },
+    {
+      "text": "The paper measured synergistic effects between the two drugs.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 19
+    },
+    {
+      "text": "The editor marked \"hopefully\" as disputed usage in the style guide.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 21
+    },
+    {
+      "text": "The preamble refers to a more perfect union.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 23
+    },
+    {
+      "text": "The retry loop runs at most three times.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 25
+    },
+    {
+      "text": "The review flags \"very unique\" as a usage example.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 27
+    },
+    {
+      "text": "The cat slept near the door after lunch. A small dog ran across the yard. Birds moved through the trees before rain. People made tea and talked softly. The room stayed warm until evening.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 29
+    },
+    {
+      "text": "The editor marked \"back to square one\" in the margin as example text.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 31
+    },
+    {
+      "text": "At most, complete the first section before lunch.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 33
+    },
+    {
+      "text": "The editor marked \"very unique\" in the margin as example text.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 35
+    },
+    {
+      "text": "The clean control sentence describes a normal editorial decision.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 37
+    },
+    {
+      "text": "The engineer can debug your build script after lunch.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 39
+    },
+    {
+      "text": "The team is optimizing for latency in the parser.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 41
+    },
+    {
+      "text": "The editor quoted \"due to the fact that\" as an example of wordy prose.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 43
+    },
+    {
+      "text": "The engineer came back after lunch with a smaller patch.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 45
+    },
+    {
+      "text": "The report says the actors played a crucial role in the second act.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 47
+    },
+    {
+      "text": "The article discusses \"please let me know\" as a common assistant artifact.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 49
+    },
+    {
+      "text": "The docs link to [on the same page](https://example.com) as a glossary anchor.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 51
+    },
+    {
+      "text": "The editor copied an unfinished quote: \"at the end of the day",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 53
+    },
+    {
+      "text": "The legal memo quotes \"until such time as\" as an example of wordy wording.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 55
+    },
+    {
+      "text": "The board will replace the policy when the review ends.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 57
+    },
+    {
+      "text": "The review asks whether the vendor met the contract.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 59
+    },
+    {
+      "text": "The interface remains visible during calibration.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 61
+    },
+    {
+      "text": "The two teams exchange notes before handoff.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 63
+    },
+    {
+      "text": "The editor preserved the data while revising the paragraph.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 65
+    },
+    {
+      "text": "The article quotes \"serves as a testament to the power of\" as promotional prose.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 67
+    },
+    {
+      "text": "The witness serves as a testament in the hearing about power rates.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 69
+    },
+    {
+      "text": "The emergency team opened a situation room after the alarm.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 71
+    },
+    {
+      "text": "The teacher installed software for the classroom program.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 73
+    },
+    {
       "text": "The editor quoted \"complete stranger\" as a redundancy example.",
       "family": "phrases",
       "bucket": "no-hits",
@@ -1872,11 +1690,200 @@
       "line": 77
     },
     {
+      "text": "The technician coupled the hose to the pump before testing pressure.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 79
+    },
+    {
+      "text": "The crews pooled water behind the temporary dam.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 81
+    },
+    {
       "text": "The candidate has legal capacity under the statute.",
       "family": "phrases",
       "bucket": "no-hits",
       "source": "cases/phrases/no-hits.md",
       "line": 83
+    },
+    {
+      "text": "The board scheduled a formal review for May.",
+      "family": "phrases",
+      "bucket": "no-hits",
+      "source": "cases/phrases/no-hits.md",
+      "line": 85
+    },
+    {
+      "text": "The article discusses \"please let me know\" as a common assistant artifact.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 97
+    },
+    {
+      "text": "The migration might perhaps finish after the config review.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 1
+    },
+    {
+      "text": "Maybe the release Probably needs another review.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 3
+    },
+    {
+      "text": "The budget could maybe change after the audit.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 5
+    },
+    {
+      "text": "This section calls the migration a pivotal release risk.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 7
+    },
+    {
+      "text": "The editor circled \"vibrant\" in the draft margin.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 9
+    },
+    {
+      "text": "The draft keeps delving into process history.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 11
+    },
+    {
+      "text": "The launch plan will leverage the audit notes.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 13
+    },
+    {
+      "text": "The vendor called the export ROBUST in the release note.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 15
+    },
+    {
+      "text": "The guide tells teams to utilize the backup path.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 17
+    },
+    {
+      "text": "The coordinator will FACILITATE the handoff.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 19
+    },
+    {
+      "text": "The team utilized the backup path during the outage.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 21
+    },
+    {
+      "text": "The paragraph calls support tickets a realm of hidden work.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 23
+    },
+    {
+      "text": "The draft says teams should utilize a robust tapestry of checks.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 25
+    },
+    {
+      "text": "This article tries to leverage a robust and seamless process.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 27
+    },
+    {
+      "text": "We might perhaps utilize numerous tools to facilitate the launch.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 29
+    },
+    {
+      "text": "This vibrant landscape asks the reader to delve into an intricate tapestry.",
+      "family": "words",
+      "bucket": "hits",
+      "source": "cases/words/hits.md",
+      "line": 31
+    },
+    {
+      "text": "The migration might finish after the config review.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 1
+    },
+    {
+      "text": "The landscaper repaired the stone path before noon.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 3
+    },
+    {
+      "text": "The code sample names the field actuallyactual for legacy parity.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 5
+    },
+    {
+      "text": "The implementation passed the parser checks.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 7
+    },
+    {
+      "text": "The plan might work. Perhaps the plain version starts later.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 9
+    },
+    {
+      "text": "We use many tools to help the launch.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 11
+    },
+    {
+      "text": "The clean control sentence uses ordinary language and should not trigger the prohibited word rule.",
+      "family": "words",
+      "bucket": "no-hits",
+      "source": "cases/words/no-hits.md",
+      "line": 13
     }
   ]
 }

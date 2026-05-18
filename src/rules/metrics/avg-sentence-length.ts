@@ -1,11 +1,12 @@
 import type { TxtDocumentNode } from "@textlint/ast-node-types";
 import type { TextlintRuleModule } from "@textlint/types";
 import { documentMetrics } from "../../shared/text/document.js";
+import { emitTextlintFinding } from "../../adapters/textlint/report.js";
 
 const MAX_WORDS = 24;
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
 
   return {
     [Syntax.Document](node: TxtDocumentNode): void {
@@ -19,15 +20,12 @@ const rule: TextlintRuleModule = (context) => {
         return;
       }
 
-      report(
-        node,
-        new RuleError(
-          `Average sentence length is ${average} words. Keep it at ${MAX_WORDS} or fewer.`,
-          {
-            padding: locator.at(0)
-          }
-        )
-      );
+      emitTextlintFinding(context, {
+        node: node,
+        ruleId: "metrics:avg-sentence-length",
+        message: `Average sentence length is ${average} words. Keep it at ${MAX_WORDS} or fewer.`,
+        range: { start: 0, end: 0 }
+      });
     }
   };
 };

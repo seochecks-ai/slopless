@@ -3,6 +3,7 @@ import type { TextlintRuleModule } from "@textlint/types";
 import { findPhraseMatches } from "../../shared/matchers/phrases.js";
 import { allParagraphSentences } from "../../shared/text/sections.js";
 import { wordTokens } from "../../shared/text/tokens.js";
+import { emitTextlintFinding } from "../../adapters/textlint/report.js";
 
 const JARGON_FAKER_PHRASES = [
   "debug our",
@@ -76,7 +77,7 @@ function isLiteralTechnicalUse(
 }
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
 
   return {
     [Syntax.Document](node: TxtDocumentNode): void {
@@ -91,20 +92,17 @@ const rule: TextlintRuleModule = (context) => {
             continue;
           }
 
-          report(
-            item.paragraph,
-            new RuleError(
-              `Fake jargon phrase found: "${match.text}". Replace the borrowed tech metaphor with plain language.`,
-              {
-                padding: locator.range([
-                  item.source.originalStartFor(
-                    item.sentence.start + match.start
-                  ),
-                  item.source.originalEndFor(item.sentence.start + match.end)
-                ])
-              }
-            )
-          );
+          emitTextlintFinding(context, {
+            node: item.paragraph,
+            ruleId: "phrases:jargon-faker",
+            message: `Fake jargon phrase found: "${match.text}". Replace the borrowed tech metaphor with plain language.`,
+            range: {
+              start: item.source.originalStartFor(
+                item.sentence.start + match.start
+              ),
+              end: item.source.originalEndFor(item.sentence.start + match.end)
+            }
+          });
         }
       }
     }

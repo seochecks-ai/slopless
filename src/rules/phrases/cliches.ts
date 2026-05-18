@@ -2,6 +2,7 @@ import type { TextlintRuleModule } from "@textlint/types";
 import { RuleHelper } from "textlint-rule-helper";
 import cliches from "./data/cliches.json" with { type: "json" };
 import clicheTemplates from "./data/cliche-templates.json" with { type: "json" };
+import { emitTextlintFinding } from "../../adapters/textlint/report.js";
 import {
   type PhraseMatch,
   findUnquotedPhraseMatches,
@@ -23,7 +24,7 @@ function uniqueMatches(matches: readonly PhraseMatch[]): PhraseMatch[] {
 }
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, getSource, locator, report } = context;
+  const { Syntax, getSource } = context;
   const helper = new RuleHelper(context);
   const ignoredParents = [Syntax.Link, Syntax.LinkReference];
 
@@ -41,15 +42,12 @@ const rule: TextlintRuleModule = (context) => {
       ]);
 
       for (const match of matches) {
-        report(
-          node,
-          new RuleError(
-            `Cliche found: "${match.text}". Replace it with specific wording.`,
-            {
-              padding: locator.range([match.start, match.end])
-            }
-          )
-        );
+        emitTextlintFinding(context, {
+          node: node,
+          ruleId: "phrases:cliches",
+          message: `Cliche found: "${match.text}". Replace it with specific wording.`,
+          range: { start: match.start, end: match.end }
+        });
       }
     }
   };

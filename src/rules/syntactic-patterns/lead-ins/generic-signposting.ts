@@ -7,6 +7,7 @@ import {
   type SentenceMatch
 } from "../../../shared/matchers/prose-patterns.js";
 import { allParagraphSentences } from "../../../shared/text/sections.js";
+import { emitTextlintFinding } from "../../../adapters/textlint/report.js";
 
 const PREFIXES = ["however, ", "but ", "and ", "so "];
 const IMPORTANT_TO_PATTERNS = [
@@ -250,7 +251,7 @@ function matchSignposting(sentence: string): SentenceMatch | undefined {
 }
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
 
   return {
     [Syntax.Document](node: TxtDocumentNode): void {
@@ -260,18 +261,15 @@ const rule: TextlintRuleModule = (context) => {
           continue;
         }
 
-        report(
-          item.paragraph,
-          new RuleError(
-            `Generic signposting found: ${matched.signal}. Replace the frame with the concrete claim.`,
-            {
-              padding: locator.range([
-                item.source.originalStartFor(item.sentence.start),
-                item.source.originalEndFor(item.sentence.end)
-              ])
-            }
-          )
-        );
+        emitTextlintFinding(context, {
+          node: item.paragraph,
+          ruleId: "syntactic-patterns:generic-signposting",
+          message: `Generic signposting found: ${matched.signal}. Replace the frame with the concrete claim.`,
+          range: {
+            start: item.source.originalStartFor(item.sentence.start),
+            end: item.source.originalEndFor(item.sentence.end)
+          }
+        });
       }
     }
   };

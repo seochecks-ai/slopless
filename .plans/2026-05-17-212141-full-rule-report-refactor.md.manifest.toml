@@ -1,0 +1,72 @@
+[[tree]]
+path = "src/rules/types.ts"
+
+[[tree]]
+path = "src/reporting/types.ts"
+
+[[tree]]
+path = "src/reporting/reports.ts"
+
+[[tree]]
+path = "src/adapters/textlint/report.ts"
+
+[[tree]]
+path = "src/adapters/textlint/units.ts"
+
+[[public_api]]
+file = "src/rules/types.ts"
+types = [
+  "RuleDetection",
+  "RuleDetector",
+  "RuleFamilyId",
+  "RuleId",
+  "RuleInput",
+  "SourceRange",
+  "TextUnit",
+  "TextUnitKind"
+]
+
+[[public_api]]
+file = "src/reporting/types.ts"
+types = [
+  "DensityMatch",
+  "Detection",
+  "ReportPolicy",
+  "RuleDefinition",
+  "RuleReport"
+]
+
+[[public_api]]
+file = "src/reporting/reports.ts"
+functions = [
+  "densityReports",
+  "oneToOneReports"
+]
+
+[[public_api]]
+file = "src/adapters/textlint/report.ts"
+functions = [
+  "emitTextlintDetection",
+  "emitTextlintFinding",
+  "emitTextlintNodeFinding",
+  "emitTextlintReport",
+  "emitTextlintReports"
+]
+
+[[public_api]]
+file = "src/adapters/textlint/units.ts"
+functions = [
+  "paragraphUnits",
+  "textUnitForNode"
+]
+
+[[forbidden_tree_text]]
+root = "src/rules"
+glob = "**/*.ts"
+values = [
+  "new RuleError",
+  " report(",
+  "{ Syntax, RuleError",
+  "{ RuleError",
+  ", RuleError"
+]

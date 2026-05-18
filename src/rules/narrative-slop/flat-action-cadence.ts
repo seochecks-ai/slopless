@@ -6,6 +6,7 @@ import {
   type SplitSentence
 } from "../../shared/text/sentences.js";
 import { type Token, wordTokens } from "../../shared/text/tokens.js";
+import { emitTextlintFinding } from "../../adapters/textlint/report.js";
 
 type CadenceSentence = {
   readonly actionKind: "linking" | "weak-action";
@@ -361,7 +362,7 @@ function findFlatActionRuns(text: string): CadenceRun[] {
 }
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
 
   return {
     [Syntax.Document](node: TxtDocumentNode): void {
@@ -375,18 +376,15 @@ const rule: TextlintRuleModule = (context) => {
           ...new Set(match.sentences.map((sentence) => sentence.verb))
         ].join(", ");
 
-        report(
-          item.paragraph,
-          new RuleError(
-            `Flat action cadence: ${match.sentences.length} adjacent short simple sentences use subject-action beats (${verbs}). Vary the rhythm or add causal/sensory development.`,
-            {
-              padding: locator.range([
-                item.source.originalStartFor(match.start),
-                item.source.originalEndFor(match.end)
-              ])
-            }
-          )
-        );
+        emitTextlintFinding(context, {
+          node: item.paragraph,
+          ruleId: "narrative-slop:flat-action-cadence",
+          message: `Flat action cadence: ${match.sentences.length} adjacent short simple sentences use subject-action beats (${verbs}). Vary the rhythm or add causal/sensory development.`,
+          range: {
+            start: item.source.originalStartFor(match.start),
+            end: item.source.originalEndFor(match.end)
+          }
+        });
       }
     }
   };

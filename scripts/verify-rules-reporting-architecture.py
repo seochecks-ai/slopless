@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 
@@ -20,11 +21,22 @@ def require(errors: list[str], condition: bool, message: str) -> None:
 def verify_tree(errors: list[str]) -> None:
     require(errors, (ROOT / "src/rules").is_dir(), "missing src/rules")
     require(errors, not (ROOT / "src/families").exists(), "src/families must not exist")
+    require(errors, (ROOT / "src/rules/types.ts").is_file(), "missing src/rules/types.ts")
     require(errors, (ROOT / "src/reporting/types.ts").is_file(), "missing src/reporting/types.ts")
     require(
         errors,
-        (ROOT / "src/reporting/report-density.ts").is_file(),
-        "missing src/reporting/report-density.ts",
+        (ROOT / "src/reporting/reports.ts").is_file(),
+        "missing src/reporting/reports.ts",
+    )
+    require(
+        errors,
+        (ROOT / "src/adapters/textlint/report.ts").is_file(),
+        "missing src/adapters/textlint/report.ts",
+    )
+    require(
+        errors,
+        (ROOT / "src/adapters/textlint/units.ts").is_file(),
+        "missing src/adapters/textlint/units.ts",
     )
 
 
@@ -74,9 +86,62 @@ def verify_density_rules(errors: list[str]) -> None:
         "src/rules/narrative-slop/perception-verb-density.ts",
     ]:
         text = read_text(relative)
-        require(errors, "firstDensityMatch" in text, f"{relative} must use report-density")
+        require(errors, "RuleDetection" in text, f"{relative} must emit typed detections")
+        require(errors, "densityReports" in text, f"{relative} must use report policy")
+        require(errors, "emitTextlintReports" in text, f"{relative} must use Textlint adapter")
         require(errors, "splitSentences" not in text, f"{relative} must not own sentence-window density")
-        require(errors, "denseMatchForSpan" not in text, f"{relative} must not own density matching")
+        require(errors, "densityMatchForSpan" not in text, f"{relative} must not own density matching")
+        require(errors, "new RuleError" not in text, f"{relative} must not create Textlint errors")
+        require(errors, "report(" not in text, f"{relative} must not call Textlint report")
+
+
+def exported_names(relative: str) -> set[str]:
+    text = read_text(relative)
+    names = set(re.findall(r"export type ([A-Za-z0-9_]+)", text))
+    names.update(re.findall(r"export function ([A-Za-z0-9_]+)", text))
+    return names
+
+
+def verify_boundary_public_api(errors: list[str]) -> None:
+    expected = {
+        "src/rules/types.ts": {
+            "RuleDetection",
+            "RuleDetector",
+            "RuleFamilyId",
+            "RuleId",
+            "RuleInput",
+            "SourceRange",
+            "TextUnit",
+            "TextUnitKind",
+        },
+        "src/reporting/types.ts": {
+            "DensityMatch",
+            "Detection",
+            "ReportPolicy",
+            "RuleDefinition",
+            "RuleReport",
+        },
+        "src/reporting/reports.ts": {
+            "densityReports",
+            "oneToOneReports",
+        },
+        "src/adapters/textlint/report.ts": {
+            "emitTextlintDetection",
+            "emitTextlintFinding",
+            "emitTextlintNodeFinding",
+            "emitTextlintReport",
+            "emitTextlintReports",
+        },
+        "src/adapters/textlint/units.ts": {
+            "paragraphUnits",
+            "textUnitForNode",
+        },
+    }
+
+    for relative, names in expected.items():
+        actual = exported_names(relative)
+        missing = sorted(names - actual)
+        require(errors, not missing, f"{relative} missing exports: {', '.join(missing)}")
 
 
 def main() -> int:
@@ -85,6 +150,7 @@ def main() -> int:
     verify_package_exports(errors)
     verify_no_stale_paths(errors)
     verify_runner(errors)
+    verify_boundary_public_api(errors)
     verify_density_rules(errors)
 
     if errors:

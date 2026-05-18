@@ -1,10 +1,12 @@
 # Sunstone Emotion Substance Variants
 
-Use: source material for implemented and future emotion-as-substance patterns.
+Use: source material for implemented emotion-as-substance patterns.
 
 Purpose: provide broad source material for the pattern class where abstract emotion or state is treated as a physical substance, physical motion, or physical weather.
 
-Do not treat this file as golden fixture output. It is source material for later case selection, no-hit controls, corpus prose, and implementation design.
+Do not treat this file as golden fixture output.
+
+State: source-only supporting material. Current rule coverage is recorded in `data/source-material/incorporation-record.md`.
 
 ## Pattern Boundary
 

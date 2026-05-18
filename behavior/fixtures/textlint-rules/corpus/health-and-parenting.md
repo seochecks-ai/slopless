@@ -1,8 +1,12 @@
 # health and parenting explainer
 
-These passages collect health, habit, screen, and parenting examples in explainer prose.
+These passages collect health, habit, screen, and parenting examples in explainer prose. The fixture reads as a rough public-health guide with preserved signals kept inside each topic.
 
 ## syntactic-patterns
+
+### habit starts and stress load
+
+The guide opens with habits, routines, and stress signals. The draft keeps each preserved claim as a short explainer beat.
 
 Small habit is the part that sticks.
 
@@ -28,6 +32,10 @@ Psychology keeps finding the same core pattern: procrastination is mostly about 
 
 Most habits are built on dull repetitions, not heroic emotions.
 
+### screens and household boundaries
+
+The screen section moves from schedule design to attention risks and caregiver modeling.
+
 2. Make screens predictable, not constant.
 
 Give screens a clear "home" in the schedule, not a constant presence.
@@ -48,6 +56,10 @@ A parent who says “screens are bad” while checking messages every thirty sec
 
 If attention concerns are serious, persistent, and affecting school or daily life, screens may be one piece of the puzzle, not the whole puzzle.
 
+### body demand and connection
+
+The health section links demand, movement, friendship, motivation, and clinical care.
+
 The body is responding to perceived demand, not just visible danger.
 
 Movement helps too, not because every problem needs a fitness challenge but because physical activity helps discharge tension and regulate the stress response.
@@ -60,6 +72,10 @@ Research on self-determination theory shows that motivation lasts longer when a 
 
 Finally, if procrastination is chronic, severe, or tied to anxiety, depression, ADHD, burnout, or perfectionism that has become absurdly expensive, get help for the driver, not just the deadline.
 
+### screens with children
+
+The parenting section returns to screens as a household system.
+
 It does mean that a child who melts down when a device is removed may be responding to a highly sticky environment, not just weak self-control.
 
 A screen in the background during play or meals can fragment attention; a caregiver using a phone during routines can reduce the back-and-forth interaction that helps children learn to focus on people, not just pixels.
@@ -67,6 +83,10 @@ A screen in the background during play or meals can fragment attention; a caregi
 For younger children, use screens with them, not just near them.
 
 Start by treating screens as one part of a household system, not a moral failure.
+
+### clinical sources and habit repair
+
+The next notes cite stress, connection, goal failure, sleep, friendship, and tantrum repair.
 
 Benzodiazepines can lower anxiety quickly, but they carry dependence risk and are generally short-term tools, not a long-term plan.
 
@@ -108,6 +128,10 @@ Sleep that is regular, not random.
 
 If your child senses panic, it usually makes the goodbye harder, not easier.
 
+### goals, couples, and motivation
+
+The middle of the guide shifts from procrastination to couple stress and habit design.
+
 Procrastination is fundamentally an emotional regulation problem, not a productivity one.
 
 The World Health Organization classifies it as an occupational phenomenon, and decades of research make clear that it is primarily a product of working conditions, not individual character flaws.
@@ -127,6 +151,10 @@ Modern psychology is clear: habits form through reward and repetition, not throu
 Most habits fail because the system is weak, not because the person woke up lazy.
 
 A habit needs to be small enough to survive a bad Tuesday, not just a perfect Monday.
+
+### loneliness, stress, and child overload
+
+The following notes cover loneliness, social media, stress, tantrums, and recovery.
 
 The body reacts to felt connection, not social optics.
 
@@ -171,6 +199,10 @@ Normal does not mean pleasant. It means developmentally expected.
 The goal in the moment is not to win. It is to keep everyone safe, avoid feeding the behavior, and help the child get back online.
 
 Tantrums are not proof that a child is bad or a parent is failing. They are a sign that the child has a feeling bigger than the tools they have available at that age.
+
+### adult relationships and habit systems
+
+The next section moves through couples, friendship, procrastination, screen boundaries, and burnout.
 
 Most couples do not need a grand theory. They need a repeatable process that makes it harder to drift into the same fight.
 
@@ -217,6 +249,10 @@ The answer is not heroic endurance. It is redesign: clearer priorities, healthie
 That does not mean every child who watches fast-paced videos will develop attention problems. It means repeated exposure to very stimulating media can become one factor in a broader attention environment.
 
 Parents do not need panic. They need a realistic framework: better content, stronger routines, fewer autoplay traps, more sleep, more play, and more moments where a child learns that life does not have to flash, ding, and swipe every ten seconds to be interesting.
+
+### attention, repair, and workload
+
+The closing explainer block keeps longer health and relationship claims in one sequence.
 
 The bigger risk is not that a child watched a show after school. It is that highly stimulating, poorly bounded screen use becomes the default environment, replacing the slower experiences that help attention grow.
 
@@ -311,6 +347,10 @@ Burnout is not the inevitable price of ambition or dedication. It is what happen
 Couples who communicate well over years are not couples who never hurt each other or never run out of things to say. They are couples who keep choosing to come back — to the conversation, to the discomfort, to each other.
 
 Putting the phone away is not politeness. It is one of the most effective friendship maintenance behaviors available.
+
+### compact source lines and controls
+
+The final notes keep short source strings and literal controls together.
 
 Good habits are not built through bursts of inspiration or iron willpower. They are built through repeated behavior in stable contexts, small enough to be nearly effortless, tied to existing routines and a clear sense of identity, with immediate rewards that signal to the brain that the behavior is worth automating.
 

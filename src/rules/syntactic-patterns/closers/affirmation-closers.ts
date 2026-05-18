@@ -6,6 +6,7 @@ import {
   sectionLastSentences
 } from "../../../shared/text/sections.js";
 import { wordTokens } from "../../../shared/text/tokens.js";
+import { emitTextlintFinding } from "../../../adapters/textlint/report.js";
 
 const CLOSERS = ["and that's the key.", "that's what matters."];
 
@@ -23,7 +24,7 @@ function evidenceKey(item: SectionSentence): string {
 }
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
 
   return {
     [Syntax.Document](node: TxtDocumentNode): void {
@@ -38,18 +39,15 @@ const rule: TextlintRuleModule = (context) => {
         }
 
         reported.add(evidenceKey(item));
-        report(
-          item.paragraph,
-          new RuleError(
-            `Affirmation closer found: "${closer}". Replace the empty affirmation with the actual conclusion.`,
-            {
-              padding: locator.range([
-                item.source.originalStartFor(item.sentence.start),
-                item.source.originalEndFor(item.sentence.end)
-              ])
-            }
-          )
-        );
+        emitTextlintFinding(context, {
+          node: item.paragraph,
+          ruleId: "syntactic-patterns:affirmation-closers",
+          message: `Affirmation closer found: "${closer}". Replace the empty affirmation with the actual conclusion.`,
+          range: {
+            start: item.source.originalStartFor(item.sentence.start),
+            end: item.source.originalEndFor(item.sentence.end)
+          }
+        });
       }
 
       for (const item of allParagraphSentences(node)) {
@@ -59,18 +57,15 @@ const rule: TextlintRuleModule = (context) => {
         }
 
         reported.add(key);
-        report(
-          item.paragraph,
-          new RuleError(
-            `Formula affirmation found: "${item.sentence.text}". Replace the empty formula line with substance.`,
-            {
-              padding: locator.range([
-                item.source.originalStartFor(item.sentence.start),
-                item.source.originalEndFor(item.sentence.end)
-              ])
-            }
-          )
-        );
+        emitTextlintFinding(context, {
+          node: item.paragraph,
+          ruleId: "syntactic-patterns:affirmation-closers",
+          message: `Formula affirmation found: "${item.sentence.text}". Replace the empty formula line with substance.`,
+          range: {
+            start: item.source.originalStartFor(item.sentence.start),
+            end: item.source.originalEndFor(item.sentence.end)
+          }
+        });
       }
     }
   };

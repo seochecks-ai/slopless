@@ -8,6 +8,7 @@ import {
   type SentenceMatch
 } from "../../../shared/matchers/prose-patterns.js";
 import { allParagraphSentences } from "../../../shared/text/sections.js";
+import { emitTextlintFinding } from "../../../adapters/textlint/report.js";
 
 const PREFIXES = ["and ", "but ", "so "];
 const OBSERVER_PATTERNS = [
@@ -97,7 +98,7 @@ function matchObserverGuidance(sentence: string): SentenceMatch | undefined {
 }
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
 
   return {
     [Syntax.Document](node: TxtDocumentNode): void {
@@ -107,18 +108,15 @@ const rule: TextlintRuleModule = (context) => {
           continue;
         }
 
-        report(
-          item.paragraph,
-          new RuleError(
-            `Observer guidance found: ${matched.signal}. Replace the bridge with concrete evidence.`,
-            {
-              padding: locator.range([
-                item.source.originalStartFor(item.sentence.start),
-                item.source.originalEndFor(item.sentence.end)
-              ])
-            }
-          )
-        );
+        emitTextlintFinding(context, {
+          node: item.paragraph,
+          ruleId: "syntactic-patterns:observer-guidance",
+          message: `Observer guidance found: ${matched.signal}. Replace the bridge with concrete evidence.`,
+          range: {
+            start: item.source.originalStartFor(item.sentence.start),
+            end: item.source.originalEndFor(item.sentence.end)
+          }
+        });
       }
     }
   };

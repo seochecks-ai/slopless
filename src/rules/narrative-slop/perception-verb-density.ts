@@ -1,8 +1,9 @@
 import type { TxtDocumentNode } from "@textlint/ast-node-types";
 import type { TextlintRuleModule } from "@textlint/types";
-import { firstDensityMatch } from "../../reporting/report-density.js";
-import type { Detection } from "../../reporting/types.js";
-import { allParagraphs } from "../../shared/text/sections.js";
+import { emitTextlintReports } from "../../adapters/textlint/report.js";
+import { paragraphUnits } from "../../adapters/textlint/units.js";
+import { densityReports } from "../../reporting/reports.js";
+import type { RuleDetection, RuleId, TextUnit } from "../types.js";
 import { type Token, wordTokens } from "../../shared/text/tokens.js";
 
 const PERCEPTION_VERBS = new Set([
@@ -39,6 +40,7 @@ const MIN_PARAGRAPH_HITS = 3;
 const MIN_WINDOW_HITS = 2;
 const WINDOW_SENTENCES = 3;
 const GROUP = "perception verb";
+const RULE_ID = "narrative-slop:perception-verb-density" satisfies RuleId;
 
 type PerceptionGroup = typeof GROUP;
 
@@ -54,8 +56,10 @@ function isPurposeLook(tokens: readonly Token[], index: number): boolean {
   );
 }
 
-function perceptionDetections(text: string): Detection<PerceptionGroup>[] {
-  const tokens = wordTokens(text);
+function perceptionDetections(
+  unit: TextUnit
+): RuleDetection<PerceptionGroup>[] {
+  const tokens = wordTokens(unit.text);
   return tokens
     .filter((token, index) => {
       return (
@@ -63,44 +67,35 @@ function perceptionDetections(text: string): Detection<PerceptionGroup>[] {
       );
     })
     .map((token) => ({
-      end: token.end,
+      evidence: unit.text.slice(token.start, token.end),
       group: GROUP,
       label: token.normalized,
-      start: token.start
+      range: { end: token.end, start: token.start },
+      ruleId: RULE_ID,
+      unitId: unit.id
     }));
 }
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
 
   return {
     [Syntax.Document](node: TxtDocumentNode): void {
-      for (const item of allParagraphs(node)) {
-        const match = firstDensityMatch(item.text, {
-          detect: perceptionDetections,
+      const units = paragraphUnits(node);
+      const unitsById = new Map(units.map((unit) => [unit.id, unit]));
+
+      for (const unit of units) {
+        const reports = densityReports(unit, perceptionDetections(unit), {
           groups: [GROUP],
           maxParagraphTokens: MAX_PARAGRAPH_TOKENS,
           maxWindowTokens: MAX_WINDOW_TOKENS,
+          message: (match) =>
+            `Perception verb density: ${match.count} perception verbs in a short span (${match.labels.join(", ")}).`,
           paragraphMinimumHits: MIN_PARAGRAPH_HITS,
           windowMinimumHits: MIN_WINDOW_HITS,
           windowSentences: WINDOW_SENTENCES
         });
-        if (match === undefined) {
-          continue;
-        }
-
-        report(
-          item.paragraph,
-          new RuleError(
-            `Perception verb density: ${match.count} perception verbs in a short span (${match.labels.join(", ")}).`,
-            {
-              padding: locator.range([
-                item.source.originalStartFor(match.start),
-                item.source.originalEndFor(match.end)
-              ])
-            }
-          )
-        );
+        emitTextlintReports(context, unitsById, reports);
       }
     }
   };

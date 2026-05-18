@@ -3,6 +3,7 @@ import type { TextlintRuleModule } from "@textlint/types";
 import { RuleHelper } from "textlint-rule-helper";
 import { sourceText } from "../../shared/text/traverse.js";
 import { countWhitespaceSeparatedWords } from "../../shared/text/whitespace.js";
+import { emitTextlintFinding } from "../../adapters/textlint/report.js";
 
 const MAX_DRAMATIC_AFTER_COLON_WORDS = 5;
 
@@ -127,7 +128,7 @@ function findDramaticColonMatches(text: string): DramaticColonMatch[] {
 }
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
   const helper = new RuleHelper(context);
   const ignoredParents = [
     Syntax.List,
@@ -145,18 +146,15 @@ const rule: TextlintRuleModule = (context) => {
       const source = sourceText(node);
 
       for (const match of findDramaticColonMatches(source.text)) {
-        report(
-          node,
-          new RuleError(
-            `Dramatic colon found: "${match.text}". Rewrite without the short reveal after the colon.`,
-            {
-              padding: locator.range([
-                source.originalStartFor(match.start),
-                source.originalEndFor(match.end)
-              ])
-            }
-          )
-        );
+        emitTextlintFinding(context, {
+          node: node,
+          ruleId: "orthography:colon-dramatic",
+          message: `Dramatic colon found: "${match.text}". Rewrite without the short reveal after the colon.`,
+          range: {
+            start: source.originalStartFor(match.start),
+            end: source.originalEndFor(match.end)
+          }
+        });
       }
     }
   };

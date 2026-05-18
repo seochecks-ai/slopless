@@ -7,6 +7,7 @@ import {
 import { allParagraphSentences } from "../../shared/text/sections.js";
 import { wordTokens } from "../../shared/text/tokens.js";
 import narrativeClichePatterns from "./data/narrative-cliches.json" with { type: "json" };
+import { emitTextlintFinding } from "../../adapters/textlint/report.js";
 
 type NarrativeClichePattern = TokenTemplatePattern & {
   readonly category: string;
@@ -27,7 +28,7 @@ function hasConcreteCause(sentence: string): boolean {
 }
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
 
   return {
     [Syntax.Document](node: TxtDocumentNode): void {
@@ -53,18 +54,17 @@ const rule: TextlintRuleModule = (context) => {
           continue;
         }
 
-        report(
-          item.paragraph,
-          new RuleError(
-            `Narrative cliche (${pattern.category}/${match.patternId}): ${pattern.purpose} Matched template: ${match.template}`,
-            {
-              padding: locator.range([
-                item.source.originalStartFor(item.sentence.start + match.start),
-                item.source.originalEndFor(item.sentence.start + match.end)
-              ])
-            }
-          )
-        );
+        emitTextlintFinding(context, {
+          node: item.paragraph,
+          ruleId: "narrative-slop:narrative-cliches",
+          message: `Narrative cliche (${pattern.category}/${match.patternId}): ${pattern.purpose} Matched template: ${match.template}`,
+          range: {
+            start: item.source.originalStartFor(
+              item.sentence.start + match.start
+            ),
+            end: item.source.originalEndFor(item.sentence.start + match.end)
+          }
+        });
       }
     }
   };

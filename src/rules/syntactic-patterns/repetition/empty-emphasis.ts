@@ -5,6 +5,7 @@ import {
   tokens
 } from "../../../shared/matchers/prose-patterns.js";
 import { allParagraphSentences } from "../../../shared/text/sections.js";
+import { emitTextlintFinding } from "../../../adapters/textlint/report.js";
 
 const PREFIXES = ["and ", "but ", "so ", "because "];
 const EMPHASIS_REFERENTS = ["part", "bit"];
@@ -120,7 +121,7 @@ function matchEmptyEmphasis(sentence: string): string | undefined {
 }
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
 
   return {
     [Syntax.Document](node: TxtDocumentNode): void {
@@ -130,18 +131,15 @@ const rule: TextlintRuleModule = (context) => {
           continue;
         }
 
-        report(
-          item.paragraph,
-          new RuleError(
-            `Empty emphasis found: ${matched}. Replace the filler line with the actual point.`,
-            {
-              padding: locator.range([
-                item.source.originalStartFor(item.sentence.start),
-                item.source.originalEndFor(item.sentence.end)
-              ])
-            }
-          )
-        );
+        emitTextlintFinding(context, {
+          node: item.paragraph,
+          ruleId: "syntactic-patterns:empty-emphasis",
+          message: `Empty emphasis found: ${matched}. Replace the filler line with the actual point.`,
+          range: {
+            start: item.source.originalStartFor(item.sentence.start),
+            end: item.source.originalEndFor(item.sentence.end)
+          }
+        });
       }
     }
   };

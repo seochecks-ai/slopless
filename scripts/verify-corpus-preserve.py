@@ -11,6 +11,16 @@ FIXTURE_ROOT = ROOT / "behavior/fixtures/textlint-rules"
 CASES_ROOT = FIXTURE_ROOT / "cases"
 CORPUS_ROOT = FIXTURE_ROOT / "corpus"
 RECEIVED_OUTPUT = ROOT / ".fixture3/textlint-rules/received.normalized.json"
+DOCUMENT_LEVEL_RULES = {
+    "avg-sentence-length",
+    "coleman-liau",
+    "flesch-kincaid",
+    "gunning-fog",
+    "paragraph-length",
+    "recommended-terms",
+    "required-terms",
+    "word-repetition",
+}
 
 
 def read_case_entries() -> set[tuple[str, str, str]]:
@@ -61,7 +71,7 @@ def rule_ids_for(results: list[dict[str, Any]], path_part: str) -> set[str]:
                 raise ValueError(f"{RECEIVED_OUTPUT}: message for {file_path} must be an object")
 
             rule_id = message.get("ruleId")
-            if isinstance(rule_id, str):
+            if isinstance(rule_id, str) and rule_id not in DOCUMENT_LEVEL_RULES:
                 rule_ids.add(rule_id)
     return rule_ids
 

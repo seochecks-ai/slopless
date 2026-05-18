@@ -1,4 +1,4 @@
-# LLM Artifacts Not Implemented
+# LLM Artifact Candidates
 
 ## Source File Paths Used
 
@@ -8,16 +8,13 @@
 - `data/source-material/llm-slop-lists/community-gists/pvgomes-chatgpt-words.md`
 - `data/source-material/llm-slop-lists/community-gists/miglen-gpt-instructions.md`
 
-## Not Implemented
+## Current State
 
-- `deeper into a specific aspect`
+No active LLM artifact candidates remain queued for implementation.
 
-## Why Not Implemented
+Skipped candidates and reasons are recorded in `data/source-material/incorporation-record.md`.
 
-- The implemented response-wrapper rule already covers narrow assistant scaffolding, follow-up frames, and paragraph-start note wrappers.
-- The remaining phrase is too incomplete to report by itself.
+## Boundary
 
-## Required Fixture Work Before Implementation
-
-- Add no-hits where the phrase is part of literal discussion or specific exploration.
-- Add hits only if surrounding assistant-scaffold context makes the phrase reportable.
+- The shipped response-wrapper and LLM disclaimer rules already cover narrow assistant scaffolding, follow-up frames, and paragraph-start note wrappers.
+- The skipped fragment is too incomplete to report by itself.

@@ -3,6 +3,7 @@ import type { TextlintRuleModule } from "@textlint/types";
 import { RuleHelper } from "textlint-rule-helper";
 import { sourceText } from "../../shared/text/traverse.js";
 import { splitWhitespace } from "../../shared/text/whitespace.js";
+import { emitTextlintNodeFinding } from "../../adapters/textlint/report.js";
 
 const MAX_CAPITALIZED_NON_FIRST_WORDS = 2;
 const MAX_RUST_HEADING_DEPTH = 2;
@@ -51,7 +52,7 @@ function countCapitalizedNonFirstWords(text: string): number {
 }
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, report } = context;
+  const { Syntax } = context;
   const helper = new RuleHelper(context);
   const ignoredParents = [
     Syntax.List,
@@ -77,12 +78,11 @@ const rule: TextlintRuleModule = (context) => {
         return;
       }
 
-      report(
-        node,
-        new RuleError(
-          `Heading looks like title case. Use sentence case; found ${count} capitalized non-first words.`
-        )
-      );
+      emitTextlintNodeFinding(context, {
+        node: node,
+        ruleId: "orthography:sentence-case",
+        message: `Heading looks like title case. Use sentence case; found ${count} capitalized non-first words.`
+      });
     }
   };
 };

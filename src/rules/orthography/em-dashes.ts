@@ -3,6 +3,7 @@ import type { TextlintRuleModule } from "@textlint/types";
 import { RuleHelper } from "textlint-rule-helper";
 import { sourceText } from "../../shared/text/traverse.js";
 import { isWhitespace } from "../../shared/text/whitespace.js";
+import { emitTextlintFinding } from "../../adapters/textlint/report.js";
 
 const CLOSED_EM_DASH = "\u2014";
 
@@ -15,7 +16,7 @@ function isClosedEmDash(text: string, index: number): boolean {
 }
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
   const helper = new RuleHelper(context);
   const ignoredParents = [
     Syntax.List,
@@ -37,18 +38,16 @@ const rule: TextlintRuleModule = (context) => {
           continue;
         }
 
-        report(
-          node,
-          new RuleError(
+        emitTextlintFinding(context, {
+          node: node,
+          ruleId: "orthography:em-dashes",
+          message:
             "Closed em dash found. Replace it with a comma, colon, parenthesis, or spaced dash.",
-            {
-              padding: locator.range([
-                source.originalStartFor(index),
-                source.originalEndFor(index + CLOSED_EM_DASH.length)
-              ])
-            }
-          )
-        );
+          range: {
+            start: source.originalStartFor(index),
+            end: source.originalEndFor(index + CLOSED_EM_DASH.length)
+          }
+        });
       }
     }
   };

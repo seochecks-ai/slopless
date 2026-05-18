@@ -1,8 +1,8 @@
 # Incorporation Record
 
-This file records source material already implemented in Slopless rules.
+This file records source material already implemented in Slopless rules and source material reviewed and skipped.
 
-Research material that is not implemented stays in `data/source-material/derived/*.md`. Those files must not repeat implemented phrases or templates.
+Active source candidates stay in `data/source-material/derived/*.md`. Reviewed skipped candidates are recorded here so active candidate files do not imply they are still queued for implementation.
 
 ## Implemented External Sources
 
@@ -347,6 +347,111 @@ Current rules use Textlint only for traversal, reporting, ranges, and rule execu
 - Golden output is maintained through Fixture3.
 - Reviewed findings are recorded under `.plans/textlint-hit-review`.
 - Good and bad catches from generated corpus runs were used to decide which semantic and syntactic patterns were implemented.
+
+## Skipped Source-Derived Candidates
+
+These source-derived candidates were reviewed and deliberately not queued for implementation. They remain attributed here so future work can see what was considered and why it was skipped.
+
+### Skipped Academic Tortured Phrases
+
+Source files:
+
+- `data/source-material/academic-slop/tortured-phrases/extracted/cabanac-2021-concept-note.md`
+- `data/source-material/academic-slop/tortured-phrases/problematic-paper-screener.md`
+- `data/source-material/academic-slop/tortured-phrases/extracted/social-sciences-fingerprints-preview.md`
+- `data/source-material/academic-slop/tortured-phrases/extracted/tortured-abbreviations-preview.md`
+- `data/source-material/academic-slop/tortured-phrases/humanities-social-sciences-zenodo/20241114_social_sciences_fingerprints.csv`
+- `data/source-material/academic-slop/tortured-phrases/humanities-social-sciences-zenodo/Tortured_abbreviations.csv`
+
+Skipped candidates:
+
+- `casting a ballot`
+- `casting a ballot system`
+- `casting a ballot framework`
+- `electronic democratic frameworks`
+- `web-based democratic applications`
+- `mystery casting a ballot`
+- `political decision framework`
+- `articulation of the desire`
+- `weighted lion's share voting`
+- `absolute intrigue`
+- `monetary market contributors`
+- `lawful mind`
+- `bound together domain`
+- `data innovation`
+- `innovative work`
+- `human immunodeficiency infection`
+
+Reason skipped:
+
+- Some strings can appear in quoted examples, source titles, legal discussion, or translation discussion.
+- Some strings are near normal domain terms without enough surrounding context.
+- Abbreviation rows need a separate academic-only rule shape that distinguishes incorrect expansion from normal prose.
+
+### Skipped Cliche Templates
+
+Source files:
+
+- `data/source-material/prose-linters/npm-packages/cliches-1.0.6/glossary.js`
+- `data/source-material/prose-linters/npm-packages/no-cliches-0.3.6/cliches.js`
+- `data/source-material/prose-linters/proselint/proselint/checks/cliches/misc.py`
+- `data/source-material/prose-linters/proselint/proselint/checks/cliches/write-good`
+
+Skipped candidates:
+
+- `{genderedPossessive} own shadow`
+- `{genderedPossessive} sleeve`
+- `{genderedPossessive} bite`
+- `crying over {spilledWord} milk`
+
+Reason skipped:
+
+- These overlap with literal descriptions of shadows, sleeves, bites, and spilled milk.
+- They need stronger context before they can be reported without broad false positives.
+
+### Skipped Corporate Abstraction Templates
+
+Source files:
+
+- `data/source-material/prose-linters/proselint/proselint/checks/industrial_language/corporate_speak.py`
+- `data/source-material/plain-english/extracted/govuk-style-guide-words-to-avoid.md`
+- `data/source-material/plain-english/extracted/gca-words-not-to-use.md`
+- `data/source-material/llm-slop-lists/slop-forensics/results_by_domain/essays/slop_lists/slop_list_phrases.jsonl`
+- `data/source-material/llm-slop-lists/slop-forensics/results_by_domain/varied_prompts/slop_lists/slop_list_phrases.jsonl`
+
+Skipped candidates:
+
+- `{actor} drives {abstractChange}`
+- `{actor} leverages {abstractPlural}`
+
+Slots reviewed:
+
+- `abstractChange`: `innovation`, `transformation`, `growth`, `change`, `progress`
+- `abstractPlural`: `insights`, `synergies`, `opportunities`, `solutions`
+
+Reason skipped:
+
+- `drives` and `leverages` are normal words in technical, mechanical, and business prose.
+- The remaining frames are too broad without stronger promotional-context constraints.
+
+### Skipped LLM Artifact Fragment
+
+Source files:
+
+- `data/source-material/llm-slop-lists/slop-forensics/results_by_domain/varied_prompts/slop_lists/slop_list_phrases.jsonl`
+- `data/source-material/llm-slop-lists/slop-forensics/results_by_domain/essays/slop_lists/slop_list_phrases.jsonl`
+- `data/source-material/llm-slop-lists/community-gists/chrisgherbert-chat-gpt-cliches.md`
+- `data/source-material/llm-slop-lists/community-gists/pvgomes-chatgpt-words.md`
+- `data/source-material/llm-slop-lists/community-gists/miglen-gpt-instructions.md`
+
+Skipped candidate:
+
+- `deeper into a specific aspect`
+
+Reason skipped:
+
+- The phrase is incomplete by itself.
+- It is only reportable when surrounding assistant-scaffold context makes it an artifact, and the existing response-wrapper rule already owns those safer frames.
 
 ## Update Rule
 

@@ -2,6 +2,7 @@ import type { TxtParentNode } from "@textlint/ast-node-types";
 import type { TextlintRuleModule } from "@textlint/types";
 import { RuleHelper } from "textlint-rule-helper";
 import { sourceText } from "../../shared/text/traverse.js";
+import { emitTextlintFinding } from "../../adapters/textlint/report.js";
 
 const MAX_EXCLAMATIONS_PER_PARAGRAPH = 1;
 
@@ -28,7 +29,7 @@ function firstExclamationIndex(text: string): number | undefined {
 }
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
   const helper = new RuleHelper(context);
   const ignoredParents = [
     Syntax.List,
@@ -52,18 +53,15 @@ const rule: TextlintRuleModule = (context) => {
 
       const index = firstExclamationIndex(source.text) ?? 0;
 
-      report(
-        node,
-        new RuleError(
-          `Paragraph has ${count} exclamation marks. Keep at most ${MAX_EXCLAMATIONS_PER_PARAGRAPH}.`,
-          {
-            padding: locator.range([
-              source.originalStartFor(index),
-              source.originalEndFor(index + 1)
-            ])
-          }
-        )
-      );
+      emitTextlintFinding(context, {
+        node: node,
+        ruleId: "orthography:exclamation-density",
+        message: `Paragraph has ${count} exclamation marks. Keep at most ${MAX_EXCLAMATIONS_PER_PARAGRAPH}.`,
+        range: {
+          start: source.originalStartFor(index),
+          end: source.originalEndFor(index + 1)
+        }
+      });
     }
   };
 };

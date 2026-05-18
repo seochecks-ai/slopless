@@ -957,3 +957,11 @@ He didn't look at the music box. Instead, he looked at their dusty, oil-matted f
 The Red Claw gang was not just stealing silk anymore. They had stolen a life.
 
 The Red Claw gang was no longer just looking for a target. They were hunting the entire pack.
+
+It was no longer a target. It was noise.
+
+The pause was not a delay. It was a warning.
+
+She did not wait for anyone to ask her a question. She pointed a small paw toward the ceiling.
+
+He didn't argue with the guard. Instead, he opened the ledger.

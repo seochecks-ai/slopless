@@ -1,8 +1,10 @@
 # Sunstone Action Density Variants
 
-Use: source material for implemented and future action-density patterns.
+Use: source material for implemented action-density patterns.
 
-Purpose: generate reviewed variants for narrative event-class density and flat cadence. These are not fixtures and do not update approved output.
+Purpose: record reviewed variants for narrative event-class density and flat cadence. These are not fixtures and do not update approved output.
+
+State: source-only supporting material. Current rule coverage is recorded in `data/source-material/incorporation-record.md`.
 
 Positive examples total: 80.
 

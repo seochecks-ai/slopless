@@ -1,5 +1,6 @@
 import type { TxtDocumentNode } from "@textlint/ast-node-types";
 import type { TextlintRuleContext, TextlintRuleModule } from "@textlint/types";
+import { emitTextlintFinding } from "../../../adapters/textlint/report.js";
 import {
   cleanSentence,
   startsWithWords,
@@ -235,20 +236,15 @@ function reportSentence(
   item: SectionSentence,
   signal: string
 ): void {
-  const { RuleError, locator, report } = context;
-
-  report(
-    item.paragraph,
-    new RuleError(
-      `Contrastive aphorism found: ${signal}. Replace the slogan with a concrete claim.`,
-      {
-        padding: locator.range([
-          item.source.originalStartFor(item.sentence.start),
-          item.source.originalEndFor(item.sentence.end)
-        ])
-      }
-    )
-  );
+  emitTextlintFinding(context, {
+    node: item.paragraph,
+    ruleId: "syntactic-patterns:contrastive-aphorism",
+    message: `Contrastive aphorism found: ${signal}. Replace the slogan with a concrete claim.`,
+    range: {
+      start: item.source.originalStartFor(item.sentence.start),
+      end: item.source.originalEndFor(item.sentence.end)
+    }
+  });
 }
 
 const rule: TextlintRuleModule = (context) => {

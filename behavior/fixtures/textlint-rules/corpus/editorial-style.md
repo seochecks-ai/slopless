@@ -2,7 +2,11 @@
 
 These notes collect wording, punctuation, and phrase examples that an editor would review in one pass.
 
+The shared topic is a release-note edit after a dashboard patch. The text moves from visible punctuation problems into wording problems, then into longer source-pattern examples.
+
 ## orthography
+
+The first pass checks the title, timestamps, quote marks, dash marks, and loud punctuation in the launch note.
 
 ## Draft Review Notes For Editors
 
@@ -85,6 +89,8 @@ There are three types: red, blue, and green.
 This sentence has no dash and should stay clean.
 
 ## phrases
+
+The second pass moves from surface marks to boilerplate and cliche usage in the same release note.
 
 In today's fast-paced world, the release note still needs a concrete claim.
 
@@ -200,6 +206,8 @@ The team is optimizing for latency in the parser.
 
 ## words
 
+The third pass checks single-word choices, hedge stacking, and simpler replacement words.
+
 The migration might perhaps finish after the config review.
 
 Maybe the release Probably needs another review.
@@ -248,6 +256,8 @@ The clean control sentence uses ordinary language and should not trigger the pro
 
 ## source pattern expansions
 
+The source examples below keep the same audit and rollout topic while expanding wordy frames and redundant wording.
+
 The draft delays the finding due to the fact that the owner is unnamed.
 
 The migration team repeated again the same rollback step.
@@ -267,6 +277,8 @@ The report says the actors played a crucial role in the second act.
 The article discusses "please let me know" as a common assistant artifact.
 
 ## expanded source pattern coverage
+
+This batch turns the same source patterns through similar review sentences so the corpus covers more grammar shapes without changing the trigger text.
 
 The draft says because of the fact that the owner is absent.
 
@@ -435,6 +447,8 @@ The file is surrounded on all sides by generated data.
 The search ran throughout the entire workspace.
 
 The memo describes the whole entire rollout.
+
+The final group keeps the longer examples close to policy, legal, and incident review language.
 
 The memo delays the release in view of the fact that the board has not voted.
 

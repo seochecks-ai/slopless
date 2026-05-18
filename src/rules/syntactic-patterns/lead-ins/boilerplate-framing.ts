@@ -6,6 +6,7 @@ import {
   tokensContainInOrder
 } from "../../../shared/matchers/prose-patterns.js";
 import { allParagraphSentences } from "../../../shared/text/sections.js";
+import { emitTextlintFinding } from "../../../adapters/textlint/report.js";
 
 const PREFIXES = ["however, ", "but ", "and ", "so ", "that being said, "];
 const VAGUE_INTROS = [
@@ -110,24 +111,21 @@ function matchBoilerplateFraming(sentence: string): string[] {
 }
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
 
   return {
     [Syntax.Document](node: TxtDocumentNode): void {
       for (const item of allParagraphSentences(node)) {
         for (const signal of matchBoilerplateFraming(item.sentence.text)) {
-          report(
-            item.paragraph,
-            new RuleError(
-              `Boilerplate framing found: ${signal}. Start with the specific point.`,
-              {
-                padding: locator.range([
-                  item.source.originalStartFor(item.sentence.start),
-                  item.source.originalEndFor(item.sentence.end)
-                ])
-              }
-            )
-          );
+          emitTextlintFinding(context, {
+            node: item.paragraph,
+            ruleId: "syntactic-patterns:boilerplate-framing",
+            message: `Boilerplate framing found: ${signal}. Start with the specific point.`,
+            range: {
+              start: item.source.originalStartFor(item.sentence.start),
+              end: item.source.originalEndFor(item.sentence.end)
+            }
+          });
         }
       }
     }

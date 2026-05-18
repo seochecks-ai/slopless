@@ -1,4 +1,4 @@
-# Wordiness Patterns Not Implemented
+# Wordiness Pattern Candidates
 
 No remaining wordiness pattern candidates are waiting in this file.
 

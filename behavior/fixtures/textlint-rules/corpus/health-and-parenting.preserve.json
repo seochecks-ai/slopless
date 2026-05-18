@@ -3,6 +3,27 @@
   "corpus": "health-and-parenting.md",
   "preserve": [
     {
+      "text": "The moment passed.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 91
+    },
+    {
+      "text": "The meeting ended after the clerk stamped the permit.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 47
+    },
+    {
+      "text": "They stood by the north exit at thirteen minutes after eight.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 57
+    },
+    {
       "text": "Small habit is the part that sticks.",
       "family": "syntactic-patterns",
       "bucket": "hits",
@@ -35,1183 +56,1183 @@
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 99
+      "line": 97
     },
     {
       "text": "Some stress comes from a pile of unresolved tasks, not one dramatic crisis.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 103
+      "line": 101
     },
     {
       "text": "The pattern is strong enough that public health agencies now treat social connection as a health issue, not a personality trait.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 105
+      "line": 103
     },
     {
       "text": "The body responds to felt connection, not the appearance of a social life.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 107
+      "line": 105
     },
     {
       "text": "If the fatigue comes with loss of interest, hopelessness, irritability, or a clear change in appetite or sleep, mental health deserves a real look, not a shrug.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 113
+      "line": 111
     },
     {
       "text": "If the tantrum is escalating into danger, the priority is safety, not perfect behavior management.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 115
+      "line": 113
     },
     {
       "text": "Psychology keeps finding the same core pattern: procrastination is mostly about self-regulation, not laziness.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 129
+      "line": 127
     },
     {
       "text": "Most habits are built on dull repetitions, not heroic emotions.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 139
+      "line": 137
     },
     {
       "text": "2. Make screens predictable, not constant.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 157
+      "line": 155
     },
     {
       "text": "Give screens a clear \"home\" in the schedule, not a constant presence.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 159
+      "line": 157
     },
     {
       "text": "Use body tools to stay present, not as a desperate attempt to “prove” you are not anxious.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 161
+      "line": 159
     },
     {
       "text": "Many day-to-day injuries come from stress, distraction, and different priorities, not malice.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 165
+      "line": 163
     },
     {
       "text": "Pick one lightweight habit and treat it as normal, not dramatic: a monthly calendar invite, a recurring walk, a quick call on a predictable day, or a short voice note every weekend.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 177
+      "line": 175
     },
     {
       "text": "If the value was health, maybe the next target is consistency and recovery, not another punishing challenge.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 185
+      "line": 183
     },
     {
       "text": "If you recognize this pattern, treat it as a health issue, not a character flaw.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 193
+      "line": 191
     },
     {
       "text": "Treat your sleep environment like a tool, not an afterthought.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 195
+      "line": 193
     },
     {
       "text": "A parent who says “screens are bad” while checking messages every thirty seconds is teaching confusion, not moderation.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 203
+      "line": 201
     },
     {
       "text": "If attention concerns are serious, persistent, and affecting school or daily life, screens may be one piece of the puzzle, not the whole puzzle.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 205
+      "line": 203
     },
     {
       "text": "The body is responding to perceived demand, not just visible danger.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 213
+      "line": 211
     },
     {
       "text": "Movement helps too, not because every problem needs a fitness challenge but because physical activity helps discharge tension and regulate the stress response.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 215
+      "line": 213
     },
     {
       "text": "A friendship is flexible, not indestructible.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 219
+      "line": 217
     },
     {
       "text": "In adulthood, friendship usually survives on intention, not momentum.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 221
+      "line": 219
     },
     {
       "text": "Research on self-determination theory shows that motivation lasts longer when a goal feels chosen, meaningful, and tied to your own values, not just to status or pressure.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 223
+      "line": 221
     },
     {
       "text": "Finally, if procrastination is chronic, severe, or tied to anxiety, depression, ADHD, burnout, or perfectionism that has become absurdly expensive, get help for the driver, not just the deadline.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 243
+      "line": 241
     },
     {
       "text": "It does mean that a child who melts down when a device is removed may be responding to a highly sticky environment, not just weak self-control.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 247
+      "line": 245
     },
     {
       "text": "A screen in the background during play or meals can fragment attention; a caregiver using a phone during routines can reduce the back-and-forth interaction that helps children learn to focus on people, not just pixels.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 249
+      "line": 247
     },
     {
       "text": "For younger children, use screens with them, not just near them.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 251
+      "line": 249
     },
     {
       "text": "Start by treating screens as one part of a household system, not a moral failure.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 253
+      "line": 251
     },
     {
       "text": "Benzodiazepines can lower anxiety quickly, but they carry dependence risk and are generally short-term tools, not a long-term plan.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 259
+      "line": 257
     },
     {
       "text": "Medical sources from the NHS, MedlinePlus, and Cleveland Clinic all describe stress as something that can affect the body, not just the mind.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 261
+      "line": 259
     },
     {
       "text": "The CDC and Surgeon General’s advisory both treat social connection as a health issue, not decorative advice from someone with a linen shirt.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 265
+      "line": 263
     },
     {
       "text": "Research on goal failure suggests that missing a high, specific goal can reduce motivation for future tasks and produce emotional fallout that needs active recovery, not just more willpower Goal Missed, Self Hit.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 269
+      "line": 267
     },
     {
       "text": "The short version: your first few weeks are not proof that you are bad at habits. They are proof that habits take repetitions, not vibes.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 279
+      "line": 277
     },
     {
       "text": "They are proof that habits take repetitions, not vibes.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 281
+      "line": 279
     },
     {
       "text": "A habit survives by preserving the chain, not by protecting your ego.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 287
+      "line": 285
     },
     {
       "text": "You can spend eight hours under the covers and still wake up feeling like you lost a fight with a pillow, because the problem is often sleep quality, sleep timing, or an underlying condition, not just sleep length.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 291
+      "line": 289
     },
     {
       "text": "They remember the time they got into bed, not the time they were truly asleep.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 293
+      "line": 291
     },
     {
       "text": "The body wants a stable pattern, not occasional acts of repentance.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 295
+      "line": 293
     },
     {
       "text": "Make the room dark, quiet, and cool enough to sleep in like a person, not a hostage.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 297
+      "line": 295
     },
     {
       "text": "Friendships survive through accumulated small interactions, not grand gestures.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 301
+      "line": 299
     },
     {
       "text": "In 2026, we're seeing a cultural acknowledgment that sustainable friendships require genuine alignment of values, not just shared circumstances.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 303
+      "line": 301
     },
     {
       "text": "Tantrums are a stress response, not a courtroom argument.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 311
+      "line": 309
     },
     {
       "text": "Your body reads that as more load, not repair.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 325
+      "line": 323
     },
     {
       "text": "Handing your child a 12-part emotional speech at the door usually makes the moment heavier, not easier.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 327
+      "line": 325
     },
     {
       "text": "The habit is built by returning, not by feeling heroic.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 331
+      "line": 329
     },
     {
       "text": "If you keep seeing big reactions, ask what the child is carrying, not just what they are saying.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 337
+      "line": 335
     },
     {
       "text": "Sleep that is regular, not random.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 343
+      "line": 341
     },
     {
       "text": "If your child senses panic, it usually makes the goodbye harder, not easier.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 345
+      "line": 343
     },
     {
       "text": "Procrastination is fundamentally an emotional regulation problem, not a productivity one.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 373
+      "line": 371
     },
     {
       "text": "The World Health Organization classifies it as an occupational phenomenon, and decades of research make clear that it is primarily a product of working conditions, not individual character flaws.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 375
+      "line": 373
     },
     {
       "text": "\"I want to eat healthier\" is a wish, not a plan.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 383
+      "line": 381
     },
     {
       "text": "A study of couples spanning one to 55 years of relationship duration found something particularly sobering: avoidance behaviors markedly increase as relationships age, and the gender split (with women more often in the demanding role, men in the withdrawing role) becomes more pronounced, not less.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 395
+      "line": 393
     },
     {
       "text": "A 2025 ten-year longitudinal study from the University of Zurich found that dyadic coping — how couples manage stress together, not just how they argue — was a stronger overall predictor of relationship satisfaction than communication skill alone.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 397
+      "line": 395
     },
     {
       "text": "Using \"I\" statements rather than \"you\" accusations, expressing appreciation regularly and specifically, calling for deliberate breaks when physiological arousal during conflict becomes too high — these are behavioral habits, not personality traits, and they can be learned at any point in a relationship's life.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 399
+      "line": 397
     },
     {
       "text": "Motivation is the ignition, not the engine.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 403
+      "line": 401
     },
     {
       "text": "Modern psychology is clear: habits form through reward and repetition, not through raw determination.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 411
+      "line": 409
     },
     {
       "text": "Most habits fail because the system is weak, not because the person woke up lazy.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 419
+      "line": 417
     },
     {
       "text": "A habit needs to be small enough to survive a bad Tuesday, not just a perfect Monday.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 423
+      "line": 421
     },
     {
       "text": "The body reacts to felt connection, not social optics.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 427
+      "line": 425
     },
     {
       "text": "10/10 Loneliness is a health signal, not a character flaw.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 429
+      "line": 427
     },
     {
       "text": "Anxiety is a body state, not a moral failure.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 433
+      "line": 431
     },
     {
       "text": "The body cares about sleep quality, not just the clock on the wall.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 439
+      "line": 437
     },
     {
       "text": "10/10 Social media is powerful because it is relentless, not because it is mysterious.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 441
+      "line": 439
     },
     {
       "text": "You do not preserve friendships by hoping harder. You preserve them by making them easier to continue.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 445
+      "line": 443
     },
     {
       "text": "It does not automatically mean there is a disorder. It does mean the current media habits are probably not helping.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 449
+      "line": 447
     },
     {
       "text": "The goal isn't to feel motivated every day. The goal is to have the discipline to act without motivation.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 455
+      "line": 453
     },
     {
       "text": "When we procrastinate, we are not struggling to organize our schedules. We are avoiding a negative feeling that a task triggers — anxiety, boredom, self-doubt, resentment, or fear of failure.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 475
+      "line": 473
     },
     {
       "text": "Burnout is not a personal defect. It is often a mismatch between what a job demands and what a human being can keep supplying.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 483
+      "line": 481
     },
     {
       "text": "In the real world, the brain is not competing only with social media. It is competing with every cheap interruption the device can throw at it.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 489
+      "line": 487
     },
     {
       "text": "Stress is not the enemy. It is a built-in alarm system, and in the short term it can sharpen your attention and help you act.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 497
+      "line": 495
     },
     {
       "text": "This does not mean stress magically causes every cold. It means the body has less room to recover when it is spending energy on constant alarm.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 501
+      "line": 499
     },
     {
       "text": "Chronic stress is not just feeling busy or annoyed. It is a repeated body-wide alarm that can affect sleep, mood, digestion, immunity, pain, and the cardiovascular system.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 503
+      "line": 501
     },
     {
       "text": "Loneliness is not just a bad mood with a nicer name. It is a health state with real effects on the brain, the body, and daily behavior.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 505
+      "line": 503
     },
     {
       "text": "The likely pathway is not one thing. It is a cluster of things: stress hormones, inflammation, poorer sleep, less movement, worse diet, and delayed care.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 509
+      "line": 507
     },
     {
       "text": "The goal is not punishment. It is a pattern your body can recover from.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 515
+      "line": 513
     },
     {
       "text": "Most tantrums are not signs that a child is manipulative, broken, or badly parented. They are usually signs that the child’s brain and body are overloaded and they do not yet have the tools to handle the pressure cleanly.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 517
+      "line": 515
     },
     {
       "text": "That does not mean the child is scheming. It means the child is a small scientist with excellent data and poor judgment.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 519
+      "line": 517
     },
     {
       "text": "Normal does not mean pleasant. It means developmentally expected.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 521
+      "line": 519
     },
     {
       "text": "The goal in the moment is not to win. It is to keep everyone safe, avoid feeding the behavior, and help the child get back online.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 523
+      "line": 521
     },
     {
       "text": "Tantrums are not proof that a child is bad or a parent is failing. They are a sign that the child has a feeling bigger than the tools they have available at that age.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 525
+      "line": 523
     },
     {
       "text": "Most couples do not need a grand theory. They need a repeatable process that makes it harder to drift into the same fight.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 533
+      "line": 531
     },
     {
       "text": "When friendships fade, people are not only losing company. They are losing a regular source of support, identity, and stability.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 535
+      "line": 533
     },
     {
       "text": "The test is not whether every friendship must last forever. It is whether the friendships you want to keep have enough energy, honesty, and mutual effort to survive real life.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 537
+      "line": 535
     },
     {
       "text": "Procrastination is not a mystery and it is not a moral failure. It is what happens when a task feels worse in the moment than the consequences of delaying it.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 539
+      "line": 537
     },
     {
       "text": "A lot of procrastination is not about time. It is about mood.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 541
+      "line": 539
     },
     {
       "text": "“I want to be healthier” is not a habit plan. It is a sentence that sounds noble and tells you nothing about what to do at 7:10 a.m.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 547
+      "line": 545
     },
     {
       "text": "That is not a habit problem. It is a story problem.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 549
+      "line": 547
     },
     {
       "text": "A habit is not broken by one missed day. It is weakened when the miss turns into drift.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 553
+      "line": 551
     },
     {
       "text": "Small habits are not weak habits. They are habits that survive contact with reality.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 555
+      "line": 553
     },
     {
       "text": "Procrastination is not usually a character flaw. It is often a short-term coping strategy.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 561
+      "line": 559
     },
     {
       "text": "The most reliable fix is not more motivation. It is better design: make tasks startable, shrink the first step, address the emotion, reduce distractions, and build simple structures that help you begin.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 567
+      "line": 565
     },
     {
       "text": "The key issue is not that your child likes screens. It is that screens start to run the show: transitions, mood, and the ability to stick with offline tasks.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 569
+      "line": 567
     },
     {
       "text": "You do not need perfect rules. You need a small set of consistent boundaries that protect sleep, relationships, and attention practice.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 571
+      "line": 569
     },
     {
       "text": "Parents do not need perfect control. They need a few strong guardrails: protect sleep, choose content on purpose, keep screens from crowding out play and conversation, and help children build calm and focus skills that do not depend on a device.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 573
+      "line": 571
     },
     {
       "text": "Managing social anxiety does not mean becoming a different person or never feeling nervous again. It means building the ability to stay present, tolerate discomfort, and act according to your values rather than your fear.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 577
+      "line": 575
     },
     {
       "text": "Most communication breakdowns are not caused by one dramatic argument. They are reinforced by habits that feel satisfying in the moment and corrosive over time.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 579
+      "line": 577
     },
     {
       "text": "Habits are not willpower trophies. They are patterns the brain automates to save energy.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 587
+      "line": 585
     },
     {
       "text": "Good habits are not built by wanting them harder. They are built by making the desired behavior easier to start, easier to repeat, and easier to recover after life happens.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 591
+      "line": 589
     },
     {
       "text": "The cost is not just stress. It is lost momentum.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 593
+      "line": 591
     },
     {
       "text": "Burnout is not just about long hours. It is a stress condition that develops when job demands keep outpacing the emotional, cognitive, and physical resources needed to meet them.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 595
+      "line": 593
     },
     {
       "text": "The answer is not heroic endurance. It is redesign: clearer priorities, healthier limits, meaningful rest, and work that does not require a person to spend themselves entirely just to stay employed.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 597
+      "line": 595
     },
     {
       "text": "That does not mean every child who watches fast-paced videos will develop attention problems. It means repeated exposure to very stimulating media can become one factor in a broader attention environment.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 599
+      "line": 597
     },
     {
       "text": "Parents do not need panic. They need a realistic framework: better content, stronger routines, fewer autoplay traps, more sleep, more play, and more moments where a child learns that life does not have to flash, ding, and swipe every ten seconds to be interesting.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 601
+      "line": 599
     },
     {
       "text": "The bigger risk is not that a child watched a show after school. It is that highly stimulating, poorly bounded screen use becomes the default environment, replacing the slower experiences that help attention grow.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 603
+      "line": 601
     },
     {
       "text": "Many couples are not fundamentally bad at talking. They are exhausted.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 605
+      "line": 603
     },
     {
       "text": "Good communicators are not couples who never misstep. They are couples who know how to recover.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 609
+      "line": 607
     },
     {
       "text": "The fix is not guilt. It is intention: more specific plans, more regular contact, more honesty, and a willingness to treat friendship as a central part of adult well-being rather than whatever survives after everything else is done.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 615
+      "line": 613
     },
     {
       "text": "Motivation is not a permanent feeling you either have or do not have. It is a moving state shaped by meaning, structure, progress, fatigue, environment, and timing.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 617
+      "line": 615
     },
     {
       "text": "Most failed habits are not evidence that a person is lazy. They are evidence that behavior change is harder and more mechanical than self-help culture likes to admit.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 619
+      "line": 617
     },
     {
       "text": "Good habits are not built by dramatic effort alone. They are built by making the right action easier to begin, easier to repeat, and easier to resume after life inevitably interrupts it.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 625
+      "line": 623
     },
     {
       "text": "The person is not simply sleepy. They are depleted.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 629
+      "line": 627
     },
     {
       "text": "It is not just the light, either. It is also the mental activation of messages, news, videos, and the endless temptation to keep consuming one more thing.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 631
+      "line": 629
     },
     {
       "text": "Going to bed on time is not a bonus habit. It is part of the anti-procrastination system.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 635
+      "line": 633
     },
     {
       "text": "In that sense, burnout is not just an individual wellness issue. It is a systems problem with a human face.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 637
+      "line": 635
     },
     {
       "text": "That does not mean gaming is “good” for attention in every case. It means the category “screen time” hides more than it reveals.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 641
+      "line": 639
     },
     {
       "text": "Parents do not need to ban screens to protect attention. They need to make screens less omnipresent and less automatic.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 643
+      "line": 641
     },
     {
       "text": "This does not mean social anxiety is destiny. It means some people begin life with a more sensitive alarm system.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 645
+      "line": 643
     },
     {
       "text": "Stress is not just a mood with a bad reputation. It is a body-wide response to a challenge, threat, or pressure, and the body treats it like a real event because it is one.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 649
+      "line": 647
     },
     {
       "text": "The body is not being dramatic. It is running a stress program for too long.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 651
+      "line": 649
     },
     {
       "text": "It does mean chronic stress is not harmless background noise. It is a physiological burden.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 653
+      "line": 651
     },
     {
       "text": "That matters, because it means couples are not usually dealing with a single broken skill. They are dealing with a reinforcing loop.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 657
+      "line": 655
     },
     {
       "text": "In many couples, the real problem is not that nobody has solutions. It is that nobody feels understood long enough for solutions to matter.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 659
+      "line": 657
     },
     {
       "text": "Couples who can repair quickly do not need perfect communication. They need recoverability.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 661
+      "line": 659
     },
     {
       "text": "Couples usually do not need a totally new relationship. They need a better way of talking when life gets hard: more specificity, less blaming; more listening, less defending; more repair, less scorekeeping.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 663
+      "line": 661
     },
     {
       "text": "That does not mean you are broken if your friend count is lower. It means your social life has a budget, and modern adulthood keeps slipping extra line items into it.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 667
+      "line": 665
     },
     {
       "text": "Most people are not waiting to be replaced. They are waiting for somebody to text first.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 671
+      "line": 669
     },
     {
       "text": "Habits fail because they are not just promises you make to yourself. They are behaviors your brain has learned to run on familiar cues, in familiar settings, with the least possible effort.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 677
+      "line": 675
     },
     {
       "text": "Stress is not just a mental state. It is a full-body alarm, and when it stays on too long, your body starts paying the bill.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 685
+      "line": 683
     },
     {
       "text": "Sometimes the fix is not more productivity hacks. It is protecting sleep, shrinking the noise, saying no earlier, and letting your body believe the threat has passed.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 691
+      "line": 689
     },
     {
       "text": "That does not mean you are doing it wrong. It means your child is human, and the transition asks a lot.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 705
+      "line": 703
     },
     {
       "text": "Most procrastination at work is not a time problem. It is a self-protection problem.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 715
+      "line": 713
     },
     {
       "text": "A healthy workload is not just about volume. It is about recoverable attention.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 717
+      "line": 715
     },
     {
       "text": "Burnout taught me that sustainable productivity is not heroic. It is repeatable.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 721
+      "line": 719
     },
     {
       "text": "Healthy culture is not perfect. It is consistent.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 729
+      "line": 727
     },
     {
       "text": "The cost is not only time. It is mental residue.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 731
+      "line": 729
     },
     {
       "text": "Procrastination is not a character flaw. It is a deeply human response to discomfort, shaped by emotion, environment, and habit.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 737
+      "line": 735
     },
     {
       "text": "Burnout is not a badge of honor, a rite of passage, or an unavoidable cost of ambition. It is a predictable consequence of specific working conditions, and it responds to specific interventions.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 739
+      "line": 737
     },
     {
       "text": "Parents do not need to treat screens as the enemy. They need to treat them as a powerful tool that, like any tool, requires thoughtful management.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 743
+      "line": 741
     },
     {
       "text": "Social anxiety is not just feeling nervous before a presentation. It is a pattern that can infiltrate nearly every area of daily life, and it operates on three interconnected levels: body, mind, and behavior.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 745
+      "line": 743
     },
     {
       "text": "Social anxiety is not a character flaw, and it is not something people simply outgrow. It is a condition with identifiable biological, psychological, and environmental roots, and it responds to targeted intervention.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 747
+      "line": 745
     },
     {
       "text": "Stress is not just in your head. It is in your racing heart, your aching muscles, your disrupted sleep, and your weakened immune system.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 749
+      "line": 747
     },
     {
       "text": "Consistency is not the child of willpower. It is the child of design.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 753
+      "line": 751
     },
     {
       "text": "Building a lasting habit is not a dramatic act of willpower performed once. It is a quiet, repetitive negotiation with your own neurology — one that rewards patience, specificity, and self-compassion over intensity.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 755
+      "line": 753
     },
     {
       "text": "Habits are not built in moments of inspiration. They are built in the ordinary repetitions that come after inspiration fades — the ones that quietly, invisibly, rewire your brain until the behavior is no longer something you have to do but simply something you do.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 757
+      "line": 755
     },
     {
       "text": "Restful, restorative sleep is not a luxury. It is something your body is designed to do — and with the right adjustments, it can.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 759
+      "line": 757
     },
     {
       "text": "Procrastination is not a character flaw. It is an emotion problem.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 761
+      "line": 759
     },
     {
       "text": "Procrastination is not laziness, and it is not a scheduling problem. It is the brain's short-term solution to emotional discomfort — a solution that creates far larger problems over time.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 763
+      "line": 761
     },
     {
       "text": "Burnout is not the inevitable price of ambition or dedication. It is what happens when the systems around us — and sometimes the habits within us — treat human energy as a resource that doesn't need replenishing.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 765
+      "line": 763
     },
     {
       "text": "Couples who communicate well over years are not couples who never hurt each other or never run out of things to say. They are couples who keep choosing to come back — to the conversation, to the discomfort, to each other.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 771
+      "line": 769
     },
     {
       "text": "Putting the phone away is not politeness. It is one of the most effective friendship maintenance behaviors available.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 773
+      "line": 771
     },
     {
       "text": "Good habits are not built through bursts of inspiration or iron willpower. They are built through repeated behavior in stable contexts, small enough to be nearly effortless, tied to existing routines and a clear sense of identity, with immediate rewards that signal to the brain that the behavior is worth automating.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 779
+      "line": 777
     },
     {
       "text": "1/10 Stress is not just a mood. It is a body-wide alarm system.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 781
+      "line": 779
     },
     {
       "text": "But most tantrums are not manipulation. They are overload.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 787
+      "line": 785
     },
     {
       "text": "1/10 Loneliness is not just a sad mood. It is a stress state.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 789
+      "line": 787
     },
     {
       "text": "1/10 Stress is not just a feeling. It is the body’s alarm system, and it changes how you sleep, think, digest, and recover.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 793
+      "line": 791
     },
     {
       "text": "Procrastination is not just a mindset problem. It is often a design problem.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 795
+      "line": 793
     },
     {
       "text": "Criticism, contempt, defensiveness, and stonewalling are not rare disasters. They are common habits that slowly poison the room.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 799
+      "line": 797
     },
     {
       "text": "5/10 The real problem is not just the app. It is the habit of keeping a feed open while doing something else.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 809
+      "line": 807
     },
     {
       "text": "The point is not to become zen on command. The point is to interrupt the body’s alarm loop long enough for it to cool off.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 813
+      "line": 811
     },
     {
       "text": "The goal is not to become the loudest person in every room. The goal is to reduce fear enough that social life stops being governed by avoidance.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 829
+      "line": 827
     },
     {
       "text": "The fix is not to stop setting ambitious goals. The fix is to stop asking one giant outcome to carry your whole motivational life.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 831
+      "line": 829
     },
     {
       "text": "The fix is not to dream smaller in the timid, motivational-poster sense. The fix is to make the goal usable in daily life.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 841
+      "line": 839
     },
     {
       "text": "The goal is not a life with zero stress. The goal is a body that gets enough recovery to stop acting like every Tuesday is a crisis.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 845
+      "line": 843
     },
     {
       "text": "The child is not giving you a performance. The child is trying to hold together a moment that feels too big.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 849
+      "line": 847
     },
     {
       "text": "The goal is not instant obedience. The goal is a child who recovers faster.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 861
+      "line": 859
     },
     {
       "text": "The interesting part is that nobody noticed.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 875
+      "line": 873
     },
     {
       "text": "The following sections explore the common reasons parents feel stuck.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 883
+      "line": 881
     },
     {
       "text": "Most parents keep reaching for a louder script.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 897
+      "line": 895
     },
     {
       "text": "Many people try to fix the habit with shame.",
       "family": "syntactic-patterns",
       "bucket": "hits",
       "source": "cases/syntactic-patterns/hits.md",
-      "line": 905
+      "line": 903
     },
     {
       "text": "Parents get stuck when the schedule changes twice in one week.",
@@ -1296,41 +1317,6 @@
       "bucket": "no-hits",
       "source": "cases/syntactic-patterns/no-hits.md",
       "line": 83
-    },
-    {
-      "text": "Rotate the signing key every thirty days.",
-      "family": "semantic-thinness",
-      "bucket": "no-hits",
-      "source": "cases/semantic-thinness/no-hits.md",
-      "line": 33
-    },
-    {
-      "text": "The meeting ended after the clerk stamped the permit.",
-      "family": "semantic-thinness",
-      "bucket": "no-hits",
-      "source": "cases/semantic-thinness/no-hits.md",
-      "line": 47
-    },
-    {
-      "text": "The new tax rule raised quarterly payments by twelve percent.",
-      "family": "semantic-thinness",
-      "bucket": "no-hits",
-      "source": "cases/semantic-thinness/no-hits.md",
-      "line": 49
-    },
-    {
-      "text": "They stood by the north exit at thirteen minutes after eight.",
-      "family": "semantic-thinness",
-      "bucket": "no-hits",
-      "source": "cases/semantic-thinness/no-hits.md",
-      "line": 57
-    },
-    {
-      "text": "The moment passed.",
-      "family": "semantic-thinness",
-      "bucket": "hits",
-      "source": "cases/semantic-thinness/hits.md",
-      "line": 91
     }
   ]
 }

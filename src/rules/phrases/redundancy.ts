@@ -2,9 +2,10 @@ import type { TextlintRuleModule } from "@textlint/types";
 import { RuleHelper } from "textlint-rule-helper";
 import redundancyPatterns from "./data/redundancy-patterns.json" with { type: "json" };
 import { findUnquotedPhraseMatches } from "../../shared/matchers/phrases.js";
+import { emitTextlintFinding } from "../../adapters/textlint/report.js";
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, getSource, locator, report } = context;
+  const { Syntax, getSource } = context;
   const helper = new RuleHelper(context);
   const ignoredParents = [Syntax.Link, Syntax.LinkReference];
 
@@ -17,15 +18,12 @@ const rule: TextlintRuleModule = (context) => {
       const text = getSource(node);
 
       for (const match of findUnquotedPhraseMatches(text, redundancyPatterns)) {
-        report(
-          node,
-          new RuleError(
-            `Redundant phrase found: "${match.text}". Remove the repeated meaning.`,
-            {
-              padding: locator.range([match.start, match.end])
-            }
-          )
-        );
+        emitTextlintFinding(context, {
+          node: node,
+          ruleId: "phrases:redundancy",
+          message: `Redundant phrase found: "${match.text}". Remove the repeated meaning.`,
+          range: { start: match.start, end: match.end }
+        });
       }
     }
   };

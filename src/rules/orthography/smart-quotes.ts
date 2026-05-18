@@ -3,6 +3,7 @@ import type { TextlintRuleModule } from "@textlint/types";
 import { RuleHelper } from "textlint-rule-helper";
 import { splitSentences } from "../../shared/text/sentences.js";
 import { sourceText } from "../../shared/text/traverse.js";
+import { emitTextlintFinding } from "../../adapters/textlint/report.js";
 
 const SMART_QUOTES = new Set(["\u201C", "\u201D", "\u2018", "\u2019"]);
 
@@ -40,7 +41,7 @@ function findSmartQuotes(text: string): SmartQuoteMatch[] {
 }
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
   const helper = new RuleHelper(context);
   const ignoredParents = [
     Syntax.List,
@@ -58,18 +59,15 @@ const rule: TextlintRuleModule = (context) => {
       const source = sourceText(node);
 
       for (const match of findSmartQuotes(source.text)) {
-        report(
-          node,
-          new RuleError(
-            `Smart quotes found: "${match.matchedText}". Replace curly quotes with straight quotes.`,
-            {
-              padding: locator.range([
-                source.originalStartFor(match.start),
-                source.originalEndFor(match.end)
-              ])
-            }
-          )
-        );
+        emitTextlintFinding(context, {
+          node: node,
+          ruleId: "orthography:smart-quotes",
+          message: `Smart quotes found: "${match.matchedText}". Replace curly quotes with straight quotes.`,
+          range: {
+            start: source.originalStartFor(match.start),
+            end: source.originalEndFor(match.end)
+          }
+        });
       }
     }
   };

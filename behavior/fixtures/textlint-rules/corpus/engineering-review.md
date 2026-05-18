@@ -2,7 +2,11 @@
 
 These notes read like a mixed engineering review where rule examples appear inside operational prose.
 
+The shared topic is a review packet for queue work, parser fixes, and internal guidance drafts. Each section keeps the original fixture sentences while grouping them by the kind of prose being reviewed.
+
 ## semantic-thinness
+
+The first review page checks whether the sentence makes a concrete technical claim.
 
 That is where the repayment job must run before the invoice export.
 
@@ -23,6 +27,8 @@ The work became more complicated because the API added pagination.
 The new tax rule raised quarterly payments by twelve percent.
 
 ## syntactic-patterns
+
+The next page covers review comments that sound confident but avoid a specific engineering claim.
 
 The evidence is strongest when the team records decisions before launch.
 
@@ -107,6 +113,10 @@ The delay comes from learning, not blame.
 The interesting part is the practical answer is simple.
 
 That's why it matters, isn't that the point?
+
+## guidance draft review
+
+The same review packet includes advice copy for an internal handbook. These excerpts test contrast frames, empty summaries, and wrapper phrases in a practical review setting.
 
 If nothing changes after a few weeks, treat that as data, not failure.
 
@@ -319,6 +329,10 @@ That is judgment, not failure.
 8/10 Treatment is practical, not mystical.
 
 2/10
+
+## revision excerpts
+
+The next excerpt set comes from the same handbook review. The editor is checking whether the advice gives usable steps or only a polished replacement for a concrete action.
 
 You are not measuring a muscle with one clean instrument. You are measuring a moving target in a world that keeps opening new tabs.
 
@@ -554,6 +568,8 @@ And isn't that what we all want?
 
 ## negation source patterns
 
+These source patterns keep the contrast shape visible while staying inside a small scene review.
+
 She did not go to Arden. She went to the rug merchant alley.
 
 He didn't look at the music box. Instead, he looked at their dusty, oil-matted fur.
@@ -567,6 +583,8 @@ She did not go to Arden because Arden had already left for the pier.
 He didn't look at the music box until Cassia opened the lid.
 
 ## source llm artifact wrappers
+
+The last review page checks assistant-style wrappers against clean control sentences from the same engineering and support context.
 
 Let's delve into the deployment plan before naming the risk.
 
@@ -603,6 +621,10 @@ The technical note says the firmware version matters before flashing.
 The report says it's worth noting that the sample size doubled.
 
 The article quotes "it is important to note" as boilerplate.
+
+## control engineering claims
+
+These controls keep nearby technical claims concrete so the corpus can show the difference between wrapper text and useful detail.
 
 The March retention study found a six point drop after onboarding changed.
 

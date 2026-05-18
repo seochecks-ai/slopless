@@ -1,0 +1,50 @@
+[[required_text]]
+path = "src/rules/syntactic-patterns/contrast/private/negative-slop-frames.ts"
+values = [
+  "noLongerCopularReframe",
+  "fragmentDefinitionReframe",
+  "negativeActionReplacement"
+]
+
+[[required_text]]
+path = "src/rules/syntactic-patterns/contrast/private/negation-reframe-matcher.ts"
+values = [
+  "negativeSlopReframe",
+  "hasNegativeSlopPairSignal"
+]
+
+[[required_text]]
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md"
+values = [
+  "It was no longer a target. It was noise.",
+  "The pause was not a delay. It was a warning.",
+  "She did not wait for anyone to ask her a question. She pointed a small paw toward the ceiling."
+]
+
+[[required_text]]
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md"
+values = [
+  "The beta endpoint is no longer available. It was removed after the migration.",
+  "She did not wait because the clinic was closing.",
+  "The status is not final because the review is still open."
+]
+
+[[required_text]]
+path = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
+values = [
+  "It was no longer a target. It was noise.",
+  "She did not wait for anyone to ask her a question. She pointed a small paw toward the ceiling.",
+  "The pause was not a delay. It was a warning.",
+  "He didn't argue with the guard. Instead, he opened the ledger.",
+  "The status is not final because the review is still open."
+]
+
+[[forbidden_tree_text]]
+root = "src/rules"
+glob = "**/*.ts"
+values = [
+  "new RuleError",
+  " report(",
+  "RuleError",
+  "locator"
+]

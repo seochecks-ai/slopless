@@ -1,0 +1,89 @@
+[[tree]]
+path = "src/rules/types.ts"
+
+[[tree]]
+path = "src/reporting/types.ts"
+
+[[tree]]
+path = "src/reporting/reports.ts"
+
+[[tree]]
+path = "src/adapters/textlint/report.ts"
+
+[[tree]]
+path = "src/adapters/textlint/units.ts"
+
+[[public_api]]
+file = "src/rules/types.ts"
+types = [
+  "RuleFamilyId",
+  "RuleId",
+  "TextUnitKind",
+  "SourceRange",
+  "TextUnit",
+  "RuleInput",
+  "RuleDetection",
+  "RuleDetector"
+]
+
+[[public_api]]
+file = "src/reporting/types.ts"
+types = [
+  "DensityMatch",
+  "Detection",
+  "ReportPolicy",
+  "RuleDefinition",
+  "RuleReport"
+]
+
+[[public_api]]
+file = "src/reporting/reports.ts"
+functions = [
+  "oneToOneReports",
+  "densityReports"
+]
+
+[[public_api]]
+file = "src/adapters/textlint/report.ts"
+functions = [
+  "emitTextlintReport",
+  "emitTextlintReports"
+]
+
+[[public_api]]
+file = "src/adapters/textlint/units.ts"
+functions = [
+  "paragraphUnits"
+]
+
+[[forbidden_text]]
+path = "src/rules/narrative-slop/body-action-density.ts"
+values = [
+  "report(",
+  "new RuleError",
+  "splitSentences"
+]
+
+[[forbidden_text]]
+path = "src/rules/narrative-slop/perception-verb-density.ts"
+values = [
+  "report(",
+  "new RuleError",
+  "splitSentences"
+]
+
+[[required_text]]
+path = "src/rules/narrative-slop/body-action-density.ts"
+values = [
+  "RuleDetection",
+  "densityReports",
+  "emitTextlintReports"
+]
+
+[[required_text]]
+path = "src/rules/narrative-slop/perception-verb-density.ts"
+values = [
+  "RuleDetection",
+  "densityReports",
+  "emitTextlintReports"
+]

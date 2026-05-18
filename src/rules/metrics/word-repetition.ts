@@ -2,6 +2,7 @@ import type { TxtDocumentNode } from "@textlint/ast-node-types";
 import type { TextlintRuleModule } from "@textlint/types";
 import { allParagraphs } from "../../shared/text/sections.js";
 import { wordTokens } from "../../shared/text/tokens.js";
+import { emitTextlintFinding } from "../../adapters/textlint/report.js";
 
 const MAX_REPETITION = 5;
 
@@ -38,7 +39,7 @@ function repeatedWords(
 }
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
 
   return {
     [Syntax.Document](node: TxtDocumentNode): void {
@@ -48,15 +49,12 @@ const rule: TextlintRuleModule = (context) => {
         }
 
         for (const [word, count] of repeatedWords(item.text)) {
-          report(
-            item.paragraph,
-            new RuleError(
-              `Word repeated ${count} times in one paragraph: "${word}". Keep repeated words to ${MAX_REPETITION} or fewer.`,
-              {
-                padding: locator.range([0, item.source.text.length])
-              }
-            )
-          );
+          emitTextlintFinding(context, {
+            node: item.paragraph,
+            ruleId: "metrics:word-repetition",
+            message: `Word repeated ${count} times in one paragraph: "${word}". Keep repeated words to ${MAX_REPETITION} or fewer.`,
+            range: { start: 0, end: item.source.text.length }
+          });
         }
       }
     }

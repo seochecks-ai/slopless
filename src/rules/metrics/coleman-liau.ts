@@ -2,6 +2,7 @@ import { TextReadability } from "@lunarisapp/readability";
 import type { TxtDocumentNode } from "@textlint/ast-node-types";
 import type { TextlintRuleModule } from "@textlint/types";
 import { documentText } from "../../shared/text/document.js";
+import { emitTextlintFinding } from "../../adapters/textlint/report.js";
 
 const MAX_SCORE = 12;
 
@@ -10,7 +11,7 @@ function rounded(score: number): number {
 }
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
   const readability = new TextReadability({ lang: "en_US" });
 
   return {
@@ -25,15 +26,12 @@ const rule: TextlintRuleModule = (context) => {
         return;
       }
 
-      report(
-        node,
-        new RuleError(
-          `Coleman-Liau is ${rounded(score)}. Keep it at ${MAX_SCORE} or lower.`,
-          {
-            padding: locator.at(0)
-          }
-        )
-      );
+      emitTextlintFinding(context, {
+        node: node,
+        ruleId: "metrics:coleman-liau",
+        message: `Coleman-Liau is ${rounded(score)}. Keep it at ${MAX_SCORE} or lower.`,
+        range: { start: 0, end: 0 }
+      });
     }
   };
 };

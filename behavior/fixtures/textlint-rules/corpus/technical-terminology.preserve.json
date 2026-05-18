@@ -3,20 +3,6 @@
   "corpus": "technical-terminology.md",
   "preserve": [
     {
-      "text": "This document explains ownership with one required word present while a cat sits near the door and a dog runs in the yard. Birds sing after rain because people make tea at home and keep the room warm.",
-      "family": "term-policy",
-      "bucket": "hits",
-      "source": "cases/term-policy/hits.md",
-      "line": 1
-    },
-    {
-      "text": "The compiler accepts borrowed values when traits describe the behavior.",
-      "family": "term-policy",
-      "bucket": "hits",
-      "source": "cases/term-policy/hits.md",
-      "line": 3
-    },
-    {
       "text": "The abstract uses counterfeit consciousness where artificial intelligence is intended.",
       "family": "academic-slop",
       "bucket": "hits",
@@ -36,6 +22,27 @@
       "bucket": "hits",
       "source": "cases/academic-slop/hits.md",
       "line": 5
+    },
+    {
+      "text": "The abstract calls the method man-made reasoning instead of artificial intelligence.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 7
+    },
+    {
+      "text": "The policy survey uses data and interchanges innovation instead of information and communications technology.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 9
+    },
+    {
+      "text": "The camera table calls the monitor shut circuit tv instead of closed-circuit television.",
+      "family": "academic-slop",
+      "bucket": "hits",
+      "source": "cases/academic-slop/hits.md",
+      "line": 11
     },
     {
       "text": "A note quotes \"bosom peril\" from an old draft. The final text says cancer. It is plain and short. The lab can use it for a clean check. Staff can read it. Staff can test it.",
@@ -64,27 +71,6 @@
       "bucket": "no-hits",
       "source": "cases/academic-slop/no-hits.md",
       "line": 7
-    },
-    {
-      "text": "The abstract calls the method man-made reasoning instead of artificial intelligence.",
-      "family": "academic-slop",
-      "bucket": "hits",
-      "source": "cases/academic-slop/hits.md",
-      "line": 7
-    },
-    {
-      "text": "The policy survey uses data and interchanges innovation instead of information and communications technology.",
-      "family": "academic-slop",
-      "bucket": "hits",
-      "source": "cases/academic-slop/hits.md",
-      "line": 9
-    },
-    {
-      "text": "The camera table calls the monitor shut circuit tv instead of closed-circuit television.",
-      "family": "academic-slop",
-      "bucket": "hits",
-      "source": "cases/academic-slop/hits.md",
-      "line": 11
     },
     {
       "text": "The abstract calls the method artificial intelligence.",

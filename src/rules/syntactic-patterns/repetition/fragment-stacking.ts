@@ -7,6 +7,7 @@ import {
 } from "../../../shared/text/sentences.js";
 import { sourceText } from "../../../shared/text/traverse.js";
 import { splitWhitespace } from "../../../shared/text/whitespace.js";
+import { emitTextlintFinding } from "../../../adapters/textlint/report.js";
 
 const MAX_FRAGMENT_WORDS = 6;
 const MAX_PAYOFF_WORDS = 28;
@@ -346,7 +347,7 @@ function findFragmentStacks(text: string): FragmentMatch[] {
 }
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
   const helper = new RuleHelper(context);
   const ignoredParents = [
     Syntax.List,
@@ -363,18 +364,15 @@ const rule: TextlintRuleModule = (context) => {
 
       const source = sourceText(node);
       for (const match of findFragmentStacks(source.text)) {
-        report(
-          node,
-          new RuleError(
-            `Fragment stack found: ${match.sentences.join(" ")} Rewrite the clipped cadence as normal prose.`,
-            {
-              padding: locator.range([
-                source.originalStartFor(match.start),
-                source.originalEndFor(match.end)
-              ])
-            }
-          )
-        );
+        emitTextlintFinding(context, {
+          node: node,
+          ruleId: "syntactic-patterns:fragment-stacking",
+          message: `Fragment stack found: ${match.sentences.join(" ")} Rewrite the clipped cadence as normal prose.`,
+          range: {
+            start: source.originalStartFor(match.start),
+            end: source.originalEndFor(match.end)
+          }
+        });
       }
     }
   };

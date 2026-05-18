@@ -1,4 +1,4 @@
-# Corporate Abstraction Not Implemented
+# Corporate Abstraction Candidates
 
 ## Source File Paths Used
 
@@ -8,24 +8,13 @@
 - `data/source-material/llm-slop-lists/slop-forensics/results_by_domain/essays/slop_lists/slop_list_phrases.jsonl`
 - `data/source-material/llm-slop-lists/slop-forensics/results_by_domain/varied_prompts/slop_lists/slop_list_phrases.jsonl`
 
-## Not Implemented
+## Current State
 
-- `{actor} drives {abstractChange}`
-- `{actor} leverages {abstractPlural}`
+No active corporate abstraction candidates remain queued for implementation.
 
-## Slots
+Skipped candidates and reasons are recorded in `data/source-material/incorporation-record.md`.
 
-- `abstractChange`: `innovation`, `transformation`, `growth`, `change`, `progress`
-- `abstractPlural`: `insights`, `synergies`, `opportunities`, `solutions`
+## Boundary
 
-## Why Not Implemented
-
-- The implemented corporate abstraction rule only uses closed frames that are specific enough to report directly.
-- `drives` and `leverages` are too broad without stronger surrounding constraints.
-- The remaining frames are too broad without stronger surrounding constraints.
-
-## Required Fixture Work Before Implementation
-
-- Add no-hits for literal driving, database drivers, and concrete leverage.
-- Add hits only when the frame is abstract and promotional.
-- Verify the rule does not report normal technical prose.
+- The shipped corporate abstraction rule keeps only closed frames specific enough to report directly.
+- The skipped templates are too broad without stronger constraints around promotional context.

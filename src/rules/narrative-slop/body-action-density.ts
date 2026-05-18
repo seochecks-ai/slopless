@@ -1,8 +1,9 @@
 import type { TxtDocumentNode } from "@textlint/ast-node-types";
 import type { TextlintRuleModule } from "@textlint/types";
-import { firstDensityMatch } from "../../reporting/report-density.js";
-import type { Detection } from "../../reporting/types.js";
-import { allParagraphs } from "../../shared/text/sections.js";
+import { emitTextlintReports } from "../../adapters/textlint/report.js";
+import { paragraphUnits } from "../../adapters/textlint/units.js";
+import { densityReports } from "../../reporting/reports.js";
+import type { RuleDetection, RuleId, TextUnit } from "../types.js";
 import { type Token, wordTokens } from "../../shared/text/tokens.js";
 
 const MOVEMENT_CUES = new Set([
@@ -85,6 +86,7 @@ const MAX_PARAGRAPH_TOKENS = 95;
 const MAX_WINDOW_TOKENS = 60;
 const MIN_GROUP_HITS = 3;
 const WINDOW_SENTENCES = 4;
+const RULE_ID = "narrative-slop:body-action-density" satisfies RuleId;
 
 type CueGroup = "body cue" | "movement cue";
 type PhraseCue = {
@@ -154,9 +156,9 @@ function tokensMatchAt(
   );
 }
 
-function cueDetections(text: string): Detection<CueGroup>[] {
-  const tokens = wordTokens(text);
-  const detections: Detection<CueGroup>[] = [];
+function cueDetections(unit: TextUnit): RuleDetection<CueGroup>[] {
+  const tokens = wordTokens(unit.text);
+  const detections: RuleDetection<CueGroup>[] = [];
   const phraseCovered = new Set<number>();
 
   for (let index = 0; index < tokens.length; index += 1) {
@@ -176,10 +178,12 @@ function cueDetections(text: string): Detection<CueGroup>[] {
       }
 
       detections.push({
-        end: last.end,
+        evidence: unit.text.slice(token.start, last.end),
         group: phrase.group,
         label: phrase.tokens.join(" "),
-        start: token.start
+        range: { end: last.end, start: token.start },
+        ruleId: RULE_ID,
+        unitId: unit.id
       });
       markCovered(phraseCovered, index, phrase.tokens.length);
     }
@@ -194,48 +198,39 @@ function cueDetections(text: string): Detection<CueGroup>[] {
     const group = cueGroup(token);
     if (group !== undefined) {
       detections.push({
-        end: token.end,
+        evidence: unit.text.slice(token.start, token.end),
         group,
         label: token.normalized,
-        start: token.start
+        range: { end: token.end, start: token.start },
+        ruleId: RULE_ID,
+        unitId: unit.id
       });
     }
   }
 
-  return detections.sort((left, right) => left.start - right.start);
+  return detections.sort((left, right) => left.range.start - right.range.start);
 }
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
 
   return {
     [Syntax.Document](node: TxtDocumentNode): void {
-      for (const item of allParagraphs(node)) {
-        const match = firstDensityMatch(item.text, {
-          detect: cueDetections,
+      const units = paragraphUnits(node);
+      const unitsById = new Map(units.map((unit) => [unit.id, unit]));
+
+      for (const unit of units) {
+        const reports = densityReports(unit, cueDetections(unit), {
           groups: ["movement cue", "body cue"],
           maxParagraphTokens: MAX_PARAGRAPH_TOKENS,
           maxWindowTokens: MAX_WINDOW_TOKENS,
+          message: (match) =>
+            `Body-action density: ${match.count} ${match.group}s in a short span (${match.labels.join(", ")}).`,
           paragraphMinimumHits: MIN_GROUP_HITS,
           windowMinimumHits: MIN_GROUP_HITS,
           windowSentences: WINDOW_SENTENCES
         });
-        if (match === undefined) {
-          continue;
-        }
-
-        report(
-          item.paragraph,
-          new RuleError(
-            `Body-action density: ${match.count} ${match.group}s in a short span (${match.labels.join(", ")}).`,
-            {
-              padding: locator.range([
-                item.source.originalStartFor(match.start),
-                item.source.originalEndFor(match.end)
-              ])
-            }
-          )
-        );
+        emitTextlintReports(context, unitsById, reports);
       }
     }
   };

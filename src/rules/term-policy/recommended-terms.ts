@@ -3,6 +3,7 @@ import type { TextlintRuleModule } from "@textlint/types";
 import { documentText } from "../../shared/text/document.js";
 import { normalizeForMatch } from "../../shared/text/normalize.js";
 import { wordTokens } from "../../shared/text/tokens.js";
+import { emitTextlintFinding } from "../../adapters/textlint/report.js";
 
 type RecommendedTermsOptions = {
   readonly allowInflections?: boolean;
@@ -108,7 +109,7 @@ const rule: TextlintRuleModule<RecommendedTermsOptions> = (
   context,
   options = {}
 ) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
 
   return {
     [Syntax.Document](node: TxtDocumentNode): void {
@@ -122,15 +123,12 @@ const rule: TextlintRuleModule<RecommendedTermsOptions> = (
         return;
       }
 
-      report(
-        node,
-        new RuleError(
-          `Recommended terms present: ${count}. Include at least ${policy.minCount} terms from the policy pool.`,
-          {
-            padding: locator.at(0)
-          }
-        )
-      );
+      emitTextlintFinding(context, {
+        node: node,
+        ruleId: "term-policy:recommended-terms",
+        message: `Recommended terms present: ${count}. Include at least ${policy.minCount} terms from the policy pool.`,
+        range: { start: 0, end: 0 }
+      });
     }
   };
 };

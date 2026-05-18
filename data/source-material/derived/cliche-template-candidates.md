@@ -1,4 +1,4 @@
-# Cliche Templates Not Implemented
+# Cliche Template Candidates
 
 ## Source File Paths Used
 
@@ -7,26 +7,13 @@
 - `data/source-material/prose-linters/proselint/proselint/checks/cliches/misc.py`
 - `data/source-material/prose-linters/proselint/proselint/checks/cliches/write-good`
 
-## Not Implemented
+## Current State
 
-- `{genderedPossessive} own shadow`
-- `{genderedPossessive} sleeve`
-- `{genderedPossessive} bite`
-- `crying over {spilledWord} milk`
+No active cliche template candidates remain queued for implementation.
 
-## Slots
+Skipped candidates and reasons are recorded in `data/source-material/incorporation-record.md`.
 
-- `genderedPossessive`: `his`, `her`
-- `spilledWord`: `spilled`, `spilt`
+## Boundary
 
-## Why Not Implemented
-
-- The implemented possessive cliche template covers only high-confidence idioms with fixture no-hits.
-- These remaining templates need literal no-hits before activation because they can overlap with physical descriptions, clothing, bites, and literal spilled milk.
-- Offensive, animal, and medical idioms remain excluded from this batch.
-
-## Required Fixture Work Before Implementation
-
-- Add one hit per expanded template.
-- Add literal no-hits for shadows, sleeves, bites, and spilled milk.
-- Add quoted-example no-hits.
+- The shipped cliche template data keeps only high-confidence idioms with fixture no-hits.
+- The skipped templates overlap with normal literal descriptions of shadows, sleeves, bites, and spilled milk.

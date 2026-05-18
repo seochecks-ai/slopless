@@ -1,4 +1,4 @@
-# Academic Slop Not Implemented
+# Academic Slop Candidates
 
 ## Source File Paths Used
 
@@ -9,34 +9,13 @@
 - `data/source-material/academic-slop/tortured-phrases/humanities-social-sciences-zenodo/20241114_social_sciences_fingerprints.csv`
 - `data/source-material/academic-slop/tortured-phrases/humanities-social-sciences-zenodo/Tortured_abbreviations.csv`
 
-## Not Implemented
+## Current State
 
-- `casting a ballot`
-- `casting a ballot system`
-- `casting a ballot framework`
-- `electronic democratic frameworks`
-- `web-based democratic applications`
-- `mystery casting a ballot`
-- `political decision framework`
-- `articulation of the desire`
-- `weighted lion's share voting`
-- `absolute intrigue`
-- `monetary market contributors`
-- `lawful mind`
-- `bound together domain`
-- `data innovation`
-- `innovative work`
-- `human immunodeficiency infection`
+No active academic slop candidates remain queued for implementation.
 
-## Why Not Implemented
+Skipped candidates and reasons are recorded in `data/source-material/incorporation-record.md`.
 
-- Some strings are translation artifacts that can appear in quoted examples, legal discussion, or source titles.
-- Some strings are near normal domain terms and need phrase-pair context before reporting.
-- Abbreviation rows need a separate academic-only rule shape that can distinguish incorrect expansion from normal prose.
-- The implemented rule currently uses only exact high-confidence tortured phrases with fixtures.
+## Boundary
 
-## Required Fixture Work Before Implementation
-
-- Add hits for each exact tortured phrase selected.
-- Add no-hits for the correct terms: `artificial intelligence`, `voting system`, `electoral integrity`, `information technology`, `research and development`, `HIV`, and `CCTV`.
-- Add quote no-hits where the tortured phrase is discussed as an example.
+- The shipped `tortured-phrases` rule keeps only exact high-confidence phrases with fixture coverage.
+- The skipped rows need academic phrase-pair context or abbreviation-specific logic before they can be safe.

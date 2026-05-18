@@ -7,6 +7,7 @@ import {
 } from "../../../shared/matchers/prose-patterns.js";
 import { allParagraphSentences } from "../../../shared/text/sections.js";
 import responseWrapperPatterns from "./data/response-wrapper-patterns.json" with { type: "json" };
+import { emitTextlintFinding } from "../../../adapters/textlint/report.js";
 
 const PREFIXES = ["however, ", "but ", "that being said, ", "as such, "];
 const SUBJECTS = ["i"];
@@ -253,7 +254,7 @@ function matchResponseWrapper(
 }
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
 
   return {
     [Syntax.Document](node: TxtDocumentNode): void {
@@ -271,18 +272,15 @@ const rule: TextlintRuleModule = (context) => {
           continue;
         }
 
-        report(
-          item.paragraph,
-          new RuleError(
-            `Response wrapper found: ${matched.kind} (${matched.signal}). Remove assistant response scaffolding.`,
-            {
-              padding: locator.range([
-                item.source.originalStartFor(item.sentence.start),
-                item.source.originalEndFor(item.sentence.end)
-              ])
-            }
-          )
-        );
+        emitTextlintFinding(context, {
+          node: item.paragraph,
+          ruleId: "syntactic-patterns:response-wrapper",
+          message: `Response wrapper found: ${matched.kind} (${matched.signal}). Remove assistant response scaffolding.`,
+          range: {
+            start: item.source.originalStartFor(item.sentence.start),
+            end: item.source.originalEndFor(item.sentence.end)
+          }
+        });
       }
     }
   };

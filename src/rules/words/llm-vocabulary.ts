@@ -1,5 +1,6 @@
 import type { TextlintRuleModule } from "@textlint/types";
 import { wordTokens } from "../../shared/text/tokens.js";
+import { emitTextlintFinding } from "../../adapters/textlint/report.js";
 
 const LLM_VOCABULARY = new Set([
   "delve",
@@ -17,7 +18,7 @@ const LLM_VOCABULARY = new Set([
 ]);
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, getSource, locator, report } = context;
+  const { Syntax, getSource } = context;
 
   return {
     [Syntax.Str](node): void {
@@ -28,15 +29,12 @@ const rule: TextlintRuleModule = (context) => {
           continue;
         }
 
-        report(
-          node,
-          new RuleError(
-            `LLM vocabulary found: "${token.text}". Replace the stock diction with a concrete word.`,
-            {
-              padding: locator.range([token.start, token.end])
-            }
-          )
-        );
+        emitTextlintFinding(context, {
+          node: node,
+          ruleId: "words:llm-vocabulary",
+          message: `LLM vocabulary found: "${token.text}". Replace the stock diction with a concrete word.`,
+          range: { start: token.start, end: token.end }
+        });
       }
     }
   };

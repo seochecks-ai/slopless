@@ -7,6 +7,7 @@ import {
 } from "../../shared/matchers/phrases.js";
 import { normalizeForMatch } from "../../shared/text/normalize.js";
 import { wordTokens } from "../../shared/text/tokens.js";
+import { emitTextlintFinding } from "../../adapters/textlint/report.js";
 
 const EXCEPTION_SEPARATOR = "\u0000";
 
@@ -87,7 +88,7 @@ function shouldReport(text: string, match: PhraseMatch): boolean {
 }
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, getSource, locator, report } = context;
+  const { Syntax, getSource } = context;
   const helper = new RuleHelper(context);
   const ignoredParents = [Syntax.Link, Syntax.LinkReference];
 
@@ -107,15 +108,12 @@ const rule: TextlintRuleModule = (context) => {
           continue;
         }
 
-        report(
-          node,
-          new RuleError(
-            `Uncomparable phrase found: "${match.text}". Remove the modifier.`,
-            {
-              padding: locator.range([match.start, match.end])
-            }
-          )
-        );
+        emitTextlintFinding(context, {
+          node: node,
+          ruleId: "phrases:uncomparables",
+          message: `Uncomparable phrase found: "${match.text}". Remove the modifier.`,
+          range: { start: match.start, end: match.end }
+        });
       }
     }
   };

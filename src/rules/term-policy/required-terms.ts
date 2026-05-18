@@ -3,6 +3,7 @@ import type { TextlintRuleModule } from "@textlint/types";
 import { documentText } from "../../shared/text/document.js";
 import { normalizeForMatch } from "../../shared/text/normalize.js";
 import { wordTokens } from "../../shared/text/tokens.js";
+import { emitTextlintFinding } from "../../adapters/textlint/report.js";
 
 type RequiredTermsOptions = {
   readonly terms?: readonly string[];
@@ -25,7 +26,7 @@ const rule: TextlintRuleModule<RequiredTermsOptions> = (
   context,
   options = {}
 ) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
 
   return {
     [Syntax.Document](node: TxtDocumentNode): void {
@@ -41,15 +42,12 @@ const rule: TextlintRuleModule<RequiredTermsOptions> = (
           continue;
         }
 
-        report(
-          node,
-          new RuleError(
-            `Required term missing: "${term}". Add the term or update the policy.`,
-            {
-              padding: locator.at(0)
-            }
-          )
-        );
+        emitTextlintFinding(context, {
+          node: node,
+          ruleId: "term-policy:required-terms",
+          message: `Required term missing: "${term}". Add the term or update the policy.`,
+          range: { start: 0, end: 0 }
+        });
       }
     }
   };

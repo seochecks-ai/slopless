@@ -1,11 +1,11 @@
 {
   "suite": "textlint-rules",
   "kind": "approved",
-  "run_id": "2026-05-17T19-00-42.011407Z-f3c41e06",
-  "run_commit": "a01dfa8",
+  "run_id": "2026-05-18T09-00-10.302105Z-f3c41e06",
+  "run_commit": "086840a",
   "working_tree": "dirty",
-  "recorded_at": "2026-05-17T19:00:42.011407Z",
-  "fixture_hash": "sha256:088a7df25395855a8e20b2b90458b9b107e6a4a8a9bf6f891678b929e3881eef",
+  "recorded_at": "2026-05-18T09:00:10.302105Z",
+  "fixture_hash": "sha256:b3ca826694aa09f7e87e04b9d4db6d82d984124177a0ead182df7931d95698d1",
   "manifest_hash": "sha256:f3c41e06f4c33e3b21fa87bec32cd48f42af6c1064c3e6ae7d226d744fdbe350",
   "tool_version": "0.1.8",
   "output_schema_version": "1",
@@ -68,11 +68,11 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md",
-      "sha256": "sha256:da28ca6ffdaa14c83031eaf63a5fbdd867a929904e753defb48eaac361d6f1df"
+      "sha256": "sha256:e6ddb71a00a068d9205adad2d447b8cee1019d9b6e17a77daf18e8743acf184d"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md",
-      "sha256": "sha256:471b8a5748969797752af949fc5a8863a5da60d515e532d59e350ab70871f2ad"
+      "sha256": "sha256:edfb34e54888d5c1d189819864d7ac98472c3abe333734052cffe913299288de"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/term-policy/hits.md",
@@ -92,28 +92,28 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/editorial-style.md",
-      "sha256": "sha256:26b48d86de7e7d15ade2a24fed6b9b1012fc9d3d866f452c4ff2ee700e3dbf5e"
+      "sha256": "sha256:6e978ce90d05a16f97e5e4289702479749526e71596a765635a8b8c5a5464e8d"
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/engineering-review.md",
-      "sha256": "sha256:396de2b2dcfaf6cfe444126e7357322ad495b7e60136fa0d392581e257d6c32d"
+      "sha256": "sha256:a6491e5b9bb191a8bbb668c0e4fec966e958c51332d63f60abc3219f1ec97b7e"
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/health-and-parenting.md",
-      "sha256": "sha256:2c7a5e44e29ac595977144fa256bc730a9b7320b692c9161014c676b28fff719"
+      "sha256": "sha256:5e89c439c994d1be15980e956e69db524f50f20174e6e1569676542aaf8c65c3"
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/metrics-and-markdown.md",
-      "sha256": "sha256:01bcf786259a46f9c3a96a484ea6299a2f0ee580c09d1017db8d21f1b31cb7f1"
+      "sha256": "sha256:4dfb3aadf405eefb187c3bcf18f674a412ed1153123e655e97e97a8b987c3451"
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md",
-      "sha256": "sha256:54451dce857c6e2edd886c366fc9e19dfdaa2672cc13d77cc03df744468f005c"
+      "sha256": "sha256:b5107f9116cd502fe770a4259f63d67a86154179eb60f362e57beac36cbdfc54"
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/technical-terminology.md",
-      "sha256": "sha256:bf69c066e8560de8c1dc151e5ee486fa1c47e2b6fbe178f07eba5ce96193a9e6"
+      "sha256": "sha256:e56e6ed5b1d94558aecd64c1844affcea9a6e6b7189ece747581949b27d3a870"
     }
   ],
-  "comment": "Add corpus coverage for remaining source candidates"
+  "comment": "Refresh corpus coverage metadata"
 }

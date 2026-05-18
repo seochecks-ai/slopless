@@ -7,6 +7,7 @@ import {
 } from "../../../shared/text/sentences.js";
 import { sourceText } from "../../../shared/text/traverse.js";
 import { splitWhitespace } from "../../../shared/text/whitespace.js";
+import { emitTextlintFinding } from "../../../adapters/textlint/report.js";
 
 const MAX_SENTENCE_WORDS = 12;
 const MAX_PER_DOCUMENT = 2;
@@ -274,7 +275,7 @@ function classify(sentence: SplitSentence): string | undefined {
 }
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
   const helper = new RuleHelper(context);
   const ignoredParents = [
     Syntax.List,
@@ -315,18 +316,15 @@ const rule: TextlintRuleModule = (context) => {
       }
 
       for (const match of matches) {
-        report(
-          match.node,
-          new RuleError(
-            `Demonstrative emphasis found: "${match.sentence}". Reduce repeated short emphasis lines.`,
-            {
-              padding: locator.range([
-                match.sourceStart(match.start),
-                match.sourceEnd(match.end)
-              ])
-            }
-          )
-        );
+        emitTextlintFinding(context, {
+          node: match.node,
+          ruleId: "syntactic-patterns:demonstrative-emphasis",
+          message: `Demonstrative emphasis found: "${match.sentence}". Reduce repeated short emphasis lines.`,
+          range: {
+            start: match.sourceStart(match.start),
+            end: match.sourceEnd(match.end)
+          }
+        });
       }
     }
   };

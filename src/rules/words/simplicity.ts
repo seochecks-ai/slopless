@@ -3,13 +3,14 @@ import type { TextlintRuleModule } from "@textlint/types";
 import simplicityPairs from "./data/simplicity-pairs.json" with { type: "json" };
 import { allParagraphSentences } from "../../shared/text/sections.js";
 import { wordTokens } from "../../shared/text/tokens.js";
+import { emitTextlintFinding } from "../../adapters/textlint/report.js";
 
 const SIMPLE_BY_COMPLEX = new Map(
   simplicityPairs.map(([complex, simple]) => [complex, simple])
 );
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
 
   return {
     [Syntax.Document](node: TxtDocumentNode): void {
@@ -21,20 +22,17 @@ const rule: TextlintRuleModule = (context) => {
             continue;
           }
 
-          report(
-            item.paragraph,
-            new RuleError(
-              `Complex word found: "${token.text}". Use "${simple}" instead.`,
-              {
-                padding: locator.range([
-                  item.source.originalStartFor(
-                    item.sentence.start + token.start
-                  ),
-                  item.source.originalEndFor(item.sentence.start + token.end)
-                ])
-              }
-            )
-          );
+          emitTextlintFinding(context, {
+            node: item.paragraph,
+            ruleId: "words:simplicity",
+            message: `Complex word found: "${token.text}". Use "${simple}" instead.`,
+            range: {
+              start: item.source.originalStartFor(
+                item.sentence.start + token.start
+              ),
+              end: item.source.originalEndFor(item.sentence.start + token.end)
+            }
+          });
         }
       }
     }

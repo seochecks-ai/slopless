@@ -3,6 +3,7 @@ import type { TextlintRuleModule } from "@textlint/types";
 import { RuleHelper } from "textlint-rule-helper";
 import { splitSentences } from "../../shared/text/sentences.js";
 import { sourceText } from "../../shared/text/traverse.js";
+import { emitTextlintFinding } from "../../adapters/textlint/report.js";
 
 type TimestampMatch = {
   readonly end: number;
@@ -106,7 +107,7 @@ function findSentenceTimestampMatches(text: string): TimestampMatch[] {
 }
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
   const helper = new RuleHelper(context);
   const ignoredParents = [
     Syntax.List,
@@ -124,18 +125,15 @@ const rule: TextlintRuleModule = (context) => {
       const source = sourceText(node);
 
       for (const match of findSentenceTimestampMatches(source.text)) {
-        report(
-          node,
-          new RuleError(
-            `Fake timestamp found: "${match.text}". Remove fabricated clock specificity.`,
-            {
-              padding: locator.range([
-                source.originalStartFor(match.start),
-                source.originalEndFor(match.end)
-              ])
-            }
-          )
-        );
+        emitTextlintFinding(context, {
+          node: node,
+          ruleId: "orthography:fake-timestamps",
+          message: `Fake timestamp found: "${match.text}". Remove fabricated clock specificity.`,
+          range: {
+            start: source.originalStartFor(match.start),
+            end: source.originalEndFor(match.end)
+          }
+        });
       }
     }
   };

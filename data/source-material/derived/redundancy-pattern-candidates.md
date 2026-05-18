@@ -1,4 +1,4 @@
-# Redundancy Patterns Not Implemented
+# Redundancy Pattern Candidates
 
 No remaining redundancy pattern candidates are waiting in this file.
 

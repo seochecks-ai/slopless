@@ -4,6 +4,7 @@ import { RuleHelper } from "textlint-rule-helper";
 import { splitSentences } from "../../../shared/text/sentences.js";
 import { sourceText } from "../../../shared/text/traverse.js";
 import { splitWhitespace } from "../../../shared/text/whitespace.js";
+import { emitTextlintFinding } from "../../../adapters/textlint/report.js";
 
 type RepeatMatch = {
   readonly end: number;
@@ -157,7 +158,7 @@ function findRepeatedFrames(text: string): RepeatMatch[] {
 }
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
   const helper = new RuleHelper(context);
   const ignoredParents = [
     Syntax.List,
@@ -179,20 +180,18 @@ const rule: TextlintRuleModule = (context) => {
       ];
 
       for (const match of matches) {
-        report(
-          node,
-          new RuleError(
+        emitTextlintFinding(context, {
+          node: node,
+          ruleId: "syntactic-patterns:triple-repeat",
+          message:
             match.kind === "triple"
               ? `Triple repeat opener found: "${match.opener}". Vary the sentence openers.`
               : `Repeated sentence frame found: "${match.opener}". Vary the sentence frame.`,
-            {
-              padding: locator.range([
-                source.originalStartFor(match.start),
-                source.originalEndFor(match.end)
-              ])
-            }
-          )
-        );
+          range: {
+            start: source.originalStartFor(match.start),
+            end: source.originalEndFor(match.end)
+          }
+        });
       }
     }
   };

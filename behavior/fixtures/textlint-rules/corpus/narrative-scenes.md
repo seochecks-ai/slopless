@@ -1,8 +1,10 @@
 # narrative scene study
 
-These passages collect scene-level prose examples, including thin atmospheric lines and concrete controls.
+These passages collect scene-level prose examples, including thin atmospheric lines and concrete controls. The topic stays inside workshop scenes, training-yard notes, and scene craft examples.
 
 ## semantic-thinness
+
+The first draft follows a repair lesson after a training accident. The signals below keep the empty summary lines intact, with brief control lines kept near the same scene material.
 
 The point is not control. The point is repair.
 
@@ -92,6 +94,8 @@ It became more real.
 
 The room felt still.
 
+The repair report then switches to concrete causes and physical details. These lines are kept as controls for the same scene vocabulary.
+
 Safety starts with installing smoke alarms in every bedroom.
 
 Her eyes moved from the shadows to the rooftops, searching for the lantern signal.
@@ -137,6 +141,8 @@ They stood by the north exit at thirteen minutes after eight.
 The lesson was simple: rotate the signing key every 30 days.
 
 ## syntactic-patterns
+
+The next group reads like advice notes written after the same failed lesson. The lines keep contrast and framing signals in short paragraphs.
 
 After all, most people expect the process to explain itself.
 
@@ -194,6 +200,8 @@ The job is to reduce the fuel, hold the limit, and teach the next repair.
 
 ## narrative source patterns
 
+This section keeps stock scene language beside literal uses of the same surface words. The bad examples stay in a lantern-room scene.
+
 Her heart pounded in her chest as the door opened.
 
 A shiver ran down her spine when the lights failed.
@@ -211,6 +219,8 @@ The torch was casting long shadows across the wall.
 Days turned into weeks before the letters arrived.
 
 The sun dipped below the horizon.
+
+The control examples move the same words into medical, stage, billing, and sensor contexts.
 
 The cardiologist recorded her heart rate in her chart.
 
@@ -242,6 +252,8 @@ The sun dipped below the horizon because the sensor was mounted on a moving rig.
 
 ## Sunstone source patterns
 
+The Sunstone block follows Cassia and Arden through a dock, courtyard, and roof sequence. The preserved lines are kept as the scene beats.
+
 Fear had no place in her schedule.
 
 The south pier was a graveyard of shadows and salt spray.
@@ -260,6 +272,8 @@ Arden climbed the crates next to her. He pulled himself up to the roof edge. Ard
 
 Cassia's ears twitched. Her tail angled low. Her paws shifted on the roof tile.
 
+The control lines keep the same nouns and actions, but attach them to plain causes or clear tasks.
+
 Fear had no place in the posted evacuation plan because the exits were marked and staffed.
 
 The courtyard smelled of ash because the kiln had cracked during firing.
@@ -271,6 +285,8 @@ Cassia looked for the torn stitch under the table and found it beside the left l
 Arden climbed the crates to reach the broken pulley, then wedged the rope under the iron hook.
 
 ## expanded Sunstone source patterns
+
+The expanded block stays in the same training yard. It keeps emotion-as-substance lines, blurred-scene lines, and repeated body-action lines together.
 
 The anger finally melted out of her posture.
 
@@ -301,6 +317,8 @@ Liska took a deep breath. Her voice was low. A smile played on her lips.
 Arden let out a breath. His voice was low. A smile played on his lips.
 
 Cassia took a deep breath. She let out a breath. Her voice was low.
+
+The controls keep the words literal, causal, or task-bound.
 
 The wax melted out of the mold because the kiln overheated.
 
@@ -339,3 +357,17 @@ The dispatcher said the voice was low because the radio battery was failing.
 The actor practiced a smile played on his lips until the director stopped him.
 
 Liska took a deep breath, counted the rope knots, and tied the loose end to the post.
+
+## negative contrast frames
+
+The closing block keeps compact contrast signals inside the gate and ledger scene.
+
+Cassia looked at the chalk mark on the gate. It was no longer a target. It was noise.
+
+The pause was not a delay. It was a warning.
+
+She did not wait for anyone to ask her a question. She pointed a small paw toward the ceiling.
+
+He didn't argue with the guard. Instead, he opened the ledger.
+
+The clerk checked the deployment notice. The beta endpoint is no longer available. It was removed after the migration. She did not wait because the clinic was closing. The status is not final because the review is still open.

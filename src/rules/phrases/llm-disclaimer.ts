@@ -7,6 +7,7 @@ import {
 } from "../../shared/matchers/prose-patterns.js";
 import { allParagraphSentences } from "../../shared/text/sections.js";
 import llmDisclaimerExpansions from "./data/llm-disclaimer-expansions.json" with { type: "json" };
+import { emitTextlintFinding } from "../../adapters/textlint/report.js";
 
 const START_PATTERNS = [
   "as a language model",
@@ -59,7 +60,7 @@ function matchDisclaimer(sentence: string): string | undefined {
 }
 
 const rule: TextlintRuleModule = (context) => {
-  const { Syntax, RuleError, locator, report } = context;
+  const { Syntax } = context;
 
   return {
     [Syntax.Document](node: TxtDocumentNode): void {
@@ -70,18 +71,15 @@ const rule: TextlintRuleModule = (context) => {
           continue;
         }
 
-        report(
-          item.paragraph,
-          new RuleError(
-            `LLM disclaimer found: "${matched}". Remove assistant leakage.`,
-            {
-              padding: locator.range([
-                item.source.originalStartFor(item.sentence.start),
-                item.source.originalEndFor(item.sentence.end)
-              ])
-            }
-          )
-        );
+        emitTextlintFinding(context, {
+          node: item.paragraph,
+          ruleId: "phrases:llm-disclaimer",
+          message: `LLM disclaimer found: "${matched}". Remove assistant leakage.`,
+          range: {
+            start: item.source.originalStartFor(item.sentence.start),
+            end: item.source.originalEndFor(item.sentence.end)
+          }
+        });
       }
     }
   };

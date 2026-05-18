@@ -1,4 +1,4 @@
-# Narrative Slop Not Implemented
+# Narrative Slop Candidates
 
 ## Source File Paths Used
 
@@ -9,7 +9,7 @@
 - `data/source-material/llm-slop-lists/community-gists/chrisgherbert-chat-gpt-cliches.md`
 - `behavior/fixtures/textlint-rules/corpus/narrative-scenes.md`
 
-## Not Implemented
+## Current State
 
 No remaining narrative slop candidates are waiting in this file.
 
