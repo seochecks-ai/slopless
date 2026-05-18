@@ -1968,6 +1968,62 @@
       "bucket": "no-hits",
       "source": "cases/syntactic-patterns/no-hits.md",
       "line": 107
+    },
+    {
+      "text": "The report cites this result :contentReference[oaicite:3]{index=3}.",
+      "family": "orthography",
+      "bucket": "hits",
+      "source": "cases/orthography/hits.md",
+      "line": 45
+    },
+    {
+      "text": "The appendix points to sandbox:/mnt/data/results.csv.",
+      "family": "orthography",
+      "bucket": "hits",
+      "source": "cases/orthography/hits.md",
+      "line": 47
+    },
+    {
+      "text": "The draft still contains [CITATION NEEDED] in the final copy.",
+      "family": "orthography",
+      "bucket": "hits",
+      "source": "cases/orthography/hits.md",
+      "line": 49
+    },
+    {
+      "text": "The editor left [INSERT TEXT] in the published note.",
+      "family": "orthography",
+      "bucket": "hits",
+      "source": "cases/orthography/hits.md",
+      "line": 51
+    },
+    {
+      "text": "Lorem ipsum appears in the published article.",
+      "family": "orthography",
+      "bucket": "hits",
+      "source": "cases/orthography/hits.md",
+      "line": 53
+    },
+    {
+      "text": "The template guide quotes \"[PLACEHOLDER]\" as an unfinished marker.",
+      "family": "orthography",
+      "bucket": "no-hits",
+      "source": "cases/orthography/no-hits.md",
+      "line": 49
+    },
+    {
+      "text": "The style guide quotes \"Lorem ipsum\" while explaining placeholder copy.",
+      "family": "orthography",
+      "bucket": "no-hits",
+      "source": "cases/orthography/no-hits.md",
+      "line": 51
+    },
+    {
+      "text": "The security note mentions chatgpt.com without a tracking marker.",
+      "family": "orthography",
+      "bucket": "no-hits",
+      "source": "cases/orthography/no-hits.md",
+      "line": 53
     }
   ]
 }

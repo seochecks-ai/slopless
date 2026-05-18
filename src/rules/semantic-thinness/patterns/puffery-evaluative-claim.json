@@ -1,0 +1,56 @@
+{
+  "id": "puffery-evaluative-claim",
+  "class": "puffery",
+  "purpose": "Catch evaluative praise frames that assert prestige, breakthrough value, or greatness without naming concrete evidence.",
+  "matchMode": "full",
+  "maxTokens": 12,
+  "templates": [
+    "the {prestigeRole} {impactVerb} the {genericObject} forever.",
+    "the {productSubject} represents an unprecedented {breakthroughNoun}.",
+    "the {productSubject} is a masterpiece of {domainNoun}.",
+    "the {eventSubject} created the best version of the {workflowNoun}.",
+    "the golden standard for {domainNoun} has arrived.",
+    "the {eventSubject} marks a very special achievement.",
+    "the {actorSubject} delivered excellent infrastructure for every user."
+  ],
+  "slots": {
+    "prestigeRole": [
+      "renowned architect",
+      "renowned researcher",
+      "esteemed researcher",
+      "famous founder",
+      "famous architect"
+    ],
+    "impactVerb": ["changed", "transformed", "reshaped", "redefined"],
+    "genericObject": ["city", "field", "industry", "workflow", "world"],
+    "productSubject": ["product", "platform", "tool", "system", "service"],
+    "breakthroughNoun": ["breakthrough", "achievement", "advance", "milestone"],
+    "domainNoun": ["automation", "education", "modern design", "operations"],
+    "eventSubject": ["launch", "release", "update", "rollout"],
+    "workflowNoun": ["workflow", "process", "system", "platform"],
+    "actorSubject": ["team", "company", "group", "organization"]
+  },
+  "rejectIf": [
+    "sentence names a concrete metric, date, source, citation, title, quote, or named person",
+    "sentence uses an evaluative term inside a quotation",
+    "sentence provides a concrete basis for the evaluation"
+  ],
+  "positiveExamples": [
+    "The renowned architect changed the city forever.",
+    "The product represents an unprecedented breakthrough.",
+    "The tool is a masterpiece of modern design.",
+    "The launch created the best version of the workflow.",
+    "The golden standard for automation has arrived.",
+    "The team delivered excellent infrastructure for every user."
+  ],
+  "negativeExamples": [
+    "The renowned architect Lina Bo Bardi designed the museum in 1951.",
+    "The benchmark reported the best score, 94.1 percent, on the validation set.",
+    "The review quoted \"masterpiece\" while disagreeing with the marketing copy.",
+    "The 1918 armistice was unprecedented in the regiment's records."
+  ],
+  "notes": [
+    "This uses source-backed puffery terms from the Wikipedia puffery material.",
+    "Broad words are intentionally not banned by themselves."
+  ]
+}

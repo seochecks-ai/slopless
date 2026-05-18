@@ -6,6 +6,7 @@ import { countWhitespaceSeparatedWords } from "../../shared/text/whitespace.js";
 import { emitTextlintFinding } from "../../adapters/textlint/report.js";
 
 const MAX_DRAMATIC_AFTER_COLON_WORDS = 5;
+const CONTENT_REFERENCE_MARKER = ":contentReference[";
 
 type DramaticColonMatch = {
   readonly end: number;
@@ -83,6 +84,10 @@ function dramaticColonAt(
   text: string,
   colonIndex: number
 ): DramaticColonMatch | undefined {
+  if (isArtifactColon(text, colonIndex)) {
+    return undefined;
+  }
+
   const end = sentenceEndAfter(text, colonIndex + 1);
   const afterColon = text.slice(colonIndex + 1, end);
   const trimStart = firstNonWhitespaceIndex(afterColon);
@@ -106,6 +111,21 @@ function dramaticColonAt(
     start: colonIndex + 1 + trimStart,
     text: trimmed
   };
+}
+
+function isArtifactColon(text: string, colonIndex: number): boolean {
+  const lowercase = text.toLocaleLowerCase("en");
+  const before = lowercase.slice(Math.max(0, colonIndex - 12), colonIndex + 1);
+
+  return (
+    lowercase.startsWith(
+      CONTENT_REFERENCE_MARKER.toLocaleLowerCase("en"),
+      colonIndex
+    ) ||
+    before.endsWith("[oaicite:") ||
+    before.endsWith("sandbox:") ||
+    text[colonIndex + 1] === "/"
+  );
 }
 
 function findDramaticColonMatches(text: string): DramaticColonMatch[] {

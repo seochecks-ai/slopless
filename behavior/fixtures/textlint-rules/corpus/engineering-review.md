@@ -733,3 +733,27 @@ The tax credit is not the rebate.
 The test did not pass because the fixture path was wrong.
 
 The launch was not only late because the vendor missed the export.
+
+## evaluative claim review
+
+The release draft used praise where it needed evidence.
+
+The renowned architect changed the city forever.
+
+The product represents an unprecedented breakthrough.
+
+The tool is a masterpiece of modern design.
+
+The launch created the best version of the workflow.
+
+The golden standard for automation has arrived.
+
+The controls kept concrete attribution and measurements.
+
+The renowned architect Lina Bo Bardi designed the museum in 1951.
+
+The benchmark reported the best score, 94.1 percent, on the validation set.
+
+The review quoted "masterpiece" while disagreeing with the marketing copy.
+
+The 1918 armistice was unprecedented in the regiment's records.

@@ -79,3 +79,11 @@ The haze over the harbor came from smoke after the warehouse fire.
 The rest of the drill was a blur because the camera lens cracked.
 
 Everything after the bell was a haze because smoke filled the hall.
+
+The renowned architect Lina Bo Bardi designed the museum in 1951.
+
+The benchmark reported the best score, 94.1 percent, on the validation set.
+
+The review quoted "masterpiece" while disagreeing with the marketing copy.
+
+The 1918 armistice was unprecedented in the regiment's records.

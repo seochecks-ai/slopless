@@ -5452,6 +5452,121 @@
         "ruleId": "response-wrapper",
         "severity": 2,
         "type": "lint"
+      },
+      {
+        "column": 30,
+        "index": 18284,
+        "line": 601,
+        "loc": {
+          "end": {
+            "column": 67,
+            "line": 601
+          },
+          "start": {
+            "column": 30,
+            "line": 601
+          }
+        },
+        "message": "Artifact placeholder found: OpenAI citation marker. Remove generated or unfinished placeholder residue.",
+        "range": [
+          18284,
+          18321
+        ],
+        "ruleId": "artifact-placeholders",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 24,
+        "index": 18347,
+        "line": 603,
+        "loc": {
+          "end": {
+            "column": 42,
+            "line": 603
+          },
+          "start": {
+            "column": 24,
+            "line": 603
+          }
+        },
+        "message": "Artifact placeholder found: OpenAI sandbox path. Remove generated or unfinished placeholder residue.",
+        "range": [
+          18347,
+          18365
+        ],
+        "ruleId": "artifact-placeholders",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 26,
+        "index": 18404,
+        "line": 605,
+        "loc": {
+          "end": {
+            "column": 43,
+            "line": 605
+          },
+          "start": {
+            "column": 26,
+            "line": 605
+          }
+        },
+        "message": "Artifact placeholder found: unfinished citation placeholder. Remove generated or unfinished placeholder residue.",
+        "range": [
+          18404,
+          18421
+        ],
+        "ruleId": "artifact-placeholders",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 17,
+        "index": 18458,
+        "line": 607,
+        "loc": {
+          "end": {
+            "column": 30,
+            "line": 607
+          },
+          "start": {
+            "column": 17,
+            "line": 607
+          }
+        },
+        "message": "Artifact placeholder found: unfinished insert placeholder. Remove generated or unfinished placeholder residue.",
+        "range": [
+          18458,
+          18471
+        ],
+        "ruleId": "artifact-placeholders",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 18496,
+        "line": 609,
+        "loc": {
+          "end": {
+            "column": 12,
+            "line": 609
+          },
+          "start": {
+            "column": 1,
+            "line": 609
+          }
+        },
+        "message": "Artifact placeholder found: placeholder text. Remove generated or unfinished placeholder residue.",
+        "range": [
+          18496,
+          18507
+        ],
+        "ruleId": "artifact-placeholders",
+        "severity": 2,
+        "type": "lint"
       }
     ]
   },
@@ -14289,6 +14404,121 @@
         "ruleId": "negation-reframe",
         "severity": 2,
         "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 27110,
+        "line": 741,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 741
+          },
+          "start": {
+            "column": 1,
+            "line": 741
+          }
+        },
+        "message": "Semantic thinness (puffery-evaluative-claim): Catch evaluative praise frames that assert prestige, breakthrough value, or greatness without naming concrete evidence. Matched template: the {prestigeRole} {impactVerb} the {genericObject} forever.",
+        "range": [
+          27110,
+          27158
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 27160,
+        "line": 743,
+        "loc": {
+          "end": {
+            "column": 54,
+            "line": 743
+          },
+          "start": {
+            "column": 1,
+            "line": 743
+          }
+        },
+        "message": "Semantic thinness (puffery-evaluative-claim): Catch evaluative praise frames that assert prestige, breakthrough value, or greatness without naming concrete evidence. Matched template: the {productSubject} represents an unprecedented {breakthroughNoun}.",
+        "range": [
+          27160,
+          27213
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 27215,
+        "line": 745,
+        "loc": {
+          "end": {
+            "column": 44,
+            "line": 745
+          },
+          "start": {
+            "column": 1,
+            "line": 745
+          }
+        },
+        "message": "Semantic thinness (puffery-evaluative-claim): Catch evaluative praise frames that assert prestige, breakthrough value, or greatness without naming concrete evidence. Matched template: the {productSubject} is a masterpiece of {domainNoun}.",
+        "range": [
+          27215,
+          27258
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 27260,
+        "line": 747,
+        "loc": {
+          "end": {
+            "column": 53,
+            "line": 747
+          },
+          "start": {
+            "column": 1,
+            "line": 747
+          }
+        },
+        "message": "Semantic thinness (puffery-evaluative-claim): Catch evaluative praise frames that assert prestige, breakthrough value, or greatness without naming concrete evidence. Matched template: the {eventSubject} created the best version of the {workflowNoun}.",
+        "range": [
+          27260,
+          27312
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 27314,
+        "line": 749,
+        "loc": {
+          "end": {
+            "column": 48,
+            "line": 749
+          },
+          "start": {
+            "column": 1,
+            "line": 749
+          }
+        },
+        "message": "Semantic thinness (puffery-evaluative-claim): Catch evaluative praise frames that assert prestige, breakthrough value, or greatness without naming concrete evidence. Matched template: the golden standard for {domainNoun} has arrived.",
+        "range": [
+          27314,
+          27361
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
       }
     ]
   },
@@ -21053,6 +21283,121 @@
         "ruleId": "hidden-unicode-controls",
         "severity": 2,
         "type": "lint"
+      },
+      {
+        "column": 30,
+        "index": 1031,
+        "line": 45,
+        "loc": {
+          "end": {
+            "column": 67,
+            "line": 45
+          },
+          "start": {
+            "column": 30,
+            "line": 45
+          }
+        },
+        "message": "Artifact placeholder found: OpenAI citation marker. Remove generated or unfinished placeholder residue.",
+        "range": [
+          1031,
+          1068
+        ],
+        "ruleId": "artifact-placeholders",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 24,
+        "index": 1094,
+        "line": 47,
+        "loc": {
+          "end": {
+            "column": 42,
+            "line": 47
+          },
+          "start": {
+            "column": 24,
+            "line": 47
+          }
+        },
+        "message": "Artifact placeholder found: OpenAI sandbox path. Remove generated or unfinished placeholder residue.",
+        "range": [
+          1094,
+          1112
+        ],
+        "ruleId": "artifact-placeholders",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 26,
+        "index": 1151,
+        "line": 49,
+        "loc": {
+          "end": {
+            "column": 43,
+            "line": 49
+          },
+          "start": {
+            "column": 26,
+            "line": 49
+          }
+        },
+        "message": "Artifact placeholder found: unfinished citation placeholder. Remove generated or unfinished placeholder residue.",
+        "range": [
+          1151,
+          1168
+        ],
+        "ruleId": "artifact-placeholders",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 17,
+        "index": 1205,
+        "line": 51,
+        "loc": {
+          "end": {
+            "column": 30,
+            "line": 51
+          },
+          "start": {
+            "column": 17,
+            "line": 51
+          }
+        },
+        "message": "Artifact placeholder found: unfinished insert placeholder. Remove generated or unfinished placeholder residue.",
+        "range": [
+          1205,
+          1218
+        ],
+        "ruleId": "artifact-placeholders",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1243,
+        "line": 53,
+        "loc": {
+          "end": {
+            "column": 12,
+            "line": 53
+          },
+          "start": {
+            "column": 1,
+            "line": 53
+          }
+        },
+        "message": "Artifact placeholder found: placeholder text. Remove generated or unfinished placeholder residue.",
+        "range": [
+          1243,
+          1254
+        ],
+        "ruleId": "artifact-placeholders",
+        "severity": 2,
+        "type": "lint"
       }
     ]
   },
@@ -26303,6 +26648,121 @@
         "range": [
           1905,
           1938
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1940,
+        "line": 113,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 113
+          },
+          "start": {
+            "column": 1,
+            "line": 113
+          }
+        },
+        "message": "Semantic thinness (puffery-evaluative-claim): Catch evaluative praise frames that assert prestige, breakthrough value, or greatness without naming concrete evidence. Matched template: the {prestigeRole} {impactVerb} the {genericObject} forever.",
+        "range": [
+          1940,
+          1988
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1990,
+        "line": 115,
+        "loc": {
+          "end": {
+            "column": 54,
+            "line": 115
+          },
+          "start": {
+            "column": 1,
+            "line": 115
+          }
+        },
+        "message": "Semantic thinness (puffery-evaluative-claim): Catch evaluative praise frames that assert prestige, breakthrough value, or greatness without naming concrete evidence. Matched template: the {productSubject} represents an unprecedented {breakthroughNoun}.",
+        "range": [
+          1990,
+          2043
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2045,
+        "line": 117,
+        "loc": {
+          "end": {
+            "column": 44,
+            "line": 117
+          },
+          "start": {
+            "column": 1,
+            "line": 117
+          }
+        },
+        "message": "Semantic thinness (puffery-evaluative-claim): Catch evaluative praise frames that assert prestige, breakthrough value, or greatness without naming concrete evidence. Matched template: the {productSubject} is a masterpiece of {domainNoun}.",
+        "range": [
+          2045,
+          2088
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2090,
+        "line": 119,
+        "loc": {
+          "end": {
+            "column": 53,
+            "line": 119
+          },
+          "start": {
+            "column": 1,
+            "line": 119
+          }
+        },
+        "message": "Semantic thinness (puffery-evaluative-claim): Catch evaluative praise frames that assert prestige, breakthrough value, or greatness without naming concrete evidence. Matched template: the {eventSubject} created the best version of the {workflowNoun}.",
+        "range": [
+          2090,
+          2142
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2144,
+        "line": 121,
+        "loc": {
+          "end": {
+            "column": 48,
+            "line": 121
+          },
+          "start": {
+            "column": 1,
+            "line": 121
+          }
+        },
+        "message": "Semantic thinness (puffery-evaluative-claim): Catch evaluative praise frames that assert prestige, breakthrough value, or greatness without naming concrete evidence. Matched template: the golden standard for {domainNoun} has arrived.",
+        "range": [
+          2144,
+          2191
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,

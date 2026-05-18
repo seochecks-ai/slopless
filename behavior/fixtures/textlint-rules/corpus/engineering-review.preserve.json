@@ -2367,6 +2367,69 @@
       "bucket": "no-hits",
       "source": "cases/syntactic-patterns/no-hits.md",
       "line": 123
+    },
+    {
+      "text": "The renowned architect changed the city forever.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 113
+    },
+    {
+      "text": "The product represents an unprecedented breakthrough.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 115
+    },
+    {
+      "text": "The tool is a masterpiece of modern design.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 117
+    },
+    {
+      "text": "The launch created the best version of the workflow.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 119
+    },
+    {
+      "text": "The golden standard for automation has arrived.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 121
+    },
+    {
+      "text": "The renowned architect Lina Bo Bardi designed the museum in 1951.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 83
+    },
+    {
+      "text": "The benchmark reported the best score, 94.1 percent, on the validation set.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 85
+    },
+    {
+      "text": "The review quoted \"masterpiece\" while disagreeing with the marketing copy.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 87
+    },
+    {
+      "text": "The 1918 armistice was unprecedented in the regiment's records.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 89
     }
   ]
 }

@@ -595,3 +595,21 @@ The editor kept examples separate from live prose.
 The documentation quotes "as an AI" while explaining assistant leakage.
 
 The editor asked whether the team would like me to cut the aside before publication.
+
+The published appendix still contained generated artifact residue.
+
+The report cites this result :contentReference[oaicite:3]{index=3}.
+
+The appendix points to sandbox:/mnt/data/results.csv.
+
+The draft still contains [CITATION NEEDED] in the final copy.
+
+The editor left [INSERT TEXT] in the published note.
+
+Lorem ipsum appears in the published article.
+
+The template guide quotes "[PLACEHOLDER]" as an unfinished marker.
+
+The style guide quotes "Lorem ipsum" while explaining placeholder copy.
+
+The security note mentions chatgpt.com without a tracking marker.

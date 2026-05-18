@@ -2,56 +2,16 @@
 
 This is the active queue for `legacy/source-material/expansion-2026-05-18/`.
 
-Implemented material from the latest AI-slop gap batch is archived in:
+Implemented material from the latest batches is archived in:
 
 - `implemented/2026-05-18-ai-slop-gaps.md`
+- `implemented/2026-05-18-artifact-placeholders-and-puffery.md`
 
 Raw captures and extraction reports stay in place as provenance. The list below is the working implementation review queue.
 
 ## Best Next Implementation Candidates
 
-### 1. Assistant artifact and placeholder residue
-
-Source files:
-
-- `rule-libraries/derived/high-confidence-candidates.json`
-- `rule-libraries/derived/fixture-corpus-ideas.md`
-- `ai-slop/raw/slop-guard-rs/lib.rs`
-
-Signals:
-
-- `:contentReference[oaicite:N]{index=N}`
-- `[oaicite:N]`
-- `oai_citation`
-- `sandbox:/mnt/data/`
-- `utm_source=chatgpt.com`
-- `utm_source=openai`
-- `[INSERT TEXT]`
-- `[PLACEHOLDER]`
-- `[CITATION NEEDED]`
-- `Lorem ipsum`
-
-Recommended implementation:
-
-- Existing family: `orthography` or `markdown-layout`.
-- Better rule name: `artifact-placeholders`.
-- Scan raw Markdown text and text nodes.
-- Skip fenced code, inline code, blockquotes that explicitly document the artifact, and quoted examples where current quote detection applies.
-
-Why next:
-
-- It is deterministic.
-- It has low false-positive risk.
-- It catches generated residue that should almost never ship.
-- It does not need a model, parser, or density gate.
-
-Required no-hit controls:
-
-- A documentation sentence that quotes `:contentReference[oaicite:3]{index=3}` as an example.
-- A code block containing `[PLACEHOLDER]`.
-- A typography or template guide explaining `Lorem ipsum`.
-
-### 2. Markdown file artifacts
+### 1. Markdown file artifacts
 
 Source files:
 
@@ -87,7 +47,7 @@ Required no-hit controls:
 - A valid Markdown table.
 - A heading that uses bold text inside the body but is not itself a fully bold heading.
 
-### 3. Formal transition opener density
+### 2. Formal transition opener density
 
 Source files:
 
@@ -126,7 +86,7 @@ Required no-hit controls:
 - Legal, academic, or technical prose with one formal transition.
 - A blockquote with repeated transitions.
 
-### 4. Uncited authority frames
+### 3. Uncited authority frames
 
 Source files:
 
@@ -170,53 +130,7 @@ Required no-hit controls:
 - `Studies have shown` followed by a Markdown citation link.
 - A quoted example of bad authority language.
 
-### 5. Puffery and evaluative claim frames
-
-Source files:
-
-- `academic-nlp/derived/subjectivity-and-puffery-candidates.json`
-- `academic-nlp/derived/wikipedia-quality-labels.json`
-
-Signals:
-
-- `renowned`
-- `famous`
-- `esteemed`
-- `unprecedented`
-- `greatest`
-- `best version`
-- `masterpiece`
-- `excellent infrastructure`
-- `very special achievement`
-
-Recommended implementation:
-
-- Existing family: `semantic-thinness` or `phrases`.
-- Do not ban terms globally.
-- Use bounded frames:
-  - superlative plus generic noun without evidence
-  - prestige adjective plus title/person/object
-  - `unprecedented` plus generic event/change/move
-- Prefer a density or missing-evidence gate.
-
-Why next:
-
-- It uses labeled source material.
-- It fits the "empty evaluative group summary" problem.
-- It is safer as templates than as a word list.
-
-Risks:
-
-- Review prose and historical writing can use evaluative words legitimately.
-- Product pages intentionally use promotional language.
-
-Required no-hit controls:
-
-- A cited review quote using `renowned`.
-- A historical sentence where `unprecedented` is concrete and dated.
-- A benchmark result with a numeric best score.
-
-### 6. Repeated sentence starts
+### 4. Repeated sentence starts
 
 Source files:
 
@@ -331,11 +245,9 @@ Reason not first:
 
 Implement in this order:
 
-1. `artifact-placeholders`
-2. `markdown-layout` artifact rules
-3. `formal-transition-density`
-4. `uncited-authority`
-5. `puffery/evaluative claim frames`
-6. `repeated-sentence-starts`
+1. `markdown-layout` artifact rules
+2. `formal-transition-density`
+3. `uncited-authority`
+4. `repeated-sentence-starts`
 
-The first two are low-risk artifact rules. The next four are prose-quality rules and need stricter fixture review.
+Continue with Markdown artifact rules next.

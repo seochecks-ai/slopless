@@ -48,6 +48,7 @@
     "./rules/narrative-slop/flat-action-cadence": "./dist/rules/narrative-slop/flat-action-cadence.js",
     "./rules/narrative-slop/narrative-cliches": "./dist/rules/narrative-slop/narrative-cliches.js",
     "./rules/narrative-slop/perception-verb-density": "./dist/rules/narrative-slop/perception-verb-density.js",
+    "./rules/orthography/artifact-placeholders": "./dist/rules/orthography/artifact-placeholders.js",
     "./rules/orthography/colon-dramatic": "./dist/rules/orthography/colon-dramatic.js",
     "./rules/orthography/em-dashes": "./dist/rules/orthography/em-dashes.js",
     "./rules/orthography/exclamation-density": "./dist/rules/orthography/exclamation-density.js",

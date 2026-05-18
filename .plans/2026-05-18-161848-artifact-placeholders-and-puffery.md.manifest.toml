@@ -1,0 +1,107 @@
+plan = ".plans/2026-05-18-161848-artifact-placeholders-and-puffery.md"
+
+[[new_rule]]
+id = "artifact-placeholders"
+family = "orthography"
+rule_id = "orthography:artifact-placeholders"
+path = "src/rules/orthography/artifact-placeholders.ts"
+registry = "src/registries/orthography.ts"
+export = "./rules/orthography/artifact-placeholders"
+preset = true
+required_text = [
+  ":contentReference[oaicite:",
+  "[oaicite:",
+  "sandbox:/mnt/data/",
+  "utm_source=chatgpt.com",
+  "utm_source=openai",
+  "[CITATION NEEDED]",
+  "[INSERT TEXT]",
+  "[PLACEHOLDER]",
+  "Lorem ipsum",
+  "oai_citation"
+]
+
+[[rule_adjustment]]
+id = "colon-dramatic-artifact-skip"
+path = "src/rules/orthography/colon-dramatic.ts"
+required_text = [
+  "isArtifactColon",
+  ":contentReference[",
+  "[oaicite:",
+  "sandbox:"
+]
+
+[[semantic_pattern]]
+id = "puffery-evaluative-claim"
+path = "src/rules/semantic-thinness/patterns/puffery-evaluative-claim.json"
+imported_by = "src/rules/semantic-thinness/private/pattern-data-d.ts"
+required_text = [
+  "puffery-evaluative-claim",
+  "unprecedented",
+  "masterpiece",
+  "golden standard",
+  "very special achievement",
+  "best version"
+]
+
+[[fixture_case]]
+family = "orthography"
+kind = "hits"
+path = "behavior/fixtures/textlint-rules/cases/orthography/hits.md"
+required_text = [
+  ":contentReference[oaicite:3]{index=3}",
+  "sandbox:/mnt/data/results.csv",
+  "[CITATION NEEDED]",
+  "[INSERT TEXT]",
+  "Lorem ipsum"
+]
+
+[[fixture_case]]
+family = "orthography"
+kind = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/orthography/no-hits.md"
+required_text = [
+  "quotes \"[PLACEHOLDER]\"",
+  "quotes \"Lorem ipsum\"",
+  "mentions chatgpt.com without a tracking marker"
+]
+
+[[fixture_case]]
+family = "semantic-thinness"
+kind = "hits"
+path = "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md"
+required_text = [
+  "The renowned architect changed the city forever.",
+  "The product represents an unprecedented breakthrough.",
+  "The tool is a masterpiece of modern design.",
+  "The launch created the best version of the workflow.",
+  "The golden standard for automation has arrived."
+]
+
+[[fixture_case]]
+family = "semantic-thinness"
+kind = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md"
+required_text = [
+  "The renowned architect Lina Bo Bardi designed the museum in 1951.",
+  "The benchmark reported the best score, 94.1 percent, on the validation set.",
+  "The review quoted \"masterpiece\" while disagreeing with the marketing copy.",
+  "The 1918 armistice was unprecedented in the regiment's records."
+]
+
+[[fixture_corpus]]
+path = "behavior/fixtures/textlint-rules/corpus/editorial-style.md"
+required_text = [
+  ":contentReference[oaicite:3]{index=3}",
+  "sandbox:/mnt/data/results.csv",
+  "[CITATION NEEDED]",
+  "quotes \"[PLACEHOLDER]\""
+]
+
+[[fixture_corpus]]
+path = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+required_text = [
+  "The renowned architect changed the city forever.",
+  "The product represents an unprecedented breakthrough.",
+  "The benchmark reported the best score, 94.1 percent, on the validation set."
+]

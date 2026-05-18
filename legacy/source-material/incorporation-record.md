@@ -252,6 +252,63 @@ Active source candidates stay in `legacy/source-material/derived/*.md`. Reviewed
   - phrase rules skip quoted examples where supported by the matcher
   - negative-pivot fixtures include cause and ordinary contrast no-hits
 
+### Artifact Placeholders
+
+- Source:
+  - `legacy/source-material/expansion-2026-05-18/rule-libraries/derived/high-confidence-candidates.json`
+  - `legacy/source-material/expansion-2026-05-18/rule-libraries/derived/fixture-corpus-ideas.md`
+  - `legacy/source-material/expansion-2026-05-18/ai-slop/raw/slop-guard-rs/lib.rs`
+- Archive record:
+  - `legacy/source-material/expansion-2026-05-18/implemented/2026-05-18-artifact-placeholders-and-puffery.md`
+- Rule:
+  - `src/rules/orthography/artifact-placeholders.ts`
+- Implemented as:
+  - generated artifact marker scanner
+  - bracket-placeholder scanner
+  - link URL scanner
+- Pattern examples:
+  - `:contentReference[oaicite:N]{index=N}`
+  - `[oaicite:N]`
+  - `oai_citation`
+  - `sandbox:/mnt/data/`
+  - `utm_source=chatgpt.com`
+  - `[CITATION NEEDED]`
+  - `[INSERT TEXT]`
+  - `[PLACEHOLDER]`
+  - `Lorem ipsum`
+- Local changes:
+  - nested `[oaicite:N]` inside `:contentReference[...]` is suppressed so one artifact reports once
+  - `colon-dramatic` skips known artifact-marker colons
+- False-positive controls:
+  - quoted examples are skipped
+  - blockquote examples are skipped
+  - inline code and fenced code are not traversed by the rule
+
+### Puffery Evaluative Claim Frames
+
+- Source:
+  - `legacy/source-material/expansion-2026-05-18/academic-nlp/derived/subjectivity-and-puffery-candidates.json`
+  - `legacy/source-material/expansion-2026-05-18/academic-nlp/derived/wikipedia-quality-labels.json`
+- Archive record:
+  - `legacy/source-material/expansion-2026-05-18/implemented/2026-05-18-artifact-placeholders-and-puffery.md`
+- Rule:
+  - `src/rules/semantic-thinness/semantic-thinness.ts`
+- Rule data:
+  - `src/rules/semantic-thinness/patterns/puffery-evaluative-claim.json`
+- Implemented as:
+  - bounded semantic-thinness templates
+- Pattern examples:
+  - `The renowned architect changed the city forever.`
+  - `The product represents an unprecedented breakthrough.`
+  - `The tool is a masterpiece of modern design.`
+  - `The launch created the best version of the workflow.`
+  - `The golden standard for automation has arrived.`
+- Local changes:
+  - broad evaluative words are not banned by themselves
+  - source puffery terms are used only inside closed frames
+- False-positive controls:
+  - no-hit controls cover named people, dates, numeric benchmark evidence, and quoted usage discussion
+
 ## Implemented Source-Derived Pattern Data
 
 - Wordiness:
