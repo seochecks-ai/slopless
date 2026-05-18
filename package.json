@@ -1,6 +1,6 @@
 {
   "name": "slopless",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Deterministic textlint rules for detecting slop in prose.",
   "license": "MIT",
   "repository": {
