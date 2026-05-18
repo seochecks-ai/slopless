@@ -9,7 +9,7 @@ Fixture cases, corpus prose, preserve metadata, approved fixture output, and sou
 - Added only exact phrases and one narrow template because these items have clear bad-writing signals without broad semantic inference.
 - Kept `continue on` unimplemented because it has common clean uses such as UI instructions and dates.
 - Limited `important to note` and `worth noting` to paragraph-start matching so quoted or mid-sentence technical references do not report.
-- Removed implemented items from `data/source-material/derived` and recorded them in `data/source-material/incorporation-record.md`.
+- Removed implemented items from `legacy/source-material/derived` and recorded them in `legacy/source-material/incorporation-record.md`.
 
 # Key Files For Context
 

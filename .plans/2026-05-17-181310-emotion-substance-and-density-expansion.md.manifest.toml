@@ -3,7 +3,7 @@ plan = ".plans/2026-05-17-181310-emotion-substance-and-density-expansion.md"
 golden_acceptance = "blocked_until_false_positive_review"
 
 [[source_note]]
-path = "data/source-material/derived/sunstone-emotion-substance-variants.md"
+path = "legacy/source-material/derived/sunstone-emotion-substance-variants.md"
 required_text = [
   "Positive Category 1: Emotion Drained",
   "Positive Category 2: Emotion Washed",
@@ -13,7 +13,7 @@ required_text = [
 ]
 
 [[source_note]]
-path = "data/source-material/derived/sunstone-action-density-variants.md"
+path = "legacy/source-material/derived/sunstone-action-density-variants.md"
 required_text = [
   "Positive: Body-Position Beats",
   "Positive: Blocking And Staging Movement",
@@ -104,7 +104,7 @@ required_no_hit_text = [
 ]
 
 [[source_record]]
-path = "data/source-material/incorporation-record.md"
+path = "legacy/source-material/incorporation-record.md"
 required_text = [
   "emotion-as-substance",
   "summary-fog-transition",

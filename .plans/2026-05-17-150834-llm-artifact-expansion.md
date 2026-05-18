@@ -16,7 +16,7 @@ The end state is stricter ownership:
 
 2. Add response-wrapper source data.
    - Create `src/families/syntactic-patterns/llm-artifacts/data/response-wrapper-patterns.json`.
-   - Include exact sentence starts and contains patterns from `data/source-material/derived/llm-artifact-candidates.md`.
+   - Include exact sentence starts and contains patterns from `legacy/source-material/derived/llm-artifact-candidates.md`.
    - Keep this narrow: no single-word vocabulary and no broad topic slots.
 
 3. Update `response-wrapper.ts`.
@@ -50,4 +50,4 @@ The end state is stricter ownership:
 - `behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md`
 - `behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md`
 - corpus/preserve files if parity verification requires it
-- `data/source-material/incorporation-record.md`
+- `legacy/source-material/incorporation-record.md`

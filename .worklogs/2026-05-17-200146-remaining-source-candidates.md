@@ -8,7 +8,7 @@ Implemented the remaining usable redundancy, wordiness, and narrative source can
 
 - Added redundancy and wordiness candidates to existing phrase data instead of creating new rules because those rules already own exact phrase matching and quoted-example suppression.
 - Added narrative candidates to `body-action-density` instead of `narrative-cliches` because those phrases are normal physical action in isolation.
-- Kept the source candidate files present, but cleared the implemented candidate lists so `data/source-material/derived` only records what remains unimplemented.
+- Kept the source candidate files present, but cleared the implemented candidate lists so `legacy/source-material/derived` only records what remains unimplemented.
 - Accepted the fixture3 golden output after checking that new no-hit files produced no findings and the new received output contained the expected phrase and density findings.
 
 ## Key Files
@@ -21,7 +21,7 @@ Implemented the remaining usable redundancy, wordiness, and narrative source can
 - `behavior/fixtures/textlint-rules/corpus/editorial-style.md`
 - `behavior/fixtures/textlint-rules/corpus/narrative-scenes.md`
 - `behavior/golden/textlint-rules/approved.normalized.json`
-- `data/source-material/incorporation-record.md`
+- `legacy/source-material/incorporation-record.md`
 
 ## Verification
 

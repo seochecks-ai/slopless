@@ -80,7 +80,7 @@ def verify_source_state(data: dict[str, Any], errors: list[str]) -> None:
     classified_paths = {
         str(row["path"]) for row in manifest_rows(data, "source_candidate_file")
     }
-    for path in sorted((ROOT / "data/source-material/derived").glob("*.md")):
+    for path in sorted((ROOT / "legacy/source-material/derived").glob("*.md")):
         relative = str(path.relative_to(ROOT))
         if relative not in classified_paths:
             errors.append(f"derived source file is not classified in manifest: {relative}")

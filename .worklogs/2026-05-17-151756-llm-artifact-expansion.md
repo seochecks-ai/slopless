@@ -22,7 +22,7 @@ The change moves chat-scaffold phrases out of `llm-disclaimer` ownership and int
 - `behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md`
 - `behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md`
 - `behavior/fixtures/textlint-rules/corpus/engineering-review.md`
-- `data/source-material/incorporation-record.md`
+- `legacy/source-material/incorporation-record.md`
 
 # Verification
 

@@ -6,22 +6,22 @@ No rule behavior changed.
 
 # Decisions Made
 
-- Removed implemented phrases and templates from `data/source-material/derived/*.md`.
+- Removed implemented phrases and templates from `legacy/source-material/derived/*.md`.
 - Replaced status terms such as active, archived, candidate, rejected, and partially active with implemented versus not implemented wording.
 - Kept unimplemented material grouped by family with direct reasons and required fixture work.
 - Did not accept fixture output because fixture behavior did not change.
 
 # Key Files For Context
 
-- `data/source-material/README.md`
-- `data/source-material/incorporation-record.md`
-- `data/source-material/derived/academic-slop-candidates.md`
-- `data/source-material/derived/cliche-template-candidates.md`
-- `data/source-material/derived/corporate-abstraction-candidates.md`
-- `data/source-material/derived/llm-artifact-candidates.md`
-- `data/source-material/derived/narrative-slop-candidates.md`
-- `data/source-material/derived/redundancy-pattern-candidates.md`
-- `data/source-material/derived/wordiness-pattern-candidates.md`
+- `legacy/source-material/README.md`
+- `legacy/source-material/incorporation-record.md`
+- `legacy/source-material/derived/academic-slop-candidates.md`
+- `legacy/source-material/derived/cliche-template-candidates.md`
+- `legacy/source-material/derived/corporate-abstraction-candidates.md`
+- `legacy/source-material/derived/llm-artifact-candidates.md`
+- `legacy/source-material/derived/narrative-slop-candidates.md`
+- `legacy/source-material/derived/redundancy-pattern-candidates.md`
+- `legacy/source-material/derived/wordiness-pattern-candidates.md`
 
 # Verification
 

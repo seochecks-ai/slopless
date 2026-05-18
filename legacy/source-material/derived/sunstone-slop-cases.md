@@ -6,7 +6,7 @@ Source: user-supplied Sunstone prose cases on 2026-05-17.
 
 Purpose: classify every supplied case into generalized rule-design groups so later rule work can add cases, no-hit controls, corpus prose, and implementation.
 
-Implemented examples were moved to `data/source-material/incorporation-record.md`.
+Implemented examples were moved to `legacy/source-material/incorporation-record.md`.
 
 The remaining notes in this file are source context only. They are not queued as active implementation candidates unless a future plan creates bounded templates and fixtures for them.
 
@@ -14,7 +14,7 @@ The remaining notes in this file are source context only. They are not queued as
 
 Likely family: `syntactic-patterns/contrast`.
 
-Implementation: moved to `data/source-material/incorporation-record.md`.
+Implementation: moved to `legacy/source-material/incorporation-record.md`.
 
 Generalized catch:
 
@@ -88,7 +88,7 @@ Notes:
 
 Likely family: `narrative-slop`.
 
-Implementation: moved to `data/source-material/incorporation-record.md`.
+Implementation: moved to `legacy/source-material/incorporation-record.md`.
 
 Generalized catch:
 
@@ -105,7 +105,7 @@ Notes:
 
 Likely family: `syntactic-patterns/repetition` or `narrative-slop`.
 
-Implementation: moved to `data/source-material/incorporation-record.md`.
+Implementation: moved to `legacy/source-material/incorporation-record.md`.
 
 Generalized catch:
 
@@ -123,7 +123,7 @@ Notes:
 
 Likely family: `semantic-thinness` or `narrative-slop`.
 
-Implementation: moved to `data/source-material/incorporation-record.md`.
+Implementation: moved to `legacy/source-material/incorporation-record.md`.
 
 Generalized catch:
 
@@ -142,7 +142,7 @@ Notes:
 
 Likely family: `semantic-thinness`.
 
-Implementation: moved to `data/source-material/incorporation-record.md`.
+Implementation: moved to `legacy/source-material/incorporation-record.md`.
 
 Generalized catch:
 
@@ -160,7 +160,7 @@ Notes:
 
 Likely family: `semantic-thinness`.
 
-Implementation: moved to `data/source-material/incorporation-record.md`.
+Implementation: moved to `legacy/source-material/incorporation-record.md`.
 
 Generalized catch:
 
@@ -177,7 +177,7 @@ Notes:
 
 Likely family: `narrative-slop` or `metrics`.
 
-Implementation: moved to `data/source-material/incorporation-record.md`.
+Implementation: moved to `legacy/source-material/incorporation-record.md`.
 
 Generalized catch:
 

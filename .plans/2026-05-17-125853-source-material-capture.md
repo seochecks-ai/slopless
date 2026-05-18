@@ -6,7 +6,7 @@ Create a local source-material archive for known slop, cliches, wordiness, bad p
 
 ## Approach
 
-- Add `data/source-material/` as the raw research/input area, separate from shipped rule lexicons under `src/families/*/data`.
+- Add `legacy/source-material/` as the raw research/input area, separate from shipped rule lexicons under `src/families/*/data`.
 - Store each source in its own folder with a `README.md` that records upstream URL, fetched files, item counts where practical, likely Slopless use, and caveats.
 - Download raw source files where the upstream exposes machine-readable files.
 - Convert sources that are only PDFs or web pages into Markdown notes with source links and extracted relevant lists where practical.
@@ -20,6 +20,6 @@ Create a local source-material archive for known slop, cliches, wordiness, bad p
 
 ## Files To Modify
 
-- `data/source-material/**`
+- `legacy/source-material/**`
 - `.plans/2026-05-17-125853-source-material-capture.md`
 - `.worklogs/<timestamp>-source-material-capture.md`

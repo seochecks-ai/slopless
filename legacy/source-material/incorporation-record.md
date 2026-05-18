@@ -2,7 +2,7 @@
 
 This file records source material already implemented in Slopless rules and source material reviewed and skipped.
 
-Active source candidates stay in `data/source-material/derived/*.md`. Reviewed skipped candidates are recorded here so active candidate files do not imply they are still queued for implementation.
+Active source candidates stay in `legacy/source-material/derived/*.md`. Reviewed skipped candidates are recorded here so active candidate files do not imply they are still queued for implementation.
 
 ## Implemented External Sources
 
@@ -249,7 +249,7 @@ Active source candidates stay in `data/source-material/derived/*.md`. Reviewed s
 ### Sunstone Slop Case Classification
 
 - Source:
-  - user-supplied Sunstone prose cases recorded in `data/source-material/derived/sunstone-slop-cases.md`
+  - user-supplied Sunstone prose cases recorded in `legacy/source-material/derived/sunstone-slop-cases.md`
 - Rules:
   - `src/rules/semantic-thinness/semantic-thinness.ts`
   - `src/rules/syntactic-patterns/contrast/negation-reframe.ts`
@@ -276,9 +276,9 @@ Active source candidates stay in `data/source-material/derived/*.md`. Reviewed s
 ### Emotion Substance And Action Density Expansion
 
 - Source:
-  - user-supplied Sunstone prose cases recorded in `data/source-material/derived/sunstone-slop-cases.md`
-  - generated variant notes in `data/source-material/derived/sunstone-emotion-substance-variants.md`
-  - generated variant notes in `data/source-material/derived/sunstone-action-density-variants.md`
+  - user-supplied Sunstone prose cases recorded in `legacy/source-material/derived/sunstone-slop-cases.md`
+  - generated variant notes in `legacy/source-material/derived/sunstone-emotion-substance-variants.md`
+  - generated variant notes in `legacy/source-material/derived/sunstone-action-density-variants.md`
 - Rules:
   - `src/rules/semantic-thinness/semantic-thinness.ts`
   - `src/rules/narrative-slop/body-action-density.ts`
@@ -356,12 +356,12 @@ These source-derived candidates were reviewed and deliberately not queued for im
 
 Source files:
 
-- `data/source-material/academic-slop/tortured-phrases/extracted/cabanac-2021-concept-note.md`
-- `data/source-material/academic-slop/tortured-phrases/problematic-paper-screener.md`
-- `data/source-material/academic-slop/tortured-phrases/extracted/social-sciences-fingerprints-preview.md`
-- `data/source-material/academic-slop/tortured-phrases/extracted/tortured-abbreviations-preview.md`
-- `data/source-material/academic-slop/tortured-phrases/humanities-social-sciences-zenodo/20241114_social_sciences_fingerprints.csv`
-- `data/source-material/academic-slop/tortured-phrases/humanities-social-sciences-zenodo/Tortured_abbreviations.csv`
+- `legacy/source-material/academic-slop/tortured-phrases/extracted/cabanac-2021-concept-note.md`
+- `legacy/source-material/academic-slop/tortured-phrases/problematic-paper-screener.md`
+- `legacy/source-material/academic-slop/tortured-phrases/extracted/social-sciences-fingerprints-preview.md`
+- `legacy/source-material/academic-slop/tortured-phrases/extracted/tortured-abbreviations-preview.md`
+- `legacy/source-material/academic-slop/tortured-phrases/humanities-social-sciences-zenodo/20241114_social_sciences_fingerprints.csv`
+- `legacy/source-material/academic-slop/tortured-phrases/humanities-social-sciences-zenodo/Tortured_abbreviations.csv`
 
 Skipped candidates:
 
@@ -392,10 +392,10 @@ Reason skipped:
 
 Source files:
 
-- `data/source-material/prose-linters/npm-packages/cliches-1.0.6/glossary.js`
-- `data/source-material/prose-linters/npm-packages/no-cliches-0.3.6/cliches.js`
-- `data/source-material/prose-linters/proselint/proselint/checks/cliches/misc.py`
-- `data/source-material/prose-linters/proselint/proselint/checks/cliches/write-good`
+- `legacy/source-material/prose-linters/npm-packages/cliches-1.0.6/glossary.js`
+- `legacy/source-material/prose-linters/npm-packages/no-cliches-0.3.6/cliches.js`
+- `legacy/source-material/prose-linters/proselint/proselint/checks/cliches/misc.py`
+- `legacy/source-material/prose-linters/proselint/proselint/checks/cliches/write-good`
 
 Skipped candidates:
 
@@ -413,11 +413,11 @@ Reason skipped:
 
 Source files:
 
-- `data/source-material/prose-linters/proselint/proselint/checks/industrial_language/corporate_speak.py`
-- `data/source-material/plain-english/extracted/govuk-style-guide-words-to-avoid.md`
-- `data/source-material/plain-english/extracted/gca-words-not-to-use.md`
-- `data/source-material/llm-slop-lists/slop-forensics/results_by_domain/essays/slop_lists/slop_list_phrases.jsonl`
-- `data/source-material/llm-slop-lists/slop-forensics/results_by_domain/varied_prompts/slop_lists/slop_list_phrases.jsonl`
+- `legacy/source-material/prose-linters/proselint/proselint/checks/industrial_language/corporate_speak.py`
+- `legacy/source-material/plain-english/extracted/govuk-style-guide-words-to-avoid.md`
+- `legacy/source-material/plain-english/extracted/gca-words-not-to-use.md`
+- `legacy/source-material/llm-slop-lists/slop-forensics/results_by_domain/essays/slop_lists/slop_list_phrases.jsonl`
+- `legacy/source-material/llm-slop-lists/slop-forensics/results_by_domain/varied_prompts/slop_lists/slop_list_phrases.jsonl`
 
 Skipped candidates:
 
@@ -438,11 +438,11 @@ Reason skipped:
 
 Source files:
 
-- `data/source-material/llm-slop-lists/slop-forensics/results_by_domain/varied_prompts/slop_lists/slop_list_phrases.jsonl`
-- `data/source-material/llm-slop-lists/slop-forensics/results_by_domain/essays/slop_lists/slop_list_phrases.jsonl`
-- `data/source-material/llm-slop-lists/community-gists/chrisgherbert-chat-gpt-cliches.md`
-- `data/source-material/llm-slop-lists/community-gists/pvgomes-chatgpt-words.md`
-- `data/source-material/llm-slop-lists/community-gists/miglen-gpt-instructions.md`
+- `legacy/source-material/llm-slop-lists/slop-forensics/results_by_domain/varied_prompts/slop_lists/slop_list_phrases.jsonl`
+- `legacy/source-material/llm-slop-lists/slop-forensics/results_by_domain/essays/slop_lists/slop_list_phrases.jsonl`
+- `legacy/source-material/llm-slop-lists/community-gists/chrisgherbert-chat-gpt-cliches.md`
+- `legacy/source-material/llm-slop-lists/community-gists/pvgomes-chatgpt-words.md`
+- `legacy/source-material/llm-slop-lists/community-gists/miglen-gpt-instructions.md`
 
 Skipped candidate:
 

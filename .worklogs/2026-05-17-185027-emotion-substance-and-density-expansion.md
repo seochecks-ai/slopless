@@ -10,7 +10,7 @@ Added generalized Sunstone slop coverage for emotion-as-substance, summary-fog t
 - Added `summary-fog-transition` for lines that replace event sequence with blur, haze, or fog.
 - Expanded body-action density with multi-word event cues, then fixed overlap counting so `ears flattened` and similar phrases count as one event, not phrase plus head token.
 - Expanded flat-action cadence, then removed `rest` and `melted` from weak-action verbs because adversarial review showed noun and semantic-emotion false positives.
-- Kept generated variants in `data/source-material/derived` as source material, while moving implemented source examples out of the not-implemented Sunstone source file.
+- Kept generated variants in `legacy/source-material/derived` as source material, while moving implemented source examples out of the not-implemented Sunstone source file.
 - Added verifier checks for semantic pattern attribution, narrative rule attribution, no-hit silence, source-material state, corpus preservation, and fixture3 approved output.
 
 ## Key Files For Context
@@ -29,9 +29,9 @@ Added generalized Sunstone slop coverage for emotion-as-substance, summary-fog t
 - `behavior/fixtures/textlint-rules/cases/narrative-slop/no-hits.md`
 - `behavior/fixtures/textlint-rules/corpus/narrative-scenes.md`
 - `behavior/golden/textlint-rules/approved.normalized.json`
-- `data/source-material/incorporation-record.md`
-- `data/source-material/derived/sunstone-emotion-substance-variants.md`
-- `data/source-material/derived/sunstone-action-density-variants.md`
+- `legacy/source-material/incorporation-record.md`
+- `legacy/source-material/derived/sunstone-emotion-substance-variants.md`
+- `legacy/source-material/derived/sunstone-action-density-variants.md`
 
 ## Verification
 

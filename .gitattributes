@@ -1,0 +1,6 @@
+legacy/** linguist-vendored
+scripts/*.py linguist-generated
+dist/** linguist-generated
+behavior/golden/** linguist-generated
+behavior/reports/** linguist-generated
+behavior/deltas/** linguist-generated

@@ -6,7 +6,7 @@ Purpose: provide broad source material for the pattern class where abstract emot
 
 Do not treat this file as golden fixture output.
 
-State: source-only supporting material. Current rule coverage is recorded in `data/source-material/incorporation-record.md`.
+State: source-only supporting material. Current rule coverage is recorded in `legacy/source-material/incorporation-record.md`.
 
 ## Pattern Boundary
 

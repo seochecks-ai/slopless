@@ -27,7 +27,7 @@ Make `src/rules/*` the canonical home for rule detection and add `src/reporting/
 - `package.json`
 - `scripts/verify-*.py`
 - `scripts/verify-all.sh`
-- `data/source-material/incorporation-record.md`
+- `legacy/source-material/incorporation-record.md`
 - `.worklogs/*`
 - `src/reporting/types.ts`
 - `src/reporting/report-density.ts`

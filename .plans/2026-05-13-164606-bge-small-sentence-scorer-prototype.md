@@ -157,7 +157,7 @@ Quantize only after quality is measured:
 Local source cache:
 
 ```text
-.plans/source-material/2026-05-13-132611-semantic-thinness/
+legacy/plans-source-material/2026-05-13-132611-semantic-thinness/
 ```
 
 ## Specificity

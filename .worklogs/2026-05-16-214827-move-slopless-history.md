@@ -7,7 +7,7 @@ This includes textlint migration plans, fixture plans, hit-review ledgers, sourc
 # Decisions Made
 
 - Copied May textlint/Slopless plans and worklogs because those are Slopless history.
-- Copied `.plans/source-material` and `.plans/textlint-hit-review` because they explain the rule data and reviewed findings.
+- Copied `legacy/plans-source-material` and `.plans/textlint-hit-review` because they explain the rule data and reviewed findings.
 - Left older Rust/prosesmasher plans and worklogs in the Prosesmasher repository.
 
 # Key Files For Context
@@ -17,7 +17,7 @@ This includes textlint migration plans, fixture plans, hit-review ledgers, sourc
 - `.plans/2026-05-14-*`
 - `.plans/2026-05-15-*`
 - `.plans/2026-05-16-*`
-- `.plans/source-material/`
+- `legacy/plans-source-material/`
 - `.plans/textlint-hit-review/`
 - `.worklogs/2026-05-12-*`
 - `.worklogs/2026-05-13-*`

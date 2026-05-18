@@ -9,7 +9,7 @@ The immediate output is an inventory and rule-design plan. No runtime rule code 
 Local cache:
 
 ```text
-.plans/source-material/2026-05-13-132611-semantic-thinness/
+legacy/plans-source-material/2026-05-13-132611-semantic-thinness/
 ```
 
 This cache is research material only. It is not package data and should not be imported by runtime code directly.
@@ -21,8 +21,8 @@ This cache is research material only. It is not package data and should not be i
 Files:
 
 ```text
-.plans/source-material/2026-05-13-132611-semantic-thinness/lancaster/Lancaster_sensorimotor_norms_for_39707_words.csv
-.plans/source-material/2026-05-13-132611-semantic-thinness/lancaster/osf-files.tsv
+legacy/plans-source-material/2026-05-13-132611-semantic-thinness/lancaster/Lancaster_sensorimotor_norms_for_39707_words.csv
+legacy/plans-source-material/2026-05-13-132611-semantic-thinness/lancaster/osf-files.tsv
 ```
 
 Source:
@@ -78,11 +78,11 @@ What not to do:
 Files:
 
 ```text
-.plans/source-material/2026-05-13-132611-semantic-thinness/vagueness/vagueness_data.tar.gz
-.plans/source-material/2026-05-13-132611-semantic-thinness/vagueness/vagueness_data/LICENSE.md
-.plans/source-material/2026-05-13-132611-semantic-thinness/vagueness/vagueness_data/Privacy_Sentences.txt
-.plans/source-material/2026-05-13-132611-semantic-thinness/vagueness/vagueness_data/README.txt
-.plans/source-material/2026-05-13-132611-semantic-thinness/vagueness/vagueness_data/vagueness_dataset.json
+legacy/plans-source-material/2026-05-13-132611-semantic-thinness/vagueness/vagueness_data.tar.gz
+legacy/plans-source-material/2026-05-13-132611-semantic-thinness/vagueness/vagueness_data/LICENSE.md
+legacy/plans-source-material/2026-05-13-132611-semantic-thinness/vagueness/vagueness_data/Privacy_Sentences.txt
+legacy/plans-source-material/2026-05-13-132611-semantic-thinness/vagueness/vagueness_data/README.txt
+legacy/plans-source-material/2026-05-13-132611-semantic-thinness/vagueness/vagueness_data/vagueness_dataset.json
 ```
 
 Source:
@@ -156,8 +156,8 @@ What not to do:
 Files:
 
 ```text
-.plans/source-material/2026-05-13-132611-semantic-thinness/specificity/domain-agnostic/README.md
-.plans/source-material/2026-05-13-132611-semantic-thinness/specificity/domain-agnostic/dataset-data/
+legacy/plans-source-material/2026-05-13-132611-semantic-thinness/specificity/domain-agnostic/README.md
+legacy/plans-source-material/2026-05-13-132611-semantic-thinness/specificity/domain-agnostic/dataset-data/
 ```
 
 Downloaded data files:
@@ -225,8 +225,8 @@ What not to do:
 Files:
 
 ```text
-.plans/source-material/2026-05-13-132611-semantic-thinness/specificity/speciteller/speciteller-master.zip
-.plans/source-material/2026-05-13-132611-semantic-thinness/specificity/speciteller/speciteller-master/
+legacy/plans-source-material/2026-05-13-132611-semantic-thinness/specificity/speciteller/speciteller-master.zip
+legacy/plans-source-material/2026-05-13-132611-semantic-thinness/specificity/speciteller/speciteller-master/
 ```
 
 Source:
@@ -262,9 +262,9 @@ What not to do:
 Files:
 
 ```text
-.plans/source-material/2026-05-13-132611-semantic-thinness/concreteness/huggingface/concreteness_ratings.csv
-.plans/source-material/2026-05-13-132611-semantic-thinness/concreteness/huggingface/README.md
-.plans/source-material/2026-05-13-132611-semantic-thinness/concreteness/huggingface/api.json
+legacy/plans-source-material/2026-05-13-132611-semantic-thinness/concreteness/huggingface/concreteness_ratings.csv
+legacy/plans-source-material/2026-05-13-132611-semantic-thinness/concreteness/huggingface/README.md
+legacy/plans-source-material/2026-05-13-132611-semantic-thinness/concreteness/huggingface/api.json
 ```
 
 Source:
@@ -306,8 +306,8 @@ What not to do:
 Files:
 
 ```text
-.plans/source-material/2026-05-13-132611-semantic-thinness/light-verbs/wiktionary/categorymembers.json
-.plans/source-material/2026-05-13-132611-semantic-thinness/light-verbs/wiktionary/members.txt
+legacy/plans-source-material/2026-05-13-132611-semantic-thinness/light-verbs/wiktionary/categorymembers.json
+legacy/plans-source-material/2026-05-13-132611-semantic-thinness/light-verbs/wiktionary/members.txt
 ```
 
 Source:
@@ -345,7 +345,7 @@ What not to do:
 
 Runtime should use derived, reviewed JSON only.
 
-Do not import raw research files from `.plans/source-material`.
+Do not import raw research files from `legacy/plans-source-material`.
 
 Candidate data files:
 

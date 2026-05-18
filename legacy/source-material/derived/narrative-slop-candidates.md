@@ -2,11 +2,11 @@
 
 ## Source File Paths Used
 
-- `data/source-material/llm-slop-lists/slop-forensics/slop_list_bigrams.json`
-- `data/source-material/llm-slop-lists/slop-forensics/slop_list_trigrams.json`
-- `data/source-material/llm-slop-lists/slop-forensics/results_by_domain/varied_prompts/slop_lists/slop_list_bigrams.json`
-- `data/source-material/llm-slop-lists/slop-forensics/results_by_domain/varied_prompts/slop_lists/slop_list_trigrams.json`
-- `data/source-material/llm-slop-lists/community-gists/chrisgherbert-chat-gpt-cliches.md`
+- `legacy/source-material/llm-slop-lists/slop-forensics/slop_list_bigrams.json`
+- `legacy/source-material/llm-slop-lists/slop-forensics/slop_list_trigrams.json`
+- `legacy/source-material/llm-slop-lists/slop-forensics/results_by_domain/varied_prompts/slop_lists/slop_list_bigrams.json`
+- `legacy/source-material/llm-slop-lists/slop-forensics/results_by_domain/varied_prompts/slop_lists/slop_list_trigrams.json`
+- `legacy/source-material/llm-slop-lists/community-gists/chrisgherbert-chat-gpt-cliches.md`
 - `behavior/fixtures/textlint-rules/corpus/narrative-scenes.md`
 
 ## Current State

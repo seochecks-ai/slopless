@@ -27,8 +27,8 @@ Do not implement single-hit narrative bans for ordinary physical actions.
    - Add no-hit fixtures where the same phrases are concrete, medical, performance, task-oriented, or isolated.
 
 4. Update source tracking.
-   - Remove newly implemented items from `data/source-material/derived/*.md`.
-   - Update `data/source-material/incorporation-record.md`.
+   - Remove newly implemented items from `legacy/source-material/derived/*.md`.
+   - Update `legacy/source-material/incorporation-record.md`.
    - Update manifest checks if needed.
 
 ## Key Decisions
@@ -48,7 +48,7 @@ Do not implement single-hit narrative bans for ordinary physical actions.
 - `behavior/fixtures/textlint-rules/cases/narrative-slop/no-hits.md`
 - `behavior/fixtures/textlint-rules/corpus/editorial-style.md`
 - `behavior/fixtures/textlint-rules/corpus/narrative-scenes.md`
-- `data/source-material/derived/redundancy-pattern-candidates.md`
-- `data/source-material/derived/wordiness-pattern-candidates.md`
-- `data/source-material/derived/narrative-slop-candidates.md`
-- `data/source-material/incorporation-record.md`
+- `legacy/source-material/derived/redundancy-pattern-candidates.md`
+- `legacy/source-material/derived/wordiness-pattern-candidates.md`
+- `legacy/source-material/derived/narrative-slop-candidates.md`
+- `legacy/source-material/incorporation-record.md`

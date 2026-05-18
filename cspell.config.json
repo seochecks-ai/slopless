@@ -47,7 +47,7 @@
     ".plans",
     ".worklogs",
     "behavior/golden",
-    "data/source-material",
+    "legacy",
     "dist",
     "node_modules",
     "package-lock.json",

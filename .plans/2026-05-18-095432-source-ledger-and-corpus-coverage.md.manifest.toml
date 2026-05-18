@@ -1,92 +1,92 @@
 plan = ".plans/2026-05-18-095432-source-ledger-and-corpus-coverage.md"
 
 [[source_candidate_file]]
-path = "data/source-material/derived/academic-slop-candidates.md"
+path = "legacy/source-material/derived/academic-slop-candidates.md"
 state = "skipped"
 required_phrase = "No active academic slop candidates remain queued for implementation."
 forbidden_phrase = "## Not Implemented"
 
 [[source_candidate_file]]
-path = "data/source-material/derived/cliche-template-candidates.md"
+path = "legacy/source-material/derived/cliche-template-candidates.md"
 state = "skipped"
 required_phrase = "No active cliche template candidates remain queued for implementation."
 forbidden_phrase = "## Not Implemented"
 
 [[source_candidate_file]]
-path = "data/source-material/derived/corporate-abstraction-candidates.md"
+path = "legacy/source-material/derived/corporate-abstraction-candidates.md"
 state = "skipped"
 required_phrase = "No active corporate abstraction candidates remain queued for implementation."
 forbidden_phrase = "## Not Implemented"
 
 [[source_candidate_file]]
-path = "data/source-material/derived/llm-artifact-candidates.md"
+path = "legacy/source-material/derived/llm-artifact-candidates.md"
 state = "skipped"
 required_phrase = "No active LLM artifact candidates remain queued for implementation."
 forbidden_phrase = "## Not Implemented"
 
 [[source_candidate_file]]
-path = "data/source-material/derived/narrative-slop-candidates.md"
+path = "legacy/source-material/derived/narrative-slop-candidates.md"
 state = "drained"
 required_phrase = "No remaining narrative slop candidates are waiting in this file."
 forbidden_phrase = "## Not Implemented"
 
 [[source_candidate_file]]
-path = "data/source-material/derived/redundancy-pattern-candidates.md"
+path = "legacy/source-material/derived/redundancy-pattern-candidates.md"
 state = "drained"
 required_phrase = "No remaining redundancy pattern candidates are waiting in this file."
 forbidden_phrase = "## Not Implemented"
 
 [[source_candidate_file]]
-path = "data/source-material/derived/wordiness-pattern-candidates.md"
+path = "legacy/source-material/derived/wordiness-pattern-candidates.md"
 state = "drained"
 required_phrase = "No remaining wordiness pattern candidates are waiting in this file."
 forbidden_phrase = "## Not Implemented"
 
 [[source_candidate_file]]
-path = "data/source-material/derived/sunstone-action-density-variants.md"
+path = "legacy/source-material/derived/sunstone-action-density-variants.md"
 state = "source-only"
 required_phrase = "State: source-only supporting material."
 forbidden_phrase = "future action-density patterns"
 
 [[source_candidate_file]]
-path = "data/source-material/derived/sunstone-emotion-substance-variants.md"
+path = "legacy/source-material/derived/sunstone-emotion-substance-variants.md"
 state = "source-only"
 required_phrase = "State: source-only supporting material."
 forbidden_phrase = "future emotion-as-substance patterns"
 
 [[source_candidate_file]]
-path = "data/source-material/derived/sunstone-slop-cases.md"
+path = "legacy/source-material/derived/sunstone-slop-cases.md"
 state = "source-only"
 required_phrase = "State: mixed implementation record."
 forbidden_phrase = "State: not implemented."
 
 [[source_ledger_section]]
-path = "data/source-material/incorporation-record.md"
+path = "legacy/source-material/incorporation-record.md"
 heading = "## Skipped Source-Derived Candidates"
 
 [[source_ledger_phrase]]
-path = "data/source-material/incorporation-record.md"
+path = "legacy/source-material/incorporation-record.md"
 required_phrase = "source material already implemented in Slopless rules and source material reviewed and skipped"
-forbidden_phrase = "Research material that is not implemented stays in `data/source-material/derived/*.md`"
+forbidden_phrase = "Research material that is not implemented stays in `legacy/source-material/derived/*.md`"
 
 [[source_ledger_section]]
-path = "data/source-material/incorporation-record.md"
+path = "legacy/source-material/incorporation-record.md"
 heading = "### Skipped Academic Tortured Phrases"
 
 [[source_ledger_section]]
-path = "data/source-material/incorporation-record.md"
+path = "legacy/source-material/incorporation-record.md"
 heading = "### Skipped Cliche Templates"
 
 [[source_ledger_section]]
-path = "data/source-material/incorporation-record.md"
+path = "legacy/source-material/incorporation-record.md"
 heading = "### Skipped Corporate Abstraction Templates"
 
 [[source_ledger_section]]
-path = "data/source-material/incorporation-record.md"
+path = "legacy/source-material/incorporation-record.md"
 heading = "### Skipped LLM Artifact Fragment"
 
 [[source_note]]
-path = "data/source-material/derived/sunstone-slop-cases.md"
+path = "legacy/source-material/derived/sunstone-slop-cases.md"
 required_phrase = "State: mixed implementation record."
 forbidden_phrase = "State: not implemented."
 

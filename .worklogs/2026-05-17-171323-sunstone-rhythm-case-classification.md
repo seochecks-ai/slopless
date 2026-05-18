@@ -12,12 +12,12 @@ No rule behavior or fixture output changed.
 
 # Key Files For Context
 
-- `data/source-material/derived/sunstone-slop-cases.md`
+- `legacy/source-material/derived/sunstone-slop-cases.md`
 
 # Verification
 
 - `scripts/verify-all.sh`
-- `npm run format:check -- data/source-material/derived/sunstone-slop-cases.md`
+- `npm run format:check -- legacy/source-material/derived/sunstone-slop-cases.md`
 
 # Next Steps
 

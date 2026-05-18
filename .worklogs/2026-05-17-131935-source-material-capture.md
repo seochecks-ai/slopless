@@ -6,23 +6,23 @@ The archive includes empirical LLM vocabulary sources, Slop Forensics word/ngram
 
 # Decisions Made
 
-- Kept raw source material under `data/source-material` instead of importing it into active rules because this change is source capture, not rule behavior.
+- Kept raw source material under `legacy/source-material` instead of importing it into active rules because this change is source capture, not rule behavior.
 - Added cleaned extracted Markdown notes for web/PDF sources where direct lexicon extraction is practical.
 - Omitted npm package/test/build scaffolding from archived npm packages because repository validators treated nested package metadata as package roots.
-- Ignored `data/source-material` in Prettier, ESLint, and cspell because the folder contains raw upstream source dumps.
+- Ignored `legacy/source-material` in Prettier, ESLint, and cspell because the folder contains raw upstream source dumps.
 - Added `scripts/verify-source-material.py` so the archive has mechanical checks for parseability, key counts, failed downloads, and zip integrity.
 
 # Key Files For Context
 
-- `data/source-material/README.md`
-- `data/source-material/llm-excess-vocab/berenslab/excess_words.csv`
-- `data/source-material/llm-excess-vocab/detect-chatgpt/ges_selected_lemma.csv`
-- `data/source-material/llm-slop-lists/slop-forensics/`
-- `data/source-material/prose-linters/proselint/`
-- `data/source-material/prose-linters/npm-packages/`
-- `data/source-material/style-guides/`
-- `data/source-material/plain-english/extracted/`
-- `data/source-material/academic-slop/tortured-phrases/`
+- `legacy/source-material/README.md`
+- `legacy/source-material/llm-excess-vocab/berenslab/excess_words.csv`
+- `legacy/source-material/llm-excess-vocab/detect-chatgpt/ges_selected_lemma.csv`
+- `legacy/source-material/llm-slop-lists/slop-forensics/`
+- `legacy/source-material/prose-linters/proselint/`
+- `legacy/source-material/prose-linters/npm-packages/`
+- `legacy/source-material/style-guides/`
+- `legacy/source-material/plain-english/extracted/`
+- `legacy/source-material/academic-slop/tortured-phrases/`
 - `scripts/verify-source-material.py`
 - `.plans/2026-05-17-125853-source-material-capture.md`
 

@@ -11,7 +11,7 @@ Implement only the remaining source-derived patterns that are narrow enough to r
 5. Add paragraph-start LLM boilerplate openers for `important to note` and `worth noting`.
 6. Add hit and no-hit cases for every new behavior.
 7. Add corpus prose and preserve entries for new case material.
-8. Remove newly implemented items from `data/source-material/derived`.
+8. Remove newly implemented items from `legacy/source-material/derived`.
 9. Run fixture replay, inspect no-hit output, update approved output only after review.
 
 # Files To Modify
@@ -22,8 +22,8 @@ Implement only the remaining source-derived patterns that are narrow enough to r
 - `src/families/phrases/data/corporate-abstraction-patterns.json`
 - `src/families/syntactic-patterns/llm-artifacts/data/response-wrapper-patterns.json`
 - relevant case and corpus fixtures
-- `data/source-material/derived/*.md`
-- `data/source-material/incorporation-record.md`
+- `legacy/source-material/derived/*.md`
+- `legacy/source-material/incorporation-record.md`
 
 # Non-Goals
 

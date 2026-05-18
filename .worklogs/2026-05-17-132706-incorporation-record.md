@@ -6,15 +6,15 @@ The record distinguishes active external sources, active internal generated-corp
 
 # Decisions Made
 
-- Created `data/source-material/incorporation-record.md` instead of expanding only the archive README because the archive inventory and active incorporation history answer different questions.
+- Created `legacy/source-material/incorporation-record.md` instead of expanding only the archive README because the archive inventory and active incorporation history answer different questions.
 - Documented active imported plugins and packages: `no-cliches`, Vale `proselint` cliches, and selected `proselint` phrase datasets.
 - Documented generated-corpus-derived semantic-thinness and syntactic-pattern rules as internal sources, since their provenance is fixture review and hand-picked AI-slop examples rather than an upstream package.
 - Documented the local template matcher architecture because Slopless uses Textlint for execution/reporting, not upstream matcher behavior.
 
 # Key Files For Context
 
-- `data/source-material/incorporation-record.md`
-- `data/source-material/README.md`
+- `legacy/source-material/incorporation-record.md`
+- `legacy/source-material/README.md`
 - `src/families/phrases/data/*.source.md`
 - `src/families/semantic-thinness/patterns/*.json`
 - `src/families/semantic-thinness/private/pattern-matcher.ts`
@@ -30,4 +30,4 @@ The record distinguishes active external sources, active internal generated-corp
 
 # Next Steps
 
-- Update `data/source-material/incorporation-record.md` in the same commit whenever an archived source becomes active rule data.
+- Update `legacy/source-material/incorporation-record.md` in the same commit whenever an archived source becomes active rule data.

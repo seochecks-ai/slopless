@@ -5,4 +5,4 @@ package-lock.json
 behavior/golden
 .plans
 .worklogs
-data/source-material
+legacy

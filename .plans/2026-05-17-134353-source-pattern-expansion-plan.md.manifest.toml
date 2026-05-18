@@ -138,43 +138,43 @@ kind = "new"
 [[pattern_data]]
 id = "wordiness-patterns"
 path = "src/rules/phrases/data/wordiness-patterns.json"
-source_note = "data/source-material/derived/wordiness-pattern-candidates.md"
+source_note = "legacy/source-material/derived/wordiness-pattern-candidates.md"
 used_by = ["src/rules/phrases/wordiness.ts"]
 
 [[pattern_data]]
 id = "redundancy-patterns"
 path = "src/rules/phrases/data/redundancy-patterns.json"
-source_note = "data/source-material/derived/redundancy-pattern-candidates.md"
+source_note = "legacy/source-material/derived/redundancy-pattern-candidates.md"
 used_by = ["src/rules/phrases/redundancy.ts"]
 
 [[pattern_data]]
 id = "cliche-templates"
 path = "src/rules/phrases/data/cliche-templates.json"
-source_note = "data/source-material/derived/cliche-template-candidates.md"
+source_note = "legacy/source-material/derived/cliche-template-candidates.md"
 used_by = ["src/rules/phrases/cliches.ts"]
 
 [[pattern_data]]
 id = "corporate-abstraction-patterns"
 path = "src/rules/phrases/data/corporate-abstraction-patterns.json"
-source_note = "data/source-material/derived/corporate-abstraction-candidates.md"
+source_note = "legacy/source-material/derived/corporate-abstraction-candidates.md"
 used_by = ["src/rules/phrases/corporate-speak.ts"]
 
 [[pattern_data]]
 id = "narrative-cliche-patterns"
 path = "src/rules/narrative-slop/data/narrative-cliches.json"
-source_note = "data/source-material/derived/narrative-slop-candidates.md"
+source_note = "legacy/source-material/derived/narrative-slop-candidates.md"
 used_by = ["src/rules/narrative-slop/narrative-cliches.ts"]
 
 [[pattern_data]]
 id = "tortured-phrases"
 path = "src/rules/academic-slop/data/tortured-phrases.json"
-source_note = "data/source-material/derived/academic-slop-candidates.md"
+source_note = "legacy/source-material/derived/academic-slop-candidates.md"
 used_by = ["src/rules/academic-slop/tortured-phrases.ts"]
 
 [[pattern_data]]
 id = "llm-pattern-expansion"
 path = "src/rules/phrases/data/llm-disclaimer-expansions.json"
-source_note = "data/source-material/derived/llm-artifact-candidates.md"
+source_note = "legacy/source-material/derived/llm-artifact-candidates.md"
 used_by = ["src/rules/phrases/llm-disclaimer.ts"]
 
 [[fixture_corpus]]

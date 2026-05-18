@@ -38,8 +38,8 @@ Implement the Sunstone slop categories as runnable Textlint rules and pattern ex
 - `package.json`
 - `behavior/fixtures/textlint-rules/cases/*`
 - `behavior/fixtures/textlint-rules/corpus/*`
-- `data/source-material/derived/sunstone-slop-cases.md`
-- `data/source-material/incorporation-record.md`
+- `legacy/source-material/derived/sunstone-slop-cases.md`
+- `legacy/source-material/incorporation-record.md`
 
 # Non-Goals
 

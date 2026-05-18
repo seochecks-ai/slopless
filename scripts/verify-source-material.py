@@ -11,7 +11,7 @@ import yaml
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / "data" / "source-material"
+DATA = ROOT / "legacy" / "source-material"
 
 
 def fail(message: str) -> None:
@@ -167,7 +167,7 @@ def verify_binary_implementation_state() -> None:
 
 def main() -> None:
     if not DATA.is_dir():
-        fail("missing data/source-material directory")
+        fail("missing legacy/source-material directory")
     verify_no_failed_downloads()
     verify_json_files()
     verify_yaml_files()

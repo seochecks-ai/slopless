@@ -23,7 +23,7 @@ Desired state:
    - every preserve item text appears in its owning corpus markdown file
    - approved fixture output covers case findings in corpus for rules whose messages are local to the matched text
 3. Update source-material bookkeeping:
-   - move skipped candidates into `data/source-material/incorporation-record.md`
+   - move skipped candidates into `legacy/source-material/incorporation-record.md`
    - clear active candidate files to say no active candidate remains where applicable
    - fix `sunstone-slop-cases.md` so it no longer says the whole file is not implemented
 4. Regenerate preserve JSON metadata from current case files and current corpus file contents.
@@ -43,12 +43,12 @@ Desired state:
 - `.plans/2026-05-18-095432-source-ledger-and-corpus-coverage.md.manifest.toml`
 - `scripts/verify-fixture-corpus-coverage.py`
 - `scripts/verify-all.sh`
-- `data/source-material/incorporation-record.md`
-- `data/source-material/derived/academic-slop-candidates.md`
-- `data/source-material/derived/cliche-template-candidates.md`
-- `data/source-material/derived/corporate-abstraction-candidates.md`
-- `data/source-material/derived/llm-artifact-candidates.md`
-- `data/source-material/derived/sunstone-slop-cases.md`
+- `legacy/source-material/incorporation-record.md`
+- `legacy/source-material/derived/academic-slop-candidates.md`
+- `legacy/source-material/derived/cliche-template-candidates.md`
+- `legacy/source-material/derived/corporate-abstraction-candidates.md`
+- `legacy/source-material/derived/llm-artifact-candidates.md`
+- `legacy/source-material/derived/sunstone-slop-cases.md`
 - `behavior/fixtures/textlint-rules/corpus/*.md`
 - `behavior/fixtures/textlint-rules/corpus/*.preserve.json`
 - `behavior/golden/textlint-rules/approved.normalized.json`
