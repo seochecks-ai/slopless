@@ -24,7 +24,7 @@
     "lint:css": "stylelint --max-warnings 0 \"styles/**/*.css\"",
     "spellcheck": "cspell .",
     "typecov": "type-coverage --at-least 100",
-    "validate": "npm run build && npm run lint && npm run lint:css && npm run format:check && npm run spellcheck && npm run typecov && g3ts validate workspace --path . --rules-only"
+    "validate": "npm run build && npm run lint && npm run lint:css && npm run format:check && npm run spellcheck && npm run typecov && scripts/validate-g3ts.sh"
   },
   "files": [
     "dist",
