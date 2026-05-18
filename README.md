@@ -8,13 +8,29 @@
 
 Catch AI and human slop in English Markdown without calling an LLM. Slopless ships 50+ deterministic textlint rules and a CLI that emits structured JSON findings.
 
-## Install
+## Intended Usage Loop
 
 ```bash
 npm install -D slopless
+npx slopless install-skill codex
+npx slopless install-skill claude
 ```
 
-## Quick start
+Then start a fresh writing-agent session and tell it to use the Slopless skill:
+
+```text
+Use the Slopless skill. Check this Markdown, rewrite the prose, and keep iterating until Slopless passes.
+```
+
+Loop:
+
+1. Install Slopless.
+2. Install the agent skill for Codex or Claude Code.
+3. Tell the writing agent to use the skill.
+4. Let the agent run Slopless, rewrite, and rerun until the JSON output has no findings.
+5. Profit.
+
+## Direct CLI Use
 
 ```bash
 npx slopless "docs/**/*.md"
@@ -31,7 +47,7 @@ mkdir -p .slopless/findings
 npx slopless "docs/**/*.md" > ".slopless/findings/$(date +%Y-%m-%d-%H%M%S)--review.json"
 ```
 
-## Agent use
+## Agent Use
 
 Agents should run help first:
 

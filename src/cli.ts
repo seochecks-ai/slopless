@@ -28,7 +28,7 @@ const VALUE_OPTIONS = new Set([
   "-c",
   "-o"
 ]);
-const VERSION = "0.2.7";
+const VERSION = "0.2.8";
 const HELP_TEXT = `Slopless checks English Markdown prose for deterministic AI and human slop signals.
 
 It reports concrete patterns that make writing padded, vague, generic,
