@@ -1,13 +1,11 @@
-import type { TxtDocumentNode } from "@textlint/ast-node-types";
-import type { TextlintRuleModule } from "@textlint/types";
 import {
   cleanSentence,
   containsAny,
   type SentenceMatch
 } from "../../../shared/matchers/prose-patterns.js";
-import { allParagraphSentences } from "../../../shared/text/sections.js";
+import { splitSentences } from "../../../shared/text/sentences.js";
 import responseWrapperPatterns from "./data/response-wrapper-patterns.json" with { type: "json" };
-import { emitTextlintFinding } from "../../../adapters/textlint/report.js";
+import { oneToOneRule } from "../../private/textlint-rule-builders.js";
 
 const PREFIXES = ["however, ", "but ", "that being said, ", "as such, "];
 const SUBJECTS = ["i"];
@@ -253,37 +251,28 @@ function matchResponseWrapper(
   return undefined;
 }
 
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax } = context;
-
-  return {
-    [Syntax.Document](node: TxtDocumentNode): void {
-      const seenParagraphs = new WeakSet<object>();
-
-      for (const item of allParagraphSentences(node)) {
-        const isFirstSentenceInParagraph = !seenParagraphs.has(item.paragraph);
-        seenParagraphs.add(item.paragraph);
-
-        const matched = matchResponseWrapper(
-          item.sentence.text,
-          isFirstSentenceInParagraph
-        );
-        if (matched === undefined) {
-          continue;
-        }
-
-        emitTextlintFinding(context, {
-          node: item.paragraph,
-          ruleId: "syntactic-patterns:response-wrapper",
-          message: `Response wrapper found: ${matched.kind} (${matched.signal}). Remove assistant response scaffolding.`,
-          range: {
-            start: item.source.originalStartFor(item.sentence.start),
-            end: item.source.originalEndFor(item.sentence.end)
-          }
-        });
+const rule = oneToOneRule({
+  detect: (unit) =>
+    splitSentences(unit.text).flatMap((sentence, index) => {
+      const matched = matchResponseWrapper(sentence.text, index === 0);
+      if (matched === undefined) {
+        return [];
       }
-    }
-  };
-};
+
+      return [
+        {
+          data: { kind: matched.kind },
+          evidence: matched.signal,
+          label: matched.kind,
+          range: { start: sentence.start, end: sentence.end }
+        }
+      ];
+    }),
+  family: "syntactic-patterns",
+  formatMessage: (report) =>
+    `Response wrapper found: ${report.detections[0]?.data?.["kind"]} (${report.evidence}). Remove assistant response scaffolding.`,
+  ruleId: "syntactic-patterns:response-wrapper",
+  unitKind: "paragraph"
+});
 
 export default rule;

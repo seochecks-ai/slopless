@@ -1,16 +1,11 @@
-import type { TxtDocumentNode } from "@textlint/ast-node-types";
-import type { TextlintRuleContext, TextlintRuleModule } from "@textlint/types";
-import { emitTextlintFinding } from "../../../adapters/textlint/report.js";
+import { defineTextlintRule } from "../../../adapters/textlint/rule.js";
+import { sentenceUnits } from "../../../adapters/textlint/units.js";
 import {
   cleanSentence,
   startsWithWords,
   tokens,
   trimTerminalPunctuation
 } from "../../../shared/matchers/prose-patterns.js";
-import {
-  allParagraphSentences,
-  type SectionSentence
-} from "../../../shared/text/sections.js";
 
 const PREFIXES = ["and ", "but ", "so ", "because "];
 const ENOUGH_FOR_SUFFIXES = [" is enough for this", " is enough for that"];
@@ -231,53 +226,54 @@ function matchCurriculumPair(
   return undefined;
 }
 
-function reportSentence(
-  context: Readonly<TextlintRuleContext>,
-  item: SectionSentence,
-  signal: string
-): void {
-  emitTextlintFinding(context, {
-    node: item.paragraph,
-    ruleId: "syntactic-patterns:contrastive-aphorism",
-    message: `Contrastive aphorism found: ${signal}. Replace the slogan with a concrete claim.`,
-    range: {
-      start: item.source.originalStartFor(item.sentence.start),
-      end: item.source.originalEndFor(item.sentence.end)
-    }
-  });
-}
-
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax } = context;
-
-  return {
-    [Syntax.Document](node: TxtDocumentNode): void {
-      const sentences = allParagraphSentences(node);
-
-      for (const item of sentences) {
-        const signal = matchSingle(item.sentence.text);
-        if (signal !== undefined) {
-          reportSentence(context, item, signal);
+const rule = defineTextlintRule({
+  detector: {
+    detect: ({ units }) => {
+      const detections = units.flatMap((unit) => {
+        const signal = matchSingle(unit.text);
+        if (signal === undefined) {
+          return [];
         }
-      }
 
-      for (let index = 0; index < sentences.length - 1; index += 1) {
-        const current = sentences[index];
-        const next = sentences[index + 1];
+        return [
+          {
+            evidence: signal,
+            label: signal,
+            range: { start: 0, end: unit.text.length },
+            ruleId: "syntactic-patterns:contrastive-aphorism" as const,
+            unitId: unit.id
+          }
+        ];
+      });
+
+      for (let index = 0; index < units.length - 1; index += 1) {
+        const current = units[index];
+        const next = units[index + 1];
         if (current === undefined || next === undefined) {
           continue;
         }
 
-        const signal = matchCurriculumPair(
-          current.sentence.text,
-          next.sentence.text
-        );
+        const signal = matchCurriculumPair(current.text, next.text);
         if (signal !== undefined) {
-          reportSentence(context, current, signal);
+          detections.push({
+            evidence: signal,
+            label: signal,
+            range: { start: 0, end: current.text.length },
+            ruleId: "syntactic-patterns:contrastive-aphorism",
+            unitId: current.id
+          });
         }
       }
-    }
-  };
-};
+
+      return detections;
+    },
+    family: "syntactic-patterns",
+    id: "syntactic-patterns:contrastive-aphorism"
+  },
+  formatMessage: (report) =>
+    `Contrastive aphorism found: ${report.evidence}. Replace the slogan with a concrete claim.`,
+  reportPolicy: { kind: "one-to-one" },
+  units: (document) => sentenceUnits(document)
+});
 
 export default rule;

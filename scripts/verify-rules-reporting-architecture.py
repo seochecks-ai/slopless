@@ -87,8 +87,9 @@ def verify_density_rules(errors: list[str]) -> None:
     ]:
         text = read_text(relative)
         require(errors, "RuleDetection" in text, f"{relative} must emit typed detections")
-        require(errors, "densityReports" in text, f"{relative} must use report policy")
-        require(errors, "emitTextlintReports" in text, f"{relative} must use Textlint adapter")
+        require(errors, "reportPolicy" in text, f"{relative} must declare report policy")
+        require(errors, 'kind: "density"' in text, f"{relative} must declare density policy")
+        require(errors, "defineTextlintRule" in text, f"{relative} must use Textlint rule adapter")
         require(errors, "splitSentences" not in text, f"{relative} must not own sentence-window density")
         require(errors, "densityMatchForSpan" not in text, f"{relative} must not own density matching")
         require(errors, "new RuleError" not in text, f"{relative} must not create Textlint errors")
@@ -124,6 +125,10 @@ def verify_boundary_public_api(errors: list[str]) -> None:
         "src/reporting/reports.ts": {
             "densityReports",
             "oneToOneReports",
+            "reportsForPolicy",
+        },
+        "src/adapters/textlint/rule.ts": {
+            "defineTextlintRule",
         },
         "src/adapters/textlint/report.ts": {
             "emitTextlintDetection",
@@ -133,7 +138,15 @@ def verify_boundary_public_api(errors: list[str]) -> None:
             "emitTextlintReports",
         },
         "src/adapters/textlint/units.ts": {
+            "allParagraphUnits",
+            "documentUnit",
+            "headingUnits",
+            "linkUnits",
             "paragraphUnits",
+            "sectionFirstSentenceUnits",
+            "sectionLastSentenceUnits",
+            "sentenceUnits",
+            "strUnits",
             "textUnitForNode",
         },
     }
@@ -144,6 +157,27 @@ def verify_boundary_public_api(errors: list[str]) -> None:
         require(errors, not missing, f"{relative} missing exports: {', '.join(missing)}")
 
 
+def verify_rule_reporting_boundary(errors: list[str]) -> None:
+    forbidden = [
+        "context.report",
+        "new context.RuleError",
+        "new RuleError",
+        "emitTextlintDetection",
+        "emitTextlintFinding",
+        "emitTextlintNodeFinding",
+        "emitTextlintReport",
+        "emitTextlintReports",
+        "textlint-rule-helper",
+        "RuleHelper",
+    ]
+    for path in (ROOT / "src/rules").rglob("*.ts"):
+        text = path.read_text(encoding="utf-8")
+        relative = path.relative_to(ROOT)
+        for pattern in forbidden:
+            if pattern in text:
+                errors.append(f"{relative} contains forbidden rule reporting pattern: {pattern}")
+
+
 def main() -> int:
     errors: list[str] = []
     verify_tree(errors)
@@ -152,6 +186,7 @@ def main() -> int:
     verify_runner(errors)
     verify_boundary_public_api(errors)
     verify_density_rules(errors)
+    verify_rule_reporting_boundary(errors)
 
     if errors:
         print("FAIL rules-reporting-architecture")

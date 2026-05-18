@@ -1,9 +1,6 @@
 import type { TxtHeaderNode } from "@textlint/ast-node-types";
-import type { TextlintRuleModule } from "@textlint/types";
-import { RuleHelper } from "textlint-rule-helper";
-import { sourceText } from "../../shared/text/traverse.js";
 import { splitWhitespace } from "../../shared/text/whitespace.js";
-import { emitTextlintNodeFinding } from "../../adapters/textlint/report.js";
+import { oneToOneRule } from "../private/textlint-rule-builders.js";
 
 const MAX_CAPITALIZED_NON_FIRST_WORDS = 2;
 const MAX_RUST_HEADING_DEPTH = 2;
@@ -51,40 +48,32 @@ function countCapitalizedNonFirstWords(text: string): number {
   return count;
 }
 
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax } = context;
-  const helper = new RuleHelper(context);
-  const ignoredParents = [
-    Syntax.List,
-    Syntax.ListItem,
-    Syntax.Table,
-    Syntax.TableCell
-  ];
-
-  return {
-    [Syntax.Header](node: TxtHeaderNode): void {
-      if (helper.isChildNode(node, ignoredParents)) {
-        return;
-      }
-
-      if (node.depth > MAX_RUST_HEADING_DEPTH) {
-        return;
-      }
-
-      const source = sourceText(node);
-      const count = countCapitalizedNonFirstWords(source.text);
-
-      if (count <= MAX_CAPITALIZED_NON_FIRST_WORDS) {
-        return;
-      }
-
-      emitTextlintNodeFinding(context, {
-        node: node,
-        ruleId: "orthography:sentence-case",
-        message: `Heading looks like title case. Use sentence case; found ${count} capitalized non-first words.`
-      });
+const rule = oneToOneRule({
+  detect: (unit) => {
+    const node = unit.node as TxtHeaderNode;
+    if (node.depth > MAX_RUST_HEADING_DEPTH) {
+      return [];
     }
-  };
-};
+
+    const count = countCapitalizedNonFirstWords(unit.text);
+    if (count <= MAX_CAPITALIZED_NON_FIRST_WORDS) {
+      return [];
+    }
+
+    return [
+      {
+        evidence: String(count),
+        label: "title-case heading",
+        range: { start: 0, end: unit.text.length }
+      }
+    ];
+  },
+  family: "orthography",
+  formatMessage: (report) =>
+    `Heading looks like title case. Use sentence case; found ${report.evidence} capitalized non-first words.`,
+  ignoredAncestorTypes: ["List", "ListItem", "Table", "TableCell"],
+  ruleId: "orthography:sentence-case",
+  unitKind: "heading"
+});
 
 export default rule;

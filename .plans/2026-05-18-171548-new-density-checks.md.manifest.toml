@@ -1,0 +1,41 @@
+plan = ".plans/2026-05-18-171548-new-density-checks.md"
+
+[[new_rule]]
+path = "src/rules/syntactic-patterns/lead-ins/formal-transition-density.ts"
+rule_id = "syntactic-patterns:formal-transition-density"
+report_policy = "density"
+
+[[new_rule]]
+path = "src/rules/syntactic-patterns/repetition/repeated-sentence-starts.ts"
+rule_id = "syntactic-patterns:repeated-sentence-starts"
+report_policy = "density"
+
+[[new_rule]]
+path = "src/rules/syntactic-patterns/authority/uncited-authority.ts"
+rule_id = "syntactic-patterns:uncited-authority"
+report_policy = "one-to-one"
+
+[[fixture_required]]
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md"
+rules = [
+  "syntactic-patterns:formal-transition-density",
+  "syntactic-patterns:repeated-sentence-starts",
+  "syntactic-patterns:uncited-authority"
+]
+
+[[fixture_required]]
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md"
+rules = [
+  "syntactic-patterns:formal-transition-density",
+  "syntactic-patterns:repeated-sentence-starts",
+  "syntactic-patterns:uncited-authority"
+]
+
+[[fixture_required]]
+path = "behavior/fixtures/textlint-rules/corpus"
+rules = [
+  "syntactic-patterns:formal-transition-density",
+  "syntactic-patterns:repeated-sentence-starts",
+  "syntactic-patterns:uncited-authority"
+]
+

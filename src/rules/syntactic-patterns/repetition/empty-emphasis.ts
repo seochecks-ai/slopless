@@ -1,11 +1,8 @@
-import type { TxtDocumentNode } from "@textlint/ast-node-types";
-import type { TextlintRuleModule } from "@textlint/types";
 import {
   cleanSentence,
   tokens
 } from "../../../shared/matchers/prose-patterns.js";
-import { allParagraphSentences } from "../../../shared/text/sections.js";
-import { emitTextlintFinding } from "../../../adapters/textlint/report.js";
+import { oneToOneRule } from "../../private/textlint-rule-builders.js";
 
 const PREFIXES = ["and ", "but ", "so ", "because "];
 const EMPHASIS_REFERENTS = ["part", "bit"];
@@ -120,29 +117,26 @@ function matchEmptyEmphasis(sentence: string): string | undefined {
   return matchDeicticIsFrame(words) ?? matchWhatHelpsFrame(words);
 }
 
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax } = context;
-
-  return {
-    [Syntax.Document](node: TxtDocumentNode): void {
-      for (const item of allParagraphSentences(node)) {
-        const matched = matchEmptyEmphasis(item.sentence.text);
-        if (matched === undefined) {
-          continue;
-        }
-
-        emitTextlintFinding(context, {
-          node: item.paragraph,
-          ruleId: "syntactic-patterns:empty-emphasis",
-          message: `Empty emphasis found: ${matched}. Replace the filler line with the actual point.`,
-          range: {
-            start: item.source.originalStartFor(item.sentence.start),
-            end: item.source.originalEndFor(item.sentence.end)
-          }
-        });
-      }
+const rule = oneToOneRule({
+  detect: (unit) => {
+    const matched = matchEmptyEmphasis(unit.text);
+    if (matched === undefined) {
+      return [];
     }
-  };
-};
+
+    return [
+      {
+        evidence: matched,
+        label: matched,
+        range: { start: 0, end: unit.text.length }
+      }
+    ];
+  },
+  family: "syntactic-patterns",
+  formatMessage: (report) =>
+    `Empty emphasis found: ${report.evidence}. Replace the filler line with the actual point.`,
+  ruleId: "syntactic-patterns:empty-emphasis",
+  unitKind: "sentence"
+});
 
 export default rule;

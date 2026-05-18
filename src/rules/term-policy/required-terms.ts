@@ -1,9 +1,6 @@
-import type { TxtDocumentNode } from "@textlint/ast-node-types";
-import type { TextlintRuleModule } from "@textlint/types";
-import { documentText } from "../../shared/text/document.js";
 import { normalizeForMatch } from "../../shared/text/normalize.js";
 import { wordTokens } from "../../shared/text/tokens.js";
-import { emitTextlintFinding } from "../../adapters/textlint/report.js";
+import { oneToOneRule } from "../private/textlint-rule-builders.js";
 
 type RequiredTermsOptions = {
   readonly terms?: readonly string[];
@@ -22,35 +19,27 @@ function configuredTerms(
   );
 }
 
-const rule: TextlintRuleModule<RequiredTermsOptions> = (
-  context,
-  options = {}
-) => {
-  const { Syntax } = context;
-
-  return {
-    [Syntax.Document](node: TxtDocumentNode): void {
-      const requiredTerms = configuredTerms(options);
-      if (requiredTerms.length === 0) {
-        return;
-      }
-
-      const terms = presentTerms(documentText(node));
-
-      for (const term of requiredTerms) {
-        if (terms.has(term)) {
-          continue;
-        }
-
-        emitTextlintFinding(context, {
-          node: node,
-          ruleId: "term-policy:required-terms",
-          message: `Required term missing: "${term}". Add the term or update the policy.`,
-          range: { start: 0, end: 0 }
-        });
-      }
+const rule = oneToOneRule<RequiredTermsOptions>({
+  detect: (unit, options) => {
+    const requiredTerms = configuredTerms(options);
+    if (requiredTerms.length === 0) {
+      return [];
     }
-  };
-};
+
+    const terms = presentTerms(unit.text);
+    return requiredTerms
+      .filter((term) => !terms.has(term))
+      .map((term) => ({
+        evidence: term,
+        label: term,
+        range: { start: 0, end: 0 }
+      }));
+  },
+  family: "term-policy",
+  formatMessage: (report) =>
+    `Required term missing: "${report.evidence}". Add the term or update the policy.`,
+  ruleId: "term-policy:required-terms",
+  unitKind: "document"
+});
 
 export default rule;

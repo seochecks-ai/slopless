@@ -1,5 +1,3 @@
-import type { TxtDocumentNode } from "@textlint/ast-node-types";
-import type { TextlintRuleModule } from "@textlint/types";
 import {
   cleanSentence,
   startsWithAnyText,
@@ -7,8 +5,7 @@ import {
   trimTerminalPunctuation,
   type SentenceMatch
 } from "../../../shared/matchers/prose-patterns.js";
-import { allParagraphSentences } from "../../../shared/text/sections.js";
-import { emitTextlintFinding } from "../../../adapters/textlint/report.js";
+import { oneToOneRule } from "../../private/textlint-rule-builders.js";
 
 const PREFIXES = ["and ", "but ", "so "];
 const OBSERVER_PATTERNS = [
@@ -97,29 +94,26 @@ function matchObserverGuidance(sentence: string): SentenceMatch | undefined {
   return undefined;
 }
 
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax } = context;
-
-  return {
-    [Syntax.Document](node: TxtDocumentNode): void {
-      for (const item of allParagraphSentences(node)) {
-        const matched = matchObserverGuidance(item.sentence.text);
-        if (matched === undefined) {
-          continue;
-        }
-
-        emitTextlintFinding(context, {
-          node: item.paragraph,
-          ruleId: "syntactic-patterns:observer-guidance",
-          message: `Observer guidance found: ${matched.signal}. Replace the bridge with concrete evidence.`,
-          range: {
-            start: item.source.originalStartFor(item.sentence.start),
-            end: item.source.originalEndFor(item.sentence.end)
-          }
-        });
-      }
+const rule = oneToOneRule({
+  detect: (unit) => {
+    const matched = matchObserverGuidance(unit.text);
+    if (matched === undefined) {
+      return [];
     }
-  };
-};
+
+    return [
+      {
+        evidence: matched.signal,
+        label: matched.kind,
+        range: { start: 0, end: unit.text.length }
+      }
+    ];
+  },
+  family: "syntactic-patterns",
+  formatMessage: (report) =>
+    `Observer guidance found: ${report.evidence}. Replace the bridge with concrete evidence.`,
+  ruleId: "syntactic-patterns:observer-guidance",
+  unitKind: "sentence"
+});
 
 export default rule;

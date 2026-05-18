@@ -1,8 +1,5 @@
-import type { TxtDocumentNode } from "@textlint/ast-node-types";
-import type { TextlintRuleModule } from "@textlint/types";
 import { findPhraseMatches } from "../../shared/matchers/phrases.js";
-import { allParagraphSentences } from "../../shared/text/sections.js";
-import { emitTextlintFinding } from "../../adapters/textlint/report.js";
+import { oneToOneRule } from "../private/textlint-rule-builders.js";
 
 const HUMBLE_BRAGGER_PHRASES = [
   "in my experience",
@@ -10,31 +7,18 @@ const HUMBLE_BRAGGER_PHRASES = [
   "having worked with"
 ];
 
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax } = context;
-
-  return {
-    [Syntax.Document](node: TxtDocumentNode): void {
-      for (const item of allParagraphSentences(node)) {
-        for (const match of findPhraseMatches(
-          item.sentence.text,
-          HUMBLE_BRAGGER_PHRASES
-        )) {
-          emitTextlintFinding(context, {
-            node: item.paragraph,
-            ruleId: "phrases:humble-bragger",
-            message: `Humble-bragging phrase found: "${match.text}". Remove the credentialing lead-in.`,
-            range: {
-              start: item.source.originalStartFor(
-                item.sentence.start + match.start
-              ),
-              end: item.source.originalEndFor(item.sentence.start + match.end)
-            }
-          });
-        }
-      }
-    }
-  };
-};
+const rule = oneToOneRule({
+  detect: (unit) =>
+    findPhraseMatches(unit.text, HUMBLE_BRAGGER_PHRASES).map((match) => ({
+      evidence: match.text,
+      label: match.text,
+      range: { start: match.start, end: match.end }
+    })),
+  family: "phrases",
+  formatMessage: (report) =>
+    `Humble-bragging phrase found: "${report.evidence}". Remove the credentialing lead-in.`,
+  ruleId: "phrases:humble-bragger",
+  unitKind: "sentence"
+});
 
 export default rule;

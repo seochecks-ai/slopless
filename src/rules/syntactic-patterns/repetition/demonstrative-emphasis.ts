@@ -1,13 +1,10 @@
-import type { TxtParentNode } from "@textlint/ast-node-types";
-import type { TextlintRuleModule } from "@textlint/types";
-import { RuleHelper } from "textlint-rule-helper";
+import { defineTextlintRule } from "../../../adapters/textlint/rule.js";
+import { paragraphUnits } from "../../../adapters/textlint/units.js";
 import {
   type SplitSentence,
   splitSentences
 } from "../../../shared/text/sentences.js";
-import { sourceText } from "../../../shared/text/traverse.js";
 import { splitWhitespace } from "../../../shared/text/whitespace.js";
-import { emitTextlintFinding } from "../../../adapters/textlint/report.js";
 
 const MAX_SENTENCE_WORDS = 12;
 const MAX_PER_DOCUMENT = 2;
@@ -79,16 +76,6 @@ const STOP_WORD_NEXT_WORD = new Set([
 ]);
 
 const LEADING_PREFIXES = ["so ", "but ", "and ", "however, ", "however "];
-
-type DemonstrativeMatch = {
-  readonly end: number;
-  readonly kind: string;
-  readonly node: TxtParentNode;
-  readonly sentence: string;
-  readonly sourceEnd: (end: number) => number;
-  readonly sourceStart: (start: number) => number;
-  readonly start: number;
-};
 
 function normalizeText(text: string): string {
   let normalized = "";
@@ -274,60 +261,38 @@ function classify(sentence: SplitSentence): string | undefined {
   );
 }
 
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax } = context;
-  const helper = new RuleHelper(context);
-  const ignoredParents = [
-    Syntax.List,
-    Syntax.ListItem,
-    Syntax.Table,
-    Syntax.TableCell
-  ];
-  const matches: DemonstrativeMatch[] = [];
-
-  return {
-    [Syntax.Paragraph](node: TxtParentNode): void {
-      if (helper.isChildNode(node, ignoredParents)) {
-        return;
-      }
-
-      const source = sourceText(node);
-      for (const sentence of splitSentences(source.text)) {
-        const kind = classify(sentence);
-        if (kind === undefined) {
-          continue;
-        }
-
-        matches.push({
-          end: sentence.end,
-          kind,
-          node,
-          sentence: sentence.text,
-          sourceEnd: source.originalEndFor,
-          sourceStart: source.originalStartFor,
-          start: sentence.start
-        });
-      }
-    },
-
-    [Syntax.DocumentExit](): void {
-      if (matches.length <= MAX_PER_DOCUMENT) {
-        return;
-      }
-
-      for (const match of matches) {
-        emitTextlintFinding(context, {
-          node: match.node,
-          ruleId: "syntactic-patterns:demonstrative-emphasis",
-          message: `Demonstrative emphasis found: "${match.sentence}". Reduce repeated short emphasis lines.`,
-          range: {
-            start: match.sourceStart(match.start),
-            end: match.sourceEnd(match.end)
+const rule = defineTextlintRule({
+  detector: {
+    detect: ({ units }) =>
+      units.flatMap((unit) =>
+        splitSentences(unit.text).flatMap((sentence) => {
+          const kind = classify(sentence);
+          if (kind === undefined) {
+            return [];
           }
-        });
-      }
-    }
-  };
-};
+
+          return [
+            {
+              evidence: sentence.text,
+              label: kind,
+              range: { start: sentence.start, end: sentence.end },
+              ruleId: "syntactic-patterns:demonstrative-emphasis" as const,
+              unitId: unit.id
+            }
+          ];
+        })
+      ),
+    family: "syntactic-patterns",
+    id: "syntactic-patterns:demonstrative-emphasis"
+  },
+  formatMessage: (report) =>
+    `Demonstrative emphasis found: "${report.evidence}". Reduce repeated short emphasis lines.`,
+  reportPolicy: {
+    kind: "threshold",
+    minimum: MAX_PER_DOCUMENT,
+    scope: "document"
+  },
+  units: (document) => paragraphUnits(document)
+});
 
 export default rule;

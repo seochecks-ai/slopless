@@ -1,42 +1,33 @@
-import type { TxtDocumentNode } from "@textlint/ast-node-types";
-import type { TextlintRuleModule } from "@textlint/types";
 import simplicityPairs from "./data/simplicity-pairs.json" with { type: "json" };
-import { allParagraphSentences } from "../../shared/text/sections.js";
 import { wordTokens } from "../../shared/text/tokens.js";
-import { emitTextlintFinding } from "../../adapters/textlint/report.js";
+import { oneToOneRule } from "../private/textlint-rule-builders.js";
 
 const SIMPLE_BY_COMPLEX = new Map(
   simplicityPairs.map(([complex, simple]) => [complex, simple])
 );
 
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax } = context;
-
-  return {
-    [Syntax.Document](node: TxtDocumentNode): void {
-      for (const item of allParagraphSentences(node)) {
-        for (const token of wordTokens(item.sentence.text)) {
-          const simple = SIMPLE_BY_COMPLEX.get(token.normalized);
-
-          if (simple === undefined) {
-            continue;
-          }
-
-          emitTextlintFinding(context, {
-            node: item.paragraph,
-            ruleId: "words:simplicity",
-            message: `Complex word found: "${token.text}". Use "${simple}" instead.`,
-            range: {
-              start: item.source.originalStartFor(
-                item.sentence.start + token.start
-              ),
-              end: item.source.originalEndFor(item.sentence.start + token.end)
-            }
-          });
-        }
+const rule = oneToOneRule({
+  detect: (unit) =>
+    wordTokens(unit.text).flatMap((token) => {
+      const simple = SIMPLE_BY_COMPLEX.get(token.normalized);
+      if (simple === undefined) {
+        return [];
       }
-    }
-  };
-};
+
+      return [
+        {
+          data: { simple },
+          evidence: token.text,
+          label: token.text,
+          range: { start: token.start, end: token.end }
+        }
+      ];
+    }),
+  family: "words",
+  formatMessage: (report) =>
+    `Complex word found: "${report.evidence}". Use "${report.detections[0]?.data?.["simple"]}" instead.`,
+  ruleId: "words:simplicity",
+  unitKind: "sentence"
+});
 
 export default rule;

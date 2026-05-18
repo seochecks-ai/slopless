@@ -1,8 +1,5 @@
-import type { TxtDocumentNode } from "@textlint/ast-node-types";
-import type { TextlintRuleModule } from "@textlint/types";
-import { allParagraphs } from "../../shared/text/sections.js";
 import { wordTokens } from "../../shared/text/tokens.js";
-import { emitTextlintFinding } from "../../adapters/textlint/report.js";
+import { oneToOneRule } from "../private/textlint-rule-builders.js";
 
 const MAX_REPETITION = 5;
 
@@ -38,27 +35,26 @@ function repeatedWords(
     .sort(([left], [right]) => left.localeCompare(right));
 }
 
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax } = context;
-
-  return {
-    [Syntax.Document](node: TxtDocumentNode): void {
-      for (const item of allParagraphs(node)) {
-        if (item.source.text.trimStart().startsWith("<")) {
-          continue;
-        }
-
-        for (const [word, count] of repeatedWords(item.text)) {
-          emitTextlintFinding(context, {
-            node: item.paragraph,
-            ruleId: "metrics:word-repetition",
-            message: `Word repeated ${count} times in one paragraph: "${word}". Keep repeated words to ${MAX_REPETITION} or fewer.`,
-            range: { start: 0, end: item.source.text.length }
-          });
-        }
-      }
+const rule = oneToOneRule({
+  detect: (unit) => {
+    if (unit.text.trimStart().startsWith("<")) {
+      return [];
     }
-  };
-};
+
+    return repeatedWords(unit.text).map(([word, count]) => ({
+      data: { count },
+      evidence: word,
+      label: word,
+      range: { start: 0, end: unit.text.length }
+    }));
+  },
+  family: "metrics",
+  formatMessage: (report) => {
+    const count = report.detections[0]?.data?.["count"];
+    return `Word repeated ${count} times in one paragraph: "${report.evidence}". Keep repeated words to ${MAX_REPETITION} or fewer.`;
+  },
+  ruleId: "metrics:word-repetition",
+  unitKind: "paragraph"
+});
 
 export default rule;

@@ -1,13 +1,9 @@
-import type { TxtParentNode } from "@textlint/ast-node-types";
-import type { TextlintRuleModule } from "@textlint/types";
-import { RuleHelper } from "textlint-rule-helper";
 import {
   type SplitSentence,
   splitSentences
 } from "../../../shared/text/sentences.js";
-import { sourceText } from "../../../shared/text/traverse.js";
 import { splitWhitespace } from "../../../shared/text/whitespace.js";
-import { emitTextlintFinding } from "../../../adapters/textlint/report.js";
+import { oneToOneRule } from "../../private/textlint-rule-builders.js";
 
 const MAX_FRAGMENT_WORDS = 6;
 const MAX_PAYOFF_WORDS = 28;
@@ -346,36 +342,18 @@ function findFragmentStacks(text: string): FragmentMatch[] {
   return matches;
 }
 
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax } = context;
-  const helper = new RuleHelper(context);
-  const ignoredParents = [
-    Syntax.List,
-    Syntax.ListItem,
-    Syntax.Table,
-    Syntax.TableCell
-  ];
-
-  return {
-    [Syntax.Paragraph](node: TxtParentNode): void {
-      if (helper.isChildNode(node, ignoredParents)) {
-        return;
-      }
-
-      const source = sourceText(node);
-      for (const match of findFragmentStacks(source.text)) {
-        emitTextlintFinding(context, {
-          node: node,
-          ruleId: "syntactic-patterns:fragment-stacking",
-          message: `Fragment stack found: ${match.sentences.join(" ")} Rewrite the clipped cadence as normal prose.`,
-          range: {
-            start: source.originalStartFor(match.start),
-            end: source.originalEndFor(match.end)
-          }
-        });
-      }
-    }
-  };
-};
+const rule = oneToOneRule({
+  detect: (unit) =>
+    findFragmentStacks(unit.text).map((match) => ({
+      evidence: match.sentences.join(" "),
+      label: match.fragmentTypes.join(","),
+      range: { start: match.start, end: match.end }
+    })),
+  family: "syntactic-patterns",
+  formatMessage: (report) =>
+    `Fragment stack found: ${report.evidence} Rewrite the clipped cadence as normal prose.`,
+  ruleId: "syntactic-patterns:fragment-stacking",
+  unitKind: "paragraph"
+});
 
 export default rule;

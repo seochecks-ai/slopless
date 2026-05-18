@@ -1,8 +1,5 @@
-import type { TxtDocumentNode } from "@textlint/ast-node-types";
-import type { TextlintRuleModule } from "@textlint/types";
-import { allParagraphSentences } from "../../shared/text/sections.js";
 import { wordTokens } from "../../shared/text/tokens.js";
-import { emitTextlintFinding } from "../../adapters/textlint/report.js";
+import { oneToOneRule } from "../private/textlint-rule-builders.js";
 
 const HEDGE_THRESHOLD = 2;
 
@@ -29,30 +26,26 @@ function hedgeCount(text: string): number {
   return count;
 }
 
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax } = context;
-
-  return {
-    [Syntax.Document](node: TxtDocumentNode): void {
-      for (const item of allParagraphSentences(node)) {
-        const count = hedgeCount(item.sentence.text);
-
-        if (count < HEDGE_THRESHOLD) {
-          continue;
-        }
-
-        emitTextlintFinding(context, {
-          node: item.paragraph,
-          ruleId: "words:hedge-stacking",
-          message: `Hedge stacking found: ${count} hedge words in one sentence. Keep fewer than ${HEDGE_THRESHOLD}.`,
-          range: {
-            start: item.source.originalStartFor(item.sentence.start),
-            end: item.source.originalEndFor(item.sentence.end)
-          }
-        });
-      }
+const rule = oneToOneRule({
+  detect: (unit) => {
+    const count = hedgeCount(unit.text);
+    if (count < HEDGE_THRESHOLD) {
+      return [];
     }
-  };
-};
+
+    return [
+      {
+        evidence: String(count),
+        label: "hedge stacking",
+        range: { start: 0, end: unit.text.length }
+      }
+    ];
+  },
+  family: "words",
+  formatMessage: (report) =>
+    `Hedge stacking found: ${report.evidence} hedge words in one sentence. Keep fewer than ${HEDGE_THRESHOLD}.`,
+  ruleId: "words:hedge-stacking",
+  unitKind: "sentence"
+});
 
 export default rule;

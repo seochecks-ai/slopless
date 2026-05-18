@@ -1,7 +1,7 @@
 import { splitSentences } from "../shared/text/sentences.js";
 import { wordTokens } from "../shared/text/tokens.js";
 import type { RuleDetection, TextUnit } from "../rules/types.js";
-import type { DensityMatch, RuleReport } from "./types.js";
+import type { DensityMatch, ReportPolicy, RuleReport } from "./types.js";
 
 type DensityReportConfig<Group extends string> = {
   readonly groups: readonly Group[];
@@ -161,4 +161,71 @@ export function densityReports<Group extends string>(
       unitId: unit.id
     }
   ];
+}
+
+export function reportsForPolicy(
+  units: readonly TextUnit[],
+  detections: readonly RuleDetection[],
+  policy: ReportPolicy,
+  formatMessage: (report: RuleReport) => string
+): RuleReport[] {
+  switch (policy.kind) {
+    case "one-to-one": {
+      const unitsById = new Map(units.map((unit) => [unit.id, unit]));
+      const reports = detections.map((detection) => {
+        const unit = unitsById.get(detection.unitId);
+        return {
+          detections: [detection],
+          evidence: detection.evidence,
+          message: "",
+          range: unit?.sourceRangeFor(detection.range) ?? detection.range,
+          ruleId: detection.ruleId,
+          unitId: detection.unitId
+        };
+      });
+      return reports.map((report) => ({
+        ...report,
+        message: formatMessage(report)
+      }));
+    }
+
+    case "density": {
+      const reports: RuleReport[] = [];
+      for (const unit of units) {
+        reports.push(
+          ...densityReports(
+            unit,
+            detections.filter(
+              (detection) => detection.unitId === unit.id
+            ) as readonly RuleDetection<string>[],
+            {
+              groups: policy.groups,
+              maxParagraphTokens: policy.maxParagraphTokens,
+              maxWindowTokens: policy.maxWindowTokens,
+              message: () => "",
+              paragraphMinimumHits: policy.paragraphMinimumHits,
+              windowMinimumHits: policy.windowMinimumHits,
+              windowSentences: policy.windowSentences
+            }
+          ).map((report) => ({
+            ...report,
+            message: formatMessage(report)
+          }))
+        );
+      }
+      return reports;
+    }
+
+    case "threshold": {
+      if (policy.scope !== "document" || detections.length <= policy.minimum) {
+        return [];
+      }
+
+      const reports = oneToOneReports(detections, () => "");
+      return reports.map((report) => ({
+        ...report,
+        message: formatMessage(report)
+      }));
+    }
+  }
 }

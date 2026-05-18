@@ -1,12 +1,9 @@
-import type { TxtDocumentNode } from "@textlint/ast-node-types";
-import type { TextlintRuleModule } from "@textlint/types";
-import { allParagraphs } from "../../shared/text/sections.js";
 import {
   splitSentences,
   type SplitSentence
 } from "../../shared/text/sentences.js";
 import { type Token, wordTokens } from "../../shared/text/tokens.js";
-import { emitTextlintFinding } from "../../adapters/textlint/report.js";
+import { oneToOneRule } from "../private/textlint-rule-builders.js";
 
 type CadenceSentence = {
   readonly actionKind: "linking" | "weak-action";
@@ -361,33 +358,31 @@ function findFlatActionRuns(text: string): CadenceRun[] {
   return runs;
 }
 
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax } = context;
-
-  return {
-    [Syntax.Document](node: TxtDocumentNode): void {
-      for (const item of allParagraphs(node)) {
-        const match = findFlatActionRuns(item.source.text)[0];
-        if (match === undefined) {
-          continue;
-        }
-
-        const verbs = [
-          ...new Set(match.sentences.map((sentence) => sentence.verb))
-        ].join(", ");
-
-        emitTextlintFinding(context, {
-          node: item.paragraph,
-          ruleId: "narrative-slop:flat-action-cadence",
-          message: `Flat action cadence: ${match.sentences.length} adjacent short simple sentences use subject-action beats (${verbs}). Vary the rhythm or add causal/sensory development.`,
-          range: {
-            start: item.source.originalStartFor(match.start),
-            end: item.source.originalEndFor(match.end)
-          }
-        });
-      }
+const rule = oneToOneRule({
+  detect: (unit) => {
+    const match = findFlatActionRuns(unit.text)[0];
+    if (match === undefined) {
+      return [];
     }
-  };
-};
+
+    const verbs = [
+      ...new Set(match.sentences.map((sentence) => sentence.verb))
+    ].join(", ");
+
+    return [
+      {
+        data: { count: match.sentences.length, verbs },
+        evidence: verbs,
+        label: "flat action cadence",
+        range: { start: match.start, end: match.end }
+      }
+    ];
+  },
+  family: "narrative-slop",
+  formatMessage: (report) =>
+    `Flat action cadence: ${report.detections[0]?.data?.["count"]} adjacent short simple sentences use subject-action beats (${report.detections[0]?.data?.["verbs"]}). Vary the rhythm or add causal/sensory development.`,
+  ruleId: "narrative-slop:flat-action-cadence",
+  unitKind: "paragraph"
+});
 
 export default rule;

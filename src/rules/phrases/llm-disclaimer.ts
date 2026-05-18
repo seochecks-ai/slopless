@@ -1,13 +1,10 @@
-import type { TxtDocumentNode } from "@textlint/ast-node-types";
-import type { TextlintRuleModule } from "@textlint/types";
 import {
   cleanSentence,
   containsAny,
   textStartsWithPattern
 } from "../../shared/matchers/prose-patterns.js";
-import { allParagraphSentences } from "../../shared/text/sections.js";
 import llmDisclaimerExpansions from "./data/llm-disclaimer-expansions.json" with { type: "json" };
-import { emitTextlintFinding } from "../../adapters/textlint/report.js";
+import { oneToOneRule } from "../private/textlint-rule-builders.js";
 
 const START_PATTERNS = [
   "as a language model",
@@ -59,30 +56,26 @@ function matchDisclaimer(sentence: string): string | undefined {
   );
 }
 
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax } = context;
-
-  return {
-    [Syntax.Document](node: TxtDocumentNode): void {
-      for (const item of allParagraphSentences(node)) {
-        const matched = matchDisclaimer(item.sentence.text);
-
-        if (matched === undefined) {
-          continue;
-        }
-
-        emitTextlintFinding(context, {
-          node: item.paragraph,
-          ruleId: "phrases:llm-disclaimer",
-          message: `LLM disclaimer found: "${matched}". Remove assistant leakage.`,
-          range: {
-            start: item.source.originalStartFor(item.sentence.start),
-            end: item.source.originalEndFor(item.sentence.end)
-          }
-        });
-      }
+const rule = oneToOneRule({
+  detect: (unit) => {
+    const matched = matchDisclaimer(unit.text);
+    if (matched === undefined) {
+      return [];
     }
-  };
-};
+
+    return [
+      {
+        evidence: matched,
+        label: matched,
+        range: { start: 0, end: unit.text.length }
+      }
+    ];
+  },
+  family: "phrases",
+  formatMessage: (report) =>
+    `LLM disclaimer found: "${report.evidence}". Remove assistant leakage.`,
+  ruleId: "phrases:llm-disclaimer",
+  unitKind: "sentence"
+});
 
 export default rule;

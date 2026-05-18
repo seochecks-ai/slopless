@@ -1,11 +1,8 @@
-import type { TxtDocumentNode } from "@textlint/ast-node-types";
-import type { TextlintRuleModule } from "@textlint/types";
 import {
   cleanSentence,
   type SentenceMatch
 } from "../../../shared/matchers/prose-patterns.js";
-import { allParagraphSentences } from "../../../shared/text/sections.js";
-import { emitTextlintFinding } from "../../../adapters/textlint/report.js";
+import { oneToOneRule } from "../../private/textlint-rule-builders.js";
 
 const PREFIXES = ["however, ", "but ", "and ", "so "];
 const EVIDENCE_SUBJECTS = [
@@ -109,29 +106,26 @@ function matchAuthorityPadding(sentence: string): SentenceMatch | undefined {
   return undefined;
 }
 
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax } = context;
-
-  return {
-    [Syntax.Document](node: TxtDocumentNode): void {
-      for (const item of allParagraphSentences(node)) {
-        const matched = matchAuthorityPadding(item.sentence.text);
-        if (matched === undefined) {
-          continue;
-        }
-
-        emitTextlintFinding(context, {
-          node: item.paragraph,
-          ruleId: "syntactic-patterns:authority-padding",
-          message: `Authority padding found: ${matched.signal}. Cite the actual evidence or remove the frame.`,
-          range: {
-            start: item.source.originalStartFor(item.sentence.start),
-            end: item.source.originalEndFor(item.sentence.end)
-          }
-        });
-      }
+const rule = oneToOneRule({
+  detect: (unit) => {
+    const matched = matchAuthorityPadding(unit.text);
+    if (matched === undefined) {
+      return [];
     }
-  };
-};
+
+    return [
+      {
+        evidence: matched.signal,
+        label: matched.kind,
+        range: { start: 0, end: unit.text.length }
+      }
+    ];
+  },
+  family: "syntactic-patterns",
+  formatMessage: (report) =>
+    `Authority padding found: ${report.evidence}. Cite the actual evidence or remove the frame.`,
+  ruleId: "syntactic-patterns:authority-padding",
+  unitKind: "sentence"
+});
 
 export default rule;

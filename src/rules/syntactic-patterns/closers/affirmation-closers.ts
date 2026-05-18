@@ -1,12 +1,9 @@
-import type { TxtDocumentNode } from "@textlint/ast-node-types";
-import type { TextlintRuleModule } from "@textlint/types";
+import { defineTextlintRule } from "../../../adapters/textlint/rule.js";
 import {
-  allParagraphSentences,
-  type SectionSentence,
-  sectionLastSentences
-} from "../../../shared/text/sections.js";
+  sectionLastSentenceUnits,
+  sentenceUnits
+} from "../../../adapters/textlint/units.js";
 import { wordTokens } from "../../../shared/text/tokens.js";
-import { emitTextlintFinding } from "../../../adapters/textlint/report.js";
 
 const CLOSERS = ["and that's the key.", "that's what matters."];
 
@@ -19,56 +16,61 @@ function isFormulaLine(text: string): boolean {
   );
 }
 
-function evidenceKey(item: SectionSentence): string {
-  return `${item.paragraph.range[0]}:${item.sentence.start}:${item.sentence.end}`;
-}
-
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax } = context;
-
-  return {
-    [Syntax.Document](node: TxtDocumentNode): void {
-      const reported = new Set<string>();
-
-      for (const item of sectionLastSentences(node)) {
-        const lower = item.sentence.text.toLocaleLowerCase("en");
-        const closer = CLOSERS.find((phrase) => lower.endsWith(phrase));
-
-        if (closer === undefined) {
-          continue;
+const rule = defineTextlintRule({
+  detector: {
+    detect: ({ units }) =>
+      units.flatMap((unit) => {
+        const lower = unit.text.toLocaleLowerCase("en");
+        const closer = unit.id.startsWith("section-last-sentence:")
+          ? CLOSERS.find((phrase) => lower.endsWith(phrase))
+          : undefined;
+        if (closer !== undefined) {
+          return [
+            {
+              evidence: closer,
+              label: "affirmation-closer",
+              range: { start: 0, end: unit.text.length },
+              ruleId: "syntactic-patterns:affirmation-closers" as const,
+              unitId: unit.id
+            }
+          ];
         }
 
-        reported.add(evidenceKey(item));
-        emitTextlintFinding(context, {
-          node: item.paragraph,
-          ruleId: "syntactic-patterns:affirmation-closers",
-          message: `Affirmation closer found: "${closer}". Replace the empty affirmation with the actual conclusion.`,
-          range: {
-            start: item.source.originalStartFor(item.sentence.start),
-            end: item.source.originalEndFor(item.sentence.end)
-          }
-        });
-      }
-
-      for (const item of allParagraphSentences(node)) {
-        const key = evidenceKey(item);
-        if (reported.has(key) || !isFormulaLine(item.sentence.text)) {
-          continue;
+        if (!isFormulaLine(unit.text)) {
+          return [];
         }
 
-        reported.add(key);
-        emitTextlintFinding(context, {
-          node: item.paragraph,
-          ruleId: "syntactic-patterns:affirmation-closers",
-          message: `Formula affirmation found: "${item.sentence.text}". Replace the empty formula line with substance.`,
-          range: {
-            start: item.source.originalStartFor(item.sentence.start),
-            end: item.source.originalEndFor(item.sentence.end)
+        return [
+          {
+            evidence: unit.text,
+            label: "formula-affirmation",
+            range: { start: 0, end: unit.text.length },
+            ruleId: "syntactic-patterns:affirmation-closers" as const,
+            unitId: unit.id
           }
-        });
-      }
-    }
-  };
-};
+        ];
+      }),
+    family: "syntactic-patterns",
+    id: "syntactic-patterns:affirmation-closers"
+  },
+  formatMessage: (report) =>
+    report.detections[0]?.label === "affirmation-closer"
+      ? `Affirmation closer found: "${report.evidence}". Replace the empty affirmation with the actual conclusion.`
+      : `Formula affirmation found: "${report.evidence}". Replace the empty formula line with substance.`,
+  reportPolicy: { kind: "one-to-one" },
+  units: (document) => {
+    const tailUnits = sectionLastSentenceUnits(document);
+    return [
+      ...tailUnits,
+      ...sentenceUnits(document).filter(
+        (unit) =>
+          !tailUnits.some(
+            (tailUnit) =>
+              tailUnit.text === unit.text && tailUnit.node === unit.node
+          )
+      )
+    ];
+  }
+});
 
 export default rule;

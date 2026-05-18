@@ -1,0 +1,66 @@
+plan = ".plans/2026-05-18-171548-rule-reporting-refactor.md"
+
+[[tree]]
+path = "src/adapters/textlint/rule.ts"
+
+[[tree]]
+path = "src/adapters/textlint/report.ts"
+
+[[tree]]
+path = "src/adapters/textlint/units.ts"
+
+[[tree]]
+path = "src/reporting/reports.ts"
+
+[[tree]]
+path = "src/reporting/types.ts"
+
+[[public_api]]
+path = "src/adapters/textlint/rule.ts"
+exports = ["defineTextlintRule"]
+
+[[public_api]]
+path = "src/reporting/reports.ts"
+exports = ["densityReports", "oneToOneReports", "reportsForPolicy"]
+
+[[public_api]]
+path = "src/adapters/textlint/units.ts"
+exports = [
+  "allParagraphUnits",
+  "documentUnit",
+  "headingUnits",
+  "linkUnits",
+  "paragraphUnits",
+  "sectionFirstSentenceUnits",
+  "sectionLastSentenceUnits",
+  "sentenceUnits",
+  "strUnits",
+  "textUnitForNode"
+]
+
+[[forbidden_rule_text]]
+root = "src/rules"
+patterns = [
+  "context.report",
+  "new context.RuleError",
+  "new RuleError",
+  "emitTextlintDetection",
+  "emitTextlintFinding",
+  "emitTextlintNodeFinding",
+  "emitTextlintReport",
+  "emitTextlintReports",
+  "textlint-rule-helper",
+  "RuleHelper"
+]
+
+[[allowed_rule_adapter_import]]
+root = "src/rules"
+module = "adapters/textlint/rule.js"
+
+[[report_policy]]
+path = "src/reporting/reports.ts"
+policies = ["one-to-one", "density"]
+
+[[fixture_output]]
+command = "scripts/fixture3.sh check --suite textlint-rules"
+expected_status = "matched"

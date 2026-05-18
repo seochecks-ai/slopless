@@ -1,13 +1,10 @@
-import type { TxtDocumentNode } from "@textlint/ast-node-types";
-import type { TextlintRuleModule } from "@textlint/types";
 import {
   cleanSentence,
   containsAny,
   tokens,
   type SentenceMatch
 } from "../../../shared/matchers/prose-patterns.js";
-import { allParagraphSentences } from "../../../shared/text/sections.js";
-import { emitTextlintFinding } from "../../../adapters/textlint/report.js";
+import { oneToOneRule } from "../../private/textlint-rule-builders.js";
 
 const MODAL_PATTERNS = [" could ", " may ", " might "];
 const QUALIFIER_PATTERNS = [
@@ -141,29 +138,26 @@ function matchSoftening(sentence: string): SentenceMatch | undefined {
   return { kind: "stacked-softening", signal: "multiple softening signals" };
 }
 
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax } = context;
-
-  return {
-    [Syntax.Document](node: TxtDocumentNode): void {
-      for (const item of allParagraphSentences(node)) {
-        const matched = matchSoftening(item.sentence.text);
-        if (matched === undefined) {
-          continue;
-        }
-
-        emitTextlintFinding(context, {
-          node: item.paragraph,
-          ruleId: "syntactic-patterns:softening-language",
-          message: `Softening language found: ${matched.signal}. Make the claim specific or remove the hedge stack.`,
-          range: {
-            start: item.source.originalStartFor(item.sentence.start),
-            end: item.source.originalEndFor(item.sentence.end)
-          }
-        });
-      }
+const rule = oneToOneRule({
+  detect: (unit) => {
+    const matched = matchSoftening(unit.text);
+    if (matched === undefined) {
+      return [];
     }
-  };
-};
+
+    return [
+      {
+        evidence: matched.signal,
+        label: matched.kind,
+        range: { start: 0, end: unit.text.length }
+      }
+    ];
+  },
+  family: "syntactic-patterns",
+  formatMessage: (report) =>
+    `Softening language found: ${report.evidence}. Make the claim specific or remove the hedge stack.`,
+  ruleId: "syntactic-patterns:softening-language",
+  unitKind: "sentence"
+});
 
 export default rule;

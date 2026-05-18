@@ -1,13 +1,10 @@
-import type { TxtDocumentNode } from "@textlint/ast-node-types";
-import type { TextlintRuleModule } from "@textlint/types";
 import {
   cleanSentence,
   startsWithAnyText,
   tokens,
   type SentenceMatch
 } from "../../../shared/matchers/prose-patterns.js";
-import { allParagraphSentences } from "../../../shared/text/sections.js";
-import { emitTextlintFinding } from "../../../adapters/textlint/report.js";
+import { oneToOneRule } from "../../private/textlint-rule-builders.js";
 
 const PREFIXES = ["and ", "but ", "so "];
 const LESSON_SUMMARY_PATTERNS = [
@@ -75,29 +72,26 @@ function matchLessonFraming(sentence: string): SentenceMatch | undefined {
   return cue === undefined ? undefined : { kind: "fix-wrapper", signal: cue };
 }
 
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax } = context;
-
-  return {
-    [Syntax.Document](node: TxtDocumentNode): void {
-      for (const item of allParagraphSentences(node)) {
-        const matched = matchLessonFraming(item.sentence.text);
-        if (matched === undefined) {
-          continue;
-        }
-
-        emitTextlintFinding(context, {
-          node: item.paragraph,
-          ruleId: "syntactic-patterns:lesson-framing",
-          message: `Lesson framing found: ${matched.signal}. Replace the wrapper with the lesson.`,
-          range: {
-            start: item.source.originalStartFor(item.sentence.start),
-            end: item.source.originalEndFor(item.sentence.end)
-          }
-        });
-      }
+const rule = oneToOneRule({
+  detect: (unit) => {
+    const matched = matchLessonFraming(unit.text);
+    if (matched === undefined) {
+      return [];
     }
-  };
-};
+
+    return [
+      {
+        evidence: matched.signal,
+        label: matched.kind,
+        range: { start: 0, end: unit.text.length }
+      }
+    ];
+  },
+  family: "syntactic-patterns",
+  formatMessage: (report) =>
+    `Lesson framing found: ${report.evidence}. Replace the wrapper with the lesson.`,
+  ruleId: "syntactic-patterns:lesson-framing",
+  unitKind: "sentence"
+});
 
 export default rule;

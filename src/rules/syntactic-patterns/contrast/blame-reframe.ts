@@ -1,8 +1,5 @@
-import type { TxtDocumentNode } from "@textlint/ast-node-types";
-import type { TextlintRuleModule } from "@textlint/types";
 import { cleanSentence } from "../../../shared/matchers/prose-patterns.js";
-import { allParagraphSentences } from "../../../shared/text/sections.js";
-import { emitTextlintFinding } from "../../../adapters/textlint/report.js";
+import { oneToOneRule } from "../../private/textlint-rule-builders.js";
 
 const PREFIXES = ["and ", "but ", "so "];
 const BLAME_NOUNS = ["malice", "shame", "guilt", "blame", "humiliation"];
@@ -57,29 +54,26 @@ function matchBlameReframe(sentence: string): string | undefined {
   return undefined;
 }
 
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax } = context;
-
-  return {
-    [Syntax.Document](node: TxtDocumentNode): void {
-      for (const item of allParagraphSentences(node)) {
-        const matched = matchBlameReframe(item.sentence.text);
-        if (matched === undefined) {
-          continue;
-        }
-
-        emitTextlintFinding(context, {
-          node: item.paragraph,
-          ruleId: "syntactic-patterns:blame-reframe",
-          message: `Blame reframe found: ${matched}. Replace the moralized contrast with a concrete claim.`,
-          range: {
-            start: item.source.originalStartFor(item.sentence.start),
-            end: item.source.originalEndFor(item.sentence.end)
-          }
-        });
-      }
+const rule = oneToOneRule({
+  detect: (unit) => {
+    const matched = matchBlameReframe(unit.text);
+    if (matched === undefined) {
+      return [];
     }
-  };
-};
+
+    return [
+      {
+        evidence: matched,
+        label: matched,
+        range: { start: 0, end: unit.text.length }
+      }
+    ];
+  },
+  family: "syntactic-patterns",
+  formatMessage: (report) =>
+    `Blame reframe found: ${report.evidence}. Replace the moralized contrast with a concrete claim.`,
+  ruleId: "syntactic-patterns:blame-reframe",
+  unitKind: "sentence"
+});
 
 export default rule;

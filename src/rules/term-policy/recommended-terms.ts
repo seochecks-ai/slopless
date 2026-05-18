@@ -1,9 +1,6 @@
-import type { TxtDocumentNode } from "@textlint/ast-node-types";
-import type { TextlintRuleModule } from "@textlint/types";
-import { documentText } from "../../shared/text/document.js";
 import { normalizeForMatch } from "../../shared/text/normalize.js";
 import { wordTokens } from "../../shared/text/tokens.js";
-import { emitTextlintFinding } from "../../adapters/textlint/report.js";
+import { oneToOneRule } from "../private/textlint-rule-builders.js";
 
 type RecommendedTermsOptions = {
   readonly allowInflections?: boolean;
@@ -105,32 +102,32 @@ function countPresentTerms(
   return count;
 }
 
-const rule: TextlintRuleModule<RecommendedTermsOptions> = (
-  context,
-  options = {}
-) => {
-  const { Syntax } = context;
-
-  return {
-    [Syntax.Document](node: TxtDocumentNode): void {
-      const policy = configuredPolicy(options);
-      if (policy === undefined) {
-        return;
-      }
-
-      const count = countPresentTerms(documentText(node), policy);
-      if (count >= policy.minCount) {
-        return;
-      }
-
-      emitTextlintFinding(context, {
-        node: node,
-        ruleId: "term-policy:recommended-terms",
-        message: `Recommended terms present: ${count}. Include at least ${policy.minCount} terms from the policy pool.`,
-        range: { start: 0, end: 0 }
-      });
+const rule = oneToOneRule<RecommendedTermsOptions>({
+  detect: (unit, options) => {
+    const policy = configuredPolicy(options);
+    if (policy === undefined) {
+      return [];
     }
-  };
-};
+
+    const count = countPresentTerms(unit.text, policy);
+    if (count >= policy.minCount) {
+      return [];
+    }
+
+    return [
+      {
+        data: { minCount: policy.minCount },
+        evidence: String(count),
+        label: "recommended terms",
+        range: { start: 0, end: 0 }
+      }
+    ];
+  },
+  family: "term-policy",
+  formatMessage: (report) =>
+    `Recommended terms present: ${report.evidence}. Include at least ${report.detections[0]?.data?.["minCount"]} terms from the policy pool.`,
+  ruleId: "term-policy:recommended-terms",
+  unitKind: "document"
+});
 
 export default rule;

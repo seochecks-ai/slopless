@@ -1,10 +1,6 @@
-import type { TxtParentNode } from "@textlint/ast-node-types";
-import type { TextlintRuleModule } from "@textlint/types";
-import { RuleHelper } from "textlint-rule-helper";
 import { splitSentences } from "../../../shared/text/sentences.js";
-import { sourceText } from "../../../shared/text/traverse.js";
 import { splitWhitespace } from "../../../shared/text/whitespace.js";
-import { emitTextlintFinding } from "../../../adapters/textlint/report.js";
+import { oneToOneRule } from "../../private/textlint-rule-builders.js";
 
 type RepeatMatch = {
   readonly end: number;
@@ -157,44 +153,23 @@ function findRepeatedFrames(text: string): RepeatMatch[] {
   return matches;
 }
 
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax } = context;
-  const helper = new RuleHelper(context);
-  const ignoredParents = [
-    Syntax.List,
-    Syntax.ListItem,
-    Syntax.Table,
-    Syntax.TableCell
-  ];
-
-  return {
-    [Syntax.Paragraph](node: TxtParentNode): void {
-      if (helper.isChildNode(node, ignoredParents)) {
-        return;
-      }
-
-      const source = sourceText(node);
-      const matches = [
-        ...findTripleRepeats(source.text),
-        ...findRepeatedFrames(source.text)
-      ];
-
-      for (const match of matches) {
-        emitTextlintFinding(context, {
-          node: node,
-          ruleId: "syntactic-patterns:triple-repeat",
-          message:
-            match.kind === "triple"
-              ? `Triple repeat opener found: "${match.opener}". Vary the sentence openers.`
-              : `Repeated sentence frame found: "${match.opener}". Vary the sentence frame.`,
-          range: {
-            start: source.originalStartFor(match.start),
-            end: source.originalEndFor(match.end)
-          }
-        });
-      }
-    }
-  };
-};
+const rule = oneToOneRule({
+  detect: (unit) =>
+    [...findTripleRepeats(unit.text), ...findRepeatedFrames(unit.text)].map(
+      (match) => ({
+        data: { kind: match.kind },
+        evidence: match.opener,
+        label: match.opener,
+        range: { start: match.start, end: match.end }
+      })
+    ),
+  family: "syntactic-patterns",
+  formatMessage: (report) =>
+    report.detections[0]?.data?.["kind"] === "triple"
+      ? `Triple repeat opener found: "${report.evidence}". Vary the sentence openers.`
+      : `Repeated sentence frame found: "${report.evidence}". Vary the sentence frame.`,
+  ruleId: "syntactic-patterns:triple-repeat",
+  unitKind: "paragraph"
+});
 
 export default rule;

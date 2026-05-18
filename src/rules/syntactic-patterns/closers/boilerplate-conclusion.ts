@@ -1,16 +1,11 @@
-import type { TxtDocumentNode } from "@textlint/ast-node-types";
-import type { TextlintRuleModule } from "@textlint/types";
-import { emitTextlintFinding } from "../../../adapters/textlint/report.js";
+import { defineTextlintRule } from "../../../adapters/textlint/rule.js";
+import { sentenceUnits } from "../../../adapters/textlint/units.js";
 import {
   cleanSentence,
   containsAny,
   tokens,
   type SentenceMatch
 } from "../../../shared/matchers/prose-patterns.js";
-import {
-  allParagraphSentences,
-  type SectionSentence
-} from "../../../shared/text/sections.js";
 
 const PREFIXES = [
   "ultimately, ",
@@ -141,32 +136,34 @@ function matchConclusion(
     : { kind: "compression-close", signal: compression };
 }
 
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax } = context;
-
-  return {
-    [Syntax.Document](node: TxtDocumentNode): void {
-      const sentences = allParagraphSentences(node);
-      const tailStart = Math.max(sentences.length - 3, 0);
-
-      sentences.forEach((item: SectionSentence, index: number) => {
-        const matched = matchConclusion(item.sentence.text, index >= tailStart);
+const rule = defineTextlintRule({
+  detector: {
+    detect: ({ units }) => {
+      const tailStart = Math.max(units.length - 3, 0);
+      return units.flatMap((unit, index) => {
+        const matched = matchConclusion(unit.text, index >= tailStart);
         if (matched === undefined) {
-          return;
+          return [];
         }
 
-        emitTextlintFinding(context, {
-          node: item.paragraph,
-          ruleId: "syntactic-patterns:boilerplate-conclusion",
-          message: `Boilerplate conclusion found: ${matched.signal}. Replace the closer with a specific ending.`,
-          range: {
-            start: item.source.originalStartFor(item.sentence.start),
-            end: item.source.originalEndFor(item.sentence.end)
+        return [
+          {
+            evidence: matched.signal,
+            label: matched.kind,
+            range: { start: 0, end: unit.text.length },
+            ruleId: "syntactic-patterns:boilerplate-conclusion" as const,
+            unitId: unit.id
           }
-        });
+        ];
       });
-    }
-  };
-};
+    },
+    family: "syntactic-patterns",
+    id: "syntactic-patterns:boilerplate-conclusion"
+  },
+  formatMessage: (report) =>
+    `Boilerplate conclusion found: ${report.evidence}. Replace the closer with a specific ending.`,
+  reportPolicy: { kind: "one-to-one" },
+  units: (document) => sentenceUnits(document)
+});
 
 export default rule;

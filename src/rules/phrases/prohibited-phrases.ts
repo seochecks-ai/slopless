@@ -1,32 +1,20 @@
-import type { TextlintRuleModule } from "@textlint/types";
-import { RuleHelper } from "textlint-rule-helper";
 import prohibitedPhrases from "./data/prohibited-phrases.json" with { type: "json" };
 import { findUnquotedPhraseMatches } from "../../shared/matchers/phrases.js";
-import { emitTextlintFinding } from "../../adapters/textlint/report.js";
+import { oneToOneRule } from "../private/textlint-rule-builders.js";
 
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax, getSource } = context;
-  const helper = new RuleHelper(context);
-  const ignoredParents = [Syntax.Link, Syntax.LinkReference];
-
-  return {
-    [Syntax.Str](node): void {
-      if (helper.isChildNode(node, ignoredParents)) {
-        return;
-      }
-
-      const text = getSource(node);
-
-      for (const match of findUnquotedPhraseMatches(text, prohibitedPhrases)) {
-        emitTextlintFinding(context, {
-          node: node,
-          ruleId: "phrases:prohibited-phrases",
-          message: `Prohibited phrase found: "${match.text}". Rewrite without this phrase.`,
-          range: { start: match.start, end: match.end }
-        });
-      }
-    }
-  };
-};
+const rule = oneToOneRule({
+  detect: (unit) =>
+    findUnquotedPhraseMatches(unit.text, prohibitedPhrases).map((match) => ({
+      evidence: match.text,
+      label: match.text,
+      range: { start: match.start, end: match.end }
+    })),
+  family: "phrases",
+  formatMessage: (report) =>
+    `Prohibited phrase found: "${report.evidence}". Rewrite without this phrase.`,
+  ignoredAncestorTypes: ["Link", "LinkReference"],
+  ruleId: "phrases:prohibited-phrases",
+  unitKind: "str"
+});
 
 export default rule;

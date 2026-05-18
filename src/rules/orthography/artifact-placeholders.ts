@@ -1,7 +1,5 @@
-import type { TxtLinkNode, TxtStrNode } from "@textlint/ast-node-types";
-import type { TextlintRuleContext, TextlintRuleModule } from "@textlint/types";
-import { RuleHelper } from "textlint-rule-helper";
-import { emitTextlintFinding } from "../../adapters/textlint/report.js";
+import { defineTextlintRule } from "../../adapters/textlint/rule.js";
+import { linkUnits, strUnits } from "../../adapters/textlint/units.js";
 
 type ArtifactMatch = {
   readonly end: number;
@@ -151,50 +149,28 @@ function findArtifactMatches(text: string): readonly ArtifactMatch[] {
   ]).filter((match) => !isInsideSpan(match, quoteSpans));
 }
 
-function reportMatches(
-  context: TextlintRuleContext,
-  node: TxtLinkNode | TxtStrNode,
-  matches: readonly ArtifactMatch[],
-  offset: number
-): void {
-  for (const match of matches) {
-    emitTextlintFinding(context, {
-      node,
-      ruleId: "orthography:artifact-placeholders",
-      message: `Artifact placeholder found: ${match.label}. Remove generated or unfinished placeholder residue.`,
-      range: {
-        start: offset + match.start,
-        end: offset + match.end
-      }
-    });
-  }
-}
-
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax, getSource } = context;
-  const helper = new RuleHelper(context);
-  const ignoredParents = [Syntax.BlockQuote];
-
-  return {
-    [Syntax.Str](node: TxtStrNode): void {
-      if (helper.isChildNode(node, ignoredParents)) {
-        return;
-      }
-
-      reportMatches(context, node, findArtifactMatches(getSource(node)), 0);
-    },
-
-    [Syntax.Link](node: TxtLinkNode): void {
-      if (helper.isChildNode(node, ignoredParents)) {
-        return;
-      }
-
-      const raw = getSource(node);
-      const urlOffset = raw.indexOf(node.url);
-      const offset = urlOffset >= 0 ? urlOffset : 0;
-      reportMatches(context, node, findArtifactMatches(node.url), offset);
-    }
-  };
-};
+const rule = defineTextlintRule({
+  detector: {
+    detect: ({ units }) =>
+      units.flatMap((unit) =>
+        findArtifactMatches(unit.text).map((match) => ({
+          evidence: match.text,
+          label: match.label,
+          range: { start: match.start, end: match.end },
+          ruleId: "orthography:artifact-placeholders" as const,
+          unitId: unit.id
+        }))
+      ),
+    family: "orthography",
+    id: "orthography:artifact-placeholders"
+  },
+  formatMessage: (report) =>
+    `Artifact placeholder found: ${report.detections[0]?.label}. Remove generated or unfinished placeholder residue.`,
+  reportPolicy: { kind: "one-to-one" },
+  units: (document) => [
+    ...strUnits(document, ["BlockQuote"]),
+    ...linkUnits(document, ["BlockQuote"])
+  ]
+});
 
 export default rule;

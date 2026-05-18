@@ -1,9 +1,5 @@
-import type { TxtParentNode } from "@textlint/ast-node-types";
-import type { TextlintRuleModule } from "@textlint/types";
-import { RuleHelper } from "textlint-rule-helper";
 import { splitSentences } from "../../shared/text/sentences.js";
-import { sourceText } from "../../shared/text/traverse.js";
-import { emitTextlintFinding } from "../../adapters/textlint/report.js";
+import { oneToOneRule } from "../private/textlint-rule-builders.js";
 
 type TimestampMatch = {
   readonly end: number;
@@ -106,37 +102,18 @@ function findSentenceTimestampMatches(text: string): TimestampMatch[] {
   return matches;
 }
 
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax } = context;
-  const helper = new RuleHelper(context);
-  const ignoredParents = [
-    Syntax.List,
-    Syntax.ListItem,
-    Syntax.Table,
-    Syntax.TableCell
-  ];
-
-  return {
-    [Syntax.Paragraph](node: TxtParentNode): void {
-      if (helper.isChildNode(node, ignoredParents)) {
-        return;
-      }
-
-      const source = sourceText(node);
-
-      for (const match of findSentenceTimestampMatches(source.text)) {
-        emitTextlintFinding(context, {
-          node: node,
-          ruleId: "orthography:fake-timestamps",
-          message: `Fake timestamp found: "${match.text}". Remove fabricated clock specificity.`,
-          range: {
-            start: source.originalStartFor(match.start),
-            end: source.originalEndFor(match.end)
-          }
-        });
-      }
-    }
-  };
-};
+const rule = oneToOneRule({
+  detect: (unit) =>
+    findSentenceTimestampMatches(unit.text).map((match) => ({
+      evidence: match.text,
+      label: match.text,
+      range: { start: match.start, end: match.end }
+    })),
+  family: "orthography",
+  formatMessage: (report) =>
+    `Fake timestamp found: "${report.evidence}". Remove fabricated clock specificity.`,
+  ruleId: "orthography:fake-timestamps",
+  unitKind: "paragraph"
+});
 
 export default rule;

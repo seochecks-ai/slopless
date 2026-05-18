@@ -1,12 +1,9 @@
-import type { TxtDocumentNode } from "@textlint/ast-node-types";
-import type { TextlintRuleModule } from "@textlint/types";
 import {
   cleanSentence,
   tokens,
   tokensContainInOrder
 } from "../../../shared/matchers/prose-patterns.js";
-import { allParagraphSentences } from "../../../shared/text/sections.js";
-import { emitTextlintFinding } from "../../../adapters/textlint/report.js";
+import { oneToOneRule } from "../../private/textlint-rule-builders.js";
 
 const PREFIXES = ["however, ", "but ", "and ", "so ", "that being said, "];
 const VAGUE_INTROS = [
@@ -110,26 +107,18 @@ function matchBoilerplateFraming(sentence: string): string[] {
   return matches;
 }
 
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax } = context;
-
-  return {
-    [Syntax.Document](node: TxtDocumentNode): void {
-      for (const item of allParagraphSentences(node)) {
-        for (const signal of matchBoilerplateFraming(item.sentence.text)) {
-          emitTextlintFinding(context, {
-            node: item.paragraph,
-            ruleId: "syntactic-patterns:boilerplate-framing",
-            message: `Boilerplate framing found: ${signal}. Start with the specific point.`,
-            range: {
-              start: item.source.originalStartFor(item.sentence.start),
-              end: item.source.originalEndFor(item.sentence.end)
-            }
-          });
-        }
-      }
-    }
-  };
-};
+const rule = oneToOneRule({
+  detect: (unit) =>
+    matchBoilerplateFraming(unit.text).map((signal) => ({
+      evidence: signal,
+      label: signal,
+      range: { start: 0, end: unit.text.length }
+    })),
+  family: "syntactic-patterns",
+  formatMessage: (report) =>
+    `Boilerplate framing found: ${report.evidence}. Start with the specific point.`,
+  ruleId: "syntactic-patterns:boilerplate-framing",
+  unitKind: "sentence"
+});
 
 export default rule;

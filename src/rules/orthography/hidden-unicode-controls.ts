@@ -1,5 +1,4 @@
-import type { TextlintRuleModule } from "@textlint/types";
-import { emitTextlintFinding } from "../../adapters/textlint/report.js";
+import { oneToOneRule } from "../private/textlint-rule-builders.js";
 
 const HIDDEN_UNICODE_CONTROLS = new Map([
   [0x00ad, "SOFT HYPHEN"],
@@ -25,34 +24,37 @@ function codePointLabel(codePoint: number): string {
   return `U+${codePoint.toString(16).toUpperCase().padStart(4, "0")}`;
 }
 
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax, getSource } = context;
+const rule = oneToOneRule({
+  detect: (unit) => {
+    const detections = [];
+    let start = 0;
 
-  return {
-    [Syntax.Str](node): void {
-      const text = getSource(node);
-      let start = 0;
+    for (const character of unit.text) {
+      const codePoint = character.codePointAt(0);
+      const name =
+        codePoint === undefined
+          ? undefined
+          : HIDDEN_UNICODE_CONTROLS.get(codePoint);
 
-      for (const character of text) {
-        const codePoint = character.codePointAt(0);
-        const name =
-          codePoint === undefined
-            ? undefined
-            : HIDDEN_UNICODE_CONTROLS.get(codePoint);
-
-        if (codePoint !== undefined && name !== undefined) {
-          emitTextlintFinding(context, {
-            node,
-            ruleId: "orthography:hidden-unicode-controls",
-            message: `Hidden Unicode control found: ${codePointLabel(codePoint)} ${name}. Remove the invisible character.`,
-            range: { start, end: start + character.length }
-          });
-        }
-
-        start += character.length;
+      if (codePoint !== undefined && name !== undefined) {
+        detections.push({
+          data: { name },
+          evidence: codePointLabel(codePoint),
+          label: name,
+          range: { start, end: start + character.length }
+        });
       }
+
+      start += character.length;
     }
-  };
-};
+
+    return detections;
+  },
+  family: "orthography",
+  formatMessage: (report) =>
+    `Hidden Unicode control found: ${report.evidence} ${report.detections[0]?.data?.["name"]}. Remove the invisible character.`,
+  ruleId: "orthography:hidden-unicode-controls",
+  unitKind: "str"
+});
 
 export default rule;

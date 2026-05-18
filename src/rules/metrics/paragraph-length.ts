@@ -1,32 +1,28 @@
-import type { TxtDocumentNode } from "@textlint/ast-node-types";
-import type { TextlintRuleModule } from "@textlint/types";
-import { allParagraphs } from "../../shared/text/sections.js";
 import { splitSentences } from "../../shared/text/sentences.js";
-import { emitTextlintFinding } from "../../adapters/textlint/report.js";
+import { oneToOneRule } from "../private/textlint-rule-builders.js";
 
 const MAX_SENTENCES = 6;
 
-const rule: TextlintRuleModule = (context) => {
-  const { Syntax } = context;
-
-  return {
-    [Syntax.Document](node: TxtDocumentNode): void {
-      for (const item of allParagraphs(node)) {
-        const sentenceCount = splitSentences(item.text).length;
-
-        if (sentenceCount <= MAX_SENTENCES) {
-          continue;
-        }
-
-        emitTextlintFinding(context, {
-          node: item.paragraph,
-          ruleId: "metrics:paragraph-length",
-          message: `Paragraph has ${sentenceCount} sentences. Keep paragraphs to ${MAX_SENTENCES} sentences or fewer.`,
-          range: { start: 0, end: item.source.text.length }
-        });
-      }
+const rule = oneToOneRule({
+  detect: (unit) => {
+    const sentenceCount = splitSentences(unit.text).length;
+    if (sentenceCount <= MAX_SENTENCES) {
+      return [];
     }
-  };
-};
+
+    return [
+      {
+        evidence: String(sentenceCount),
+        label: "paragraph sentence count",
+        range: { start: 0, end: unit.text.length }
+      }
+    ];
+  },
+  family: "metrics",
+  formatMessage: (report) =>
+    `Paragraph has ${report.evidence} sentences. Keep paragraphs to ${MAX_SENTENCES} sentences or fewer.`,
+  ruleId: "metrics:paragraph-length",
+  unitKind: "paragraph"
+});
 
 export default rule;
