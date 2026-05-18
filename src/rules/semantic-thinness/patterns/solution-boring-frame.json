@@ -1,0 +1,65 @@
+{
+  "id": "solution-boring-frame",
+  "class": "solution-boring",
+  "purpose": "Catch solution-like nouns framed as boring, a consultant or LLM wrapper that praises unglamorous obviousness without adding substance.",
+  "matchMode": "contains",
+  "maxTokens": 40,
+  "templates": [
+    "the {solutionNoun} {linkingVerb} boring.",
+    "the {solutionNoun} {linkingVerb} boring:",
+    "the {solutionQualifier} {solutionNoun} {linkingVerb} boring.",
+    "the {solutionQualifier} {solutionNoun} {linkingVerb} boring:"
+  ],
+  "slots": {
+    "solutionQualifier": [
+      "right",
+      "correct",
+      "good",
+      "better",
+      "best",
+      "practical",
+      "obvious",
+      "simple",
+      "real",
+      "actual"
+    ],
+    "solutionNoun": [
+      "answer",
+      "approach",
+      "choice",
+      "fix",
+      "method",
+      "option",
+      "plan",
+      "remedy",
+      "response",
+      "solution",
+      "strategy",
+      "tactic"
+    ],
+    "linkingVerb": ["is", "was", "becomes", "became", "remains", "stays"]
+  },
+  "rejectIf": [
+    "subject is a concrete entertainment, event, object, person, or venue noun",
+    "sentence uses boring as a normal literal evaluation of experience",
+    "sentence names a concrete process noun such as audit or report rather than a solution-like noun"
+  ],
+  "positiveExamples": [
+    "The solution is boring.",
+    "The solution is boring: move copy into raw HTML.",
+    "The right solution is boring.",
+    "The correct answer is boring.",
+    "The practical plan is boring: remove the redirect chain."
+  ],
+  "negativeExamples": [
+    "The movie is boring.",
+    "The party is boring.",
+    "The audit is boring.",
+    "The report is boring."
+  ],
+  "notes": [
+    "This intentionally excludes audit and report because those are process or document nouns, not solution-like nouns.",
+    "This intentionally excludes path, route, and way because they commonly name literal travel or movement.",
+    "Concrete details after the colon should not suppress this pattern because the slop is the wrapper itself."
+  ]
+}

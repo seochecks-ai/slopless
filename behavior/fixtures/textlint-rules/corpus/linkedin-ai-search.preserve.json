@@ -101,6 +101,34 @@
       "line": 1001
     },
     {
+      "text": "The solution is boring.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 155
+    },
+    {
+      "text": "The strategy is boring: write the acceptance check first.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 157
+    },
+    {
+      "text": "The right solution is boring.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 159
+    },
+    {
+      "text": "The practical plan is boring: remove the redirect chain.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 161
+    },
+    {
       "text": "The problem is simple: GPTBot received the raw HTML shell before hydration.",
       "family": "semantic-thinness",
       "bucket": "no-hits",
@@ -162,6 +190,34 @@
       "bucket": "no-hits",
       "source": "cases/semantic-thinness/no-hits.md",
       "line": 115
+    },
+    {
+      "text": "The movie is boring.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 117
+    },
+    {
+      "text": "The party is boring.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 119
+    },
+    {
+      "text": "The audit is boring.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 121
+    },
+    {
+      "text": "The report is boring.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 123
     },
     {
       "text": "What helped more than the first patch was replacing the cache key.",

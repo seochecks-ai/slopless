@@ -151,3 +151,11 @@ That is the kind of issue a technical audit should catch before the team writes 
 That does not mean engagement is useless.
 
 It means the post has to contain source material worth retrieving.
+
+The solution is boring.
+
+The strategy is boring: write the acceptance check first.
+
+The right solution is boring.
+
+The practical plan is boring: remove the redirect chain.

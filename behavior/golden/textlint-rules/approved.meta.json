@@ -1,11 +1,11 @@
 {
   "suite": "textlint-rules",
   "kind": "approved",
-  "run_id": "2026-05-18T19-21-49.201469Z-f3c41e06",
-  "run_commit": "38f8aff",
+  "run_id": "2026-05-18T19-36-12.90281Z-f3c41e06",
+  "run_commit": "080af88",
   "working_tree": "dirty",
-  "recorded_at": "2026-05-18T19:21:49.201469Z",
-  "fixture_hash": "sha256:de537645c93e5be71014ab275ef13f923794eff228ee78878e684f5da4bb7652",
+  "recorded_at": "2026-05-18T19:36:12.90281Z",
+  "fixture_hash": "sha256:6f2a44f909c7c4e85eb31625970bbcfd6c2a5058562437642635d8bb68590044",
   "manifest_hash": "sha256:f3c41e06f4c33e3b21fa87bec32cd48f42af6c1064c3e6ae7d226d744fdbe350",
   "tool_version": "0.1.8",
   "output_schema_version": "1",
@@ -60,11 +60,11 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md",
-      "sha256": "sha256:482501a7712b77ce5209012c8ba087aea8ae83c70a251b4fa68f3573ced732a7"
+      "sha256": "sha256:724f80aad432ad9d7c61cd81172e22f50eef1ebfb19e8193d0778d27a9a953f9"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md",
-      "sha256": "sha256:8ab364046bb47e60f160487de8c6eafc9b461a030cfd3a011a731a33902d6dd4"
+      "sha256": "sha256:61d59fc9da0c7a3abaa7636aa3b5924b2e6205f50c4891fedfb6aaf03ed74711"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md",
@@ -104,7 +104,7 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/linkedin-ai-search.md",
-      "sha256": "sha256:603965ab5038afec8c780686fcd7eeac150e36011132fbc7304fadec26618c42"
+      "sha256": "sha256:240cf24e7685904e7aa96d65e03b37e9394d89071bfb2bc23d8c271d9a88bdfc"
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/metrics-and-markdown.md",
@@ -119,5 +119,5 @@
       "sha256": "sha256:e56e6ed5b1d94558aecd64c1844affcea9a6e6b7189ece747581949b27d3a870"
     }
   ],
-  "comment": "Broaden business rhetoric frames"
+  "comment": "Add solution-like boring frame"
 }

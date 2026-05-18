@@ -116,22 +116,9 @@ export function hasConcreteExplanation(tokens: readonly Token[]): boolean {
   );
 }
 
-function hasConcreteColonExplanation(
-  text: string,
-  tokens: readonly Token[]
-): boolean {
-  return (
-    text.includes(":") && tokens.length >= 8 && hasConcreteExplanation(tokens)
-  );
-}
-
 export function shouldRejectConcreteEvidence(
   text: string,
   tokens: readonly Token[]
 ): boolean {
-  return (
-    hasConcreteMarker(text) ||
-    hasNumericEvidence(tokens) ||
-    hasConcreteColonExplanation(text, tokens)
-  );
+  return hasConcreteMarker(text) || hasNumericEvidence(tokens);
 }

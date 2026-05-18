@@ -28423,6 +28423,167 @@
         "ruleId": "semantic-thinness",
         "severity": 2,
         "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2968,
+        "line": 155,
+        "loc": {
+          "end": {
+            "column": 24,
+            "line": 155
+          },
+          "start": {
+            "column": 1,
+            "line": 155
+          }
+        },
+        "message": "Semantic thinness (generic-lesson-extraction): Catch generic lesson, answer, fix, or point lines whose complement is a thin evaluative word or abstract noun. Matched template: The {summaryNoun} {linkingVerb} {thinComplement}.",
+        "range": [
+          2968,
+          2991
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2993,
+        "line": 157,
+        "loc": {
+          "end": {
+            "column": 58,
+            "line": 157
+          },
+          "start": {
+            "column": 1,
+            "line": 157
+          }
+        },
+        "message": "Lesson framing found: the-strategy-is-boring. Replace the wrapper with the lesson.",
+        "range": [
+          2993,
+          3050
+        ],
+        "ruleId": "lesson-framing",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2993,
+        "line": 157,
+        "loc": {
+          "end": {
+            "column": 58,
+            "line": 157
+          },
+          "start": {
+            "column": 1,
+            "line": 157
+          }
+        },
+        "message": "Semantic thinness (solution-boring-frame): Catch solution-like nouns framed as boring, a consultant or LLM wrapper that praises unglamorous obviousness without adding substance. Matched template: the {solutionNoun} {linkingVerb} boring.",
+        "range": [
+          2993,
+          3050
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 25,
+        "index": 3017,
+        "line": 157,
+        "loc": {
+          "end": {
+            "column": 58,
+            "line": 157
+          },
+          "start": {
+            "column": 25,
+            "line": 157
+          }
+        },
+        "message": "Dramatic colon found: \"write the acceptance check first.\". Rewrite without the short reveal after the colon.",
+        "range": [
+          3017,
+          3050
+        ],
+        "ruleId": "colon-dramatic",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3052,
+        "line": 159,
+        "loc": {
+          "end": {
+            "column": 30,
+            "line": 159
+          },
+          "start": {
+            "column": 1,
+            "line": 159
+          }
+        },
+        "message": "Semantic thinness (solution-boring-frame): Catch solution-like nouns framed as boring, a consultant or LLM wrapper that praises unglamorous obviousness without adding substance. Matched template: the {solutionQualifier} {solutionNoun} {linkingVerb} boring.",
+        "range": [
+          3052,
+          3081
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3083,
+        "line": 161,
+        "loc": {
+          "end": {
+            "column": 57,
+            "line": 161
+          },
+          "start": {
+            "column": 1,
+            "line": 161
+          }
+        },
+        "message": "Semantic thinness (solution-boring-frame): Catch solution-like nouns framed as boring, a consultant or LLM wrapper that praises unglamorous obviousness without adding substance. Matched template: the {solutionQualifier} {solutionNoun} {linkingVerb} boring.",
+        "range": [
+          3083,
+          3139
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 31,
+        "index": 3113,
+        "line": 161,
+        "loc": {
+          "end": {
+            "column": 57,
+            "line": 161
+          },
+          "start": {
+            "column": 31,
+            "line": 161
+          }
+        },
+        "message": "Dramatic colon found: \"remove the redirect chain.\". Rewrite without the short reveal after the colon.",
+        "range": [
+          3113,
+          3139
+        ],
+        "ruleId": "colon-dramatic",
+        "severity": 2,
+        "type": "lint"
       }
     ]
   },
@@ -43833,22 +43994,183 @@
       },
       {
         "column": 1,
-        "index": 1662,
+        "index": 1454,
+        "line": 45,
+        "loc": {
+          "end": {
+            "column": 24,
+            "line": 45
+          },
+          "start": {
+            "column": 1,
+            "line": 45
+          }
+        },
+        "message": "Semantic thinness (generic-lesson-extraction): Catch generic lesson, answer, fix, or point lines whose complement is a thin evaluative word or abstract noun. Matched template: The {summaryNoun} {linkingVerb} {thinComplement}.",
+        "range": [
+          1454,
+          1477
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1479,
+        "line": 47,
+        "loc": {
+          "end": {
+            "column": 58,
+            "line": 47
+          },
+          "start": {
+            "column": 1,
+            "line": 47
+          }
+        },
+        "message": "Lesson framing found: the-strategy-is-boring. Replace the wrapper with the lesson.",
+        "range": [
+          1479,
+          1536
+        ],
+        "ruleId": "lesson-framing",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1479,
+        "line": 47,
+        "loc": {
+          "end": {
+            "column": 58,
+            "line": 47
+          },
+          "start": {
+            "column": 1,
+            "line": 47
+          }
+        },
+        "message": "Semantic thinness (solution-boring-frame): Catch solution-like nouns framed as boring, a consultant or LLM wrapper that praises unglamorous obviousness without adding substance. Matched template: the {solutionNoun} {linkingVerb} boring.",
+        "range": [
+          1479,
+          1536
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 25,
+        "index": 1503,
+        "line": 47,
+        "loc": {
+          "end": {
+            "column": 58,
+            "line": 47
+          },
+          "start": {
+            "column": 25,
+            "line": 47
+          }
+        },
+        "message": "Dramatic colon found: \"write the acceptance check first.\". Rewrite without the short reveal after the colon.",
+        "range": [
+          1503,
+          1536
+        ],
+        "ruleId": "colon-dramatic",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1538,
         "line": 49,
         "loc": {
           "end": {
-            "column": 67,
+            "column": 30,
             "line": 49
           },
           "start": {
             "column": 1,
             "line": 49
+          }
+        },
+        "message": "Semantic thinness (solution-boring-frame): Catch solution-like nouns framed as boring, a consultant or LLM wrapper that praises unglamorous obviousness without adding substance. Matched template: the {solutionQualifier} {solutionNoun} {linkingVerb} boring.",
+        "range": [
+          1538,
+          1567
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1569,
+        "line": 51,
+        "loc": {
+          "end": {
+            "column": 57,
+            "line": 51
+          },
+          "start": {
+            "column": 1,
+            "line": 51
+          }
+        },
+        "message": "Semantic thinness (solution-boring-frame): Catch solution-like nouns framed as boring, a consultant or LLM wrapper that praises unglamorous obviousness without adding substance. Matched template: the {solutionQualifier} {solutionNoun} {linkingVerb} boring.",
+        "range": [
+          1569,
+          1625
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 31,
+        "index": 1599,
+        "line": 51,
+        "loc": {
+          "end": {
+            "column": 57,
+            "line": 51
+          },
+          "start": {
+            "column": 31,
+            "line": 51
+          }
+        },
+        "message": "Dramatic colon found: \"remove the redirect chain.\". Rewrite without the short reveal after the colon.",
+        "range": [
+          1599,
+          1625
+        ],
+        "ruleId": "colon-dramatic",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1924,
+        "line": 65,
+        "loc": {
+          "end": {
+            "column": 67,
+            "line": 65
+          },
+          "start": {
+            "column": 1,
+            "line": 65
           }
         },
         "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} means the {artifactNoun} has to contain {abstractObject} worth {abstractGerund}.",
         "range": [
-          1662,
-          1728
+          1924,
+          1990
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,
@@ -43856,22 +44178,22 @@
       },
       {
         "column": 1,
-        "index": 1730,
-        "line": 51,
+        "index": 1992,
+        "line": 67,
         "loc": {
           "end": {
             "column": 42,
-            "line": 51
+            "line": 67
           },
           "start": {
             "column": 1,
-            "line": 51
+            "line": 67
           }
         },
         "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} {meaningVerb} {abstractSubject} {linkingVerb} {weakJudgment}.",
         "range": [
-          1730,
-          1771
+          1992,
+          2033
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,
@@ -43879,22 +44201,22 @@
       },
       {
         "column": 1,
-        "index": 1773,
-        "line": 53,
+        "index": 2035,
+        "line": 69,
         "loc": {
           "end": {
             "column": 42,
-            "line": 53
+            "line": 69
           },
           "start": {
             "column": 1,
-            "line": 53
+            "line": 69
           }
         },
         "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} {meaningVerb} {abstractSubject} {linkingVerb} {weakJudgment}.",
         "range": [
-          1773,
-          1814
+          2035,
+          2076
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,
@@ -43902,22 +44224,22 @@
       },
       {
         "column": 1,
-        "index": 1773,
-        "line": 53,
+        "index": 2035,
+        "line": 69,
         "loc": {
           "end": {
             "column": 109,
-            "line": 53
+            "line": 69
           },
           "start": {
             "column": 1,
-            "line": 53
+            "line": 69
           }
         },
         "message": "Negation reframe found: \"That does not mean engagement is useless. It means the post has to contain source material worth retrieving.\". Rewrite without the not-X-then-Y construction.",
         "range": [
-          1773,
-          1881
+          2035,
+          2143
         ],
         "ruleId": "negation-reframe",
         "severity": 2,
@@ -43925,22 +44247,22 @@
       },
       {
         "column": 43,
-        "index": 1815,
-        "line": 53,
+        "index": 2077,
+        "line": 69,
         "loc": {
           "end": {
             "column": 109,
-            "line": 53
+            "line": 69
           },
           "start": {
             "column": 43,
-            "line": 53
+            "line": 69
           }
         },
         "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} means the {artifactNoun} has to contain {abstractObject} worth {abstractGerund}.",
         "range": [
-          1815,
-          1881
+          2077,
+          2143
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,
@@ -43948,22 +44270,22 @@
       },
       {
         "column": 1,
-        "index": 2116,
-        "line": 61,
+        "index": 2378,
+        "line": 77,
         "loc": {
           "end": {
             "column": 18,
-            "line": 61
+            "line": 77
           },
           "start": {
             "column": 1,
-            "line": 61
+            "line": 77
           }
         },
         "message": "Generic signposting found: what-helped-more. Replace the frame with the concrete claim.",
         "range": [
-          2116,
-          2133
+          2378,
+          2395
         ],
         "ruleId": "generic-signposting",
         "severity": 2,
@@ -43971,22 +44293,22 @@
       },
       {
         "column": 1,
-        "index": 2203,
-        "line": 65,
+        "index": 2465,
+        "line": 81,
         "loc": {
           "end": {
             "column": 98,
-            "line": 65
+            "line": 81
           },
           "start": {
             "column": 1,
-            "line": 65
+            "line": 81
           }
         },
         "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} {linkingVerb} the kind of {summaryNoun}.",
         "range": [
-          2203,
-          2300
+          2465,
+          2562
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,
@@ -43994,22 +44316,22 @@
       },
       {
         "column": 1,
-        "index": 2302,
-        "line": 67,
+        "index": 2564,
+        "line": 83,
         "loc": {
           "end": {
             "column": 34,
-            "line": 67
+            "line": 83
           },
           "start": {
             "column": 1,
-            "line": 67
+            "line": 83
           }
         },
         "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {summarySubject} {linkingVerb} {weakJudgment}.",
         "range": [
-          2302,
-          2335
+          2564,
+          2597
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,
@@ -44017,22 +44339,22 @@
       },
       {
         "column": 1,
-        "index": 2337,
-        "line": 69,
+        "index": 2599,
+        "line": 85,
         "loc": {
           "end": {
             "column": 56,
-            "line": 69
+            "line": 85
           },
           "start": {
             "column": 1,
-            "line": 69
+            "line": 85
           }
         },
         "message": "Semantic thinness (puffery-evaluative-claim): Catch evaluative praise frames that assert prestige, breakthrough value, or greatness without naming concrete evidence. Matched template: {abstractPersonifiedSubject} has a poor {businessMetric} in {businessDomain}.",
         "range": [
-          2337,
-          2392
+          2599,
+          2654
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,

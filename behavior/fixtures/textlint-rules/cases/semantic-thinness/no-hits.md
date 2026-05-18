@@ -113,3 +113,11 @@ The boring report is final because the review board signed it.
 That does not mean engagement is useless because renewal fell by 14 percent.
 
 It means the parser has to map offsets before reporting.
+
+The movie is boring.
+
+The party is boring.
+
+The audit is boring.
+
+The report is boring.

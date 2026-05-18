@@ -143,6 +143,10 @@ function hasFileTarget(args: readonly string[]): boolean {
       continue;
     }
 
+    if (arg.trim() === "") {
+      continue;
+    }
+
     if (VALUE_OPTIONS.has(arg)) {
       index += 1;
       continue;

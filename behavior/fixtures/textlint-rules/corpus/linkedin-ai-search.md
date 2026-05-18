@@ -42,6 +42,22 @@ The boring plan is often the right one.
 
 The boring report is final because the review board signed it.
 
+The solution is boring.
+
+The strategy is boring: write the acceptance check first.
+
+The right solution is boring.
+
+The practical plan is boring: remove the redirect chain.
+
+The movie is boring.
+
+The party is boring.
+
+The audit is boring.
+
+The report is boring.
+
 Put revenue-critical copy in raw HTML, expose key links before hydration, make structured data match visible content, and validate source HTML against the browser view.
 
 Engagement still matters for humans.
