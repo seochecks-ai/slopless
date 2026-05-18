@@ -153,3 +153,41 @@ That is the kind of issue a technical audit should catch before the team writes 
 The second one is less glamorous.
 
 Glamour has a poor conversion rate in technical audits.
+
+The third draft tried to package SEO advice into a neat posting system. The focus is practical. Each post has a source, a reveal, an audit check, and the next move for a buyer.
+
+The first topic explains why visible copy still matters. That does not make structured data useless. It does mean the page cannot outsource its answer to metadata. The page cannot outsource its answer to metadata. The page is wearing a nice jacket over an empty shirt.
+
+The crawler section turns access into a business slogan. That means "should we block AI?" is the wrong level of question.
+
+The better operating question is:
+
+Crawler access is plumbing with consequences.
+
+The grown-up answer is log review, path rules, and a robots.txt file that matches the business model.
+
+The prompt testing section turns measurement into a slogan. The brand vanishes like a contractor after a vague scope call. One prompt gives you a mood. A prompt panel gives you a measurement.
+
+The local visibility section makes recommendation language too abstract. Local AI visibility behaves like a trust filter.
+
+The CTR section uses a soft comic opener and then turns analysis into paired slogans. I used to read traffic drops like a normal person. Sadness entered the room. AI Overviews add another layer to the diagnosis. A ranking problem gets one fix. A source-selection problem gets another.
+
+The page is wearing a jacket in the product photo.
+
+The brand vanished after the contractor missed the scope call.
+
+The plumber repaired the plumbing with replacement valves.
+
+The data model adds another layer to the diagnosis because the clinical report requires it.
+
+The local permit filter rejected the business because its address was outside the city boundary.
+
+The problem is simple: GPTBot received the raw HTML shell before hydration.
+
+The dashboard gives you a trend. The export gives you a CSV.
+
+The patient gets one dose. The control group gets another dose.
+
+The better operating system is ready for the migration.
+
+The grown-up answer key is missing from the training packet.

@@ -175,3 +175,17 @@ That is a different job.
 Structured data still has work to do.
 
 Visibility now has layers, and the layers can disagree.
+
+The page cannot outsource its answer to metadata.
+
+The page is wearing a nice jacket over an empty shirt.
+
+The brand vanishes like a contractor after a vague scope call.
+
+Crawler access is plumbing with consequences.
+
+Local AI visibility behaves like a trust filter.
+
+AI Overviews add another layer to the diagnosis.
+
+Sadness entered the room.

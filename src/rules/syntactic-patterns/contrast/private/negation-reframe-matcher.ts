@@ -22,6 +22,7 @@ import {
   hasNegativeSlopPairSignal,
   negativeSlopReframe
 } from "./negative-slop-frames.js";
+import { makeMeaningReframe, meaningReframe } from "./meaning-reframe.js";
 import {
   splitSentences,
   type SplitSentence
@@ -140,56 +141,6 @@ function progressiveVerbMirror(
       negation.affirmativeAux,
       verb
     ])
-  );
-}
-
-function meaningReframe(
-  aTokens: readonly Token[],
-  bTokens: readonly Token[]
-): boolean {
-  const tokenWords = words(aTokens);
-
-  for (let index = 0; index < tokenWords.length; index += 1) {
-    const current = tokenWords[index];
-    const next = tokenWords[index + 1];
-    const subject = tokenWords.slice(0, index);
-
-    if (!validSubject(subject)) {
-      continue;
-    }
-
-    if (DO_NEGATIONS.has(current ?? "")) {
-      const meaningIndex = skipOptionalAdverbs(tokenWords, index + 1);
-
-      if (tokenWords[meaningIndex] === "mean") {
-        return startsWithMeaningAffirmative(bTokens, subject);
-      }
-    }
-
-    if (EXPLICIT_DO_AUXILIARIES.has(current ?? "") && next === "not") {
-      const meaningIndex = skipOptionalAdverbs(tokenWords, index + 2);
-
-      if (tokenWords[meaningIndex] === "mean") {
-        return startsWithMeaningAffirmative(bTokens, subject);
-      }
-    }
-  }
-
-  return false;
-}
-
-function startsWithMeaningAffirmative(
-  bTokens: readonly Token[],
-  subject: readonly string[]
-): boolean {
-  return (
-    startsWithWords(bTokens, [...subject, "means"]) ||
-    startsWithWords(bTokens, [...subject, "mean"]) ||
-    startsWithWords(bTokens, [...subject, "does", "mean"]) ||
-    startsWithWords(bTokens, [...subject, "do", "mean"]) ||
-    startsWithWords(bTokens, ["it", "means"]) ||
-    startsWithWords(bTokens, ["this", "means"]) ||
-    startsWithWords(bTokens, ["that", "means"])
   );
 }
 
@@ -346,6 +297,7 @@ function sentencePairReframe(
     pronounCopularReframe(aTokens, bTokens) ||
     progressiveVerbMirror(aTokens, bTokens) ||
     meaningReframe(aTokens, bTokens) ||
+    makeMeaningReframe(aTokens, bTokens) ||
     needReframe(aTokens, bTokens) ||
     actionVerbMirror(aTokens, bTokens) ||
     negativeSlopReframe(aTokens, bTokens) ||

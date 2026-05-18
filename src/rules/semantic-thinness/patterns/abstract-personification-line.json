@@ -2,10 +2,16 @@
   "id": "abstract-personification-line",
   "class": "abstract-personification",
   "purpose": "Catch abstract nouns treated as social actors in short payoff lines without concrete action or cause.",
-  "templates": ["{abstractSubject} had no place in {thinContainer}."],
+  "matchMode": "contains",
+  "maxTokens": 24,
+  "templates": [
+    "{abstractSubject} had no place in {thinContainer}.",
+    "{abstractSubject} entered {socialPlace}."
+  ],
   "slots": {
-    "abstractSubject": ["fear"],
-    "thinContainer": ["her schedule", "his schedule", "their schedule"]
+    "abstractSubject": ["fear", "sadness", "doubt", "panic", "regret"],
+    "thinContainer": ["her schedule", "his schedule", "their schedule"],
+    "socialPlace": ["the room", "the conversation", "the meeting"]
   },
   "rejectIf": [
     "sentence includes a concrete policy, safety, legal, or logistical reason",

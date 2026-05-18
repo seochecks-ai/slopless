@@ -477,6 +477,188 @@
       "bucket": "no-hits",
       "source": "cases/syntactic-patterns/no-hits.md",
       "line": 159
+    },
+    {
+      "text": "The page cannot outsource its answer to metadata.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 179
+    },
+    {
+      "text": "The page is wearing a nice jacket over an empty shirt.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 181
+    },
+    {
+      "text": "The brand vanishes like a contractor after a vague scope call.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 183
+    },
+    {
+      "text": "Crawler access is plumbing with consequences.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 185
+    },
+    {
+      "text": "Local AI visibility behaves like a trust filter.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 187
+    },
+    {
+      "text": "AI Overviews add another layer to the diagnosis.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 189
+    },
+    {
+      "text": "Sadness entered the room.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 191
+    },
+    {
+      "text": "The page is wearing a jacket in the product photo.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 143
+    },
+    {
+      "text": "The brand vanished after the contractor missed the scope call.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 145
+    },
+    {
+      "text": "The plumber repaired the plumbing with replacement valves.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 147
+    },
+    {
+      "text": "The data model adds another layer to the diagnosis because the clinical report requires it.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 149
+    },
+    {
+      "text": "The local permit filter rejected the business because its address was outside the city boundary.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 151
+    },
+    {
+      "text": "The focus is practical.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1029
+    },
+    {
+      "text": "Each post has a source, a reveal, an audit check, and the next move for a buyer.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1031
+    },
+    {
+      "text": "That does not make structured data useless. It does mean the page cannot outsource its answer to metadata.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1033
+    },
+    {
+      "text": "That means \"should we block AI?\" is the wrong level of question.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1035
+    },
+    {
+      "text": "The better operating question is:",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1037
+    },
+    {
+      "text": "The grown-up answer is log review, path rules, and a robots.txt file that matches the business model.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1039
+    },
+    {
+      "text": "I used to read traffic drops like a normal person.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1041
+    },
+    {
+      "text": "One prompt gives you a mood. A prompt panel gives you a measurement.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1043
+    },
+    {
+      "text": "A ranking problem gets one fix. A source-selection problem gets another.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1045
+    },
+    {
+      "text": "The problem is simple: GPTBot received the raw HTML shell before hydration.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 161
+    },
+    {
+      "text": "The dashboard gives you a trend. The export gives you a CSV.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 163
+    },
+    {
+      "text": "The patient gets one dose. The control group gets another dose.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 165
+    },
+    {
+      "text": "The better operating system is ready for the migration.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 167
+    },
+    {
+      "text": "The grown-up answer key is missing from the training packet.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 169
     }
   ]
 }

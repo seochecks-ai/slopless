@@ -1,11 +1,11 @@
 {
   "suite": "textlint-rules",
   "kind": "approved",
-  "run_id": "2026-05-18T21-35-21.092362Z-f3c41e06",
-  "run_commit": "312e2d1",
+  "run_id": "2026-05-18T22-00-07.751962Z-f3c41e06",
+  "run_commit": "b4c7ff1",
   "working_tree": "dirty",
-  "recorded_at": "2026-05-18T21:35:21.092362Z",
-  "fixture_hash": "sha256:fbea031c42266751f115240d8b92dec21c5469e4d6872b19b441a786f7e5ee5f",
+  "recorded_at": "2026-05-18T22:00:07.751962Z",
+  "fixture_hash": "sha256:6c6a10fad0785008dfa382a14155e28ac529827f11e38c4e90c23d03921a3763",
   "manifest_hash": "sha256:f3c41e06f4c33e3b21fa87bec32cd48f42af6c1064c3e6ae7d226d744fdbe350",
   "tool_version": "0.1.8",
   "output_schema_version": "1",
@@ -60,19 +60,19 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md",
-      "sha256": "sha256:267f37a8746c069c1e7ac2984e1e23782f6d54e9ac3a11d1bac6a65952f985af"
+      "sha256": "sha256:997c44ac04e8d14c320aed3840e86d8158a990b72f244bb320278cf73b8d1f3b"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md",
-      "sha256": "sha256:761b45e829b3797bacdc757c3dac55510ba5530f889b87faca9b73a45ab2c55c"
+      "sha256": "sha256:626abe1e10192658e224151c7175f4e49d34b150a36d416ebf4df83f8625e3b2"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md",
-      "sha256": "sha256:ca826edf3f2a3db9f4d607a986eb20ae763b22cf1060f938c053f02a613d5b33"
+      "sha256": "sha256:044a8da5369809a40ed67ba45cfc9c5d84f586e9e1cec140e8b6a038347e2416"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md",
-      "sha256": "sha256:f66b4380f1f06ecfe1160f8296b4e3f5b67e599cf3a0255e993fe86ba754c723"
+      "sha256": "sha256:6febe4320a1b1fe603648c960d6ec05be71728975007f6ec8873fc3edebe29f4"
     },
     {
       "path": "behavior/fixtures/textlint-rules/cases/term-policy/hits.md",
@@ -104,7 +104,7 @@
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/linkedin-ai-search.md",
-      "sha256": "sha256:93bc2535dc7fb79deda7ffb67fcf4f62e22e90e44c2afbe31cbb9ac8c47a56cd"
+      "sha256": "sha256:abece90cf50d4b2462e3df65e9bf1187e29a98e49d31cf8fc93ef590a2776a5c"
     },
     {
       "path": "behavior/fixtures/textlint-rules/corpus/metrics-and-markdown.md",
@@ -119,5 +119,5 @@
       "sha256": "sha256:e56e6ed5b1d94558aecd64c1844affcea9a6e6b7189ece747581949b27d3a870"
     }
   ],
-  "comment": "Refresh no-hit wording"
+  "comment": "Split know-how corpus cases"
 }

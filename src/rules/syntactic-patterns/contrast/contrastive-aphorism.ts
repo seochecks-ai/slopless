@@ -240,6 +240,76 @@ function matchLessMorePair(first: string, second: string): string | undefined {
   return undefined;
 }
 
+function hasTokenPair(
+  words: readonly string[],
+  first: string,
+  second: string
+): boolean {
+  return words.some(
+    (word, index) => word === first && words[index + 1] === second
+  );
+}
+
+function hasTokenSequence(
+  words: readonly string[],
+  sequence: readonly string[]
+): boolean {
+  return words.some((word, index) => {
+    if (word !== sequence[0]) {
+      return false;
+    }
+
+    return sequence.every((value, offset) => words[index + offset] === value);
+  });
+}
+
+function matchGivesYouPair(first: string, second: string): string | undefined {
+  const a = tokens(cleanSentence(first, PREFIXES));
+  const b = tokens(cleanSentence(second, PREFIXES));
+  const thinObjects = new Set([
+    "answer",
+    "clarity",
+    "confidence",
+    "direction",
+    "feeling",
+    "measurement",
+    "mood",
+    "signal",
+    "story",
+    "visibility"
+  ]);
+
+  if (
+    hasTokenPair(a, "gives", "you") &&
+    hasTokenPair(b, "gives", "you") &&
+    a.at(-1) !== b.at(-1) &&
+    thinObjects.has(a.at(-1) ?? "") &&
+    thinObjects.has(b.at(-1) ?? "")
+  ) {
+    return "x-gives-you-y-pair";
+  }
+
+  return undefined;
+}
+
+function matchGetsOneAnotherPair(
+  first: string,
+  second: string
+): string | undefined {
+  const a = tokens(cleanSentence(first, PREFIXES));
+  const b = tokens(cleanSentence(second, PREFIXES));
+
+  if (
+    hasTokenSequence(a, ["gets", "one", "fix"]) &&
+    b.at(-1) === "another" &&
+    hasTokenPair(b, "gets", "another")
+  ) {
+    return "x-gets-one-y-gets-another";
+  }
+
+  return undefined;
+}
+
 const rule = defineTextlintRule({
   detector: {
     detect: ({ units }) => {
@@ -269,7 +339,9 @@ const rule = defineTextlintRule({
 
         const signal =
           matchCurriculumPair(current.text, next.text) ??
-          matchLessMorePair(current.text, next.text);
+          matchLessMorePair(current.text, next.text) ??
+          matchGivesYouPair(current.text, next.text) ??
+          matchGetsOneAnotherPair(current.text, next.text);
         if (signal !== undefined) {
           detections.push({
             evidence: signal,

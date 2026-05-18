@@ -1,5 +1,8 @@
 import {
   COPULAR_FORMS,
+  DO_NEGATIONS,
+  EXPLICIT_DO_AUXILIARIES,
+  skipOptionalAdverbs,
   startsWithWords,
   validSubject,
   words
@@ -153,6 +156,79 @@ function pronounAffirmativeBlock(tokens: readonly Token[]): boolean {
   );
 }
 
+function makeNegatedSubject(tokens: readonly Token[]): readonly string[] {
+  const tokenWords = words(stripLeadingBlockPivot(tokens));
+
+  for (let index = 0; index < tokenWords.length; index += 1) {
+    const current = tokenWords[index];
+    const next = tokenWords[index + 1];
+    const subject = tokenWords.slice(0, index);
+
+    if (!validSubject(subject)) {
+      continue;
+    }
+
+    if (DO_NEGATIONS.has(current ?? "")) {
+      const makeIndex = skipOptionalAdverbs(tokenWords, index + 1);
+      if (tokenWords[makeIndex] === "make") {
+        return subject;
+      }
+    }
+
+    if (EXPLICIT_DO_AUXILIARIES.has(current ?? "") && next === "not") {
+      const makeIndex = skipOptionalAdverbs(tokenWords, index + 2);
+      if (tokenWords[makeIndex] === "make") {
+        return subject;
+      }
+    }
+  }
+
+  return [];
+}
+
+function meaningAffirmativeBlock(
+  tokens: readonly Token[],
+  subject: readonly string[]
+): boolean {
+  const blockTokens = stripLeadingBlockPivot(tokens);
+
+  return (
+    startsWithWords(blockTokens, [...subject, "does", "mean"]) ||
+    startsWithWords(blockTokens, [...subject, "do", "mean"]) ||
+    startsWithWords(blockTokens, ["it", "means"]) ||
+    startsWithWords(blockTokens, ["it", "does", "mean"]) ||
+    startsWithWords(blockTokens, ["this", "means"]) ||
+    startsWithWords(blockTokens, ["this", "does", "mean"])
+  );
+}
+
+function blockSentencePairReframe(
+  blocks: readonly TextBlock[],
+  index: number
+): BlockNegationReframeMatch | undefined {
+  const current = blocks[index];
+  const next = blocks[index + 1];
+
+  if (current === undefined || next === undefined) {
+    return undefined;
+  }
+
+  const subject = makeNegatedSubject(wordTokens(current.text));
+  if (subject.length === 0) {
+    return undefined;
+  }
+
+  if (!meaningAffirmativeBlock(wordTokens(next.text), subject)) {
+    return undefined;
+  }
+
+  return {
+    end: next.end,
+    start: current.start,
+    text: `${current.text} ${next.text}`
+  };
+}
+
 function blockPairReframe(
   blocks: readonly TextBlock[],
   index: number
@@ -200,7 +276,9 @@ export function findBlockNegationReframes(
   const blocks = textBlocks(text);
 
   for (let index = 0; index < blocks.length - 1; index += 1) {
-    const blockMatch = blockPairReframe(blocks, index);
+    const blockMatch =
+      blockPairReframe(blocks, index) ??
+      blockSentencePairReframe(blocks, index);
 
     if (blockMatch !== undefined) {
       matches.push(blockMatch);

@@ -139,3 +139,13 @@ That is a different job ID in the queue.
 Structured data still has validation errors in Search Console.
 
 Visibility now has three dashboard layers because Finance requested them.
+
+The page is wearing a jacket in the product photo.
+
+The brand vanished after the contractor missed the scope call.
+
+The plumber repaired the plumbing with replacement valves.
+
+The data model adds another layer to the diagnosis because the clinical report requires it.
+
+The local permit filter rejected the business because its address was outside the city boundary.

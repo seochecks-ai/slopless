@@ -27012,6 +27012,29 @@
             "line": 39
           }
         },
+        "message": "Generic signposting found: the-lesson-was-simple. Replace the frame with the concrete claim.",
+        "range": [
+          652,
+          674
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 652,
+        "line": 39,
+        "loc": {
+          "end": {
+            "column": 23,
+            "line": 39
+          },
+          "start": {
+            "column": 1,
+            "line": 39
+          }
+        },
         "message": "Semantic thinness (generic-lesson-extraction): Catch generic lesson, answer, fix, or point lines whose complement is a thin evaluative word or abstract noun. Matched template: The {summaryNoun} {linkingVerb} {thinComplement}.",
         "range": [
           652,
@@ -28764,6 +28787,167 @@
         "range": [
           3483,
           3538
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3540,
+        "line": 179,
+        "loc": {
+          "end": {
+            "column": 50,
+            "line": 179
+          },
+          "start": {
+            "column": 1,
+            "line": 179
+          }
+        },
+        "message": "Semantic thinness (abstract-metaphor-claim): Catch slogan-like abstract metaphors where an abstract subject performs a physical or spatial action with no concrete referent. Matched template: {artifactSubject} {metaphorVerb} its {answerNoun} to {abstractDestination}.",
+        "range": [
+          3540,
+          3589
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3591,
+        "line": 181,
+        "loc": {
+          "end": {
+            "column": 55,
+            "line": 181
+          },
+          "start": {
+            "column": 1,
+            "line": 181
+          }
+        },
+        "message": "Semantic thinness (abstract-metaphor-claim): Catch slogan-like abstract metaphors where an abstract subject performs a physical or spatial action with no concrete referent. Matched template: {artifactSubject} {linkingVerb} wearing a {surfaceNoun} over an {emptyNoun}.",
+        "range": [
+          3591,
+          3645
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3647,
+        "line": 183,
+        "loc": {
+          "end": {
+            "column": 63,
+            "line": 183
+          },
+          "start": {
+            "column": 1,
+            "line": 183
+          }
+        },
+        "message": "Semantic thinness (abstract-metaphor-claim): Catch slogan-like abstract metaphors where an abstract subject performs a physical or spatial action with no concrete referent. Matched template: {artifactSubject} {metaphorVerb} like a {humanRole} after a {vagueEvent}.",
+        "range": [
+          3647,
+          3709
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3711,
+        "line": 185,
+        "loc": {
+          "end": {
+            "column": 46,
+            "line": 185
+          },
+          "start": {
+            "column": 1,
+            "line": 185
+          }
+        },
+        "message": "Semantic thinness (abstract-metaphor-claim): Catch slogan-like abstract metaphors where an abstract subject performs a physical or spatial action with no concrete referent. Matched template: {abstractSubject} {linkingVerb} {infrastructureNoun} with {abstractObject}.",
+        "range": [
+          3711,
+          3756
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3758,
+        "line": 187,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 187
+          },
+          "start": {
+            "column": 1,
+            "line": 187
+          }
+        },
+        "message": "Semantic thinness (abstract-metaphor-claim): Catch slogan-like abstract metaphors where an abstract subject performs a physical or spatial action with no concrete referent. Matched template: {abstractSubject} behaves like a {filterNoun}.",
+        "range": [
+          3758,
+          3806
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3808,
+        "line": 189,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 189
+          },
+          "start": {
+            "column": 1,
+            "line": 189
+          }
+        },
+        "message": "Semantic thinness (abstract-metaphor-claim): Catch slogan-like abstract metaphors where an abstract subject performs a physical or spatial action with no concrete referent. Matched template: {artifactSubject} add another {layerNoun} to {diagnosisObject}.",
+        "range": [
+          3808,
+          3856
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3858,
+        "line": 191,
+        "loc": {
+          "end": {
+            "column": 26,
+            "line": 191
+          },
+          "start": {
+            "column": 1,
+            "line": 191
+          }
+        },
+        "message": "Semantic thinness (abstract-personification-line): Catch abstract nouns treated as social actors in short payoff lines without concrete action or cause. Matched template: {abstractSubject} entered {socialPlace}.",
+        "range": [
+          3858,
+          3883
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,
@@ -43424,6 +43608,213 @@
         "ruleId": "contrastive-aphorism",
         "severity": 2,
         "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 48137,
+        "line": 1029,
+        "loc": {
+          "end": {
+            "column": 24,
+            "line": 1029
+          },
+          "start": {
+            "column": 1,
+            "line": 1029
+          }
+        },
+        "message": "Generic signposting found: the-focus-is-practical. Replace the frame with the concrete claim.",
+        "range": [
+          48137,
+          48160
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 48162,
+        "line": 1031,
+        "loc": {
+          "end": {
+            "column": 81,
+            "line": 1031
+          },
+          "start": {
+            "column": 1,
+            "line": 1031
+          }
+        },
+        "message": "Generic signposting found: each-piece-has-source-reveal-next-move. Replace the frame with the concrete claim.",
+        "range": [
+          48162,
+          48242
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 48244,
+        "line": 1033,
+        "loc": {
+          "end": {
+            "column": 107,
+            "line": 1033
+          },
+          "start": {
+            "column": 1,
+            "line": 1033
+          }
+        },
+        "message": "Negation reframe found: \"That does not make structured data useless. It does mean the page cannot outsource its answer to metadata.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          48244,
+          48350
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 45,
+        "index": 48288,
+        "line": 1033,
+        "loc": {
+          "end": {
+            "column": 107,
+            "line": 1033
+          },
+          "start": {
+            "column": 45,
+            "line": 1033
+          }
+        },
+        "message": "Semantic thinness (abstract-metaphor-claim): Catch slogan-like abstract metaphors where an abstract subject performs a physical or spatial action with no concrete referent. Matched template: {artifactSubject} {metaphorVerb} its {answerNoun} to {abstractDestination}.",
+        "range": [
+          48288,
+          48350
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 34,
+        "index": 48385,
+        "line": 1035,
+        "loc": {
+          "end": {
+            "column": 65,
+            "line": 1035
+          },
+          "start": {
+            "column": 34,
+            "line": 1035
+          }
+        },
+        "message": "Generic signposting found: wrong level of question. Replace the frame with the concrete claim.",
+        "range": [
+          48385,
+          48416
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 48418,
+        "line": 1037,
+        "loc": {
+          "end": {
+            "column": 34,
+            "line": 1037
+          },
+          "start": {
+            "column": 1,
+            "line": 1037
+          }
+        },
+        "message": "Generic signposting found: the better operating question is. Replace the frame with the concrete claim.",
+        "range": [
+          48418,
+          48451
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 48453,
+        "line": 1039,
+        "loc": {
+          "end": {
+            "column": 102,
+            "line": 1039
+          },
+          "start": {
+            "column": 1,
+            "line": 1039
+          }
+        },
+        "message": "Generic signposting found: the grown-up answer is. Replace the frame with the concrete claim.",
+        "range": [
+          48453,
+          48554
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 48608,
+        "line": 1043,
+        "loc": {
+          "end": {
+            "column": 29,
+            "line": 1043
+          },
+          "start": {
+            "column": 1,
+            "line": 1043
+          }
+        },
+        "message": "Contrastive aphorism found: x-gives-you-y-pair. Replace the slogan with a concrete claim.",
+        "range": [
+          48608,
+          48636
+        ],
+        "ruleId": "contrastive-aphorism",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 48678,
+        "line": 1045,
+        "loc": {
+          "end": {
+            "column": 32,
+            "line": 1045
+          },
+          "start": {
+            "column": 1,
+            "line": 1045
+          }
+        },
+        "message": "Contrastive aphorism found: x-gets-one-y-gets-another. Replace the slogan with a concrete claim.",
+        "range": [
+          48678,
+          48709
+        ],
+        "ruleId": "contrastive-aphorism",
+        "severity": 2,
+        "type": "lint"
       }
     ]
   },
@@ -45049,6 +45440,374 @@
         "ruleId": "semantic-thinness",
         "severity": 2,
         "type": "lint"
+      },
+      {
+        "column": 73,
+        "index": 4437,
+        "line": 157,
+        "loc": {
+          "end": {
+            "column": 96,
+            "line": 157
+          },
+          "start": {
+            "column": 73,
+            "line": 157
+          }
+        },
+        "message": "Generic signposting found: the-focus-is-practical. Replace the frame with the concrete claim.",
+        "range": [
+          4437,
+          4460
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 97,
+        "index": 4461,
+        "line": 157,
+        "loc": {
+          "end": {
+            "column": 177,
+            "line": 157
+          },
+          "start": {
+            "column": 97,
+            "line": 157
+          }
+        },
+        "message": "Generic signposting found: each-piece-has-source-reveal-next-move. Replace the frame with the concrete claim.",
+        "range": [
+          4461,
+          4541
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 58,
+        "index": 4600,
+        "line": 159,
+        "loc": {
+          "end": {
+            "column": 164,
+            "line": 159
+          },
+          "start": {
+            "column": 58,
+            "line": 159
+          }
+        },
+        "message": "Negation reframe found: \"That does not make structured data useless. It does mean the page cannot outsource its answer to metadata.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          4600,
+          4706
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 102,
+        "index": 4644,
+        "line": 159,
+        "loc": {
+          "end": {
+            "column": 164,
+            "line": 159
+          },
+          "start": {
+            "column": 102,
+            "line": 159
+          }
+        },
+        "message": "Semantic thinness (abstract-metaphor-claim): Catch slogan-like abstract metaphors where an abstract subject performs a physical or spatial action with no concrete referent. Matched template: {artifactSubject} {metaphorVerb} its {answerNoun} to {abstractDestination}.",
+        "range": [
+          4644,
+          4706
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 165,
+        "index": 4707,
+        "line": 159,
+        "loc": {
+          "end": {
+            "column": 214,
+            "line": 159
+          },
+          "start": {
+            "column": 165,
+            "line": 159
+          }
+        },
+        "message": "Semantic thinness (abstract-metaphor-claim): Catch slogan-like abstract metaphors where an abstract subject performs a physical or spatial action with no concrete referent. Matched template: {artifactSubject} {metaphorVerb} its {answerNoun} to {abstractDestination}.",
+        "range": [
+          4707,
+          4756
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 215,
+        "index": 4757,
+        "line": 159,
+        "loc": {
+          "end": {
+            "column": 269,
+            "line": 159
+          },
+          "start": {
+            "column": 215,
+            "line": 159
+          }
+        },
+        "message": "Semantic thinness (abstract-metaphor-claim): Catch slogan-like abstract metaphors where an abstract subject performs a physical or spatial action with no concrete referent. Matched template: {artifactSubject} {linkingVerb} wearing a {surfaceNoun} over an {emptyNoun}.",
+        "range": [
+          4757,
+          4811
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 91,
+        "index": 4903,
+        "line": 161,
+        "loc": {
+          "end": {
+            "column": 122,
+            "line": 161
+          },
+          "start": {
+            "column": 91,
+            "line": 161
+          }
+        },
+        "message": "Generic signposting found: wrong level of question. Replace the frame with the concrete claim.",
+        "range": [
+          4903,
+          4934
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4936,
+        "line": 163,
+        "loc": {
+          "end": {
+            "column": 34,
+            "line": 163
+          },
+          "start": {
+            "column": 1,
+            "line": 163
+          }
+        },
+        "message": "Generic signposting found: the better operating question is. Replace the frame with the concrete claim.",
+        "range": [
+          4936,
+          4969
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4971,
+        "line": 165,
+        "loc": {
+          "end": {
+            "column": 46,
+            "line": 165
+          },
+          "start": {
+            "column": 1,
+            "line": 165
+          }
+        },
+        "message": "Semantic thinness (abstract-metaphor-claim): Catch slogan-like abstract metaphors where an abstract subject performs a physical or spatial action with no concrete referent. Matched template: {abstractSubject} {linkingVerb} {infrastructureNoun} with {abstractObject}.",
+        "range": [
+          4971,
+          5016
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 5018,
+        "line": 167,
+        "loc": {
+          "end": {
+            "column": 102,
+            "line": 167
+          },
+          "start": {
+            "column": 1,
+            "line": 167
+          }
+        },
+        "message": "Generic signposting found: the grown-up answer is. Replace the frame with the concrete claim.",
+        "range": [
+          5018,
+          5119
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 61,
+        "index": 5181,
+        "line": 169,
+        "loc": {
+          "end": {
+            "column": 123,
+            "line": 169
+          },
+          "start": {
+            "column": 61,
+            "line": 169
+          }
+        },
+        "message": "Semantic thinness (abstract-metaphor-claim): Catch slogan-like abstract metaphors where an abstract subject performs a physical or spatial action with no concrete referent. Matched template: {artifactSubject} {metaphorVerb} like a {humanRole} after a {vagueEvent}.",
+        "range": [
+          5181,
+          5243
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 124,
+        "index": 5244,
+        "line": 169,
+        "loc": {
+          "end": {
+            "column": 152,
+            "line": 169
+          },
+          "start": {
+            "column": 124,
+            "line": 169
+          }
+        },
+        "message": "Contrastive aphorism found: x-gives-you-y-pair. Replace the slogan with a concrete claim.",
+        "range": [
+          5244,
+          5272
+        ],
+        "ruleId": "contrastive-aphorism",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 74,
+        "index": 5387,
+        "line": 171,
+        "loc": {
+          "end": {
+            "column": 122,
+            "line": 171
+          },
+          "start": {
+            "column": 74,
+            "line": 171
+          }
+        },
+        "message": "Semantic thinness (abstract-metaphor-claim): Catch slogan-like abstract metaphors where an abstract subject performs a physical or spatial action with no concrete referent. Matched template: {abstractSubject} behaves like a {filterNoun}.",
+        "range": [
+          5387,
+          5435
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 138,
+        "index": 5574,
+        "line": 173,
+        "loc": {
+          "end": {
+            "column": 163,
+            "line": 173
+          },
+          "start": {
+            "column": 138,
+            "line": 173
+          }
+        },
+        "message": "Semantic thinness (abstract-personification-line): Catch abstract nouns treated as social actors in short payoff lines without concrete action or cause. Matched template: {abstractSubject} entered {socialPlace}.",
+        "range": [
+          5574,
+          5599
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 164,
+        "index": 5600,
+        "line": 173,
+        "loc": {
+          "end": {
+            "column": 212,
+            "line": 173
+          },
+          "start": {
+            "column": 164,
+            "line": 173
+          }
+        },
+        "message": "Semantic thinness (abstract-metaphor-claim): Catch slogan-like abstract metaphors where an abstract subject performs a physical or spatial action with no concrete referent. Matched template: {artifactSubject} add another {layerNoun} to {diagnosisObject}.",
+        "range": [
+          5600,
+          5648
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 213,
+        "index": 5649,
+        "line": 173,
+        "loc": {
+          "end": {
+            "column": 244,
+            "line": 173
+          },
+          "start": {
+            "column": 213,
+            "line": 173
+          }
+        },
+        "message": "Contrastive aphorism found: x-gets-one-y-gets-another. Replace the slogan with a concrete claim.",
+        "range": [
+          5649,
+          5680
+        ],
+        "ruleId": "contrastive-aphorism",
+        "severity": 2,
+        "type": "lint"
       }
     ]
   },
@@ -46184,6 +46943,29 @@
           1075
         ],
         "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1077,
+        "line": 47,
+        "loc": {
+          "end": {
+            "column": 23,
+            "line": 47
+          },
+          "start": {
+            "column": 1,
+            "line": 47
+          }
+        },
+        "message": "Generic signposting found: the-lesson-was-simple. Replace the frame with the concrete claim.",
+        "range": [
+          1077,
+          1099
+        ],
+        "ruleId": "generic-signposting",
         "severity": 2,
         "type": "lint"
       },

@@ -1025,3 +1025,21 @@ The lazy conclusion is:
 The better conclusion:
 
 It is less screenshot-friendly. It is more useful for search systems.
+
+The focus is practical.
+
+Each post has a source, a reveal, an audit check, and the next move for a buyer.
+
+That does not make structured data useless. It does mean the page cannot outsource its answer to metadata.
+
+That means "should we block AI?" is the wrong level of question.
+
+The better operating question is:
+
+The grown-up answer is log review, path rules, and a robots.txt file that matches the business model.
+
+I used to read traffic drops like a normal person.
+
+One prompt gives you a mood. A prompt panel gives you a measurement.
+
+A ranking problem gets one fix. A source-selection problem gets another.

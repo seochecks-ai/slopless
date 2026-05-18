@@ -268,6 +268,7 @@ async function main(): Promise<number> {
   const args = [
     "node",
     "slopless",
+    "--no-textlintrc",
     ...(hasFlag(userArgs, CONFIG_FLAGS)
       ? []
       : ["--config", resolve(packageRoot(), "slopless.textlintrc.json")]),

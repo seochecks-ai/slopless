@@ -157,3 +157,13 @@ More content can help. Technical fixes can reduce hydration errors.
 The issue is not just ready for crawlers because Google indexed it yesterday.
 
 It is less than five minutes from the station.
+
+The problem is simple: GPTBot received the raw HTML shell before hydration.
+
+The dashboard gives you a trend. The export gives you a CSV.
+
+The patient gets one dose. The control group gets another dose.
+
+The better operating system is ready for the migration.
+
+The grown-up answer key is missing from the training packet.

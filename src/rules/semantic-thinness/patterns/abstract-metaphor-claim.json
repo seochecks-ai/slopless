@@ -2,15 +2,29 @@
   "id": "abstract-metaphor-claim",
   "class": "abstract-metaphor",
   "purpose": "Catch slogan-like abstract metaphors where an abstract subject performs a physical or spatial action with no concrete referent.",
+  "matchMode": "contains",
+  "maxTokens": 42,
   "templates": [
     "{abstractSubject} {metaphorVerb} in {abstractObject}.",
+    "{abstractSubject} {metaphorVerb} mostly in {abstractObject}.",
     "{abstractSubject} {metaphorVerb} inside {abstractObject}.",
     "{abstractSubject} {metaphorVerb} after {abstractObject}.",
     "{abstractSubject} {metaphorVerb} with {abstractObject}.",
-    "{abstractSubject} {linkingVerb} {abstractComplement}."
+    "{abstractSubject} {linkingVerb} {abstractComplement}.",
+    "{artifactSubject} {metaphorVerb} its {answerNoun} to {abstractDestination}.",
+    "{artifactSubject} {linkingVerb} wearing a {surfaceNoun} over an {emptyNoun}.",
+    "{artifactSubject} {metaphorVerb} like a {humanRole} after a {vagueEvent}.",
+    "{abstractSubject} {linkingVerb} {infrastructureNoun} with {abstractObject}.",
+    "{abstractSubject} behaves like a {filterNoun}.",
+    "{artifactSubject} adds another {layerNoun} to {diagnosisObject}.",
+    "{artifactSubject} add another {layerNoun} to {diagnosisObject}."
   ],
   "slots": {
     "abstractSubject": [
+      "ai visibility",
+      "ai assistants",
+      "average rank",
+      "crawler access",
       "prevention",
       "problem-solving",
       "trust",
@@ -31,6 +45,8 @@
       "consistency",
       "daily life",
       "the answer",
+      "the brand",
+      "the page",
       "the work",
       "the lesson",
       "the process",
@@ -47,6 +63,11 @@
       "moves",
       "breathes",
       "travels",
+      "vanishes",
+      "disappears",
+      "outsources",
+      "cannot outsource",
+      "can't outsource",
       "arrives",
       "settles",
       "grows",
@@ -54,7 +75,21 @@
       "takes root",
       "holds"
     ],
+    "artifactSubject": [
+      "ai overviews",
+      "content",
+      "structured data",
+      "the answer",
+      "the brand",
+      "the business",
+      "the page",
+      "the post",
+      "the report",
+      "visibility"
+    ],
     "abstractObject": [
+      "consequences",
+      "diagnosis",
       "rehearsal",
       "repair",
       "practice",
@@ -71,7 +106,8 @@
       "the conversation",
       "the storm",
       "the quiet",
-      "the rhythm"
+      "the rhythm",
+      "metadata"
     ],
     "linkingVerb": ["is", "was", "becomes", "became", "remains"],
     "abstractComplement": [
@@ -83,6 +119,59 @@
       "a daily practice",
       "the real curriculum",
       "the actual work"
+    ],
+    "answerNoun": [
+      "answer",
+      "explanation",
+      "job",
+      "meaning",
+      "proof",
+      "substance"
+    ],
+    "abstractDestination": [
+      "metadata",
+      "schema",
+      "the plugin panel",
+      "the spreadsheet",
+      "the dashboard",
+      "the tool"
+    ],
+    "surfaceNoun": [
+      "clean jacket",
+      "fancy jacket",
+      "nice jacket",
+      "sharp jacket",
+      "polished jacket"
+    ],
+    "emptyNoun": [
+      "empty shirt",
+      "empty body",
+      "empty page",
+      "empty shell",
+      "hollow shell"
+    ],
+    "humanRole": ["contractor", "consultant", "vendor", "agency", "freelancer"],
+    "vagueEvent": [
+      "vague scope call",
+      "vague kickoff",
+      "bad kickoff",
+      "loose briefing",
+      "messy handoff"
+    ],
+    "infrastructureNoun": ["plumbing", "machinery", "scaffolding"],
+    "filterNoun": [
+      "trust filter",
+      "qualification filter",
+      "credibility filter",
+      "source filter"
+    ],
+    "layerNoun": ["layer", "dimension", "surface"],
+    "diagnosisObject": [
+      "the diagnosis",
+      "the report",
+      "the audit",
+      "the decision",
+      "the analysis"
     ]
   },
   "rejectIf": [

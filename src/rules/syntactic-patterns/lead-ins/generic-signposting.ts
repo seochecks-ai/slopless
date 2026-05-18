@@ -25,17 +25,20 @@ const CONSULTATION_PATTERNS = [
 const NOTE_PATTERNS = ["please note that", "please note"];
 const QUESTION_PATTERNS = [
   "the audit move",
+  "wrong level of question",
   "the useful question is",
   "the useful move is",
   "the practical move is",
   "the real question is",
-  "the better question is"
+  "the better question is",
+  "the better operating question is"
 ];
 const ANSWER_PATTERNS = [
   "the lazy conclusion is",
   "the better conclusion",
   "the answer is simple",
   "the answer is straightforward",
+  "the grown-up answer is",
   "the practical answer is",
   "the short answer is",
   "the better conclusion is",
@@ -74,6 +77,15 @@ const WHAT_FRAME_TAIL_STARTERS = [
   "true",
   "usually"
 ];
+const NOUN_EVALUATION_TAILS = [
+  "boring",
+  "clear",
+  "practical",
+  "simple",
+  "straightforward",
+  "useful",
+  "wrong"
+];
 const FRAME_ADJECTIVES = [
   "basic",
   "best",
@@ -102,6 +114,7 @@ const FRAME_NOUNS = [
   "challenge",
   "conclusion",
   "fact",
+  "focus",
   "frame",
   "idea",
   "lesson",
@@ -172,6 +185,25 @@ function matchEvaluativeFrame(words: readonly string[]): string | undefined {
   return undefined;
 }
 
+function matchNounEvaluationFrame(
+  words: readonly string[]
+): string | undefined {
+  const [first, second, third, fourth, fifth] = words;
+
+  if (
+    words.length <= 5 &&
+    first === "the" &&
+    FRAME_NOUNS.includes(second ?? "") &&
+    ABSTRACT_FRAME_VERBS.includes(third ?? "") &&
+    NOUN_EVALUATION_TAILS.includes(fourth ?? "") &&
+    fifth === undefined
+  ) {
+    return `the-${second ?? "frame"}-${third ?? "is"}-${fourth ?? "thin"}`;
+  }
+
+  return undefined;
+}
+
 function matchPointIsToFrame(words: readonly string[]): string | undefined {
   const [first, second, third, fourth, fifth] = words;
 
@@ -225,17 +257,35 @@ function matchAbstractFrame(text: string): string | undefined {
   return (
     matchModifiedAbstractFrame(words) ??
     matchEvaluativeFrame(words) ??
+    matchNounEvaluationFrame(words) ??
     matchPointIsToFrame(words) ??
     matchWhatFrame(words)
   );
 }
 
+function matchFormulaicContentSetup(text: string): string | undefined {
+  if (
+    text.startsWith("each ") &&
+    text.includes(" has a source") &&
+    text.includes(" a reveal") &&
+    (text.includes("next move") || text.includes("buyer"))
+  ) {
+    return "each-piece-has-source-reveal-next-move";
+  }
+
+  return undefined;
+}
+
 function matchSignposting(sentence: string): SentenceMatch | undefined {
   const stripped = cleanSentence(sentence, PREFIXES);
   const abstract = matchAbstractFrame(stripped);
+  const formulaicSetup = matchFormulaicContentSetup(stripped);
 
   if (abstract !== undefined) {
     return { kind: "abstract-evaluation-frame", signal: abstract };
+  }
+  if (formulaicSetup !== undefined) {
+    return { kind: "formulaic-content-setup", signal: formulaicSetup };
   }
 
   const checks: readonly (readonly [string, readonly string[]])[] = [
