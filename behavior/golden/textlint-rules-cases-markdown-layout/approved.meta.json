@@ -1,0 +1,19 @@
+{
+  "suite": "textlint-rules-cases-markdown-layout",
+  "kind": "approved",
+  "run_id": "2026-05-19T17-36-39.250882Z-df22e59a",
+  "run_commit": "e21d316",
+  "working_tree": "dirty",
+  "recorded_at": "2026-05-19T17:36:39.250882Z",
+  "fixture_hash": "sha256:e413a93b88704af3ecf744a31d8f17359cbcdfb5a8a12b9919421c24e6c6d244",
+  "manifest_hash": "sha256:df22e59a1c3af89660207e32169c1efa8b3064d02c7a4dc3f36d00ec8112a0ee",
+  "tool_version": "0.1.8",
+  "output_schema_version": "1",
+  "fixtures": [
+    {
+      "path": "behavior/fixtures/textlint-rules/cases/markdown-layout/no-hits.md",
+      "sha256": "sha256:a3f818da9186cbe07507d20b1f43941c41dc0130c07fc4d7e1871c4ff764c512"
+    }
+  ],
+  "comment": "Split textlint rule approvals and restore adversarial no-hits"
+}

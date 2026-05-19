@@ -7,7 +7,6 @@ import {
   contrastPivotSubject,
   findCopularNegation,
   findNegationIndex,
-  hasCommaBeforeNegation,
   isCompleteSentence,
   skipOptionalAdverbs,
   startsWithAny,
@@ -18,6 +17,11 @@ import {
   validSubject,
   words
 } from "./negation-reframe-parts.js";
+import {
+  hasAbstractCommaContrast,
+  hasFactualConnectorAfterNegation,
+  hasMetaContext
+} from "./negation-context-gates.js";
 import {
   hasNegativeSlopPairSignal,
   negativeSlopReframe
@@ -79,6 +83,8 @@ function inlineNegationContrast(
 
   if (
     negation?.normalized !== "not" ||
+    hasMetaContext(tokens) ||
+    hasFactualConnectorAfterNegation(tokens, negationIndex) ||
     INLINE_NON_CONTRAST_NEGATION_FOLLOWERS.has(
       tokens[negationIndex + 1]?.normalized ?? ""
     )
@@ -87,7 +93,7 @@ function inlineNegationContrast(
   }
 
   return !hasConcreteCorrectionEvidence(sentence.text) &&
-    (hasCommaBeforeNegation(sentence.text, negation.start) ||
+    (hasAbstractCommaContrast(sentence, tokens, negation.start) ||
       hasInlineContrastConnectorAfterNegation(tokens, negationIndex))
     ? {
         end: sentence.end,

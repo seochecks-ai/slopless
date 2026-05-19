@@ -1,10 +1,10 @@
 import prohibitedWords from "./data/prohibited-words.json" with { type: "json" };
-import { findPhraseMatches } from "../../shared/matchers/phrases.js";
+import { findVocabularyMatches } from "./private/vocabulary-context.js";
 import { oneToOneRule } from "../private/textlint-rule-builders.js";
 
 const rule = oneToOneRule({
   detect: (unit) =>
-    findPhraseMatches(unit.text, prohibitedWords).map((match) => ({
+    findVocabularyMatches(unit.text, prohibitedWords).map((match) => ({
       evidence: match.text,
       label: match.text,
       range: { start: match.start, end: match.end }

@@ -97,7 +97,7 @@ root = "behavior/fixtures/textlint-rules/cases"
 root = "behavior/fixtures/textlint-rules/corpus"
 
 [[fixture_output]]
-approved = "behavior/golden/textlint-rules/approved.normalized.json"
+approved_glob = "behavior/golden/textlint-rules-*/approved.normalized.json"
 mode = "case-findings-covered-by-corpus"
 document_level_rules = [
   "avg-sentence-length",

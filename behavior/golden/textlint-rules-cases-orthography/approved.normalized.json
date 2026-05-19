@@ -1,0 +1,724 @@
+[
+  {
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/orthography/hits.md",
+    "messages": [
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 34,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
+        "message": "Heading looks like title case. Use sentence case; found 4 capitalized non-first words.",
+        "range": [
+          0,
+          33
+        ],
+        "ruleId": "sentence-case",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 15,
+        "index": 49,
+        "line": 3,
+        "loc": {
+          "end": {
+            "column": 16,
+            "line": 3
+          },
+          "start": {
+            "column": 15,
+            "line": 3
+          }
+        },
+        "message": "Paragraph has 2 exclamation marks. Keep at most 1.",
+        "range": [
+          49,
+          50
+        ],
+        "ruleId": "exclamation-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 4,
+        "index": 71,
+        "line": 5,
+        "loc": {
+          "end": {
+            "column": 11,
+            "line": 5
+          },
+          "start": {
+            "column": 4,
+            "line": 5
+          }
+        },
+        "message": "Fake timestamp found: \"5:47 PM\". Remove fabricated clock specificity.",
+        "range": [
+          71,
+          78
+        ],
+        "ruleId": "fake-timestamps",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 4,
+        "index": 120,
+        "line": 7,
+        "loc": {
+          "end": {
+            "column": 10,
+            "line": 7
+          },
+          "start": {
+            "column": 4,
+            "line": 7
+          }
+        },
+        "message": "Fake timestamp found: \"5:47pm\". Remove fabricated clock specificity.",
+        "range": [
+          120,
+          126
+        ],
+        "ruleId": "fake-timestamps",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 4,
+        "index": 167,
+        "line": 9,
+        "loc": {
+          "end": {
+            "column": 11,
+            "line": 9
+          },
+          "start": {
+            "column": 4,
+            "line": 9
+          }
+        },
+        "message": "Fake timestamp found: \"5:47 PM\". Remove fabricated clock specificity.",
+        "range": [
+          167,
+          174
+        ],
+        "ruleId": "fake-timestamps",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 18,
+        "index": 249,
+        "line": 11,
+        "loc": {
+          "end": {
+            "column": 27,
+            "line": 11
+          },
+          "start": {
+            "column": 18,
+            "line": 11
+          }
+        },
+        "message": "Smart quotes found: \"“”\". Replace curly quotes with straight quotes.",
+        "range": [
+          249,
+          258
+        ],
+        "ruleId": "smart-quotes",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 11,
+        "index": 288,
+        "line": 13,
+        "loc": {
+          "end": {
+            "column": 12,
+            "line": 13
+          },
+          "start": {
+            "column": 11,
+            "line": 13
+          }
+        },
+        "message": "Smart quotes found: \"’\". Replace curly quotes with straight quotes.",
+        "range": [
+          288,
+          289
+        ],
+        "ruleId": "smart-quotes",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 23,
+        "index": 338,
+        "line": 15,
+        "loc": {
+          "end": {
+            "column": 37,
+            "line": 15
+          },
+          "start": {
+            "column": 23,
+            "line": 15
+          }
+        },
+        "message": "Dramatic colon found: \"nothing moved.\". Rewrite without the short reveal after the colon.",
+        "range": [
+          338,
+          352
+        ],
+        "ruleId": "colon-dramatic",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 17,
+        "index": 386,
+        "line": 19,
+        "loc": {
+          "end": {
+            "column": 18,
+            "line": 19
+          },
+          "start": {
+            "column": 17,
+            "line": 19
+          }
+        },
+        "message": "Closed em dash found. Replace it with a comma, colon, parenthesis, or spaced dash.",
+        "range": [
+          386,
+          387
+        ],
+        "ruleId": "em-dashes",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 9,
+        "index": 421,
+        "line": 21,
+        "loc": {
+          "end": {
+            "column": 13,
+            "line": 21
+          },
+          "start": {
+            "column": 9,
+            "line": 21
+          }
+        },
+        "message": "Smart quotes found: \"“”\". Replace curly quotes with straight quotes.",
+        "range": [
+          421,
+          425
+        ],
+        "ruleId": "smart-quotes",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 13,
+        "index": 425,
+        "line": 21,
+        "loc": {
+          "end": {
+            "column": 14,
+            "line": 21
+          },
+          "start": {
+            "column": 13,
+            "line": 21
+          }
+        },
+        "message": "Closed em dash found. Replace it with a comma, colon, parenthesis, or spaced dash.",
+        "range": [
+          425,
+          426
+        ],
+        "ruleId": "em-dashes",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 4,
+        "index": 441,
+        "line": 23,
+        "loc": {
+          "end": {
+            "column": 11,
+            "line": 23
+          },
+          "start": {
+            "column": 4,
+            "line": 23
+          }
+        },
+        "message": "Fake timestamp found: \"5:47 PM\". Remove fabricated clock specificity.",
+        "range": [
+          441,
+          448
+        ],
+        "ruleId": "fake-timestamps",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 22,
+        "index": 459,
+        "line": 23,
+        "loc": {
+          "end": {
+            "column": 23,
+            "line": 23
+          },
+          "start": {
+            "column": 22,
+            "line": 23
+          }
+        },
+        "message": "Paragraph has 2 exclamation marks. Keep at most 1.",
+        "range": [
+          459,
+          460
+        ],
+        "ruleId": "exclamation-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 478,
+        "line": 25,
+        "loc": {
+          "end": {
+            "column": 36,
+            "line": 25
+          },
+          "start": {
+            "column": 1,
+            "line": 25
+          }
+        },
+        "message": "Heading looks like title case. Use sentence case; found 3 capitalized non-first words.",
+        "range": [
+          478,
+          513
+        ],
+        "ruleId": "sentence-case",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 515,
+        "line": 27,
+        "loc": {
+          "end": {
+            "column": 35,
+            "line": 27
+          },
+          "start": {
+            "column": 1,
+            "line": 27
+          }
+        },
+        "message": "Generic signposting found: the-was-simple. Replace the frame with the concrete claim.",
+        "range": [
+          515,
+          549
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 25,
+        "index": 539,
+        "line": 27,
+        "loc": {
+          "end": {
+            "column": 35,
+            "line": 27
+          },
+          "start": {
+            "column": 25,
+            "line": 27
+          }
+        },
+        "message": "Dramatic colon found: \"“ship it.”\". Rewrite without the short reveal after the colon.",
+        "range": [
+          539,
+          549
+        ],
+        "ruleId": "colon-dramatic",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 25,
+        "index": 539,
+        "line": 27,
+        "loc": {
+          "end": {
+            "column": 35,
+            "line": 27
+          },
+          "start": {
+            "column": 25,
+            "line": 27
+          }
+        },
+        "message": "Smart quotes found: \"“”\". Replace curly quotes with straight quotes.",
+        "range": [
+          539,
+          549
+        ],
+        "ruleId": "smart-quotes",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 35,
+        "index": 585,
+        "line": 29,
+        "loc": {
+          "end": {
+            "column": 36,
+            "line": 29
+          },
+          "start": {
+            "column": 35,
+            "line": 29
+          }
+        },
+        "message": "Closed em dash found. Replace it with a comma, colon, parenthesis, or spaced dash.",
+        "range": [
+          585,
+          586
+        ],
+        "ruleId": "em-dashes",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 20,
+        "index": 618,
+        "line": 31,
+        "loc": {
+          "end": {
+            "column": 34,
+            "line": 31
+          },
+          "start": {
+            "column": 20,
+            "line": 31
+          }
+        },
+        "message": "Smart quotes found: \"“”\". Replace curly quotes with straight quotes.",
+        "range": [
+          618,
+          632
+        ],
+        "ruleId": "smart-quotes",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 39,
+        "index": 692,
+        "line": 33,
+        "loc": {
+          "end": {
+            "column": 40,
+            "line": 33
+          },
+          "start": {
+            "column": 39,
+            "line": 33
+          }
+        },
+        "message": "Paragraph has 3 exclamation marks. Keep at most 1.",
+        "range": [
+          692,
+          693
+        ],
+        "ruleId": "exclamation-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 26,
+        "index": 752,
+        "line": 35,
+        "loc": {
+          "end": {
+            "column": 33,
+            "line": 35
+          },
+          "start": {
+            "column": 26,
+            "line": 35
+          }
+        },
+        "message": "Fake timestamp found: \"5:47 PM\". Remove fabricated clock specificity.",
+        "range": [
+          752,
+          759
+        ],
+        "ruleId": "fake-timestamps",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 782,
+        "line": 37,
+        "loc": {
+          "end": {
+            "column": 40,
+            "line": 37
+          },
+          "start": {
+            "column": 1,
+            "line": 37
+          }
+        },
+        "message": "Semantic thinness (empty-scene-transition): Catch generic transition lines that declare change, passage, or motion without naming what changed or why. Matched template: {genericSubject} {changeVerb}.",
+        "range": [
+          782,
+          821
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 21,
+        "index": 802,
+        "line": 37,
+        "loc": {
+          "end": {
+            "column": 40,
+            "line": 37
+          },
+          "start": {
+            "column": 21,
+            "line": 37
+          }
+        },
+        "message": "Dramatic colon found: \"everything changed.\". Rewrite without the short reveal after the colon.",
+        "range": [
+          802,
+          821
+        ],
+        "ruleId": "colon-dramatic",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 44,
+        "index": 866,
+        "line": 39,
+        "loc": {
+          "end": {
+            "column": 45,
+            "line": 39
+          },
+          "start": {
+            "column": 44,
+            "line": 39
+          }
+        },
+        "message": "Hidden Unicode control found: U+200B ZERO WIDTH SPACE. Remove the invisible character.",
+        "range": [
+          866,
+          867
+        ],
+        "ruleId": "hidden-unicode-controls",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 52,
+        "index": 934,
+        "line": 41,
+        "loc": {
+          "end": {
+            "column": 53,
+            "line": 41
+          },
+          "start": {
+            "column": 52,
+            "line": 41
+          }
+        },
+        "message": "Hidden Unicode control found: U+202E RIGHT-TO-LEFT OVERRIDE. Remove the invisible character.",
+        "range": [
+          934,
+          935
+        ],
+        "ruleId": "hidden-unicode-controls",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 41,
+        "index": 992,
+        "line": 43,
+        "loc": {
+          "end": {
+            "column": 42,
+            "line": 43
+          },
+          "start": {
+            "column": 41,
+            "line": 43
+          }
+        },
+        "message": "Hidden Unicode control found: U+00AD SOFT HYPHEN. Remove the invisible character.",
+        "range": [
+          992,
+          993
+        ],
+        "ruleId": "hidden-unicode-controls",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 30,
+        "index": 1031,
+        "line": 45,
+        "loc": {
+          "end": {
+            "column": 67,
+            "line": 45
+          },
+          "start": {
+            "column": 30,
+            "line": 45
+          }
+        },
+        "message": "Artifact placeholder found: OpenAI citation marker. Remove generated or unfinished placeholder residue.",
+        "range": [
+          1031,
+          1068
+        ],
+        "ruleId": "artifact-placeholders",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 24,
+        "index": 1094,
+        "line": 47,
+        "loc": {
+          "end": {
+            "column": 42,
+            "line": 47
+          },
+          "start": {
+            "column": 24,
+            "line": 47
+          }
+        },
+        "message": "Artifact placeholder found: OpenAI sandbox path. Remove generated or unfinished placeholder residue.",
+        "range": [
+          1094,
+          1112
+        ],
+        "ruleId": "artifact-placeholders",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 26,
+        "index": 1151,
+        "line": 49,
+        "loc": {
+          "end": {
+            "column": 43,
+            "line": 49
+          },
+          "start": {
+            "column": 26,
+            "line": 49
+          }
+        },
+        "message": "Artifact placeholder found: unfinished citation placeholder. Remove generated or unfinished placeholder residue.",
+        "range": [
+          1151,
+          1168
+        ],
+        "ruleId": "artifact-placeholders",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 17,
+        "index": 1205,
+        "line": 51,
+        "loc": {
+          "end": {
+            "column": 30,
+            "line": 51
+          },
+          "start": {
+            "column": 17,
+            "line": 51
+          }
+        },
+        "message": "Artifact placeholder found: unfinished insert placeholder. Remove generated or unfinished placeholder residue.",
+        "range": [
+          1205,
+          1218
+        ],
+        "ruleId": "artifact-placeholders",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1243,
+        "line": 53,
+        "loc": {
+          "end": {
+            "column": 12,
+            "line": 53
+          },
+          "start": {
+            "column": 1,
+            "line": 53
+          }
+        },
+        "message": "Artifact placeholder found: placeholder text. Remove generated or unfinished placeholder residue.",
+        "range": [
+          1243,
+          1254
+        ],
+        "ruleId": "artifact-placeholders",
+        "severity": 2,
+        "type": "lint"
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/orthography/no-hits.md",
+    "messages": []
+  }
+]

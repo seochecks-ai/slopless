@@ -1,0 +1,724 @@
+[
+  {
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/words/hits.md",
+    "messages": [
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 2,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
+        "message": "Coleman-Liau is 12.63. Keep it at 12 or lower.",
+        "range": [
+          0,
+          1
+        ],
+        "ruleId": "coleman-liau",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 2,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
+        "message": "Flesch Reading Ease is 48.12. Keep it at 61 or higher.",
+        "range": [
+          0,
+          1
+        ],
+        "ruleId": "flesch-kincaid",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 60,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
+        "message": "Hedge stacking found: 2 hedge words in one sentence. Keep fewer than 2.",
+        "range": [
+          0,
+          59
+        ],
+        "ruleId": "hedge-stacking",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 61,
+        "line": 3,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 3
+          },
+          "start": {
+            "column": 1,
+            "line": 3
+          }
+        },
+        "message": "Hedge stacking found: 2 hedge words in one sentence. Keep fewer than 2.",
+        "range": [
+          61,
+          109
+        ],
+        "ruleId": "hedge-stacking",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 36,
+        "index": 194,
+        "line": 7,
+        "loc": {
+          "end": {
+            "column": 43,
+            "line": 7
+          },
+          "start": {
+            "column": 36,
+            "line": 7
+          }
+        },
+        "message": "LLM vocabulary found: \"pivotal\". Replace the stock diction with a concrete word.",
+        "range": [
+          194,
+          201
+        ],
+        "ruleId": "llm-vocabulary",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 22,
+        "index": 336,
+        "line": 13,
+        "loc": {
+          "end": {
+            "column": 30,
+            "line": 13
+          },
+          "start": {
+            "column": 22,
+            "line": 13
+          }
+        },
+        "message": "Prohibited word found: \"leverage\". Rewrite without this term.",
+        "range": [
+          336,
+          344
+        ],
+        "ruleId": "prohibited-words",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 30,
+        "index": 392,
+        "line": 15,
+        "loc": {
+          "end": {
+            "column": 36,
+            "line": 15
+          },
+          "start": {
+            "column": 30,
+            "line": 15
+          }
+        },
+        "message": "Prohibited word found: \"ROBUST\". Rewrite without this term.",
+        "range": [
+          392,
+          398
+        ],
+        "ruleId": "prohibited-words",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 26,
+        "index": 446,
+        "line": 17,
+        "loc": {
+          "end": {
+            "column": 33,
+            "line": 17
+          },
+          "start": {
+            "column": 26,
+            "line": 17
+          }
+        },
+        "message": "Complex word found: \"utilize\". Use \"use\" instead.",
+        "range": [
+          446,
+          453
+        ],
+        "ruleId": "simplicity",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 22,
+        "index": 493,
+        "line": 19,
+        "loc": {
+          "end": {
+            "column": 32,
+            "line": 19
+          },
+          "start": {
+            "column": 22,
+            "line": 19
+          }
+        },
+        "message": "Complex word found: \"FACILITATE\". Use \"help\" instead.",
+        "range": [
+          493,
+          503
+        ],
+        "ruleId": "simplicity",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 39,
+        "index": 610,
+        "line": 23,
+        "loc": {
+          "end": {
+            "column": 44,
+            "line": 23
+          },
+          "start": {
+            "column": 39,
+            "line": 23
+          }
+        },
+        "message": "LLM vocabulary found: \"realm\". Replace the stock diction with a concrete word.",
+        "range": [
+          610,
+          615
+        ],
+        "ruleId": "llm-vocabulary",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 39,
+        "index": 610,
+        "line": 23,
+        "loc": {
+          "end": {
+            "column": 44,
+            "line": 23
+          },
+          "start": {
+            "column": 39,
+            "line": 23
+          }
+        },
+        "message": "Prohibited word found: \"realm\". Rewrite without this term.",
+        "range": [
+          610,
+          615
+        ],
+        "ruleId": "prohibited-words",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 29,
+        "index": 661,
+        "line": 25,
+        "loc": {
+          "end": {
+            "column": 36,
+            "line": 25
+          },
+          "start": {
+            "column": 29,
+            "line": 25
+          }
+        },
+        "message": "Complex word found: \"utilize\". Use \"use\" instead.",
+        "range": [
+          661,
+          668
+        ],
+        "ruleId": "simplicity",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 23,
+        "index": 721,
+        "line": 27,
+        "loc": {
+          "end": {
+            "column": 31,
+            "line": 27
+          },
+          "start": {
+            "column": 23,
+            "line": 27
+          }
+        },
+        "message": "Prohibited word found: \"leverage\". Rewrite without this term.",
+        "range": [
+          721,
+          729
+        ],
+        "ruleId": "prohibited-words",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 34,
+        "index": 732,
+        "line": 27,
+        "loc": {
+          "end": {
+            "column": 40,
+            "line": 27
+          },
+          "start": {
+            "column": 34,
+            "line": 27
+          }
+        },
+        "message": "Prohibited word found: \"robust\". Rewrite without this term.",
+        "range": [
+          732,
+          738
+        ],
+        "ruleId": "prohibited-words",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 45,
+        "index": 743,
+        "line": 27,
+        "loc": {
+          "end": {
+            "column": 53,
+            "line": 27
+          },
+          "start": {
+            "column": 45,
+            "line": 27
+          }
+        },
+        "message": "Prohibited word found: \"seamless\". Rewrite without this term.",
+        "range": [
+          743,
+          751
+        ],
+        "ruleId": "prohibited-words",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 762,
+        "line": 29,
+        "loc": {
+          "end": {
+            "column": 66,
+            "line": 29
+          },
+          "start": {
+            "column": 1,
+            "line": 29
+          }
+        },
+        "message": "Hedge stacking found: 2 hedge words in one sentence. Keep fewer than 2.",
+        "range": [
+          762,
+          827
+        ],
+        "ruleId": "hedge-stacking",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 18,
+        "index": 779,
+        "line": 29,
+        "loc": {
+          "end": {
+            "column": 25,
+            "line": 29
+          },
+          "start": {
+            "column": 18,
+            "line": 29
+          }
+        },
+        "message": "Complex word found: \"utilize\". Use \"use\" instead.",
+        "range": [
+          779,
+          786
+        ],
+        "ruleId": "simplicity",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 26,
+        "index": 787,
+        "line": 29,
+        "loc": {
+          "end": {
+            "column": 34,
+            "line": 29
+          },
+          "start": {
+            "column": 26,
+            "line": 29
+          }
+        },
+        "message": "Complex word found: \"numerous\". Use \"many\" instead.",
+        "range": [
+          787,
+          795
+        ],
+        "ruleId": "simplicity",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 44,
+        "index": 805,
+        "line": 29,
+        "loc": {
+          "end": {
+            "column": 54,
+            "line": 29
+          },
+          "start": {
+            "column": 44,
+            "line": 29
+          }
+        },
+        "message": "Complex word found: \"facilitate\". Use \"help\" instead.",
+        "range": [
+          805,
+          815
+        ],
+        "ruleId": "simplicity",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 6,
+        "index": 834,
+        "line": 31,
+        "loc": {
+          "end": {
+            "column": 13,
+            "line": 31
+          },
+          "start": {
+            "column": 6,
+            "line": 31
+          }
+        },
+        "message": "LLM vocabulary found: \"vibrant\". Replace the stock diction with a concrete word.",
+        "range": [
+          834,
+          841
+        ],
+        "ruleId": "llm-vocabulary",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 14,
+        "index": 842,
+        "line": 31,
+        "loc": {
+          "end": {
+            "column": 23,
+            "line": 31
+          },
+          "start": {
+            "column": 14,
+            "line": 31
+          }
+        },
+        "message": "LLM vocabulary found: \"landscape\". Replace the stock diction with a concrete word.",
+        "range": [
+          842,
+          851
+        ],
+        "ruleId": "llm-vocabulary",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 43,
+        "index": 871,
+        "line": 31,
+        "loc": {
+          "end": {
+            "column": 48,
+            "line": 31
+          },
+          "start": {
+            "column": 43,
+            "line": 31
+          }
+        },
+        "message": "LLM vocabulary found: \"delve\". Replace the stock diction with a concrete word.",
+        "range": [
+          871,
+          876
+        ],
+        "ruleId": "llm-vocabulary",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 43,
+        "index": 871,
+        "line": 31,
+        "loc": {
+          "end": {
+            "column": 48,
+            "line": 31
+          },
+          "start": {
+            "column": 43,
+            "line": 31
+          }
+        },
+        "message": "Prohibited word found: \"delve\". Rewrite without this term.",
+        "range": [
+          871,
+          876
+        ],
+        "ruleId": "prohibited-words",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 57,
+        "index": 885,
+        "line": 31,
+        "loc": {
+          "end": {
+            "column": 66,
+            "line": 31
+          },
+          "start": {
+            "column": 57,
+            "line": 31
+          }
+        },
+        "message": "LLM vocabulary found: \"intricate\". Replace the stock diction with a concrete word.",
+        "range": [
+          885,
+          894
+        ],
+        "ruleId": "llm-vocabulary",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 67,
+        "index": 895,
+        "line": 31,
+        "loc": {
+          "end": {
+            "column": 75,
+            "line": 31
+          },
+          "start": {
+            "column": 67,
+            "line": 31
+          }
+        },
+        "message": "LLM vocabulary found: \"tapestry\". Replace the stock diction with a concrete word.",
+        "range": [
+          895,
+          903
+        ],
+        "ruleId": "llm-vocabulary",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 67,
+        "index": 895,
+        "line": 31,
+        "loc": {
+          "end": {
+            "column": 75,
+            "line": 31
+          },
+          "start": {
+            "column": 67,
+            "line": 31
+          }
+        },
+        "message": "Prohibited word found: \"tapestry\". Rewrite without this term.",
+        "range": [
+          895,
+          903
+        ],
+        "ruleId": "prohibited-words",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 906,
+        "line": 33,
+        "loc": {
+          "end": {
+            "column": 9,
+            "line": 33
+          },
+          "start": {
+            "column": 1,
+            "line": 33
+          }
+        },
+        "message": "LLM vocabulary found: \"Moreover\". Replace the stock diction with a concrete word.",
+        "range": [
+          906,
+          914
+        ],
+        "ruleId": "llm-vocabulary",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 16,
+        "index": 921,
+        "line": 33,
+        "loc": {
+          "end": {
+            "column": 78,
+            "line": 33
+          },
+          "start": {
+            "column": 16,
+            "line": 33
+          }
+        },
+        "message": "LLM vocabulary density: 6 stock abstraction words in a short span (scalable, approach, unlocks, nuanced, insight, ecosystem).",
+        "range": [
+          921,
+          983
+        ],
+        "ruleId": "llm-vocabulary-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 17,
+        "index": 1002,
+        "line": 35,
+        "loc": {
+          "end": {
+            "column": 31,
+            "line": 35
+          },
+          "start": {
+            "column": 17,
+            "line": 35
+          }
+        },
+        "message": "Prohibited word found: \"transformative\". Rewrite without this term.",
+        "range": [
+          1002,
+          1016
+        ],
+        "ruleId": "prohibited-words",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 17,
+        "index": 1002,
+        "line": 35,
+        "loc": {
+          "end": {
+            "column": 78,
+            "line": 35
+          },
+          "start": {
+            "column": 17,
+            "line": 35
+          }
+        },
+        "message": "LLM vocabulary density: 5 stock abstraction words in a short span (transformative, strategy, elevates, impact, workflow).",
+        "range": [
+          1002,
+          1063
+        ],
+        "ruleId": "llm-vocabulary-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 18,
+        "index": 1083,
+        "line": 37,
+        "loc": {
+          "end": {
+            "column": 87,
+            "line": 37
+          },
+          "start": {
+            "column": 18,
+            "line": 37
+          }
+        },
+        "message": "LLM vocabulary density: 6 stock abstraction words in a short span (scalable, ecosystem, unlocks, nuanced, transformation, touchpoint).",
+        "range": [
+          1083,
+          1152
+        ],
+        "ruleId": "llm-vocabulary-density",
+        "severity": 2,
+        "type": "lint"
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/words/no-hits.md",
+    "messages": []
+  }
+]

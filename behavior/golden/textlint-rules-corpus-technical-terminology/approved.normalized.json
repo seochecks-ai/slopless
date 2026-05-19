@@ -1,0 +1,191 @@
+[
+  {
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/corpus/technical-terminology.md",
+    "messages": [
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 2,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
+        "message": "Recommended terms present: 3. Include at least 4 terms from the policy pool.",
+        "range": [
+          0,
+          1
+        ],
+        "ruleId": "recommended-terms",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 2,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
+        "message": "Required term missing: \"borrowing\". Add the term or update the policy.",
+        "range": [
+          0,
+          1
+        ],
+        "ruleId": "required-terms",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 19,
+        "index": 865,
+        "line": 17,
+        "loc": {
+          "end": {
+            "column": 44,
+            "line": 17
+          },
+          "start": {
+            "column": 19,
+            "line": 17
+          }
+        },
+        "message": "Tortured phrase found: \"counterfeit consciousness\". Replace it with the standard scientific term.",
+        "range": [
+          865,
+          890
+        ],
+        "ruleId": "tortured-phrases",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 38,
+        "index": 972,
+        "line": 19,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 19
+          },
+          "start": {
+            "column": 38,
+            "line": 19
+          }
+        },
+        "message": "Tortured phrase found: \"bosom peril\". Replace it with the standard scientific term.",
+        "range": [
+          972,
+          983
+        ],
+        "ruleId": "tortured-phrases",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 21,
+        "index": 1019,
+        "line": 21,
+        "loc": {
+          "end": {
+            "column": 35,
+            "line": 21
+          },
+          "start": {
+            "column": 21,
+            "line": 21
+          }
+        },
+        "message": "Tortured phrase found: \"sign to clamor\". Replace it with the standard scientific term.",
+        "range": [
+          1019,
+          1033
+        ],
+        "ruleId": "tortured-phrases",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 31,
+        "index": 1755,
+        "line": 35,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 35
+          },
+          "start": {
+            "column": 31,
+            "line": 35
+          }
+        },
+        "message": "Tortured phrase found: \"man-made reasoning\". Replace it with the standard scientific term.",
+        "range": [
+          1755,
+          1773
+        ],
+        "ruleId": "tortured-phrases",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 24,
+        "index": 1834,
+        "line": 37,
+        "loc": {
+          "end": {
+            "column": 56,
+            "line": 37
+          },
+          "start": {
+            "column": 24,
+            "line": 37
+          }
+        },
+        "message": "Tortured phrase found: \"data and interchanges innovation\". Replace it with the standard scientific term.",
+        "range": [
+          1834,
+          1866
+        ],
+        "ruleId": "tortured-phrases",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 36,
+        "index": 1957,
+        "line": 39,
+        "loc": {
+          "end": {
+            "column": 51,
+            "line": 39
+          },
+          "start": {
+            "column": 36,
+            "line": 39
+          }
+        },
+        "message": "Tortured phrase found: \"shut circuit tv\". Replace it with the standard scientific term.",
+        "range": [
+          1957,
+          1972
+        ],
+        "ruleId": "tortured-phrases",
+        "severity": 2,
+        "type": "lint"
+      }
+    ]
+  }
+]

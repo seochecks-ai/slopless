@@ -1,0 +1,23 @@
+{
+  "suite": "textlint-rules-cases-syntactic-patterns",
+  "kind": "approved",
+  "run_id": "2026-05-19T17-37-09.550168Z-df22e59a",
+  "run_commit": "e21d316",
+  "working_tree": "dirty",
+  "recorded_at": "2026-05-19T17:37:09.550168Z",
+  "fixture_hash": "sha256:baa1fd35a45dd52aa777e39eeb22f456698b395302a0a9231c2894cabe759511",
+  "manifest_hash": "sha256:df22e59a1c3af89660207e32169c1efa8b3064d02c7a4dc3f36d00ec8112a0ee",
+  "tool_version": "0.1.8",
+  "output_schema_version": "1",
+  "fixtures": [
+    {
+      "path": "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md",
+      "sha256": "sha256:7b9e1f7b6fef2330e0b259bb00df377991c500a04271ba7d4968d4c043236ab8"
+    },
+    {
+      "path": "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md",
+      "sha256": "sha256:73f63a791bca8e4e6fcdef9773a6f54218da3451ceda9091cddcd98d753ee81f"
+    }
+  ],
+  "comment": "Split textlint rule approvals and restore adversarial no-hits"
+}

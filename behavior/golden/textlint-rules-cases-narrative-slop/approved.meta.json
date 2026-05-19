@@ -1,0 +1,23 @@
+{
+  "suite": "textlint-rules-cases-narrative-slop",
+  "kind": "approved",
+  "run_id": "2026-05-19T17-36-45.614401Z-df22e59a",
+  "run_commit": "e21d316",
+  "working_tree": "dirty",
+  "recorded_at": "2026-05-19T17:36:45.614401Z",
+  "fixture_hash": "sha256:cf6bd7c225d1a3329aab0eb9c5d9908f78e5f7acf4f1a197544d98fd30be675d",
+  "manifest_hash": "sha256:df22e59a1c3af89660207e32169c1efa8b3064d02c7a4dc3f36d00ec8112a0ee",
+  "tool_version": "0.1.8",
+  "output_schema_version": "1",
+  "fixtures": [
+    {
+      "path": "behavior/fixtures/textlint-rules/cases/narrative-slop/hits.md",
+      "sha256": "sha256:7e152f927e6aafc05bc21cbfea4f595bc1933d47c4f2c30f12541a4e51c737c9"
+    },
+    {
+      "path": "behavior/fixtures/textlint-rules/cases/narrative-slop/no-hits.md",
+      "sha256": "sha256:d393e0b793b67d89c3dee1c4c2c3173924017075d392bedb4a139a5cdb378481"
+    }
+  ],
+  "comment": "Split textlint rule approvals and restore adversarial no-hits"
+}

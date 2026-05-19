@@ -1,0 +1,2863 @@
+[
+  {
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md",
+    "messages": [
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 26,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
+        "message": "Semantic thinness (point-is-frame): Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim. Matched template: the {summaryNoun} {linkingVerb} not {abstractNoun}.",
+        "range": [
+          0,
+          25
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 26,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          0,
+          25
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 47,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
+        "message": "Negation reframe found: \"The point is not control. The point is repair.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          0,
+          46
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 47,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
+        "message": "Repeated sentence frame found: \"the point is\". Vary the sentence frame.",
+        "range": [
+          0,
+          46
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 27,
+        "index": 26,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 47,
+            "line": 1
+          },
+          "start": {
+            "column": 27,
+            "line": 1
+          }
+        },
+        "message": "Semantic thinness (generic-lesson-extraction): Catch generic lesson, answer, fix, or point lines whose complement is a thin evaluative word or abstract noun. Matched template: The {summaryNoun} {linkingVerb} {thinComplement}.",
+        "range": [
+          26,
+          46
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 27,
+        "index": 26,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 47,
+            "line": 1
+          },
+          "start": {
+            "column": 27,
+            "line": 1
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          26,
+          46
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 48,
+        "line": 3,
+        "loc": {
+          "end": {
+            "column": 31,
+            "line": 3
+          },
+          "start": {
+            "column": 1,
+            "line": 3
+          }
+        },
+        "message": "Semantic thinness (abstract-metaphor-claim): Catch slogan-like abstract metaphors where an abstract subject performs a physical or spatial action with no concrete referent. Matched template: {abstractSubject} {metaphorVerb} in {abstractObject}.",
+        "range": [
+          48,
+          78
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 80,
+        "line": 5,
+        "loc": {
+          "end": {
+            "column": 37,
+            "line": 5
+          },
+          "start": {
+            "column": 1,
+            "line": 5
+          }
+        },
+        "message": "Semantic thinness (body-emotion-shorthand): Catch stock body-feeling lines that translate emotion into generic chest, breath, heart, or limb sensations without naming the thought, choice, or concrete pressure. Matched template: {bodySubject} {feltVerb} {bodySensation}.",
+        "range": [
+          80,
+          116
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 118,
+        "line": 7,
+        "loc": {
+          "end": {
+            "column": 50,
+            "line": 7
+          },
+          "start": {
+            "column": 1,
+            "line": 7
+          }
+        },
+        "message": "Semantic thinness (body-emotion-shorthand): Catch stock body-feeling lines that translate emotion into generic chest, breath, heart, or limb sensations without naming the thought, choice, or concrete pressure. Matched template: {bodySubject} {feltVerb} like {weightImage}.",
+        "range": [
+          118,
+          167
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 169,
+        "line": 9,
+        "loc": {
+          "end": {
+            "column": 29,
+            "line": 9
+          },
+          "start": {
+            "column": 1,
+            "line": 9
+          }
+        },
+        "message": "Semantic thinness (body-knows): Catch wellness-style body wisdom claims that make the body, mind, breath, or nervous system perform vague knowing or learning. Matched template: {wisdomSubject} {wisdomVerb}.",
+        "range": [
+          169,
+          197
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 199,
+        "line": 11,
+        "loc": {
+          "end": {
+            "column": 62,
+            "line": 11
+          },
+          "start": {
+            "column": 1,
+            "line": 11
+          }
+        },
+        "message": "Semantic thinness (body-knows): Catch wellness-style body wisdom claims that make the body, mind, breath, or nervous system perform vague knowing or learning. Matched template: {wisdomSubject} {wisdomVerb}.",
+        "range": [
+          199,
+          260
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 262,
+        "line": 13,
+        "loc": {
+          "end": {
+            "column": 26,
+            "line": 13
+          },
+          "start": {
+            "column": 1,
+            "line": 13
+          }
+        },
+        "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} {linkingVerb} the {evaluativeAdjective} {summaryNoun}.",
+        "range": [
+          262,
+          287
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 289,
+        "line": 15,
+        "loc": {
+          "end": {
+            "column": 30,
+            "line": 15
+          },
+          "start": {
+            "column": 1,
+            "line": 15
+          }
+        },
+        "message": "Demonstrative emphasis found: \"That is where progress lives.\". Reduce repeated short emphasis lines.",
+        "range": [
+          289,
+          318
+        ],
+        "ruleId": "demonstrative-emphasis",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 289,
+        "line": 15,
+        "loc": {
+          "end": {
+            "column": 30,
+            "line": 15
+          },
+          "start": {
+            "column": 1,
+            "line": 15
+          }
+        },
+        "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} {linkingVerb} where {abstractSubject} {abstractVerb}.",
+        "range": [
+          289,
+          318
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 320,
+        "line": 17,
+        "loc": {
+          "end": {
+            "column": 29,
+            "line": 17
+          },
+          "start": {
+            "column": 1,
+            "line": 17
+          }
+        },
+        "message": "Semantic thinness (empty-scene-state): Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail. Matched template: {placeSubject} {linkingVerb} {weakBeforeState} {thinState}.",
+        "range": [
+          320,
+          348
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 350,
+        "line": 19,
+        "loc": {
+          "end": {
+            "column": 28,
+            "line": 19
+          },
+          "start": {
+            "column": 1,
+            "line": 19
+          }
+        },
+        "message": "Semantic thinness (empty-scene-state): Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail. Matched template: {sceneElement} {linkingVerb} {thinState}.",
+        "range": [
+          350,
+          377
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 379,
+        "line": 21,
+        "loc": {
+          "end": {
+            "column": 45,
+            "line": 21
+          },
+          "start": {
+            "column": 1,
+            "line": 21
+          }
+        },
+        "message": "Semantic thinness (empty-scene-state): Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail. Matched template: {placeSubject} {linkingVerb} {thinState}.",
+        "range": [
+          379,
+          423
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 425,
+        "line": 23,
+        "loc": {
+          "end": {
+            "column": 26,
+            "line": 23
+          },
+          "start": {
+            "column": 1,
+            "line": 23
+          }
+        },
+        "message": "Semantic thinness (empty-emotional-weather): Catch atmospheric abstract nouns that move through a scene without concrete source, action, or consequence. Matched template: {atmosphereSubject} {weatherVerb} {placePhrase}.",
+        "range": [
+          425,
+          450
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 452,
+        "line": 25,
+        "loc": {
+          "end": {
+            "column": 26,
+            "line": 25
+          },
+          "start": {
+            "column": 1,
+            "line": 25
+          }
+        },
+        "message": "Semantic thinness (empty-emotional-weather): Catch atmospheric abstract nouns that move through a scene without concrete source, action, or consequence. Matched template: {atmosphereSubject} {weatherVerb} {placePhrase}.",
+        "range": [
+          452,
+          477
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 479,
+        "line": 27,
+        "loc": {
+          "end": {
+            "column": 20,
+            "line": 27
+          },
+          "start": {
+            "column": 1,
+            "line": 27
+          }
+        },
+        "message": "Semantic thinness (empty-scene-state): Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail. Matched template: {placeSubject} {linkingVerb} {thinState}.",
+        "range": [
+          479,
+          498
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 500,
+        "line": 29,
+        "loc": {
+          "end": {
+            "column": 20,
+            "line": 29
+          },
+          "start": {
+            "column": 1,
+            "line": 29
+          }
+        },
+        "message": "Semantic thinness (empty-scene-state): Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail. Matched template: {sceneElement} {linkingVerb} {thinState}.",
+        "range": [
+          500,
+          519
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 521,
+        "line": 31,
+        "loc": {
+          "end": {
+            "column": 20,
+            "line": 31
+          },
+          "start": {
+            "column": 1,
+            "line": 31
+          }
+        },
+        "message": "Semantic thinness (empty-scene-transition): Catch generic transition lines that declare change, passage, or motion without naming what changed or why. Matched template: {genericSubject} {changeVerb}.",
+        "range": [
+          521,
+          540
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 542,
+        "line": 33,
+        "loc": {
+          "end": {
+            "column": 29,
+            "line": 33
+          },
+          "start": {
+            "column": 1,
+            "line": 33
+          }
+        },
+        "message": "Semantic thinness (empty-scene-transition): Catch generic transition lines that declare change, passage, or motion without naming what changed or why. Matched template: {genericSubject} {changeVerb}.",
+        "range": [
+          542,
+          570
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 572,
+        "line": 35,
+        "loc": {
+          "end": {
+            "column": 29,
+            "line": 35
+          },
+          "start": {
+            "column": 1,
+            "line": 35
+          }
+        },
+        "message": "Semantic thinness (gaze-choreography): Catch eye and gaze choreography where body-part camera movement stands in for a concrete observation, decision, or reaction. Matched template: {gazeSubject} {gazeVerb} {gazeTarget}.",
+        "range": [
+          572,
+          600
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 602,
+        "line": 37,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 37
+          },
+          "start": {
+            "column": 1,
+            "line": 37
+          }
+        },
+        "message": "Semantic thinness (gaze-choreography): Catch eye and gaze choreography where body-part camera movement stands in for a concrete observation, decision, or reaction. Matched template: {gazeSubject} {movementVerb} from {gazeTarget} to {gazeTarget}.",
+        "range": [
+          602,
+          650
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 652,
+        "line": 39,
+        "loc": {
+          "end": {
+            "column": 23,
+            "line": 39
+          },
+          "start": {
+            "column": 1,
+            "line": 39
+          }
+        },
+        "message": "Generic signposting found: the-was-simple. Replace the frame with the concrete claim.",
+        "range": [
+          652,
+          674
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 652,
+        "line": 39,
+        "loc": {
+          "end": {
+            "column": 23,
+            "line": 39
+          },
+          "start": {
+            "column": 1,
+            "line": 39
+          }
+        },
+        "message": "Semantic thinness (generic-lesson-extraction): Catch generic lesson, answer, fix, or point lines whose complement is a thin evaluative word or abstract noun. Matched template: The {summaryNoun} {linkingVerb} {thinComplement}.",
+        "range": [
+          652,
+          674
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 676,
+        "line": 41,
+        "loc": {
+          "end": {
+            "column": 27,
+            "line": 41
+          },
+          "start": {
+            "column": 1,
+            "line": 41
+          }
+        },
+        "message": "Semantic thinness (generic-lesson-extraction): Catch generic lesson, answer, fix, or point lines whose complement is a thin evaluative word or abstract noun. Matched template: The {summaryNoun} {linkingVerb} not {heroicComplement}.",
+        "range": [
+          676,
+          702
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 704,
+        "line": 43,
+        "loc": {
+          "end": {
+            "column": 22,
+            "line": 43
+          },
+          "start": {
+            "column": 1,
+            "line": 43
+          }
+        },
+        "message": "Semantic thinness (generic-pressure-or-stakes): Catch generic pressure, stakes, or weight lines that imply importance without concrete risk or consequence. Matched template: {stakesSubject} {linkingVerb} {thinStakesComplement}.",
+        "range": [
+          704,
+          725
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 727,
+        "line": 45,
+        "loc": {
+          "end": {
+            "column": 30,
+            "line": 45
+          },
+          "start": {
+            "column": 1,
+            "line": 45
+          }
+        },
+        "message": "Semantic thinness (generic-pressure-or-stakes): Catch generic pressure, stakes, or weight lines that imply importance without concrete risk or consequence. Matched template: {stakesSubject} {pressureVerb} {weakPlace}.",
+        "range": [
+          727,
+          756
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 758,
+        "line": 47,
+        "loc": {
+          "end": {
+            "column": 24,
+            "line": 47
+          },
+          "start": {
+            "column": 1,
+            "line": 47
+          }
+        },
+        "message": "Semantic thinness (generic-realization): Catch realization lines that announce understanding without naming what was learned. Matched template: {humanSubject} {realizationVerb} {genericObject}.",
+        "range": [
+          758,
+          781
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 783,
+        "line": 49,
+        "loc": {
+          "end": {
+            "column": 42,
+            "line": 49
+          },
+          "start": {
+            "column": 1,
+            "line": 49
+          }
+        },
+        "message": "Semantic thinness (generic-realization): Catch realization lines that announce understanding without naming what was learned. Matched template: {humanSubject} {realizationVerb} that {genericSubject} {thinPredicate}.",
+        "range": [
+          783,
+          824
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 826,
+        "line": 51,
+        "loc": {
+          "end": {
+            "column": 35,
+            "line": 51
+          },
+          "start": {
+            "column": 1,
+            "line": 51
+          }
+        },
+        "message": "Semantic thinness (generic-pressure-or-stakes): Catch generic pressure, stakes, or weight lines that imply importance without concrete risk or consequence. Matched template: {genericSubject} {stakesVerb} {weakDegree}.",
+        "range": [
+          826,
+          860
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 862,
+        "line": 53,
+        "loc": {
+          "end": {
+            "column": 36,
+            "line": 53
+          },
+          "start": {
+            "column": 1,
+            "line": 53
+          }
+        },
+        "message": "Contrastive aphorism found: part-that-sticks. Replace the slogan with a concrete claim.",
+        "range": [
+          862,
+          897
+        ],
+        "ruleId": "contrastive-aphorism",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 862,
+        "line": 53,
+        "loc": {
+          "end": {
+            "column": 36,
+            "line": 53
+          },
+          "start": {
+            "column": 1,
+            "line": 53
+          }
+        },
+        "message": "Demonstrative emphasis found: \"The lesson is the part that sticks.\". Reduce repeated short emphasis lines.",
+        "range": [
+          862,
+          897
+        ],
+        "ruleId": "demonstrative-emphasis",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 862,
+        "line": 53,
+        "loc": {
+          "end": {
+            "column": 36,
+            "line": 53
+          },
+          "start": {
+            "column": 1,
+            "line": 53
+          }
+        },
+        "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {summarySubject} {linkingVerb} {importanceComplement}.",
+        "range": [
+          862,
+          897
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 862,
+        "line": 53,
+        "loc": {
+          "end": {
+            "column": 36,
+            "line": 53
+          },
+          "start": {
+            "column": 1,
+            "line": 53
+          }
+        },
+        "message": "Summative frame found: \"the lesson is\". State the concrete point instead.",
+        "range": [
+          862,
+          897
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 899,
+        "line": 55,
+        "loc": {
+          "end": {
+            "column": 23,
+            "line": 55
+          },
+          "start": {
+            "column": 1,
+            "line": 55
+          }
+        },
+        "message": "Semantic thinness (low-information-physical-blocking): Catch bland physical action beats that move bodies around without adding object, goal, cause, or consequence. Matched template: {humanSubject} {weakAdverb} {bodyVerb} {weakLocative}.",
+        "range": [
+          899,
+          921
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 923,
+        "line": 57,
+        "loc": {
+          "end": {
+            "column": 43,
+            "line": 57
+          },
+          "start": {
+            "column": 1,
+            "line": 57
+          }
+        },
+        "message": "Semantic thinness (low-information-physical-blocking): Catch bland physical action beats that move bodies around without adding object, goal, cause, or consequence. Matched template: {humanSubject} {bodyVerb} from {genericFace} to {genericFace}.",
+        "range": [
+          923,
+          965
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 967,
+        "line": 59,
+        "loc": {
+          "end": {
+            "column": 30,
+            "line": 59
+          },
+          "start": {
+            "column": 1,
+            "line": 59
+          }
+        },
+        "message": "Semantic thinness (point-is-frame): Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim. Matched template: the {summaryNoun} {linkingVerb} not {abstractNoun}.",
+        "range": [
+          967,
+          996
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 967,
+        "line": 59,
+        "loc": {
+          "end": {
+            "column": 30,
+            "line": 59
+          },
+          "start": {
+            "column": 1,
+            "line": 59
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          967,
+          996
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 998,
+        "line": 61,
+        "loc": {
+          "end": {
+            "column": 36,
+            "line": 61
+          },
+          "start": {
+            "column": 1,
+            "line": 61
+          }
+        },
+        "message": "Semantic thinness (point-is-frame): Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim. Matched template: the {summaryNoun} {linkingVerb} to {abstractAction}.",
+        "range": [
+          998,
+          1033
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1035,
+        "line": 63,
+        "loc": {
+          "end": {
+            "column": 22,
+            "line": 63
+          },
+          "start": {
+            "column": 1,
+            "line": 63
+          }
+        },
+        "message": "Semantic thinness (real-work-begins): Catch payoff lines that announce the real, deeper, actual, or hard work beginning without naming the concrete work. Matched template: {workSubject} {startVerb}.",
+        "range": [
+          1035,
+          1056
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1058,
+        "line": 65,
+        "loc": {
+          "end": {
+            "column": 46,
+            "line": 65
+          },
+          "start": {
+            "column": 1,
+            "line": 65
+          }
+        },
+        "message": "Semantic thinness (real-work-begins): Catch payoff lines that announce the real, deeper, actual, or hard work beginning without naming the concrete work. Matched template: {workSubject} {startVerb}.",
+        "range": [
+          1058,
+          1103
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1105,
+        "line": 67,
+        "loc": {
+          "end": {
+            "column": 27,
+            "line": 67
+          },
+          "start": {
+            "column": 1,
+            "line": 67
+          }
+        },
+        "message": "Semantic thinness (silence-as-actor): Catch silence and quiet treated as abstract actors or emotional objects instead of concrete sound, source, or action. Matched template: {silenceSubject} {linkingVerb} not {thinState}.",
+        "range": [
+          1105,
+          1131
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1133,
+        "line": 69,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 69
+          },
+          "start": {
+            "column": 1,
+            "line": 69
+          }
+        },
+        "message": "Semantic thinness (silence-as-actor): Catch silence and quiet treated as abstract actors or emotional objects instead of concrete sound, source, or action. Matched template: {placeSubject} had gone quiet in {mannerFrame}.",
+        "range": [
+          1133,
+          1181
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1183,
+        "line": 71,
+        "loc": {
+          "end": {
+            "column": 23,
+            "line": 71
+          },
+          "start": {
+            "column": 1,
+            "line": 71
+          }
+        },
+        "message": "Semantic thinness (something-shifted): Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change. Matched template: {genericSubject} had {changeVerb}.",
+        "range": [
+          1183,
+          1205
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1249,
+        "line": 75,
+        "loc": {
+          "end": {
+            "column": 31,
+            "line": 75
+          },
+          "start": {
+            "column": 1,
+            "line": 75
+          }
+        },
+        "message": "Semantic thinness (truth-answer-moves): Catch truth, answer, pattern, or meaning moving or arriving as an abstract object without naming the fact. Matched template: {truthSubject} {emergenceVerb}.",
+        "range": [
+          1249,
+          1279
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1281,
+        "line": 77,
+        "loc": {
+          "end": {
+            "column": 40,
+            "line": 77
+          },
+          "start": {
+            "column": 1,
+            "line": 77
+          }
+        },
+        "message": "Semantic thinness (truth-answer-moves): Catch truth, answer, pattern, or meaning moving or arriving as an abstract object without naming the fact. Matched template: {truthSubject} {emergenceVerb}.",
+        "range": [
+          1281,
+          1320
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1322,
+        "line": 79,
+        "loc": {
+          "end": {
+            "column": 35,
+            "line": 79
+          },
+          "start": {
+            "column": 1,
+            "line": 79
+          }
+        },
+        "message": "Demonstrative emphasis found: \"And that is where the work begins.\". Reduce repeated short emphasis lines.",
+        "range": [
+          1322,
+          1356
+        ],
+        "ruleId": "demonstrative-emphasis",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1322,
+        "line": 79,
+        "loc": {
+          "end": {
+            "column": 35,
+            "line": 79
+          },
+          "start": {
+            "column": 1,
+            "line": 79
+          }
+        },
+        "message": "Semantic thinness (vague-connective-payoff): Catch connective payoff sentences that signal a conclusion without adding the conclusion. Matched template: {payoffOpener} {payoffComplement}.",
+        "range": [
+          1322,
+          1356
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1358,
+        "line": 81,
+        "loc": {
+          "end": {
+            "column": 27,
+            "line": 81
+          },
+          "start": {
+            "column": 1,
+            "line": 81
+          }
+        },
+        "message": "Demonstrative emphasis found: \"This is how change starts.\". Reduce repeated short emphasis lines.",
+        "range": [
+          1358,
+          1384
+        ],
+        "ruleId": "demonstrative-emphasis",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1358,
+        "line": 81,
+        "loc": {
+          "end": {
+            "column": 27,
+            "line": 81
+          },
+          "start": {
+            "column": 1,
+            "line": 81
+          }
+        },
+        "message": "Semantic thinness (vague-connective-payoff): Catch connective payoff sentences that signal a conclusion without adding the conclusion. Matched template: {payoffOpener} {payoffComplement}.",
+        "range": [
+          1358,
+          1384
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1386,
+        "line": 83,
+        "loc": {
+          "end": {
+            "column": 19,
+            "line": 83
+          },
+          "start": {
+            "column": 1,
+            "line": 83
+          }
+        },
+        "message": "Semantic thinness (vague-threshold-change): Catch vague threshold or evaluation changes without named scale, cause, or concrete state. Matched template: {genericSubject} {thresholdVerb} {evaluativeComplement}.",
+        "range": [
+          1386,
+          1404
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1406,
+        "line": 85,
+        "loc": {
+          "end": {
+            "column": 21,
+            "line": 85
+          },
+          "start": {
+            "column": 1,
+            "line": 85
+          }
+        },
+        "message": "Semantic thinness (vague-threshold-change): Catch vague threshold or evaluation changes without named scale, cause, or concrete state. Matched template: {genericSubject} {thresholdVerb} {comparativeComplement}.",
+        "range": [
+          1406,
+          1426
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1497,
+        "line": 89,
+        "loc": {
+          "end": {
+            "column": 21,
+            "line": 89
+          },
+          "start": {
+            "column": 1,
+            "line": 89
+          }
+        },
+        "message": "Semantic thinness (empty-scene-state): Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail. Matched template: {placeSubject} {linkingVerb} {thinState}.",
+        "range": [
+          1497,
+          1517
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1519,
+        "line": 91,
+        "loc": {
+          "end": {
+            "column": 19,
+            "line": 91
+          },
+          "start": {
+            "column": 1,
+            "line": 91
+          }
+        },
+        "message": "Semantic thinness (empty-scene-transition): Catch generic transition lines that declare change, passage, or motion without naming what changed or why. Matched template: {genericSubject} {passageVerb}.",
+        "range": [
+          1519,
+          1537
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1539,
+        "line": 93,
+        "loc": {
+          "end": {
+            "column": 35,
+            "line": 93
+          },
+          "start": {
+            "column": 1,
+            "line": 93
+          }
+        },
+        "message": "Semantic thinness (abstract-personification-line): Catch abstract nouns treated as social actors in short payoff lines without concrete action or cause. Matched template: {abstractSubject} had no place in {thinContainer}.",
+        "range": [
+          1539,
+          1573
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1575,
+        "line": 95,
+        "loc": {
+          "end": {
+            "column": 58,
+            "line": 95
+          },
+          "start": {
+            "column": 1,
+            "line": 95
+          }
+        },
+        "message": "Semantic thinness (fixed-metaphor-frame): Catch fixed scene metaphors that present a place as a stock metaphor of stacked image nouns. Matched template: {placeSubject} was a {metaphorNoun} of {imageNoun} and {imageNoun}.",
+        "range": [
+          1575,
+          1632
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1634,
+        "line": 97,
+        "loc": {
+          "end": {
+            "column": 74,
+            "line": 97
+          },
+          "start": {
+            "column": 1,
+            "line": 97
+          }
+        },
+        "message": "Semantic thinness (sensory-instead-of-frame): Catch sensory atmosphere substitution frames that replace concrete scene information with stacked scent nouns. Matched template: {placeSubject} smelled of {sensoryNoun} and {sensoryNoun} instead of {expectedScent}.",
+        "range": [
+          1634,
+          1707
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1709,
+        "line": 99,
+        "loc": {
+          "end": {
+            "column": 45,
+            "line": 99
+          },
+          "start": {
+            "column": 1,
+            "line": 99
+          }
+        },
+        "message": "Semantic thinness (emotion-as-substance): Catch abstract emotion or state treated as a physical substance moving through bodies, voices, rooms, or groups. Matched template: the {abstractEmotion} finally {substanceMotion} out of {bodyContainer}.",
+        "range": [
+          1709,
+          1753
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1755,
+        "line": 101,
+        "loc": {
+          "end": {
+            "column": 27,
+            "line": 101
+          },
+          "start": {
+            "column": 1,
+            "line": 101
+          }
+        },
+        "message": "Semantic thinness (emotion-as-substance): Catch abstract emotion or state treated as a physical substance moving through bodies, voices, rooms, or groups. Matched template: {abstractEmotion} {substanceMotion} over {personTarget}.",
+        "range": [
+          1755,
+          1781
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1783,
+        "line": 103,
+        "loc": {
+          "end": {
+            "column": 31,
+            "line": 103
+          },
+          "start": {
+            "column": 1,
+            "line": 103
+          }
+        },
+        "message": "Semantic thinness (emotion-as-substance): Catch abstract emotion or state treated as a physical substance moving through bodies, voices, rooms, or groups. Matched template: {abstractEmotion} {substanceMotion} over {placeTarget}.",
+        "range": [
+          1783,
+          1813
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1815,
+        "line": 105,
+        "loc": {
+          "end": {
+            "column": 25,
+            "line": 105
+          },
+          "start": {
+            "column": 1,
+            "line": 105
+          }
+        },
+        "message": "Semantic thinness (emotion-as-substance): Catch abstract emotion or state treated as a physical substance moving through bodies, voices, rooms, or groups. Matched template: {abstractEmotion} {substanceMotion} in {bodyContainer}.",
+        "range": [
+          1815,
+          1839
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1841,
+        "line": 107,
+        "loc": {
+          "end": {
+            "column": 28,
+            "line": 107
+          },
+          "start": {
+            "column": 1,
+            "line": 107
+          }
+        },
+        "message": "Semantic thinness (emotion-as-substance): Catch abstract emotion or state treated as a physical substance moving through bodies, voices, rooms, or groups. Matched template: {abstractEmotion} {substanceMotion} in {bodyContainer}.",
+        "range": [
+          1841,
+          1868
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1870,
+        "line": 109,
+        "loc": {
+          "end": {
+            "column": 34,
+            "line": 109
+          },
+          "start": {
+            "column": 1,
+            "line": 109
+          }
+        },
+        "message": "Semantic thinness (summary-fog-transition): Catch vague transition lines that replace an event sequence with blur, haze, or fog. Matched template: {summarySpan} was a {fogNoun}.",
+        "range": [
+          1870,
+          1903
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1905,
+        "line": 111,
+        "loc": {
+          "end": {
+            "column": 34,
+            "line": 111
+          },
+          "start": {
+            "column": 1,
+            "line": 111
+          }
+        },
+        "message": "Semantic thinness (summary-fog-transition): Catch vague transition lines that replace an event sequence with blur, haze, or fog. Matched template: {summarySpan} was a {fogNoun}.",
+        "range": [
+          1905,
+          1938
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1940,
+        "line": 113,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 113
+          },
+          "start": {
+            "column": 1,
+            "line": 113
+          }
+        },
+        "message": "Semantic thinness (puffery-evaluative-claim): Catch evaluative praise frames that assert prestige, breakthrough value, or greatness without naming concrete evidence. Matched template: the {prestigeRole} {impactVerb} the {genericObject} forever.",
+        "range": [
+          1940,
+          1988
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1990,
+        "line": 115,
+        "loc": {
+          "end": {
+            "column": 54,
+            "line": 115
+          },
+          "start": {
+            "column": 1,
+            "line": 115
+          }
+        },
+        "message": "Semantic thinness (puffery-evaluative-claim): Catch evaluative praise frames that assert prestige, breakthrough value, or greatness without naming concrete evidence. Matched template: the {productSubject} represents an unprecedented {breakthroughNoun}.",
+        "range": [
+          1990,
+          2043
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2045,
+        "line": 117,
+        "loc": {
+          "end": {
+            "column": 44,
+            "line": 117
+          },
+          "start": {
+            "column": 1,
+            "line": 117
+          }
+        },
+        "message": "Semantic thinness (puffery-evaluative-claim): Catch evaluative praise frames that assert prestige, breakthrough value, or greatness without naming concrete evidence. Matched template: the {productSubject} is a masterpiece of {domainNoun}.",
+        "range": [
+          2045,
+          2088
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2090,
+        "line": 119,
+        "loc": {
+          "end": {
+            "column": 53,
+            "line": 119
+          },
+          "start": {
+            "column": 1,
+            "line": 119
+          }
+        },
+        "message": "Semantic thinness (puffery-evaluative-claim): Catch evaluative praise frames that assert prestige, breakthrough value, or greatness without naming concrete evidence. Matched template: the {eventSubject} created the best version of the {workflowNoun}.",
+        "range": [
+          2090,
+          2142
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2144,
+        "line": 121,
+        "loc": {
+          "end": {
+            "column": 48,
+            "line": 121
+          },
+          "start": {
+            "column": 1,
+            "line": 121
+          }
+        },
+        "message": "Semantic thinness (puffery-evaluative-claim): Catch evaluative praise frames that assert prestige, breakthrough value, or greatness without naming concrete evidence. Matched template: the golden standard for {domainNoun} has arrived.",
+        "range": [
+          2144,
+          2191
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2193,
+        "line": 123,
+        "loc": {
+          "end": {
+            "column": 72,
+            "line": 123
+          },
+          "start": {
+            "column": 1,
+            "line": 123
+          }
+        },
+        "message": "Semantic thinness (puffery-evaluative-claim): Catch evaluative praise frames that assert prestige, breakthrough value, or greatness without naming concrete evidence. Matched template: the {documentSubject} clearly demonstrates the {importanceNoun} of the {strategyNoun}.",
+        "range": [
+          2193,
+          2264
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2266,
+        "line": 125,
+        "loc": {
+          "end": {
+            "column": 38,
+            "line": 125
+          },
+          "start": {
+            "column": 1,
+            "line": 125
+          }
+        },
+        "message": "Semantic thinness (puffery-evaluative-claim): Catch evaluative praise frames that assert prestige, breakthrough value, or greatness without naming concrete evidence. Matched template: the {eventSubject} was a remarkable success.",
+        "range": [
+          2266,
+          2303
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2305,
+        "line": 127,
+        "loc": {
+          "end": {
+            "column": 51,
+            "line": 127
+          },
+          "start": {
+            "column": 1,
+            "line": 127
+          }
+        },
+        "message": "Semantic thinness (puffery-evaluative-claim): Catch evaluative praise frames that assert prestige, breakthrough value, or greatness without naming concrete evidence. Matched template: the {productSubject} is a visionary approach to {domainNoun}.",
+        "range": [
+          2305,
+          2355
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2357,
+        "line": 129,
+        "loc": {
+          "end": {
+            "column": 53,
+            "line": 129
+          },
+          "start": {
+            "column": 1,
+            "line": 129
+          }
+        },
+        "message": "Semantic thinness (puffery-evaluative-claim): Catch evaluative praise frames that assert prestige, breakthrough value, or greatness without naming concrete evidence. Matched template: the {eventSubject} had a devastating impact on the {genericObject}.",
+        "range": [
+          2357,
+          2409
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2411,
+        "line": 131,
+        "loc": {
+          "end": {
+            "column": 46,
+            "line": 131
+          },
+          "start": {
+            "column": 1,
+            "line": 131
+          }
+        },
+        "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {summarySubject} {linkingVerb} {weakJudgment}.",
+        "range": [
+          2411,
+          2456
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 24,
+        "index": 2434,
+        "line": 131,
+        "loc": {
+          "end": {
+            "column": 46,
+            "line": 131
+          },
+          "start": {
+            "column": 24,
+            "line": 131
+          }
+        },
+        "message": "Dramatic colon found: \"tools collect signals.\". Rewrite without the short reveal after the colon.",
+        "range": [
+          2434,
+          2456
+        ],
+        "ruleId": "colon-dramatic",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2458,
+        "line": 133,
+        "loc": {
+          "end": {
+            "column": 31,
+            "line": 133
+          },
+          "start": {
+            "column": 1,
+            "line": 133
+          }
+        },
+        "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {summarySubject} {feelingVerb} {weakJudgment}.",
+        "range": [
+          2458,
+          2488
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2490,
+        "line": 135,
+        "loc": {
+          "end": {
+            "column": 25,
+            "line": 135
+          },
+          "start": {
+            "column": 1,
+            "line": 135
+          }
+        },
+        "message": "Semantic thinness (vague-threshold-change): Catch vague threshold or evaluation changes without named scale, cause, or concrete state. Matched template: {genericSubject} {thresholdVerb} {evaluativeComplement}.",
+        "range": [
+          2490,
+          2514
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2516,
+        "line": 137,
+        "loc": {
+          "end": {
+            "column": 36,
+            "line": 137
+          },
+          "start": {
+            "column": 1,
+            "line": 137
+          }
+        },
+        "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {summarySubject} {linkingVerb} {importanceComplement}.",
+        "range": [
+          2516,
+          2551
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2553,
+        "line": 139,
+        "loc": {
+          "end": {
+            "column": 31,
+            "line": 139
+          },
+          "start": {
+            "column": 1,
+            "line": 139
+          }
+        },
+        "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} {summaryVerb} the {evaluativeAdjective} {summaryNoun}.",
+        "range": [
+          2553,
+          2583
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2585,
+        "line": 141,
+        "loc": {
+          "end": {
+            "column": 39,
+            "line": 141
+          },
+          "start": {
+            "column": 1,
+            "line": 141
+          }
+        },
+        "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: the {thinModifier} {summaryNoun} {linkingVerb} {weakJudgment}.",
+        "range": [
+          2585,
+          2623
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2625,
+        "line": 143,
+        "loc": {
+          "end": {
+            "column": 34,
+            "line": 143
+          },
+          "start": {
+            "column": 1,
+            "line": 143
+          }
+        },
+        "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {summarySubject} {linkingVerb} {weakJudgment}.",
+        "range": [
+          2625,
+          2658
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2660,
+        "line": 145,
+        "loc": {
+          "end": {
+            "column": 56,
+            "line": 145
+          },
+          "start": {
+            "column": 1,
+            "line": 145
+          }
+        },
+        "message": "Semantic thinness (puffery-evaluative-claim): Catch evaluative praise frames that assert prestige, breakthrough value, or greatness without naming concrete evidence. Matched template: {abstractPersonifiedSubject} has a poor {businessMetric} in {businessDomain}.",
+        "range": [
+          2660,
+          2715
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2717,
+        "line": 147,
+        "loc": {
+          "end": {
+            "column": 40,
+            "line": 147
+          },
+          "start": {
+            "column": 1,
+            "line": 147
+          }
+        },
+        "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: the {thinModifier} {summaryNoun} {linkingVerb} {weakJudgment}.",
+        "range": [
+          2717,
+          2756
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2758,
+        "line": 149,
+        "loc": {
+          "end": {
+            "column": 98,
+            "line": 149
+          },
+          "start": {
+            "column": 1,
+            "line": 149
+          }
+        },
+        "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} {linkingVerb} the kind of {summaryNoun}.",
+        "range": [
+          2758,
+          2855
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2857,
+        "line": 151,
+        "loc": {
+          "end": {
+            "column": 42,
+            "line": 151
+          },
+          "start": {
+            "column": 1,
+            "line": 151
+          }
+        },
+        "message": "Generic signposting found: that-is-useless. Replace the frame with the concrete claim.",
+        "range": [
+          2857,
+          2898
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2857,
+        "line": 151,
+        "loc": {
+          "end": {
+            "column": 42,
+            "line": 151
+          },
+          "start": {
+            "column": 1,
+            "line": 151
+          }
+        },
+        "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} {meaningVerb} {abstractSubject} {linkingVerb} {weakJudgment}.",
+        "range": [
+          2857,
+          2898
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2900,
+        "line": 153,
+        "loc": {
+          "end": {
+            "column": 67,
+            "line": 153
+          },
+          "start": {
+            "column": 1,
+            "line": 153
+          }
+        },
+        "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} means the {artifactNoun} has to contain {abstractObject} worth {abstractGerund}.",
+        "range": [
+          2900,
+          2966
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2968,
+        "line": 155,
+        "loc": {
+          "end": {
+            "column": 24,
+            "line": 155
+          },
+          "start": {
+            "column": 1,
+            "line": 155
+          }
+        },
+        "message": "Generic signposting found: the-is-boring. Replace the frame with the concrete claim.",
+        "range": [
+          2968,
+          2991
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2968,
+        "line": 155,
+        "loc": {
+          "end": {
+            "column": 24,
+            "line": 155
+          },
+          "start": {
+            "column": 1,
+            "line": 155
+          }
+        },
+        "message": "Semantic thinness (generic-lesson-extraction): Catch generic lesson, answer, fix, or point lines whose complement is a thin evaluative word or abstract noun. Matched template: The {summaryNoun} {linkingVerb} {thinComplement}.",
+        "range": [
+          2968,
+          2991
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2993,
+        "line": 157,
+        "loc": {
+          "end": {
+            "column": 58,
+            "line": 157
+          },
+          "start": {
+            "column": 1,
+            "line": 157
+          }
+        },
+        "message": "Lesson framing found: the-strategy-is-boring. Replace the wrapper with the lesson.",
+        "range": [
+          2993,
+          3050
+        ],
+        "ruleId": "lesson-framing",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2993,
+        "line": 157,
+        "loc": {
+          "end": {
+            "column": 58,
+            "line": 157
+          },
+          "start": {
+            "column": 1,
+            "line": 157
+          }
+        },
+        "message": "Semantic thinness (solution-boring-frame): Catch solution-like nouns framed as boring, a consultant or LLM wrapper that praises unglamorous obviousness without adding substance. Matched template: the {solutionNoun} {linkingVerb} boring.",
+        "range": [
+          2993,
+          3050
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3052,
+        "line": 159,
+        "loc": {
+          "end": {
+            "column": 30,
+            "line": 159
+          },
+          "start": {
+            "column": 1,
+            "line": 159
+          }
+        },
+        "message": "Generic signposting found: the-is-boring. Replace the frame with the concrete claim.",
+        "range": [
+          3052,
+          3081
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3052,
+        "line": 159,
+        "loc": {
+          "end": {
+            "column": 30,
+            "line": 159
+          },
+          "start": {
+            "column": 1,
+            "line": 159
+          }
+        },
+        "message": "Semantic thinness (solution-boring-frame): Catch solution-like nouns framed as boring, a consultant or LLM wrapper that praises unglamorous obviousness without adding substance. Matched template: the {solutionQualifier} {solutionNoun} {linkingVerb} boring.",
+        "range": [
+          3052,
+          3081
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3083,
+        "line": 161,
+        "loc": {
+          "end": {
+            "column": 57,
+            "line": 161
+          },
+          "start": {
+            "column": 1,
+            "line": 161
+          }
+        },
+        "message": "Semantic thinness (solution-boring-frame): Catch solution-like nouns framed as boring, a consultant or LLM wrapper that praises unglamorous obviousness without adding substance. Matched template: the {solutionQualifier} {solutionNoun} {linkingVerb} boring.",
+        "range": [
+          3083,
+          3139
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3141,
+        "line": 163,
+        "loc": {
+          "end": {
+            "column": 73,
+            "line": 163
+          },
+          "start": {
+            "column": 1,
+            "line": 163
+          }
+        },
+        "message": "Semantic thinness (solution-boring-frame): Catch solution-like nouns framed as boring, a consultant or LLM wrapper that praises unglamorous obviousness without adding substance. Matched template: this {solutionNoun} {linkingVerb} boring.",
+        "range": [
+          3141,
+          3213
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3215,
+        "line": 165,
+        "loc": {
+          "end": {
+            "column": 77,
+            "line": 165
+          },
+          "start": {
+            "column": 1,
+            "line": 165
+          }
+        },
+        "message": "Semantic thinness (vague-summary-cost): Catch vague all-of-that cost claims that summarize several actions as expensive or wasteful without naming the concrete waste. Matched template: {summarySubject} gets {costAdjective} when {ignoranceSubject} {knowledgeVerb} which {problemNoun} they are {workVerb}.",
+        "range": [
+          3215,
+          3291
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3293,
+        "line": 167,
+        "loc": {
+          "end": {
+            "column": 29,
+            "line": 167
+          },
+          "start": {
+            "column": 1,
+            "line": 167
+          }
+        },
+        "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} {changeVerb} the {changeObject}.",
+        "range": [
+          3293,
+          3321
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3323,
+        "line": 169,
+        "loc": {
+          "end": {
+            "column": 62,
+            "line": 169
+          },
+          "start": {
+            "column": 1,
+            "line": 169
+          }
+        },
+        "message": "Semantic thinness (missing-conversation-plan): Catch content and strategy plans described through missing-conversation metaphors instead of a concrete missing page, query, or decision. Matched template: the {planNoun} is missing the {abstractObject} after the {triggerNoun}.",
+        "range": [
+          3323,
+          3384
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3386,
+        "line": 171,
+        "loc": {
+          "end": {
+            "column": 31,
+            "line": 171
+          },
+          "start": {
+            "column": 1,
+            "line": 171
+          }
+        },
+        "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} fits the {abstractSituation}.",
+        "range": [
+          3386,
+          3416
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3418,
+        "line": 173,
+        "loc": {
+          "end": {
+            "column": 25,
+            "line": 173
+          },
+          "start": {
+            "column": 1,
+            "line": 173
+          }
+        },
+        "message": "Semantic thinness (different-job-summary): Catch short deictic lines that label a distinction as a different job, problem, question, or conversation without naming the concrete operational difference. Matched template: {deicticSubject} {linkingVerb} a different {genericWorkNoun}.",
+        "range": [
+          3418,
+          3442
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3444,
+        "line": 175,
+        "loc": {
+          "end": {
+            "column": 38,
+            "line": 175
+          },
+          "start": {
+            "column": 1,
+            "line": 175
+          }
+        },
+        "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {abstractSubject} still has work to do.",
+        "range": [
+          3444,
+          3481
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3483,
+        "line": 177,
+        "loc": {
+          "end": {
+            "column": 56,
+            "line": 177
+          },
+          "start": {
+            "column": 1,
+            "line": 177
+          }
+        },
+        "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {abstractSubject} now has {abstractPlural}, and the {abstractPlural} can {weakVerb}.",
+        "range": [
+          3483,
+          3538
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3540,
+        "line": 179,
+        "loc": {
+          "end": {
+            "column": 50,
+            "line": 179
+          },
+          "start": {
+            "column": 1,
+            "line": 179
+          }
+        },
+        "message": "Semantic thinness (abstract-metaphor-claim): Catch slogan-like abstract metaphors where an abstract subject performs a physical or spatial action with no concrete referent. Matched template: {artifactSubject} {metaphorVerb} its {answerNoun} to {abstractDestination}.",
+        "range": [
+          3540,
+          3589
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3591,
+        "line": 181,
+        "loc": {
+          "end": {
+            "column": 55,
+            "line": 181
+          },
+          "start": {
+            "column": 1,
+            "line": 181
+          }
+        },
+        "message": "Semantic thinness (abstract-metaphor-claim): Catch slogan-like abstract metaphors where an abstract subject performs a physical or spatial action with no concrete referent. Matched template: {artifactSubject} {linkingVerb} wearing a {surfaceNoun} over an {emptyNoun}.",
+        "range": [
+          3591,
+          3645
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3647,
+        "line": 183,
+        "loc": {
+          "end": {
+            "column": 63,
+            "line": 183
+          },
+          "start": {
+            "column": 1,
+            "line": 183
+          }
+        },
+        "message": "Semantic thinness (abstract-metaphor-claim): Catch slogan-like abstract metaphors where an abstract subject performs a physical or spatial action with no concrete referent. Matched template: {artifactSubject} {metaphorVerb} like a {humanRole} after a {vagueEvent}.",
+        "range": [
+          3647,
+          3709
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3711,
+        "line": 185,
+        "loc": {
+          "end": {
+            "column": 46,
+            "line": 185
+          },
+          "start": {
+            "column": 1,
+            "line": 185
+          }
+        },
+        "message": "Semantic thinness (abstract-metaphor-claim): Catch slogan-like abstract metaphors where an abstract subject performs a physical or spatial action with no concrete referent. Matched template: {abstractSubject} {linkingVerb} {infrastructureNoun} with {abstractObject}.",
+        "range": [
+          3711,
+          3756
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3758,
+        "line": 187,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 187
+          },
+          "start": {
+            "column": 1,
+            "line": 187
+          }
+        },
+        "message": "Semantic thinness (abstract-metaphor-claim): Catch slogan-like abstract metaphors where an abstract subject performs a physical or spatial action with no concrete referent. Matched template: {abstractSubject} behaves like a {filterNoun}.",
+        "range": [
+          3758,
+          3806
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3808,
+        "line": 189,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 189
+          },
+          "start": {
+            "column": 1,
+            "line": 189
+          }
+        },
+        "message": "Semantic thinness (abstract-metaphor-claim): Catch slogan-like abstract metaphors where an abstract subject performs a physical or spatial action with no concrete referent. Matched template: {artifactSubject} add another {layerNoun} to {diagnosisObject}.",
+        "range": [
+          3808,
+          3856
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3858,
+        "line": 191,
+        "loc": {
+          "end": {
+            "column": 26,
+            "line": 191
+          },
+          "start": {
+            "column": 1,
+            "line": 191
+          }
+        },
+        "message": "Semantic thinness (abstract-personification-line): Catch abstract nouns treated as social actors in short payoff lines without concrete action or cause. Matched template: {abstractSubject} entered {socialPlace}.",
+        "range": [
+          3858,
+          3883
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3885,
+        "line": 193,
+        "loc": {
+          "end": {
+            "column": 54,
+            "line": 193
+          },
+          "start": {
+            "column": 1,
+            "line": 193
+          }
+        },
+        "message": "Semantic thinness (generic-realization): Catch realization lines that announce understanding without naming what was learned. Matched template: {humanSubject} {realizationVerb} {genericObject}.",
+        "range": [
+          3885,
+          3938
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3940,
+        "line": 195,
+        "loc": {
+          "end": {
+            "column": 48,
+            "line": 195
+          },
+          "start": {
+            "column": 1,
+            "line": 195
+          }
+        },
+        "message": "Semantic thinness (generic-pressure-or-stakes): Catch generic pressure, stakes, or weight lines that imply importance without concrete risk or consequence. Matched template: {stakesSubject} {linkingVerb} {thinStakesComplement}.",
+        "range": [
+          3940,
+          3987
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3989,
+        "line": 197,
+        "loc": {
+          "end": {
+            "column": 52,
+            "line": 197
+          },
+          "start": {
+            "column": 1,
+            "line": 197
+          }
+        },
+        "message": "Semantic thinness (body-emotion-shorthand): Catch stock body-feeling lines that translate emotion into generic chest, breath, heart, or limb sensations without naming the thought, choice, or concrete pressure. Matched template: {bodySubject} {feltVerb} {bodySensation}.",
+        "range": [
+          3989,
+          4040
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4042,
+        "line": 199,
+        "loc": {
+          "end": {
+            "column": 59,
+            "line": 199
+          },
+          "start": {
+            "column": 1,
+            "line": 199
+          }
+        },
+        "message": "Semantic thinness (gaze-choreography): Catch eye and gaze choreography where body-part camera movement stands in for a concrete observation, decision, or reaction. Matched template: {gazeSubject} {movementVerb} from {gazeTarget} to {gazeTarget}.",
+        "range": [
+          4042,
+          4100
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4102,
+        "line": 201,
+        "loc": {
+          "end": {
+            "column": 48,
+            "line": 201
+          },
+          "start": {
+            "column": 1,
+            "line": 201
+          }
+        },
+        "message": "Semantic thinness (empty-scene-state): Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail. Matched template: {placeSubject} {linkingVerb} {thinState}.",
+        "range": [
+          4102,
+          4149
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4151,
+        "line": 203,
+        "loc": {
+          "end": {
+            "column": 38,
+            "line": 203
+          },
+          "start": {
+            "column": 1,
+            "line": 203
+          }
+        },
+        "message": "Semantic thinness (empty-scene-transition): Catch generic transition lines that declare change, passage, or motion without naming what changed or why. Matched template: {genericSubject} {changeVerb}.",
+        "range": [
+          4151,
+          4188
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4190,
+        "line": 205,
+        "loc": {
+          "end": {
+            "column": 51,
+            "line": 205
+          },
+          "start": {
+            "column": 1,
+            "line": 205
+          }
+        },
+        "message": "Semantic thinness (abstract-personification-line): Catch abstract nouns treated as social actors in short payoff lines without concrete action or cause. Matched template: {abstractSubject} entered {socialPlace}.",
+        "range": [
+          4190,
+          4240
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4242,
+        "line": 207,
+        "loc": {
+          "end": {
+            "column": 61,
+            "line": 207
+          },
+          "start": {
+            "column": 1,
+            "line": 207
+          }
+        },
+        "message": "Semantic thinness (emotion-as-substance): Catch abstract emotion or state treated as a physical substance moving through bodies, voices, rooms, or groups. Matched template: {abstractEmotion} {substanceMotion} over {personTarget}.",
+        "range": [
+          4242,
+          4302
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4356,
+        "line": 211,
+        "loc": {
+          "end": {
+            "column": 36,
+            "line": 211
+          },
+          "start": {
+            "column": 1,
+            "line": 211
+          }
+        },
+        "message": "Demonstrative emphasis found: \"That was where the real work began.\". Reduce repeated short emphasis lines.",
+        "range": [
+          4356,
+          4391
+        ],
+        "ruleId": "demonstrative-emphasis",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4356,
+        "line": 211,
+        "loc": {
+          "end": {
+            "column": 36,
+            "line": 211
+          },
+          "start": {
+            "column": 1,
+            "line": 211
+          }
+        },
+        "message": "Semantic thinness (real-work-begins): Catch payoff lines that announce the real, deeper, actual, or hard work beginning without naming the concrete work. Matched template: that was where {workSubject} {pastStartVerb}.",
+        "range": [
+          4356,
+          4391
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4393,
+        "line": 213,
+        "loc": {
+          "end": {
+            "column": 44,
+            "line": 213
+          },
+          "start": {
+            "column": 1,
+            "line": 213
+          }
+        },
+        "message": "Boilerplate conclusion found: the-point-was. Replace the closer with a specific ending.",
+        "range": [
+          4393,
+          4436
+        ],
+        "ruleId": "boilerplate-conclusion",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4393,
+        "line": 213,
+        "loc": {
+          "end": {
+            "column": 44,
+            "line": 213
+          },
+          "start": {
+            "column": 1,
+            "line": 213
+          }
+        },
+        "message": "Semantic thinness (point-is-frame): Catch point/lesson/truth frames that announce the interpretive frame instead of stating the concrete claim. Matched template: the {summaryNoun} {linkingVerb} not {abstractNoun}.",
+        "range": [
+          4393,
+          4436
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md",
+    "messages": []
+  }
+]

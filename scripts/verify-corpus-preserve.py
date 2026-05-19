@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 FIXTURE_ROOT = ROOT / "behavior/fixtures/textlint-rules"
 CASES_ROOT = FIXTURE_ROOT / "cases"
 CORPUS_ROOT = FIXTURE_ROOT / "corpus"
-RECEIVED_OUTPUT = ROOT / ".fixture3/textlint-rules/received.normalized.json"
+RECEIVED_ROOT = ROOT / ".fixture3"
 DOCUMENT_LEVEL_RULES = {
     "avg-sentence-length",
     "coleman-liau",
@@ -42,16 +42,23 @@ def read_json(path: Path) -> dict[str, Any]:
     return data
 
 
-def read_received_results() -> list[dict[str, Any]]:
-    data = json.loads(RECEIVED_OUTPUT.read_text(encoding="utf-8"))
-    if not isinstance(data, list):
-        raise ValueError(f"{RECEIVED_OUTPUT}: received output must contain a JSON list")
+def received_output_paths() -> list[Path]:
+    return sorted(RECEIVED_ROOT.glob("textlint-rules-*/received.normalized.json"))
 
+
+def read_received_results() -> list[dict[str, Any]]:
     results: list[dict[str, Any]] = []
-    for index, item in enumerate(data):
-        if not isinstance(item, dict):
-            raise ValueError(f"{RECEIVED_OUTPUT}: result[{index}] must be an object")
-        results.append(item)
+
+    for path in received_output_paths():
+        data = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(data, list):
+            raise ValueError(f"{path}: received output must contain a JSON list")
+
+        for index, item in enumerate(data):
+            if not isinstance(item, dict):
+                raise ValueError(f"{path}: result[{index}] must be an object")
+            results.append(item)
+
     return results
 
 
@@ -64,11 +71,11 @@ def rule_ids_for(results: list[dict[str, Any]], path_part: str) -> set[str]:
 
         messages = result.get("messages")
         if not isinstance(messages, list):
-            raise ValueError(f"{RECEIVED_OUTPUT}: messages for {file_path} must be a list")
+            raise ValueError(f"messages for {file_path} must be a list")
 
         for message in messages:
             if not isinstance(message, dict):
-                raise ValueError(f"{RECEIVED_OUTPUT}: message for {file_path} must be an object")
+                raise ValueError(f"message for {file_path} must be an object")
 
             rule_id = message.get("ruleId")
             if isinstance(rule_id, str) and rule_id not in DOCUMENT_LEVEL_RULES:
@@ -122,7 +129,7 @@ def main() -> int:
     for family, bucket, text in sorted(missing):
         errors.append(f"missing preserved case: {family}/{bucket}: {text!r}")
 
-    if RECEIVED_OUTPUT.exists():
+    if received_output_paths():
         results = read_received_results()
         case_rule_ids = rule_ids_for(results, "/cases/")
         corpus_rule_ids = rule_ids_for(results, "/corpus/")
@@ -137,7 +144,7 @@ def main() -> int:
 
     print(f"preserved cases: {len(preserved_entries)}")
     print(f"corpus files: {len(list(CORPUS_ROOT.glob('*.md')))}")
-    if RECEIVED_OUTPUT.exists():
+    if received_output_paths():
         print(f"case rule ids: {len(rule_ids_for(results, '/cases/'))}")
         print(f"corpus rule ids: {len(rule_ids_for(results, '/corpus/'))}")
     print("status: ok")

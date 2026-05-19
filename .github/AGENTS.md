@@ -71,9 +71,9 @@ Cases are reviewed minimal examples. Corpus files are readable prose that should
 When changing rules or fixtures:
 
 ```bash
-fixture3 check --suite textlint-rules
+fixture3 check --feature textlint-rules
 scripts/verify-corpus-preserve.py
 npm run validate
 ```
 
-The current approved fixture output may intentionally be an empty JSON file while fixture3 bootstrap behavior is being refined.
+Fixture approvals are split by family and corpus file so each approved JSON stays below the G3TS staged-file limit.

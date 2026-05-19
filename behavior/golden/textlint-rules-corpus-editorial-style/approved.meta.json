@@ -1,0 +1,19 @@
+{
+  "suite": "textlint-rules-corpus-editorial-style",
+  "kind": "approved",
+  "run_id": "2026-05-19T17-37-20.675299Z-df22e59a",
+  "run_commit": "e21d316",
+  "working_tree": "dirty",
+  "recorded_at": "2026-05-19T17:37:20.675299Z",
+  "fixture_hash": "sha256:8fbcfca54f187ea32b87a0246ce1c5be057c7518e66e90f2a1363ca8e89b5fea",
+  "manifest_hash": "sha256:df22e59a1c3af89660207e32169c1efa8b3064d02c7a4dc3f36d00ec8112a0ee",
+  "tool_version": "0.1.8",
+  "output_schema_version": "1",
+  "fixtures": [
+    {
+      "path": "behavior/fixtures/textlint-rules/corpus/editorial-style.md",
+      "sha256": "sha256:3adca0fe7de12eef3d80d0529cb0e997e5dffd690d29764fc1dd08c7b09d2029"
+    }
+  ],
+  "comment": "Split textlint rule approvals and restore adversarial no-hits"
+}

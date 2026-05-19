@@ -1,0 +1,3526 @@
+[
+  {
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/corpus/health-and-parenting.md",
+    "messages": [
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 2,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
+        "message": "Flesch Reading Ease is 59.98. Keep it at 61 or higher.",
+        "range": [
+          0,
+          1
+        ],
+        "ruleId": "flesch-kincaid",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 401,
+        "line": 11,
+        "loc": {
+          "end": {
+            "column": 37,
+            "line": 11
+          },
+          "start": {
+            "column": 1,
+            "line": 11
+          }
+        },
+        "message": "Contrastive aphorism found: part-that-sticks. Replace the slogan with a concrete claim.",
+        "range": [
+          401,
+          437
+        ],
+        "ruleId": "contrastive-aphorism",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 439,
+        "line": 13,
+        "loc": {
+          "end": {
+            "column": 58,
+            "line": 13
+          },
+          "start": {
+            "column": 1,
+            "line": 13
+          }
+        },
+        "message": "Softening language found: research suggests + many parents. Make the claim specific or remove the hedge stack.",
+        "range": [
+          439,
+          496
+        ],
+        "ruleId": "softening-language",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 439,
+        "line": 13,
+        "loc": {
+          "end": {
+            "column": 58,
+            "line": 13
+          },
+          "start": {
+            "column": 1,
+            "line": 13
+          }
+        },
+        "message": "Uncited authority found: research suggests. Name the source, cite the evidence, or make the claim directly.",
+        "range": [
+          439,
+          496
+        ],
+        "ruleId": "uncited-authority",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 498,
+        "line": 15,
+        "loc": {
+          "end": {
+            "column": 33,
+            "line": 15
+          },
+          "start": {
+            "column": 1,
+            "line": 15
+          }
+        },
+        "message": "Demonstrative emphasis found: \"This is where parents get stuck.\". Reduce repeated short emphasis lines.",
+        "range": [
+          498,
+          530
+        ],
+        "ruleId": "demonstrative-emphasis",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 498,
+        "line": 15,
+        "loc": {
+          "end": {
+            "column": 33,
+            "line": 15
+          },
+          "start": {
+            "column": 1,
+            "line": 15
+          }
+        },
+        "message": "Observer guidance found: this-is-where-parents-get. Replace the bridge with concrete evidence.",
+        "range": [
+          498,
+          530
+        ],
+        "ruleId": "observer-guidance",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 532,
+        "line": 17,
+        "loc": {
+          "end": {
+            "column": 66,
+            "line": 17
+          },
+          "start": {
+            "column": 1,
+            "line": 17
+          }
+        },
+        "message": "Softening language found:  could  +  generally . Make the claim specific or remove the hedge stack.",
+        "range": [
+          532,
+          597
+        ],
+        "ruleId": "softening-language",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 532,
+        "line": 17,
+        "loc": {
+          "end": {
+            "column": 66,
+            "line": 17
+          },
+          "start": {
+            "column": 1,
+            "line": 17
+          }
+        },
+        "message": "Universalizing claim found: most parents expect. Replace the broad claim with a bounded claim.",
+        "range": [
+          532,
+          597
+        ],
+        "ruleId": "universalizing-claims",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 951,
+        "line": 27,
+        "loc": {
+          "end": {
+            "column": 161,
+            "line": 27
+          },
+          "start": {
+            "column": 1,
+            "line": 27
+          }
+        },
+        "message": "Negation reframe found: \"If the fatigue comes with loss of interest, hopelessness, irritability, or a clear change in appetite or sleep, mental health deserves a real look, not a shrug.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          951,
+          1111
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 63,
+        "index": 1695,
+        "line": 43,
+        "loc": {
+          "end": {
+            "column": 70,
+            "line": 43
+          },
+          "start": {
+            "column": 63,
+            "line": 43
+          }
+        },
+        "message": "Smart quotes found: \"“”\". Replace curly quotes with straight quotes.",
+        "range": [
+          1695,
+          1702
+        ],
+        "ruleId": "smart-quotes",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2003,
+        "line": 49,
+        "loc": {
+          "end": {
+            "column": 109,
+            "line": 49
+          },
+          "start": {
+            "column": 1,
+            "line": 49
+          }
+        },
+        "message": "Negation reframe found: \"If the value was health, maybe the next target is consistency and recovery, not another punishing challenge.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          2003,
+          2111
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 19,
+        "index": 2277,
+        "line": 55,
+        "loc": {
+          "end": {
+            "column": 36,
+            "line": 55
+          },
+          "start": {
+            "column": 19,
+            "line": 55
+          }
+        },
+        "message": "Smart quotes found: \"“”\". Replace curly quotes with straight quotes.",
+        "range": [
+          2277,
+          2294
+        ],
+        "ruleId": "smart-quotes",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2923,
+        "line": 69,
+        "loc": {
+          "end": {
+            "column": 70,
+            "line": 69
+          },
+          "start": {
+            "column": 1,
+            "line": 69
+          }
+        },
+        "message": "Negation reframe found: \"In adulthood, friendship usually survives on intention, not momentum.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          2923,
+          2992
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4029,
+        "line": 85,
+        "loc": {
+          "end": {
+            "column": 219,
+            "line": 85
+          },
+          "start": {
+            "column": 1,
+            "line": 85
+          }
+        },
+        "message": "Negation reframe found: \"A screen in the background during play or meals can fragment attention; a caregiver using a phone during routines can reduce the back-and-forth interaction that helps children learn to focus on people, not just pixels.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          4029,
+          4247
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4315,
+        "line": 89,
+        "loc": {
+          "end": {
+            "column": 82,
+            "line": 89
+          },
+          "start": {
+            "column": 1,
+            "line": 89
+          }
+        },
+        "message": "Negation reframe found: \"Start by treating screens as one part of a household system, not a moral failure.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          4315,
+          4396
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 28,
+        "index": 4834,
+        "line": 99,
+        "loc": {
+          "end": {
+            "column": 29,
+            "line": 99
+          },
+          "start": {
+            "column": 28,
+            "line": 99
+          }
+        },
+        "message": "Smart quotes found: \"’\". Replace curly quotes with straight quotes.",
+        "range": [
+          4834,
+          4835
+        ],
+        "ruleId": "smart-quotes",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4950,
+        "line": 101,
+        "loc": {
+          "end": {
+            "column": 213,
+            "line": 101
+          },
+          "start": {
+            "column": 1,
+            "line": 101
+          }
+        },
+        "message": "Negation reframe found: \"Research on goal failure suggests that missing a high, specific goal can reduce motivation for future tasks and produce emotional fallout that needs active recovery, not just more willpower Goal Missed, Self Hit.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          4950,
+          5162
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 5164,
+        "line": 103,
+        "loc": {
+          "end": {
+            "column": 82,
+            "line": 103
+          },
+          "start": {
+            "column": 1,
+            "line": 103
+          }
+        },
+        "message": "Generic signposting found: the short version. Replace the frame with the concrete claim.",
+        "range": [
+          5164,
+          5245
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 5164,
+        "line": 103,
+        "loc": {
+          "end": {
+            "column": 138,
+            "line": 103
+          },
+          "start": {
+            "column": 1,
+            "line": 103
+          }
+        },
+        "message": "Negation reframe found: \"The short version: your first few weeks are not proof that you are bad at habits. They are proof that habits take repetitions, not vibes.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          5164,
+          5301
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 5963,
+        "line": 119,
+        "loc": {
+          "end": {
+            "column": 145,
+            "line": 119
+          },
+          "start": {
+            "column": 1,
+            "line": 119
+          }
+        },
+        "message": "Negation reframe found: \"In 2026, we're seeing a cultural acknowledgment that sustainable friendships require genuine alignment of values, not just shared circumstances.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          5963,
+          6107
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 7601,
+        "line": 149,
+        "loc": {
+          "end": {
+            "column": 312,
+            "line": 149
+          },
+          "start": {
+            "column": 1,
+            "line": 149
+          }
+        },
+        "message": "Negation reframe found: \"Using \"I\" statements rather than \"you\" accusations, expressing appreciation regularly and specifically, calling for deliberate breaks when physiological arousal during conflict becomes too high — these are behavioral habits, not personality traits, and they can be learned at any point in a relationship's life.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          7601,
+          7912
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 8417,
+        "line": 165,
+        "loc": {
+          "end": {
+            "column": 59,
+            "line": 165
+          },
+          "start": {
+            "column": 1,
+            "line": 165
+          }
+        },
+        "message": "Negation reframe found: \"10/10 Loneliness is a health signal, not a character flaw.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          8417,
+          8475
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 8477,
+        "line": 167,
+        "loc": {
+          "end": {
+            "column": 46,
+            "line": 167
+          },
+          "start": {
+            "column": 1,
+            "line": 167
+          }
+        },
+        "message": "Negation reframe found: \"Anxiety is a body state, not a moral failure.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          8477,
+          8522
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 8681,
+        "line": 173,
+        "loc": {
+          "end": {
+            "column": 103,
+            "line": 173
+          },
+          "start": {
+            "column": 1,
+            "line": 173
+          }
+        },
+        "message": "Negation reframe found: \"You do not preserve friendships by hoping harder. You preserve them by making them easier to continue.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          8681,
+          8783
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 8785,
+        "line": 175,
+        "loc": {
+          "end": {
+            "column": 116,
+            "line": 175
+          },
+          "start": {
+            "column": 1,
+            "line": 175
+          }
+        },
+        "message": "Negation reframe found: \"It does not automatically mean there is a disorder. It does mean the current media habits are probably not helping.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          8785,
+          8900
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 8902,
+        "line": 177,
+        "loc": {
+          "end": {
+            "column": 106,
+            "line": 177
+          },
+          "start": {
+            "column": 1,
+            "line": 177
+          }
+        },
+        "message": "Negation reframe found: \"The goal isn't to feel motivated every day. The goal is to have the discipline to act without motivation.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          8902,
+          9007
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 45,
+        "index": 8946,
+        "line": 177,
+        "loc": {
+          "end": {
+            "column": 106,
+            "line": 177
+          },
+          "start": {
+            "column": 45,
+            "line": 177
+          }
+        },
+        "message": "Generic signposting found: the-goal-is-to. Replace the frame with the concrete claim.",
+        "range": [
+          8946,
+          9007
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 9009,
+        "line": 179,
+        "loc": {
+          "end": {
+            "column": 192,
+            "line": 179
+          },
+          "start": {
+            "column": 1,
+            "line": 179
+          }
+        },
+        "message": "Negation reframe found: \"When we procrastinate, we are not struggling to organize our schedules. We are avoiding a negative feeling that a task triggers — anxiety, boredom, self-doubt, resentment, or fear of failure.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          9009,
+          9200
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 9202,
+        "line": 181,
+        "loc": {
+          "end": {
+            "column": 127,
+            "line": 181
+          },
+          "start": {
+            "column": 1,
+            "line": 181
+          }
+        },
+        "message": "Negation reframe found: \"Burnout is not a personal defect. It is often a mismatch between what a job demands and what a human being can keep supplying.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          9202,
+          9328
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 9330,
+        "line": 183,
+        "loc": {
+          "end": {
+            "column": 144,
+            "line": 183
+          },
+          "start": {
+            "column": 1,
+            "line": 183
+          }
+        },
+        "message": "Negation reframe found: \"In the real world, the brain is not competing only with social media. It is competing with every cheap interruption the device can throw at it.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          9330,
+          9473
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 9475,
+        "line": 185,
+        "loc": {
+          "end": {
+            "column": 126,
+            "line": 185
+          },
+          "start": {
+            "column": 1,
+            "line": 185
+          }
+        },
+        "message": "Negation reframe found: \"Stress is not the enemy. It is a built-in alarm system, and in the short term it can sharpen your attention and help you act.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          9475,
+          9600
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 9602,
+        "line": 187,
+        "loc": {
+          "end": {
+            "column": 144,
+            "line": 187
+          },
+          "start": {
+            "column": 1,
+            "line": 187
+          }
+        },
+        "message": "Negation reframe found: \"This does not mean stress magically causes every cold. It means the body has less room to recover when it is spending energy on constant alarm.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          9602,
+          9745
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 9747,
+        "line": 189,
+        "loc": {
+          "end": {
+            "column": 52,
+            "line": 189
+          },
+          "start": {
+            "column": 1,
+            "line": 189
+          }
+        },
+        "message": "Contrastive aphorism found: abstract-evaluative-pair. Replace the slogan with a concrete claim.",
+        "range": [
+          9747,
+          9798
+        ],
+        "ruleId": "contrastive-aphorism",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 9747,
+        "line": 189,
+        "loc": {
+          "end": {
+            "column": 172,
+            "line": 189
+          },
+          "start": {
+            "column": 1,
+            "line": 189
+          }
+        },
+        "message": "Negation reframe found: \"Chronic stress is not just feeling busy or annoyed. It is a repeated body-wide alarm that can affect sleep, mood, digestion, immunity, pain, and the cardiovascular system.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          9747,
+          9918
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 9920,
+        "line": 191,
+        "loc": {
+          "end": {
+            "column": 136,
+            "line": 191
+          },
+          "start": {
+            "column": 1,
+            "line": 191
+          }
+        },
+        "message": "Negation reframe found: \"Loneliness is not just a bad mood with a nicer name. It is a health state with real effects on the brain, the body, and daily behavior.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          9920,
+          10055
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 10057,
+        "line": 193,
+        "loc": {
+          "end": {
+            "column": 154,
+            "line": 193
+          },
+          "start": {
+            "column": 1,
+            "line": 193
+          }
+        },
+        "message": "Negation reframe found: \"The likely pathway is not one thing. It is a cluster of things: stress hormones, inflammation, poorer sleep, less movement, worse diet, and delayed care.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          10057,
+          10210
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 10212,
+        "line": 195,
+        "loc": {
+          "end": {
+            "column": 72,
+            "line": 195
+          },
+          "start": {
+            "column": 1,
+            "line": 195
+          }
+        },
+        "message": "Negation reframe found: \"The goal is not punishment. It is a pattern your body can recover from.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          10212,
+          10283
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 10285,
+        "line": 197,
+        "loc": {
+          "end": {
+            "column": 222,
+            "line": 197
+          },
+          "start": {
+            "column": 1,
+            "line": 197
+          }
+        },
+        "message": "Negation reframe found: \"Most tantrums are not signs that a child is manipulative, broken, or badly parented. They are usually signs that the child’s brain and body are overloaded and they do not yet have the tools to handle the pressure cleanly.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          10285,
+          10506
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 123,
+        "index": 10407,
+        "line": 197,
+        "loc": {
+          "end": {
+            "column": 124,
+            "line": 197
+          },
+          "start": {
+            "column": 123,
+            "line": 197
+          }
+        },
+        "message": "Smart quotes found: \"’\". Replace curly quotes with straight quotes.",
+        "range": [
+          10407,
+          10408
+        ],
+        "ruleId": "smart-quotes",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 10508,
+        "line": 199,
+        "loc": {
+          "end": {
+            "column": 121,
+            "line": 199
+          },
+          "start": {
+            "column": 1,
+            "line": 199
+          }
+        },
+        "message": "Negation reframe found: \"That does not mean the child is scheming. It means the child is a small scientist with excellent data and poor judgment.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          10508,
+          10628
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 10630,
+        "line": 201,
+        "loc": {
+          "end": {
+            "column": 66,
+            "line": 201
+          },
+          "start": {
+            "column": 1,
+            "line": 201
+          }
+        },
+        "message": "Negation reframe found: \"Normal does not mean pleasant. It means developmentally expected.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          10630,
+          10695
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 10697,
+        "line": 203,
+        "loc": {
+          "end": {
+            "column": 131,
+            "line": 203
+          },
+          "start": {
+            "column": 1,
+            "line": 203
+          }
+        },
+        "message": "Negation reframe found: \"The goal in the moment is not to win. It is to keep everyone safe, avoid feeding the behavior, and help the child get back online.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          10697,
+          10827
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 10829,
+        "line": 205,
+        "loc": {
+          "end": {
+            "column": 167,
+            "line": 205
+          },
+          "start": {
+            "column": 1,
+            "line": 205
+          }
+        },
+        "message": "Negation reframe found: \"Tantrums are not proof that a child is bad or a parent is failing. They are a sign that the child has a feeling bigger than the tools they have available at that age.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          10829,
+          10995
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 11142,
+        "line": 211,
+        "loc": {
+          "end": {
+            "column": 123,
+            "line": 211
+          },
+          "start": {
+            "column": 1,
+            "line": 211
+          }
+        },
+        "message": "Negation reframe found: \"Most couples do not need a grand theory. They need a repeatable process that makes it harder to drift into the same fight.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          11142,
+          11264
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 11266,
+        "line": 213,
+        "loc": {
+          "end": {
+            "column": 129,
+            "line": 213
+          },
+          "start": {
+            "column": 1,
+            "line": 213
+          }
+        },
+        "message": "Negation reframe found: \"When friendships fade, people are not only losing company. They are losing a regular source of support, identity, and stability.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          11266,
+          11394
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 11396,
+        "line": 215,
+        "loc": {
+          "end": {
+            "column": 176,
+            "line": 215
+          },
+          "start": {
+            "column": 1,
+            "line": 215
+          }
+        },
+        "message": "Negation reframe found: \"The test is not whether every friendship must last forever. It is whether the friendships you want to keep have enough energy, honesty, and mutual effort to survive real life.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          11396,
+          11571
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 11573,
+        "line": 217,
+        "loc": {
+          "end": {
+            "column": 159,
+            "line": 217
+          },
+          "start": {
+            "column": 1,
+            "line": 217
+          }
+        },
+        "message": "Negation reframe found: \"Procrastination is not a mystery and it is not a moral failure. It is what happens when a task feels worse in the moment than the consequences of delaying it.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          11573,
+          11731
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 11733,
+        "line": 219,
+        "loc": {
+          "end": {
+            "column": 62,
+            "line": 219
+          },
+          "start": {
+            "column": 1,
+            "line": 219
+          }
+        },
+        "message": "Negation reframe found: \"A lot of procrastination is not about time. It is about mood.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          11733,
+          11794
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 11796,
+        "line": 221,
+        "loc": {
+          "end": {
+            "column": 25,
+            "line": 221
+          },
+          "start": {
+            "column": 1,
+            "line": 221
+          }
+        },
+        "message": "Smart quotes found: \"“”\". Replace curly quotes with straight quotes.",
+        "range": [
+          11796,
+          11820
+        ],
+        "ruleId": "smart-quotes",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 11796,
+        "line": 221,
+        "loc": {
+          "end": {
+            "column": 133,
+            "line": 221
+          },
+          "start": {
+            "column": 1,
+            "line": 221
+          }
+        },
+        "message": "Negation reframe found: \"“I want to be healthier” is not a habit plan. It is a sentence that sounds noble and tells you nothing about what to do at 7:10 a.m.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          11796,
+          11928
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 11930,
+        "line": 223,
+        "loc": {
+          "end": {
+            "column": 29,
+            "line": 223
+          },
+          "start": {
+            "column": 1,
+            "line": 223
+          }
+        },
+        "message": "Demonstrative emphasis found: \"That is not a habit problem.\". Reduce repeated short emphasis lines.",
+        "range": [
+          11930,
+          11958
+        ],
+        "ruleId": "demonstrative-emphasis",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 11930,
+        "line": 223,
+        "loc": {
+          "end": {
+            "column": 52,
+            "line": 223
+          },
+          "start": {
+            "column": 1,
+            "line": 223
+          }
+        },
+        "message": "Negation reframe found: \"That is not a habit problem. It is a story problem.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          11930,
+          11981
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 11983,
+        "line": 225,
+        "loc": {
+          "end": {
+            "column": 88,
+            "line": 225
+          },
+          "start": {
+            "column": 1,
+            "line": 225
+          }
+        },
+        "message": "Negation reframe found: \"A habit is not broken by one missed day. It is weakened when the miss turns into drift.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          11983,
+          12070
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 12072,
+        "line": 227,
+        "loc": {
+          "end": {
+            "column": 85,
+            "line": 227
+          },
+          "start": {
+            "column": 1,
+            "line": 227
+          }
+        },
+        "message": "Negation reframe found: \"Small habits are not weak habits. They are habits that survive contact with reality.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          12072,
+          12156
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 12158,
+        "line": 229,
+        "loc": {
+          "end": {
+            "column": 91,
+            "line": 229
+          },
+          "start": {
+            "column": 1,
+            "line": 229
+          }
+        },
+        "message": "Negation reframe found: \"Procrastination is not usually a character flaw. It is often a short-term coping strategy.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          12158,
+          12248
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 12250,
+        "line": 231,
+        "loc": {
+          "end": {
+            "column": 203,
+            "line": 231
+          },
+          "start": {
+            "column": 1,
+            "line": 231
+          }
+        },
+        "message": "Negation reframe found: \"The most reliable fix is not more motivation. It is better design: make tasks startable, shrink the first step, address the emotion, reduce distractions, and build simple structures that help you begin.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          12250,
+          12452
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 12454,
+        "line": 233,
+        "loc": {
+          "end": {
+            "column": 158,
+            "line": 233
+          },
+          "start": {
+            "column": 1,
+            "line": 233
+          }
+        },
+        "message": "Negation reframe found: \"The key issue is not that your child likes screens. It is that screens start to run the show: transitions, mood, and the ability to stick with offline tasks.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          12454,
+          12611
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 12613,
+        "line": 235,
+        "loc": {
+          "end": {
+            "column": 136,
+            "line": 235
+          },
+          "start": {
+            "column": 1,
+            "line": 235
+          }
+        },
+        "message": "Negation reframe found: \"You do not need perfect rules. You need a small set of consistent boundaries that protect sleep, relationships, and attention practice.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          12613,
+          12748
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 12750,
+        "line": 237,
+        "loc": {
+          "end": {
+            "column": 246,
+            "line": 237
+          },
+          "start": {
+            "column": 1,
+            "line": 237
+          }
+        },
+        "message": "Negation reframe found: \"Parents do not need perfect control. They need a few strong guardrails: protect sleep, choose content on purpose, keep screens from crowding out play and conversation, and help children build calm and focus skills that do not depend on a device.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          12750,
+          12995
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 12997,
+        "line": 239,
+        "loc": {
+          "end": {
+            "column": 222,
+            "line": 239
+          },
+          "start": {
+            "column": 1,
+            "line": 239
+          }
+        },
+        "message": "Negation reframe found: \"Managing social anxiety does not mean becoming a different person or never feeling nervous again. It means building the ability to stay present, tolerate discomfort, and act according to your values rather than your fear.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          12997,
+          13218
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 13220,
+        "line": 241,
+        "loc": {
+          "end": {
+            "column": 161,
+            "line": 241
+          },
+          "start": {
+            "column": 1,
+            "line": 241
+          }
+        },
+        "message": "Negation reframe found: \"Most communication breakdowns are not caused by one dramatic argument. They are reinforced by habits that feel satisfying in the moment and corrosive over time.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          13220,
+          13380
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 13382,
+        "line": 243,
+        "loc": {
+          "end": {
+            "column": 89,
+            "line": 243
+          },
+          "start": {
+            "column": 1,
+            "line": 243
+          }
+        },
+        "message": "Negation reframe found: \"Habits are not willpower trophies. They are patterns the brain automates to save energy.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          13382,
+          13470
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 13472,
+        "line": 245,
+        "loc": {
+          "end": {
+            "column": 173,
+            "line": 245
+          },
+          "start": {
+            "column": 1,
+            "line": 245
+          }
+        },
+        "message": "Negation reframe found: \"Good habits are not built by wanting them harder. They are built by making the desired behavior easier to start, easier to repeat, and easier to recover after life happens.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          13472,
+          13644
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 13646,
+        "line": 247,
+        "loc": {
+          "end": {
+            "column": 50,
+            "line": 247
+          },
+          "start": {
+            "column": 1,
+            "line": 247
+          }
+        },
+        "message": "Negation reframe found: \"The cost is not just stress. It is lost momentum.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          13646,
+          13695
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 13697,
+        "line": 249,
+        "loc": {
+          "end": {
+            "column": 179,
+            "line": 249
+          },
+          "start": {
+            "column": 1,
+            "line": 249
+          }
+        },
+        "message": "Negation reframe found: \"Burnout is not just about long hours. It is a stress condition that develops when job demands keep outpacing the emotional, cognitive, and physical resources needed to meet them.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          13697,
+          13875
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 13877,
+        "line": 251,
+        "loc": {
+          "end": {
+            "column": 199,
+            "line": 251
+          },
+          "start": {
+            "column": 1,
+            "line": 251
+          }
+        },
+        "message": "Negation reframe found: \"The answer is not heroic endurance. It is redesign: clearer priorities, healthier limits, meaningful rest, and work that does not require a person to spend themselves entirely just to stay employed.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          13877,
+          14075
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 14077,
+        "line": 253,
+        "loc": {
+          "end": {
+            "column": 205,
+            "line": 253
+          },
+          "start": {
+            "column": 1,
+            "line": 253
+          }
+        },
+        "message": "Negation reframe found: \"That does not mean every child who watches fast-paced videos will develop attention problems. It means repeated exposure to very stimulating media can become one factor in a broader attention environment.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          14077,
+          14281
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 14283,
+        "line": 255,
+        "loc": {
+          "end": {
+            "column": 265,
+            "line": 255
+          },
+          "start": {
+            "column": 1,
+            "line": 255
+          }
+        },
+        "message": "Negation reframe found: \"Parents do not need panic. They need a realistic framework: better content, stronger routines, fewer autoplay traps, more sleep, more play, and more moments where a child learns that life does not have to flash, ding, and swipe every ten seconds to be interesting.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          14283,
+          14547
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 14676,
+        "line": 261,
+        "loc": {
+          "end": {
+            "column": 214,
+            "line": 261
+          },
+          "start": {
+            "column": 1,
+            "line": 261
+          }
+        },
+        "message": "Negation reframe found: \"The bigger risk is not that a child watched a show after school. It is that highly stimulating, poorly bounded screen use becomes the default environment, replacing the slower experiences that help attention grow.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          14676,
+          14889
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 14891,
+        "line": 263,
+        "loc": {
+          "end": {
+            "column": 71,
+            "line": 263
+          },
+          "start": {
+            "column": 1,
+            "line": 263
+          }
+        },
+        "message": "Negation reframe found: \"Many couples are not fundamentally bad at talking. They are exhausted.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          14891,
+          14961
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 14963,
+        "line": 265,
+        "loc": {
+          "end": {
+            "column": 96,
+            "line": 265
+          },
+          "start": {
+            "column": 1,
+            "line": 265
+          }
+        },
+        "message": "Negation reframe found: \"Good communicators are not couples who never misstep. They are couples who know how to recover.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          14963,
+          15058
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 15060,
+        "line": 267,
+        "loc": {
+          "end": {
+            "column": 233,
+            "line": 267
+          },
+          "start": {
+            "column": 1,
+            "line": 267
+          }
+        },
+        "message": "Negation reframe found: \"The fix is not guilt. It is intention: more specific plans, more regular contact, more honesty, and a willingness to treat friendship as a central part of adult well-being rather than whatever survives after everything else is done.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          15060,
+          15292
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 15294,
+        "line": 269,
+        "loc": {
+          "end": {
+            "column": 165,
+            "line": 269
+          },
+          "start": {
+            "column": 1,
+            "line": 269
+          }
+        },
+        "message": "Negation reframe found: \"Motivation is not a permanent feeling you either have or do not have. It is a moving state shaped by meaning, structure, progress, fatigue, environment, and timing.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          15294,
+          15458
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 15460,
+        "line": 271,
+        "loc": {
+          "end": {
+            "column": 167,
+            "line": 271
+          },
+          "start": {
+            "column": 1,
+            "line": 271
+          }
+        },
+        "message": "Negation reframe found: \"Most failed habits are not evidence that a person is lazy. They are evidence that behavior change is harder and more mechanical than self-help culture likes to admit.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          15460,
+          15626
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 15628,
+        "line": 273,
+        "loc": {
+          "end": {
+            "column": 187,
+            "line": 273
+          },
+          "start": {
+            "column": 1,
+            "line": 273
+          }
+        },
+        "message": "Negation reframe found: \"Good habits are not built by dramatic effort alone. They are built by making the right action easier to begin, easier to repeat, and easier to resume after life inevitably interrupts it.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          15628,
+          15814
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 15816,
+        "line": 275,
+        "loc": {
+          "end": {
+            "column": 52,
+            "line": 275
+          },
+          "start": {
+            "column": 1,
+            "line": 275
+          }
+        },
+        "message": "Negation reframe found: \"The person is not simply sleepy. They are depleted.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          15816,
+          15867
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 15869,
+        "line": 277,
+        "loc": {
+          "end": {
+            "column": 155,
+            "line": 277
+          },
+          "start": {
+            "column": 1,
+            "line": 277
+          }
+        },
+        "message": "Negation reframe found: \"It is not just the light, either. It is also the mental activation of messages, news, videos, and the endless temptation to keep consuming one more thing.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          15869,
+          16023
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 16025,
+        "line": 279,
+        "loc": {
+          "end": {
+            "column": 90,
+            "line": 279
+          },
+          "start": {
+            "column": 1,
+            "line": 279
+          }
+        },
+        "message": "Negation reframe found: \"Going to bed on time is not a bonus habit. It is part of the anti-procrastination system.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          16025,
+          16114
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 16116,
+        "line": 281,
+        "loc": {
+          "end": {
+            "column": 108,
+            "line": 281
+          },
+          "start": {
+            "column": 1,
+            "line": 281
+          }
+        },
+        "message": "Negation reframe found: \"In that sense, burnout is not just an individual wellness issue. It is a systems problem with a human face.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          16116,
+          16223
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 16225,
+        "line": 283,
+        "loc": {
+          "end": {
+            "column": 129,
+            "line": 283
+          },
+          "start": {
+            "column": 1,
+            "line": 283
+          }
+        },
+        "message": "Negation reframe found: \"That does not mean gaming is “good” for attention in every case. It means the category “screen time” hides more than it reveals.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          16225,
+          16353
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 30,
+        "index": 16254,
+        "line": 283,
+        "loc": {
+          "end": {
+            "column": 36,
+            "line": 283
+          },
+          "start": {
+            "column": 30,
+            "line": 283
+          }
+        },
+        "message": "Smart quotes found: \"“”\". Replace curly quotes with straight quotes.",
+        "range": [
+          16254,
+          16260
+        ],
+        "ruleId": "smart-quotes",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 88,
+        "index": 16312,
+        "line": 283,
+        "loc": {
+          "end": {
+            "column": 101,
+            "line": 283
+          },
+          "start": {
+            "column": 88,
+            "line": 283
+          }
+        },
+        "message": "Smart quotes found: \"“”\". Replace curly quotes with straight quotes.",
+        "range": [
+          16312,
+          16325
+        ],
+        "ruleId": "smart-quotes",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 16355,
+        "line": 285,
+        "loc": {
+          "end": {
+            "column": 120,
+            "line": 285
+          },
+          "start": {
+            "column": 1,
+            "line": 285
+          }
+        },
+        "message": "Negation reframe found: \"Parents do not need to ban screens to protect attention. They need to make screens less omnipresent and less automatic.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          16355,
+          16474
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 16476,
+        "line": 287,
+        "loc": {
+          "end": {
+            "column": 114,
+            "line": 287
+          },
+          "start": {
+            "column": 1,
+            "line": 287
+          }
+        },
+        "message": "Negation reframe found: \"This does not mean social anxiety is destiny. It means some people begin life with a more sensitive alarm system.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          16476,
+          16589
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 16591,
+        "line": 289,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 289
+          },
+          "start": {
+            "column": 1,
+            "line": 289
+          }
+        },
+        "message": "Contrastive aphorism found: abstract-evaluative-pair. Replace the slogan with a concrete claim.",
+        "range": [
+          16591,
+          16639
+        ],
+        "ruleId": "contrastive-aphorism",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 16591,
+        "line": 289,
+        "loc": {
+          "end": {
+            "column": 173,
+            "line": 289
+          },
+          "start": {
+            "column": 1,
+            "line": 289
+          }
+        },
+        "message": "Negation reframe found: \"Stress is not just a mood with a bad reputation. It is a body-wide response to a challenge, threat, or pressure, and the body treats it like a real event because it is one.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          16591,
+          16763
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 16765,
+        "line": 291,
+        "loc": {
+          "end": {
+            "column": 77,
+            "line": 291
+          },
+          "start": {
+            "column": 1,
+            "line": 291
+          }
+        },
+        "message": "Negation reframe found: \"The body is not being dramatic. It is running a stress program for too long.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          16765,
+          16841
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 16843,
+        "line": 293,
+        "loc": {
+          "end": {
+            "column": 92,
+            "line": 293
+          },
+          "start": {
+            "column": 1,
+            "line": 293
+          }
+        },
+        "message": "Negation reframe found: \"It does mean chronic stress is not harmless background noise. It is a physiological burden.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          16843,
+          16934
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 16936,
+        "line": 295,
+        "loc": {
+          "end": {
+            "column": 133,
+            "line": 295
+          },
+          "start": {
+            "column": 1,
+            "line": 295
+          }
+        },
+        "message": "Negation reframe found: \"That matters, because it means couples are not usually dealing with a single broken skill. They are dealing with a reinforcing loop.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          16936,
+          17068
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 17070,
+        "line": 297,
+        "loc": {
+          "end": {
+            "column": 140,
+            "line": 297
+          },
+          "start": {
+            "column": 1,
+            "line": 297
+          }
+        },
+        "message": "Negation reframe found: \"In many couples, the real problem is not that nobody has solutions. It is that nobody feels understood long enough for solutions to matter.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          17070,
+          17209
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 17211,
+        "line": 299,
+        "loc": {
+          "end": {
+            "column": 92,
+            "line": 299
+          },
+          "start": {
+            "column": 1,
+            "line": 299
+          }
+        },
+        "message": "Negation reframe found: \"Couples who can repair quickly do not need perfect communication. They need recoverability.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          17211,
+          17302
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 17304,
+        "line": 301,
+        "loc": {
+          "end": {
+            "column": 207,
+            "line": 301
+          },
+          "start": {
+            "column": 1,
+            "line": 301
+          }
+        },
+        "message": "Negation reframe found: \"Couples usually do not need a totally new relationship. They need a better way of talking when life gets hard: more specificity, less blaming; more listening, less defending; more repair, less scorekeeping.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          17304,
+          17510
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 17512,
+        "line": 303,
+        "loc": {
+          "end": {
+            "column": 167,
+            "line": 303
+          },
+          "start": {
+            "column": 1,
+            "line": 303
+          }
+        },
+        "message": "Negation reframe found: \"That does not mean you are broken if your friend count is lower. It means your social life has a budget, and modern adulthood keeps slipping extra line items into it.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          17512,
+          17678
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 17680,
+        "line": 305,
+        "loc": {
+          "end": {
+            "column": 89,
+            "line": 305
+          },
+          "start": {
+            "column": 1,
+            "line": 305
+          }
+        },
+        "message": "Negation reframe found: \"Most people are not waiting to be replaced. They are waiting for somebody to text first.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          17680,
+          17768
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 17770,
+        "line": 307,
+        "loc": {
+          "end": {
+            "column": 190,
+            "line": 307
+          },
+          "start": {
+            "column": 1,
+            "line": 307
+          }
+        },
+        "message": "Negation reframe found: \"Habits fail because they are not just promises you make to yourself. They are behaviors your brain has learned to run on familiar cues, in familiar settings, with the least possible effort.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          17770,
+          17959
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 17961,
+        "line": 309,
+        "loc": {
+          "end": {
+            "column": 125,
+            "line": 309
+          },
+          "start": {
+            "column": 1,
+            "line": 309
+          }
+        },
+        "message": "Negation reframe found: \"Stress is not just a mental state. It is a full-body alarm, and when it stays on too long, your body starts paying the bill.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          17961,
+          18085
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 18087,
+        "line": 311,
+        "loc": {
+          "end": {
+            "column": 167,
+            "line": 311
+          },
+          "start": {
+            "column": 1,
+            "line": 311
+          }
+        },
+        "message": "Negation reframe found: \"Sometimes the fix is not more productivity hacks. It is protecting sleep, shrinking the noise, saying no earlier, and letting your body believe the threat has passed.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          18087,
+          18253
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 18255,
+        "line": 313,
+        "loc": {
+          "end": {
+            "column": 104,
+            "line": 313
+          },
+          "start": {
+            "column": 1,
+            "line": 313
+          }
+        },
+        "message": "Negation reframe found: \"That does not mean you are doing it wrong. It means your child is human, and the transition asks a lot.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          18255,
+          18358
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 18360,
+        "line": 315,
+        "loc": {
+          "end": {
+            "column": 85,
+            "line": 315
+          },
+          "start": {
+            "column": 1,
+            "line": 315
+          }
+        },
+        "message": "Negation reframe found: \"Most procrastination at work is not a time problem. It is a self-protection problem.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          18360,
+          18444
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 18446,
+        "line": 317,
+        "loc": {
+          "end": {
+            "column": 80,
+            "line": 317
+          },
+          "start": {
+            "column": 1,
+            "line": 317
+          }
+        },
+        "message": "Negation reframe found: \"A healthy workload is not just about volume. It is about recoverable attention.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          18446,
+          18525
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 18527,
+        "line": 319,
+        "loc": {
+          "end": {
+            "column": 81,
+            "line": 319
+          },
+          "start": {
+            "column": 1,
+            "line": 319
+          }
+        },
+        "message": "Negation reframe found: \"Burnout taught me that sustainable productivity is not heroic. It is repeatable.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          18527,
+          18607
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 18609,
+        "line": 321,
+        "loc": {
+          "end": {
+            "column": 50,
+            "line": 321
+          },
+          "start": {
+            "column": 1,
+            "line": 321
+          }
+        },
+        "message": "Negation reframe found: \"Healthy culture is not perfect. It is consistent.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          18609,
+          18658
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 18660,
+        "line": 323,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 323
+          },
+          "start": {
+            "column": 1,
+            "line": 323
+          }
+        },
+        "message": "Negation reframe found: \"The cost is not only time. It is mental residue.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          18660,
+          18708
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 18710,
+        "line": 325,
+        "loc": {
+          "end": {
+            "column": 129,
+            "line": 325
+          },
+          "start": {
+            "column": 1,
+            "line": 325
+          }
+        },
+        "message": "Negation reframe found: \"Procrastination is not a character flaw. It is a deeply human response to discomfort, shaped by emotion, environment, and habit.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          18710,
+          18838
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 18840,
+        "line": 327,
+        "loc": {
+          "end": {
+            "column": 195,
+            "line": 327
+          },
+          "start": {
+            "column": 1,
+            "line": 327
+          }
+        },
+        "message": "Negation reframe found: \"Burnout is not a badge of honor, a rite of passage, or an unavoidable cost of ambition. It is a predictable consequence of specific working conditions, and it responds to specific interventions.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          18840,
+          19034
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 18,
+        "index": 18857,
+        "line": 327,
+        "loc": {
+          "end": {
+            "column": 32,
+            "line": 327
+          },
+          "start": {
+            "column": 18,
+            "line": 327
+          }
+        },
+        "message": "Cliche found: \"badge of honor\". Replace it with specific wording.",
+        "range": [
+          18857,
+          18871
+        ],
+        "ruleId": "cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 19036,
+        "line": 329,
+        "loc": {
+          "end": {
+            "column": 147,
+            "line": 329
+          },
+          "start": {
+            "column": 1,
+            "line": 329
+          }
+        },
+        "message": "Negation reframe found: \"Parents do not need to treat screens as the enemy. They need to treat them as a powerful tool that, like any tool, requires thoughtful management.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          19036,
+          19182
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 19184,
+        "line": 331,
+        "loc": {
+          "end": {
+            "column": 209,
+            "line": 331
+          },
+          "start": {
+            "column": 1,
+            "line": 331
+          }
+        },
+        "message": "Negation reframe found: \"Social anxiety is not just feeling nervous before a presentation. It is a pattern that can infiltrate nearly every area of daily life, and it operates on three interconnected levels: body, mind, and behavior.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          19184,
+          19392
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 19394,
+        "line": 333,
+        "loc": {
+          "end": {
+            "column": 217,
+            "line": 333
+          },
+          "start": {
+            "column": 1,
+            "line": 333
+          }
+        },
+        "message": "Negation reframe found: \"Social anxiety is not a character flaw, and it is not something people simply outgrow. It is a condition with identifiable biological, psychological, and environmental roots, and it responds to targeted intervention.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          19394,
+          19610
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 19612,
+        "line": 335,
+        "loc": {
+          "end": {
+            "column": 137,
+            "line": 335
+          },
+          "start": {
+            "column": 1,
+            "line": 335
+          }
+        },
+        "message": "Negation reframe found: \"Stress is not just in your head. It is in your racing heart, your aching muscles, your disrupted sleep, and your weakened immune system.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          19612,
+          19748
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 19750,
+        "line": 337,
+        "loc": {
+          "end": {
+            "column": 70,
+            "line": 337
+          },
+          "start": {
+            "column": 1,
+            "line": 337
+          }
+        },
+        "message": "Negation reframe found: \"Consistency is not the child of willpower. It is the child of design.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          19750,
+          19819
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 19821,
+        "line": 339,
+        "loc": {
+          "end": {
+            "column": 216,
+            "line": 339
+          },
+          "start": {
+            "column": 1,
+            "line": 339
+          }
+        },
+        "message": "Negation reframe found: \"Building a lasting habit is not a dramatic act of willpower performed once. It is a quiet, repetitive negotiation with your own neurology — one that rewards patience, specificity, and self-compassion over intensity.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          19821,
+          20036
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 20038,
+        "line": 341,
+        "loc": {
+          "end": {
+            "column": 265,
+            "line": 341
+          },
+          "start": {
+            "column": 1,
+            "line": 341
+          }
+        },
+        "message": "Negation reframe found: \"Habits are not built in moments of inspiration. They are built in the ordinary repetitions that come after inspiration fades — the ones that quietly, invisibly, rewire your brain until the behavior is no longer something you have to do but simply something you do.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          20038,
+          20302
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 20304,
+        "line": 343,
+        "loc": {
+          "end": {
+            "column": 130,
+            "line": 343
+          },
+          "start": {
+            "column": 1,
+            "line": 343
+          }
+        },
+        "message": "Negation reframe found: \"Restful, restorative sleep is not a luxury. It is something your body is designed to do — and with the right adjustments, it can.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          20304,
+          20433
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 20435,
+        "line": 345,
+        "loc": {
+          "end": {
+            "column": 67,
+            "line": 345
+          },
+          "start": {
+            "column": 1,
+            "line": 345
+          }
+        },
+        "message": "Negation reframe found: \"Procrastination is not a character flaw. It is an emotion problem.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          20435,
+          20501
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 20503,
+        "line": 347,
+        "loc": {
+          "end": {
+            "column": 188,
+            "line": 347
+          },
+          "start": {
+            "column": 1,
+            "line": 347
+          }
+        },
+        "message": "Negation reframe found: \"Procrastination is not laziness, and it is not a scheduling problem. It is the brain's short-term solution to emotional discomfort — a solution that creates far larger problems over time.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          20503,
+          20690
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 20692,
+        "line": 349,
+        "loc": {
+          "end": {
+            "column": 213,
+            "line": 349
+          },
+          "start": {
+            "column": 1,
+            "line": 349
+          }
+        },
+        "message": "Negation reframe found: \"Burnout is not the inevitable price of ambition or dedication. It is what happens when the systems around us — and sometimes the habits within us — treat human energy as a resource that doesn't need replenishing.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          20692,
+          20904
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 20906,
+        "line": 351,
+        "loc": {
+          "end": {
+            "column": 222,
+            "line": 351
+          },
+          "start": {
+            "column": 1,
+            "line": 351
+          }
+        },
+        "message": "Negation reframe found: \"Couples who communicate well over years are not couples who never hurt each other or never run out of things to say. They are couples who keep choosing to come back — to the conversation, to the discomfort, to each other.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          20906,
+          21127
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 21129,
+        "line": 353,
+        "loc": {
+          "end": {
+            "column": 118,
+            "line": 353
+          },
+          "start": {
+            "column": 1,
+            "line": 353
+          }
+        },
+        "message": "Negation reframe found: \"Putting the phone away is not politeness. It is one of the most effective friendship maintenance behaviors available.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          21129,
+          21246
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 21361,
+        "line": 359,
+        "loc": {
+          "end": {
+            "column": 318,
+            "line": 359
+          },
+          "start": {
+            "column": 1,
+            "line": 359
+          }
+        },
+        "message": "Negation reframe found: \"Good habits are not built through bursts of inspiration or iron willpower. They are built through repeated behavior in stable contexts, small enough to be nearly effortless, tied to existing routines and a clear sense of identity, with immediate rewards that signal to the brain that the behavior is worth automating.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          21361,
+          21678
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 21680,
+        "line": 361,
+        "loc": {
+          "end": {
+            "column": 64,
+            "line": 361
+          },
+          "start": {
+            "column": 1,
+            "line": 361
+          }
+        },
+        "message": "Negation reframe found: \"1/10 Stress is not just a mood. It is a body-wide alarm system.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          21680,
+          21743
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 21745,
+        "line": 363,
+        "loc": {
+          "end": {
+            "column": 59,
+            "line": 363
+          },
+          "start": {
+            "column": 1,
+            "line": 363
+          }
+        },
+        "message": "Negation reframe found: \"But most tantrums are not manipulation. They are overload.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          21745,
+          21803
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 21805,
+        "line": 365,
+        "loc": {
+          "end": {
+            "column": 62,
+            "line": 365
+          },
+          "start": {
+            "column": 1,
+            "line": 365
+          }
+        },
+        "message": "Negation reframe found: \"1/10 Loneliness is not just a sad mood. It is a stress state.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          21805,
+          21866
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 21868,
+        "line": 367,
+        "loc": {
+          "end": {
+            "column": 124,
+            "line": 367
+          },
+          "start": {
+            "column": 1,
+            "line": 367
+          }
+        },
+        "message": "Negation reframe found: \"1/10 Stress is not just a feeling. It is the body’s alarm system, and it changes how you sleep, think, digest, and recover.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          21868,
+          21991
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 50,
+        "index": 21917,
+        "line": 367,
+        "loc": {
+          "end": {
+            "column": 51,
+            "line": 367
+          },
+          "start": {
+            "column": 50,
+            "line": 367
+          }
+        },
+        "message": "Smart quotes found: \"’\". Replace curly quotes with straight quotes.",
+        "range": [
+          21917,
+          21918
+        ],
+        "ruleId": "smart-quotes",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 21993,
+        "line": 369,
+        "loc": {
+          "end": {
+            "column": 77,
+            "line": 369
+          },
+          "start": {
+            "column": 1,
+            "line": 369
+          }
+        },
+        "message": "Negation reframe found: \"Procrastination is not just a mindset problem. It is often a design problem.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          21993,
+          22069
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 22071,
+        "line": 371,
+        "loc": {
+          "end": {
+            "column": 129,
+            "line": 371
+          },
+          "start": {
+            "column": 1,
+            "line": 371
+          }
+        },
+        "message": "Negation reframe found: \"Criticism, contempt, defensiveness, and stonewalling are not rare disasters. They are common habits that slowly poison the room.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          22071,
+          22199
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 22201,
+        "line": 373,
+        "loc": {
+          "end": {
+            "column": 110,
+            "line": 373
+          },
+          "start": {
+            "column": 1,
+            "line": 373
+          }
+        },
+        "message": "Negation reframe found: \"5/10 The real problem is not just the app. It is the habit of keeping a feed open while doing something else.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          22201,
+          22310
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 22312,
+        "line": 375,
+        "loc": {
+          "end": {
+            "column": 43,
+            "line": 375
+          },
+          "start": {
+            "column": 1,
+            "line": 375
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          22312,
+          22354
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 22312,
+        "line": 375,
+        "loc": {
+          "end": {
+            "column": 123,
+            "line": 375
+          },
+          "start": {
+            "column": 1,
+            "line": 375
+          }
+        },
+        "message": "Negation reframe found: \"The point is not to become zen on command. The point is to interrupt the body’s alarm loop long enough for it to cool off.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          22312,
+          22434
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 22312,
+        "line": 375,
+        "loc": {
+          "end": {
+            "column": 123,
+            "line": 375
+          },
+          "start": {
+            "column": 1,
+            "line": 375
+          }
+        },
+        "message": "Repeated sentence frame found: \"the point is\". Vary the sentence frame.",
+        "range": [
+          22312,
+          22434
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 44,
+        "index": 22355,
+        "line": 375,
+        "loc": {
+          "end": {
+            "column": 123,
+            "line": 375
+          },
+          "start": {
+            "column": 44,
+            "line": 375
+          }
+        },
+        "message": "Generic signposting found: the-point-is-to. Replace the frame with the concrete claim.",
+        "range": [
+          22355,
+          22434
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 44,
+        "index": 22355,
+        "line": 375,
+        "loc": {
+          "end": {
+            "column": 123,
+            "line": 375
+          },
+          "start": {
+            "column": 44,
+            "line": 375
+          }
+        },
+        "message": "Summative frame found: \"the point is\". State the concrete point instead.",
+        "range": [
+          22355,
+          22434
+        ],
+        "ruleId": "summative-closer",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 78,
+        "index": 22389,
+        "line": 375,
+        "loc": {
+          "end": {
+            "column": 79,
+            "line": 375
+          },
+          "start": {
+            "column": 78,
+            "line": 375
+          }
+        },
+        "message": "Smart quotes found: \"’\". Replace curly quotes with straight quotes.",
+        "range": [
+          22389,
+          22390
+        ],
+        "ruleId": "smart-quotes",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 22436,
+        "line": 377,
+        "loc": {
+          "end": {
+            "column": 146,
+            "line": 377
+          },
+          "start": {
+            "column": 1,
+            "line": 377
+          }
+        },
+        "message": "Negation reframe found: \"The goal is not to become the loudest person in every room. The goal is to reduce fear enough that social life stops being governed by avoidance.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          22436,
+          22581
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 22436,
+        "line": 377,
+        "loc": {
+          "end": {
+            "column": 146,
+            "line": 377
+          },
+          "start": {
+            "column": 1,
+            "line": 377
+          }
+        },
+        "message": "Repeated sentence frame found: \"the goal is\". Vary the sentence frame.",
+        "range": [
+          22436,
+          22581
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 61,
+        "index": 22496,
+        "line": 377,
+        "loc": {
+          "end": {
+            "column": 146,
+            "line": 377
+          },
+          "start": {
+            "column": 61,
+            "line": 377
+          }
+        },
+        "message": "Generic signposting found: the-goal-is-to. Replace the frame with the concrete claim.",
+        "range": [
+          22496,
+          22581
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 22583,
+        "line": 379,
+        "loc": {
+          "end": {
+            "column": 48,
+            "line": 379
+          },
+          "start": {
+            "column": 1,
+            "line": 379
+          }
+        },
+        "message": "Contrastive aphorism found: abstract-evaluative-pair. Replace the slogan with a concrete claim.",
+        "range": [
+          22583,
+          22630
+        ],
+        "ruleId": "contrastive-aphorism",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 22583,
+        "line": 379,
+        "loc": {
+          "end": {
+            "column": 131,
+            "line": 379
+          },
+          "start": {
+            "column": 1,
+            "line": 379
+          }
+        },
+        "message": "Negation reframe found: \"The fix is not to stop setting ambitious goals. The fix is to stop asking one giant outcome to carry your whole motivational life.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          22583,
+          22713
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 22583,
+        "line": 379,
+        "loc": {
+          "end": {
+            "column": 131,
+            "line": 379
+          },
+          "start": {
+            "column": 1,
+            "line": 379
+          }
+        },
+        "message": "Repeated sentence frame found: \"the fix is\". Vary the sentence frame.",
+        "range": [
+          22583,
+          22713
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 22715,
+        "line": 381,
+        "loc": {
+          "end": {
+            "column": 73,
+            "line": 381
+          },
+          "start": {
+            "column": 1,
+            "line": 381
+          }
+        },
+        "message": "Contrastive aphorism found: abstract-evaluative-pair. Replace the slogan with a concrete claim.",
+        "range": [
+          22715,
+          22787
+        ],
+        "ruleId": "contrastive-aphorism",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 22715,
+        "line": 381,
+        "loc": {
+          "end": {
+            "column": 123,
+            "line": 381
+          },
+          "start": {
+            "column": 1,
+            "line": 381
+          }
+        },
+        "message": "Negation reframe found: \"The fix is not to dream smaller in the timid, motivational-poster sense. The fix is to make the goal usable in daily life.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          22715,
+          22837
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 22715,
+        "line": 381,
+        "loc": {
+          "end": {
+            "column": 123,
+            "line": 381
+          },
+          "start": {
+            "column": 1,
+            "line": 381
+          }
+        },
+        "message": "Repeated sentence frame found: \"the fix is\". Vary the sentence frame.",
+        "range": [
+          22715,
+          22837
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 22839,
+        "line": 383,
+        "loc": {
+          "end": {
+            "column": 133,
+            "line": 383
+          },
+          "start": {
+            "column": 1,
+            "line": 383
+          }
+        },
+        "message": "Negation reframe found: \"The goal is not a life with zero stress. The goal is a body that gets enough recovery to stop acting like every Tuesday is a crisis.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          22839,
+          22971
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 22839,
+        "line": 383,
+        "loc": {
+          "end": {
+            "column": 133,
+            "line": 383
+          },
+          "start": {
+            "column": 1,
+            "line": 383
+          }
+        },
+        "message": "Repeated sentence frame found: \"the goal is\". Vary the sentence frame.",
+        "range": [
+          22839,
+          22971
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 22973,
+        "line": 385,
+        "loc": {
+          "end": {
+            "column": 109,
+            "line": 385
+          },
+          "start": {
+            "column": 1,
+            "line": 385
+          }
+        },
+        "message": "Negation reframe found: \"The child is not giving you a performance. The child is trying to hold together a moment that feels too big.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          22973,
+          23081
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 23083,
+        "line": 387,
+        "loc": {
+          "end": {
+            "column": 76,
+            "line": 387
+          },
+          "start": {
+            "column": 1,
+            "line": 387
+          }
+        },
+        "message": "Negation reframe found: \"The goal is not instant obedience. The goal is a child who recovers faster.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          23083,
+          23158
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 23083,
+        "line": 387,
+        "loc": {
+          "end": {
+            "column": 76,
+            "line": 387
+          },
+          "start": {
+            "column": 1,
+            "line": 387
+          }
+        },
+        "message": "Repeated sentence frame found: \"the goal is\". Vary the sentence frame.",
+        "range": [
+          23083,
+          23158
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 23160,
+        "line": 389,
+        "loc": {
+          "end": {
+            "column": 45,
+            "line": 389
+          },
+          "start": {
+            "column": 1,
+            "line": 389
+          }
+        },
+        "message": "Demonstrative emphasis found: \"The interesting part is that nobody noticed.\". Reduce repeated short emphasis lines.",
+        "range": [
+          23160,
+          23204
+        ],
+        "ruleId": "demonstrative-emphasis",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 23206,
+        "line": 391,
+        "loc": {
+          "end": {
+            "column": 70,
+            "line": 391
+          },
+          "start": {
+            "column": 1,
+            "line": 391
+          }
+        },
+        "message": "Boilerplate framing found: following + explore. Start with the specific point.",
+        "range": [
+          23206,
+          23275
+        ],
+        "ruleId": "boilerplate-framing",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 23277,
+        "line": 393,
+        "loc": {
+          "end": {
+            "column": 48,
+            "line": 393
+          },
+          "start": {
+            "column": 1,
+            "line": 393
+          }
+        },
+        "message": "Universalizing claim found: most parents keep reaching. Replace the broad claim with a bounded claim.",
+        "range": [
+          23277,
+          23324
+        ],
+        "ruleId": "universalizing-claims",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 23326,
+        "line": 395,
+        "loc": {
+          "end": {
+            "column": 45,
+            "line": 395
+          },
+          "start": {
+            "column": 1,
+            "line": 395
+          }
+        },
+        "message": "Universalizing claim found: many people try. Replace the broad claim with a bounded claim.",
+        "range": [
+          23326,
+          23370
+        ],
+        "ruleId": "universalizing-claims",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 80,
+        "index": 24781,
+        "line": 423,
+        "loc": {
+          "end": {
+            "column": 98,
+            "line": 423
+          },
+          "start": {
+            "column": 80,
+            "line": 423
+          }
+        },
+        "message": "Semantic thinness (empty-scene-transition): Catch generic transition lines that declare change, passage, or motion without naming what changed or why. Matched template: {genericSubject} {passageVerb}.",
+        "range": [
+          24781,
+          24799
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      }
+    ]
+  }
+]

@@ -1,4 +1,4 @@
-import { wordTokens } from "../../shared/text/tokens.js";
+import { findVocabularyMatches } from "./private/vocabulary-context.js";
 import { oneToOneRule } from "../private/textlint-rule-builders.js";
 
 const LLM_VOCABULARY = new Set([
@@ -18,13 +18,11 @@ const LLM_VOCABULARY = new Set([
 
 const rule = oneToOneRule({
   detect: (unit) =>
-    wordTokens(unit.text)
-      .filter((token) => LLM_VOCABULARY.has(token.normalized))
-      .map((token) => ({
-        evidence: token.text,
-        label: token.text,
-        range: { start: token.start, end: token.end }
-      })),
+    findVocabularyMatches(unit.text, [...LLM_VOCABULARY]).map((match) => ({
+      evidence: match.text,
+      label: match.text,
+      range: { start: match.start, end: match.end }
+    })),
   family: "words",
   formatMessage: (report) =>
     `LLM vocabulary found: "${report.evidence}". Replace the stock diction with a concrete word.`,

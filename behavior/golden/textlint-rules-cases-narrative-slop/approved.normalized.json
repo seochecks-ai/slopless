@@ -1,0 +1,1161 @@
+[
+  {
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/narrative-slop/hits.md",
+    "messages": [
+      {
+        "column": 5,
+        "index": 4,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 31,
+            "line": 1
+          },
+          "start": {
+            "column": 5,
+            "line": 1
+          }
+        },
+        "message": "Narrative cliche (body sensation/heart-chest): Reports stock heartbeat-as-emotion body shorthand from Slop Forensics narrative ngrams. Matched template: heart {motion} in {possessive} chest",
+        "range": [
+          4,
+          30
+        ],
+        "ruleId": "narrative-cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 3,
+        "index": 54,
+        "line": 3,
+        "loc": {
+          "end": {
+            "column": 28,
+            "line": 3
+          },
+          "start": {
+            "column": 3,
+            "line": 3
+          }
+        },
+        "message": "Narrative cliche (body sensation/spine-shiver): Reports stock shiver or chill spine reaction from Slop Forensics narrative ngrams. Matched template: {reaction} {verb} down her spine",
+        "range": [
+          54,
+          79
+        ],
+        "ruleId": "narrative-cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 13,
+        "index": 117,
+        "line": 5,
+        "loc": {
+          "end": {
+            "column": 45,
+            "line": 5
+          },
+          "start": {
+            "column": 13,
+            "line": 5
+          }
+        },
+        "message": "Narrative cliche (voice beat/speech-voice-quality): Reports dialogue tags padded with stock voice-quality beats from Slop Forensics narrative ngrams. Matched template: {speechVerb} her voice {quality}",
+        "range": [
+          117,
+          149
+        ],
+        "ruleId": "narrative-cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 4,
+        "index": 155,
+        "line": 7,
+        "loc": {
+          "end": {
+            "column": 40,
+            "line": 7
+          },
+          "start": {
+            "column": 4,
+            "line": 7
+          }
+        },
+        "message": "Narrative cliche (voice beat/voice-laced): Reports stock emotion-as-voice-material phrasing from Slop Forensics narrative ngrams. Matched template: {speechVerb} his voice laced with {emotion}",
+        "range": [
+          155,
+          191
+        ],
+        "ruleId": "narrative-cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 5,
+        "index": 198,
+        "line": 9,
+        "loc": {
+          "end": {
+            "column": 31,
+            "line": 9
+          },
+          "start": {
+            "column": 5,
+            "line": 9
+          }
+        },
+        "message": "Narrative cliche (atmosphere/air-thick): Reports stock atmosphere-as-thick-air phrasing from Slop Forensics narrative ngrams. Matched template: air was thick with {quality}",
+        "range": [
+          198,
+          224
+        ],
+        "ruleId": "narrative-cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 5,
+        "index": 231,
+        "line": 11,
+        "loc": {
+          "end": {
+            "column": 32,
+            "line": 11
+          },
+          "start": {
+            "column": 5,
+            "line": 11
+          }
+        },
+        "message": "Narrative cliche (atmosphere/hung-in-air): Reports stock words or silence hanging in the air from Slop Forensics narrative ngrams. Matched template: {subject} hung heavy in the air",
+        "range": [
+          231,
+          258
+        ],
+        "ruleId": "narrative-cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 15,
+        "index": 275,
+        "line": 13,
+        "loc": {
+          "end": {
+            "column": 35,
+            "line": 13
+          },
+          "start": {
+            "column": 15,
+            "line": 13
+          }
+        },
+        "message": "Narrative cliche (atmosphere/long-shadows): Reports stock light-and-shadow atmosphere phrasing from Slop Forensics narrative ngrams. Matched template: casting long shadows",
+        "range": [
+          275,
+          295
+        ],
+        "ruleId": "narrative-cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 314,
+        "line": 15,
+        "loc": {
+          "end": {
+            "column": 23,
+            "line": 15
+          },
+          "start": {
+            "column": 1,
+            "line": 15
+          }
+        },
+        "message": "Narrative cliche (time passage/days-turned-weeks): Reports stock compressed time-passage phrasing from Slop Forensics narrative ngrams. Matched template: days turned into weeks",
+        "range": [
+          314,
+          336
+        ],
+        "ruleId": "narrative-cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 5,
+        "index": 370,
+        "line": 17,
+        "loc": {
+          "end": {
+            "column": 33,
+            "line": 17
+          },
+          "start": {
+            "column": 5,
+            "line": 17
+          }
+        },
+        "message": "Narrative cliche (time passage/sun-horizon): Reports stock sunset transition phrasing from Slop Forensics narrative ngrams. Matched template: sun dipped below the horizon",
+        "range": [
+          370,
+          398
+        ],
+        "ruleId": "narrative-cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 401,
+        "line": 19,
+        "loc": {
+          "end": {
+            "column": 183,
+            "line": 19
+          },
+          "start": {
+            "column": 1,
+            "line": 19
+          }
+        },
+        "message": "Flat action cadence: 4 adjacent short simple sentences use subject-action beats (sat, stared, look, hung). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          401,
+          583
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 56,
+        "index": 456,
+        "line": 19,
+        "loc": {
+          "end": {
+            "column": 105,
+            "line": 19
+          },
+          "start": {
+            "column": 56,
+            "line": 19
+          }
+        },
+        "message": "Perception verb density: 2 perception verbs in a short span (stared, look).",
+        "range": [
+          456,
+          505
+        ],
+        "ruleId": "perception-verb-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 585,
+        "line": 21,
+        "loc": {
+          "end": {
+            "column": 99,
+            "line": 21
+          },
+          "start": {
+            "column": 1,
+            "line": 21
+          }
+        },
+        "message": "Flat action cadence: 3 adjacent short simple sentences use subject-action beats (stepped, picked, was). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          585,
+          683
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 8,
+        "index": 692,
+        "line": 23,
+        "loc": {
+          "end": {
+            "column": 130,
+            "line": 23
+          },
+          "start": {
+            "column": 8,
+            "line": 23
+          }
+        },
+        "message": "Perception verb density: 4 perception verbs in a short span (watched, observe, looked, looking).",
+        "range": [
+          692,
+          814
+        ],
+        "ruleId": "perception-verb-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 829,
+        "line": 25,
+        "loc": {
+          "end": {
+            "column": 132,
+            "line": 25
+          },
+          "start": {
+            "column": 1,
+            "line": 25
+          }
+        },
+        "message": "Flat action cadence: 3 adjacent short simple sentences use subject-action beats (stared, look, hung). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          829,
+          960
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 5,
+        "index": 833,
+        "line": 25,
+        "loc": {
+          "end": {
+            "column": 54,
+            "line": 25
+          },
+          "start": {
+            "column": 5,
+            "line": 25
+          }
+        },
+        "message": "Perception verb density: 2 perception verbs in a short span (stared, look).",
+        "range": [
+          833,
+          882
+        ],
+        "ruleId": "perception-verb-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 962,
+        "line": 27,
+        "loc": {
+          "end": {
+            "column": 223,
+            "line": 27
+          },
+          "start": {
+            "column": 1,
+            "line": 27
+          }
+        },
+        "message": "Flat action cadence: 4 adjacent short simple sentences use subject-action beats (climbed, pulled, walked, crouched). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          962,
+          1184
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 7,
+        "index": 968,
+        "line": 27,
+        "loc": {
+          "end": {
+            "column": 183,
+            "line": 27
+          },
+          "start": {
+            "column": 7,
+            "line": 27
+          }
+        },
+        "message": "Body-action density: 4 movement cues in a short span (climbed, pulled, walked, crouched).",
+        "range": [
+          968,
+          1144
+        ],
+        "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1186,
+        "line": 29,
+        "loc": {
+          "end": {
+            "column": 80,
+            "line": 29
+          },
+          "start": {
+            "column": 1,
+            "line": 29
+          }
+        },
+        "message": "Flat action cadence: 3 adjacent short simple sentences use subject-action beats (twitched, angled, shifted). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          1186,
+          1265
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 10,
+        "index": 1195,
+        "line": 29,
+        "loc": {
+          "end": {
+            "column": 62,
+            "line": 29
+          },
+          "start": {
+            "column": 10,
+            "line": 29
+          }
+        },
+        "message": "Body-action density: 3 body cues in a short span (ears twitched, tail angled, paws shifted).",
+        "range": [
+          1195,
+          1247
+        ],
+        "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1267,
+        "line": 31,
+        "loc": {
+          "end": {
+            "column": 100,
+            "line": 31
+          },
+          "start": {
+            "column": 1,
+            "line": 31
+          }
+        },
+        "message": "Flat action cadence: 3 adjacent short simple sentences use subject-action beats (turned, looked, crossed). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          1267,
+          1366
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 7,
+        "index": 1273,
+        "line": 31,
+        "loc": {
+          "end": {
+            "column": 99,
+            "line": 31
+          },
+          "start": {
+            "column": 7,
+            "line": 31
+          }
+        },
+        "message": "Body-action density: 3 movement cues in a short span (turned her head, crossed her arms, waited).",
+        "range": [
+          1273,
+          1365
+        ],
+        "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 7,
+        "index": 1273,
+        "line": 31,
+        "loc": {
+          "end": {
+            "column": 99,
+            "line": 31
+          },
+          "start": {
+            "column": 7,
+            "line": 31
+          }
+        },
+        "message": "Low-information beat density: 5 weak body/action beats in a short span (turned, eyes, looked, chest, waited).",
+        "range": [
+          1273,
+          1365
+        ],
+        "ruleId": "low-information-beat-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1368,
+        "line": 33,
+        "loc": {
+          "end": {
+            "column": 130,
+            "line": 33
+          },
+          "start": {
+            "column": 1,
+            "line": 33
+          }
+        },
+        "message": "Flat action cadence: 3 adjacent short simple sentences use subject-action beats (walked, stopped, looked). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          1368,
+          1497
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 7,
+        "index": 1374,
+        "line": 33,
+        "loc": {
+          "end": {
+            "column": 102,
+            "line": 33
+          },
+          "start": {
+            "column": 7,
+            "line": 33
+          }
+        },
+        "message": "Body-action density: 3 movement cues in a short span (walked over, stopped next to, looked up at).",
+        "range": [
+          1374,
+          1469
+        ],
+        "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1499,
+        "line": 35,
+        "loc": {
+          "end": {
+            "column": 83,
+            "line": 35
+          },
+          "start": {
+            "column": 1,
+            "line": 35
+          }
+        },
+        "message": "Fragment stack found: Cassia's ears flattened. Her tail flicked once. Her paws shifted against the tile. Rewrite the clipped cadence as normal prose.",
+        "range": [
+          1499,
+          1581
+        ],
+        "ruleId": "fragment-stacking",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 10,
+        "index": 1508,
+        "line": 35,
+        "loc": {
+          "end": {
+            "column": 65,
+            "line": 35
+          },
+          "start": {
+            "column": 10,
+            "line": 35
+          }
+        },
+        "message": "Body-action density: 3 body cues in a short span (ears flattened, tail flicked, paws shifted).",
+        "range": [
+          1508,
+          1563
+        ],
+        "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1583,
+        "line": 37,
+        "loc": {
+          "end": {
+            "column": 120,
+            "line": 37
+          },
+          "start": {
+            "column": 1,
+            "line": 37
+          }
+        },
+        "message": "Flat action cadence: 3 adjacent short simple sentences use subject-action beats (blinked, sat, looked). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          1583,
+          1702
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1704,
+        "line": 39,
+        "loc": {
+          "end": {
+            "column": 34,
+            "line": 39
+          },
+          "start": {
+            "column": 1,
+            "line": 39
+          }
+        },
+        "message": "Semantic thinness (summary-fog-transition): Catch vague transition lines that replace an event sequence with blur, haze, or fog. Matched template: {summarySpan} was a {fogNoun}.",
+        "range": [
+          1704,
+          1737
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1704,
+        "line": 39,
+        "loc": {
+          "end": {
+            "column": 118,
+            "line": 39
+          },
+          "start": {
+            "column": 1,
+            "line": 39
+          }
+        },
+        "message": "Flat action cadence: 3 adjacent short simple sentences use subject-action beats (was, tied, hear). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          1704,
+          1821
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 7,
+        "index": 1829,
+        "line": 41,
+        "loc": {
+          "end": {
+            "column": 72,
+            "line": 41
+          },
+          "start": {
+            "column": 7,
+            "line": 41
+          }
+        },
+        "message": "Body-action density: 3 body cues in a short span (took a deep breath, voice was low, smile played on her lips).",
+        "range": [
+          1829,
+          1894
+        ],
+        "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 7,
+        "index": 1903,
+        "line": 43,
+        "loc": {
+          "end": {
+            "column": 70,
+            "line": 43
+          },
+          "start": {
+            "column": 7,
+            "line": 43
+          }
+        },
+        "message": "Body-action density: 3 body cues in a short span (let out a breath, voice was low, smile played on his lips).",
+        "range": [
+          1903,
+          1966
+        ],
+        "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 8,
+        "index": 1976,
+        "line": 45,
+        "loc": {
+          "end": {
+            "column": 67,
+            "line": 45
+          },
+          "start": {
+            "column": 8,
+            "line": 45
+          }
+        },
+        "message": "Body-action density: 3 body cues in a short span (took a deep breath, let out a breath, voice was low).",
+        "range": [
+          1976,
+          2035
+        ],
+        "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2038,
+        "line": 47,
+        "loc": {
+          "end": {
+            "column": 20,
+            "line": 47
+          },
+          "start": {
+            "column": 1,
+            "line": 47
+          }
+        },
+        "message": "Narrative cliche (foreshadowing/omniscient-foreshadowing): Reports stock omniscient foreshadowing frames from fiction slop sources. Matched template: little did {pronoun} know",
+        "range": [
+          2038,
+          2057
+        ],
+        "ruleId": "narrative-cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2089,
+        "line": 49,
+        "loc": {
+          "end": {
+            "column": 19,
+            "line": 49
+          },
+          "start": {
+            "column": 1,
+            "line": 49
+          }
+        },
+        "message": "Narrative cliche (foreshadowing/omniscient-foreshadowing): Reports stock omniscient foreshadowing frames from fiction slop sources. Matched template: unbeknownst to {objectPronoun}",
+        "range": [
+          2089,
+          2107
+        ],
+        "ruleId": "narrative-cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2145,
+        "line": 51,
+        "loc": {
+          "end": {
+            "column": 18,
+            "line": 51
+          },
+          "start": {
+            "column": 1,
+            "line": 51
+          }
+        },
+        "message": "Narrative cliche (foreshadowing/maybe-just-maybe): Reports stock tentative hope phrasing from fiction slop sources. Matched template: maybe just maybe",
+        "range": [
+          2145,
+          2162
+        ],
+        "ruleId": "narrative-cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2145,
+        "line": 51,
+        "loc": {
+          "end": {
+            "column": 47,
+            "line": 51
+          },
+          "start": {
+            "column": 1,
+            "line": 51
+          }
+        },
+        "message": "Hedge stacking found: 2 hedge words in one sentence. Keep fewer than 2.",
+        "range": [
+          2145,
+          2191
+        ],
+        "ruleId": "hedge-stacking",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2193,
+        "line": 53,
+        "loc": {
+          "end": {
+            "column": 33,
+            "line": 53
+          },
+          "start": {
+            "column": 1,
+            "line": 53
+          }
+        },
+        "message": "Narrative cliche (time passage/felt-like-eternity): Reports stock inflated time-passage phrasing from fiction slop sources. Matched template: for what {seeming} like {longTime}",
+        "range": [
+          2193,
+          2225
+        ],
+        "ruleId": "narrative-cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2193,
+        "line": 53,
+        "loc": {
+          "end": {
+            "column": 58,
+            "line": 53
+          },
+          "start": {
+            "column": 1,
+            "line": 53
+          }
+        },
+        "message": "Semantic thinness (empty-scene-state): Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail. Matched template: {placeSubject} {linkingVerb} {thinState}.",
+        "range": [
+          2193,
+          2250
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 8,
+        "index": 2259,
+        "line": 55,
+        "loc": {
+          "end": {
+            "column": 111,
+            "line": 55
+          },
+          "start": {
+            "column": 8,
+            "line": 55
+          }
+        },
+        "message": "Body-action density: 3 body cues in a short span (could not help but feel, eyes never leaving, felt a surge).",
+        "range": [
+          2259,
+          2362
+        ],
+        "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 7,
+        "index": 2380,
+        "line": 57,
+        "loc": {
+          "end": {
+            "column": 121,
+            "line": 57
+          },
+          "start": {
+            "column": 7,
+            "line": 57
+          }
+        },
+        "message": "Body-action density: 3 body cues in a short span (couldn't shake the feeling, ghost of a smile, dangerous glint).",
+        "range": [
+          2380,
+          2494
+        ],
+        "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2517,
+        "line": 59,
+        "loc": {
+          "end": {
+            "column": 91,
+            "line": 59
+          },
+          "start": {
+            "column": 1,
+            "line": 59
+          }
+        },
+        "message": "Flat action cadence: 3 adjacent short simple sentences use subject-action beats (stepped, rested, looked). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          2517,
+          2607
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 7,
+        "index": 2615,
+        "line": 61,
+        "loc": {
+          "end": {
+            "column": 58,
+            "line": 61
+          },
+          "start": {
+            "column": 7,
+            "line": 61
+          }
+        },
+        "message": "Body-action density: 3 body cues in a short span (blinked, jaw tightened, shoulders stiffened).",
+        "range": [
+          2615,
+          2666
+        ],
+        "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 7,
+        "index": 2675,
+        "line": 63,
+        "loc": {
+          "end": {
+            "column": 64,
+            "line": 63
+          },
+          "start": {
+            "column": 7,
+            "line": 63
+          }
+        },
+        "message": "Perception verb density: 3 perception verbs in a short span (scanned, noticed, studied).",
+        "range": [
+          2675,
+          2732
+        ],
+        "ruleId": "perception-verb-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2748,
+        "line": 65,
+        "loc": {
+          "end": {
+            "column": 36,
+            "line": 65
+          },
+          "start": {
+            "column": 1,
+            "line": 65
+          }
+        },
+        "message": "Narrative cliche (face beat/flicker-crossed-face): Reports stock face-as-emotion-screen phrasing. Matched template: a flicker of {emotion} crossed {possessive} face",
+        "range": [
+          2748,
+          2783
+        ],
+        "ruleId": "narrative-cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2786,
+        "line": 67,
+        "loc": {
+          "end": {
+            "column": 43,
+            "line": 67
+          },
+          "start": {
+            "column": 1,
+            "line": 67
+          }
+        },
+        "message": "Narrative cliche (eye beat/eyes-unreadable): Reports stock unreadable-eye reaction beats. Matched template: {possessive} eyes {verb} with something unreadable",
+        "range": [
+          2786,
+          2828
+        ],
+        "ruleId": "narrative-cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 5,
+        "index": 2835,
+        "line": 69,
+        "loc": {
+          "end": {
+            "column": 55,
+            "line": 69
+          },
+          "start": {
+            "column": 5,
+            "line": 69
+          }
+        },
+        "message": "Narrative cliche (body sensation/unknown-held-breath): Reports stock released-breath revelation beats. Matched template: released a breath she did not know she was holding",
+        "range": [
+          2835,
+          2885
+        ],
+        "ruleId": "narrative-cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2888,
+        "line": 71,
+        "loc": {
+          "end": {
+            "column": 20,
+            "line": 71
+          },
+          "start": {
+            "column": 1,
+            "line": 71
+          }
+        },
+        "message": "Narrative cliche (time passage/time-slowed): Reports stock time-slowing drama beats. Matched template: time seemed to slow",
+        "range": [
+          2888,
+          2907
+        ],
+        "ruleId": "narrative-cliches",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 8,
+        "index": 2929,
+        "line": 73,
+        "loc": {
+          "end": {
+            "column": 101,
+            "line": 73
+          },
+          "start": {
+            "column": 8,
+            "line": 73
+          }
+        },
+        "message": "Low-information beat density: 7 weak body/action beats in a short span (glanced, throat, tightened, stepped, eyes, found, waited).",
+        "range": [
+          2929,
+          3022
+        ],
+        "ruleId": "low-information-beat-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 26,
+        "index": 2947,
+        "line": 73,
+        "loc": {
+          "end": {
+            "column": 47,
+            "line": 73
+          },
+          "start": {
+            "column": 26,
+            "line": 73
+          }
+        },
+        "message": "Semantic thinness (body-emotion-shorthand): Catch stock body-feeling lines that translate emotion into generic chest, breath, heart, or limb sensations without naming the thought, choice, or concrete pressure. Matched template: {bodySubject} {bodyReactionVerb}.",
+        "range": [
+          2947,
+          2968
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 48,
+        "index": 2969,
+        "line": 73,
+        "loc": {
+          "end": {
+            "column": 65,
+            "line": 73
+          },
+          "start": {
+            "column": 48,
+            "line": 73
+          }
+        },
+        "message": "Semantic thinness (low-information-physical-blocking): Catch bland physical action beats that move bodies around without adding object, goal, cause, or consequence. Matched template: {humanSubject} {bodyVerb} {weakLocative}.",
+        "range": [
+          2969,
+          2986
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/narrative-slop/no-hits.md",
+    "messages": []
+  }
+]

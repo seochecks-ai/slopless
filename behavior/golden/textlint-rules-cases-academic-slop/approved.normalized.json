@@ -1,0 +1,218 @@
+[
+  {
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/academic-slop/hits.md",
+    "messages": [
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 2,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
+        "message": "Coleman-Liau is 16.38. Keep it at 12 or lower.",
+        "range": [
+          0,
+          1
+        ],
+        "ruleId": "coleman-liau",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 2,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
+        "message": "Flesch Reading Ease is 22.17. Keep it at 61 or higher.",
+        "range": [
+          0,
+          1
+        ],
+        "ruleId": "flesch-kincaid",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 2,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
+        "message": "Gunning Fog is 16.1. Keep it at 12 or lower.",
+        "range": [
+          0,
+          1
+        ],
+        "ruleId": "gunning-fog",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 19,
+        "index": 18,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 44,
+            "line": 1
+          },
+          "start": {
+            "column": 19,
+            "line": 1
+          }
+        },
+        "message": "Tortured phrase found: \"counterfeit consciousness\". Replace it with the standard scientific term.",
+        "range": [
+          18,
+          43
+        ],
+        "ruleId": "tortured-phrases",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 38,
+        "index": 125,
+        "line": 3,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 3
+          },
+          "start": {
+            "column": 38,
+            "line": 3
+          }
+        },
+        "message": "Tortured phrase found: \"bosom peril\". Replace it with the standard scientific term.",
+        "range": [
+          125,
+          136
+        ],
+        "ruleId": "tortured-phrases",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 21,
+        "index": 172,
+        "line": 5,
+        "loc": {
+          "end": {
+            "column": 35,
+            "line": 5
+          },
+          "start": {
+            "column": 21,
+            "line": 5
+          }
+        },
+        "message": "Tortured phrase found: \"sign to clamor\". Replace it with the standard scientific term.",
+        "range": [
+          172,
+          186
+        ],
+        "ruleId": "tortured-phrases",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 31,
+        "index": 246,
+        "line": 7,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 7
+          },
+          "start": {
+            "column": 31,
+            "line": 7
+          }
+        },
+        "message": "Tortured phrase found: \"man-made reasoning\". Replace it with the standard scientific term.",
+        "range": [
+          246,
+          264
+        ],
+        "ruleId": "tortured-phrases",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 24,
+        "index": 325,
+        "line": 9,
+        "loc": {
+          "end": {
+            "column": 56,
+            "line": 9
+          },
+          "start": {
+            "column": 24,
+            "line": 9
+          }
+        },
+        "message": "Tortured phrase found: \"data and interchanges innovation\". Replace it with the standard scientific term.",
+        "range": [
+          325,
+          357
+        ],
+        "ruleId": "tortured-phrases",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 36,
+        "index": 448,
+        "line": 11,
+        "loc": {
+          "end": {
+            "column": 51,
+            "line": 11
+          },
+          "start": {
+            "column": 36,
+            "line": 11
+          }
+        },
+        "message": "Tortured phrase found: \"shut circuit tv\". Replace it with the standard scientific term.",
+        "range": [
+          448,
+          463
+        ],
+        "ruleId": "tortured-phrases",
+        "severity": 2,
+        "type": "lint"
+      }
+    ]
+  },
+  {
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/academic-slop/no-hits.md",
+    "messages": []
+  }
+]

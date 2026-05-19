@@ -3,6 +3,18 @@ import { oneToOneRule } from "../private/textlint-rule-builders.js";
 
 const MAX_DRAMATIC_AFTER_COLON_WORDS = 5;
 const CONTENT_REFERENCE_MARKER = ":contentReference[";
+const DRAMATIC_BEFORE_COLON_MARKERS = [
+  "hit me",
+  "one thing was clear",
+  "saw it",
+  "the answer is simple",
+  "the lesson is clear",
+  "the point is clear",
+  "the problem is simple",
+  "the takeaway is clear",
+  "the truth is",
+  "the verdict was simple"
+];
 
 type DramaticColonMatch = {
   readonly end: number;
@@ -38,6 +50,40 @@ function containsComma(text: string): boolean {
   }
 
   return false;
+}
+
+function isClockColon(text: string, colonIndex: number): boolean {
+  const previous = text[colonIndex - 1];
+  const next = text[colonIndex + 1];
+
+  return (
+    previous !== undefined &&
+    next !== undefined &&
+    previous >= "0" &&
+    previous <= "9" &&
+    next >= "0" &&
+    next <= "9"
+  );
+}
+
+function normalizedBeforeColon(text: string, colonIndex: number): string {
+  let normalized = "";
+
+  for (const character of text.slice(0, colonIndex).toLocaleLowerCase("en")) {
+    const isDigit = character >= "0" && character <= "9";
+    const isLowercaseAscii = character >= "a" && character <= "z";
+    normalized += isDigit || isLowercaseAscii ? character : " ";
+  }
+
+  return normalized.split(" ").filter(Boolean).join(" ");
+}
+
+function isDramaticColonContext(text: string, colonIndex: number): boolean {
+  const before = normalizedBeforeColon(text, colonIndex);
+
+  return DRAMATIC_BEFORE_COLON_MARKERS.some((marker) =>
+    before.endsWith(marker)
+  );
 }
 
 function isMeridiemInnerPeriod(text: string, index: number): boolean {
@@ -80,7 +126,11 @@ function dramaticColonAt(
   text: string,
   colonIndex: number
 ): DramaticColonMatch | undefined {
-  if (isArtifactColon(text, colonIndex)) {
+  if (
+    isArtifactColon(text, colonIndex) ||
+    isClockColon(text, colonIndex) ||
+    !isDramaticColonContext(text, colonIndex)
+  ) {
     return undefined;
   }
 

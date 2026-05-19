@@ -1,10 +1,30 @@
 version: 1
-suites:
+features:
   textlint-rules:
+    suites:
+      - textlint-rules-cases-academic-slop
+      - textlint-rules-cases-markdown-layout
+      - textlint-rules-cases-metrics
+      - textlint-rules-cases-narrative-slop
+      - textlint-rules-cases-no-signal
+      - textlint-rules-cases-orthography
+      - textlint-rules-cases-phrases
+      - textlint-rules-cases-semantic-thinness
+      - textlint-rules-cases-syntactic-patterns
+      - textlint-rules-cases-term-policy
+      - textlint-rules-cases-words
+      - textlint-rules-corpus-editorial-style
+      - textlint-rules-corpus-engineering-review
+      - textlint-rules-corpus-health-and-parenting
+      - textlint-rules-corpus-linkedin-ai-search
+      - textlint-rules-corpus-metrics-and-markdown
+      - textlint-rules-corpus-narrative-scenes
+      - textlint-rules-corpus-technical-terminology
+suites:
+  textlint-rules-cases-academic-slop:
     fixtures:
-      - "behavior/fixtures/textlint-rules/cases/*/*.md"
-      - "behavior/fixtures/textlint-rules/corpus/*.md"
-    command:
+      - "behavior/fixtures/textlint-rules/cases/academic-slop/*.md"
+    command: &textlint_command
       argv:
         - "scripts/behavior-replay.sh"
         - "{fixtures}"
@@ -12,6 +32,142 @@ suites:
         - 0
         - 1
     storage:
-      approved_dir: "behavior/golden/textlint-rules"
-      received_dir: ".fixture3/textlint-rules"
-      diff_dir: ".fixture3/textlint-rules"
+      approved_dir: "behavior/golden/textlint-rules-cases-academic-slop"
+      received_dir: ".fixture3/textlint-rules-cases-academic-slop"
+      diff_dir: ".fixture3/textlint-rules-cases-academic-slop"
+  textlint-rules-cases-markdown-layout:
+    fixtures:
+      - "behavior/fixtures/textlint-rules/cases/markdown-layout/*.md"
+    command: *textlint_command
+    storage:
+      approved_dir: "behavior/golden/textlint-rules-cases-markdown-layout"
+      received_dir: ".fixture3/textlint-rules-cases-markdown-layout"
+      diff_dir: ".fixture3/textlint-rules-cases-markdown-layout"
+  textlint-rules-cases-metrics:
+    fixtures:
+      - "behavior/fixtures/textlint-rules/cases/metrics/*.md"
+    command: *textlint_command
+    storage:
+      approved_dir: "behavior/golden/textlint-rules-cases-metrics"
+      received_dir: ".fixture3/textlint-rules-cases-metrics"
+      diff_dir: ".fixture3/textlint-rules-cases-metrics"
+  textlint-rules-cases-narrative-slop:
+    fixtures:
+      - "behavior/fixtures/textlint-rules/cases/narrative-slop/*.md"
+    command: *textlint_command
+    storage:
+      approved_dir: "behavior/golden/textlint-rules-cases-narrative-slop"
+      received_dir: ".fixture3/textlint-rules-cases-narrative-slop"
+      diff_dir: ".fixture3/textlint-rules-cases-narrative-slop"
+  textlint-rules-cases-no-signal:
+    fixtures:
+      - "behavior/fixtures/textlint-rules/cases/no-signal/*.md"
+    command: *textlint_command
+    storage:
+      approved_dir: "behavior/golden/textlint-rules-cases-no-signal"
+      received_dir: ".fixture3/textlint-rules-cases-no-signal"
+      diff_dir: ".fixture3/textlint-rules-cases-no-signal"
+  textlint-rules-cases-orthography:
+    fixtures:
+      - "behavior/fixtures/textlint-rules/cases/orthography/*.md"
+    command: *textlint_command
+    storage:
+      approved_dir: "behavior/golden/textlint-rules-cases-orthography"
+      received_dir: ".fixture3/textlint-rules-cases-orthography"
+      diff_dir: ".fixture3/textlint-rules-cases-orthography"
+  textlint-rules-cases-phrases:
+    fixtures:
+      - "behavior/fixtures/textlint-rules/cases/phrases/*.md"
+    command: *textlint_command
+    storage:
+      approved_dir: "behavior/golden/textlint-rules-cases-phrases"
+      received_dir: ".fixture3/textlint-rules-cases-phrases"
+      diff_dir: ".fixture3/textlint-rules-cases-phrases"
+  textlint-rules-cases-semantic-thinness:
+    fixtures:
+      - "behavior/fixtures/textlint-rules/cases/semantic-thinness/*.md"
+    command: *textlint_command
+    storage:
+      approved_dir: "behavior/golden/textlint-rules-cases-semantic-thinness"
+      received_dir: ".fixture3/textlint-rules-cases-semantic-thinness"
+      diff_dir: ".fixture3/textlint-rules-cases-semantic-thinness"
+  textlint-rules-cases-syntactic-patterns:
+    fixtures:
+      - "behavior/fixtures/textlint-rules/cases/syntactic-patterns/*.md"
+    command: *textlint_command
+    storage:
+      approved_dir: "behavior/golden/textlint-rules-cases-syntactic-patterns"
+      received_dir: ".fixture3/textlint-rules-cases-syntactic-patterns"
+      diff_dir: ".fixture3/textlint-rules-cases-syntactic-patterns"
+  textlint-rules-cases-term-policy:
+    fixtures:
+      - "behavior/fixtures/textlint-rules/cases/term-policy/*.md"
+    command: *textlint_command
+    storage:
+      approved_dir: "behavior/golden/textlint-rules-cases-term-policy"
+      received_dir: ".fixture3/textlint-rules-cases-term-policy"
+      diff_dir: ".fixture3/textlint-rules-cases-term-policy"
+  textlint-rules-cases-words:
+    fixtures:
+      - "behavior/fixtures/textlint-rules/cases/words/*.md"
+    command: *textlint_command
+    storage:
+      approved_dir: "behavior/golden/textlint-rules-cases-words"
+      received_dir: ".fixture3/textlint-rules-cases-words"
+      diff_dir: ".fixture3/textlint-rules-cases-words"
+  textlint-rules-corpus-editorial-style:
+    fixtures:
+      - "behavior/fixtures/textlint-rules/corpus/editorial-style.md"
+    command: *textlint_command
+    storage:
+      approved_dir: "behavior/golden/textlint-rules-corpus-editorial-style"
+      received_dir: ".fixture3/textlint-rules-corpus-editorial-style"
+      diff_dir: ".fixture3/textlint-rules-corpus-editorial-style"
+  textlint-rules-corpus-engineering-review:
+    fixtures:
+      - "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+    command: *textlint_command
+    storage:
+      approved_dir: "behavior/golden/textlint-rules-corpus-engineering-review"
+      received_dir: ".fixture3/textlint-rules-corpus-engineering-review"
+      diff_dir: ".fixture3/textlint-rules-corpus-engineering-review"
+  textlint-rules-corpus-health-and-parenting:
+    fixtures:
+      - "behavior/fixtures/textlint-rules/corpus/health-and-parenting.md"
+    command: *textlint_command
+    storage:
+      approved_dir: "behavior/golden/textlint-rules-corpus-health-and-parenting"
+      received_dir: ".fixture3/textlint-rules-corpus-health-and-parenting"
+      diff_dir: ".fixture3/textlint-rules-corpus-health-and-parenting"
+  textlint-rules-corpus-linkedin-ai-search:
+    fixtures:
+      - "behavior/fixtures/textlint-rules/corpus/linkedin-ai-search.md"
+    command: *textlint_command
+    storage:
+      approved_dir: "behavior/golden/textlint-rules-corpus-linkedin-ai-search"
+      received_dir: ".fixture3/textlint-rules-corpus-linkedin-ai-search"
+      diff_dir: ".fixture3/textlint-rules-corpus-linkedin-ai-search"
+  textlint-rules-corpus-metrics-and-markdown:
+    fixtures:
+      - "behavior/fixtures/textlint-rules/corpus/metrics-and-markdown.md"
+    command: *textlint_command
+    storage:
+      approved_dir: "behavior/golden/textlint-rules-corpus-metrics-and-markdown"
+      received_dir: ".fixture3/textlint-rules-corpus-metrics-and-markdown"
+      diff_dir: ".fixture3/textlint-rules-corpus-metrics-and-markdown"
+  textlint-rules-corpus-narrative-scenes:
+    fixtures:
+      - "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
+    command: *textlint_command
+    storage:
+      approved_dir: "behavior/golden/textlint-rules-corpus-narrative-scenes"
+      received_dir: ".fixture3/textlint-rules-corpus-narrative-scenes"
+      diff_dir: ".fixture3/textlint-rules-corpus-narrative-scenes"
+  textlint-rules-corpus-technical-terminology:
+    fixtures:
+      - "behavior/fixtures/textlint-rules/corpus/technical-terminology.md"
+    command: *textlint_command
+    storage:
+      approved_dir: "behavior/golden/textlint-rules-corpus-technical-terminology"
+      received_dir: ".fixture3/textlint-rules-corpus-technical-terminology"
+      diff_dir: ".fixture3/textlint-rules-corpus-technical-terminology"

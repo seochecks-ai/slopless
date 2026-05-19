@@ -1,0 +1,23 @@
+{
+  "suite": "textlint-rules-cases-orthography",
+  "kind": "approved",
+  "run_id": "2026-05-19T17-36-50.722408Z-df22e59a",
+  "run_commit": "e21d316",
+  "working_tree": "dirty",
+  "recorded_at": "2026-05-19T17:36:50.722408Z",
+  "fixture_hash": "sha256:74a72297ebd7d502036486c42e25639a8f1c55f2979e1214524b8ca52af192b2",
+  "manifest_hash": "sha256:df22e59a1c3af89660207e32169c1efa8b3064d02c7a4dc3f36d00ec8112a0ee",
+  "tool_version": "0.1.8",
+  "output_schema_version": "1",
+  "fixtures": [
+    {
+      "path": "behavior/fixtures/textlint-rules/cases/orthography/hits.md",
+      "sha256": "sha256:efaad5368377c285635095089c89a4d03ffa0e0cf3d77ef38d061ba55da23447"
+    },
+    {
+      "path": "behavior/fixtures/textlint-rules/cases/orthography/no-hits.md",
+      "sha256": "sha256:03069f8f140a3f5ebb9d9c40c67c831b422ed2116b68c8ddcc434e74685b769b"
+    }
+  ],
+  "comment": "Split textlint rule approvals and restore adversarial no-hits"
+}

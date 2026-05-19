@@ -201,22 +201,24 @@ def verify_approved_output(data: dict[str, Any], errors: list[str]) -> None:
         return
 
     row = rows[0]
-    approved = ROOT / str(row["approved"])
+    approved_glob = str(row["approved_glob"])
+    approved_outputs = sorted(ROOT.glob(approved_glob))
     document_level_rules = set(row.get("document_level_rules", []))
-    if not approved.is_file():
-        errors.append(f"missing approved output: {approved.relative_to(ROOT)}")
+    if not approved_outputs:
+        errors.append(f"missing approved output matching: {approved_glob}")
         return
 
     case_messages: Counter[tuple[str, str, str]] = Counter()
     corpus_messages: Counter[tuple[str, str, str]] = Counter()
-    for file_result in json.loads(read_text(approved)):
-        path = Path(str(file_result["filePath"]))
-        target = corpus_messages if "/corpus/" in str(path) else case_messages
-        for message in file_result.get("messages", []):
-            rule_id = str(message.get("ruleId", ""))
-            if rule_id in document_level_rules:
-                continue
-            target[message_signature(path, message)] += 1
+    for approved in approved_outputs:
+        for file_result in json.loads(read_text(approved)):
+            path = Path(str(file_result["filePath"]))
+            target = corpus_messages if "/corpus/" in str(path) else case_messages
+            for message in file_result.get("messages", []):
+                rule_id = str(message.get("ruleId", ""))
+                if rule_id in document_level_rules:
+                    continue
+                target[message_signature(path, message)] += 1
 
     missing = case_messages - corpus_messages
     for (rule_id, message, snippet), count in missing.items():

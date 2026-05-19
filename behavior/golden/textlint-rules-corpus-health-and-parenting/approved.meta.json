@@ -1,0 +1,19 @@
+{
+  "suite": "textlint-rules-corpus-health-and-parenting",
+  "kind": "approved",
+  "run_id": "2026-05-19T17-37-32.478895Z-df22e59a",
+  "run_commit": "e21d316",
+  "working_tree": "dirty",
+  "recorded_at": "2026-05-19T17:37:32.478895Z",
+  "fixture_hash": "sha256:3d2a869b3248700accefd17d370ada336d1bb00c3443b39d27eca67ff6d9971f",
+  "manifest_hash": "sha256:df22e59a1c3af89660207e32169c1efa8b3064d02c7a4dc3f36d00ec8112a0ee",
+  "tool_version": "0.1.8",
+  "output_schema_version": "1",
+  "fixtures": [
+    {
+      "path": "behavior/fixtures/textlint-rules/corpus/health-and-parenting.md",
+      "sha256": "sha256:9175fc7677af80361699b4337516a78653595f6e73e2ef18a9fd585b946e73eb"
+    }
+  ],
+  "comment": "Split textlint rule approvals and restore adversarial no-hits"
+}

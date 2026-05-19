@@ -1,0 +1,605 @@
+[
+  {
+    "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/corpus/metrics-and-markdown.md",
+    "messages": [
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 2,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
+        "message": "Coleman-Liau is 17.87. Keep it at 12 or lower.",
+        "range": [
+          0,
+          1
+        ],
+        "ruleId": "coleman-liau",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 2,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
+        "message": "Flesch Reading Ease is 39.72. Keep it at 61 or higher.",
+        "range": [
+          0,
+          1
+        ],
+        "ruleId": "flesch-kincaid",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 416,
+        "line": 13,
+        "loc": {
+          "end": {
+            "column": 25,
+            "line": 13
+          },
+          "start": {
+            "column": 1,
+            "line": 13
+          }
+        },
+        "message": "Triple repeat opener found: \"we\". Vary the sentence openers.",
+        "range": [
+          416,
+          440
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 416,
+        "line": 13,
+        "loc": {
+          "end": {
+            "column": 61,
+            "line": 13
+          },
+          "start": {
+            "column": 1,
+            "line": 13
+          }
+        },
+        "message": "Paragraph has 7 sentences. Keep paragraphs to 6 sentences or fewer.",
+        "range": [
+          416,
+          476
+        ],
+        "ruleId": "paragraph-length",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 8,
+        "index": 423,
+        "line": 13,
+        "loc": {
+          "end": {
+            "column": 34,
+            "line": 13
+          },
+          "start": {
+            "column": 8,
+            "line": 13
+          }
+        },
+        "message": "Triple repeat opener found: \"we\". Vary the sentence openers.",
+        "range": [
+          423,
+          449
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 17,
+        "index": 432,
+        "line": 13,
+        "loc": {
+          "end": {
+            "column": 43,
+            "line": 13
+          },
+          "start": {
+            "column": 17,
+            "line": 13
+          }
+        },
+        "message": "Triple repeat opener found: \"we\". Vary the sentence openers.",
+        "range": [
+          432,
+          458
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 26,
+        "index": 441,
+        "line": 13,
+        "loc": {
+          "end": {
+            "column": 52,
+            "line": 13
+          },
+          "start": {
+            "column": 26,
+            "line": 13
+          }
+        },
+        "message": "Triple repeat opener found: \"we\". Vary the sentence openers.",
+        "range": [
+          441,
+          467
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 35,
+        "index": 450,
+        "line": 13,
+        "loc": {
+          "end": {
+            "column": 61,
+            "line": 13
+          },
+          "start": {
+            "column": 35,
+            "line": 13
+          }
+        },
+        "message": "Triple repeat opener found: \"we\". Vary the sentence openers.",
+        "range": [
+          450,
+          476
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 478,
+        "line": 15,
+        "loc": {
+          "end": {
+            "column": 23,
+            "line": 15
+          },
+          "start": {
+            "column": 1,
+            "line": 15
+          }
+        },
+        "message": "Triple repeat opener found: \"we\". Vary the sentence openers.",
+        "range": [
+          478,
+          500
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 478,
+        "line": 15,
+        "loc": {
+          "end": {
+            "column": 55,
+            "line": 15
+          },
+          "start": {
+            "column": 1,
+            "line": 15
+          }
+        },
+        "message": "Paragraph has 7 sentences. Keep paragraphs to 6 sentences or fewer.",
+        "range": [
+          478,
+          532
+        ],
+        "ruleId": "paragraph-length",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 7,
+        "index": 484,
+        "line": 15,
+        "loc": {
+          "end": {
+            "column": 31,
+            "line": 15
+          },
+          "start": {
+            "column": 7,
+            "line": 15
+          }
+        },
+        "message": "Triple repeat opener found: \"we\". Vary the sentence openers.",
+        "range": [
+          484,
+          508
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 15,
+        "index": 492,
+        "line": 15,
+        "loc": {
+          "end": {
+            "column": 39,
+            "line": 15
+          },
+          "start": {
+            "column": 15,
+            "line": 15
+          }
+        },
+        "message": "Triple repeat opener found: \"we\". Vary the sentence openers.",
+        "range": [
+          492,
+          516
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 23,
+        "index": 500,
+        "line": 15,
+        "loc": {
+          "end": {
+            "column": 47,
+            "line": 15
+          },
+          "start": {
+            "column": 23,
+            "line": 15
+          }
+        },
+        "message": "Triple repeat opener found: \"we\". Vary the sentence openers.",
+        "range": [
+          500,
+          524
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 31,
+        "index": 508,
+        "line": 15,
+        "loc": {
+          "end": {
+            "column": 55,
+            "line": 15
+          },
+          "start": {
+            "column": 31,
+            "line": 15
+          }
+        },
+        "message": "Triple repeat opener found: \"we\". Vary the sentence openers.",
+        "range": [
+          508,
+          532
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 680,
+        "line": 19,
+        "loc": {
+          "end": {
+            "column": 82,
+            "line": 19
+          },
+          "start": {
+            "column": 1,
+            "line": 19
+          }
+        },
+        "message": "Word repeated 6 times in one paragraph: \"home\". Keep repeated words to 5 or fewer.",
+        "range": [
+          680,
+          761
+        ],
+        "ruleId": "word-repetition",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 763,
+        "line": 21,
+        "loc": {
+          "end": {
+            "column": 82,
+            "line": 21
+          },
+          "start": {
+            "column": 1,
+            "line": 21
+          }
+        },
+        "message": "Word repeated 6 times in one paragraph: \"home\". Keep repeated words to 5 or fewer.",
+        "range": [
+          763,
+          844
+        ],
+        "ruleId": "word-repetition",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1847,
+        "line": 37,
+        "loc": {
+          "end": {
+            "column": 37,
+            "line": 37
+          },
+          "start": {
+            "column": 1,
+            "line": 37
+          }
+        },
+        "message": "Triple repeat opener found: \"home\". Vary the sentence openers.",
+        "range": [
+          1847,
+          1883
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1847,
+        "line": 37,
+        "loc": {
+          "end": {
+            "column": 86,
+            "line": 37
+          },
+          "start": {
+            "column": 1,
+            "line": 37
+          }
+        },
+        "message": "Fragment stack found: Home starts. Home waits. Home moves. Home holds. Home turns. Home closes. Home rests. Rewrite the clipped cadence as normal prose.",
+        "range": [
+          1847,
+          1932
+        ],
+        "ruleId": "fragment-stacking",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1847,
+        "line": 37,
+        "loc": {
+          "end": {
+            "column": 86,
+            "line": 37
+          },
+          "start": {
+            "column": 1,
+            "line": 37
+          }
+        },
+        "message": "Paragraph has 7 sentences. Keep paragraphs to 6 sentences or fewer.",
+        "range": [
+          1847,
+          1932
+        ],
+        "ruleId": "paragraph-length",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1847,
+        "line": 37,
+        "loc": {
+          "end": {
+            "column": 86,
+            "line": 37
+          },
+          "start": {
+            "column": 1,
+            "line": 37
+          }
+        },
+        "message": "Word repeated 7 times in one paragraph: \"home\". Keep repeated words to 5 or fewer.",
+        "range": [
+          1847,
+          1932
+        ],
+        "ruleId": "word-repetition",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 14,
+        "index": 1860,
+        "line": 37,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 37
+          },
+          "start": {
+            "column": 14,
+            "line": 37
+          }
+        },
+        "message": "Triple repeat opener found: \"home\". Vary the sentence openers.",
+        "range": [
+          1860,
+          1895
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 26,
+        "index": 1872,
+        "line": 37,
+        "loc": {
+          "end": {
+            "column": 61,
+            "line": 37
+          },
+          "start": {
+            "column": 26,
+            "line": 37
+          }
+        },
+        "message": "Triple repeat opener found: \"home\". Vary the sentence openers.",
+        "range": [
+          1872,
+          1907
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 38,
+        "index": 1884,
+        "line": 37,
+        "loc": {
+          "end": {
+            "column": 74,
+            "line": 37
+          },
+          "start": {
+            "column": 38,
+            "line": 37
+          }
+        },
+        "message": "Triple repeat opener found: \"home\". Vary the sentence openers.",
+        "range": [
+          1884,
+          1920
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 50,
+        "index": 1896,
+        "line": 37,
+        "loc": {
+          "end": {
+            "column": 86,
+            "line": 37
+          },
+          "start": {
+            "column": 50,
+            "line": 37
+          }
+        },
+        "message": "Triple repeat opener found: \"home\". Vary the sentence openers.",
+        "range": [
+          1896,
+          1932
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2510,
+        "line": 45,
+        "loc": {
+          "end": {
+            "column": 347,
+            "line": 45
+          },
+          "start": {
+            "column": 1,
+            "line": 45
+          }
+        },
+        "message": "Paragraph has 7 sentences. Keep paragraphs to 6 sentences or fewer.",
+        "range": [
+          2510,
+          2856
+        ],
+        "ruleId": "paragraph-length",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2948,
+        "line": 49,
+        "loc": {
+          "end": {
+            "column": 49,
+            "line": 49
+          },
+          "start": {
+            "column": 1,
+            "line": 49
+          }
+        },
+        "message": "Word repeated 6 times in one paragraph: \"banana\". Keep repeated words to 5 or fewer.",
+        "range": [
+          2948,
+          2996
+        ],
+        "ruleId": "word-repetition",
+        "severity": 2,
+        "type": "lint"
+      }
+    ]
+  }
+]

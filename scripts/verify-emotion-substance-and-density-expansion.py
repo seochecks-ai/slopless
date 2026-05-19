@@ -14,7 +14,7 @@ MANIFEST = (
     / ".plans/2026-05-17-181310-emotion-substance-and-density-expansion.md.manifest.toml"
 )
 PATTERN_DATA_DIR = ROOT / "src/rules/semantic-thinness/private"
-GOLDEN_OUTPUT = ROOT / "behavior/golden/textlint-rules/approved.normalized.json"
+GOLDEN_ROOT = ROOT / "behavior/golden"
 
 
 def read_text(path: Path) -> str:
@@ -54,19 +54,22 @@ def line_numbers_for_text(relative: str, required: list[str]) -> dict[str, int]:
 
 
 def approved_messages() -> list[dict[str, Any]]:
-    if not GOLDEN_OUTPUT.is_file():
-        return []
-    output = json.loads(read_text(GOLDEN_OUTPUT))
-    if not isinstance(output, list):
-        return []
     messages: list[dict[str, Any]] = []
-    for result in output:
-        if not isinstance(result, dict):
+
+    for golden_output in sorted(
+        GOLDEN_ROOT.glob("textlint-rules-*/approved.normalized.json")
+    ):
+        output = json.loads(read_text(golden_output))
+        if not isinstance(output, list):
             continue
-        file_path = str(result.get("filePath", ""))
-        for message in result.get("messages", []):
-            if isinstance(message, dict):
-                messages.append({"filePath": file_path, **message})
+        for result in output:
+            if not isinstance(result, dict):
+                continue
+            file_path = str(result.get("filePath", ""))
+            for message in result.get("messages", []):
+                if isinstance(message, dict):
+                    messages.append({"filePath": file_path, **message})
+
     return messages
 
 
