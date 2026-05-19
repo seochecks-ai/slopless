@@ -5,7 +5,7 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 TEXTLINT="$ROOT/node_modules/.bin/textlint"
 
 cd "$ROOT"
-npm run build >/dev/null
+pnpm run build >/dev/null
 
 cd "$ROOT"
 

@@ -18,10 +18,13 @@ jobs:
       - uses: Swatinem/rust-cache@v2
         with:
           key: g3ts
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.32.0
       - uses: actions/setup-node@v6
         with:
           node-version: ${{ matrix.node }}
-          cache: npm
+          cache: pnpm
       - run: cargo install --git https://github.com/agent-quality-controls/guardrail3 g3ts --locked
-      - run: npm ci
-      - run: npm run validate
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run validate

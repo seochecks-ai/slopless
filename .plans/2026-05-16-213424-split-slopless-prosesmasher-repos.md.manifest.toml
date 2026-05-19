@@ -20,7 +20,7 @@ path = "scripts/fixture3.sh"
 path = "package.json"
 
 [[required_path]]
-path = "package-lock.json"
+path = "pnpm-lock.yaml"
 
 [[required_path]]
 path = "README.md"

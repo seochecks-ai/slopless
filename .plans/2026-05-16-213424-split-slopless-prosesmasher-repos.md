@@ -50,7 +50,7 @@ Slopless new repo should include:
 - `scripts/verify-corpus-preserve.py`
 - `scripts/fixture3.sh`
 - `package.json`
-- `package-lock.json`
+- `pnpm-lock.yaml`
 - `README.md`
 - `LICENSE`
 - `fixture3.yaml`

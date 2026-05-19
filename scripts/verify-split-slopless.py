@@ -31,7 +31,7 @@ def main() -> None:
             fail(f"forbidden path exists: {row['path']}")
 
     package = json.loads((ROOT / "package.json").read_text())
-    package_lock = json.loads((ROOT / "package-lock.json").read_text())
+    pnpm_lock = (ROOT / "pnpm-lock.yaml").read_text()
     expected = manifest["package_json"]
     checks = {
         "name": package.get("name"),
@@ -48,12 +48,10 @@ def main() -> None:
             fail(f"package.json {key}: expected {expected_value!r}, got {actual!r}")
 
     version = package.get("version")
-    lock_version = package_lock.get("version")
-    package_entry_version = package_lock.get("packages", {}).get("", {}).get("version")
     if not isinstance(version, str) or not re.fullmatch(r"\d+\.\d+\.\d+", version):
         fail(f"package.json version is not a semver release version: {version!r}")
-    if lock_version != version or package_entry_version != version:
-        fail("package-lock.json version does not match package.json version")
+    if "importers:" not in pnpm_lock or "\n  .:" not in pnpm_lock:
+        fail("pnpm-lock.yaml does not contain the root importer")
 
     for row in manifest.get("forbidden_text", []):
         path = ROOT / row["path"]
