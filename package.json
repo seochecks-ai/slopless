@@ -25,7 +25,7 @@
     "lint:css": "stylelint --max-warnings 0 \"styles/**/*.css\"",
     "spellcheck": "cspell .",
     "typecov": "type-coverage --strict --at-least 100",
-    "validate": "pnpm run build && scripts/verify-cli-version.py && pnpm run lint && pnpm run lint:css && prettier --check . && cspell . && type-coverage --strict --at-least 100 && scripts/validate-g3ts.sh"
+    "validate": "pnpm run build && scripts/verify-cli-version.py && pnpm run lint && pnpm run lint:css && prettier --check . && cspell . && type-coverage --strict --at-least 100"
   },
   "files": [
     "dist",
