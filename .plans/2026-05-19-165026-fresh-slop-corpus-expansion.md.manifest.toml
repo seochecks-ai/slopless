@@ -1,0 +1,100 @@
+root = "new-corpus/2026-05-19-fresh-slop-expansion"
+min_text_files = 10
+min_text_words = 25000
+min_hit_cases_per_family = 50
+min_no_hit_cases_per_family = 35
+min_total_edge_cases = 900
+
+[[required_path]]
+path = "new-corpus/2026-05-19-fresh-slop-expansion/README.md"
+
+[[required_path]]
+path = "new-corpus/2026-05-19-fresh-slop-expansion/analysis/initial-expansion-ideas.md"
+
+[[required_path]]
+path = "scripts/verify-fresh-slop-corpus.py"
+
+[[text_angle]]
+slug = "linkedin-inspirational-consulting"
+path = "new-corpus/2026-05-19-fresh-slop-expansion/texts/linkedin-inspirational-consulting.md"
+
+[[text_angle]]
+slug = "ai-search-seo-thought-leadership"
+path = "new-corpus/2026-05-19-fresh-slop-expansion/texts/ai-search-seo-thought-leadership.md"
+
+[[text_angle]]
+slug = "venture-product-strategy"
+path = "new-corpus/2026-05-19-fresh-slop-expansion/texts/venture-product-strategy.md"
+
+[[text_angle]]
+slug = "wellness-self-improvement"
+path = "new-corpus/2026-05-19-fresh-slop-expansion/texts/wellness-self-improvement.md"
+
+[[text_angle]]
+slug = "academic-explainer"
+path = "new-corpus/2026-05-19-fresh-slop-expansion/texts/academic-explainer.md"
+
+[[text_angle]]
+slug = "technical-audit-engineering-review"
+path = "new-corpus/2026-05-19-fresh-slop-expansion/texts/technical-audit-engineering-review.md"
+
+[[text_angle]]
+slug = "corporate-change-management"
+path = "new-corpus/2026-05-19-fresh-slop-expansion/texts/corporate-change-management.md"
+
+[[text_angle]]
+slug = "fiction-narrative-scene"
+path = "new-corpus/2026-05-19-fresh-slop-expansion/texts/fiction-narrative-scene.md"
+
+[[text_angle]]
+slug = "ux-product-marketing-launch"
+path = "new-corpus/2026-05-19-fresh-slop-expansion/texts/ux-product-marketing-launch.md"
+
+[[text_angle]]
+slug = "agent-smoothing-rewrite"
+path = "new-corpus/2026-05-19-fresh-slop-expansion/texts/agent-smoothing-rewrite.md"
+
+[[family]]
+name = "semantic-thinness"
+hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/hits/semantic-thinness.md"
+no_hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/no-hits/semantic-thinness.md"
+
+[[family]]
+name = "syntactic-patterns"
+hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/hits/syntactic-patterns.md"
+no_hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/no-hits/syntactic-patterns.md"
+
+[[family]]
+name = "narrative-slop"
+hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/hits/narrative-slop.md"
+no_hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/no-hits/narrative-slop.md"
+
+[[family]]
+name = "phrases"
+hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/hits/phrases.md"
+no_hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/no-hits/phrases.md"
+
+[[family]]
+name = "words"
+hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/hits/words.md"
+no_hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/no-hits/words.md"
+
+[[family]]
+name = "orthography"
+hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/hits/orthography.md"
+no_hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/no-hits/orthography.md"
+
+[[family]]
+name = "metrics"
+hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/hits/metrics.md"
+no_hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/no-hits/metrics.md"
+
+[[family]]
+name = "academic-slop"
+hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/hits/academic-slop.md"
+no_hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/no-hits/academic-slop.md"
+
+[[family]]
+name = "term-policy"
+hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/hits/term-policy.md"
+no_hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/no-hits/term-policy.md"

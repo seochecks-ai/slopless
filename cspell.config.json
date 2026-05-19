@@ -57,6 +57,7 @@
     "behavior/golden",
     "datasets",
     "legacy",
+    "new-corpus",
     "dist",
     "node_modules",
     "package-lock.json",

@@ -1,0 +1,60 @@
+- Use "person experiencing homelessness" instead of "homeless person" in housing reports.
+- Prefer "disabled person" only when the disability community named in the style guide uses identity-first language.
+- Use "person with a disability" when the individual's preferred wording is unknown.
+- Do not use "wheelchair-bound"; use "wheelchair user" in accessibility documentation.
+- Replace "the elderly" with "older adults" in public health material.
+- Use "people with diabetes" instead of "diabetics" in clinic instructions.
+- Avoid "addict"; use "person with substance use disorder" in treatment records.
+- Use "person with alcohol use disorder" instead of "alcoholic" in medical summaries.
+- Do not write "committed suicide"; use "died by suicide" in crisis policy.
+- Use "survivor" only when the person has chosen that term in victim services content.
+- Use "incarcerated person" instead of "inmate" in reentry program materials.
+- Use "formerly incarcerated person" instead of "ex-convict" in employment guidance.
+- Avoid "illegal immigrant"; use "undocumented immigrant" in immigration notices.
+- Use "asylum seeker" only for people who have requested asylum.
+- Use "refugee" only when legal refugee status has been granted.
+- Do not use "alien" for a person in immigration policy.
+- Use "Latine" only when the publication's audience guide calls for that term.
+- Use "Black" with a capital B when referring to racial identity.
+- Use "Indigenous" with a capital I when referring to Indigenous peoples.
+- Use "Native nation" instead of "tribe" when the specific nation asks for that wording.
+- Use "enslaved person" instead of "slave" in historical interpretation.
+- Use "enslaver" instead of "slave owner" in museum labels.
+- Avoid "master/slave"; use "primary/replica" in database documentation.
+- Use "allowlist" instead of "whitelist" in security documentation.
+- Use "blocklist" instead of "blacklist" in security documentation.
+- Replace "sanity check" with "validation check" in engineering runbooks.
+- Replace "crazy" with "unusual" in incident reports.
+- Replace "dumb terminal" with "thin client" in product documentation.
+- Use "parent/child process" only for operating system processes, not people.
+- Use "primary bedroom" instead of "master bedroom" in real estate listings.
+- Use "firefighter" instead of "fireman" in job descriptions.
+- Use "police officer" instead of "policeman" in public safety materials.
+- Use "chair" instead of "chairman" in governance documents.
+- Use "synthetic data" instead of "fake data" in privacy documentation.
+- Use "test data" instead of "dummy data" in QA documentation.
+- Use "unencrypted password" instead of "plain password" in security findings.
+- Use "user" instead of "customer" in product analytics when no purchase relationship exists.
+- Use "client" instead of "patient" in social services case notes when agency policy requires it.
+- Use "patient" instead of "consumer" in clinical documentation.
+- Use "participant" instead of "subject" in human research communications.
+- Do not call study participants "guinea pigs" in research recruitment materials.
+- Use "lower-income households" instead of "the poor" in housing analysis.
+- Use "people without insurance" instead of "the uninsured" in outreach copy.
+- Use "people who are pregnant" when the guidance applies beyond women.
+- Use "pregnant women" only when the policy specifically applies to women.
+- Use "sex assigned at birth" instead of "biological sex" in intake forms when the distinction matters.
+- Use "gender identity" instead of "preferred gender" in HR forms.
+- Use "pronouns" instead of "preferred pronouns" in staff profiles.
+- Avoid "minority students"; use the specific student groups named in the data.
+- Use "underrepresented students" only when the document defines the population.
+- Replace "at-risk students" with "students with identified risk factors" in advising notes.
+- Use "English learners" instead of "limited English proficient students" in school communications.
+- Use "emerging bilingual students" when the education style guide calls for that term.
+- Use "first-generation students" instead of "nontraditional students" when referring to parental education.
+- Use "military veteran" instead of "ex-soldier" in benefits materials.
+- Use "survivors of domestic violence" instead of "battered women" in shelter policy.
+- Use "low-resource schools" instead of "failing schools" in grant reports.
+- Use "accessible parking" instead of "handicapped parking" in facilities signage.
+- Do not use "normal students" as the contrast group; use the measured comparison group.
+- Use "undocumented students" instead of "illegal students" in financial aid guidance.

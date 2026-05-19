@@ -1,0 +1,46 @@
+- The survey included 312 students from three public universities in Ohio.
+- The control group received the same instructions but did not receive the reminder email.
+- We report confidence intervals because the sample size differs across schools.
+- The archive contains enrollment records from 1984 through 2001.
+- Table 2 shows the regression results for the full sample and the subgroup sample.
+- The interview protocol asked participants to describe their first semester in the program.
+- The authors coded each transcript twice and resolved disagreements by discussion.
+- The study excludes part-time students because the registrar did not record their course loads.
+- The course syllabus changed in 2019, so the analysis separates cohorts before and after that year.
+- The paper compares two explanations for the decline in attendance.
+- The model includes district fixed effects and year fixed effects.
+- The appendix lists all search terms used in the database query.
+- The translation follows the 1977 edition because it preserves the original chapter numbering.
+- The experiment was preregistered before recruitment began.
+- The authors define "retention" as enrollment in the same institution one year later.
+- The literature review covers studies published between 2005 and 2025.
+- The sample contains 41 instructors and 896 students.
+- The manuscript cites the policy text as it appeared on March 4, 2024.
+- The response rate was 62 percent for faculty and 58 percent for students.
+- The data cannot identify students who transferred to private institutions.
+- The analysis uses ordinary least squares for continuous outcomes.
+- The paper tests whether class size predicts exam scores after controlling for prior grades.
+- The interviews were conducted in Spanish and translated into English by two researchers.
+- The authors exclude missing income values rather than imputing them.
+- The figure plots median completion time by assignment type.
+- The study reports no statistically significant difference between sections.
+- The classroom observation form contained 18 items.
+- The outcome measure is the number of credits completed by the end of the term.
+- The historians compare newspaper coverage in Boston, Chicago, and Atlanta.
+- The paper distinguishes administrative records from self-reported survey responses.
+- The authors write, "This study aims to shed light," as an example of wording they removed.
+- The style guide marks "rich picture" as a phrase to avoid in article abstracts.
+- The reviewer quoted "holistic lens" from the submitted draft and asked for a concrete claim.
+- The sentence "The findings underscore the pivotal role" appears in a blocked-example list.
+- The corpus entry stores `academic_phrase = "complex interplay"` for detector tests.
+- The lecture slide quotes "growing body of literature" as a common abstract formula.
+- The copyeditor flagged "profound implications" because the paragraph did not name any implication.
+- The student asked whether "lived experience" was necessary in that sentence.
+- The dataset field is named `institutional_context`.
+- The book title is "The Landscape of Modern Universities".
+- The word "framework" appears in the article title, not in the author's claim.
+- The historian uses "agency" to mean the federal agency created in 1935.
+- The physics department measured resilience as the time a spring took to return to position.
+- The grant application requires a section called "Broader Impacts".
+- The library catalog lists a journal named Interdisciplinary Praxis.
+- The paper quotes a participant: "I felt a deeper sense of agency after the workshop."
