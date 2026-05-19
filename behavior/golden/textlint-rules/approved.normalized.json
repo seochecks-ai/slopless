@@ -348,6 +348,29 @@
         "type": "lint"
       },
       {
+        "column": 1,
+        "index": 953,
+        "line": 37,
+        "loc": {
+          "end": {
+            "column": 35,
+            "line": 37
+          },
+          "start": {
+            "column": 1,
+            "line": 37
+          }
+        },
+        "message": "Generic signposting found: the-was-simple. Replace the frame with the concrete claim.",
+        "range": [
+          953,
+          987
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
         "column": 25,
         "index": 977,
         "line": 37,
@@ -10961,6 +10984,29 @@
         "line": 387,
         "loc": {
           "end": {
+            "column": 42,
+            "line": 387
+          },
+          "start": {
+            "column": 1,
+            "line": 387
+          }
+        },
+        "message": "Generic signposting found: that-is-wrong. Replace the frame with the concrete claim.",
+        "range": [
+          15022,
+          15063
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 15022,
+        "line": 387,
+        "loc": {
+          "end": {
             "column": 101,
             "line": 387
           },
@@ -13689,6 +13735,29 @@
           22925
         ],
         "ruleId": "demonstrative-emphasis",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 22900,
+        "line": 539,
+        "loc": {
+          "end": {
+            "column": 26,
+            "line": 539
+          },
+          "start": {
+            "column": 1,
+            "line": 539
+          }
+        },
+        "message": "Generic signposting found: that-is-wrong. Replace the frame with the concrete claim.",
+        "range": [
+          22900,
+          22925
+        ],
+        "ruleId": "generic-signposting",
         "severity": 2,
         "type": "lint"
       },
@@ -22113,6 +22182,29 @@
         "type": "lint"
       },
       {
+        "column": 1,
+        "index": 515,
+        "line": 27,
+        "loc": {
+          "end": {
+            "column": 35,
+            "line": 27
+          },
+          "start": {
+            "column": 1,
+            "line": 27
+          }
+        },
+        "message": "Generic signposting found: the-was-simple. Replace the frame with the concrete claim.",
+        "range": [
+          515,
+          549
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
         "column": 25,
         "index": 539,
         "line": 27,
@@ -27012,7 +27104,7 @@
             "line": 39
           }
         },
-        "message": "Generic signposting found: the-lesson-was-simple. Replace the frame with the concrete claim.",
+        "message": "Generic signposting found: the-was-simple. Replace the frame with the concrete claim.",
         "range": [
           652,
           674
@@ -28415,6 +28507,29 @@
             "line": 151
           }
         },
+        "message": "Generic signposting found: that-is-useless. Replace the frame with the concrete claim.",
+        "range": [
+          2857,
+          2898
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2857,
+        "line": 151,
+        "loc": {
+          "end": {
+            "column": 42,
+            "line": 151
+          },
+          "start": {
+            "column": 1,
+            "line": 151
+          }
+        },
         "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} {meaningVerb} {abstractSubject} {linkingVerb} {weakJudgment}.",
         "range": [
           2857,
@@ -28444,6 +28559,29 @@
           2966
         ],
         "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2968,
+        "line": 155,
+        "loc": {
+          "end": {
+            "column": 24,
+            "line": 155
+          },
+          "start": {
+            "column": 1,
+            "line": 155
+          }
+        },
+        "message": "Generic signposting found: the-is-boring. Replace the frame with the concrete claim.",
+        "range": [
+          2968,
+          2991
+        ],
+        "ruleId": "generic-signposting",
         "severity": 2,
         "type": "lint"
       },
@@ -28536,6 +28674,29 @@
           3050
         ],
         "ruleId": "colon-dramatic",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3052,
+        "line": 159,
+        "loc": {
+          "end": {
+            "column": 30,
+            "line": 159
+          },
+          "start": {
+            "column": 1,
+            "line": 159
+          }
+        },
+        "message": "Generic signposting found: the-is-boring. Replace the frame with the concrete claim.",
+        "range": [
+          3052,
+          3081
+        ],
+        "ruleId": "generic-signposting",
         "severity": 2,
         "type": "lint"
       },
@@ -35795,6 +35956,29 @@
         "line": 515,
         "loc": {
           "end": {
+            "column": 42,
+            "line": 515
+          },
+          "start": {
+            "column": 1,
+            "line": 515
+          }
+        },
+        "message": "Generic signposting found: that-is-wrong. Replace the frame with the concrete claim.",
+        "range": [
+          21441,
+          21482
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 21441,
+        "line": 515,
+        "loc": {
+          "end": {
             "column": 101,
             "line": 515
           },
@@ -41338,6 +41522,29 @@
         "line": 879,
         "loc": {
           "end": {
+            "column": 26,
+            "line": 879
+          },
+          "start": {
+            "column": 1,
+            "line": 879
+          }
+        },
+        "message": "Generic signposting found: that-is-wrong. Replace the frame with the concrete claim.",
+        "range": [
+          43812,
+          43837
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 43812,
+        "line": 879,
+        "loc": {
+          "end": {
             "column": 49,
             "line": 879
           },
@@ -43393,6 +43600,29 @@
             "line": 1001
           }
         },
+        "message": "Generic signposting found: that-is-useless. Replace the frame with the concrete claim.",
+        "range": [
+          47535,
+          47576
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 47535,
+        "line": 1001,
+        "loc": {
+          "end": {
+            "column": 42,
+            "line": 1001
+          },
+          "start": {
+            "column": 1,
+            "line": 1001
+          }
+        },
         "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} {meaningVerb} {abstractSubject} {linkingVerb} {weakJudgment}.",
         "range": [
           47535,
@@ -43623,7 +43853,7 @@
             "line": 1029
           }
         },
-        "message": "Generic signposting found: the-focus-is-practical. Replace the frame with the concrete claim.",
+        "message": "Generic signposting found: the-is-practical. Replace the frame with the concrete claim.",
         "range": [
           48137,
           48160
@@ -44742,6 +44972,29 @@
             "line": 45
           }
         },
+        "message": "Generic signposting found: the-is-boring. Replace the frame with the concrete claim.",
+        "range": [
+          1454,
+          1477
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1454,
+        "line": 45,
+        "loc": {
+          "end": {
+            "column": 24,
+            "line": 45
+          },
+          "start": {
+            "column": 1,
+            "line": 45
+          }
+        },
         "message": "Semantic thinness (generic-lesson-extraction): Catch generic lesson, answer, fix, or point lines whose complement is a thin evaluative word or abstract noun. Matched template: The {summaryNoun} {linkingVerb} {thinComplement}.",
         "range": [
           1454,
@@ -44817,6 +45070,29 @@
           1536
         ],
         "ruleId": "colon-dramatic",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 1538,
+        "line": 49,
+        "loc": {
+          "end": {
+            "column": 30,
+            "line": 49
+          },
+          "start": {
+            "column": 1,
+            "line": 49
+          }
+        },
+        "message": "Generic signposting found: the-is-boring. Replace the frame with the concrete claim.",
+        "range": [
+          1538,
+          1567
+        ],
+        "ruleId": "generic-signposting",
         "severity": 2,
         "type": "lint"
       },
@@ -45110,12 +45386,58 @@
             "line": 101
           }
         },
+        "message": "Generic signposting found: that-is-useless. Replace the frame with the concrete claim.",
+        "range": [
+          2909,
+          2950
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2909,
+        "line": 101,
+        "loc": {
+          "end": {
+            "column": 42,
+            "line": 101
+          },
+          "start": {
+            "column": 1,
+            "line": 101
+          }
+        },
         "message": "Semantic thinness (deictic-summary): Catch deictic summary pronouncements that point at a supposed lesson, truth, promise, or part without naming the concrete claim. Matched template: {deicticSubject} {meaningVerb} {abstractSubject} {linkingVerb} {weakJudgment}.",
         "range": [
           2909,
           2950
         ],
         "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2952,
+        "line": 103,
+        "loc": {
+          "end": {
+            "column": 42,
+            "line": 103
+          },
+          "start": {
+            "column": 1,
+            "line": 103
+          }
+        },
+        "message": "Generic signposting found: that-is-useless. Replace the frame with the concrete claim.",
+        "range": [
+          2952,
+          2993
+        ],
+        "ruleId": "generic-signposting",
         "severity": 2,
         "type": "lint"
       },
@@ -45455,7 +45777,7 @@
             "line": 157
           }
         },
-        "message": "Generic signposting found: the-focus-is-practical. Replace the frame with the concrete claim.",
+        "message": "Generic signposting found: the-is-practical. Replace the frame with the concrete claim.",
         "range": [
           4437,
           4460
@@ -46960,7 +47282,7 @@
             "line": 47
           }
         },
-        "message": "Generic signposting found: the-lesson-was-simple. Replace the frame with the concrete claim.",
+        "message": "Generic signposting found: the-was-simple. Replace the frame with the concrete claim.",
         "range": [
           1077,
           1099

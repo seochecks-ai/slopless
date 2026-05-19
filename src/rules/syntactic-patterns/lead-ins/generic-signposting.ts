@@ -5,6 +5,7 @@ import {
   type SentenceMatch
 } from "../../../shared/matchers/prose-patterns.js";
 import { oneToOneRule } from "../../private/textlint-rule-builders.js";
+import { matchDiscourseEvaluationFrame } from "./private/discourse-evaluation.js";
 
 const PREFIXES = ["however, ", "but ", "and ", "so "];
 const IMPORTANT_TO_PATTERNS = [
@@ -76,15 +77,6 @@ const WHAT_FRAME_TAIL_STARTERS = [
   "straightforward",
   "true",
   "usually"
-];
-const NOUN_EVALUATION_TAILS = [
-  "boring",
-  "clear",
-  "practical",
-  "simple",
-  "straightforward",
-  "useful",
-  "wrong"
 ];
 const FRAME_ADJECTIVES = [
   "basic",
@@ -185,25 +177,6 @@ function matchEvaluativeFrame(words: readonly string[]): string | undefined {
   return undefined;
 }
 
-function matchNounEvaluationFrame(
-  words: readonly string[]
-): string | undefined {
-  const [first, second, third, fourth, fifth] = words;
-
-  if (
-    words.length <= 5 &&
-    first === "the" &&
-    FRAME_NOUNS.includes(second ?? "") &&
-    ABSTRACT_FRAME_VERBS.includes(third ?? "") &&
-    NOUN_EVALUATION_TAILS.includes(fourth ?? "") &&
-    fifth === undefined
-  ) {
-    return `the-${second ?? "frame"}-${third ?? "is"}-${fourth ?? "thin"}`;
-  }
-
-  return undefined;
-}
-
 function matchPointIsToFrame(words: readonly string[]): string | undefined {
   const [first, second, third, fourth, fifth] = words;
 
@@ -257,7 +230,7 @@ function matchAbstractFrame(text: string): string | undefined {
   return (
     matchModifiedAbstractFrame(words) ??
     matchEvaluativeFrame(words) ??
-    matchNounEvaluationFrame(words) ??
+    matchDiscourseEvaluationFrame(words) ??
     matchPointIsToFrame(words) ??
     matchWhatFrame(words)
   );

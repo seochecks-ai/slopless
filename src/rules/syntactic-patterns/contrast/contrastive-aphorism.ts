@@ -6,6 +6,7 @@ import {
   tokens,
   trimTerminalPunctuation
 } from "../../../shared/matchers/prose-patterns.js";
+import { pairHasAbstractSubjectOrObject } from "./private/abstract-pair-gates.js";
 
 const PREFIXES = ["and ", "but ", "so ", "because "];
 const ENOUGH_FOR_SUFFIXES = [" is enough for this", " is enough for that"];
@@ -250,41 +251,16 @@ function hasTokenPair(
   );
 }
 
-function hasTokenSequence(
-  words: readonly string[],
-  sequence: readonly string[]
-): boolean {
-  return words.some((word, index) => {
-    if (word !== sequence[0]) {
-      return false;
-    }
-
-    return sequence.every((value, offset) => words[index + offset] === value);
-  });
-}
-
 function matchGivesYouPair(first: string, second: string): string | undefined {
   const a = tokens(cleanSentence(first, PREFIXES));
   const b = tokens(cleanSentence(second, PREFIXES));
-  const thinObjects = new Set([
-    "answer",
-    "clarity",
-    "confidence",
-    "direction",
-    "feeling",
-    "measurement",
-    "mood",
-    "signal",
-    "story",
-    "visibility"
-  ]);
 
   if (
     hasTokenPair(a, "gives", "you") &&
     hasTokenPair(b, "gives", "you") &&
     a.at(-1) !== b.at(-1) &&
-    thinObjects.has(a.at(-1) ?? "") &&
-    thinObjects.has(b.at(-1) ?? "")
+    pairHasAbstractSubjectOrObject(a, "gives", "you") &&
+    pairHasAbstractSubjectOrObject(b, "gives", "you")
   ) {
     return "x-gives-you-y-pair";
   }
@@ -299,12 +275,11 @@ function matchGetsOneAnotherPair(
   const a = tokens(cleanSentence(first, PREFIXES));
   const b = tokens(cleanSentence(second, PREFIXES));
 
-  if (
-    hasTokenSequence(a, ["gets", "one", "fix"]) &&
-    b.at(-1) === "another" &&
-    hasTokenPair(b, "gets", "another")
-  ) {
-    return "x-gets-one-y-gets-another";
+  if (hasTokenPair(a, "gets", "one") && hasTokenPair(b, "gets", "another")) {
+    return pairHasAbstractSubjectOrObject(a, "gets", "one") &&
+      pairHasAbstractSubjectOrObject(b, "gets", "another")
+      ? "x-gets-one-y-gets-another"
+      : undefined;
   }
 
   return undefined;
