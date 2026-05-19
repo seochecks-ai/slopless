@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "recommended-terms": {
+      "allowInflections": true,
+      "minCount": 4,
+      "terms": ["lifetimes", "traits", "async", "borrowed", "compiler"]
+    },
+    "required-terms": {
+      "terms": ["ownership", "borrowing"]
+    }
+  }
+}

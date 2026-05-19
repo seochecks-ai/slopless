@@ -56,11 +56,18 @@ DEFAULT_OUTPUT="$TMP_DIR/default.json"
 run_textlint_json "$DEFAULT_OUTPUT" "${CONFIG_ARGS[@]}" "${RULE_ARGS[@]}" "${FILES[@]}"
 JSON_OUTPUTS+=("$DEFAULT_OUTPUT")
 
+safe_output_name() {
+  local path="$1"
+  path="${path//\//__}"
+  path="${path//[^A-Za-z0-9_.-]/_}"
+  printf '%s' "$path"
+}
+
 for FILE in "${FILES[@]}"; do
   if [ -f "$(dirname "$FILE")/.textlintrc.json" ]; then
     FIXTURE_CONFIG="$(dirname "$FILE")/.textlintrc.json"
     FAMILY="$(basename "$(dirname "$FILE")")"
-    CONFIG_OUTPUT="$TMP_DIR/config-$FAMILY-$(basename "$FILE").json"
+    CONFIG_OUTPUT="$TMP_DIR/config-$FAMILY-$(safe_output_name "$FILE").json"
     run_textlint_json \
       "$CONFIG_OUTPUT" \
       --config "$FIXTURE_CONFIG" \
@@ -77,7 +84,7 @@ for FILE in "${FILES[@]}"; do
 
     FAMILY="${FIXTURE_CONFIG#"$FILE_BASE".}"
     FAMILY="${FAMILY%.textlintrc.json}"
-    CONFIG_OUTPUT="$TMP_DIR/config-$FAMILY-$(basename "$FILE").json"
+    CONFIG_OUTPUT="$TMP_DIR/config-$FAMILY-$(safe_output_name "$FILE").json"
     run_textlint_json \
       "$CONFIG_OUTPUT" \
       --config "$FIXTURE_CONFIG" \

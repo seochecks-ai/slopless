@@ -225,19 +225,34 @@ Implementation implication:
 
 - Phrase rules need stronger guards for quoted examples and title/name contexts before aggressive widening.
 
-## Planning conclusions
+## Actionability contract
 
-- The generated corpus should stay in Slopless review commands.
-- Spellcheck exclusion is correct because the corpus contains generated names, intentionally bad language, and adversarial wording.
-- The long generated prose already produces many findings and is useful for regression review.
-- The edge-case files need cleanup before fixture promotion.
-- The next implementation targets should be:
-  - semantic-thinness template expansion
-  - phrase and syntactic lead-in expansion
-  - negation-reframe guard cleanup
-  - academic boilerplate as a separate academic rule
-- The next non-targets should be:
-  - metrics widening from one-line cases
-  - narrative widening from isolated line cases
-  - term-policy widening without config
-  - broad new single-word bans
+Implemented in `.plans/2026-05-19-173909-fresh-corpus-actionability.md`.
+
+- Generated corpus stays in Slopless review commands.
+- Spellcheck still ignores `new-corpus`.
+- Edge cases are counted as blocks separated by `---`, not as individual Markdown lines.
+- A case block can be one sentence, one paragraph, or multiple paragraphs.
+- Every generated hit file must produce direct findings from its own family.
+- Every generated no-hit file must produce zero direct findings from its own family.
+- Cross-family findings do not prove that a family case works.
+- `metrics` hit cases are document-shaped paragraphs.
+- `narrative-slop` hit cases are local density clusters.
+- `term-policy` cases use sidecar Textlint configs.
+- `orthography` cases contain literal punctuation, hidden Unicode, timestamp, and placeholder artifacts.
+- `academic-slop` now has a direct `academic-boilerplate` rule.
+- Semantic recursive meaning frames are handled by `recursive-meaning-frame`.
+- High-signal phrase lead-ins are direct prohibited phrases.
+- Fresh corpus word expansion does not add new broad single-word bans.
+
+Mechanical verifier:
+
+- `scripts/verify-fresh-corpus-actionability.py`
+
+Current verified state:
+
+- Long text files: 10
+- Long text words: 34,257
+- Edge case blocks: 945
+- Direct family hit files: all pass the manifest minimums
+- Direct family no-hit files: all have zero direct-family findings

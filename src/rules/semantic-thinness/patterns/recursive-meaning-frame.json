@@ -1,0 +1,79 @@
+{
+  "id": "recursive-meaning-frame",
+  "class": "recursive-meaning",
+  "purpose": "Catch recursive importance, meaning, lesson, and work frames that reuse the same abstraction as both premise and payoff.",
+  "matchMode": "contains",
+  "maxTokens": 42,
+  "templates": [
+    "{thinSubject} {importanceVerb} because it {invitationVerb} us to {recursiveVerb} what {importanceVerb}.",
+    "{thinSubject} {workVerb} {abstractSpace} for more {thinAdjective} {thinObject}.",
+    "{thinSubject} is not about {thinObject}; it is about {becomingFrame}.",
+    "{thinSubject} is trying to tell a {biggerStory} about what it means to {emptyMotion}.",
+    "{thinSubject} asks us to {softAction} the part of us that already {knowingVerb}."
+  ],
+  "slots": {
+    "thinSubject": [
+      "this moment",
+      "the moment",
+      "the work",
+      "the work ahead",
+      "the lesson",
+      "the journey",
+      "the system",
+      "the story",
+      "the process",
+      "the practice"
+    ],
+    "importanceVerb": ["matters", "counts"],
+    "invitationVerb": ["invites", "asks"],
+    "recursiveVerb": ["rethink", "reconsider", "remember"],
+    "workVerb": ["opens", "creates", "makes"],
+    "abstractSpace": ["space", "room", "permission"],
+    "thinAdjective": [
+      "meaningful",
+      "intentional",
+      "aligned",
+      "human",
+      "purposeful"
+    ],
+    "thinObject": ["work", "lesson", "journey", "practice", "process"],
+    "becomingFrame": [
+      "becoming more aligned with the lesson",
+      "becoming available to the work",
+      "becoming more human in the process",
+      "moving closer to the practice"
+    ],
+    "biggerStory": ["bigger story", "deeper story", "larger story"],
+    "emptyMotion": [
+      "move forward",
+      "become aligned",
+      "stay human",
+      "do the work",
+      "meet the moment"
+    ],
+    "softAction": ["listen to", "trust", "make room for", "honor"],
+    "knowingVerb": ["knows", "understands", "remembers"]
+  },
+  "rejectIf": [
+    "sentence names the concrete reason the moment matters",
+    "sentence names the actual lesson",
+    "sentence names the concrete work, owner, deadline, or output"
+  ],
+  "positiveExamples": [
+    "This moment matters because it invites us to rethink what matters.",
+    "The work ahead opens space for more meaningful work.",
+    "The lesson is not about work; it is about becoming more aligned with the lesson.",
+    "The system is trying to tell a bigger story about what it means to move forward.",
+    "The journey asks us to listen to the part of us that already knows."
+  ],
+  "negativeExamples": [
+    "This deadline matters because the vendor contract expires on June 30.",
+    "The work ahead creates space for two additional wheelchair seats in the waiting room.",
+    "The lesson is not in the workbook; it is in chapter 4.",
+    "The system reports why request 42 failed validation."
+  ],
+  "notes": [
+    "This is intentionally recursive: the abstraction reappears as the claimed payoff.",
+    "It belongs in semantic-thinness, not phrases, because the slots are productive."
+  ]
+}

@@ -75,7 +75,10 @@ const BROAD_PATTERN_IDS = new Set([
   "truth-answer-moves",
   "vague-threshold-change"
 ]);
-const CONNECTOR_ALLOWED_PATTERN_IDS = new Set(["vague-summary-cost"]);
+const CONNECTOR_ALLOWED_PATTERN_IDS = new Set([
+  "recursive-meaning-frame",
+  "vague-summary-cost"
+]);
 function normalizedTokens(text: string): readonly string[] {
   return wordTokens(text).map((token) => token.normalized);
 }

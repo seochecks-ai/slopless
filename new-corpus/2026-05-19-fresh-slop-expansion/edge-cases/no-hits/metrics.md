@@ -1,61 +1,177 @@
-- The migration reads each legacy row once, writes one normalized row per account, and stores the original primary key in `legacy_account_id` so rollback scripts can map failures back to source records.
-- The parser accepts a 12 KB expression because the grammar permits nested `AND` and `OR` groups, and the configured request limit is 64 KB after UTF-8 encoding.
-- The serializer repeats the field name `status` in the JSON Schema because one occurrence defines the property, one occurrence marks it required, and one occurrence appears in the example payload.
-- The integration test waits for three queue polls because the worker commits offsets only after PostgreSQL confirms the transaction and the broker acknowledges the batch.
-- The endpoint returns 422 instead of 400 because the JSON document is valid, but the parsed object violates the runtime schema for `date:start`.
-- The index definition uses `tenant_id`, `invoice_id`, and `created_at` in that order because the query filters by tenant, filters by invoice, and sorts by creation time.
-- The deployment note lists `staging`, `production`, and `preview` separately because each environment has a separate Railway service, database URL, and R2 bucket.
-- The function accepts a long options object because the PDF renderer requires page size, margin, scale, font set, header template, footer template, timeout, and media emulation in one call.
-- The log line includes repeated request metadata because the aggregator groups by `request_id`, filters by `tenant_id`, and joins traces by `span_id`.
-- The SQL statement repeats `LEFT JOIN` four times because invoices, payments, refunds, and credits are optional relations with separate foreign keys.
-- The accessibility test checks keyboard focus after opening the menu, after moving to the second item, after selecting an item, and after closing the menu with Escape.
-- The audit record stores both `created_by` and `updated_by` because imports can create a record under one service account and later reconcile it under another service account.
-- The fixture includes 200 product IDs because the batcher must prove that it splits work at exactly 50 IDs per request without dropping the last partial batch.
-- The policy text names every allowed role because `owner`, `admin`, `editor`, `viewer`, and `billing` receive different database grants.
-- The validator keeps the full 128-character token in memory only long enough to hash it with SHA-256 and compare the digest with the stored digest.
-- The release note is long because it lists the affected CLI commands, the old behavior, the new behavior, the migration step, and the verification command in one paragraph.
-- The error message includes the table name, column name, constraint name, and rejected value because support staff need those four fields to resolve import failures without database access.
-- The benchmark uses 10,000 rows because smaller samples did not trigger the planner change observed on the production table.
-- The retry loop handles connect timeout, read timeout, HTTP 429, HTTP 500, and HTTP 503 separately because each case has a different delay and logging requirement.
-- The compatibility matrix repeats Node.js versions because `20.19.0`, `22.12.0`, and `24.0.0` are the supported runtimes for the package manager used by this repository.
-- The webhook handler verifies the signature before parsing the body.
-- The cache key includes the tenant id.
-- The CLI prints the version from `package.json`.
-- The test creates a temporary directory and deletes it after the assertion.
-- The API returns an empty list when no records match.
-- The form disables submit while the request is pending.
-- The worker logs the job id before starting the job.
-- The migration adds the new column before backfilling it.
-- The config loader rejects unknown keys.
-- The route handler returns 404 for a missing project.
-- The file watcher ignores `node_modules`.
-- The search index updates after the transaction commits.
-- The email job skips users without verified addresses.
-- The dashboard shows UTC timestamps.
-- The import command requires an explicit input path.
-- The component renders the fallback when the image URL is missing.
-- The cron job runs at 03:15 UTC.
-- The report exports CSV with a header row.
-- The password reset link expires after 20 minutes.
-- The formatter preserves code spans.
-- Step 1: validate the input file.
-- Step 2: open the database transaction.
-- Step 3: insert the parent record.
-- Step 4: insert the child records.
-- Step 5: commit the transaction.
-- Required field: `name`.
-- Required field: `email`.
-- Required field: `tenant_id`.
-- Required field: `created_at`.
-- Allowed status: `draft`.
-- Allowed status: `queued`.
-- Allowed status: `sent`.
-- Allowed status: `failed`.
-- Retry reason: timeout.
-- Retry reason: rate limit.
-- Retry reason: connection reset.
-- Retry reason: service unavailable.
-- The enum values are `read`, `write`, `delete`, and `admin`.
-- The batch sizes are 10, 25, 50, and 100.
-- The supported image formats are PNG, JPEG, WebP, and AVIF.
-- The exported columns are `id`, `email`, `created_at`, `updated_at`, and `deleted_at`.
+Ava reads row 0. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 1. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 2. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 3. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 4. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 5. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 6. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 7. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 8. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 9. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 10. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 11. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 12. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 13. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 14. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 15. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 16. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 17. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 18. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 19. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 20. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 21. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 22. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 23. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 24. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 25. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 26. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 27. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 28. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 29. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 30. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 31. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 32. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 33. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 34. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 35. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 36. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 37. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 38. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 39. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 40. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 41. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 42. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 43. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.
+
+---
+
+Ava reads row 44. Ben checks the id. Cora saves the file. Dan marks the log. Eve sends the note.

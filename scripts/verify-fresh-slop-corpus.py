@@ -15,16 +15,26 @@ def fail(message: str) -> None:
     sys.exit(1)
 
 
-def markdown_case_lines(path: Path) -> list[str]:
-    lines: list[str] = []
+def markdown_case_blocks(path: Path) -> list[str]:
+    blocks: list[str] = []
+    current: list[str] = []
+
     for raw_line in path.read_text().splitlines():
         line = raw_line.strip()
-        if not line or line.startswith("#"):
+        if line == "---":
+            block = "\n".join(current).strip()
+            if block:
+                blocks.append(block)
+            current = []
             continue
-        if set(line) <= {"-"}:
-            continue
-        lines.append(line)
-    return lines
+
+        current.append(raw_line)
+
+    block = "\n".join(current).strip()
+    if block:
+        blocks.append(block)
+
+    return blocks
 
 
 def word_count(path: Path) -> int:
@@ -64,8 +74,8 @@ def main() -> None:
         if not no_hit_path.exists():
             fail(f"missing no-hit file for {family['name']}: {family['no_hit_path']}")
 
-        hit_count = len(markdown_case_lines(hit_path))
-        no_hit_count = len(markdown_case_lines(no_hit_path))
+        hit_count = len(markdown_case_blocks(hit_path))
+        no_hit_count = len(markdown_case_blocks(no_hit_path))
         if hit_count < manifest["min_hit_cases_per_family"]:
             fail(f"{family['name']} hit count {hit_count} below {manifest['min_hit_cases_per_family']}")
         if no_hit_count < manifest["min_no_hit_cases_per_family"]:

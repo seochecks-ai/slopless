@@ -1,0 +1,122 @@
+plan = ".plans/2026-05-19-173909-fresh-corpus-actionability.md"
+root = "new-corpus/2026-05-19-fresh-slop-expansion"
+case_separator = "---"
+
+[[required_file]]
+path = "scripts/verify-fresh-corpus-actionability.py"
+
+[[required_file]]
+path = "src/rules/academic-slop/academic-boilerplate.ts"
+
+[[required_file]]
+path = "src/rules/academic-slop/data/academic-boilerplate.json"
+
+[[required_file]]
+path = "src/rules/semantic-thinness/patterns/recursive-meaning-frame.json"
+
+[[required_phrase]]
+phrase = "now more than ever"
+
+[[required_phrase]]
+phrase = "in a world where"
+
+[[required_phrase]]
+phrase = "the future belongs to"
+
+[[required_phrase]]
+phrase = "the path forward is clear"
+
+[[required_phrase]]
+phrase = "turn ambiguity into momentum"
+
+[[family_contract]]
+name = "academic-slop"
+hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/hits/academic-slop.md"
+no_hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/no-hits/academic-slop.md"
+min_hit_cases = 50
+min_no_hit_cases = 35
+direct_rules = ["academic-boilerplate", "tortured-phrases"]
+min_direct_hit_findings = 10
+max_direct_no_hit_findings = 0
+
+[[family_contract]]
+name = "metrics"
+hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/hits/metrics.md"
+no_hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/no-hits/metrics.md"
+min_hit_cases = 50
+min_no_hit_cases = 35
+direct_rules = ["avg-sentence-length", "coleman-liau", "flesch-kincaid", "gunning-fog", "paragraph-length", "word-repetition"]
+min_direct_hit_findings = 25
+max_direct_no_hit_findings = 0
+
+[[family_contract]]
+name = "narrative-slop"
+hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/hits/narrative-slop.md"
+no_hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/no-hits/narrative-slop.md"
+min_hit_cases = 50
+min_no_hit_cases = 35
+direct_rules = ["body-action-density", "flat-action-cadence", "low-information-beat-density", "narrative-cliches", "perception-verb-density"]
+min_direct_hit_findings = 25
+max_direct_no_hit_findings = 0
+
+[[family_contract]]
+name = "orthography"
+hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/hits/orthography.md"
+no_hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/no-hits/orthography.md"
+min_hit_cases = 50
+min_no_hit_cases = 35
+direct_rules = ["artifact-placeholders", "colon-dramatic", "em-dashes", "exclamation-density", "fake-timestamps", "hidden-unicode-controls", "sentence-case", "smart-quotes"]
+min_direct_hit_findings = 25
+max_direct_no_hit_findings = 0
+
+[[family_contract]]
+name = "phrases"
+hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/hits/phrases.md"
+no_hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/no-hits/phrases.md"
+min_hit_cases = 50
+min_no_hit_cases = 35
+direct_rules = ["cliches", "corporate-speak", "humble-bragger", "jargon-faker", "llm-disclaimer", "prohibited-phrases", "redundancy", "skunked-terms", "uncomparables", "wordiness"]
+min_direct_hit_findings = 20
+max_direct_no_hit_findings = 0
+
+[[family_contract]]
+name = "semantic-thinness"
+hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/hits/semantic-thinness.md"
+no_hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/no-hits/semantic-thinness.md"
+min_hit_cases = 50
+min_no_hit_cases = 35
+direct_rules = ["semantic-thinness"]
+min_direct_hit_findings = 20
+max_direct_no_hit_findings = 0
+
+[[family_contract]]
+name = "syntactic-patterns"
+hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/hits/syntactic-patterns.md"
+no_hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/no-hits/syntactic-patterns.md"
+min_hit_cases = 50
+min_no_hit_cases = 35
+direct_rules = ["affirmation-closers", "authority-padding", "blame-reframe", "boilerplate-conclusion", "boilerplate-framing", "contrastive-aphorism", "demonstrative-emphasis", "empty-emphasis", "false-question", "formal-transition-density", "fragment-stacking", "generic-signposting", "lesson-framing", "llm-openers", "negation-reframe", "observer-guidance", "repeated-predicate-end", "repeated-sentence-starts", "response-wrapper", "softening-language", "summative-closer", "triple-repeat", "uncited-authority", "universalizing-claims"]
+min_direct_hit_findings = 25
+max_direct_no_hit_findings = 0
+
+[[family_contract]]
+name = "term-policy"
+hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/hits/term-policy.md"
+no_hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/no-hits/term-policy.md"
+hit_config = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/hits/term-policy.term-policy.textlintrc.json"
+no_hit_config = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/no-hits/term-policy.term-policy.textlintrc.json"
+min_hit_cases = 50
+min_no_hit_cases = 35
+direct_rules = ["recommended-terms", "required-terms"]
+min_direct_hit_findings = 1
+max_direct_no_hit_findings = 0
+
+[[family_contract]]
+name = "words"
+hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/hits/words.md"
+no_hit_path = "new-corpus/2026-05-19-fresh-slop-expansion/edge-cases/no-hits/words.md"
+min_hit_cases = 50
+min_no_hit_cases = 35
+direct_rules = ["hedge-stacking", "llm-vocabulary", "llm-vocabulary-density", "prohibited-words", "simplicity"]
+min_direct_hit_findings = 20
+max_direct_no_hit_findings = 0

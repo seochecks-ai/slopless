@@ -22,3 +22,5 @@ scripts/verify-fixture-corpus-coverage.py
 scripts/verify-rules-reporting-architecture.py
 scripts/verify-corpus-preserve.py
 scripts/verify-split-slopless.py
+scripts/verify-fresh-slop-corpus.py
+scripts/verify-fresh-corpus-actionability.py
