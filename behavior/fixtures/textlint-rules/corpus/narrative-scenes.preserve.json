@@ -1303,6 +1303,69 @@
       "bucket": "no-hits",
       "source": "cases/narrative-slop/no-hits.md",
       "line": 77
+    },
+    {
+      "text": "Cassia's throat went tight before she could answer.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 197
+    },
+    {
+      "text": "For a moment, her eyes moved from the window to the floor.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 199
+    },
+    {
+      "text": "Her eyes moved from the window to the floor because the chalk mark continued under the sill.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 187
+    },
+    {
+      "text": "She did not answer the guard because the bell drowned out his question.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 201
+    },
+    {
+      "text": "Cassia stepped to the sill, she rested her paws on the wood, and then she looked at Arden.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 59
+    },
+    {
+      "text": "Liska blinked. Her jaw tightened. Her shoulders stiffened.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 61
+    },
+    {
+      "text": "Arden scanned the alley. Cassia noticed the gate. Remal studied the roofline.",
+      "family": "narrative-slop",
+      "bucket": "hits",
+      "source": "cases/narrative-slop/hits.md",
+      "line": 63
+    },
+    {
+      "text": "Cassia stepped to the sill, rested the pulley on the wood, and checked the knot number scratched into the post.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 79
+    },
+    {
+      "text": "Arden scanned the alley for the chalk arrow, counted two guards, and copied the mark onto his slate.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 83
     }
   ]
 }

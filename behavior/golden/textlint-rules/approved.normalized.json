@@ -522,7 +522,7 @@
             "line": 47
           }
         },
-        "message": "Semantic thinness (something-shifted): Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change. Matched template: {genericSubject} {changeVerb}.",
+        "message": "Semantic thinness (empty-scene-transition): Catch generic transition lines that declare change, passage, or motion without naming what changed or why. Matched template: {genericSubject} {changeVerb}.",
         "range": [
           1220,
           1259
@@ -15945,6 +15945,351 @@
         "ruleId": "semantic-thinness",
         "severity": 2,
         "type": "lint"
+      },
+      {
+        "column": 81,
+        "index": 31346,
+        "line": 825,
+        "loc": {
+          "end": {
+            "column": 134,
+            "line": 825
+          },
+          "start": {
+            "column": 81,
+            "line": 825
+          }
+        },
+        "message": "Semantic thinness (generic-realization): Catch realization lines that announce understanding without naming what was learned. Matched template: {humanSubject} {realizationVerb} {genericObject}.",
+        "range": [
+          31346,
+          31399
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 135,
+        "index": 31400,
+        "line": 825,
+        "loc": {
+          "end": {
+            "column": 182,
+            "line": 825
+          },
+          "start": {
+            "column": 135,
+            "line": 825
+          }
+        },
+        "message": "Semantic thinness (generic-pressure-or-stakes): Catch generic pressure, stakes, or weight lines that imply importance without concrete risk or consequence. Matched template: {stakesSubject} {linkingVerb} {thinStakesComplement}.",
+        "range": [
+          31400,
+          31447
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 183,
+        "index": 31448,
+        "line": 825,
+        "loc": {
+          "end": {
+            "column": 230,
+            "line": 825
+          },
+          "start": {
+            "column": 183,
+            "line": 825
+          }
+        },
+        "message": "Semantic thinness (empty-scene-state): Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail. Matched template: {placeSubject} {linkingVerb} {thinState}.",
+        "range": [
+          31448,
+          31495
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 231,
+        "index": 31496,
+        "line": 825,
+        "loc": {
+          "end": {
+            "column": 268,
+            "line": 825
+          },
+          "start": {
+            "column": 231,
+            "line": 825
+          }
+        },
+        "message": "Semantic thinness (empty-scene-transition): Catch generic transition lines that declare change, passage, or motion without naming what changed or why. Matched template: {genericSubject} {changeVerb}.",
+        "range": [
+          31496,
+          31533
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 31962,
+        "line": 829,
+        "loc": {
+          "end": {
+            "column": 165,
+            "line": 829
+          },
+          "start": {
+            "column": 1,
+            "line": 829
+          }
+        },
+        "message": "Triple repeat opener found: \"the\". Vary the sentence openers.",
+        "range": [
+          31962,
+          32126
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 69,
+        "index": 32030,
+        "line": 829,
+        "loc": {
+          "end": {
+            "column": 120,
+            "line": 829
+          },
+          "start": {
+            "column": 69,
+            "line": 829
+          }
+        },
+        "message": "Contrastive aphorism found: not-x-but-y. Replace the slogan with a concrete claim.",
+        "range": [
+          32030,
+          32081
+        ],
+        "ruleId": "contrastive-aphorism",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 69,
+        "index": 32030,
+        "line": 829,
+        "loc": {
+          "end": {
+            "column": 120,
+            "line": 829
+          },
+          "start": {
+            "column": 69,
+            "line": 829
+          }
+        },
+        "message": "Negation reframe found: \"The fix is not more dashboards but better judgment.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          32030,
+          32081
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 121,
+        "index": 32082,
+        "line": 829,
+        "loc": {
+          "end": {
+            "column": 165,
+            "line": 829
+          },
+          "start": {
+            "column": 121,
+            "line": 829
+          }
+        },
+        "message": "Contrastive aphorism found: abstract-evaluative-pair. Replace the slogan with a concrete claim.",
+        "range": [
+          32082,
+          32126
+        ],
+        "ruleId": "contrastive-aphorism",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 121,
+        "index": 32082,
+        "line": 829,
+        "loc": {
+          "end": {
+            "column": 165,
+            "line": 829
+          },
+          "start": {
+            "column": 121,
+            "line": 829
+          }
+        },
+        "message": "Contrastive aphorism found: less-about-than. Replace the slogan with a concrete claim.",
+        "range": [
+          32082,
+          32126
+        ],
+        "ruleId": "contrastive-aphorism",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 166,
+        "index": 32127,
+        "line": 829,
+        "loc": {
+          "end": {
+            "column": 194,
+            "line": 829
+          },
+          "start": {
+            "column": 166,
+            "line": 829
+          }
+        },
+        "message": "Generic signposting found: the-better-strategy-is. Replace the frame with the concrete claim.",
+        "range": [
+          32127,
+          32155
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 32157,
+        "line": 831,
+        "loc": {
+          "end": {
+            "column": 40,
+            "line": 831
+          },
+          "start": {
+            "column": 1,
+            "line": 831
+          }
+        },
+        "message": "Demonstrative emphasis found: \"This practical focus is the whole game.\". Reduce repeated short emphasis lines.",
+        "range": [
+          32157,
+          32196
+        ],
+        "ruleId": "demonstrative-emphasis",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 32157,
+        "line": 831,
+        "loc": {
+          "end": {
+            "column": 40,
+            "line": 831
+          },
+          "start": {
+            "column": 1,
+            "line": 831
+          }
+        },
+        "message": "Generic signposting found: the-practical-focus-is. Replace the frame with the concrete claim.",
+        "range": [
+          32157,
+          32196
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 41,
+        "index": 32197,
+        "line": 831,
+        "loc": {
+          "end": {
+            "column": 106,
+            "line": 831
+          },
+          "start": {
+            "column": 41,
+            "line": 831
+          }
+        },
+        "message": "Negation reframe found: \"She did not answer the criticism. Instead, she shifted the frame.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          32197,
+          32262
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 32264,
+        "line": 833,
+        "loc": {
+          "end": {
+            "column": 220,
+            "line": 833
+          },
+          "start": {
+            "column": 1,
+            "line": 833
+          }
+        },
+        "message": "Triple repeat opener found: \"the\". Vary the sentence openers.",
+        "range": [
+          32264,
+          32483
+        ],
+        "ruleId": "triple-repeat",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 221,
+        "index": 32484,
+        "line": 833,
+        "loc": {
+          "end": {
+            "column": 279,
+            "line": 833
+          },
+          "start": {
+            "column": 221,
+            "line": 833
+          }
+        },
+        "message": "Contrastive aphorism found: abstract-evaluative-pair. Replace the slogan with a concrete claim.",
+        "range": [
+          32484,
+          32542
+        ],
+        "ruleId": "contrastive-aphorism",
+        "severity": 2,
+        "type": "lint"
       }
     ]
   },
@@ -15965,7 +16310,7 @@
             "line": 1
           }
         },
-        "message": "Flesch Reading Ease is 59.94. Keep it at 61 or higher.",
+        "message": "Flesch Reading Ease is 59.98. Keep it at 61 or higher.",
         "range": [
           0,
           1
@@ -22384,6 +22729,29 @@
         "type": "lint"
       },
       {
+        "column": 1,
+        "index": 2193,
+        "line": 53,
+        "loc": {
+          "end": {
+            "column": 58,
+            "line": 53
+          },
+          "start": {
+            "column": 1,
+            "line": 53
+          }
+        },
+        "message": "Semantic thinness (empty-scene-state): Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail. Matched template: {placeSubject} {linkingVerb} {thinState}.",
+        "range": [
+          2193,
+          2250
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
         "column": 8,
         "index": 2259,
         "line": 55,
@@ -22426,6 +22794,75 @@
           2494
         ],
         "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 2517,
+        "line": 59,
+        "loc": {
+          "end": {
+            "column": 91,
+            "line": 59
+          },
+          "start": {
+            "column": 1,
+            "line": 59
+          }
+        },
+        "message": "Flat action cadence: 3 adjacent short simple sentences use subject-action beats (stepped, rested, looked). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          2517,
+          2607
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 7,
+        "index": 2615,
+        "line": 61,
+        "loc": {
+          "end": {
+            "column": 58,
+            "line": 61
+          },
+          "start": {
+            "column": 7,
+            "line": 61
+          }
+        },
+        "message": "Body-action density: 3 body cues in a short span (blinked, jaw tightened, shoulders stiffened).",
+        "range": [
+          2615,
+          2666
+        ],
+        "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 7,
+        "index": 2675,
+        "line": 63,
+        "loc": {
+          "end": {
+            "column": 64,
+            "line": 63
+          },
+          "start": {
+            "column": 7,
+            "line": 63
+          }
+        },
+        "message": "Perception verb density: 3 perception verbs in a short span (scanned, noticed, studied).",
+        "range": [
+          2675,
+          2732
+        ],
+        "ruleId": "perception-verb-density",
         "severity": 2,
         "type": "lint"
       }
@@ -22954,7 +23391,7 @@
             "line": 37
           }
         },
-        "message": "Semantic thinness (something-shifted): Catch vague change declarations that say something shifted, changed, moved, or crossed a line without naming the concrete change. Matched template: {genericSubject} {changeVerb}.",
+        "message": "Semantic thinness (empty-scene-transition): Catch generic transition lines that declare change, passage, or motion without naming what changed or why. Matched template: {genericSubject} {changeVerb}.",
         "range": [
           782,
           821
@@ -27357,7 +27794,7 @@
             "line": 7
           }
         },
-        "message": "Semantic thinness (body-emotion-shorthand): Catch stock body-feeling lines that translate emotion into generic chest, breath, heart, or limb sensations without naming the thought, choice, or concrete pressure. Matched template: {objectSubject} {feltVerb} like {weightImage}.",
+        "message": "Semantic thinness (body-emotion-shorthand): Catch stock body-feeling lines that translate emotion into generic chest, breath, heart, or limb sensations without naming the thought, choice, or concrete pressure. Matched template: {bodySubject} {feltVerb} like {weightImage}.",
         "range": [
           118,
           167
@@ -27541,10 +27978,33 @@
             "line": 19
           }
         },
-        "message": "Semantic thinness (empty-scene-state): Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail. Matched template: {sceneElement} {linkingVerb} {thinState} {weakModifier}.",
+        "message": "Semantic thinness (empty-scene-state): Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail. Matched template: {sceneElement} {linkingVerb} {thinState}.",
         "range": [
           350,
           377
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 379,
+        "line": 21,
+        "loc": {
+          "end": {
+            "column": 45,
+            "line": 21
+          },
+          "start": {
+            "column": 1,
+            "line": 21
+          }
+        },
+        "message": "Semantic thinness (empty-scene-state): Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail. Matched template: {placeSubject} {linkingVerb} {thinState}.",
+        "range": [
+          379,
+          423
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,
@@ -27679,7 +28139,7 @@
             "line": 33
           }
         },
-        "message": "Semantic thinness (empty-scene-transition): Catch generic transition lines that declare change, passage, or motion without naming what changed or why. Matched template: {genericSubject} {changeVerb} {weakModifier}.",
+        "message": "Semantic thinness (empty-scene-transition): Catch generic transition lines that declare change, passage, or motion without naming what changed or why. Matched template: {genericSubject} {changeVerb}.",
         "range": [
           542,
           570
@@ -27909,7 +28369,7 @@
             "line": 51
           }
         },
-        "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {deicticSubject} {significanceVerb} {intensifier}.",
+        "message": "Semantic thinness (generic-pressure-or-stakes): Catch generic pressure, stakes, or weight lines that imply importance without concrete risk or consequence. Matched template: {genericSubject} {stakesVerb} {weakDegree}.",
         "range": [
           826,
           860
@@ -29776,6 +30236,144 @@
         "range": [
           3858,
           3883
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3885,
+        "line": 193,
+        "loc": {
+          "end": {
+            "column": 54,
+            "line": 193
+          },
+          "start": {
+            "column": 1,
+            "line": 193
+          }
+        },
+        "message": "Semantic thinness (generic-realization): Catch realization lines that announce understanding without naming what was learned. Matched template: {humanSubject} {realizationVerb} {genericObject}.",
+        "range": [
+          3885,
+          3938
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3940,
+        "line": 195,
+        "loc": {
+          "end": {
+            "column": 48,
+            "line": 195
+          },
+          "start": {
+            "column": 1,
+            "line": 195
+          }
+        },
+        "message": "Semantic thinness (generic-pressure-or-stakes): Catch generic pressure, stakes, or weight lines that imply importance without concrete risk or consequence. Matched template: {stakesSubject} {linkingVerb} {thinStakesComplement}.",
+        "range": [
+          3940,
+          3987
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 3989,
+        "line": 197,
+        "loc": {
+          "end": {
+            "column": 52,
+            "line": 197
+          },
+          "start": {
+            "column": 1,
+            "line": 197
+          }
+        },
+        "message": "Semantic thinness (body-emotion-shorthand): Catch stock body-feeling lines that translate emotion into generic chest, breath, heart, or limb sensations without naming the thought, choice, or concrete pressure. Matched template: {bodySubject} {feltVerb} {bodySensation}.",
+        "range": [
+          3989,
+          4040
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4042,
+        "line": 199,
+        "loc": {
+          "end": {
+            "column": 59,
+            "line": 199
+          },
+          "start": {
+            "column": 1,
+            "line": 199
+          }
+        },
+        "message": "Semantic thinness (gaze-choreography): Catch eye and gaze choreography where body-part camera movement stands in for a concrete observation, decision, or reaction. Matched template: {gazeSubject} {movementVerb} from {gazeTarget} to {gazeTarget}.",
+        "range": [
+          4042,
+          4100
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4102,
+        "line": 201,
+        "loc": {
+          "end": {
+            "column": 48,
+            "line": 201
+          },
+          "start": {
+            "column": 1,
+            "line": 201
+          }
+        },
+        "message": "Semantic thinness (empty-scene-state): Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail. Matched template: {placeSubject} {linkingVerb} {thinState}.",
+        "range": [
+          4102,
+          4149
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 4151,
+        "line": 203,
+        "loc": {
+          "end": {
+            "column": 38,
+            "line": 203
+          },
+          "start": {
+            "column": 1,
+            "line": 203
+          }
+        },
+        "message": "Semantic thinness (empty-scene-transition): Catch generic transition lines that declare change, passage, or motion without naming what changed or why. Matched template: {genericSubject} {changeVerb}.",
+        "range": [
+          4151,
+          4188
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,
@@ -45333,6 +45931,167 @@
         "ruleId": "contrastive-aphorism",
         "severity": 2,
         "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 48752,
+        "line": 1047,
+        "loc": {
+          "end": {
+            "column": 52,
+            "line": 1047
+          },
+          "start": {
+            "column": 1,
+            "line": 1047
+          }
+        },
+        "message": "Contrastive aphorism found: not-x-but-y. Replace the slogan with a concrete claim.",
+        "range": [
+          48752,
+          48803
+        ],
+        "ruleId": "contrastive-aphorism",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 48752,
+        "line": 1047,
+        "loc": {
+          "end": {
+            "column": 52,
+            "line": 1047
+          },
+          "start": {
+            "column": 1,
+            "line": 1047
+          }
+        },
+        "message": "Negation reframe found: \"The fix is not more dashboards but better judgment.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          48752,
+          48803
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 48805,
+        "line": 1049,
+        "loc": {
+          "end": {
+            "column": 45,
+            "line": 1049
+          },
+          "start": {
+            "column": 1,
+            "line": 1049
+          }
+        },
+        "message": "Contrastive aphorism found: less-about-than. Replace the slogan with a concrete claim.",
+        "range": [
+          48805,
+          48849
+        ],
+        "ruleId": "contrastive-aphorism",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 48851,
+        "line": 1051,
+        "loc": {
+          "end": {
+            "column": 29,
+            "line": 1051
+          },
+          "start": {
+            "column": 1,
+            "line": 1051
+          }
+        },
+        "message": "Generic signposting found: the-better-strategy-is. Replace the frame with the concrete claim.",
+        "range": [
+          48851,
+          48879
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 48881,
+        "line": 1053,
+        "loc": {
+          "end": {
+            "column": 40,
+            "line": 1053
+          },
+          "start": {
+            "column": 1,
+            "line": 1053
+          }
+        },
+        "message": "Demonstrative emphasis found: \"This practical focus is the whole game.\". Reduce repeated short emphasis lines.",
+        "range": [
+          48881,
+          48920
+        ],
+        "ruleId": "demonstrative-emphasis",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 48881,
+        "line": 1053,
+        "loc": {
+          "end": {
+            "column": 40,
+            "line": 1053
+          },
+          "start": {
+            "column": 1,
+            "line": 1053
+          }
+        },
+        "message": "Generic signposting found: the-practical-focus-is. Replace the frame with the concrete claim.",
+        "range": [
+          48881,
+          48920
+        ],
+        "ruleId": "generic-signposting",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 48922,
+        "line": 1055,
+        "loc": {
+          "end": {
+            "column": 66,
+            "line": 1055
+          },
+          "start": {
+            "column": 1,
+            "line": 1055
+          }
+        },
+        "message": "Negation reframe found: \"She did not answer the criticism. Instead, she shifted the frame.\". Rewrite without the not-X-then-Y construction.",
+        "range": [
+          48922,
+          48987
+        ],
+        "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
       }
     ]
   },
@@ -48225,7 +48984,7 @@
             "line": 15
           }
         },
-        "message": "Semantic thinness (body-emotion-shorthand): Catch stock body-feeling lines that translate emotion into generic chest, breath, heart, or limb sensations without naming the thought, choice, or concrete pressure. Matched template: {objectSubject} {feltVerb} like {weightImage}.",
+        "message": "Semantic thinness (body-emotion-shorthand): Catch stock body-feeling lines that translate emotion into generic chest, breath, heart, or limb sensations without naming the thought, choice, or concrete pressure. Matched template: {bodySubject} {feltVerb} like {weightImage}.",
         "range": [
           543,
           592
@@ -48409,10 +49168,33 @@
             "line": 27
           }
         },
-        "message": "Semantic thinness (empty-scene-state): Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail. Matched template: {sceneElement} {linkingVerb} {thinState} {weakModifier}.",
+        "message": "Semantic thinness (empty-scene-state): Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail. Matched template: {sceneElement} {linkingVerb} {thinState}.",
         "range": [
           775,
           802
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 804,
+        "line": 29,
+        "loc": {
+          "end": {
+            "column": 45,
+            "line": 29
+          },
+          "start": {
+            "column": 1,
+            "line": 29
+          }
+        },
+        "message": "Semantic thinness (empty-scene-state): Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail. Matched template: {placeSubject} {linkingVerb} {thinState}.",
+        "range": [
+          804,
+          848
         ],
         "ruleId": "semantic-thinness",
         "severity": 2,
@@ -48547,7 +49329,7 @@
             "line": 41
           }
         },
-        "message": "Semantic thinness (empty-scene-transition): Catch generic transition lines that declare change, passage, or motion without naming what changed or why. Matched template: {genericSubject} {changeVerb} {weakModifier}.",
+        "message": "Semantic thinness (empty-scene-transition): Catch generic transition lines that declare change, passage, or motion without naming what changed or why. Matched template: {genericSubject} {changeVerb}.",
         "range": [
           967,
           995
@@ -48777,7 +49559,7 @@
             "line": 59
           }
         },
-        "message": "Semantic thinness (hollow-significance): Catch lines that assert importance, sticking power, or consequence without naming a concrete referent or result. Matched template: {deicticSubject} {significanceVerb} {intensifier}.",
+        "message": "Semantic thinness (generic-pressure-or-stakes): Catch generic pressure, stakes, or weight lines that imply importance without concrete risk or consequence. Matched template: {genericSubject} {stakesVerb} {weakDegree}.",
         "range": [
           1251,
           1285
@@ -50328,6 +51110,29 @@
         "type": "lint"
       },
       {
+        "column": 1,
+        "index": 7109,
+        "line": 229,
+        "loc": {
+          "end": {
+            "column": 58,
+            "line": 229
+          },
+          "start": {
+            "column": 1,
+            "line": 229
+          }
+        },
+        "message": "Semantic thinness (empty-scene-state): Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail. Matched template: {placeSubject} {linkingVerb} {thinState}.",
+        "range": [
+          7109,
+          7166
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
         "column": 8,
         "index": 7175,
         "line": 231,
@@ -51198,6 +52003,121 @@
           13342
         ],
         "ruleId": "negation-reframe",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 86,
+        "index": 14603,
+        "line": 415,
+        "loc": {
+          "end": {
+            "column": 137,
+            "line": 415
+          },
+          "start": {
+            "column": 86,
+            "line": 415
+          }
+        },
+        "message": "Semantic thinness (body-emotion-shorthand): Catch stock body-feeling lines that translate emotion into generic chest, breath, heart, or limb sensations without naming the thought, choice, or concrete pressure. Matched template: {bodySubject} {feltVerb} {bodySensation}.",
+        "range": [
+          14603,
+          14654
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 138,
+        "index": 14655,
+        "line": 415,
+        "loc": {
+          "end": {
+            "column": 196,
+            "line": 415
+          },
+          "start": {
+            "column": 138,
+            "line": 415
+          }
+        },
+        "message": "Semantic thinness (gaze-choreography): Catch eye and gaze choreography where body-part camera movement stands in for a concrete observation, decision, or reaction. Matched template: {gazeSubject} {movementVerb} from {gazeTarget} to {gazeTarget}.",
+        "range": [
+          14655,
+          14713
+        ],
+        "ruleId": "semantic-thinness",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 14715,
+        "line": 417,
+        "loc": {
+          "end": {
+            "column": 91,
+            "line": 417
+          },
+          "start": {
+            "column": 1,
+            "line": 417
+          }
+        },
+        "message": "Flat action cadence: 3 adjacent short simple sentences use subject-action beats (stepped, rested, looked). Vary the rhythm or add causal/sensory development.",
+        "range": [
+          14715,
+          14805
+        ],
+        "ruleId": "flat-action-cadence",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 98,
+        "index": 14812,
+        "line": 417,
+        "loc": {
+          "end": {
+            "column": 149,
+            "line": 417
+          },
+          "start": {
+            "column": 98,
+            "line": 417
+          }
+        },
+        "message": "Body-action density: 3 body cues in a short span (blinked, jaw tightened, shoulders stiffened).",
+        "range": [
+          14812,
+          14863
+        ],
+        "ruleId": "body-action-density",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 7,
+        "index": 14872,
+        "line": 419,
+        "loc": {
+          "end": {
+            "column": 64,
+            "line": 419
+          },
+          "start": {
+            "column": 7,
+            "line": 419
+          }
+        },
+        "message": "Perception verb density: 3 perception verbs in a short span (scanned, noticed, studied).",
+        "range": [
+          14872,
+          14929
+        ],
+        "ruleId": "perception-verb-density",
         "severity": 2,
         "type": "lint"
       }

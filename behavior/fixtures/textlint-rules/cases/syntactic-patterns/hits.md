@@ -1043,3 +1043,13 @@ I used to read traffic drops like a normal person.
 One prompt gives you a mood. A prompt panel gives you a measurement.
 
 A ranking problem gets one fix. A source-selection problem gets another.
+
+The fix is not more dashboards but better judgment.
+
+The work is less about volume than judgment.
+
+A better strategy is boring.
+
+This practical focus is the whole game.
+
+She did not answer the criticism. Instead, she shifted the frame.

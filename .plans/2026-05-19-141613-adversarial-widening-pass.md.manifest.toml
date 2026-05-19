@@ -1,0 +1,250 @@
+[meta]
+plan = ".plans/2026-05-19-141613-adversarial-widening-pass.md"
+
+[[case_line]]
+family = "semantic-thinness"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "By the end of the review, she realized what mattered."
+
+[[case_line]]
+family = "semantic-thinness"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "After the third revision, the stakes felt real."
+
+[[case_line]]
+family = "semantic-thinness"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
+text = "Cassia's throat went tight before she could answer."
+
+[[case_line]]
+family = "semantic-thinness"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
+text = "For a moment, her eyes moved from the window to the floor."
+
+[[case_line]]
+family = "semantic-thinness"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "By Friday, the meeting room felt different now."
+
+[[case_line]]
+family = "semantic-thinness"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/semantic-thinness/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "After that, the conversation shifted."
+
+[[case_line]]
+family = "semantic-thinness"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "By the end of the review, she realized the CDN rule still pointed at the old host."
+
+[[case_line]]
+family = "semantic-thinness"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "After the third revision, the stakes were real because the contract penalty started Monday."
+
+[[case_line]]
+family = "semantic-thinness"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/health-and-parenting.md"
+text = "Her throat went tight because the allergic swelling had reached her airway."
+
+[[case_line]]
+family = "semantic-thinness"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
+text = "Her eyes moved from the window to the floor because the chalk mark continued under the sill."
+
+[[case_line]]
+family = "semantic-thinness"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "The meeting room felt different after facilities removed the temporary wall."
+
+[[case_line]]
+family = "semantic-thinness"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/semantic-thinness/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "After that, the conversation shifted to the missing invoice export."
+
+[[case_line]]
+family = "syntactic-patterns"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "The fix is not more dashboards but better judgment."
+
+[[case_line]]
+family = "syntactic-patterns"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "The work is less about volume than judgment."
+
+[[case_line]]
+family = "syntactic-patterns"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "A better strategy is boring."
+
+[[case_line]]
+family = "syntactic-patterns"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "This practical focus is the whole game."
+
+[[case_line]]
+family = "syntactic-patterns"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "She did not answer the criticism. Instead, she shifted the frame."
+
+[[case_line]]
+family = "syntactic-patterns"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "The repair is not more dashboards but the invoice export named in the audit."
+
+[[case_line]]
+family = "syntactic-patterns"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "The cache is less stable than the signed upload URL under retry load."
+
+[[case_line]]
+family = "syntactic-patterns"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "A better strategy is documented in the rollback checklist."
+
+[[case_line]]
+family = "syntactic-patterns"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/engineering-review.md"
+text = "This practical focus is the microscope adjustment that keeps the slide centered."
+
+[[case_line]]
+family = "syntactic-patterns"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/syntactic-patterns/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
+text = "She did not answer the guard because the bell drowned out his question."
+
+[[case_line]]
+family = "narrative-slop"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/narrative-slop/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
+text = "Cassia stepped to the sill, she rested her paws on the wood, and then she looked at Arden."
+
+[[case_line]]
+family = "narrative-slop"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/narrative-slop/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
+text = "Liska blinked. Her jaw tightened. Her shoulders stiffened."
+
+[[case_line]]
+family = "narrative-slop"
+bucket = "hits"
+path = "behavior/fixtures/textlint-rules/cases/narrative-slop/hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
+text = "Arden scanned the alley. Cassia noticed the gate. Remal studied the roofline."
+
+[[case_line]]
+family = "narrative-slop"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/narrative-slop/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
+text = "Cassia stepped to the sill, rested the pulley on the wood, and checked the knot number scratched into the post."
+
+[[case_line]]
+family = "narrative-slop"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/narrative-slop/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/health-and-parenting.md"
+text = "The patient's jaw tightened when the dentist adjusted the spacer."
+
+[[case_line]]
+family = "narrative-slop"
+bucket = "no-hits"
+path = "behavior/fixtures/textlint-rules/cases/narrative-slop/no-hits.md"
+corpus = "behavior/fixtures/textlint-rules/corpus/narrative-scenes.md"
+text = "Arden scanned the alley for the chalk arrow, counted two guards, and copied the mark onto his slate."
+
+[[rule_widening]]
+path = "src/rules/semantic-thinness/patterns/generic-realization.json"
+required_text = ["\"matchMode\": \"contains\"", "what mattered"]
+
+[[rule_widening]]
+path = "src/rules/semantic-thinness/patterns/generic-pressure-or-stakes.json"
+required_text = ["\"matchMode\": \"contains\"", "felt real"]
+
+[[rule_widening]]
+path = "src/rules/semantic-thinness/patterns/body-emotion-shorthand.json"
+required_text = ["\"matchMode\": \"contains\"", "went tight"]
+
+[[rule_widening]]
+path = "src/rules/semantic-thinness/patterns/gaze-choreography.json"
+required_text = ["\"matchMode\": \"contains\"", "her eyes"]
+
+[[rule_widening]]
+path = "src/rules/semantic-thinness/patterns/empty-scene-state.json"
+required_text = ["\"matchMode\": \"contains\"", "felt different"]
+
+[[rule_widening]]
+path = "src/rules/semantic-thinness/patterns/empty-scene-transition.json"
+required_text = ["\"matchMode\": \"contains\"", "the conversation"]
+
+[[rule_widening]]
+path = "src/rules/syntactic-patterns/lead-ins/generic-signposting.ts"
+required_text = ["\"approach\"", "\"strategy\"", "\"focus\"", "DETERMINERS"]
+
+[[rule_widening]]
+path = "src/rules/syntactic-patterns/contrast/contrastive-aphorism.ts"
+required_text = ["matchSameSentenceContrast"]
+
+[[rule_widening]]
+path = "src/rules/syntactic-patterns/contrast/private/same-sentence-contrast.ts"
+required_text = ["matchSameSentenceContrast", "less-about-than", "not-x-but-y"]
+
+[[rule_widening]]
+path = "src/rules/syntactic-patterns/contrast/private/negative-slop-frames.ts"
+required_text = ["\"shifted\"", "\"raised\"", "\"kept\""]
+
+[[rule_widening]]
+path = "src/rules/narrative-slop/body-action-density.ts"
+required_text = ["\"jaw\"", "\"spine\"", "\"swallowed\""]
+
+[[rule_widening]]
+path = "src/rules/narrative-slop/perception-verb-density.ts"
+required_text = ["\"scan\"", "\"study\"", "\"notice\""]
+
+[[rule_widening]]
+path = "src/rules/narrative-slop/flat-action-cadence.ts"
+required_text = ["findFlatActionClauseRuns", "CLAUSE_CONNECTORS", "leaned"]

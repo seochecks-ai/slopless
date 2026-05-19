@@ -1345,6 +1345,20 @@
       "bucket": "no-hits",
       "source": "cases/syntactic-patterns/no-hits.md",
       "line": 141
+    },
+    {
+      "text": "Her throat went tight because the allergic swelling had reached her airway.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 185
+    },
+    {
+      "text": "The patient's jaw tightened when the dentist adjusted the spacer.",
+      "family": "narrative-slop",
+      "bucket": "no-hits",
+      "source": "cases/narrative-slop/no-hits.md",
+      "line": 81
     }
   ]
 }

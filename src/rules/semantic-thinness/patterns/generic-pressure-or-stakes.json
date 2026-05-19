@@ -2,6 +2,7 @@
   "id": "generic-pressure-or-stakes",
   "class": "stakes",
   "purpose": "Catch generic pressure, stakes, or weight lines that imply importance without concrete risk or consequence.",
+  "matchMode": "contains",
   "templates": [
     "{stakesSubject} {linkingVerb} {thinStakesComplement}.",
     "{stakesSubject} {pressureVerb} {weakPlace}.",

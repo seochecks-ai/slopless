@@ -61,7 +61,13 @@ const REJECT_TOKENS = new Set([
   "while"
 ]);
 const BROAD_PATTERN_IDS = new Set([
+  "body-emotion-shorthand",
   "deictic-summary",
+  "empty-scene-state",
+  "empty-scene-transition",
+  "gaze-choreography",
+  "generic-pressure-or-stakes",
+  "generic-realization",
   "hollow-significance",
   "puffery-evaluative-claim",
   "vague-threshold-change"

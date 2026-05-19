@@ -821,3 +821,13 @@ What works better than the old endpoint is the signed upload URL.
 The missing layer is authentication because the staging API rejects public tokens.
 
 The focus is practical optics in the microscope calibration note.
+
+The late-stage content review produced one more batch of vague recommendations. By the end of the review, she realized what mattered. After the third revision, the stakes felt real. By Friday, the meeting room felt different now. After that, the conversation shifted.
+
+The control cases stayed in the same review memo so the rule would have to separate slogan from evidence. By the end of the review, she realized the CDN rule still pointed at the old host. After the third revision, the stakes were real because the contract penalty started Monday. The meeting room felt different after facilities removed the temporary wall. After that, the conversation shifted to the missing invoice export.
+
+The SEO draft had the same slogan problem in a more polished voice. The fix is not more dashboards but better judgment. The work is less about volume than judgment. A better strategy is boring.
+
+This practical focus is the whole game. She did not answer the criticism. Instead, she shifted the frame.
+
+The factual controls used the same surface shapes with concrete anchors. The repair is not more dashboards but the invoice export named in the audit. The cache is less stable than the signed upload URL under retry load. A better strategy is documented in the rollback checklist. This practical focus is the microscope adjustment that keeps the slide centered.

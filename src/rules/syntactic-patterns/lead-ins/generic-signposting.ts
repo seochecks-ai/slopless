@@ -57,6 +57,7 @@ const FRAME_PATTERNS = [
   "the useful version is",
   "the point is plain enough"
 ];
+const DETERMINERS = ["a", "an", "the", "this", "that"];
 const SEQUENCE_PATTERNS = [
   "a simple sequence works well",
   "a simple pattern works well",
@@ -108,23 +109,31 @@ const FRAME_ADJECTIVES = [
 ];
 const FRAME_NOUNS = [
   "answer",
+  "approach",
   "challenge",
+  "choice",
   "conclusion",
   "fact",
+  "fix",
   "focus",
   "frame",
   "idea",
   "lesson",
   "move",
+  "path",
   "point",
+  "principle",
+  "priority",
   "problem",
   "question",
   "result",
   "rule",
   "shift",
   "signal",
+  "strategy",
   "test",
   "thing",
+  "tradeoff",
   "truth",
   "version",
   "way",
@@ -168,10 +177,11 @@ function matchEvaluativeFrame(words: readonly string[]): string | undefined {
   const [first, second, third, fourth] = words;
 
   if (
-    first === "the" &&
+    first !== undefined &&
     second !== undefined &&
     third !== undefined &&
     fourth !== undefined &&
+    DETERMINERS.includes(first) &&
     FRAME_ADJECTIVES.includes(second) &&
     FRAME_NOUNS.includes(third) &&
     ABSTRACT_FRAME_VERBS.includes(fourth)

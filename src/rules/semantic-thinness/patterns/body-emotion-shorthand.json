@@ -2,6 +2,7 @@
   "id": "body-emotion-shorthand",
   "class": "body-emotion",
   "purpose": "Catch stock body-feeling lines that translate emotion into generic chest, breath, heart, or limb sensations without naming the thought, choice, or concrete pressure.",
+  "matchMode": "contains",
   "templates": [
     "{bodySubject} {feltVerb} {bodySensation}.",
     "{bodySubject} {bodyReactionVerb}.",
@@ -20,6 +21,7 @@
       "her stomach",
       "his stomach",
       "cassia's stomach",
+      "cassia's throat",
       "her shoulders",
       "his shoulders",
       "her throat",

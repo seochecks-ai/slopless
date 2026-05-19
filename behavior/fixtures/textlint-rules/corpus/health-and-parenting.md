@@ -421,3 +421,5 @@ Most adults need at least 7 hours of sleep per night.
 After the clinic updated its asthma action plan, the office manager checked the reminder system. Rotate the signing key every thirty days. The meeting ended after the clerk stamped the permit. The new tax rule raised quarterly payments by twelve percent. They stood by the north exit at thirteen minutes after eight.
 
 The pediatrician paused while the parents absorbed the discharge instructions. The moment passed. Then she showed them where the inhaler schedule belonged on the refrigerator.
+
+The allergy handout used body language only when the cause was physical. Her throat went tight because the allergic swelling had reached her airway. The patient's jaw tightened when the dentist adjusted the spacer.

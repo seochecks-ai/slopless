@@ -2,6 +2,7 @@
   "id": "empty-scene-state",
   "class": "scene-state",
   "purpose": "Catch short scene-setting lines that name a place or scene element and assign an empty state without action, cause, or concrete detail.",
+  "matchMode": "contains",
   "templates": [
     "{placeSubject} {linkingVerb} {thinState}.",
     "{placeSubject} {linkingVerb} {thinState} {weakModifier}.",

@@ -189,3 +189,13 @@ What works better than the old endpoint is the signed upload URL.
 The missing layer is authentication because the staging API rejects public tokens.
 
 The focus is practical optics in the microscope calibration note.
+
+The repair is not more dashboards but the invoice export named in the audit.
+
+The cache is less stable than the signed upload URL under retry load.
+
+A better strategy is documented in the rollback checklist.
+
+This practical focus is the microscope adjustment that keeps the slide centered.
+
+She did not answer the guard because the bell drowned out his question.

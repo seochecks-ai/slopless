@@ -75,3 +75,9 @@ The singer smiled after the conductor gave the entrance cue.
 The runner crossed his arms to stretch his shoulders before the race.
 
 The technician rested her hands on the sill to reach the loose antenna cable.
+
+Cassia stepped to the sill, rested the pulley on the wood, and checked the knot number scratched into the post.
+
+The patient's jaw tightened when the dentist adjusted the spacer.
+
+Arden scanned the alley for the chalk arrow, counted two guards, and copied the mark onto his slate.

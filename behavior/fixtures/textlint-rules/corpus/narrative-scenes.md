@@ -411,3 +411,11 @@ The singer smiled after the conductor gave the entrance cue.
 The runner crossed his arms to stretch his shoulders before the race.
 
 The technician rested her hands on the sill to reach the loose antenna cable.
+
+The weaker scene draft leaned on camera motion and body shorthand instead of action. Cassia's throat went tight before she could answer. For a moment, her eyes moved from the window to the floor.
+
+Cassia stepped to the sill, she rested her paws on the wood, and then she looked at Arden. Liska blinked. Her jaw tightened. Her shoulders stiffened.
+
+Arden scanned the alley. Cassia noticed the gate. Remal studied the roofline.
+
+The control passage kept the same surface vocabulary but tied it to evidence and tasks. Her eyes moved from the window to the floor because the chalk mark continued under the sill. She did not answer the guard because the bell drowned out his question. Cassia stepped to the sill, rested the pulley on the wood, and checked the knot number scratched into the post. Arden scanned the alley for the chalk arrow, counted two guards, and copied the mark onto his slate.

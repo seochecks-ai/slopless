@@ -27,7 +27,31 @@ const PERCEPTION_VERBS = new Set([
   "observe",
   "observes",
   "observed",
-  "observing"
+  "observing",
+  "scan",
+  "scans",
+  "scanned",
+  "scanning",
+  "peer",
+  "peers",
+  "peered",
+  "peering",
+  "squint",
+  "squints",
+  "squinted",
+  "squinting",
+  "study",
+  "studies",
+  "studied",
+  "studying",
+  "notice",
+  "notices",
+  "noticed",
+  "noticing",
+  "see",
+  "sees",
+  "saw",
+  "seeing"
 ]);
 
 const PURPOSE_LOOK_PARTICLES = new Set(["for", "up", "under", "into"]);

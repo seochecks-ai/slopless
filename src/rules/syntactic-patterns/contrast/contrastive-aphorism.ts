@@ -7,6 +7,7 @@ import {
   trimTerminalPunctuation
 } from "../../../shared/matchers/prose-patterns.js";
 import { pairHasAbstractSubjectOrObject } from "./private/abstract-pair-gates.js";
+import { matchSameSentenceContrast } from "./private/same-sentence-contrast.js";
 
 const PREFIXES = ["and ", "but ", "so ", "because "];
 const ENOUGH_FOR_SUFFIXES = [" is enough for this", " is enough for that"];
@@ -317,14 +318,16 @@ const rule = defineTextlintRule({
     detect: ({ units }) => {
       const detections = units.flatMap((unit) => {
         const signal = matchSingle(unit.text);
-        if (signal === undefined) {
+        const sameSentenceSignal =
+          signal ?? matchSameSentenceContrast(unit.text);
+        if (sameSentenceSignal === undefined) {
           return [];
         }
 
         return [
           {
-            evidence: signal,
-            label: signal,
+            evidence: sameSentenceSignal,
+            label: sameSentenceSignal,
             range: { start: 0, end: unit.text.length },
             ruleId: "syntactic-patterns:contrastive-aphorism" as const,
             unitId: unit.id

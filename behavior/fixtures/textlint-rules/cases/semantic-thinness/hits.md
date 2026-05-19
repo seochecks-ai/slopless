@@ -189,3 +189,15 @@ Local AI visibility behaves like a trust filter.
 AI Overviews add another layer to the diagnosis.
 
 Sadness entered the room.
+
+By the end of the review, she realized what mattered.
+
+After the third revision, the stakes felt real.
+
+Cassia's throat went tight before she could answer.
+
+For a moment, her eyes moved from the window to the floor.
+
+By Friday, the meeting room felt different now.
+
+After that, the conversation shifted.

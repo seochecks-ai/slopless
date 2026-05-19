@@ -2,6 +2,7 @@
   "id": "generic-realization",
   "class": "realization",
   "purpose": "Catch realization lines that announce understanding without naming what was learned.",
+  "matchMode": "contains",
   "templates": [
     "{humanSubject} {realizationVerb} {genericObject}.",
     "{humanSubject} {realizationVerb} that {genericSubject} {thinPredicate}.",

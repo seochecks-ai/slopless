@@ -177,3 +177,15 @@ Her throat closed because the peanut lodged below the tongue.
 The weight settled on the scale at 12 kilograms.
 
 The words hit the paper banner like rain because the roof leaked.
+
+By the end of the review, she realized the CDN rule still pointed at the old host.
+
+After the third revision, the stakes were real because the contract penalty started Monday.
+
+Her throat went tight because the allergic swelling had reached her airway.
+
+Her eyes moved from the window to the floor because the chalk mark continued under the sill.
+
+The meeting room felt different after facilities removed the temporary wall.
+
+After that, the conversation shifted to the missing invoice export.

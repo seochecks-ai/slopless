@@ -2,6 +2,7 @@
   "id": "gaze-choreography",
   "class": "body-camera",
   "purpose": "Catch eye and gaze choreography where body-part camera movement stands in for a concrete observation, decision, or reaction.",
+  "matchMode": "contains",
   "templates": [
     "{gazeSubject} {gazeVerb} {gazeTarget}.",
     "{gazeSubject} {movementVerb} from {gazeTarget} to {gazeTarget}.",
@@ -35,6 +36,7 @@
       "the yard",
       "the room",
       "the door",
+      "the window",
       "the street",
       "the shadows",
       "the rooftops",

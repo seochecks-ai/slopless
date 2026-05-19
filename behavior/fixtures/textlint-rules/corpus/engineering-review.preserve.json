@@ -2724,6 +2724,125 @@
       "bucket": "no-hits",
       "source": "cases/syntactic-patterns/no-hits.md",
       "line": 191
+    },
+    {
+      "text": "By the end of the review, she realized what mattered.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 193
+    },
+    {
+      "text": "After the third revision, the stakes felt real.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 195
+    },
+    {
+      "text": "By Friday, the meeting room felt different now.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 201
+    },
+    {
+      "text": "After that, the conversation shifted.",
+      "family": "semantic-thinness",
+      "bucket": "hits",
+      "source": "cases/semantic-thinness/hits.md",
+      "line": 203
+    },
+    {
+      "text": "By the end of the review, she realized the CDN rule still pointed at the old host.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 181
+    },
+    {
+      "text": "After the third revision, the stakes were real because the contract penalty started Monday.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 183
+    },
+    {
+      "text": "The meeting room felt different after facilities removed the temporary wall.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 189
+    },
+    {
+      "text": "After that, the conversation shifted to the missing invoice export.",
+      "family": "semantic-thinness",
+      "bucket": "no-hits",
+      "source": "cases/semantic-thinness/no-hits.md",
+      "line": 191
+    },
+    {
+      "text": "The fix is not more dashboards but better judgment.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1047
+    },
+    {
+      "text": "The work is less about volume than judgment.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1049
+    },
+    {
+      "text": "A better strategy is boring.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1051
+    },
+    {
+      "text": "This practical focus is the whole game.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1053
+    },
+    {
+      "text": "She did not answer the criticism. Instead, she shifted the frame.",
+      "family": "syntactic-patterns",
+      "bucket": "hits",
+      "source": "cases/syntactic-patterns/hits.md",
+      "line": 1055
+    },
+    {
+      "text": "The repair is not more dashboards but the invoice export named in the audit.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 193
+    },
+    {
+      "text": "The cache is less stable than the signed upload URL under retry load.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 195
+    },
+    {
+      "text": "A better strategy is documented in the rollback checklist.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 197
+    },
+    {
+      "text": "This practical focus is the microscope adjustment that keeps the slide centered.",
+      "family": "syntactic-patterns",
+      "bucket": "no-hits",
+      "source": "cases/syntactic-patterns/no-hits.md",
+      "line": 199
     }
   ]
 }
