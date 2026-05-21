@@ -12,8 +12,8 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0
       '@textlint/ast-node-types':
-        specifier: 15.6.1
-        version: 15.6.1
+        specifier: 15.7.1
+        version: 15.7.1
       '@textlint/types':
         specifier: 15.6.1
         version: 15.6.1
@@ -572,6 +572,9 @@ packages:
 
   '@textlint/ast-node-types@15.6.1':
     resolution: {integrity: sha512-KXUhbpBctWkSumyNwFQBufwWCcjdxARGVnlH6AfERaFAnpi300L8og+l2Hs/bIqkXu26T5tIs7jNnRgUs20hmQ==}
+
+  '@textlint/ast-node-types@15.7.1':
+    resolution: {integrity: sha512-Wii5UgUKFEh9Uv6wbq1zr4/Kf+dtjiUuzPrrXzKp8H+ifkvKNzi23V4Nz+6wVyHQn5T28AFuc8VH8OtzvGYecA==}
 
   '@textlint/ast-tester@15.6.1':
     resolution: {integrity: sha512-rwFi8hkj9laY/bJsDSAsut7XyJWDCyN4VaGVhqQhTcFMmI/nOVsCyzTb35Z7a8tqeSFGs88gWZ2fIfjwUDFnbQ==}
@@ -3171,6 +3174,8 @@ snapshots:
 
   '@textlint/ast-node-types@15.6.1': {}
 
+  '@textlint/ast-node-types@15.7.1': {}
+
   '@textlint/ast-tester@15.6.1':
     dependencies:
       '@textlint/ast-node-types': 15.6.1
@@ -5278,7 +5283,7 @@ snapshots:
 
   textlint-rule-helper@2.5.0:
     dependencies:
-      '@textlint/ast-node-types': 15.6.1
+      '@textlint/ast-node-types': 15.7.1
       structured-source: 4.0.0
       unist-util-visit: 2.0.3
 
