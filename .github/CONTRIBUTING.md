@@ -35,7 +35,7 @@ If a PR cannot get past the hooks, CI will fail too. The pre-commit gate is non-
 Requires Node.js 20 or newer.
 
 ```bash
-git clone https://github.com/agent-quality-controls/slopless.git
+git clone https://github.com/seochecks-ai/slopless.git
 cd slopless
 npm install
 npm run build

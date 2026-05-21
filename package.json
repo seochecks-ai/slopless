@@ -5,11 +5,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/agent-quality-controls/slopless.git"
+    "url": "git+https://github.com/seochecks-ai/slopless.git"
   },
-  "homepage": "https://github.com/agent-quality-controls/slopless#readme",
+  "homepage": "https://github.com/seochecks-ai/slopless#readme",
   "bugs": {
-    "url": "https://github.com/agent-quality-controls/slopless/issues"
+    "url": "https://github.com/seochecks-ai/slopless/issues"
   },
   "type": "module",
   "main": "./dist/index.js",

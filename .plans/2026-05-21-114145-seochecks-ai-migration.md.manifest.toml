@@ -1,0 +1,72 @@
+target_owner = "seochecks-ai"
+target_repo = "slopless"
+target_remote = "https://github.com/seochecks-ai/slopless.git"
+old_owner = "agent-quality-controls"
+
+[[repo_file]]
+path = "README.md"
+must_contain = [
+  "https://github.com/seochecks-ai/slopless/wiki/Philosophy",
+  "Developed by [seochecks.ai](https://seochecks.ai) to keep content specific, useful, and recognizably human."
+]
+must_not_contain = [
+  "agent-quality-controls%2Fslopless",
+  "https://github.com/agent-quality-controls/slopless/wiki/",
+  "Part of [Agent Quality Controls](https://github.com/agent-quality-controls)."
+]
+
+[[repo_file]]
+path = "package.json"
+must_contain = [
+  "git+https://github.com/seochecks-ai/slopless.git",
+  "https://github.com/seochecks-ai/slopless#readme",
+  "https://github.com/seochecks-ai/slopless/issues"
+]
+must_not_contain = [
+  "git+https://github.com/agent-quality-controls/slopless.git",
+  "https://github.com/agent-quality-controls/slopless#readme",
+  "https://github.com/agent-quality-controls/slopless/issues"
+]
+
+[[repo_file]]
+path = ".github/ISSUE_TEMPLATE/config.yml"
+must_contain = ["https://github.com/seochecks-ai/slopless/discussions"]
+must_not_contain = ["https://github.com/agent-quality-controls/slopless/discussions"]
+
+[[repo_file]]
+path = ".github/CONTRIBUTING.md"
+must_contain = ["git clone https://github.com/seochecks-ai/slopless.git"]
+must_not_contain = ["git clone https://github.com/agent-quality-controls/slopless.git"]
+
+[[github_repo]]
+name_with_owner = "seochecks-ai/slopless"
+description = "Deterministic textlint rules and CLI for catching prose slop in Markdown"
+homepage = "https://www.npmjs.com/package/slopless"
+default_branch = "main"
+issues = true
+wiki = true
+discussions = true
+actions = true
+vulnerability_alerts = true
+topics = [
+  "ai",
+  "cli",
+  "lint",
+  "linter",
+  "llm",
+  "markdown",
+  "nodejs",
+  "prose",
+  "quality",
+  "slop",
+  "static-analysis",
+  "style-guide",
+  "textlint",
+  "typescript",
+  "writing"
+]
+
+[[github_repo]]
+name_with_owner = "seochecks-ai/.github"
+description = "Org-level profile and community health files for seochecks.ai"
+default_branch = "main"
