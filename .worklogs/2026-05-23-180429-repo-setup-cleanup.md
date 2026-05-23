@@ -19,8 +19,12 @@ First round of the promotion plan (`.plans/2026-05-23-152521-promotion-master.md
 
 ## Required follow-up before next release
 
-1. **Add `NPM_TOKEN` repo secret** at `https://github.com/seochecks-ai/slopless/settings/secrets/actions`. Generate at npmjs.com → Access Tokens → Granular Access Token, scope = publish on `slopless`. Until this is added, the release workflow will fail at the publish step.
+1. **Configure npm Trusted Publishing** at `https://www.npmjs.com/package/slopless/access` → "Trusted Publisher" → "GitHub Actions". Fields (case-sensitive): organization `seochecks-ai`, repository `slopless`, workflow filename `release.yml`. Leave environment blank. Allowed actions: `npm publish` (post-2026-05-20 configs must explicitly select). One-time browser action; no token to rotate. Until this is configured, the release workflow will fail at publish.
 2. **New release procedure**: merge the version-bump PR, then run `gh release create vX.Y.Z --generate-notes` (or use the UI). Do not run `npm publish` locally — the workflow does it.
+
+## pnpm 10 → 11 bump (in this same commit)
+
+Trusted Publishing via `pnpm publish` requires pnpm >= 11.1.3 (the version where OIDC integration works correctly with `actions/setup-node`'s `.npmrc`). Bumped `packageManager` from `pnpm@10.32.0` to `pnpm@11.2.2` and matching `pnpm/action-setup` versions in `ci.yml` and `release.yml`. Lockfile loaded cleanly under pnpm 11 without regeneration; `pnpm run build` produces identical output.
 
 ## Not in this PR (deferred)
 

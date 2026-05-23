@@ -20,7 +20,7 @@ jobs:
           key: g3ts
       - uses: pnpm/action-setup@v4
         with:
-          version: 10.32.0
+          version: 11.2.2
       - uses: actions/setup-node@v6
         with:
           node-version: ${{ matrix.node }}
