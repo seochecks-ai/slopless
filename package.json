@@ -1,6 +1,6 @@
 {
   "name": "slopless",
-  "version": "0.2.12",
+  "version": "0.2.13",
   "description": "Deterministic textlint rules and CLI for catching prose slop in English Markdown.",
   "keywords": [
     "textlint",
