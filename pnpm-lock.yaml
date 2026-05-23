@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@lunarisapp/readability':
-        specifier: ^1.1.0
-        version: 1.1.0
       '@textlint/ast-node-types':
         specifier: 15.7.1
         version: 15.7.1
@@ -20,6 +17,9 @@ importers:
       sentence-splitter:
         specifier: 5.0.1
         version: 5.0.1
+      text-readability:
+        specifier: 1.1.1
+        version: 1.1.1
       textlint:
         specifier: 15.7.1
         version: 15.7.1
@@ -512,21 +512,6 @@ packages:
   '@keyv/serialize@1.1.1':
     resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
 
-  '@lunarisapp/cmudict@1.0.1':
-    resolution: {integrity: sha512-9mRuxPIwSHcpNjDdmOKxrF8EdzZG1S3ckfdf7kiG+K7Qm2bLyPSKjwY3C9CvV4LnGJ4vXS7CIMS4gKsISeGo+g==}
-
-  '@lunarisapp/hyphen@1.2.0':
-    resolution: {integrity: sha512-tepWoX8yFGr4fUhfYgDo4Nuv1LL4YDLmXdssFv9+BgM+wojVbjVKQXGLoXoXseDR531d5tnbK5O87trtvO7lVw==}
-
-  '@lunarisapp/language@1.1.0':
-    resolution: {integrity: sha512-ck/KtlE2BFy5xNYKtLD/fFXGpkegqDQuYAYQwJQxTTQrz4FTY/IHXpRnTfoqZEgTXgigdDgj5kg7XBZdkMEo9Q==}
-
-  '@lunarisapp/readability@1.1.0':
-    resolution: {integrity: sha512-RhtyjMRUBajC7Lluz98Bi+U43LBUc4fNPFirfIkIpdocgN9i3H/ev+ceawqNcsUznETM5SNsaNZcKEYr/Q7P+g==}
-
-  '@lunarisapp/stats@1.0.3':
-    resolution: {integrity: sha512-ypLkWTU88rAUVxe2Cq9OV0yguT7qUUqPsU2ZK+3jEI7dqudbnsiPk4ggfIHNrQffl6YdKMAPwDioATYzsVZnJA==}
-
   '@modelcontextprotocol/sdk@1.29.0':
     resolution: {integrity: sha512-zo37mZA9hJWpULgkRpowewez1y6ML5GsXJPY8FI0tBBCd77HEvza4jDqRKOXgHNn867PVGCyTdzqpz0izu5ZjQ==}
     engines: {node: '>=18'}
@@ -633,6 +618,9 @@ packages:
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
+
+  '@types/pluralize@0.0.29':
+    resolution: {integrity: sha512-BYOID+l2Aco2nBik+iYS4SZX0Lf20KPILP5RGmM1IgzdwNdTs0eebiFriOPcej1sX9mLnSoiNte5zcFxssgpGA==}
 
   '@types/sarif@2.1.7':
     resolution: {integrity: sha512-kRz0VEkJqWLf1LLVN4pT1cg1Z9wAuvI6L97V3m2f5B76Tg8d413ddvLBPTEHAZJlnn4XSvu0FkZtViCQGVyrXQ==}
@@ -1971,6 +1959,9 @@ packages:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
 
+  normalize-strings@1.1.1:
+    resolution: {integrity: sha512-fARPRdTwmrQDLYhmeh7j/eZwrCP6WzxD6uKOdK/hT/uKACAE9AG2Bc2dgqOZLkfmmctHpfcJ9w3AQnfLgg3GYg==}
+
   npm-run-path@4.0.1:
     resolution: {integrity: sha512-S48WzZW777zhNIrn7gxOlISNAqi9ZC/uQFnRdbeIHhZhCA6UqpkOT8T1G7BvfdgP4Er8gF4sUbaS0i7QvIfCWw==}
     engines: {node: '>=8'}
@@ -2414,6 +2405,10 @@ packages:
   svg-tags@1.0.0:
     resolution: {integrity: sha512-ovssysQTa+luh7A5Weu3Rta6FJlFBBbInjOh722LIt6klpU2/HtdUbszju/G4devcvk8PGt7FCLv5wftu3THUA==}
 
+  syllable@5.0.1:
+    resolution: {integrity: sha512-HWtNCp6v7J8H0lrT8j1HHjfOLltRoDcC7QRFVu25p4BE52JqetXG65nqC7CsatT8WQRfY4Qvh93BWJIUxbmXFg==}
+    hasBin: true
+
   syncpack-darwin-arm64@15.3.1:
     resolution: {integrity: sha512-XvbaowC/fw+B7diOtoYjEtSWJVMEbJ7ZH72/TZIe73NwYwY7KFRMVefwxcJE29G+my4vaPmttf2Lbnri8pD6Jw==}
     cpu: [arm64]
@@ -2465,6 +2460,9 @@ packages:
 
   tailwindcss@4.3.0:
     resolution: {integrity: sha512-y6nxMGB1nMW9R6k96e5gdIFzcfL/gTJRNaqGes1YvkLnPVXzWgbqFF2yLC0T8G774n24cx3Pe8XrKoniCOAH+Q==}
+
+  text-readability@1.1.1:
+    resolution: {integrity: sha512-lo0KlcNRhlBAxTCEPXMFricim2vJVm0xAVdy40N6WQDn+MeKDBFxl0bMdP2YIMm9ph34CPvxYO/Lxb1QIi67ig==}
 
   text-table@0.2.0:
     resolution: {integrity: sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==}
@@ -3086,25 +3084,6 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@lunarisapp/cmudict@1.0.1': {}
-
-  '@lunarisapp/hyphen@1.2.0': {}
-
-  '@lunarisapp/language@1.1.0': {}
-
-  '@lunarisapp/readability@1.1.0':
-    dependencies:
-      '@lunarisapp/language': 1.1.0
-      '@lunarisapp/stats': 1.0.3
-      lru-cache: 11.3.6
-
-  '@lunarisapp/stats@1.0.3':
-    dependencies:
-      '@lunarisapp/cmudict': 1.0.1
-      '@lunarisapp/hyphen': 1.2.0
-      '@lunarisapp/language': 1.1.0
-      lru-cache: 11.3.6
-
   '@modelcontextprotocol/sdk@1.29.0(zod@3.25.76)':
     dependencies:
       '@hono/node-server': 1.19.14(hono@4.12.18)
@@ -3295,6 +3274,8 @@ snapshots:
       undici-types: 6.21.0
 
   '@types/normalize-package-data@2.4.4': {}
+
+  '@types/pluralize@0.0.29': {}
 
   '@types/sarif@2.1.7': {}
 
@@ -4703,6 +4684,8 @@ snapshots:
 
   normalize-path@3.0.0: {}
 
+  normalize-strings@1.1.1: {}
+
   npm-run-path@4.0.1:
     dependencies:
       path-key: 3.1.1
@@ -5237,6 +5220,12 @@ snapshots:
 
   svg-tags@1.0.0: {}
 
+  syllable@5.0.1:
+    dependencies:
+      '@types/pluralize': 0.0.29
+      normalize-strings: 1.1.1
+      pluralize: 8.0.0
+
   syncpack-darwin-arm64@15.3.1:
     optional: true
 
@@ -5281,6 +5270,11 @@ snapshots:
       strip-ansi: 6.0.1
 
   tailwindcss@4.3.0: {}
+
+  text-readability@1.1.1:
+    dependencies:
+      pluralize: 8.0.0
+      syllable: 5.0.1
 
   text-table@0.2.0: {}
 

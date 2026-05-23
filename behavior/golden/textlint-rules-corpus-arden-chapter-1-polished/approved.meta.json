@@ -1,10 +1,10 @@
 {
   "suite": "textlint-rules-corpus-arden-chapter-1-polished",
   "kind": "approved",
-  "run_id": "2026-05-19T21-36-14.125746Z-04547efb",
-  "run_commit": "cca3d6b",
+  "run_id": "2026-05-23T18-37-14.303504Z-04547efb",
+  "run_commit": "ece876d",
   "working_tree": "dirty",
-  "recorded_at": "2026-05-19T21:36:14.125746Z",
+  "recorded_at": "2026-05-23T18:37:14.303504Z",
   "fixture_hash": "sha256:a3a0680522232c22c7c721ce44cb5686d1c313c59eed7a3759cc39f02772b964",
   "manifest_hash": "sha256:04547efbb13157ee3d8ef18dda767231fd63d3f9cc27c15317cf28c5f0583e7b",
   "tool_version": "0.1.8",
@@ -15,5 +15,5 @@
       "sha256": "sha256:357d788da3569be22db2f33494380d1d2dc4895699a2d994b89a589eeac5ba5e"
     }
   ],
-  "comment": "Approve Arden polished corpus fixture after repo formatting"
+  "comment": "text-readability swap: syllable-based metric scores shift slightly vs @lunarisapp; same direction"
 }

@@ -1,12 +1,12 @@
 {
   "suite": "textlint-rules-corpus-metrics-and-markdown",
   "kind": "approved",
-  "run_id": "2026-05-19T17-37-38.466649Z-df22e59a",
-  "run_commit": "e21d316",
+  "run_id": "2026-05-23T18-37-37.434062Z-04547efb",
+  "run_commit": "ece876d",
   "working_tree": "dirty",
-  "recorded_at": "2026-05-19T17:37:38.466649Z",
+  "recorded_at": "2026-05-23T18:37:37.434062Z",
   "fixture_hash": "sha256:f74d9cbdd8abd5a443916d0f0921a7950bc0261b393b9cc5e7102ce4c83e0744",
-  "manifest_hash": "sha256:df22e59a1c3af89660207e32169c1efa8b3064d02c7a4dc3f36d00ec8112a0ee",
+  "manifest_hash": "sha256:04547efbb13157ee3d8ef18dda767231fd63d3f9cc27c15317cf28c5f0583e7b",
   "tool_version": "0.1.8",
   "output_schema_version": "1",
   "fixtures": [
@@ -15,5 +15,5 @@
       "sha256": "sha256:4dfb3aadf405eefb187c3bcf18f674a412ed1153123e655e97e97a8b987c3451"
     }
   ],
-  "comment": "Split textlint rule approvals and restore adversarial no-hits"
+  "comment": "text-readability swap: syllable-based metric scores shift slightly vs @lunarisapp; same direction"
 }

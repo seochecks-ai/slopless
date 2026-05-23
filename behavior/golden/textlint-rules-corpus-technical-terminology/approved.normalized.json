@@ -16,6 +16,29 @@
             "line": 1
           }
         },
+        "message": "Flesch Reading Ease is 53.1. Keep it at 61 or higher.",
+        "range": [
+          0,
+          1
+        ],
+        "ruleId": "flesch-kincaid",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 2,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
         "message": "Recommended terms present: 3. Include at least 4 terms from the policy pool.",
         "range": [
           0,

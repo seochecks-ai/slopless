@@ -16,7 +16,7 @@
             "line": 1
           }
         },
-        "message": "Coleman-Liau is 17.92. Keep it at 12 or lower.",
+        "message": "Coleman-Liau is 21.03. Keep it at 12 or lower.",
         "range": [
           0,
           1
@@ -39,7 +39,7 @@
             "line": 1
           }
         },
-        "message": "Flesch Reading Ease is 18.16. Keep it at 61 or higher.",
+        "message": "Flesch Reading Ease is -289.54. Keep it at 61 or higher.",
         "range": [
           0,
           1
@@ -62,7 +62,7 @@
             "line": 1
           }
         },
-        "message": "Gunning Fog is 17.72. Keep it at 12 or lower.",
+        "message": "Gunning Fog is 135.41. Keep it at 12 or lower.",
         "range": [
           0,
           1
@@ -742,6 +742,76 @@
   },
   {
     "filePath": "/Users/tartakovsky/Projects/agent-quality-controls/slopless/behavior/fixtures/textlint-rules/cases/academic-slop/no-hits.md",
-    "messages": []
+    "messages": [
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 2,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
+        "message": "Coleman-Liau is 13.18. Keep it at 12 or lower.",
+        "range": [
+          0,
+          1
+        ],
+        "ruleId": "coleman-liau",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 2,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
+        "message": "Flesch Reading Ease is 47.32. Keep it at 61 or higher.",
+        "range": [
+          0,
+          1
+        ],
+        "ruleId": "flesch-kincaid",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 2,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
+        "message": "Gunning Fog is 14.42. Keep it at 12 or lower.",
+        "range": [
+          0,
+          1
+        ],
+        "ruleId": "gunning-fog",
+        "severity": 2,
+        "type": "lint"
+      }
+    ]
   }
 ]
