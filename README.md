@@ -127,7 +127,22 @@ Something shifted in the room.
 - [Behavior](https://github.com/seochecks-ai/slopless/wiki/Behavior) - CLI flags, exit codes, JSON output shape, direct textlint integration.
 - [Ignore rules](https://github.com/seochecks-ai/slopless/wiki/Ignore-Rules) - inline `textlint-disable` block syntax.
 - [Thanks](https://github.com/seochecks-ai/slopless/wiki/Thanks) - direct rule sources, dependencies, and acknowledgments.
+- [Roadmap](ROADMAP.md) - near-term direction and links to active plans.
 - [Contributing](.github/CONTRIBUTING.md) - open a detailed issue first; PRs must pass the G3TS pre-commit gate.
+
+## Verify the package
+
+Every release since 0.2.13 is published from GitHub Actions via OIDC and carries a [SLSA v1 provenance attestation](https://registry.npmjs.org/-/npm/v1/attestations/slopless@latest) recorded in the [Sigstore](https://www.sigstore.dev/) transparency log.
+
+```bash
+npm audit signatures slopless
+```
+
+This confirms the tarball you installed was built in the published source repository's Actions environment, from the commit the GitHub Release points at.
+
+## Star history
+
+[![Star History Chart](https://api.star-history.com/svg?repos=seochecks-ai/slopless&type=Date)](https://star-history.com/#seochecks-ai/slopless&Date)
 
 ---
 
