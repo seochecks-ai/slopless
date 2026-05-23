@@ -1,10 +1,10 @@
 {
   "suite": "textlint-rules-cases-semantic-thinness",
   "kind": "approved",
-  "run_id": "2026-05-19T21-21-11.196297Z-04547efb",
-  "run_commit": "cca3d6b",
+  "run_id": "2026-05-23T18-36-57.823277Z-04547efb",
+  "run_commit": "ece876d",
   "working_tree": "dirty",
-  "recorded_at": "2026-05-19T21:21:11.196297Z",
+  "recorded_at": "2026-05-23T18:36:57.823277Z",
   "fixture_hash": "sha256:160c5d2039408623301f14622b8794aff564f95666af4f2c65c9b6377ba15430",
   "manifest_hash": "sha256:04547efbb13157ee3d8ef18dda767231fd63d3f9cc27c15317cf28c5f0583e7b",
   "tool_version": "0.1.8",
@@ -19,5 +19,5 @@
       "sha256": "sha256:36f23dd4883462dae296b5aa16a3e26da44365d7cd3d75011ad91c7febf81793"
     }
   ],
-  "comment": "Catch Arden polished chapter slop"
+  "comment": "text-readability swap: syllable-based metric scores shift slightly vs @lunarisapp; same direction"
 }

@@ -1,10 +1,10 @@
 {
   "suite": "textlint-rules-cases-narrative-slop",
   "kind": "approved",
-  "run_id": "2026-05-20T17-37-53.568674Z-04547efb",
-  "run_commit": "27265a9",
+  "run_id": "2026-05-23T18-36-45.888678Z-04547efb",
+  "run_commit": "ece876d",
   "working_tree": "dirty",
-  "recorded_at": "2026-05-20T17:37:53.568674Z",
+  "recorded_at": "2026-05-23T18:36:45.888678Z",
   "fixture_hash": "sha256:5a3ddbe800b1afb72a47b9064b30001bee79b037c131bc6bf3271cd3c424671f",
   "manifest_hash": "sha256:04547efbb13157ee3d8ef18dda767231fd63d3f9cc27c15317cf28c5f0583e7b",
   "tool_version": "0.1.8",
@@ -19,5 +19,5 @@
       "sha256": "sha256:41d4e274f72375cf4775056cd697e5bc703f396b4b0a91dc8ce3acd16682305e"
     }
   ],
-  "comment": "Approve kept pace empty beat"
+  "comment": "text-readability swap: syllable-based metric scores shift slightly vs @lunarisapp; same direction"
 }

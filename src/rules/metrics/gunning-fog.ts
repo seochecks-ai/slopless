@@ -1,4 +1,4 @@
-import { TextReadability } from "@lunarisapp/readability";
+import readability from "text-readability";
 import { oneToOneRule } from "../private/textlint-rule-builders.js";
 
 const MAX_SCORE = 12;
@@ -13,7 +13,6 @@ const rule = oneToOneRule({
       return [];
     }
 
-    const readability = new TextReadability({ lang: "en_US" });
     const score = readability.gunningFog(unit.text);
     if (score <= MAX_SCORE) {
       return [];

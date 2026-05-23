@@ -16,7 +16,7 @@
             "line": 1
           }
         },
-        "message": "Coleman-Liau is 17.87. Keep it at 12 or lower.",
+        "message": "Coleman-Liau is 19.09. Keep it at 12 or lower.",
         "range": [
           0,
           1
@@ -39,12 +39,35 @@
             "line": 1
           }
         },
-        "message": "Flesch Reading Ease is 39.72. Keep it at 61 or higher.",
+        "message": "Flesch Reading Ease is 27.86. Keep it at 61 or higher.",
         "range": [
           0,
           1
         ],
         "ruleId": "flesch-kincaid",
+        "severity": 2,
+        "type": "lint"
+      },
+      {
+        "column": 1,
+        "index": 0,
+        "line": 1,
+        "loc": {
+          "end": {
+            "column": 2,
+            "line": 1
+          },
+          "start": {
+            "column": 1,
+            "line": 1
+          }
+        },
+        "message": "Gunning Fog is 14.6. Keep it at 12 or lower.",
+        "range": [
+          0,
+          1
+        ],
+        "ruleId": "gunning-fog",
         "severity": 2,
         "type": "lint"
       },

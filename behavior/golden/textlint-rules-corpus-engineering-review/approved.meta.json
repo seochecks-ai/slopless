@@ -1,12 +1,12 @@
 {
   "suite": "textlint-rules-corpus-engineering-review",
   "kind": "approved",
-  "run_id": "2026-05-19T20-53-50.572286Z-df22e59a",
-  "run_commit": "b606f67",
+  "run_id": "2026-05-23T18-37-27.666178Z-04547efb",
+  "run_commit": "ece876d",
   "working_tree": "dirty",
-  "recorded_at": "2026-05-19T20:53:50.572286Z",
+  "recorded_at": "2026-05-23T18:37:27.666178Z",
   "fixture_hash": "sha256:eaa061434d3460408c6d4162f654e455cfe2c58a4cb7b714091df9f6c879cf91",
-  "manifest_hash": "sha256:df22e59a1c3af89660207e32169c1efa8b3064d02c7a4dc3f36d00ec8112a0ee",
+  "manifest_hash": "sha256:04547efbb13157ee3d8ef18dda767231fd63d3f9cc27c15317cf28c5f0583e7b",
   "tool_version": "0.1.8",
   "output_schema_version": "1",
   "fixtures": [
@@ -15,5 +15,5 @@
       "sha256": "sha256:653e4966fd039ccce4ca6bf04b7d5a3ff2f8b9a084edf616a49e00436cf8030d"
     }
   ],
-  "comment": "Add missing semantic direct corpus hit"
+  "comment": "text-readability swap: syllable-based metric scores shift slightly vs @lunarisapp; same direction"
 }

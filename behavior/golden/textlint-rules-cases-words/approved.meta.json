@@ -1,12 +1,12 @@
 {
   "suite": "textlint-rules-cases-words",
   "kind": "approved",
-  "run_id": "2026-05-19T20-51-34.082041Z-df22e59a",
-  "run_commit": "b606f67",
+  "run_id": "2026-05-23T18-37-11.894689Z-04547efb",
+  "run_commit": "ece876d",
   "working_tree": "dirty",
-  "recorded_at": "2026-05-19T20:51:34.082041Z",
+  "recorded_at": "2026-05-23T18:37:11.894689Z",
   "fixture_hash": "sha256:21a1a39902413e258c573622d03efa5ff8c7ffb7da029b25b39dc0fa03767d72",
-  "manifest_hash": "sha256:df22e59a1c3af89660207e32169c1efa8b3064d02c7a4dc3f36d00ec8112a0ee",
+  "manifest_hash": "sha256:04547efbb13157ee3d8ef18dda767231fd63d3f9cc27c15317cf28c5f0583e7b",
   "tool_version": "0.1.8",
   "output_schema_version": "1",
   "fixtures": [
@@ -19,5 +19,5 @@
       "sha256": "sha256:d348fdcaf4647ffa8b1bf6e0643cdc904dfa957cb47077f98416639440874417"
     }
   ],
-  "comment": "Implement second fresh corpus expansions"
+  "comment": "text-readability swap: syllable-based metric scores shift slightly vs @lunarisapp; same direction"
 }

@@ -1,10 +1,10 @@
 {
   "suite": "textlint-rules-corpus-narrative-scenes",
   "kind": "approved",
-  "run_id": "2026-05-20T17-37-54.658552Z-04547efb",
-  "run_commit": "27265a9",
+  "run_id": "2026-05-23T18-37-41.827925Z-04547efb",
+  "run_commit": "ece876d",
   "working_tree": "dirty",
-  "recorded_at": "2026-05-20T17:37:54.658552Z",
+  "recorded_at": "2026-05-23T18:37:41.827925Z",
   "fixture_hash": "sha256:5b02c536cc4037058cfcb50ca69fa3700d32985e81455f218eb3bec3a978537d",
   "manifest_hash": "sha256:04547efbb13157ee3d8ef18dda767231fd63d3f9cc27c15317cf28c5f0583e7b",
   "tool_version": "0.1.8",
@@ -15,5 +15,5 @@
       "sha256": "sha256:86a8690dcdf6d1d90fcd58fb99d00af1ae06618dfd427dc5a4cea25de966caeb"
     }
   ],
-  "comment": "Approve kept pace empty beat"
+  "comment": "text-readability swap: syllable-based metric scores shift slightly vs @lunarisapp; same direction"
 }
